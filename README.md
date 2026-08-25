@@ -19,10 +19,26 @@ npm test
 npm run lint
 ```
 
-The build is compatible with OpenAI Sites. The same generated static-first output can be adapted for GitHub Pages, but the Vinext/Cloudflare build and dynamic metadata routes currently assume the Sites deployment pipeline; a GitHub Pages move should add a static export check and base-path configuration first.
+`npm run build` performs a complete Vinext static export and then prepares GitHub Pages directory routes. The deployable website is `dist/client/`; it contains `index.html`, `404.html`, every registry-derived route, `_next` assets, `sitemap.xml`, and `robots.txt`. `npm run verify:export` fails if representative pages or base-path-safe URLs are missing.
+
+## GitHub Pages deployment
+
+The workflow at `.github/workflows/deploy-pages.yml` validates and deploys `dist/client` whenever `main` is pushed. In **Repository Settings → Pages**, select **Source: GitHub Actions**. Do not select **Deploy from a branch**; that mode publishes repository files and can show this README instead of the built site.
+
+Current deployment configuration:
+
+```text
+NEXT_PUBLIC_SITE_ORIGIN=https://gageg123-de.github.io
+NEXT_PUBLIC_BASE_PATH=/housewise
+Site URL=https://gageg123-de.github.io/housewise/
+```
+
+`lib/site-config.ts` is the application-level URL helper. The workflow environment is the deployment configuration point. Vinext currently cannot prerender dynamic App Router pages while its framework `basePath` option is enabled, so `next.config.ts` uses `assetPrefix` while `SiteLink`, `routePath`, and the post-export preparation script apply the public base path. This keeps the source routes canonical and produces a GitHub Pages-compatible artifact without `/housewise/housewise/` duplication.
+
+For a custom domain, change the workflow environment to the new origin and set `NEXT_PUBLIC_BASE_PATH` to an empty string, configure the domain in GitHub Pages, rebuild, and verify canonicals/sitemap before submitting them to Search Console.
 
 ## Important launch replacements
 
-`Housewise Guide` and `https://housewise.guide` are temporary working values. Before public launch, confirm the brand/domain, operator identity and contact channel, privacy/terms text, Search Console verification, analytics/consent approach, and advertising IDs.
+`Housewise Guide` remains a temporary working brand. Before public launch, confirm the final brand/domain, operator identity and contact channel, privacy/terms text, Search Console verification, analytics/consent approach, and advertising IDs.
 
 See `docs/ARCHITECTURE.md`, `docs/CONTENT_STRATEGY.md`, `docs/SEO.md`, `docs/MONETIZATION.md`, and `docs/ROADMAP.md`.

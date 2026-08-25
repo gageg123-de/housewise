@@ -10,12 +10,16 @@ Write for homeowners describing observable symptoms without specialist vocabular
 
 ## Architecture
 
-- Vinext/React static-first routes, hosted by OpenAI Sites/Cloudflare-compatible output.
+- Vinext/React static export deployed to GitHub Pages by GitHub Actions. The deployable artifact is `dist/client/`, never the repository root.
 - No database or runtime API is required. Published content lives in `content/articles.json` and renders through `app/[category]/[slug]/page.tsx`.
 - Category and informational pages share `app/[category]/page.tsx`; symptom hubs use `app/symptoms/[symptom]/page.tsx`.
 - Client JavaScript is limited to `components/ProblemFinder.tsx` and `components/SiteSearch.tsx`.
-- `app/sitemap.ts` and `app/robots.ts` generate crawl-control files. `lib/site-data.ts` is the registry access layer.
+- `app/sitemap.ts` and `app/robots.ts` define crawl-control behavior; `scripts/prepare-pages-export.mjs` emits their static files for GitHub Pages. `lib/site-data.ts` is the registry access layer.
 - `.openai/hosting.json` configures Sites. No D1 or R2 is currently needed.
+- `.github/workflows/deploy-pages.yml` is the GitHub Pages deployment authority. Repository Pages source must be **GitHub Actions**.
+- `NEXT_PUBLIC_SITE_ORIGIN` and `NEXT_PUBLIC_BASE_PATH` define deployment URLs. `lib/site-config.ts` centralizes URL composition.
+- Internal navigation uses `SiteLink` so static Pages navigation receives the public base path and uses full document requests. Do not reintroduce bare root-relative anchors or `next/link` without verifying static-host behavior.
+- Vinext 1.0.0-beta.2 cannot prerender these dynamic App Router routes when framework `basePath` is enabled. Keep framework `basePath` unset, use `assetPrefix`, and preserve the post-export route/asset preparation step unless a verified Vinext upgrade removes the limitation.
 
 ## Folder map
 
@@ -26,7 +30,9 @@ content/             published registry and unpublished topic backlog
 docs/                architecture, content, SEO, monetization, roadmap
 lib/                 typed registry and taxonomy helpers
 public/              favicon and social image
+scripts/             Pages post-export and artifact verification
 tests/               build/render and content-integrity checks
+.github/workflows/   GitHub Pages build and deployment
 .openai/              Sites hosting declaration
 ```
 
@@ -42,6 +48,7 @@ Allowed content types: symptom guide, comparison/explanation guide, diagnostic g
 - Never use dates, `blog`, `article`, IDs, version labels, or keyword-stuffed paths.
 - Preserve published URLs. Add redirects if a change is unavoidable.
 - One canonical indexable page per search intent. Taxonomy hubs link to the canonical article; never create duplicate system × symptom pages.
+- Source code uses logical paths such as `/hvac/`; `SiteLink`/`routePath` adds the configured deployment base exactly once.
 
 ## Duplicate-topic process (mandatory)
 
@@ -105,6 +112,7 @@ Tracking is intentionally absent. Future hooks: `problem_finder_started`, `probl
 - Use focused commits such as `feat: add problem finder framework` or `docs: expand editorial safeguards`.
 - Never rewrite shared history or use destructive reset/checkout to discard user work.
 - Run the full verification suite before committing. Do not commit secrets, build output, caches, or local Wrangler state.
+- Push deployment changes to `origin main`; confirm the Pages workflow exists remotely and that GitHub Pages uses the GitHub Actions source.
 
 ## Pre-publish checklist
 
@@ -112,7 +120,7 @@ Tracking is intentionally absent. Future hooks: `problem_finder_started`, `probl
 - Direct answer, uncertainty, safe checks, stop conditions, metadata, canonical, H1, dates, and links reviewed.
 - Category/symptom paths and at least two relevant internal links present.
 - Claims sourced where needed; no fabricated review/author credentials.
-- Build, content-integrity tests, link/path audit, sitemap checks, and viewport checks pass.
+- `npm run lint`, `npm test`, `npm run build`, and `npm run verify:export` pass. Inspect `dist/client/index.html`, `404.html`, representative category/article directories, assets, sitemap, and robots directly.
 
 ## Post-publish checklist
 
