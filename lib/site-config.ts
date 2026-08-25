@@ -1,7 +1,12 @@
-const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/housewise";
-const configuredOrigin = process.env.NEXT_PUBLIC_SITE_ORIGIN ?? "https://gageg123-de.github.io";
+import siteConfig from "@/site.config.json";
+
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
+const configuredOrigin = process.env.NEXT_PUBLIC_SITE_ORIGIN ?? siteConfig.siteOrigin;
 
 const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
+export const brandName = siteConfig.brandName;
+export const tagline = siteConfig.tagline;
+export const customDomain = siteConfig.customDomain;
 export const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
 export const siteOrigin = configuredOrigin.replace(/\/+$/, "");
 export const siteUrl = `${siteOrigin}${basePath}`;

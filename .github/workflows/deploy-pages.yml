@@ -1,4 +1,4 @@
-name: Deploy Housewise Guide to GitHub Pages
+name: Deploy My House Is Doing What? to GitHub Pages
 
 on:
   push:
@@ -13,10 +13,6 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: false
-
-env:
-  NEXT_PUBLIC_SITE_ORIGIN: https://gageg123-de.github.io
-  NEXT_PUBLIC_BASE_PATH: /housewise
 
 jobs:
   build:

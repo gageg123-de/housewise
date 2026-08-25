@@ -3,7 +3,10 @@ import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 
 const outputDir = path.resolve("dist/client");
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/housewise";
+const siteConfig = JSON.parse(await readFile(path.resolve("site.config.json"), "utf8"));
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
+const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
+const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
 const port = Number(process.env.PORT ?? 4173);
 const mimeTypes = new Map([
   [".css", "text/css; charset=utf-8"],
@@ -44,5 +47,5 @@ createServer(async (request, response) => {
     response.end(error instanceof Error ? error.message : String(error));
   }
 }).listen(port, "127.0.0.1", () => {
-  console.log(`Housewise Pages preview: http://127.0.0.1:${port}${basePath}/`);
+  console.log(`${siteConfig.brandName} Pages preview: http://127.0.0.1:${port}${basePath}/`);
 });

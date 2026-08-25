@@ -2,8 +2,11 @@ import { mkdir, readFile, readdir, rename, rm, writeFile } from "node:fs/promise
 import path from "node:path";
 
 const outputDir = path.resolve("dist/client");
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/housewise";
-const siteOrigin = (process.env.NEXT_PUBLIC_SITE_ORIGIN ?? "https://gageg123-de.github.io").replace(/\/+$/, "");
+const siteConfig = JSON.parse(await readFile(path.resolve("site.config.json"), "utf8"));
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
+const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
+const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
+const siteOrigin = (process.env.NEXT_PUBLIC_SITE_ORIGIN ?? siteConfig.siteOrigin).replace(/\/+$/, "");
 const siteUrl = `${siteOrigin}${basePath}`;
 
 async function walk(directory) {
@@ -52,5 +55,6 @@ const sitemapEntries = routes.map((route) => {
 });
 await writeFile(path.join(outputDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`);
 await writeFile(path.join(outputDir, "robots.txt"), `User-agent: *\nAllow: ${basePath}/\nDisallow: ${basePath}/search/\nSitemap: ${siteUrl}/sitemap.xml\n`);
+await writeFile(path.join(outputDir, "CNAME"), `${siteConfig.customDomain}\n`);
 
-console.log(`Prepared GitHub Pages export: ${moved + 1} HTML pages plus robots.txt and sitemap.xml.`);
+console.log(`Prepared GitHub Pages export: ${moved + 1} HTML pages plus CNAME, robots.txt, and sitemap.xml.`);
