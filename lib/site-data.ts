@@ -1,7 +1,53 @@
 import registry from "@/content/articles.json";
 export { siteUrl } from "@/lib/site-config";
 
-export type Article = (typeof registry)[number];
+export type ContextualLink = {
+  before: string;
+  label: string;
+  href: string;
+  after: string;
+};
+
+export type ArticleSection = {
+  id: string;
+  heading: string;
+  paragraphs?: string[];
+  causes?: { heading: string; text: string }[];
+  subsections?: { heading: string; paragraphs: string[] }[];
+  bullets?: string[];
+  link?: ContextualLink;
+  table?: { headers: string[]; rows: string[][] };
+  callout?: { title: string; text: string };
+};
+
+export type Article = {
+  title: string;
+  slug: string;
+  description: string;
+  primary_category: string;
+  secondary_categories: string[];
+  symptoms: string[];
+  room_or_location: string[];
+  system: string;
+  content_type: string;
+  published_date: string;
+  updated_date: string;
+  reviewed_date: string | null;
+  author: string;
+  reading_time: number;
+  featured_status: boolean;
+  search_keywords: string[];
+  target_search_intent: string;
+  direct_answer: string;
+  likely_causes: string[];
+  safe_checks: string[];
+  professional_help: string;
+  related_articles: string[];
+  body_sections?: ArticleSection[];
+  contextual_link?: ContextualLink;
+  sources?: { title: string; publisher: string; url: string }[];
+};
+
 export const articles = registry as Article[];
 export const categories = [
   { slug: "hvac", name: "HVAC", intro: "Heating, cooling, airflow, thermostat, and indoor-comfort problems." },

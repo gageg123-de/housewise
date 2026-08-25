@@ -22,3 +22,16 @@ test("a second article overrides root social metadata without the site image", a
   const response = await render("/plumbing/toilet-bubbles-when-washer-drains"); const html = await response.text();
   assert.equal(response.status, 200); assert.match(html, /<title>Why Does My Toilet Bubble When the Washer Drains\? \| My House Is Doing What\?<\/title>/); assert.match(html, /shared drain is partly blocked/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-bubbles-when-washer-drains\//); assert.doesNotMatch(html, /Housewise|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("AC vent dripping guide renders long-form content, metadata, and contextual links", async () => {
+  const response = await render("/hvac/water-dripping-from-ac-vent"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Water Dripping From My AC Vent\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/water-dripping-from-ac-vent\//);
+  assert.match(html, /AC vent sweating vs\. water dripping from the vent/i);
+  assert.match(html, /href="\/hvac\/ac-vent-sweating\/"/);
+  assert.match(html, /ceiling stain expands after rain/i);
+  assert.match(html, /BreadcrumbList/);
+  assert.match(html, /"@type":"Article"/);
+  assert.doesNotMatch(html, /FAQPage|github\.io|chatgpt\.site|og\.png/);
+});

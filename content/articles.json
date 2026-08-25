@@ -8,7 +8,114 @@
     "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
     "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
     "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
-    "related_articles": ["garage-smells-musty"]
+    "related_articles": ["water-dripping-from-ac-vent", "garage-smells-musty"],
+    "contextual_link": { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." }
+  },
+  {
+    "title": "Why Is Water Dripping From My AC Vent?", "slug": "water-dripping-from-ac-vent", "description": "Water dripping from an AC vent may come from condensation, humidity, insulation, drainage trouble, or another leak. Learn what to check safely.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture", "discoloration"], "room_or_location": ["living-area", "bedroom", "whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-25", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": true,
+    "search_keywords": ["why is water dripping from my ac vent", "water dripping from air vent", "ceiling vent dripping water", "ac register leaking water", "water coming from hvac vent"], "target_search_intent": "Help a homeowner distinguish actual water dripping from an AC supply vent from surface sweating, identify plausible HVAC and non-HVAC sources, perform safe observations, and choose the right professional when needed.",
+    "direct_answer": "Water dripping from an AC vent can be condensation forming on cold metal, especially when indoor humidity is high or insulation around the duct boot is missing or damaged. Humid air leaking around the boot, restricted airflow that contributes to colder surfaces, or a condensate drain problem may also be involved. Sometimes the water comes from somewhere else, such as a roof or plumbing leak. The timing, location, and number of affected vents help narrow the possibilities.",
+    "likely_causes": ["High indoor humidity", "Poor insulation around the duct boot", "Air leakage around the vent boot", "Restricted HVAC airflow", "Condensate drain or drain-pan trouble", "A roof, plumbing, or attic leak near the vent"],
+    "safe_checks": ["Note whether the water appears only while the AC runs.", "Inspect the visible register and nearby ceiling for moisture, staining, or softness.", "Check whether the HVAC filter is obviously dirty without opening equipment.", "Compare one affected vent with other vents and note indoor humidity if a meter is available.", "Observe whether water begins on the register or comes through the ceiling around it."],
+    "professional_help": "Arrange an HVAC evaluation when dripping persists, several vents are affected, condensate drainage looks abnormal, water is present around the air handler, or the source remains unclear. A roofer or plumber may be the better first call when rain or fixture use matches the leak. Stop and get prompt help if water is near electrical equipment or exposed wiring.",
+    "related_articles": ["ac-vent-sweating"],
+    "body_sections": [
+      {
+        "id": "is-dripping-normal",
+        "heading": "Is water dripping from an AC vent normal?",
+        "paragraphs": [
+          "A properly operating supply vent generally should not drip water into the room. A thin film of moisture may appear briefly on a cold metal register during very humid conditions, but repeated drops, a wet ceiling, or water that returns every cooling cycle deserves attention.",
+          "The first useful question is where the water starts. Moisture that beads across the register while the AC runs is more consistent with condensation. Water emerging through a seam, soaking the drywall, appearing after rain, or showing up when the AC is off suggests that another source may be involved. That pattern is a clue, not a diagnosis."
+        ]
+      },
+      {
+        "id": "most-likely-causes",
+        "heading": "Most likely causes",
+        "paragraphs": ["Several different conditions can produce the same visible drip. Use these possibilities to organize what you observe rather than assuming the first explanation fits."],
+        "causes": [
+          { "heading": "High indoor humidity", "text": "Warm room air holds water vapor. When that air touches a supply register cold enough to be below its dew point, water can condense on the metal. High humidity makes that meeting more likely and can create enough moisture for droplets to fall. Cooking, showering, outdoor air leakage, and an AC system that is not removing moisture effectively can all influence indoor humidity." },
+          { "heading": "Poor insulation around the duct boot", "text": "The duct boot is the metal fitting behind the visible register. If insulation is missing, compressed, displaced, or wet, the boot and nearby materials may become unusually cold. Humid air touching that cold surface can condense. This is especially relevant where a ceiling boot borders a hot, humid attic." },
+          { "heading": "Air leaking around the vent boot", "text": "A gap between the boot and the ceiling can allow humid attic or wall-cavity air to reach cold metal. The leak may be out of view even when the register looks properly seated. An HVAC or building-performance professional can evaluate the connection and insulation without relying on guesswork." },
+          { "heading": "Restricted HVAC airflow", "text": "A dirty filter, blocked return, closed supply registers, or a duct restriction can reduce airflow. Airflow problems can change system temperatures and operating conditions, which may contribute to abnormally cold surfaces or icing elsewhere in the system. A dirty filter is worth checking, but it does not prove that airflow caused the drip." },
+          { "heading": "Condensate drain or drain-pan problems", "text": "Cooling equipment normally removes moisture from the air and sends it to a drain pan and condensate line. A blocked line, damaged pan, poor drain slope, or overflow can release water near the indoor unit. Depending on where the air handler and ducts are located, that water may travel along framing, insulation, or ductwork and appear at a vent. Not every dripping vent indicates a clogged drain." },
+          { "heading": "Another leak near the vent", "text": "A ceiling register is also an opening where unrelated water may become visible. Roof leaks, plumbing supply or drain leaks, and moisture collecting in an attic can wet the ceiling around a vent. Weather, plumbing use, ceiling stains, and whether the AC is running can help distinguish these possibilities." }
+        ]
+      },
+      {
+        "id": "sweating-vs-dripping",
+        "heading": "AC vent sweating vs. water dripping from the vent",
+        "paragraphs": [
+          "Sweating means moisture is forming on the vent surface because humid air is meeting cold metal. Dripping means enough moisture has accumulated to form falling drops, or water is arriving at the vent from another source. A sweating vent can eventually drip, but visible dripping broadens the investigation because condensate drainage, roofing, and plumbing also need consideration."
+        ],
+        "link": { "before": "If the moisture stays mainly on the face or edges of the register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for a closer look at surface condensation, humidity, insulation, and air leakage." }
+      },
+      {
+        "id": "one-or-several-vents",
+        "heading": "What one vent—or several vents—can tell you",
+        "subsections": [
+          { "heading": "What if only one AC vent is dripping?", "paragraphs": ["One affected vent may point toward a local condition: failed or missing insulation around that boot, air leakage at the ceiling opening, a localized duct problem, or a nearby roof or plumbing leak. It can also be the first place a broader humidity problem becomes visible, so one vent does not guarantee that the cause is local."] },
+          { "heading": "What if several vents are dripping?", "paragraphs": ["Several affected vents, especially on humid days, may be more consistent with elevated indoor humidity, widespread insulation shortcomings, or a broader HVAC airflow or operating issue. Compare when and where the drops form, but leave system measurements and inaccessible duct inspection to a qualified technician."] }
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "paragraphs": ["Dry the visible area so you can see where moisture first returns. Then write down the pattern; a few specific observations are more useful to a technician than a theory about the cause."],
+        "bullets": [
+          "Note whether drops appear only while the AC runs, shortly after it stops, after rain, or when a nearby plumbing fixture is used.",
+          "Look at the visible register. Is its face wet, or is water coming from the ceiling around it?",
+          "Check the surrounding paint and drywall for a growing stain, bubbling paint, softness, or a damp seam.",
+          "See whether one vent or several vents are affected and whether they are on the same floor or duct run.",
+          "Check whether the HVAC filter is obviously dirty and replace it according to the equipment or filter instructions if needed.",
+          "If you have a hygrometer, note indoor relative humidity and how it changes while the system runs.",
+          "From a safe floor-level position, look for visible water around an accessible indoor unit; do not remove panels."
+        ],
+        "callout": { "title": "Keep the inspection observational", "text": "Do not open electrical equipment, handle refrigerant, work around exposed wiring, enter an unsafe attic, climb onto a roof, or dismantle HVAC or plumbing components. Keep away from wet electrical equipment and call for prompt help if water could reach wiring." }
+      },
+      {
+        "id": "condensation-or-another-leak",
+        "heading": "Is it condensation or another leak?",
+        "table": {
+          "headers": ["Observation", "More consistent with"],
+          "rows": [
+            ["Droplets form while the AC runs", "HVAC condensation"],
+            ["The vent or register itself is wet", "Condensation or an insulation/air-leak issue"],
+            ["A ceiling stain expands after rain", "A possible roof leak"],
+            ["Water appears when a plumbing fixture is used", "A possible plumbing leak"],
+            ["Multiple vents are affected on humid days", "A broader humidity or condensation issue"],
+            ["Water collects around the indoor AC unit", "A possible condensate pan or drain problem"]
+          ]
+        },
+        "paragraphs": [
+          "No single observation proves the source, but timing and the first wet location can make one explanation more consistent than another.",
+          "Take photos of the first wet area and note weather, AC operation, and plumbing use. Those details can help the right professional test the likely source instead of treating every ceiling drip as an HVAC problem."
+        ]
+      },
+      {
+        "id": "ceiling-stains-and-damage",
+        "heading": "Why ceiling staining and repeated moisture matter",
+        "paragraphs": [
+          "Repeated dripping can stain drywall, loosen paint, and keep paper-faced building materials damp. Persistent dampness also creates conditions that can support microbial growth. That does not mean every stain contains mold, but it does mean the water source and affected material should be addressed instead of repeatedly wiping the register dry.",
+          "If the ceiling is soft, sagging, actively spreading, or holding a large amount of water, keep people away from the area and arrange prompt evaluation. Do not puncture a bulging ceiling or stand beneath unstable material."
+        ]
+      },
+      {
+        "id": "when-to-call-a-professional",
+        "heading": "When professional help may be appropriate",
+        "paragraphs": [
+          "Call an HVAC technician when dripping persists, several vents are affected, airflow seems weak, condensation repeatedly returns despite reasonable humidity control, condensate drainage appears abnormal, or there is standing water near the air handler. The technician can evaluate airflow, equipment operation, drain components, duct connections, insulation, and air leakage.",
+          "Call a plumber when the leak follows use of a bathroom, laundry, kitchen, or other water fixture, or when visible supply or drain piping is wet. Call a roofer when the stain or drip follows rain, snowmelt, or wind-driven weather. If the evidence is mixed, start with the professional whose system best matches the timing and location, and share your notes and photos.",
+          "Seek prompt help when water is damaging drywall, approaching electrical equipment, or coming from a source you cannot confidently identify. Stopping the moisture early is usually simpler than repairing finishes after repeated wetting."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
+      { "title": "Mold Course Chapter 2: Humidity and Condensation", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/mold-course-chapter-2" },
+      { "title": "Heating and Cooling Maintenance Checklist", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist" }
+    ]
   },
   {
     "title": "Why Does My Toilet Bubble When the Washer Drains?", "slug": "toilet-bubbles-when-washer-drains", "description": "A toilet that bubbles when the washing machine drains often points to restricted drain airflow or a partial blockage in a shared drain line.",

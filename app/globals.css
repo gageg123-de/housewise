@@ -115,10 +115,14 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .direct-answer p:last-child { margin-bottom: 0; font-size: 18px; }
 .prose { max-width: 760px; margin: auto; padding: 0 0 45px; font-size: 18px; }
 .prose h2 { margin: 48px 0 16px; font-size: 36px; }
+.prose h3 { margin: 30px 0 10px; font: 500 25px/1.2 Georgia, serif; letter-spacing: -.02em; }
 .prose p { color: #35443e; }
 .cause-list { display: grid; gap: 10px; padding: 0; list-style: none; }
 .cause-list li { display: flex; gap: 14px; align-items: center; padding: 15px; background: var(--white); border: 1px solid var(--line); border-radius: 10px; }
 .cause-list span { width: 29px; height: 29px; display: grid; place-items: center; border-radius: 50%; background: var(--sage); color: var(--green-dark); font-size: 13px; font-weight: 800; }
+.detailed-causes li { align-items: flex-start; }
+.detailed-causes li > div { min-width: 0; }
+.detailed-causes p { margin: 5px 0 0; font-size: 16px; }
 .check-list { padding-left: 22px; }
 .check-list li { margin-bottom: 12px; padding-left: 5px; }
 .safety { margin: 35px 0; padding: 22px; border-radius: 12px; }
@@ -126,6 +130,18 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .safety p { margin: 0; }
 .safety.caution { background: #fff5df; border-left: 5px solid var(--amber); }
 .safety.stop { background: #f8e8e2; border-left: 5px solid #a9442d; }
+.comparison-table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
+.comparison-table { width: 100%; min-width: 570px; display: table; border-collapse: collapse; font-size: 15px; }
+.comparison-table th, .comparison-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.comparison-table thead th { background: var(--sage); color: var(--green-dark); font-size: 13px; }
+.comparison-table tbody th { width: 47%; font-weight: 700; }
+.comparison-table tr:last-child th, .comparison-table tr:last-child td { border-bottom: 0; }
+.article-sources { padding-top: 35px; border-top: 1px solid var(--line); }
+.article-sources h2 { font-size: 30px; }
+.article-sources ul { padding-left: 20px; }
+.article-sources li { margin: 10px 0; }
+.article-sources a { color: var(--green-dark); font-weight: 700; text-underline-offset: 3px; }
+.article-sources span { display: block; color: var(--muted); font-size: 13px; }
 .related { margin-top: 25px; padding-top: 45px; border-top: 1px solid var(--line); }
 .related h2 { margin-bottom: 20px; font-size: 36px; }
 .article-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
@@ -140,6 +156,7 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .not-found > p:not(.eyebrow) { max-width: 620px; color: var(--muted); font-size: 18px; }
 .not-found > div { display: flex; align-items: center; gap: 22px; margin-top: 28px; }
 table { display: block; max-width: 100%; overflow-x: auto; }
-@media (max-width: 1000px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } .article-layout { grid-template-columns: minmax(0, 1fr); } .article-rail { display: none; } }
+@media (max-width: 1150px) { .article-layout { grid-template-columns: minmax(0, 1fr); } .article-rail { display: none; } }
+@media (max-width: 1000px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 800px) { .site-header nav a:not(:first-child) { display: none; } .guide-grid { grid-template-columns: 1fr; } .finder-cta { margin-inline: 18px; padding: 35px; align-items: flex-start; flex-direction: column; } .updated { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .problem-grid { grid-template-columns: 1fr; } .finder-step { grid-template-columns: 1fr; gap: 10px; } .finder-panel { padding: 20px; } .footer-grid { grid-template-columns: 1fr; } .article-layout { padding-inline: 18px; } .direct-answer { padding: 23px; } .page-hero { padding-inline: 18px; } .not-found > div { align-items: flex-start; flex-direction: column; } }

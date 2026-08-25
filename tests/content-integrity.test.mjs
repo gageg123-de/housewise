@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 const registry = JSON.parse(await readFile(new URL("../content/articles.json", import.meta.url), "utf8"));
+const topics = await readFile(new URL("../content/topics.csv", import.meta.url), "utf8");
 
 test("article registry has unique titles, slugs, and canonical paths", () => {
   assert.equal(new Set(registry.map((item) => item.title.toLowerCase())).size, registry.length);
@@ -18,4 +19,23 @@ test("related article slugs resolve and required metadata exists", () => {
     assert.match(article.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(Array.isArray(article.symptoms) && article.symptoms.length > 0);
   }
+});
+
+test("published AC vent dripping guide is distinct and complete", () => {
+  const dripping = registry.find((item) => item.slug === "water-dripping-from-ac-vent");
+  const sweating = registry.find((item) => item.slug === "ac-vent-sweating");
+  assert.ok(dripping);
+  assert.ok(sweating);
+  assert.equal(dripping.primary_category, "hvac");
+  assert.notEqual(dripping.target_search_intent, sweating.target_search_intent);
+  assert.ok(dripping.body_sections.some((section) => section.id === "sweating-vs-dripping"));
+  assert.ok(dripping.body_sections.some((section) => section.table));
+  assert.ok(dripping.sources.every((source) => source.url.startsWith("https://")));
+  assert.ok(dripping.related_articles.includes("ac-vent-sweating"));
+  assert.equal(sweating.contextual_link.href, "/hvac/water-dripping-from-ac-vent/");
+  assert.ok(dripping.search_keywords.includes("why is water dripping from my ac vent"));
+  assert.ok(dripping.room_or_location.includes("living-area"));
+  assert.ok(dripping.symptoms.includes("leaking"));
+  assert.match(topics, /^Water dripping from AC vent,why is water dripping from my ac vent,hvac,leaking,living-area,diagnostic,published,high,\/hvac\/water-dripping-from-ac-vent\//m);
+  for (const plannedTopic of ["AC runs but house stays humid", "AC ductwork sweating in attic", "Water around indoor AC unit", "AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
 });

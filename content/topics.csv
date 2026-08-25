@@ -1,5 +1,6 @@
 topic,target_query,category,symptom,location,intent,status,priority,existing_url,notes
 AC vent sweating,why is my ac vent sweating,hvac,moisture,whole-house,diagnostic,published,high,/hvac/ac-vent-sweating/,Canonical published topic
+Water dripping from AC vent,why is water dripping from my ac vent,hvac,leaking,living-area,diagnostic,published,high,/hvac/water-dripping-from-ac-vent/,Distinct from surface sweating; covers falling droplets and HVAC versus roof or plumbing source identification
 Toilet bubbles when washer drains,toilet bubbles when washer drains,plumbing,clogging,bathroom,diagnostic,published,high,/plumbing/toilet-bubbles-when-washer-drains/,Canonical published topic
 Dryer takes two cycles,dryer taking two cycles,appliances,heat,laundry,diagnostic,published,high,/appliances/dryer-taking-two-cycles/,Canonical published topic
 Garage smells musty,musty smell in garage,moisture-and-mold,smell,garage,diagnostic,published,high,/moisture-and-mold/garage-smells-musty/,Canonical published topic
@@ -10,6 +11,10 @@ Ceiling fan wobbles,why does my ceiling fan wobble,electrical,vibration,living-a
 AC makes bubbling sound,ac makes bubbling noise,hvac,noise,whole-house,diagnostic,planned,medium,,Distinguish condensate from refrigerant sounds
 AC smells like vinegar,ac smells like vinegar,hvac,smell,whole-house,diagnostic,planned,medium,,Needs careful odor cause language
 AC runs but house stays humid,ac running but house humid,hvac,moisture,whole-house,diagnostic,planned,high,,Humidity cluster
+AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,moisture,attic,diagnostic,planned,high,,Humidity and duct-insulation cluster; distinguish from room-side vent condensation
+Water around indoor AC unit,why is there water around my indoor ac unit,hvac,leaking,whole-house,diagnostic,planned,high,,Condensate pan and drainage cluster; do not merge with water emerging at a supply vent
+AC smells musty when it turns on,why does my ac smell musty when it turns on,hvac,smell,whole-house,diagnostic,planned,high,,HVAC odor and moisture cluster
+AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,planned,medium,,Air-handler moisture and drainage cluster
 One room warmer than others,one room hotter than rest of house,hvac,heat,bedroom,diagnostic,planned,high,,Airflow cluster
 Thermostat clicks but AC does not start,thermostat clicks ac does not turn on,hvac,electrical-behavior,whole-house,diagnostic,planned,medium,,Electrical boundaries
 Furnace smells dusty,furnace smells like burning dust,hvac,smell,whole-house,explanation,planned,medium,,Seasonal first-use distinction
