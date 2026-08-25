@@ -1,0 +1,64 @@
+topic,target_query,category,symptom,location,intent,status,priority,existing_url,notes
+AC vent sweating,why is my ac vent sweating,hvac,moisture,whole-house,diagnostic,published,high,/hvac/ac-vent-sweating/,Canonical published topic
+Toilet bubbles when washer drains,toilet bubbles when washer drains,plumbing,clogging,bathroom,diagnostic,published,high,/plumbing/toilet-bubbles-when-washer-drains/,Canonical published topic
+Dryer takes two cycles,dryer taking two cycles,appliances,heat,laundry,diagnostic,published,high,/appliances/dryer-taking-two-cycles/,Canonical published topic
+Garage smells musty,musty smell in garage,moisture-and-mold,smell,garage,diagnostic,published,high,/moisture-and-mold/garage-smells-musty/,Canonical published topic
+Warm outlet,why is my outlet warm,electrical,heat,whole-house,safety,published,high,/electrical/outlet-warm/,Canonical published topic
+Toilet whistles,toilet whistles after flushing,plumbing,noise,bathroom,diagnostic,published,medium,/plumbing/toilet-whistles-after-flushing/,Canonical published topic
+Water under water heater,water under water heater,plumbing,leaking,garage,safety,published,high,/plumbing/water-under-water-heater/,Canonical published topic
+Ceiling fan wobbles,why does my ceiling fan wobble,electrical,vibration,living-area,diagnostic,published,medium,/electrical/ceiling-fan-wobbles/,Canonical published topic
+AC makes bubbling sound,ac makes bubbling noise,hvac,noise,whole-house,diagnostic,planned,medium,,Distinguish condensate from refrigerant sounds
+AC smells like vinegar,ac smells like vinegar,hvac,smell,whole-house,diagnostic,planned,medium,,Needs careful odor cause language
+AC runs but house stays humid,ac running but house humid,hvac,moisture,whole-house,diagnostic,planned,high,,Humidity cluster
+One room warmer than others,one room hotter than rest of house,hvac,heat,bedroom,diagnostic,planned,high,,Airflow cluster
+Thermostat clicks but AC does not start,thermostat clicks ac does not turn on,hvac,electrical-behavior,whole-house,diagnostic,planned,medium,,Electrical boundaries
+Furnace smells dusty,furnace smells like burning dust,hvac,smell,whole-house,explanation,planned,medium,,Seasonal first-use distinction
+Air return whistles,return air vent whistling,hvac,noise,whole-house,diagnostic,planned,medium,,Airflow restrictions
+Condensate line keeps clogging,ac condensate line keeps clogging,hvac,clogging,attic,maintenance,planned,medium,,May support vent sweating
+Toilet gurgles randomly,toilet gurgles randomly,plumbing,noise,bathroom,diagnostic,planned,high,,Compare shared drain topic before publishing
+Sink smells like sewer,sink smells like sewer,plumbing,smell,kitchen,diagnostic,planned,high,,Trap versus vent intent
+Water pressure suddenly low,sudden low water pressure whole house,plumbing,low-pressure,whole-house,diagnostic,planned,high,,Whole-house versus fixture split
+Shower pressure low only,low water pressure in shower only,plumbing,low-pressure,bathroom,diagnostic,planned,medium,,Distinct single-fixture intent
+Faucet pulses,faucet water pressure pulses,plumbing,vibration,kitchen,diagnostic,planned,low,,Check supply and pressure causes
+Pipes bang when washer stops,pipes bang when washing machine stops,plumbing,noise,laundry,diagnostic,planned,high,,Water hammer cluster
+Tub backs up when toilet flushes,bathtub backs up when toilet flushes,plumbing,clogging,bathroom,safety,planned,high,,Drain backup stop conditions
+Water heater pops,water heater popping noise,plumbing,noise,garage,diagnostic,planned,high,,Sediment and safety
+Water heater relief valve drips,water heater pressure relief valve leaking,plumbing,leaking,garage,safety,planned,high,,Strong do-not-cap language
+Lights dim when AC starts,lights dim when ac turns on,electrical,electrical-behavior,whole-house,diagnostic,planned,high,,Utility versus in-home causes
+Outlet buzzes,buzzing electrical outlet,electrical,noise,whole-house,safety,planned,high,,Electrical stop condition
+Breaker keeps tripping with nothing plugged in,breaker trips with nothing plugged in,electrical,electrical-behavior,whole-house,safety,planned,high,,No panel DIY
+Light switch feels loose,loose light switch,electrical,electrical-behavior,whole-house,safety,planned,medium,,Mechanical versus wiring concerns
+Ceiling light flickers,flickering ceiling light,electrical,electrical-behavior,living-area,diagnostic,planned,high,,Bulb/fixture/circuit differentiation
+GFCI will not reset,gfci outlet will not reset,electrical,electrical-behavior,bathroom,safety,planned,high,,Wet-location precautions
+Doorbell transformer hums,doorbell transformer humming,electrical,noise,whole-house,diagnostic,planned,low,,Transformer normal versus fault
+Dishwasher smells bad,dishwasher smells bad,appliances,smell,kitchen,maintenance,planned,high,,Filter/drain cluster
+Washing machine shakes,washer shaking during spin,appliances,vibration,laundry,diagnostic,planned,high,,Level/load/shipping bolts
+Refrigerator makes knocking noise,refrigerator knocking noise,appliances,noise,kitchen,diagnostic,planned,medium,,Cycle timing clues
+Freezer cold refrigerator warm,freezer cold but fridge warm,appliances,heat,kitchen,diagnostic,planned,high,,Airflow/defrost cluster
+Oven smells like gas when preheating,oven smells like gas when preheating,appliances,smell,kitchen,safety,planned,high,,Fuel-specific emergency guidance
+Dishwasher leaves grit on dishes,dishwasher leaves grit on dishes,appliances,discoloration,kitchen,diagnostic,planned,medium,,Filter/water/detergent
+Washer smells musty,front load washer smells musty,appliances,smell,laundry,maintenance,planned,high,,Gasket/drainage cluster
+Dryer smells like burning,dryer burning smell,appliances,smell,laundry,safety,planned,high,,Stop-use guidance
+Ceiling stain after rain,ceiling stain after rain,roofing,moisture,attic,diagnostic,planned,high,,Roof/plumbing/condensation compare
+Roof leaks only in heavy rain,roof leaks in heavy rain,roofing,leaking,attic,diagnostic,planned,high,,Wind-driven versus flashing
+Gutter overflows in one spot,gutter overflowing in one spot,roofing,drainage,exterior,maintenance,planned,medium,,Clog/slope/downspout
+Attic nails are rusty,rusty nails in attic,attic-and-insulation,moisture,attic,diagnostic,planned,medium,,Condensation indicator
+Attic smells musty,musty smell in attic,attic-and-insulation,smell,attic,diagnostic,planned,high,,Moisture source cluster
+Window has condensation between panes,condensation between window panes,windows-and-doors,moisture,living-area,explanation,planned,high,,Seal failure intent
+Door sticks in summer,door sticks when humid,windows-and-doors,moisture,living-area,explanation,planned,medium,,Humidity versus movement
+Water comes under exterior door,water leaking under exterior door,windows-and-doors,leaking,exterior,diagnostic,planned,medium,,Threshold/grading/weatherstrip
+Floor squeaks in winter,floor squeaks more in winter,flooring,noise,living-area,explanation,planned,low,,Seasonal movement
+Laminate floor feels spongy,spongy laminate floor,flooring,moisture,kitchen,diagnostic,planned,medium,,Subfloor/moisture/installation
+Tile grout keeps cracking,grout keeps cracking,flooring,crack,bathroom,diagnostic,planned,high,,Movement versus installation
+Concrete garage floor sweating,garage floor sweating,garage,moisture,garage,explanation,planned,high,,Condensation versus intrusion
+Garage door reverses near floor,garage door reverses before closing,garage,electrical-behavior,garage,diagnostic,planned,high,,Sensor/force/safety
+Water pools by foundation,water pooling next to foundation,yard-and-drainage,drainage,exterior,diagnostic,planned,high,,Grading/downspout cluster
+Yard stays soggy,why is my yard always soggy,yard-and-drainage,moisture,yard,diagnostic,planned,high,,Irrigation/soil/drainage
+Downspout makes gurgling noise,downspout gurgling noise,yard-and-drainage,noise,exterior,diagnostic,planned,low,,Buried drain restriction
+Small holes in baseboards,tiny holes in baseboards pests,pests,pest-activity,living-area,diagnostic,planned,medium,,Beetles versus other causes
+Scratching sound in attic at night,scratching in attic at night,pests,noise,attic,diagnostic,planned,high,,Animal clues without certainty
+Ants appear near sink,ants around kitchen sink,pests,pest-activity,kitchen,diagnostic,planned,medium,,Moisture/food/entry paths
+Musty smell after rain,musty smell in house after rain,moisture-and-mold,smell,whole-house,diagnostic,planned,high,,Cross-system moisture cluster
+Wall paint bubbles,paint bubbling on wall,moisture-and-mold,moisture,living-area,diagnostic,planned,high,,Leak/humidity/adhesion
+Black spots on bathroom ceiling,black spots bathroom ceiling,moisture-and-mold,discoloration,bathroom,safety,planned,high,,Avoid visual mold certainty
+Condensation versus roof leak,condensation vs roof leak,moisture-and-mold,moisture,attic,comparison,planned,high,,Broader explanatory guide
