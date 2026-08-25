@@ -1,9 +1,8 @@
 import registry from "@/content/articles.json";
+export { siteUrl } from "@/lib/site-config";
 
 export type Article = (typeof registry)[number];
 export const articles = registry as Article[];
-export const siteUrl = "https://housewise.guide";
-
 export const categories = [
   { slug: "hvac", name: "HVAC", intro: "Heating, cooling, airflow, thermostat, and indoor-comfort problems." },
   { slug: "plumbing", name: "Plumbing", intro: "Leaks, drains, toilets, water heaters, pressure, and supply questions." },

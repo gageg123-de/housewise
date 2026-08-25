@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SiteLink as Link } from "@/components/SiteLink";
 import type { Article } from "@/lib/site-data";
 import { articleUrl, titleCase } from "@/lib/site-data";
 

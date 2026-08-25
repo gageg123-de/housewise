@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import { SiteLink as Link } from "@/components/SiteLink";
 import registry from "@/content/articles.json";
 import { articleUrl, titleCase, type Article } from "@/lib/site-data";
 
