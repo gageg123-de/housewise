@@ -2,9 +2,11 @@
 
 These are directional goals, not forecasts or guarantees.
 
+The roadmap serves My House Is Doing What?: a symptom-driven homeowner troubleshooting/reference library at `myhouseisdoingwhat.com`, acquired primarily through organic search and monetized primarily through reader-respectful display advertising.
+
 ## Phase 1 — foundation to 25 articles
 
-Complete infrastructure, validate the publishing checklist, establish five strong system clusters, and configure the final domain and Search Console.
+Complete infrastructure, validate the publishing checklist, establish five strong system clusters, finish custom-domain DNS/Pages configuration, and configure Search Console.
 
 ## Phase 2 — 50 articles
 

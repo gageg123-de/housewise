@@ -1,12 +1,12 @@
-# Housewise Guide operating manual
+# My House Is Doing What? operating manual
 
 ## Purpose and business model
 
-Housewise Guide is a content-first homeowner problem-solving reference. Its durable loop is search discovery → immediate useful answer → related guides/tools → deeper session → display-ad revenue. Helpfulness, accuracy, speed, and trust come before ad density. Strategic—not guaranteed—targets are 2,000+ high-quality pages, primarily US informational traffic, and 1,000,000+ monthly organic pageviews.
+My House Is Doing What? is a symptom-driven homeowner troubleshooting and reference library. Its permanent tagline is “Answers for the weird things your home does.” Its durable loop is organic search discovery → immediate useful answer → related guides/tools → deeper session → display-ad revenue. Display advertising is the primary monetization model, and organic search is the primary acquisition channel. Helpfulness, accuracy, speed, and trust come before ad density. Strategic—not guaranteed—targets are 2,000+ high-quality pages, primarily US informational traffic, and 1,000,000+ monthly organic pageviews.
 
 ## Audience and voice
 
-Write for homeowners describing observable symptoms without specialist vocabulary. Be calm, practical, clear, non-alarmist, and explicit about uncertainty. Never use clickbait, fake urgency, fake personal experience, fake statistics, invented quotes, credentials, reviews, ratings, or staff. The working brand, domain, palette, and mark are temporary and must remain easy to replace.
+Write for homeowners describing observable symptoms without specialist vocabulary. Be calm, practical, clear, non-alarmist, and explicit about uncertainty. The brand may acknowledge that houses behave in confusing ways, but troubleshooting remains serious and credible. Never use clickbait, fake urgency, fake personal experience, fake statistics, invented quotes, credentials, reviews, ratings, or staff. The production brand is **My House Is Doing What?** and the production domain is **myhouseisdoingwhat.com**.
 
 ## Architecture
 
@@ -17,9 +17,9 @@ Write for homeowners describing observable symptoms without specialist vocabular
 - `app/sitemap.ts` and `app/robots.ts` define crawl-control behavior; `scripts/prepare-pages-export.mjs` emits their static files for GitHub Pages. `lib/site-data.ts` is the registry access layer.
 - `.openai/hosting.json` configures Sites. No D1 or R2 is currently needed.
 - `.github/workflows/deploy-pages.yml` is the GitHub Pages deployment authority. Repository Pages source must be **GitHub Actions**.
-- `NEXT_PUBLIC_SITE_ORIGIN` and `NEXT_PUBLIC_BASE_PATH` define deployment URLs. `lib/site-config.ts` centralizes URL composition.
+- `site.config.json` is the production source of truth for brand, tagline, origin, base path, and custom domain. Optional `NEXT_PUBLIC_SITE_ORIGIN` and `NEXT_PUBLIC_BASE_PATH` variables may override URL values for non-production previews.
 - Internal navigation uses `SiteLink` so static Pages navigation receives the public base path and uses full document requests. Do not reintroduce bare root-relative anchors or `next/link` without verifying static-host behavior.
-- Vinext 1.0.0-beta.2 cannot prerender these dynamic App Router routes when framework `basePath` is enabled. Keep framework `basePath` unset, use `assetPrefix`, and preserve the post-export route/asset preparation step unless a verified Vinext upgrade removes the limitation.
+- Production uses the custom-domain root (`basePath: ""`). Vinext 1.0.0-beta.2 cannot prerender these dynamic App Router routes when framework `basePath` is enabled; preserve the optional `assetPrefix`/post-export compatibility path for repository-path previews unless a verified Vinext upgrade removes the limitation.
 
 ## Folder map
 
@@ -113,6 +113,7 @@ Tracking is intentionally absent. Future hooks: `problem_finder_started`, `probl
 - Never rewrite shared history or use destructive reset/checkout to discard user work.
 - Run the full verification suite before committing. Do not commit secrets, build output, caches, or local Wrangler state.
 - Push deployment changes to `origin main`; confirm the Pages workflow exists remotely and that GitHub Pages uses the GitHub Actions source.
+- Never rename the GitHub repository merely to match the public brand. Keep canonicals on `https://myhouseisdoingwhat.com`, and generate the Pages `CNAME` from `site.config.json`.
 
 ## Pre-publish checklist
 
