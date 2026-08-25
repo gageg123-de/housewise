@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Why Is My AC Vent Sweating?", "slug": "ac-vent-sweating", "description": "Condensation on an AC vent usually means humid air is meeting a cold vent surface. Learn the common causes and what to check safely.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["whole-house", "attic"], "system": "hvac", "content_type": "symptom-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 5, "featured_status": true,
+    "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent"], "target_search_intent": "Explain why condensation forms on an AC supply vent and help the reader distinguish humidity, insulation, and airflow causes.",
+    "direct_answer": "An AC vent usually sweats when warm, humid air reaches the cold metal register or nearby duct. High indoor humidity, an air leak around the boot, weak insulation, or unusually cold airflow can all contribute.",
+    "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
+    "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
+    "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
+    "related_articles": ["garage-smells-musty"]
+  },
+  {
+    "title": "Why Does My Toilet Bubble When the Washer Drains?", "slug": "toilet-bubbles-when-washer-drains", "description": "A toilet that bubbles when the washing machine drains often points to restricted drain airflow or a partial blockage in a shared drain line.",
+    "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "clogging", "drainage"], "room_or_location": ["bathroom", "laundry"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 6, "featured_status": true,
+    "search_keywords": ["toilet bubbling washer drains", "toilet gurgles washing machine", "shared drain blockage"], "target_search_intent": "Explain the relationship between washer discharge, venting, and partial drain blockages.",
+    "direct_answer": "The washer releases a large volume of water quickly. If a shared drain is partly blocked or cannot draw enough air through its vent, pressure changes can push air through the toilet trap and make it bubble.",
+    "likely_causes": ["Partial blockage in a shared branch drain", "Restricted plumbing vent", "Developing main sewer line blockage", "Improperly configured drain connection"],
+    "safe_checks": ["Stop the washer if water rises in the toilet or another drain.", "Check whether nearby tubs or sinks drain slowly.", "Note whether the issue happens on every load.", "Avoid mixing drain-cleaning chemicals or opening rooftop vents."],
+    "professional_help": "Call a plumber promptly if sewage backs up, more than one fixture is affected, or the toilet water rises. A recurring bubble usually deserves drain and vent evaluation before it becomes a backup.",
+    "related_articles": ["toilet-whistles-after-flushing", "water-under-water-heater"]
+  },
+  {
+    "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles often has reduced airflow, an oversized load, or a moisture-sensing problem. Start with the vent path.",
+    "primary_category": "appliances", "secondary_categories": ["laundry"], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 5, "featured_status": true,
+    "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying"], "target_search_intent": "Help readers identify airflow, load, washer, and sensor causes of slow drying.",
+    "direct_answer": "Long drying times most often come from restricted airflow. A full lint screen, crushed transition duct, clogged exterior vent, or long vent run keeps moist air in the drum. Heavy loads and clothes leaving the washer too wet can also be responsible.",
+    "likely_causes": ["Restricted exhaust airflow", "Load is too large or dense", "Washer is not extracting enough water", "Dirty moisture sensor bars", "Heating or control fault"],
+    "safe_checks": ["Clean the lint screen before every load.", "Inspect the visible transition duct for crushing or sharp bends.", "Run a smaller mixed-fabric load.", "Check whether the exterior flap opens strongly while the dryer runs."],
+    "professional_help": "Stop using the dryer if it smells hot, scorches fabric, or the cabinet becomes unusually hot. Have an inaccessible or heavily clogged vent cleaned and appliance faults diagnosed professionally.",
+    "related_articles": []
+  },
+  {
+    "title": "Why Does My Garage Smell Musty?", "slug": "garage-smells-musty", "description": "A musty garage smell usually indicates damp materials, trapped humidity, or water entering around the slab, walls, or stored items.",
+    "primary_category": "moisture-and-mold", "secondary_categories": ["garage"], "symptoms": ["smell", "moisture"], "room_or_location": ["garage"], "system": "moisture-and-mold", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 6, "featured_status": true,
+    "search_keywords": ["musty garage smell", "garage smells damp", "mildew odor garage"], "target_search_intent": "Help readers locate likely moisture sources behind a musty garage odor.",
+    "direct_answer": "A musty odor is a clue that something stays damp long enough for microbial growth or earthy odors to develop. Common sources include wet cardboard, condensation, vehicle water, plumbing leaks, and moisture entering through walls or the slab.",
+    "likely_causes": ["Damp stored materials", "Poor air movement and high humidity", "Water intrusion at the door, wall, or slab", "Hidden plumbing or appliance leak", "Floor drain or sink trap odor"],
+    "safe_checks": ["Remove damp cardboard and fabric.", "Inspect wall edges and the garage door after rain.", "Check around water heaters, laundry hookups, and freezers.", "Use a humidity meter to compare the garage with outdoor conditions."],
+    "professional_help": "Seek help when moisture is widespread, keeps returning after cleanup, involves a large area of suspected mold, or appears to come through the structure.",
+    "related_articles": ["ac-vent-sweating", "water-under-water-heater"]
+  },
+  {
+    "title": "Why Is My Outlet Warm?", "slug": "outlet-warm", "description": "A warm outlet can result from a heavy load or a loose electrical connection. Learn when to stop using it and request an electrician.",
+    "primary_category": "electrical", "secondary_categories": [], "symptoms": ["heat", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 4, "featured_status": true,
+    "search_keywords": ["warm electrical outlet", "outlet feels hot", "hot plug socket"], "target_search_intent": "Explain why an outlet may feel warm and establish a conservative safety threshold.",
+    "direct_answer": "A receptacle should not become noticeably hot. Mild warmth can occur with some high-draw devices, but heat may also indicate a loose connection, worn receptacle, overloaded circuit, or damaged plug. Heat with odor, discoloration, buzzing, or sparking needs prompt attention.",
+    "likely_causes": ["High electrical load", "Loose or deteriorated connection", "Worn receptacle contacts", "Damaged plug or cord", "Overloaded circuit"],
+    "safe_checks": ["Unplug the device if it is safe to do so.", "Stop using the outlet and note any odor, noise, or discoloration.", "Check whether the plug itself or the wall plate feels warmer.", "Do not remove the cover or touch wiring."],
+    "professional_help": "Turn off the circuit if there is burning odor, smoke, sparking, melting, or significant heat and it is safe to reach the breaker. Arrange evaluation by a licensed electrician; call emergency services for active fire or smoke.",
+    "related_articles": ["ceiling-fan-wobbles"]
+  },
+  {
+    "title": "Why Does My Toilet Whistle After Flushing?", "slug": "toilet-whistles-after-flushing", "description": "A toilet that whistles while refilling usually has a restricted or aging fill valve. Learn what the timing of the sound can reveal.",
+    "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "plumbing-behavior"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "symptom-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 4, "featured_status": false,
+    "search_keywords": ["toilet whistles after flushing", "toilet refill squeal", "fill valve noise"], "target_search_intent": "Connect a refill-time whistle with fill valve and supply restriction causes.",
+    "direct_answer": "A whistle that occurs while the tank refills usually comes from water squeezing through a restricted fill valve or partly closed supply valve. An aging fill-valve seal is a common source.",
+    "likely_causes": ["Worn or restricted fill valve", "Supply stop not fully open", "Debris in the valve", "Elevated water pressure"],
+    "safe_checks": ["Confirm the sound starts only during refill.", "Observe whether the tank fills slowly.", "Check that the supply stop is not visibly leaking.", "Avoid forcing a stuck shutoff valve."],
+    "professional_help": "A plumber can replace the fill valve, address a seized supply stop, or evaluate pressure. Get help sooner if the valve leaks or will not shut off.",
+    "related_articles": ["toilet-bubbles-when-washer-drains"]
+  },
+  {
+    "title": "Why Is There Water Under My Water Heater?", "slug": "water-under-water-heater", "description": "Water beneath a water heater may come from condensation, nearby plumbing, a valve, or a leaking tank. Identify the source without unsafe contact.",
+    "primary_category": "plumbing", "secondary_categories": ["garage"], "symptoms": ["leaking", "moisture", "heat"], "room_or_location": ["garage", "basement"], "system": "plumbing", "content_type": "safety-reference",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 6, "featured_status": true,
+    "search_keywords": ["water under water heater", "water heater leaking bottom", "puddle by hot water tank"], "target_search_intent": "Help readers identify observable leak sources and know when to shut down or call for service.",
+    "direct_answer": "A puddle may come from a loose connection, temperature-and-pressure relief discharge, drain valve, condensation, nearby pipe, or an internal tank leak. Water emerging from the tank body or base often means the tank needs replacement.",
+    "likely_causes": ["Leaking supply connection", "Relief valve discharge", "Drain valve seepage", "Condensation", "Corroded tank", "Leak from nearby equipment"],
+    "safe_checks": ["Keep away from hot water and wet electrical components.", "Blot visible areas and observe where water first reappears.", "Look from a distance at pipe connections and the relief-valve discharge tube.", "Do not cap or plug the relief valve."],
+    "professional_help": "Request prompt service for water from the tank body, repeated relief-valve discharge, active flow, gas odor, or water near electrical connections. Use the manufacturer’s shutdown guidance only if conditions are safe.",
+    "related_articles": ["garage-smells-musty"]
+  },
+  {
+    "title": "Why Does My Ceiling Fan Wobble?", "slug": "ceiling-fan-wobbles", "description": "A wobbling ceiling fan may have uneven blades, loose hardware, or an insecure mounting connection. Learn safe observations and stop signs.",
+    "primary_category": "electrical", "secondary_categories": [], "symptoms": ["vibration", "noise", "electrical-behavior"], "room_or_location": ["bedroom", "living-area"], "system": "electrical", "content_type": "symptom-guide",
+    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "Housewise Guide", "reading_time": 5, "featured_status": false,
+    "search_keywords": ["ceiling fan wobble", "fan shakes at high speed", "wobbly ceiling fan"], "target_search_intent": "Distinguish blade-balance issues from loose or unsuitable mounting.",
+    "direct_answer": "A small amount of movement can be normal, but visible wobble usually comes from uneven blade position, loose blade hardware, a bent blade arm, or movement at the mounting point. Movement where the fan meets the ceiling is the more concerning clue.",
+    "likely_causes": ["Loose blade screws", "Uneven or warped blades", "Bent blade arm", "Loose mounting hardware", "Electrical box not rated for fan support"],
+    "safe_checks": ["Turn the fan off and let it stop completely.", "From the floor, observe whether the canopy moves at the ceiling.", "Check for a visibly warped blade without climbing beneath an unstable fan.", "Keep the fan off if it knocks, drops, or moves at its mount."],
+    "professional_help": "Have an electrician or qualified installer check movement at the ceiling, uncertain fan-box support, damaged hardware, or wiring symptoms. Do not run a fan that appears loose at its mount.",
+    "related_articles": ["outlet-warm"]
+  }
+]

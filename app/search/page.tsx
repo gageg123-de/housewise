@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import SiteSearch from "@/components/SiteSearch";
+import { SiteShell } from "@/components/SiteShell";
+export const metadata: Metadata = { title: "Search Home Problem Guides", description: "Search Housewise Guide by symptom, system, location, or phrase.", alternates: { canonical: "/search/" }, robots: { index: false, follow: true }, openGraph: { title: "Search Home Problem Guides", description: "Search Housewise Guide by symptom, system, location, or phrase.", images: [] }, twitter: { title: "Search Home Problem Guides", description: "Search Housewise Guide by symptom, system, location, or phrase.", images: [] } };
+export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) { const { q = "" } = await searchParams; return <SiteShell><header className="page-hero compact"><p className="eyebrow">Search the library</p><h1>What is your home doing?</h1><p>Use the words you would naturally use. The index checks titles, symptoms, systems, summaries, and related phrases.</p></header><div className="page-wrap"><SiteSearch initialQuery={q}/></div></SiteShell>; }
