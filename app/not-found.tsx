@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
 import { SiteLink as Link } from "@/components/SiteLink";
 import { SiteShell } from "@/components/SiteShell";
+export const metadata: Metadata = { title: "Page Not Found", description: "The requested home problem guide could not be found.", robots: { index: false, follow: true }, alternates: { canonical: null }, openGraph: { title: "Page Not Found", description: "The requested home problem guide could not be found.", images: [] }, twitter: { title: "Page Not Found", description: "The requested home problem guide could not be found.", images: [] } };
 export default function NotFound() { return <SiteShell><section className="not-found"><p className="eyebrow">404 · Page not found</p><h1>This problem guide wandered off.</h1><p>The address may have changed, or the guide may not exist yet. Search by what you notice instead.</p><div><Link className="button" href="/search/">Search guides</Link><Link href="/find-a-problem/">Use the Problem Finder</Link></div></section></SiteShell>; }

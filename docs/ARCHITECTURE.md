@@ -2,7 +2,9 @@
 
 My House Is Doing What? uses Vinext with React server components at build time and a full static export at runtime. This preserves file-based routes and per-page metadata while deploying plain HTML, CSS, JavaScript, and assets to GitHub Pages. It is a practical midpoint between hand-authored HTML and a database-backed CMS for a library expected to grow beyond 2,000 pages.
 
-`content/articles.json` is the canonical publishing registry. `lib/site-data.ts` provides typed lookup, URL, category, and display helpers. One dynamic article template renders every record. Category and symptom hubs query the same data, while search and the finder load the registry in the browser. Adding content therefore does not require duplicating page files.
+`content/articles.json` is the canonical publishing registry. `lib/site-data.ts` provides typed lookup, URL, category, taxonomy, and display helpers. One dynamic article template renders every record. Category and symptom hubs query the same data and are exported only when they contain published articles. Search and the finder load the registry in the browser; their dependency-free matching and ranking logic is shared through `lib/discovery.mjs` so Node regression tests exercise the same rules as the client. Adding content therefore does not require duplicating page files.
+
+The Problem Finder narrows symptom choices by selected location, then ranks only guides with both a compatible location and symptom. Exact location and symptom matches outrank system and secondary matches. An honest related-guide recovery state replaces an empty or irrelevant result list. Search requires meaningful multi-word coverage, weights title and primary query most heavily, normalizes a small set of homeowner-language aliases, and tolerates a single minor typo without turning every partial match into a result.
 
 Optional article visuals are also registry-driven. The image record stores the public path, intrinsic dimensions, factual alt text, conceptual/diagrammatic/representational classification, caption, and the body section after which the visual renders. Static files live under `public/images/`; article metadata reuses the same primary visual with an absolute production URL.
 
@@ -12,7 +14,7 @@ Client-side registry loading is acceptable for the starter set. Before the regis
 
 ## GitHub Pages output
 
-`next.config.ts` enables `output: "export"`. Vinext prerenders the registry-derived dynamic routes, and `scripts/prepare-pages-export.mjs` converts flat route files into directory entry points, relocates prefixed `_next` assets to the artifact root, and writes static `robots.txt` and `sitemap.xml`. The final artifact is `dist/client/`.
+`next.config.ts` enables `output: "export"`. Vinext prerenders the registry-derived dynamic routes, and `scripts/prepare-pages-export.mjs` converts flat route files into directory entry points, relocates prefixed `_next` assets to the artifact root, and writes static `robots.txt` and `sitemap.xml`. Sitemap `lastmod` is emitted only for articles with a verified registry `updated_date`; it is not fabricated for evergreen utility routes. The final artifact is `dist/client/`.
 
 Production is served from the custom-domain root, so routes and assets use `/hvac/`, `/_next/...`, and similar root paths. `site.config.json` centralizes the brand, tagline, production origin, empty production base path, and custom domain. `scripts/verify-static-export.mjs` validates linked routes/assets, production canonicals, sitemap URLs, robots, and CNAME.
 

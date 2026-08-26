@@ -2,6 +2,7 @@
 import { useMemo, useState, useSyncExternalStore } from "react";
 import { SiteLink as Link } from "@/components/SiteLink";
 import registry from "@/content/articles.json";
+import { searchArticles } from "@/lib/discovery.mjs";
 import { articleUrl, titleCase, type Article } from "@/lib/site-data";
 
 export default function SiteSearch() {
@@ -12,6 +13,6 @@ export default function SiteSearch() {
   );
   const [editedQuery, setEditedQuery] = useState<string | null>(null);
   const query = editedQuery ?? initialQuery;
-  const results = useMemo(() => { const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean); if (!terms.length) return registry as Article[]; return (registry as Article[]).map((article) => { const fields = [article.title, article.description, article.primary_category, ...article.symptoms, ...article.search_keywords].join(" ").toLowerCase(); return { article, score: terms.reduce((sum, term) => sum + (article.title.toLowerCase().includes(term) ? 5 : 0) + (article.search_keywords.some((keyword) => keyword.includes(term)) ? 3 : 0) + (fields.includes(term) ? 1 : 0), 0) }; }).filter((item) => item.score > 0).sort((a, b) => b.score - a.score).map((item) => item.article); }, [query]);
-  return <div className="search-page"><label htmlFor="library-search">Search titles, symptoms, systems, and keywords</label><input id="library-search" type="search" value={query} onChange={(event) => setEditedQuery(event.target.value)} placeholder="Try “musty garage” or “toilet bubbling”"/><p aria-live="polite">{results.length} {results.length === 1 ? "guide" : "guides"}</p><div className="result-list">{results.map((article) => <Link key={article.slug} href={articleUrl(article)}><strong>{article.title}</strong><span>{titleCase(article.primary_category)} · {article.description}</span></Link>)}</div></div>;
+  const results = useMemo(() => searchArticles(registry as Article[], query), [query]);
+  return <div className="search-page" data-analytics-surface="site_search"><label htmlFor="library-search">Search titles, symptoms, systems, and keywords</label><input id="library-search" type="search" value={query} onChange={(event) => setEditedQuery(event.target.value)} placeholder="Try “musty garage” or “toilet bubbling”" data-analytics-event="site_search"/><p aria-live="polite">{results.length} {results.length === 1 ? "guide" : "guides"}</p>{results.length ? <div className="result-list">{results.map((article) => <Link key={article.slug} href={articleUrl(article)} data-analytics-event="search_result_click" data-search-query={query} data-result-slug={article.slug}><strong>{article.title}</strong><span>{titleCase(article.primary_category)} · {article.description}</span></Link>)}</div> : <div className="empty-state"><strong>No close match yet.</strong><p>Try fewer words, describe the symptom another way, or let the Problem Finder narrow it down by location.</p><div className="empty-actions"><Link href="/find-a-problem/">Use the Problem Finder</Link><Link href="/">Browse home problems</Link></div></div>}</div>;
 }

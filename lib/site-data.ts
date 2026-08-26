@@ -80,9 +80,10 @@ export const categories = [
   { slug: "sounds-and-smells", name: "Sounds & Smells", intro: "Start with the buzz, hum, whistle, mustiness, or other clue you notice." },
 ];
 
-export const symptoms = ["leaking", "smell", "noise", "moisture", "crack", "heat", "cold", "vibration", "clogging", "low-pressure", "electrical-behavior", "pest-activity", "discoloration"];
+export const symptoms = [...new Set(articles.flatMap((article) => article.symptoms))].sort();
 
 export function articleUrl(article: Article) { return `/${article.primary_category}/${article.slug}/`; }
 export function findArticle(category: string, slug: string) { return articles.find((article) => article.primary_category === category && article.slug === slug); }
 export function categoryArticles(category: string) { return articles.filter((article) => article.primary_category === category || article.secondary_categories.includes(category)); }
+export function publishedCategories() { return categories.filter((category) => categoryArticles(category.slug).length > 0); }
 export function titleCase(value: string) { return value.replaceAll("-", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()); }

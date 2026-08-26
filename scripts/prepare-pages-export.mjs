@@ -50,8 +50,8 @@ const routes = [...new Set(manifest.routes.map((entry) => entry.path ?? entry.ro
 const escapeXml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&apos;");
 const sitemapEntries = routes.map((route) => {
   const suffix = route === "/" ? "/" : `${route}/`;
-  const lastModified = articleUpdates.get(route) ?? "2026-08-24";
-  return `  <url><loc>${escapeXml(`${siteUrl}${suffix}`)}</loc><lastmod>${lastModified}</lastmod></url>`;
+  const lastModified = articleUpdates.get(route);
+  return `  <url><loc>${escapeXml(`${siteUrl}${suffix}`)}</loc>${lastModified ? `<lastmod>${lastModified}</lastmod>` : ""}</url>`;
 });
 await writeFile(path.join(outputDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`);
 await writeFile(path.join(outputDir, "robots.txt"), `User-agent: *\nAllow: ${basePath}/\nDisallow: ${basePath}/search/\nSitemap: ${siteUrl}/sitemap.xml\n`);

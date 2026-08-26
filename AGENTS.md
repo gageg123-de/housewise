@@ -125,7 +125,7 @@ Test 320, 375, 390, 430, 768, 1024, and 1440px. Confirm no overflow; navigation,
 
 ## Analytics and ads
 
-Tracking is intentionally absent. Future hooks: `problem_finder_started`, `problem_finder_completed`, `site_search`, `related_article_click`, `category_click`, `article_depth_50`, and `article_depth_90`. Add consent-aware analytics in the root layout or a narrowly scoped analytics component and document vendor IDs. Disabled `.ad-slot` elements reserve optional desktop space; enable only after network approval, privacy updates, and CLS testing. Content must work without ads.
+Tracking is intentionally absent. Interactive discovery controls expose privacy-safe `data-analytics-event` hooks for `problem_finder_started`, `problem_finder_step`, `problem_finder_completed`, `problem_finder_result_click`, `site_search`, `search_result_click`, `related_article_click`, and `category_click`; future article instrumentation should add `article_depth_50` and `article_depth_90`. Finder events may include the selected location, symptom, result slug shown, and result slug clicked, but never free-form personal information. Add consent-aware analytics in the root layout or a narrowly scoped analytics component and document vendor IDs. Disabled `.ad-slot` elements reserve optional desktop space; enable only after network approval, privacy updates, and CLS testing. Content must work without ads.
 
 ## Git workflow
 

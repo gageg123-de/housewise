@@ -4,6 +4,7 @@ import path from "node:path";
 
 const outputDir = path.resolve("dist/client");
 const siteConfig = JSON.parse(await readFile(path.resolve("site.config.json"), "utf8"));
+const registry = JSON.parse(await readFile(path.resolve("content/articles.json"), "utf8"));
 const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
 const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
 const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
@@ -55,8 +56,10 @@ async function walk(directory) {
 for (const file of requiredFiles) await access(path.join(outputDir, file));
 
 const htmlFiles = (await walk(outputDir)).filter((file) => file.endsWith(".html"));
-assert.ok(htmlFiles.length >= 40, `Expected a full route export, found only ${htmlFiles.length} HTML files`);
+assert.ok(htmlFiles.length >= 35, `Expected a full route export, found only ${htmlFiles.length} HTML files`);
 const referencedPaths = new Set();
+const inboundPaths = new Map();
+const indexableMetadata = [];
 
 for (const file of htmlFiles) {
   const html = await readFile(file, "utf8");
@@ -64,12 +67,44 @@ for (const file of htmlFiles) {
     assert.doesNotMatch(html, staleReference, `${file} contains stale production branding or domains`);
   }
   assert.ok(!html.includes('="/housewise/'), `${file} contains a legacy repository base path`);
+  assert.ok(!/>\s*click here\s*</i.test(html), `${file} contains generic anchor text`);
   if (basePath) assert.ok(!html.includes(`${basePath}${basePath}/`), `${file} duplicates the base path`);
+  const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
+  const description = html.match(/<meta name="description" content="([^"]+)"/)?.[1];
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  const h1Count = (html.match(/<h1\b/g) ?? []).length;
+  const relativeFile = path.relative(outputDir, file).replaceAll("\\", "/");
+  const is404 = relativeFile === "404.html";
+  const isSearch = relativeFile === "search/index.html";
+  assert.ok(title && description, `${file} is missing a title or description`);
+  assert.equal(h1Count, 1, `${file} should contain exactly one H1`);
+  if (is404) {
+    assert.ok(/noindex/.test(html), "404 must be noindex");
+    assert.ok(!canonical, "404 must not inherit the homepage canonical");
+  } else {
+    assert.ok(canonical === siteUrl || canonical?.startsWith(`${siteUrl}/`), `${file} has a missing or off-origin canonical`);
+    if (!isSearch) indexableMetadata.push({ file, title, description, canonical });
+  }
   for (const match of html.matchAll(/\b(?:href|src|action)=["'](\/[^"']*)/g)) {
     const url = match[1];
     assert.ok(url === basePath || url.startsWith(`${basePath}/`), `${file} contains an unprefixed root URL: ${url}`);
-    referencedPaths.add(new URL(url, "https://verify.invalid").pathname);
+    const pathname = new URL(url, "https://verify.invalid").pathname;
+    referencedPaths.add(pathname);
+    if (match[0].startsWith("href")) inboundPaths.set(pathname, (inboundPaths.get(pathname) ?? 0) + 1);
   }
+}
+
+for (const key of ["title", "description", "canonical"]) {
+  const values = new Set();
+  for (const record of indexableMetadata) {
+    assert.ok(!values.has(record[key]), `Duplicate ${key}: ${record[key]}`);
+    values.add(record[key]);
+  }
+}
+
+for (const article of registry) {
+  const pathname = `${basePath}/${article.primary_category}/${article.slug}/`;
+  assert.ok((inboundPaths.get(pathname) ?? 0) > 0, `Published article has no crawlable inbound link: ${pathname}`);
 }
 
 for (const pathname of referencedPaths) {
@@ -101,6 +136,10 @@ for (const route of ["/", "/hvac/", "/plumbing/", "/hvac/ac-vent-sweating/", "/h
 if (basePath) assert.ok(!sitemap.includes(`${basePath}${basePath}/`), "Sitemap duplicates the base path");
 assert.ok(!sitemap.includes("github.io"), "Production sitemap contains a GitHub Pages infrastructure URL");
 assert.equal((sitemap.match(/<url>/g) ?? []).length, htmlFiles.length - 2, "Sitemap should contain every indexable HTML route except search and 404");
+assert.equal((sitemap.match(/<lastmod>/g) ?? []).length, registry.length, "Only article URLs should carry verified last-modified dates");
+for (const emptyHub of ["/roofing/", "/windows-and-doors/", "/flooring/", "/pests/", "/attic-and-insulation/", "/kitchen/", "/yard-and-drainage/", "/sounds-and-smells/", "/symptoms/crack/", "/symptoms/cold/", "/symptoms/low-pressure/", "/symptoms/pest-activity/"]) {
+  assert.ok(!sitemap.includes(`${siteUrl}${emptyHub}`), `Empty taxonomy hub should not be indexable: ${emptyHub}`);
+}
 
 const robots = await readFile(path.join(outputDir, "robots.txt"), "utf8");
 for (const staleReference of staleProductionReferences) assert.doesNotMatch(robots, staleReference);
@@ -112,5 +151,12 @@ assert.equal(cname.trim(), siteConfig.customDomain);
 
 const stats = await stat(path.join(outputDir, "index.html"));
 assert.ok(stats.size > 1_000, "Exported index.html is unexpectedly small");
+const allFiles = await walk(outputDir);
+assert.ok(!allFiles.some((file) => file.endsWith(".map")), "Production artifact contains source maps");
+for (const article of registry.filter((item) => item.image)) {
+  const imagePath = path.join(outputDir, article.image.src.replace(/^\/+/, ""));
+  const imageStats = await stat(imagePath);
+  assert.ok(imageStats.size <= 200_000, `${article.slug}: primary article image exceeds the 200 KB budget`);
+}
 
 console.log(`Verified ${htmlFiles.length} static HTML pages in ${outputDir}`);

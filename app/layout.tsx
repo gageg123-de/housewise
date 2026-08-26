@@ -14,7 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const website = { "@context": "https://schema.org", "@type": "WebSite", name: brandName, description: tagline, url: canonicalUrl("/"), potentialAction: { "@type": "SearchAction", target: `${canonicalUrl("/search/")}?q={search_term_string}`, "query-input": "required name=search_term_string" } };
-  const organization = { "@context": "https://schema.org", "@type": "Organization", name: brandName, url: siteUrl };
-  return <html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([website, organization]).replace(/</g, "\\u003c") }}/>{/* Future analytics, ad, and site-verification scripts belong here only after consent/configuration. */}</body></html>;
+  return <html lang="en"><body>{children}{/* Future analytics, ad, and site-verification scripts belong here only after consent/configuration. */}</body></html>;
 }

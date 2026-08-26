@@ -14,10 +14,34 @@ test("article registry has unique titles, slugs, and canonical paths", () => {
 test("related article slugs resolve and required metadata exists", () => {
   const slugs = new Set(registry.map((item) => item.slug));
   for (const article of registry) {
-    for (const field of ["title", "slug", "description", "primary_category", "target_search_intent", "direct_answer"]) assert.ok(article[field], `${article.slug}: ${field}`);
+    for (const field of ["title", "slug", "description", "primary_category", "system", "content_type", "published_date", "updated_date", "author", "target_search_intent", "direct_answer", "professional_help"]) assert.ok(article[field], `${article.slug}: ${field}`);
     for (const related of article.related_articles) assert.ok(slugs.has(related), `${article.slug}: missing related ${related}`);
     assert.match(article.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(Array.isArray(article.symptoms) && article.symptoms.length > 0);
+    assert.ok(Array.isArray(article.room_or_location) && article.room_or_location.length > 0);
+    assert.ok(Array.isArray(article.search_keywords) && article.search_keywords.length > 0);
+    assert.ok(Array.isArray(article.likely_causes) && article.likely_causes.length > 0);
+    assert.ok(Array.isArray(article.safe_checks) && article.safe_checks.length > 0);
+    assert.match(article.published_date, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(article.updated_date, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(article.updated_date >= article.published_date, `${article.slug}: updated before publication`);
+    assert.equal(article.reviewed_date, null, `${article.slug}: unverified expert review date`);
+    if (article.image) {
+      assert.match(article.image.src, /^\/images\/[a-z0-9-]+\.(?:avif|webp|png|jpe?g)$/);
+      assert.ok(article.image.width > 0 && article.image.height > 0);
+      assert.ok(article.image.alt && article.image.caption);
+      assert.ok(["conceptual", "diagrammatic", "representational"].includes(article.image.kind));
+    }
+  }
+});
+
+test("published topics have one registry record and no article is isolated", () => {
+  const publishedRows = topics.split(/\r?\n/).slice(1).filter((row) => row.includes(",published,") && row.trim());
+  assert.equal(publishedRows.length, registry.length);
+  for (const article of registry) {
+    assert.equal(publishedRows.filter((row) => row.includes(`/${article.primary_category}/${article.slug}/`)).length, 1, `${article.slug}: backlog publication mismatch`);
+    const samePrimaryCategory = registry.filter((item) => item.primary_category === article.primary_category);
+    assert.ok(article.related_articles.length > 0 || samePrimaryCategory.length === 1, `${article.slug}: no related path despite an available category peer`);
   }
 });
 
