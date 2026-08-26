@@ -66,3 +66,5 @@ Every configured location/symptom branch is exercised automatically. Returned gu
 ## Regression coverage
 
 Automated checks cover required article fields, date formats, registry/topic parity, duplicate routes/slugs, related references, article reachability, contextual finder choices and result relevance, no-result fallback paths, representative search ranking and typo handling, active-only hubs, unique rendered metadata, 404 canonical behavior, stale domains, sitemap completeness/timestamps, inbound article links, source maps, image budgets, and internal static asset/route integrity.
+
+The durable lessons from this audit are mandatory in `AGENTS.md`. Detailed automated/manual coverage is maintained in `docs/QA.md`, and the discovery contract is maintained in `docs/PROBLEM_FINDER.md`.

@@ -45,4 +45,4 @@ In **Repository Settings → Pages**, set the custom domain to `myhouseisdoingwh
 
 The public brand and domain are final. Before monetization, confirm the operator identity and contact channel, privacy/terms text, Search Console verification, analytics/consent approach, and advertising IDs.
 
-See `docs/ARCHITECTURE.md`, `docs/CONTENT_STRATEGY.md`, `docs/SEO.md`, `docs/MONETIZATION.md`, and `docs/ROADMAP.md`.
+See `docs/ARCHITECTURE.md`, `docs/CONTENT_STRATEGY.md`, `docs/SEO.md`, `docs/PROBLEM_FINDER.md`, `docs/QA.md`, `docs/MONETIZATION.md`, and `docs/ROADMAP.md`.
