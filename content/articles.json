@@ -239,7 +239,7 @@
   },
   {
     "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles often has reduced airflow, an oversized load, or a moisture-sensing problem. Start with the vent path.",
-    "primary_category": "appliances", "secondary_categories": ["laundry"], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
+    "primary_category": "appliances", "secondary_categories": [], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
     "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
     "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying"], "target_search_intent": "Help readers identify airflow, load, washer, and sensor causes of slow drying.",
     "direct_answer": "Long drying times most often come from restricted airflow. A full lint screen, crushed transition duct, clogged exterior vent, or long vent run keeps moist air in the drum. Heavy loads and clothes leaving the washer too wet can also be responsible.",

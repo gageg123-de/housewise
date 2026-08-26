@@ -3,12 +3,28 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 const registry = JSON.parse(await readFile(new URL("../content/articles.json", import.meta.url), "utf8"));
+const taxonomy = JSON.parse(await readFile(new URL("../content/taxonomy.json", import.meta.url), "utf8"));
 const topics = await readFile(new URL("../content/topics.csv", import.meta.url), "utf8");
 
 test("article registry has unique titles, slugs, and canonical paths", () => {
   assert.equal(new Set(registry.map((item) => item.title.toLowerCase())).size, registry.length);
   assert.equal(new Set(registry.map((item) => item.slug)).size, registry.length);
   assert.equal(new Set(registry.map((item) => `${item.primary_category}/${item.slug}`)).size, registry.length);
+});
+
+test("article taxonomy uses canonical configured values", () => {
+  const categorySlugs = new Set(taxonomy.categories.map((category) => category.slug));
+  assert.equal(categorySlugs.size, taxonomy.categories.length);
+  for (const category of taxonomy.categories) {
+    assert.match(category.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    assert.ok(category.name && category.intro);
+  }
+  for (const article of registry) {
+    assert.ok(categorySlugs.has(article.primary_category), `${article.slug}: unknown primary category`);
+    for (const category of article.secondary_categories) assert.ok(categorySlugs.has(category), `${article.slug}: unknown secondary category ${category}`);
+    assert.equal(new Set(article.symptoms).size, article.symptoms.length, `${article.slug}: duplicate symptom values`);
+    assert.equal(new Set(article.room_or_location).size, article.room_or_location.length, `${article.slug}: duplicate location values`);
+  }
 });
 
 test("related article slugs resolve and required metadata exists", () => {

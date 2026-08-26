@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import { access, readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
+import { gzipSync } from "node:zlib";
 
 const outputDir = path.resolve("dist/client");
 const siteConfig = JSON.parse(await readFile(path.resolve("site.config.json"), "utf8"));
 const registry = JSON.parse(await readFile(path.resolve("content/articles.json"), "utf8"));
+const taxonomy = JSON.parse(await readFile(path.resolve("content/taxonomy.json"), "utf8"));
 const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
 const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
 const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
@@ -59,7 +61,10 @@ const htmlFiles = (await walk(outputDir)).filter((file) => file.endsWith(".html"
 assert.ok(htmlFiles.length >= 35, `Expected a full route export, found only ${htmlFiles.length} HTML files`);
 const referencedPaths = new Set();
 const inboundPaths = new Map();
+const indexableInboundPaths = new Map();
 const indexableMetadata = [];
+const indexableRoutePaths = new Set();
+const linkGraph = new Map();
 
 for (const file of htmlFiles) {
   const html = await readFile(file, "utf8");
@@ -76,6 +81,9 @@ for (const file of htmlFiles) {
   const relativeFile = path.relative(outputDir, file).replaceAll("\\", "/");
   const is404 = relativeFile === "404.html";
   const isSearch = relativeFile === "search/index.html";
+  const logicalRoute = relativeFile === "index.html" ? "/" : `/${relativeFile.replace(/index\.html$/, "")}`;
+  const publicRoute = `${basePath}${logicalRoute}` || "/";
+  linkGraph.set(publicRoute, new Set());
   assert.ok(title && description, `${file} is missing a title or description`);
   assert.equal(h1Count, 1, `${file} should contain exactly one H1`);
   if (is404) {
@@ -83,14 +91,24 @@ for (const file of htmlFiles) {
     assert.ok(!canonical, "404 must not inherit the homepage canonical");
   } else {
     assert.ok(canonical === siteUrl || canonical?.startsWith(`${siteUrl}/`), `${file} has a missing or off-origin canonical`);
-    if (!isSearch) indexableMetadata.push({ file, title, description, canonical });
+    if (!isSearch) {
+      indexableMetadata.push({ file, title, description, canonical });
+      indexableRoutePaths.add(publicRoute);
+    }
   }
+  assert.ok(!html.includes('"@type":"SearchAction"'), `${file} restores obsolete SearchAction schema`);
+  assert.equal(html.includes('"@type":"WebSite"'), relativeFile === "index.html", `${file} has incorrect WebSite schema placement`);
+  if (isSearch) assert.ok(/noindex/.test(html), "Search must remain noindex,follow");
   for (const match of html.matchAll(/\b(?:href|src|action)=["'](\/[^"']*)/g)) {
     const url = match[1];
     assert.ok(url === basePath || url.startsWith(`${basePath}/`), `${file} contains an unprefixed root URL: ${url}`);
     const pathname = new URL(url, "https://verify.invalid").pathname;
     referencedPaths.add(pathname);
-    if (match[0].startsWith("href")) inboundPaths.set(pathname, (inboundPaths.get(pathname) ?? 0) + 1);
+    if (match[0].startsWith("href")) {
+      inboundPaths.set(pathname, (inboundPaths.get(pathname) ?? 0) + 1);
+      if (!is404 && !isSearch) indexableInboundPaths.set(pathname, (indexableInboundPaths.get(pathname) ?? 0) + 1);
+      linkGraph.get(publicRoute).add(pathname);
+    }
   }
 }
 
@@ -105,6 +123,31 @@ for (const key of ["title", "description", "canonical"]) {
 for (const article of registry) {
   const pathname = `${basePath}/${article.primary_category}/${article.slug}/`;
   assert.ok((inboundPaths.get(pathname) ?? 0) > 0, `Published article has no crawlable inbound link: ${pathname}`);
+  assert.ok((indexableInboundPaths.get(pathname) ?? 0) > 0, `Published article has no inbound link from an indexable page: ${pathname}`);
+  const articleFile = path.join(outputDir, article.primary_category, article.slug, "index.html");
+  const articleHtml = await readFile(articleFile, "utf8");
+  for (const requiredPath of [`${basePath}/${article.primary_category}/`, `${basePath}/find-a-problem/`, `${basePath}/search/`]) {
+    assert.ok(articleHtml.includes(`href="${requiredPath}"`), `${pathname} is missing the outbound pathway ${requiredPath}`);
+  }
+  assert.ok(articleHtml.includes('"@type":"Article"'), `${pathname} is missing Article schema`);
+  assert.ok(articleHtml.includes('"@type":"BreadcrumbList"'), `${pathname} is missing BreadcrumbList schema`);
+}
+
+const homeRoute = `${basePath}/`;
+const crawlDepth = new Map([[homeRoute, 0]]);
+const crawlQueue = [homeRoute];
+while (crawlQueue.length) {
+  const current = crawlQueue.shift();
+  for (const next of linkGraph.get(current) ?? []) {
+    if (!indexableRoutePaths.has(next) || crawlDepth.has(next)) continue;
+    crawlDepth.set(next, crawlDepth.get(current) + 1);
+    crawlQueue.push(next);
+  }
+}
+for (const article of registry) {
+  const pathname = `${basePath}/${article.primary_category}/${article.slug}/`;
+  assert.ok(crawlDepth.has(pathname), `Published article is unreachable from the homepage: ${pathname}`);
+  assert.ok(crawlDepth.get(pathname) <= 4, `Published article exceeds four meaningful crawl steps: ${pathname}`);
 }
 
 for (const pathname of referencedPaths) {
@@ -137,7 +180,28 @@ if (basePath) assert.ok(!sitemap.includes(`${basePath}${basePath}/`), "Sitemap d
 assert.ok(!sitemap.includes("github.io"), "Production sitemap contains a GitHub Pages infrastructure URL");
 assert.equal((sitemap.match(/<url>/g) ?? []).length, htmlFiles.length - 2, "Sitemap should contain every indexable HTML route except search and 404");
 assert.equal((sitemap.match(/<lastmod>/g) ?? []).length, registry.length, "Only article URLs should carry verified last-modified dates");
-for (const emptyHub of ["/roofing/", "/windows-and-doors/", "/flooring/", "/pests/", "/attic-and-insulation/", "/kitchen/", "/yard-and-drainage/", "/sounds-and-smells/", "/symptoms/crack/", "/symptoms/cold/", "/symptoms/low-pressure/", "/symptoms/pest-activity/"]) {
+const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+assert.equal(new Set(sitemapLocations).size, sitemapLocations.length, "Sitemap contains duplicate URLs");
+const normalizeUrl = (value) => value.replace(/\/$/, "");
+assert.deepEqual(
+  sitemapLocations.map(normalizeUrl).sort(),
+  indexableMetadata.map((record) => normalizeUrl(record.canonical)).sort(),
+  "Sitemap must exactly match rendered indexable canonicals",
+);
+
+const categoryCounts = new Map(taxonomy.categories.map((category) => [category.slug, registry.filter((article) => article.primary_category === category.slug || article.secondary_categories.includes(category.slug)).length]));
+for (const [slug, count] of categoryCounts) {
+  const hubFile = path.join(outputDir, slug, "index.html");
+  const hubUrl = `${siteUrl}/${slug}/`;
+  if (count > 0) {
+    await access(hubFile);
+    assert.ok(sitemap.includes(hubUrl), `Populated category hub is missing from sitemap: /${slug}/`);
+  } else {
+    await assert.rejects(access(hubFile), `Empty category hub was generated: /${slug}/`);
+    assert.ok(!sitemap.includes(hubUrl), `Empty category hub should not be indexable: /${slug}/`);
+  }
+}
+for (const emptyHub of ["/symptoms/crack/", "/symptoms/cold/", "/symptoms/low-pressure/", "/symptoms/pest-activity/"]) {
   assert.ok(!sitemap.includes(`${siteUrl}${emptyHub}`), `Empty taxonomy hub should not be indexable: ${emptyHub}`);
 }
 
@@ -153,6 +217,15 @@ const stats = await stat(path.join(outputDir, "index.html"));
 assert.ok(stats.size > 1_000, "Exported index.html is unexpectedly small");
 const allFiles = await walk(outputDir);
 assert.ok(!allFiles.some((file) => file.endsWith(".map")), "Production artifact contains source maps");
+const homeScriptPaths = [...new Set([...home.matchAll(/(?:src|href)=["']([^"']+\.js)["']/g)].map((match) => new URL(match[1], "https://verify.invalid").pathname))];
+let homeInitialJsGzip = 0;
+for (const scriptPath of homeScriptPaths) {
+  const relativePath = decodeURIComponent(scriptPath.slice(basePath.length)).replace(/^\/+/, "");
+  homeInitialJsGzip += gzipSync(await readFile(path.join(outputDir, relativePath))).length;
+}
+assert.ok(homeInitialJsGzip <= 120_000, `Homepage initial JS grew to ${homeInitialJsGzip} bytes gzip; current regression ceiling is 120000 while the target remains 90000`);
+const socialCardStats = await stat(path.join(outputDir, "og.png"));
+assert.ok(socialCardStats.size <= 2_000_000, `Social card grew beyond the current 2 MB maintenance ceiling: ${socialCardStats.size}`);
 for (const article of registry.filter((item) => item.image)) {
   const imagePath = path.join(outputDir, article.image.src.replace(/^\/+/, ""));
   const imageStats = await stat(imagePath);

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { finderLocations, getFinderLocation, getFinderSymptomOptions, rankFinderArticles, searchArticles } from "../lib/discovery.mjs";
+import { finderLocations, getFinderFallbackHref, getFinderLocation, getFinderSymptomOptions, rankFinderArticles, searchArticles } from "../lib/discovery.mjs";
 
 const registry = JSON.parse(await readFile(new URL("../content/articles.json", import.meta.url), "utf8"));
 
@@ -37,6 +37,63 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
       }
     }
   }
+});
+
+test("Problem Finder representative matrix stays contextual and bounded", () => {
+  const articleSlugs = new Set(registry.map((article) => article.slug));
+  const matrix = [
+    ["yard", "drainage"],
+    ["yard", "leaking"],
+    ["yard", "pest-activity"],
+    ["yard", "smell"],
+    ["bathroom", "drainage"],
+    ["bathroom", "leaking"],
+    ["bathroom", "smell"],
+    ["bathroom", "noise"],
+    ["whole-house", "moisture"],
+    ["laundry", "appliance-behavior"],
+    ["attic", "moisture"],
+  ];
+
+  for (const [locationValue, symptomValue] of matrix) {
+    const location = getFinderLocation(locationValue);
+    const symptom = getFinderSymptomOptions(locationValue).find((item) => item.value === symptomValue);
+    assert.ok(location && symptom, `${locationValue}/${symptomValue}: configured path`);
+    const results = rankFinderArticles(registry, locationValue, symptomValue);
+    assert.ok(results.length <= 6, `${locationValue}/${symptomValue}: too many results`);
+    for (const { article } of results) {
+      assert.ok(articleSlugs.has(article.slug), `${locationValue}/${symptomValue}: invalid article reference`);
+      assert.ok(article.room_or_location.some((item) => location.locations.includes(item)), `${locationValue}/${symptomValue}: unrelated location`);
+      assert.ok(article.symptoms.some((item) => symptom.articleSymptoms.includes(item)), `${locationValue}/${symptomValue}: unrelated symptom`);
+    }
+    if (!results.length) {
+      const fallback = getFinderFallbackHref(locationValue, symptomValue);
+      assert.match(fallback, /^\/search\/\?q=\S+/);
+      assert.ok(![...articleSlugs].some((slug) => fallback.includes(`/${slug}/`)), `${locationValue}/${symptomValue}: fallback fabricated an article URL`);
+    }
+  }
+
+  assert.match(getFinderSymptomOptions("yard").find((item) => item.value === "drainage").label, /standing water/i);
+  assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
+  assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
+  assert.ok(["ac-vent-sweating", "water-dripping-from-ac-vent", "house-humid-with-ac-running"].includes(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug));
+});
+
+test("every configured Problem Finder path returns valid results or a safe search fallback", () => {
+  const slugs = new Set(registry.map((article) => article.slug));
+  for (const { value: location } of finderLocations) {
+    for (const symptom of getFinderSymptomOptions(location)) {
+      assert.doesNotThrow(() => rankFinderArticles(registry, location, symptom.value));
+      const results = rankFinderArticles(registry, location, symptom.value);
+      if (results.length) {
+        assert.ok(results.every(({ article }) => slugs.has(article.slug)));
+      } else {
+        assert.match(getFinderFallbackHref(location, symptom.value), /^\/search\/\?q=/);
+      }
+    }
+  }
+  assert.deepEqual(rankFinderArticles(registry, "not-a-location", "noise"), []);
+  assert.equal(getFinderFallbackHref("not-a-location", "noise"), "/search/?q=");
 });
 
 test("every published article is reachable through at least one Problem Finder path", () => {

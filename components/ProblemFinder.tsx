@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import { SiteLink as Link } from "@/components/SiteLink";
 import registry from "@/content/articles.json";
-import { finderLocations, getFinderLocation, getFinderSymptomOptions, rankFinderArticles } from "@/lib/discovery.mjs";
+import { finderLocations, getFinderFallbackHref, getFinderSymptomOptions, rankFinderArticles } from "@/lib/discovery.mjs";
 import { articleUrl, type Article } from "@/lib/site-data";
 
 export default function ProblemFinder() {
@@ -10,9 +10,7 @@ export default function ProblemFinder() {
   const [symptom, setSymptom] = useState("");
   const symptomOptions = useMemo(() => getFinderSymptomOptions(location), [location]);
   const matches = useMemo(() => rankFinderArticles(registry as Article[], location, symptom), [location, symptom]);
-  const locationDefinition = getFinderLocation(location);
-  const symptomDefinition = symptomOptions.find((item) => item.value === symptom);
-  const searchQuery = [locationDefinition?.label, symptomDefinition?.label].filter(Boolean).join(" ");
+  const fallbackHref = getFinderFallbackHref(location, symptom);
 
   function resetFinder() {
     setLocation("");
@@ -40,7 +38,7 @@ export default function ProblemFinder() {
       <h2>{location && symptom ? "Here are the closest guides to start with." : "Tell us what your house is doing."}</h2>
       {!location ? <p>Start with the room or area. The next choices will stay relevant to that location.</p> : !symptom ? <p>Choose the description that comes closest. You can change either selection at any time.</p> : matches.length ? <>
         <p className="finder-summary">These are reading suggestions based on your selections, not a diagnosis.</p>
-        <div className="result-list">{matches.map(({ article, locationLabel, symptomLabel }, index) => <Link href={articleUrl(article)} key={article.slug} data-analytics-event="problem_finder_result_click" data-location={location} data-symptom={symptom} data-result-slug={article.slug}>
+        <div className="result-list" data-analytics-event="problem_finder_completed" data-location={location} data-symptom={symptom} data-result-count={matches.length}>{matches.map(({ article, locationLabel, symptomLabel }, index) => <Link href={articleUrl(article)} key={article.slug} data-analytics-event="problem_finder_result_click" data-location={location} data-symptom={symptom} data-result-slug={article.slug}>
           <span className="result-kicker">{index === 0 ? "Start here" : "Possible match"} · {locationLabel} + {symptomLabel}</span>
           <strong>{article.title}</strong>
           <span>{article.description}</span>
@@ -49,7 +47,7 @@ export default function ProblemFinder() {
       </> : <div className="empty-state">
         <strong>We don’t have an exact guide for that yet.</strong>
         <p>That combination is still useful—it tells us where the library has a gap. Try another description, search the full library, or start over.</p>
-        <div className="empty-actions"><Link href={`/search/?q=${encodeURIComponent(searchQuery)}`}>Search these words</Link><button className="text-button" type="button" onClick={resetFinder}>Start over</button></div>
+        <div className="empty-actions"><Link href={fallbackHref}>Search these words</Link><button className="text-button" type="button" onClick={resetFinder}>Start over</button></div>
       </div>}
     </section>
     <p className="finder-note">This navigator offers general educational information, not a diagnosis. For smoke, fire, gas odor, a carbon monoxide alarm, sewage, structural movement, or water near electricity, leave the area when appropriate and seek qualified or emergency help.</p>

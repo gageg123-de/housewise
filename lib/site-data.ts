@@ -1,4 +1,5 @@
 import registry from "@/content/articles.json";
+import taxonomy from "@/content/taxonomy.json";
 export { siteUrl } from "@/lib/site-config";
 
 export type ContextualLink = {
@@ -62,23 +63,7 @@ export type Article = {
 };
 
 export const articles = registry as Article[];
-export const categories = [
-  { slug: "hvac", name: "HVAC", intro: "Heating, cooling, airflow, thermostat, and indoor-comfort problems." },
-  { slug: "plumbing", name: "Plumbing", intro: "Leaks, drains, toilets, water heaters, pressure, and supply questions." },
-  { slug: "electrical", name: "Electrical", intro: "Outlets, lights, switches, circuits, fans, and unusual electrical behavior." },
-  { slug: "appliances", name: "Appliances", intro: "Practical symptom guides for laundry, kitchen, and household appliances." },
-  { slug: "moisture-and-mold", name: "Moisture & Mold", intro: "Condensation, dampness, stains, musty odors, and moisture-source clues." },
-  { slug: "roofing", name: "Roofing", intro: "Roof leaks, flashing, drainage, ventilation, and visible roof symptoms." },
-  { slug: "windows-and-doors", name: "Windows & Doors", intro: "Drafts, condensation, sticking, gaps, locks, and water intrusion." },
-  { slug: "flooring", name: "Flooring", intro: "Squeaks, cracks, movement, stains, and moisture affecting floors." },
-  { slug: "pests", name: "Pests", intro: "Signs of insect and animal activity and the conditions that attract them." },
-  { slug: "attic-and-insulation", name: "Attic & Insulation", intro: "Heat, moisture, ventilation, insulation, and attic warning signs." },
-  { slug: "garage", name: "Garage", intro: "Garage-specific moisture, odor, door, slab, and equipment problems." },
-  { slug: "bathroom", name: "Bathroom", intro: "Fixtures, ventilation, moisture, drains, tile, and bathroom surfaces." },
-  { slug: "kitchen", name: "Kitchen", intro: "Sink, appliance, ventilation, cabinet, and kitchen plumbing problems." },
-  { slug: "yard-and-drainage", name: "Yard & Drainage", intro: "Standing water, grading, downspouts, erosion, and exterior drainage." },
-  { slug: "sounds-and-smells", name: "Sounds & Smells", intro: "Start with the buzz, hum, whistle, mustiness, or other clue you notice." },
-];
+export const categories = taxonomy.categories;
 
 export const symptoms = [...new Set(articles.flatMap((article) => article.symptoms))].sort();
 
