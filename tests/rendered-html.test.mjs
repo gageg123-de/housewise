@@ -35,3 +35,20 @@ test("AC vent dripping guide renders long-form content, metadata, and contextual
   assert.match(html, /"@type":"Article"/);
   assert.doesNotMatch(html, /FAQPage|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("house humidity guide renders article metadata, cluster links, and its original visual", async () => {
+  const response = await render("/hvac/house-humid-with-ac-running"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My House Humid With the AC Running\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/house-humid-with-ac-running\//);
+  assert.match(html, /What does the AC normally do to humidity\?/);
+  assert.match(html, /href="\/hvac\/ac-vent-sweating\/"/);
+  assert.match(html, /href="\/hvac\/water-dripping-from-ac-vent\/"/);
+  assert.match(html, /src="\/images\/how-ac-removes-indoor-humidity\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/how-ac-removes-indoor-humidity\.webp/);
+  assert.doesNotMatch(html, /FAQPage|github\.io|chatgpt\.site|og\.png/);
+});

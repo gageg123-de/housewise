@@ -32,10 +32,31 @@ test("published AC vent dripping guide is distinct and complete", () => {
   assert.ok(dripping.body_sections.some((section) => section.table));
   assert.ok(dripping.sources.every((source) => source.url.startsWith("https://")));
   assert.ok(dripping.related_articles.includes("ac-vent-sweating"));
-  assert.equal(sweating.contextual_link.href, "/hvac/water-dripping-from-ac-vent/");
+  assert.ok(sweating.contextual_links.some((link) => link.href === "/hvac/water-dripping-from-ac-vent/"));
   assert.ok(dripping.search_keywords.includes("why is water dripping from my ac vent"));
   assert.ok(dripping.room_or_location.includes("living-area"));
   assert.ok(dripping.symptoms.includes("leaking"));
   assert.match(topics, /^Water dripping from AC vent,why is water dripping from my ac vent,hvac,leaking,living-area,diagnostic,published,high,\/hvac\/water-dripping-from-ac-vent\//m);
-  for (const plannedTopic of ["AC runs but house stays humid", "AC ductwork sweating in attic", "Water around indoor AC unit", "AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
+  for (const plannedTopic of ["AC ductwork sweating in attic", "Water around indoor AC unit", "AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
+});
+
+test("house humidity guide is distinct, linked, sourced, and image-ready", () => {
+  const humidity = registry.find((item) => item.slug === "house-humid-with-ac-running");
+  const sweating = registry.find((item) => item.slug === "ac-vent-sweating");
+  const dripping = registry.find((item) => item.slug === "water-dripping-from-ac-vent");
+  assert.ok(humidity);
+  assert.equal(humidity.primary_category, "hvac");
+  assert.ok(humidity.secondary_categories.includes("moisture-and-mold"));
+  assert.notEqual(humidity.target_search_intent, sweating.target_search_intent);
+  assert.notEqual(humidity.target_search_intent, dripping.target_search_intent);
+  assert.ok(humidity.body_sections.some((section) => section.id === "how-ac-removes-humidity"));
+  assert.ok(humidity.body_sections.some((section) => section.id === "common-reasons" && section.causes.length === 8));
+  assert.ok(humidity.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(humidity.image.src, "/images/how-ac-removes-indoor-humidity.webp");
+  assert.ok(humidity.image.width > 0 && humidity.image.height > 0 && humidity.image.alt && humidity.image.caption);
+  assert.ok(humidity.related_articles.includes("ac-vent-sweating"));
+  assert.ok(humidity.related_articles.includes("water-dripping-from-ac-vent"));
+  assert.ok(sweating.contextual_links.some((link) => link.href === "/hvac/house-humid-with-ac-running/"));
+  assert.ok(dripping.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/house-humid-with-ac-running/")));
+  assert.match(topics, /^AC runs but house stays humid,why is my house humid with the ac running,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/house-humid-with-ac-running\//m);
 });

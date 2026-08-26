@@ -12,6 +12,8 @@ Complete infrastructure, validate the publishing checklist, establish five stron
 
 Use the first meaningful Search Console query data to improve titles, direct answers, and internal paths. Do not chase isolated impressions with duplicate pages.
 
+Visual-enhancement backlog: evaluate the nine pre-standard guides published through 2026-08-25 for useful, original explanatory media. Prioritize mechanism or comparison visuals where they materially improve understanding; do not add decorative images or publish a visual that cannot pass the accuracy procedure in `AGENTS.md`. The humidity-with-AC guide is the first article implemented under that standard.
+
 ## Phase 3 — 100 articles
 
 Evaluate organic traction, content quality, crawl behavior, and which symptom/system pathways create deeper sessions.

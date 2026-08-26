@@ -38,7 +38,7 @@ tests/               build/render and content-integrity checks
 
 ## Content schema
 
-Each registry record supports: `title`, `slug`, `description`, `primary_category`, `secondary_categories`, `symptoms`, `room_or_location`, `system`, `content_type`, `published_date`, `updated_date`, nullable `reviewed_date`, `author`, `reading_time`, `related_articles`, `featured_status`, `search_keywords`, `target_search_intent`, `direct_answer`, `likely_causes`, `safe_checks`, and `professional_help`. The registry is authoritative; do not duplicate metadata in components.
+Each registry record supports: `title`, `slug`, `description`, `primary_category`, `secondary_categories`, `symptoms`, `room_or_location`, `system`, `content_type`, `published_date`, `updated_date`, nullable `reviewed_date`, `author`, `reading_time`, `related_articles`, `featured_status`, `search_keywords`, `target_search_intent`, `direct_answer`, `likely_causes`, `safe_checks`, `professional_help`, and an optional original `image` record with source, dimensions, alt text, caption, visual type, and placement. The registry is authoritative; do not duplicate metadata in components.
 
 Allowed content types: symptom guide, comparison/explanation guide, diagnostic guide, maintenance guide, safety/reference guide, and interactive tool. Template sections are guidance, not mandatory identical phrasing.
 
@@ -88,6 +88,27 @@ Use reusable callout states: information, caution, and stop/professional evaluat
 ## Accessibility
 
 Use semantic HTML, explicit form labels, keyboard-operable controls, a skip link, visible `:focus-visible`, at least 44px touch targets for primary controls, meaningful link text, adequate contrast, alt text for informative images, and empty alt text for decorative images. Respect reduced motion. Expandable controls must expose state with `aria-expanded` and associate controlled regions.
+
+## Article visuals and visual accuracy
+
+Every substantive troubleshooting or reference article should contain at least one useful original visual when an accurate visual can materially improve understanding. Its purpose must be to clarify the symptom, explain a physical mechanism, show relevant component relationships, distinguish similar problems, improve comprehension, or provide genuinely useful original media. Never add an image merely to satisfy a quota. If an accurate and useful visual cannot be produced confidently, publishing without an image is preferable to publishing a misleading one; document the exception in the publication notes or relevant backlog.
+
+Visual accuracy is mandatory. No article image may communicate a mechanical, electrical, plumbing, HVAC, structural, roofing, appliance, moisture, pest, or other home-system relationship that is known to be inaccurate or materially misleading. Before acceptance, compare the visual with the article's verified factual explanation and authoritative references where appropriate. An image must not invent components or impossible connections; reverse airflow, water flow, condensate, or refrigerant paths; misrepresent electrical relationships; imply that one visible condition proves a diagnosis; normalize unsafe homeowner work or an obviously unsafe/code-violating installation; mislabel parts; exaggerate damage; place water, mold, electricity, gas, structural damage, pests, or another hazard inconsistently with the explanation; contradict the article; or create false diagnostic certainty. Describe and caption a conceptual illustration as conceptual rather than as a literal equipment schematic.
+
+For every future article visual:
+
+1. Identify the exact concept it must communicate.
+2. Classify it as documentary/representational, conceptual, or diagrammatic.
+3. Compare it with the article's verified technical claims.
+4. Check component relationships, directions, and labels.
+5. Remove unnecessary detail that creates opportunities for inaccuracy.
+6. Confirm it does not imply diagnostic certainty.
+7. Confirm the alt text describes what the image actually shows.
+8. Confirm the surrounding text makes no claim unsupported by the visual.
+9. Prefer a simpler accurate visual to a complicated questionable one.
+10. Record important limitations when appropriate.
+
+Article visuals should be original, high resolution, clean, professional, editorial rather than advertisement-like, consistent with the cream/green brand system, useful on desktop and mobile, free from unnecessary embedded text, watermarks, and stock-photo clichés, and appropriately compressed for the web. Avoid generic confused homeowners, random technicians, suburban houses, wrench poses, and meaningless equipment close-ups unless they materially improve the explanation. Use explicit dimensions, responsive sizing, modern formats where supported, lazy loading below the fold, a descriptive filename, factual alt text, and a concise caption. Accuracy always outranks aesthetics.
 
 ## Performance budget
 

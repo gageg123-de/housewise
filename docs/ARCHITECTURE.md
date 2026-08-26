@@ -4,6 +4,8 @@ My House Is Doing What? uses Vinext with React server components at build time a
 
 `content/articles.json` is the canonical publishing registry. `lib/site-data.ts` provides typed lookup, URL, category, and display helpers. One dynamic article template renders every record. Category and symptom hubs query the same data, while search and the finder load the registry in the browser. Adding content therefore does not require duplicating page files.
 
+Optional article visuals are also registry-driven. The image record stores the public path, intrinsic dimensions, factual alt text, conceptual/diagrammatic/representational classification, caption, and the body section after which the visual renders. Static files live under `public/images/`; article metadata reuses the same primary visual with an absolute production URL.
+
 Routes: `/`, `/find-a-problem/`, `/search/`, `/{category}/`, `/{category}/{article-slug}/`, `/symptoms/{symptom}/`, `/sitemap.xml`, `/robots.txt`, and the framework 404.
 
 Client-side registry loading is acceptable for the starter set. Before the registry becomes large enough to affect transfer or parse time, generate a compact search index during build and lazy-load it only on finder/search routes. Keep authoritative content server-side.

@@ -23,6 +23,7 @@ const requiredFiles = [
   "CNAME",
   "favicon.svg",
   "og.png",
+  "images/how-ac-removes-indoor-humidity.webp",
   "robots.txt",
   "sitemap.xml",
   "find-a-problem/index.html",
@@ -36,6 +37,7 @@ const requiredFiles = [
   "plumbing/index.html",
   "hvac/ac-vent-sweating/index.html",
   "hvac/water-dripping-from-ac-vent/index.html",
+  "hvac/house-humid-with-ac-running/index.html",
   "plumbing/toilet-bubbles-when-washer-drains/index.html",
 ];
 
@@ -93,7 +95,7 @@ assert.match(home, new RegExp(`action=["']${basePath.replace(/[.*+?^${}()|[\]\\]
 
 const sitemap = await readFile(path.join(outputDir, "sitemap.xml"), "utf8");
 for (const staleReference of staleProductionReferences) assert.doesNotMatch(sitemap, staleReference);
-for (const route of ["/", "/hvac/", "/plumbing/", "/hvac/ac-vent-sweating/", "/hvac/water-dripping-from-ac-vent/", "/plumbing/toilet-bubbles-when-washer-drains/"]) {
+for (const route of ["/", "/hvac/", "/plumbing/", "/hvac/ac-vent-sweating/", "/hvac/water-dripping-from-ac-vent/", "/hvac/house-humid-with-ac-running/", "/plumbing/toilet-bubbles-when-washer-drains/"]) {
   assert.ok(sitemap.includes(`${siteUrl}${route}`), `Sitemap is missing ${siteUrl}${route}`);
 }
 if (basePath) assert.ok(!sitemap.includes(`${basePath}${basePath}/`), "Sitemap duplicates the base path");

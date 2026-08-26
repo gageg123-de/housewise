@@ -7,13 +7,14 @@ const siteConfig = JSON.parse(await readFile(path.resolve("site.config.json"), "
 const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? siteConfig.basePath;
 const normalizedBasePath = configuredBasePath.replace(/^\/+|\/+$/g, "");
 const basePath = normalizedBasePath ? `/${normalizedBasePath}` : "";
-const port = Number(process.env.PORT ?? 4173);
+const port = Number(process.env.PAGES_PREVIEW_PORT ?? process.env.PORT ?? 4173);
 const mimeTypes = new Map([
   [".css", "text/css; charset=utf-8"],
   [".html", "text/html; charset=utf-8"],
   [".js", "text/javascript; charset=utf-8"],
   [".json", "application/json; charset=utf-8"],
   [".png", "image/png"],
+  [".webp", "image/webp"],
   [".svg", "image/svg+xml"],
   [".txt", "text/plain; charset=utf-8"],
   [".xml", "application/xml; charset=utf-8"],

@@ -16,8 +16,19 @@ export type ArticleSection = {
   subsections?: { heading: string; paragraphs: string[] }[];
   bullets?: string[];
   link?: ContextualLink;
+  links?: ContextualLink[];
   table?: { headers: string[]; rows: string[][] };
   callout?: { title: string; text: string };
+};
+
+export type ArticleImage = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption: string;
+  kind: "conceptual" | "diagrammatic" | "representational";
+  after_section: string;
 };
 
 export type Article = {
@@ -45,6 +56,8 @@ export type Article = {
   related_articles: string[];
   body_sections?: ArticleSection[];
   contextual_link?: ContextualLink;
+  contextual_links?: ContextualLink[];
+  image?: ArticleImage;
   sources?: { title: string; publisher: string; url: string }[];
 };
 

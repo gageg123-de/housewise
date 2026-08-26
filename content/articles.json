@@ -2,14 +2,17 @@
   {
     "title": "Why Is My AC Vent Sweating?", "slug": "ac-vent-sweating", "description": "Condensation on an AC vent usually means humid air is meeting a cold vent surface. Learn the common causes and what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["whole-house", "attic"], "system": "hvac", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
     "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent"], "target_search_intent": "Explain why condensation forms on an AC supply vent and help the reader distinguish humidity, insulation, and airflow causes.",
     "direct_answer": "An AC vent usually sweats when warm, humid air reaches the cold metal register or nearby duct. High indoor humidity, an air leak around the boot, weak insulation, or unusually cold airflow can all contribute.",
     "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
     "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
     "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
-    "related_articles": ["water-dripping-from-ac-vent", "garage-smells-musty"],
-    "contextual_link": { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." }
+    "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "garage-smells-musty"],
+    "contextual_links": [
+      { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." },
+      { "before": "If several vents are wet or the whole house feels clammy, see ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for broader causes of elevated indoor humidity while cooling." }
+    ]
   },
   {
     "title": "Why Is Water Dripping From My AC Vent?", "slug": "water-dripping-from-ac-vent", "description": "Water dripping from an AC vent may come from condensation, humidity, insulation, drainage trouble, or another leak. Learn what to check safely.",
@@ -20,7 +23,7 @@
     "likely_causes": ["High indoor humidity", "Poor insulation around the duct boot", "Air leakage around the vent boot", "Restricted HVAC airflow", "Condensate drain or drain-pan trouble", "A roof, plumbing, or attic leak near the vent"],
     "safe_checks": ["Note whether the water appears only while the AC runs.", "Inspect the visible register and nearby ceiling for moisture, staining, or softness.", "Check whether the HVAC filter is obviously dirty without opening equipment.", "Compare one affected vent with other vents and note indoor humidity if a meter is available.", "Observe whether water begins on the register or comes through the ceiling around it."],
     "professional_help": "Arrange an HVAC evaluation when dripping persists, several vents are affected, condensate drainage looks abnormal, water is present around the air handler, or the source remains unclear. A roofer or plumber may be the better first call when rain or fixture use matches the leak. Stop and get prompt help if water is near electrical equipment or exposed wiring.",
-    "related_articles": ["ac-vent-sweating"],
+    "related_articles": ["ac-vent-sweating", "house-humid-with-ac-running"],
     "body_sections": [
       {
         "id": "is-dripping-normal",
@@ -49,7 +52,10 @@
         "paragraphs": [
           "Sweating means moisture is forming on the vent surface because humid air is meeting cold metal. Dripping means enough moisture has accumulated to form falling drops, or water is arriving at the vent from another source. A sweating vent can eventually drip, but visible dripping broadens the investigation because condensate drainage, roofing, and plumbing also need consideration."
         ],
-        "link": { "before": "If the moisture stays mainly on the face or edges of the register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for a closer look at surface condensation, humidity, insulation, and air leakage." }
+        "link": { "before": "If the moisture stays mainly on the face or edges of the register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for a closer look at surface condensation, humidity, insulation, and air leakage." },
+        "links": [
+          { "before": "When several vents are involved or the rooms feel damp even while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " to evaluate the broader indoor-humidity pattern." }
+        ]
       },
       {
         "id": "one-or-several-vents",
@@ -115,6 +121,109 @@
       { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
       { "title": "Mold Course Chapter 2: Humidity and Condensation", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/mold-course-chapter-2" },
       { "title": "Heating and Cooling Maintenance Checklist", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist" }
+    ]
+  },
+  {
+    "title": "Why Is My House Humid With the AC Running?", "slug": "house-humid-with-ac-running", "description": "If your house stays humid with the AC running, short cycles, fan settings, outdoor air, duct leaks, airflow, or moisture sources may be involved.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "heat"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-25", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["why is my house humid with the ac running", "ac running but house humid", "house feels sticky with ac on", "indoor humidity high with air conditioner", "ac cools but does not lower humidity"],
+    "target_search_intent": "Explain why a home can feel humid or measure high relative humidity while the air conditioner is running and cooling, provide safe homeowner observations, and preserve a separate future intent for deeper HVAC-performance diagnosis.",
+    "direct_answer": "An air conditioner can lower the temperature without removing enough moisture to make the house feel dry. Short cooling cycles, oversized equipment, a thermostat fan set to ON, humid outdoor air entering the home, duct leakage, restricted airflow, heavy indoor moisture loads, or an HVAC performance or condensate problem may be involved. No single cause fits every house, so compare measured humidity, cycle timing, weather, and room-to-room patterns before drawing a conclusion.",
+    "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
+    "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
+    "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "garage-smells-musty"],
+    "image": {
+      "src": "/images/how-ac-removes-indoor-humidity.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway showing humid indoor air moving across a cold cooling coil, moisture collecting and draining below the coil, and cooler drier air returning to the room.",
+      "caption": "Conceptual illustration: During cooling, indoor air passes across a cold evaporator coil, where heat is removed and water vapor can condense before conditioned air returns to the home. Cooling the air does not always mean enough moisture has been removed.",
+      "kind": "conceptual",
+      "after_section": "how-ac-removes-humidity"
+    },
+    "body_sections": [
+      {
+        "id": "how-ac-removes-humidity",
+        "heading": "What does the AC normally do to humidity?",
+        "paragraphs": [
+          "During cooling, the blower moves indoor air across the cold evaporator coil. The coil removes heat. When the coil surface is below the air's dew point, water vapor can also condense on it, much like moisture forming on a cold glass. That water collects in the equipment's drainage arrangement and leaves through the condensate drain, while cooler, drier air returns to the rooms.",
+          "Temperature removal and moisture removal are related, but they are not identical. The thermostat normally responds to temperature, not to how clammy the air feels. A house can reach the selected temperature before the system has had enough moisture-removal opportunity to handle the current humidity load. That is why a home can feel cool and damp at the same time."
+        ]
+      },
+      {
+        "id": "common-reasons",
+        "heading": "Common reasons the house still feels humid",
+        "paragraphs": ["These possibilities often overlap. A humidity reading and a repeatable operating pattern are more useful than assuming the largest or most expensive problem first."],
+        "causes": [
+          { "heading": "The AC is short cycling", "text": "A cooling cycle needs time for the coil to get cold, collect moisture, and let condensate drain away. If the system turns on and off after only brief runs, it may cool the thermostat area without removing as much moisture as expected. Short cycling is a symptom with several possible causes, including control, airflow, equipment, and sizing issues; cycle length alone does not identify which one applies." },
+          { "heading": "The system may be oversized", "text": "An air conditioner with more cooling capacity than the home needs can sometimes satisfy the thermostat quickly and stop. ENERGY STAR guidance notes that oversized equipment may cycle too frequently and provide poorer humidity control. Proper sizing requires a load calculation and inspection; a fast cycle does not prove that the equipment is oversized, especially during mild weather." },
+          { "heading": "The thermostat fan is set to ON", "text": "AUTO normally runs the indoor blower with a heating or cooling call. ON keeps the blower moving air continuously. In some systems and humid conditions, continuing to blow air across a wet evaporator coil after the compressor stops can return some of that moisture to the air stream. Checking the setting is reasonable; changing equipment control-board delays or internal wiring is not a homeowner task." },
+          { "heading": "Humid outdoor air is entering the home", "text": "Outdoor air comes in through open doors and windows, intended ventilation, and unintended leaks around the building enclosure. Connections to a humid attic, crawlspace, garage, or wall cavity can add moisture too. On very humid days, the incoming moisture load may be larger even though the AC keeps the temperature under control." },
+          { "heading": "Duct leakage is affecting comfort", "text": "Leaky return ducts in an attic or crawlspace may pull hot, humid air toward the system. Supply leakage can lose conditioned air before it reaches the rooms and may contribute to uneven comfort. The effect depends on duct location, pressure, leakage, and climate, so visible gaps or uncomfortable rooms are clues—not proof of a specific moisture path." },
+          { "heading": "Airflow is restricted", "text": "A dirty filter, blocked return, closed or obstructed supply registers, a dirty coil, or a duct problem can reduce airflow. That can alter coil temperature and system operation, and severe restriction can contribute to icing or poor performance. A dirty filter is an appropriate first check, but it should not be treated as a complete diagnosis of high humidity." },
+          { "heading": "The home has a large moisture load", "text": "Showers, cooking, damp laundry, many occupants, unvented or poorly vented moisture-producing appliances, wet building materials, and water intrusion all add moisture. A damp basement or crawlspace can also influence the living space. If humidity rises after particular activities or in certain weather, the source may be partly outside the cooling equipment." },
+          { "heading": "The HVAC system has a performance or maintenance issue", "text": "Coil condition, airflow setup, refrigerant or system performance, controls, and condensate drainage can affect cooling and moisture removal. A blocked drain does not automatically make the whole house humid, but standing water, overflow, or abnormal drainage is a reason for service. Refrigerant and internal equipment checks belong to a qualified HVAC technician." }
+        ]
+      },
+      {
+        "id": "measure-or-feel",
+        "heading": "Is the house actually humid, or does it just feel warm and sticky?",
+        "paragraphs": [
+          "Comfort depends on temperature, relative humidity, air movement, clothing, and activity. A room with weak air circulation may feel sticky even when the humidity is not unusually high, while cool air with elevated moisture can feel clammy. One thermostat reading cannot describe every room.",
+          "A basic digital hygrometer gives you an observation instead of a guess. Place it away from a supply vent, exterior door, shower, stove, or direct sunlight, and give it time to stabilize. Compare readings in the problem area and a more comfortable room. Consumer meters vary, so look for the pattern over several hours or days rather than treating one decimal point as exact."
+        ]
+      },
+      {
+        "id": "humidity-guidance",
+        "heading": "What indoor humidity level is reasonable?",
+        "paragraphs": [
+          "There is no single perfect percentage for every home, season, or climate. The U.S. Environmental Protection Agency advises keeping indoor relative humidity below 60 percent when possible and often cites 30 to 50 percent as an ideal range. Those figures are guidance for moisture control, not a guarantee of comfort or a diagnosis of equipment condition.",
+          "If readings remain around or above 60 percent for long periods, look for the pattern and the moisture source. Brief changes after a shower or an open door are different from whole-house readings that stay elevated through repeated cooling cycles. Avoid continually lowering the thermostat just to chase humidity; the house may become colder without resolving the moisture source or control problem."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "paragraphs": ["Start with settings and observations that do not require opening the equipment. Write down what changes with weather, cooling operation, and household activity."],
+        "bullets": [
+          "Check whether the thermostat fan is set to AUTO or continuous ON, and use the equipment instructions before changing unfamiliar modes.",
+          "Inspect the visible filter and replace it according to the manufacturer's directions if it is clearly dirty or overdue.",
+          "Confirm return grilles and supply registers are not covered by furniture, rugs, curtains, or stored items.",
+          "Time several cooling cycles. Note very brief runs, long off periods, and whether the thermostat reaches its setting quickly.",
+          "Use a hygrometer to compare rooms and record humidity, temperature, outdoor weather, and time of day.",
+          "Notice whether humidity rises after showers, cooking, clothes drying, floor cleaning, or frequent door opening.",
+          "From a safe, accessible location, look for obvious water around the indoor AC unit or a visible drain termination; do not remove panels or clear internal components.",
+          "Note whether upper floors, rooms over a crawlspace, or rooms near an attic connection feel consistently worse."
+        ],
+        "callout": { "title": "Keep HVAC checks observational", "text": "Do not open electrical cabinets, handle refrigerant, dismantle the air handler, enter an unsafe attic or crawlspace, work around energized components, or climb onto a roof. Keep away from wet electrical equipment and arrange prompt service if water is near wiring." }
+      },
+      {
+        "id": "humidity-and-wet-vents",
+        "heading": "How high humidity relates to wet AC vents",
+        "paragraphs": ["Elevated room humidity gives water vapor more opportunity to condense when it contacts a cold register or duct boot. That connection can explain why several vents become damp on humid days, but a wet vent can also involve local insulation, air leakage, drainage, roof, or plumbing conditions."],
+        "links": [
+          { "before": "If moisture is mainly beading on the metal register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to focus on surface condensation, the boot, insulation, and nearby air leakage." },
+          { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." }
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When professional evaluation may be appropriate",
+        "paragraphs": [
+          "Call an HVAC technician when humidity remains elevated through normal cooling, cycles are repeatedly very short, airflow is weak or uneven, the system is icing, condensate drainage appears abnormal, water is present near the air handler, or comfort does not improve despite reasonable settings and moisture control. A technician can measure airflow, temperature and humidity changes, equipment operation, refrigerant-system performance, controls, drainage, and duct conditions.",
+          "A building-performance professional may be useful when humid outdoor air, duct leakage, attic or crawlspace connections, or enclosure leakage appears central. If there is a plumbing or roof leak, use the trade that matches the evidence. Persistent dampness, staining, or musty odor deserves attention even if the AC still reaches the thermostat setting.",
+          "Seek prompt help if water is near electrical components, the source cannot be identified, or moisture is damaging drywall, insulation, flooring, or furnishings. The goal is to find the moisture path—not to force a colder thermostat setting until the symptom is masked."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
+      { "title": "Energy Saver 101: Home Cooling", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/sites/prod/files/2014/06/f16/HomeCooling101.pdf" },
+      { "title": "Right-Sized Air Conditioners", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/ia/home_improvement/home_sealing/RightSized_AirCondFS_2005.pdf" },
+      { "title": "Building America Best Practices Series: 40% Whole-House Energy Savings in the Mixed-Humid Climate", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/eere/buildings/articles/building-america-best-practices-series-volume-16-40-whole-house-energy" },
+      { "title": "How ENERGY STAR Verified HVAC Installation Works", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/hvac-quality-installation/how-esvi-works" }
     ]
   },
   {
