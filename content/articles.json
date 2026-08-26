@@ -2,28 +2,29 @@
   {
     "title": "Why Is My AC Vent Sweating?", "slug": "ac-vent-sweating", "description": "Condensation on an AC vent usually means humid air is meeting a cold vent surface. Learn the common causes and what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["whole-house", "attic"], "system": "hvac", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
     "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent"], "target_search_intent": "Explain why condensation forms on an AC supply vent and help the reader distinguish humidity, insulation, and airflow causes.",
     "direct_answer": "An AC vent usually sweats when warm, humid air reaches the cold metal register or nearby duct. High indoor humidity, an air leak around the boot, weak insulation, or unusually cold airflow can all contribute.",
     "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
     "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
     "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
-    "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "garage-smells-musty"],
+    "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic"],
     "contextual_links": [
       { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." },
-      { "before": "If several vents are wet or the whole house feels clammy, see ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for broader causes of elevated indoor humidity while cooling." }
+      { "before": "If several vents are wet or the whole house feels clammy, see ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for broader causes of elevated indoor humidity while cooling." },
+      { "before": "If the wet surface is the duct itself in an attic rather than the room-side register, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to focus on attic humidity, duct insulation, and the outer jacket." }
     ]
   },
   {
     "title": "Why Is Water Dripping From My AC Vent?", "slug": "water-dripping-from-ac-vent", "description": "Water dripping from an AC vent may come from condensation, humidity, insulation, drainage trouble, or another leak. Learn what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture", "discoloration"], "room_or_location": ["living-area", "bedroom", "whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": true,
     "search_keywords": ["why is water dripping from my ac vent", "water dripping from air vent", "ceiling vent dripping water", "ac register leaking water", "water coming from hvac vent"], "target_search_intent": "Help a homeowner distinguish actual water dripping from an AC supply vent from surface sweating, identify plausible HVAC and non-HVAC sources, perform safe observations, and choose the right professional when needed.",
     "direct_answer": "Water dripping from an AC vent can be condensation forming on cold metal, especially when indoor humidity is high or insulation around the duct boot is missing or damaged. Humid air leaking around the boot, restricted airflow that contributes to colder surfaces, or a condensate drain problem may also be involved. Sometimes the water comes from somewhere else, such as a roof or plumbing leak. The timing, location, and number of affected vents help narrow the possibilities.",
     "likely_causes": ["High indoor humidity", "Poor insulation around the duct boot", "Air leakage around the vent boot", "Restricted HVAC airflow", "Condensate drain or drain-pan trouble", "A roof, plumbing, or attic leak near the vent"],
     "safe_checks": ["Note whether the water appears only while the AC runs.", "Inspect the visible register and nearby ceiling for moisture, staining, or softness.", "Check whether the HVAC filter is obviously dirty without opening equipment.", "Compare one affected vent with other vents and note indoor humidity if a meter is available.", "Observe whether water begins on the register or comes through the ceiling around it."],
     "professional_help": "Arrange an HVAC evaluation when dripping persists, several vents are affected, condensate drainage looks abnormal, water is present around the air handler, or the source remains unclear. A roofer or plumber may be the better first call when rain or fixture use matches the leak. Stop and get prompt help if water is near electrical equipment or exposed wiring.",
-    "related_articles": ["ac-vent-sweating", "house-humid-with-ac-running"],
+    "related_articles": ["ac-vent-sweating", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic"],
     "body_sections": [
       {
         "id": "is-dripping-normal",
@@ -31,7 +32,8 @@
         "paragraphs": [
           "A properly operating supply vent generally should not drip water into the room. A thin film of moisture may appear briefly on a cold metal register during very humid conditions, but repeated drops, a wet ceiling, or water that returns every cooling cycle deserves attention.",
           "The first useful question is where the water starts. Moisture that beads across the register while the AC runs is more consistent with condensation. Water emerging through a seam, soaking the drywall, appearing after rain, or showing up when the AC is off suggests that another source may be involved. That pattern is a clue, not a diagnosis."
-        ]
+        ],
+        "link": { "before": "If the moisture is visible on the outside of duct runs in the attic, see ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for the different role of attic air, duct insulation, and the outer jacket." }
       },
       {
         "id": "most-likely-causes",
@@ -126,14 +128,14 @@
   {
     "title": "Why Is My House Humid With the AC Running?", "slug": "house-humid-with-ac-running", "description": "If your house stays humid with the AC running, short cycles, fan settings, outdoor air, duct leaks, airflow, or moisture sources may be involved.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "heat"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my house humid with the ac running", "ac running but house humid", "house feels sticky with ac on", "indoor humidity high with air conditioner", "ac cools but does not lower humidity"],
     "target_search_intent": "Explain why a home can feel humid or measure high relative humidity while the air conditioner is running and cooling, provide safe homeowner observations, and preserve a separate future intent for deeper HVAC-performance diagnosis.",
     "direct_answer": "An air conditioner can lower the temperature without removing enough moisture to make the house feel dry. Short cooling cycles, oversized equipment, a thermostat fan set to ON, humid outdoor air entering the home, duct leakage, restricted airflow, heavy indoor moisture loads, or an HVAC performance or condensate problem may be involved. No single cause fits every house, so compare measured humidity, cycle timing, weather, and room-to-room patterns before drawing a conclusion.",
     "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
     "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
     "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
-    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "garage-smells-musty"],
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic"],
     "image": {
       "src": "/images/how-ac-removes-indoor-humidity.webp",
       "width": 1536,
@@ -205,7 +207,8 @@
         "paragraphs": ["Elevated room humidity gives water vapor more opportunity to condense when it contacts a cold register or duct boot. That connection can explain why several vents become damp on humid days, but a wet vent can also involve local insulation, air leakage, drainage, roof, or plumbing conditions."],
         "links": [
           { "before": "If moisture is mainly beading on the metal register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to focus on surface condensation, the boot, insulation, and nearby air leakage." },
-          { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." }
+          { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." },
+          { "before": "If moisture is collecting on the outside of duct runs in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to examine the attic dew-point, insulation, jacket, and air-leakage pattern." }
         ]
       },
       {
@@ -224,6 +227,121 @@
       { "title": "Right-Sized Air Conditioners", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/ia/home_improvement/home_sealing/RightSized_AirCondFS_2005.pdf" },
       { "title": "Building America Best Practices Series: 40% Whole-House Energy Savings in the Mixed-Humid Climate", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/eere/buildings/articles/building-america-best-practices-series-volume-16-40-whole-house-energy" },
       { "title": "How ENERGY STAR Verified HVAC Installation Works", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/hvac-quality-installation/how-esvi-works" }
+    ]
+  },
+  {
+    "title": "Why Is My AC Ductwork Sweating in the Attic?", "slug": "ac-ductwork-sweating-in-attic", "description": "Attic AC ducts sweat when humid air reaches a surface below its dew point. Learn how insulation, duct leakage, and other water sources fit in.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold", "attic-and-insulation"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["attic"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-26", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["why is my ac ductwork sweating in the attic", "attic duct condensation", "sweating ductwork", "condensation on ac ducts", "wet duct insulation", "hvac ducts sweating in attic"],
+    "target_search_intent": "Explain why condensation forms on the exterior of HVAC ductwork in an attic, distinguish duct sweating from HVAC drainage, roof, and plumbing leaks, and help a homeowner make safe observations before choosing the right professional.",
+    "direct_answer": "AC ductwork in an attic usually sweats because the duct or its outer covering is cold enough to fall below the dew point of the surrounding humid air. Water vapor then condenses on the exterior as liquid droplets. High attic humidity, missing or damaged insulation, a compromised outer jacket, and gaps at duct joints or supports can contribute. That does not automatically mean water is leaking from inside the duct, and water near a duct can also come from an HVAC drain, roof, or plumbing source.",
+    "likely_causes": ["High attic humidity", "Missing, damaged, compressed, or inadequate insulation", "A compromised outer jacket or vapor-retarding layer", "Duct or connection air leakage", "A very cold exterior duct surface", "Gaps at joints, transitions, boots, or supports"],
+    "safe_checks": ["Note whether moisture appears during cooling operation and whether it is widespread or localized.", "From a safely accessible location, observe whether droplets cover the duct exterior or arrive from above or nearby.", "Look for obvious jacket tears, crushed insulation, wet insulation, or gaps without touching or cutting the duct.", "Check ceilings below the area for staining, softness, or peeling paint.", "Measure indoor humidity with a hygrometer and record weather, timing, and affected locations.", "Check the HVAC filter if it is safely accessible and photograph the pattern for a professional."],
+    "professional_help": "Arrange HVAC evaluation when attic duct condensation is repeated or widespread, insulation is saturated or damaged, duct leakage is suspected, ceiling staining recurs, or the system has airflow or performance problems. Use a roofer when the pattern follows rain and a plumber when it follows nearby fixture or pipe use. Keep away from wet electrical equipment and get prompt help if water is approaching wiring or unstable ceiling material.",
+    "related_articles": ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent"],
+    "image": {
+      "src": "/images/attic-ac-duct-condensation.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual attic cutaway showing cold air inside an insulated AC duct and condensation droplets forming on its exterior where humid attic air reaches a cold surface.",
+      "caption": "Conceptual illustration: Humid attic air can condense on a duct exterior that is below the air's dew point. Insulation and an intact outer jacket help separate the cold duct from the surrounding attic air.",
+      "kind": "conceptual",
+      "after_section": "why-attic-ducts-sweat"
+    },
+    "body_sections": [
+      {
+        "id": "why-attic-ducts-sweat",
+        "heading": "Why attic AC ducts sweat",
+        "paragraphs": [
+          "Duct “sweat” is condensation. During cooling, supply ducts carry air that is much colder than the air in a typical vented attic. If the temperature at the duct's exposed outer surface or jacket falls below the dew point of the nearby attic air, water vapor changes into liquid on that surface. In plain language: cold duct surface plus sufficiently humid attic air can produce droplets.",
+          "The dew point is the temperature at which water vapor begins condensing as the air next to a surface is cooled. It changes with both temperature and humidity. That is why the same duct may stay dry on one day and become wet during more humid weather, even though the AC is delivering similar supply-air temperatures.",
+          "The water is forming from moisture in the air around the duct; it is not necessarily coming through the duct from inside. A cold supply duct is expected during cooling, but visible condensation that repeatedly wets the jacket, insulation, or nearby materials is not a condition to ignore. Persistent wetness needs investigation because several conditions—including an unrelated leak—can place water on or near the same duct run."
+        ]
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons ductwork sweats in an attic",
+        "paragraphs": ["More than one condition can be present. The wettest spot may identify where condensation becomes visible, but it does not by itself prove why the surface became cold or how humid air reached it."],
+        "causes": [
+          { "heading": "The attic air is very humid", "text": "Humid air has a higher dew point, so it can condense on surfaces that would stay dry in less humid conditions. Outdoor weather, roof or plumbing moisture, air moving from the house into the attic, and the attic's design can influence the moisture level. A humid attic increases condensation potential, but a humidity reading alone does not identify the duct defect or the original moisture source." },
+          { "heading": "Duct insulation is missing, damaged, compressed, or inadequate", "text": "Insulation slows heat transfer and helps keep the outer surface warmer than the cold air inside the duct. A bare metal section, thin coverage, a gap between pieces, a crushed area under a support, or insulation that has slipped away can create a locally colder surface. Wet insulation may also lose performance and make the cycle harder to break." },
+          { "heading": "The outer jacket or vapor-retarding layer is compromised", "text": "Many common insulated duct assemblies use an outer jacket that limits humid air and water vapor from reaching colder layers. A tear, open seam, poorly sealed end, or damaged section can let moist attic air contact a colder surface. Duct materials and jacket designs vary, so this is a relationship for a professional to inspect—not proof that every visible seam is defective." },
+          { "heading": "Air is leaking at a duct or connection", "text": "A supply-side leak can release cold conditioned air near a joint, transition, boot, or damaged section and lower nearby surface temperatures. A return-side leak can pull hot, humid attic air toward the HVAC system and affect comfort or moisture performance. Leakage can contribute to the conditions around a wet spot, but exterior droplets alone cannot show the leak direction or location." },
+          { "heading": "The duct surface is especially cold", "text": "Cold supply air is expected during cooling. Condensation depends on the temperature of the exterior surface relative to the surrounding air's dew point—not simply on whether the air inside feels cold. Airflow restrictions, equipment operation, and insulation condition can affect temperatures, but a cold duct does not automatically mean the AC is malfunctioning." },
+          { "heading": "There are gaps at joints, transitions, boots, or supports", "text": "Complex shapes are harder to insulate continuously. Elbows, takeoffs, plenums, boots, hangers, and transitions may have compressed insulation or small coverage gaps that create a cold bridge. A localized wet patch at one of these details can guide an inspection, but cutting open the jacket to look for the cause can worsen the moisture barrier and should not be a casual DIY check." }
+        ]
+      },
+      {
+        "id": "sweating-or-leaking",
+        "heading": "Is the duct sweating, or is something actually leaking?",
+        "paragraphs": [
+          "Condensation often appears as beads or a damp film spread across a cold exterior surface, especially while the AC runs. A concentrated stream, a wet trail arriving from above, or water that appears when cooling is off makes another source more plausible. Water can travel along framing, duct jackets, insulation, pipes, or fasteners, so the first visible wet spot may be some distance from the source.",
+          "Use timing and distribution as clues rather than diagnoses. Dry the safely visible area only if you can do so without entering the attic or disturbing materials, then note where moisture first returns."
+        ],
+        "table": {
+          "headers": ["Observation", "May be more consistent with"],
+          "rows": [
+            ["Droplets are distributed on cold duct exteriors while cooling runs", "Surface condensation"],
+            ["Water begins around the air handler, drain pan, or condensate piping", "An HVAC condensate or drainage problem"],
+            ["Wetness follows rain or starts near a roof penetration", "A possible roof leak"],
+            ["Moisture follows use of a nearby fixture or visible pipe", "A possible plumbing leak"],
+            ["Moisture is mainly on the room-side register", "Vent/register condensation rather than attic duct-surface sweating"]
+          ]
+        },
+        "link": { "before": "If water is appearing at or falling from a ceiling register inside the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with drain, roof, and plumbing sources at that location." }
+      },
+      {
+        "id": "humidity-connection",
+        "heading": "How attic duct condensation relates to indoor humidity",
+        "paragraphs": [
+          "Whole-house moisture conditions can matter, especially when humid indoor air reaches the attic through ceiling leaks or when duct leakage affects how the cooling system handles air. But attic humidity is not identical to indoor relative humidity, and an attic duct can sweat because of a local insulation or jacket problem even when living-space readings seem reasonable.",
+          "Likewise, a clammy house does not prove the attic ducts are condensing. Measure what you safely can and keep the two observations separate until the moisture and temperature patterns are evaluated."
+        ],
+        "links": [
+          { "before": "If the main symptom is a cool but clammy living space, start with ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for short cycles, fan settings, infiltration, airflow, and indoor moisture sources." },
+          { "before": "If moisture is forming on the visible metal register inside the home, see ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for the room-side condensation pattern." }
+        ]
+      },
+      {
+        "id": "why-persistent-moisture-matters",
+        "heading": "Why persistent duct condensation should not be ignored",
+        "paragraphs": [
+          "Repeated condensation can soak duct insulation and nearby attic insulation, stain ceilings, loosen paint, and keep wood or paper-faced drywall damp. Wet insulation may not resist heat flow as intended, and water can migrate to materials below before the source is obvious from the living space.",
+          "Moist conditions can support microbial growth on susceptible materials. That does not mean visible droplets prove mold is present, and appearance alone cannot identify a substance. The useful response is to correct the moisture source, dry affected materials promptly where that can be done safely, and obtain qualified help when materials stay wet, staining spreads, or a musty odor persists.",
+          "A sagging or soft ceiling deserves prompt attention. Keep people away from unstable material, do not puncture a bulging ceiling, and avoid any wet area near electrical wiring or fixtures."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can observe safely",
+        "paragraphs": ["The best homeowner contribution is a clear record of when, where, and how the moisture appears. Do not enter an attic unless it has a proper access route, safe walking surface, acceptable temperature, and no electrical or other hazards."],
+        "bullets": [
+          "Note whether droplets appear only while the AC is operating, shortly after it stops, after rain, or after nearby plumbing use.",
+          "From a safe access point, observe whether moisture is spread across several ducts or concentrated at one joint, support, boot, transition, or equipment area.",
+          "Look without touching for torn outer jackets, separated seams, crushed or missing insulation, darkened material, and insulation that appears saturated.",
+          "Check the ceiling below for staining, peeling paint, softness, or a changing damp spot.",
+          "Use a basic hygrometer in the living space and record readings alongside outdoor weather; do not treat one reading as an attic diagnosis.",
+          "Inspect the HVAC filter if it is safely accessible and replace it according to its instructions when clearly dirty or overdue.",
+          "Take dated photos from the same safe viewpoint so a professional can see whether the pattern is changing."
+        ],
+        "callout": { "title": "Attics add serious access hazards", "text": "Do not balance on joists, enter a dangerously hot attic, disturb wiring, remove suspect contaminated material, open HVAC equipment, handle refrigerant, cut a duct jacket, or climb an unsafe ladder. If there is no stable walkway and safe access, make observations from below and leave the attic inspection to a qualified professional." }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an HVAC professional—or another trade",
+        "paragraphs": [
+          "Call an HVAC professional when condensation is repeated or widespread, insulation is wet or visibly damaged, the outer jacket has open seams or tears, duct leakage is suspected, or the problem returns after obvious moisture sources have been addressed. Also arrange service when airflow is weak, rooms are uneven, the system is icing, or other performance symptoms accompany the wet ducts. A technician can measure air and surface conditions, test leakage and airflow, and evaluate the insulation and duct assembly without relying on the droplets alone.",
+          "A building-performance professional may be useful when attic air leakage, enclosure moisture, or the location of the thermal and air boundaries appears central. Call a roofer when the wetness follows rain or traces toward roof decking or a penetration. Call a plumber when it follows fixture use or begins at nearby piping. If the source is uncertain, share timing notes and photographs so the first professional can distinguish systems rather than assuming every wet duct is an HVAC leak.",
+          "Get prompt help if water is approaching electrical components, ceiling material is soft or sagging, insulation is saturated, or the source cannot be safely observed. Persistent condensation is a moisture problem worth correcting even when the AC still cools the house."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "HVAC Sealed and Insulated Metal Ducts", "publisher": "U.S. Department of Energy Building Science Education", "url": "https://bsesc.energy.gov/energy-basics/hvac-sealed-and-insulated-metal-ducts" },
+      { "title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0" },
+      { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
+      { "title": "Measure Guideline: Sealing and Insulating of Ducts in Existing Homes", "publisher": "U.S. Department of Energy Building America", "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/meas_guide_seal_ducts.pdf" }
     ]
   },
   {

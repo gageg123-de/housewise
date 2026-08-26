@@ -11,7 +11,7 @@ Ceiling fan wobbles,why does my ceiling fan wobble,electrical,vibration,living-a
 AC makes bubbling sound,ac makes bubbling noise,hvac,noise,whole-house,diagnostic,planned,medium,,Distinguish condensate from refrigerant sounds
 AC smells like vinegar,ac smells like vinegar,hvac,smell,whole-house,diagnostic,planned,medium,,Needs careful odor cause language
 AC runs but house stays humid,why is my house humid with the ac running,hvac,moisture,whole-house,diagnostic,published,high,/hvac/house-humid-with-ac-running/,Whole-home comfort and moisture intent; distinct from wet-vent symptoms and any future deeper equipment-performance guide
-AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,moisture,attic,diagnostic,planned,high,,Humidity and duct-insulation cluster; distinguish from room-side vent condensation
+AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,moisture,attic,diagnostic,published,high,/hvac/ac-ductwork-sweating-in-attic/,Attic duct exterior condensation intent; distinct from whole-house humidity and room-side vent condensation
 Water around indoor AC unit,why is there water around my indoor ac unit,hvac,leaking,whole-house,diagnostic,planned,high,,Condensate pan and drainage cluster; do not merge with water emerging at a supply vent
 AC smells musty when it turns on,why does my ac smell musty when it turns on,hvac,smell,whole-house,diagnostic,planned,high,,HVAC odor and moisture cluster
 AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,planned,medium,,Air-handler moisture and drainage cluster

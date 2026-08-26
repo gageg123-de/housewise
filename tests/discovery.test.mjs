@@ -23,7 +23,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
   assert.equal(rankFinderArticles(registry, "bathroom", "drainage")[0].article.slug, "toilet-bubbles-when-washer-drains");
-  assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-vent-sweating");
+  assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -76,7 +76,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
   assert.match(getFinderSymptomOptions("yard").find((item) => item.value === "drainage").label, /standing water/i);
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
-  assert.ok(["ac-vent-sweating", "water-dripping-from-ac-vent", "house-humid-with-ac-running"].includes(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug));
+  assert.equal(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug, "ac-ductwork-sweating-in-attic");
 });
 
 test("every configured Problem Finder path returns valid results or a safe search fallback", () => {
@@ -111,6 +111,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["toilet bubbling", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],
     ["house humid", "house-humid-with-ac-running"],
+    ["attic duct sweating", "ac-ductwork-sweating-in-attic"],
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
     ["dryer slow", "dryer-taking-two-cycles"],

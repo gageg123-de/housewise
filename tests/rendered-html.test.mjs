@@ -85,3 +85,21 @@ test("house humidity guide renders article metadata, cluster links, and its orig
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/how-ac-removes-indoor-humidity\.webp/);
   assert.doesNotMatch(html, /FAQPage|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("attic duct condensation guide renders metadata, source distinctions, cluster links, and visual", async () => {
+  const response = await render("/hvac/ac-ductwork-sweating-in-attic"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My AC Ductwork Sweating in the Attic\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/ac-ductwork-sweating-in-attic\//);
+  assert.match(html, /Is the duct sweating, or is something actually leaking\?/);
+  assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
+  assert.match(html, /href="\/hvac\/ac-vent-sweating\/"/);
+  assert.match(html, /href="\/hvac\/water-dripping-from-ac-vent\/"/);
+  assert.match(html, /src="\/images\/attic-ac-duct-condensation\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/attic-ac-duct-condensation\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
