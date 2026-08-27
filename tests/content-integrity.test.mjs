@@ -77,7 +77,7 @@ test("published AC vent dripping guide is distinct and complete", () => {
   assert.ok(dripping.room_or_location.includes("living-area"));
   assert.ok(dripping.symptoms.includes("leaking"));
   assert.match(topics, /^Water dripping from AC vent,why is water dripping from my ac vent,hvac,leaking,living-area,diagnostic,published,high,\/hvac\/water-dripping-from-ac-vent\//m);
-  for (const plannedTopic of ["Water around indoor AC unit", "AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
+  for (const plannedTopic of ["AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
 });
 
 test("house humidity guide is distinct, linked, sourced, and image-ready", () => {
@@ -124,4 +124,43 @@ test("attic duct condensation guide is distinct, connected, sourced, and image-r
   assert.ok(dripping.body_sections.some((section) => section.link?.href === "/hvac/ac-ductwork-sweating-in-attic/" || section.links?.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/")));
   assert.ok(humidity.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/")));
   assert.match(topics, /^AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,moisture,attic,diagnostic,published,high,\/hvac\/ac-ductwork-sweating-in-attic\//m);
+});
+
+test("indoor AC water guide is distinct, connected, sourced, and image-ready", () => {
+  const indoorWater = registry.find((item) => item.slug === "water-around-indoor-ac-unit");
+  const cluster = registry.filter((item) => [
+    "house-humid-with-ac-running",
+    "ac-vent-sweating",
+    "water-dripping-from-ac-vent",
+    "ac-ductwork-sweating-in-attic",
+  ].includes(item.slug));
+  assert.ok(indoorWater);
+  assert.equal(indoorWater.primary_category, "hvac");
+  assert.ok(indoorWater.secondary_categories.includes("moisture-and-mold"));
+  assert.deepEqual(indoorWater.room_or_location, ["whole-house"]);
+  assert.ok(indoorWater.symptoms.includes("leaking"));
+  assert.ok(indoorWater.symptoms.includes("moisture"));
+  for (const article of cluster) assert.notEqual(indoorWater.target_search_intent, article.target_search_intent);
+  assert.ok(indoorWater.body_sections.some((section) => section.id === "normal-condensate-path"));
+  assert.ok(indoorWater.body_sections.some((section) => section.id === "common-causes" && section.causes.length === 8));
+  assert.ok(indoorWater.body_sections.some((section) => section.id === "is-it-from-the-ac" && section.table));
+  assert.ok(indoorWater.body_sections.some((section) => section.id === "frozen-coil-clues"));
+  assert.ok(indoorWater.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(indoorWater.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(indoorWater.image.src, "/images/indoor-ac-condensate-drainage.webp");
+  assert.equal(indoorWater.image.kind, "conceptual");
+  assert.equal(indoorWater.image.width, 1536);
+  assert.equal(indoorWater.image.height, 1024);
+  for (const slug of cluster.map((article) => article.slug)) assert.ok(indoorWater.related_articles.includes(slug));
+  for (const article of cluster) {
+    const links = [
+      ...(article.contextual_links ?? []),
+      ...(article.body_sections ?? []).flatMap((section) => [section.link, ...(section.links ?? [])].filter(Boolean)),
+    ];
+    assert.ok(links.some((link) => link.href === "/hvac/water-around-indoor-ac-unit/"), `${article.slug}: missing reciprocal indoor-unit link`);
+  }
+  assert.match(topics, /^Water around indoor AC unit,why is there water around my indoor ac unit,hvac,leaking,whole-house,diagnostic,published,high,\/hvac\/water-around-indoor-ac-unit\//m);
+  for (const plannedTopic of ["AC filter is wet", "Condensate line keeps clogging", "AC smells musty when it turns on"]) {
+    assert.match(topics, new RegExp(`^${plannedTopic},.*?,planned,`, "m"));
+  }
 });

@@ -2,29 +2,30 @@
   {
     "title": "Why Is My AC Vent Sweating?", "slug": "ac-vent-sweating", "description": "Condensation on an AC vent usually means humid air is meeting a cold vent surface. Learn the common causes and what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["whole-house", "attic"], "system": "hvac", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
     "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent"], "target_search_intent": "Explain why condensation forms on an AC supply vent and help the reader distinguish humidity, insulation, and airflow causes.",
     "direct_answer": "An AC vent usually sweats when warm, humid air reaches the cold metal register or nearby duct. High indoor humidity, an air leak around the boot, weak insulation, or unusually cold airflow can all contribute.",
     "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
     "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
     "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
-    "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic"],
+    "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"],
     "contextual_links": [
       { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." },
       { "before": "If several vents are wet or the whole house feels clammy, see ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for broader causes of elevated indoor humidity while cooling." },
-      { "before": "If the wet surface is the duct itself in an attic rather than the room-side register, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to focus on attic humidity, duct insulation, and the outer jacket." }
+      { "before": "If the wet surface is the duct itself in an attic rather than the room-side register, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to focus on attic humidity, duct insulation, and the outer jacket." },
+      { "before": "If water is pooling around the air handler, coil cabinet, pan, or drain area instead of the register, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on condensate collection and drainage." }
     ]
   },
   {
     "title": "Why Is Water Dripping From My AC Vent?", "slug": "water-dripping-from-ac-vent", "description": "Water dripping from an AC vent may come from condensation, humidity, insulation, drainage trouble, or another leak. Learn what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture", "discoloration"], "room_or_location": ["living-area", "bedroom", "whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": true,
     "search_keywords": ["why is water dripping from my ac vent", "water dripping from air vent", "ceiling vent dripping water", "ac register leaking water", "water coming from hvac vent"], "target_search_intent": "Help a homeowner distinguish actual water dripping from an AC supply vent from surface sweating, identify plausible HVAC and non-HVAC sources, perform safe observations, and choose the right professional when needed.",
     "direct_answer": "Water dripping from an AC vent can be condensation forming on cold metal, especially when indoor humidity is high or insulation around the duct boot is missing or damaged. Humid air leaking around the boot, restricted airflow that contributes to colder surfaces, or a condensate drain problem may also be involved. Sometimes the water comes from somewhere else, such as a roof or plumbing leak. The timing, location, and number of affected vents help narrow the possibilities.",
     "likely_causes": ["High indoor humidity", "Poor insulation around the duct boot", "Air leakage around the vent boot", "Restricted HVAC airflow", "Condensate drain or drain-pan trouble", "A roof, plumbing, or attic leak near the vent"],
     "safe_checks": ["Note whether the water appears only while the AC runs.", "Inspect the visible register and nearby ceiling for moisture, staining, or softness.", "Check whether the HVAC filter is obviously dirty without opening equipment.", "Compare one affected vent with other vents and note indoor humidity if a meter is available.", "Observe whether water begins on the register or comes through the ceiling around it."],
     "professional_help": "Arrange an HVAC evaluation when dripping persists, several vents are affected, condensate drainage looks abnormal, water is present around the air handler, or the source remains unclear. A roofer or plumber may be the better first call when rain or fixture use matches the leak. Stop and get prompt help if water is near electrical equipment or exposed wiring.",
-    "related_articles": ["ac-vent-sweating", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic"],
+    "related_articles": ["ac-vent-sweating", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"],
     "body_sections": [
       {
         "id": "is-dripping-normal",
@@ -56,7 +57,8 @@
         ],
         "link": { "before": "If the moisture stays mainly on the face or edges of the register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for a closer look at surface condensation, humidity, insulation, and air leakage." },
         "links": [
-          { "before": "When several vents are involved or the rooms feel damp even while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " to evaluate the broader indoor-humidity pattern." }
+          { "before": "When several vents are involved or the rooms feel damp even while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " to evaluate the broader indoor-humidity pattern." },
+          { "before": "If the water is collecting around the air handler, coil cabinet, pan, or drain area rather than at the register, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to examine the condensate-management path." }
         ]
       },
       {
@@ -128,14 +130,14 @@
   {
     "title": "Why Is My House Humid With the AC Running?", "slug": "house-humid-with-ac-running", "description": "If your house stays humid with the AC running, short cycles, fan settings, outdoor air, duct leaks, airflow, or moisture sources may be involved.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "heat"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my house humid with the ac running", "ac running but house humid", "house feels sticky with ac on", "indoor humidity high with air conditioner", "ac cools but does not lower humidity"],
     "target_search_intent": "Explain why a home can feel humid or measure high relative humidity while the air conditioner is running and cooling, provide safe homeowner observations, and preserve a separate future intent for deeper HVAC-performance diagnosis.",
     "direct_answer": "An air conditioner can lower the temperature without removing enough moisture to make the house feel dry. Short cooling cycles, oversized equipment, a thermostat fan set to ON, humid outdoor air entering the home, duct leakage, restricted airflow, heavy indoor moisture loads, or an HVAC performance or condensate problem may be involved. No single cause fits every house, so compare measured humidity, cycle timing, weather, and room-to-room patterns before drawing a conclusion.",
     "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
     "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
     "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
-    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic"],
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"],
     "image": {
       "src": "/images/how-ac-removes-indoor-humidity.webp",
       "width": 1536,
@@ -208,7 +210,8 @@
         "links": [
           { "before": "If moisture is mainly beading on the metal register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to focus on surface condensation, the boot, insulation, and nearby air leakage." },
           { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." },
-          { "before": "If moisture is collecting on the outside of duct runs in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to examine the attic dew-point, insulation, jacket, and air-leakage pattern." }
+          { "before": "If moisture is collecting on the outside of duct runs in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to examine the attic dew-point, insulation, jacket, and air-leakage pattern." },
+          { "before": "If water is pooling around the indoor coil cabinet, pan, or drain area, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on condensate drainage, thawing ice, and nearby non-HVAC sources." }
         ]
       },
       {
@@ -232,14 +235,14 @@
   {
     "title": "Why Is My AC Ductwork Sweating in the Attic?", "slug": "ac-ductwork-sweating-in-attic", "description": "Attic AC ducts sweat when humid air reaches a surface below its dew point. Learn how insulation, duct leakage, and other water sources fit in.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold", "attic-and-insulation"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["attic"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-26", "updated_date": "2026-08-26", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-26", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my ac ductwork sweating in the attic", "attic duct condensation", "sweating ductwork", "condensation on ac ducts", "wet duct insulation", "hvac ducts sweating in attic"],
     "target_search_intent": "Explain why condensation forms on the exterior of HVAC ductwork in an attic, distinguish duct sweating from HVAC drainage, roof, and plumbing leaks, and help a homeowner make safe observations before choosing the right professional.",
     "direct_answer": "AC ductwork in an attic usually sweats because the duct or its outer covering is cold enough to fall below the dew point of the surrounding humid air. Water vapor then condenses on the exterior as liquid droplets. High attic humidity, missing or damaged insulation, a compromised outer jacket, and gaps at duct joints or supports can contribute. That does not automatically mean water is leaking from inside the duct, and water near a duct can also come from an HVAC drain, roof, or plumbing source.",
     "likely_causes": ["High attic humidity", "Missing, damaged, compressed, or inadequate insulation", "A compromised outer jacket or vapor-retarding layer", "Duct or connection air leakage", "A very cold exterior duct surface", "Gaps at joints, transitions, boots, or supports"],
     "safe_checks": ["Note whether moisture appears during cooling operation and whether it is widespread or localized.", "From a safely accessible location, observe whether droplets cover the duct exterior or arrive from above or nearby.", "Look for obvious jacket tears, crushed insulation, wet insulation, or gaps without touching or cutting the duct.", "Check ceilings below the area for staining, softness, or peeling paint.", "Measure indoor humidity with a hygrometer and record weather, timing, and affected locations.", "Check the HVAC filter if it is safely accessible and photograph the pattern for a professional."],
     "professional_help": "Arrange HVAC evaluation when attic duct condensation is repeated or widespread, insulation is saturated or damaged, duct leakage is suspected, ceiling staining recurs, or the system has airflow or performance problems. Use a roofer when the pattern follows rain and a plumber when it follows nearby fixture or pipe use. Keep away from wet electrical equipment and get prompt help if water is approaching wiring or unstable ceiling material.",
-    "related_articles": ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent"],
+    "related_articles": ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "water-around-indoor-ac-unit"],
     "image": {
       "src": "/images/attic-ac-duct-condensation.webp",
       "width": 1536,
@@ -289,7 +292,10 @@
             ["Moisture is mainly on the room-side register", "Vent/register condensation rather than attic duct-surface sweating"]
           ]
         },
-        "link": { "before": "If water is appearing at or falling from a ceiling register inside the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with drain, roof, and plumbing sources at that location." }
+        "link": { "before": "If water is appearing at or falling from a ceiling register inside the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with drain, roof, and plumbing sources at that location." },
+        "links": [
+          { "before": "If water begins around the air handler, coil cabinet, pan, or condensate piping, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on the equipment drainage path rather than duct-surface condensation." }
+        ]
       },
       {
         "id": "humidity-connection",
@@ -342,6 +348,130 @@
       { "title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0" },
       { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
       { "title": "Measure Guideline: Sealing and Insulating of Ducts in Existing Homes", "publisher": "U.S. Department of Energy Building America", "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/meas_guide_seal_ducts.pdf" }
+    ]
+  },
+  {
+    "title": "Why Is There Water Around My Indoor AC Unit?", "slug": "water-around-indoor-ac-unit", "description": "Water around an indoor AC unit may involve a clogged drain, overflowing pan, thawing coil, condensate pump, or another nearby leak.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture"], "room_or_location": ["whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-27", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["why is there water around my indoor ac unit", "water around air handler", "ac unit leaking water inside", "water near furnace when ac runs", "condensate pan overflowing", "indoor ac unit puddle"],
+    "target_search_intent": "Help a homeowner identify why water is collecting around indoor HVAC equipment or its drain area, distinguish condensate-management problems from thawing ice and unrelated leaks, make safe observations, and choose the appropriate professional.",
+    "direct_answer": "Air conditioners normally make condensate as the indoor cooling coil removes moisture from the air, but that water should collect in a pan and drain away. Water around the indoor unit usually means the condensate is not draining normally, the pan or an optional condensate pump is not managing it, ice has formed and then melted, or water is coming from another nearby source. A clogged drain is common, but the puddle alone cannot prove the cause.",
+    "likely_causes": ["A clogged condensate drain line", "A full or overflowing drain pan", "A cracked, rusted, damaged, or displaced pan", "A frozen evaporator coil thawing", "A condensate pump problem where one is installed", "A loose, disconnected, or poorly draining line", "A high condensate load during humid conditions", "A plumbing, roof, humidifier, water-heater, or other nearby leak"],
+    "safe_checks": ["Note whether water is actively spreading and whether it appears during cooling or after the system stops.", "Keep away from wet electrical equipment and switch the HVAC system off at the thermostat if that can be done from a dry, safe location.", "Inspect the HVAC filter if it is safely accessible without opening equipment.", "Look from outside the cabinet for a visibly full accessible pan or an obvious loose drain connection.", "Note whether a condensate pump is present without opening or bypassing it.", "Check nearby visible plumbing, a water heater, humidifier, and the area above the unit for another source.", "Photograph the first wet location and record weather, cooling operation, and any ice or weak-airflow clues."],
+    "professional_help": "Arrange HVAC service when water continues accumulating, the pan repeatedly fills, the drain appears blocked or disconnected, an installed condensate pump is not operating, coil icing is suspected, water returns after cleanup, or the source cannot be identified. Call a plumber, roofer, or the appropriate equipment service provider when timing and location point away from the AC. Do not touch wet electrical equipment; smoke, burning odor, sparking, or water reaching energized components requires prompt emergency or qualified electrical/HVAC help from a safe location.",
+    "related_articles": ["house-humid-with-ac-running", "water-dripping-from-ac-vent", "ac-vent-sweating", "ac-ductwork-sweating-in-attic"],
+    "image": {
+      "src": "/images/indoor-ac-condensate-drainage.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway of an indoor AC cabinet showing moisture condensing at the cooling coil, collecting in a pan, and normally leaving through a drain line, with a small overflow near a blocked outlet.",
+      "caption": "Conceptual illustration: During cooling, water can condense at the indoor coil, collect in a pan, and leave through a drain. A restriction or another drainage failure can let water accumulate around the unit; actual equipment layouts vary.",
+      "kind": "conceptual",
+      "after_section": "normal-condensate-path"
+    },
+    "body_sections": [
+      {
+        "id": "normal-condensate-path",
+        "heading": "Where the water normally goes",
+        "paragraphs": [
+          "During cooling, warm indoor air passes across the cold evaporator coil. When the coil surface is below the air's dew point, water vapor condenses on it. That liquid is normal condensate—not water circulating through the supply ducts. The equipment is designed to collect it in a drain pan and move it away through a condensate line or, in some installations, a condensate pump.",
+          "A small amount of water inside the intended drainage path can therefore be normal. A puddle on the floor, water running out of the cabinet, a secondary pan that keeps filling, or dampness that returns each cooling cycle is not the intended result. It means the drainage path, equipment operation, or source of the water needs to be identified.",
+          "Indoor units are arranged differently. The cooling coil may be part of an air handler or mounted with a furnace, and pans, drains, switches, and pumps vary by installation. Use the visible pattern as a clue rather than assuming your system matches a generic diagram."
+        ]
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons water collects around the indoor unit",
+        "paragraphs": ["Several causes can create the same puddle, and more than one can occur together. Start with timing and the first wet location rather than assuming every indoor-unit leak is a clogged drain."],
+        "causes": [
+          { "heading": "The condensate drain line is clogged", "text": "Dust, debris, biological buildup, or sludge can restrict a condensate line. Water then backs up in the primary pan or reaches a secondary pan instead of draining normally. ENERGY STAR includes condensate-drain inspection in professional maintenance because a plugged drain can damage the home and affect humidity. This guide does not cover why a line repeatedly clogs; that recurring-maintenance intent remains a separate topic." },
+          { "heading": "A drain pan is full or overflowing", "text": "The primary pan receives water from the coil. Some installations also have a separate auxiliary or secondary pan intended to catch water if the primary path fails. The exact arrangement varies. A visibly full accessible pan suggests that water is arriving faster than it is leaving, but it does not show whether the cause is a blockage, slope, pump, pan, or equipment problem." },
+          { "heading": "A pan is cracked, rusted, damaged, or displaced", "text": "A pan can corrode, crack, shift, or fail to direct water toward its outlet, particularly as equipment ages. Plastic and metal pans fail differently, and some primary pans are hidden inside the cabinet. Water leaking through a damaged pan may appear before a visible pan looks full, so external inspection cannot rule the pan in or out." },
+          { "heading": "A frozen evaporator coil is thawing", "text": "Ice on the cooling coil can melt after the compressor stops and release a larger amount of water than the drainage system handles at once. Restricted airflow from a dirty filter is one possible contributor; other airflow or refrigeration-system problems require testing. Water after shutdown, weak airflow, or safely visible frost are clues, not a refrigerant diagnosis." },
+          { "heading": "A condensate pump is not moving water", "text": "Some units cannot drain by gravity and use a small condensate pump. A failed pump, blocked tubing, stuck switch, loss of power, or a full pump reservoir can allow water to accumulate. Not every system has a pump, and opening or bypassing one can expose electrical parts or defeat overflow protection." },
+          { "heading": "A drain connection is loose, disconnected, or not draining correctly", "text": "A separated fitting, damaged pipe, poor slope, or installation problem can release water before it reaches the intended outlet. The visible line may also pass through walls or ceilings where the problem is hidden. Do not cut a line or pull on fittings to test them; a technician can inspect drainage and confirm the correct arrangement for the equipment." },
+          { "heading": "Humid conditions are creating a high condensate load", "text": "An AC can produce more condensate when it is cooling air with a larger moisture load. A properly functioning drainage system should handle normal operation, so humidity may explain why the problem appears during certain weather without explaining why water escapes. Persistent high indoor humidity may also deserve its own evaluation." },
+          { "heading": "The water is coming from somewhere else", "text": "Indoor HVAC equipment is often near plumbing, a water heater, a whole-house humidifier, a floor drain, or piping. A roof or attic leak can travel down framing and appear around a unit below. Water can also follow tubing, wire, or cabinet edges, making the puddle location different from the source." }
+        ]
+      },
+      {
+        "id": "is-it-from-the-ac",
+        "heading": "Is the water actually coming from the AC?",
+        "paragraphs": [
+          "The most useful observation is where water first appears. A puddle directly below a pan outlet during cooling may fit a condensate problem; a wet trail from above, a pipe that becomes wet with fixture use, or staining that grows after rain may fit another source. Drying only the safely accessible floor can make the next wet path easier to see.",
+          "Water can travel before it becomes visible, so none of these patterns proves the source. Share the timing, photographs, and nearby systems with the professional who investigates."
+        ],
+        "table": {
+          "headers": ["Observation", "May be more consistent with"],
+          "rows": [
+            ["Water appears during or shortly after cooling", "Condensate drainage or thawing ice"],
+            ["An accessible drain or pan area is visibly wet", "A pan, drain, connection, or pump problem"],
+            ["Water appears after the AC stops, with weak airflow or frost clues", "A thawing frozen coil"],
+            ["A wet trail begins above the HVAC cabinet", "A roof, plumbing, humidifier, or other overhead source"],
+            ["Water follows nearby fixture or water-heater operation", "A possible plumbing or equipment leak"],
+            ["Staining expands after rain", "A possible roof or building-envelope leak"]
+          ]
+        }
+      },
+      {
+        "id": "frozen-coil-clues",
+        "heading": "Could a frozen coil be thawing?",
+        "paragraphs": [
+          "A cooling coil can accumulate frost or ice when its operating conditions are abnormal. When that ice melts, the pan may receive a sudden load or water may reach places it normally would not. Possible clues include weak supply airflow, cooling that seems abnormal, frost on safely visible external tubing or cabinet surfaces, and water that becomes noticeable after cooling stops.",
+          "Those clues do not identify the cause of the icing. A dirty filter is a reasonable homeowner check, but coil contamination, blower or duct airflow, controls, and refrigerant-system performance may also be involved. Do not open the coil cabinet, chip ice, apply heat, or handle refrigerant. Turn the system off at the thermostat from a dry location and arrange HVAC evaluation when icing is suspected."
+        ]
+      },
+      {
+        "id": "humidity-and-related-water",
+        "heading": "How this differs from other AC moisture problems",
+        "paragraphs": ["The location of the first visible moisture defines the most useful starting guide. Water around the equipment points toward condensate collection and drainage; wet registers, humid rooms, and attic duct surfaces require different comparisons."],
+        "links": [
+          { "before": "If the home feels clammy or readings stay high while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for the broader indoor-moisture pattern. Humid conditions can increase condensate production but do not excuse overflow." },
+          { "before": "If water is falling from or appearing around a supply register in a room, see ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to distinguish register condensation from drain, roof, and plumbing sources." },
+          { "before": "If moisture is only beading on the room-side register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for the surface-condensation pattern." },
+          { "before": "If droplets are forming on the outside of ducts in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for attic dew point, insulation, and jacket conditions." }
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "paragraphs": ["First decide whether water is actively spreading or approaching electricity. If the area is dry enough to observe safely, make only external checks and record what changes with operation."],
+        "bullets": [
+          "Note whether water appears while cooling runs, just after shutdown, after rain, or when nearby plumbing or equipment operates.",
+          "If water is spreading, turn the HVAC system off at the thermostat only when the control and your path to it are dry and safe.",
+          "Inspect the filter if it is designed for normal homeowner access; replace it according to its instructions if clearly dirty or overdue.",
+          "From outside the cabinet, look for a visibly full accessible pan, a wet drain connection, or an obviously separated external line without touching or moving anything.",
+          "Note whether a condensate pump is present and whether its reservoir area is wet; do not open, power, or bypass the pump.",
+          "Visually compare nearby plumbing, the water heater, a humidifier, overhead piping, and the area above the unit.",
+          "Photograph the first wet location, water depth, any safely visible frost, and the same area after the system is off."
+        ],
+        "callout": { "title": "Water and electricity require distance", "text": "Do not touch the HVAC cabinet, pump, wiring, disconnect, receptacle, or electrical panel if it is wet or water is reaching it. Do not open compartments, bypass a float switch, use chemicals, cut drain lines, handle refrigerant, or work in an unsafe attic or crawlspace. Smoke, burning odor, sparking, or active water on energized equipment calls for prompt emergency or qualified electrical/HVAC help from a safe location." }
+      },
+      {
+        "id": "why-recurring-water-matters",
+        "heading": "Why recurring water should not be ignored",
+        "paragraphs": [
+          "Water can damage flooring, drywall, ceilings, insulation, cabinets, and nearby stored items. Repeated wetting can also create conditions that support microbial growth on susceptible materials. A puddle does not prove mold is present, but it does justify correcting the source and drying affected materials promptly where that can be done safely.",
+          "An overflow switch may stop some systems before damage spreads, but not every installation has the same protection and a switch is not a substitute for drainage repair. Do not bypass a shutdown or repeatedly restart equipment that stops while water is present."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an HVAC professional—or another trade",
+        "paragraphs": [
+          "Call an HVAC professional when water continues accumulating, a pan repeatedly fills, the drain appears blocked or disconnected, a condensate pump is not operating, coil icing is suspected, water returns after the visible area is dried, or cooling and airflow are abnormal. A technician can inspect the coil area, pans, drains, pump, switches, airflow, and equipment operation without assuming the first puddle identifies the failure.",
+          "Call a plumber when the water follows nearby fixture, supply-pipe, drain, or water-heater operation. Call a roofer when staining or wetness follows rain or traces toward the roof. A humidifier or other accessory may require its installer or an HVAC professional. When the source is unclear, give the first professional your timing notes and photographs so they can separate the systems.",
+          "Get prompt help when water is near electrical components, actively damaging a ceiling or floor, or coming from a source you cannot safely observe. Do not touch wet equipment. If there is smoke, sparking, or a burning odor, leave the immediate area and contact emergency services or the appropriate qualified professional from a safe location."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Condensate Capture Potential Map", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/cmei/femp/condensate-capture-potential-map" },
+      { "title": "Heating and Cooling Maintenance Checklist", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist" },
+      { "title": "AC Leaking Water? Find Out Why and What to Do", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/ac-leaking-water/" },
+      { "title": "Troubleshoot an Air Conditioner", "publisher": "Carrier", "url": "https://www.carrier.com/residential/en/ca/products/air-conditioners/air-conditioner-service/troubleshoot-an-ac-not-working/" },
+      { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" }
     ]
   },
   {

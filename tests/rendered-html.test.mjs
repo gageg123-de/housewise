@@ -103,3 +103,22 @@ test("attic duct condensation guide renders metadata, source distinctions, clust
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/attic-ac-duct-condensation\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("indoor AC water guide renders drainage distinctions, cluster links, schema, and visual", async () => {
+  const response = await render("/hvac/water-around-indoor-ac-unit"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Water Around My Indoor AC Unit\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/water-around-indoor-ac-unit\//);
+  assert.match(html, /Is the water actually coming from the AC\?/);
+  assert.match(html, /Could a frozen coil be thawing\?/);
+  for (const slug of ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic"]) {
+    assert.match(html, new RegExp(`href="/hvac/${slug}/"`));
+  }
+  assert.match(html, /src="\/images\/indoor-ac-condensate-drainage\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/indoor-ac-condensate-drainage\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
