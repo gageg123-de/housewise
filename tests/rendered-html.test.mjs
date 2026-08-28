@@ -16,6 +16,9 @@ test("homepage renders product content and metadata", async () => {
 test("representative article renders its own metadata and answer", async () => {
   const response = await render("/electrical/outlet-warm"); const html = await response.text();
   assert.equal(response.status, 200); assert.match(html, /<title>Why Is My Outlet Warm\? \| My House Is Doing What\?<\/title>/); assert.match(html, /What it usually means/); assert.match(html, /BreadcrumbList/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/outlet-warm\//); assert.doesNotMatch(html, /Housewise|github\.io|chatgpt\.site|og\.png/);
+  assert.match(html, /Slight warmth, noticeable heat, and urgent warning signs/);
+  assert.match(html, /Do not open or test the outlet yourself/);
+  assert.match(html, /Immediate emergency response/);
   assert.doesNotMatch(html, /"@type":"WebSite"|SearchAction/);
 });
 

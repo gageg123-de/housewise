@@ -878,13 +878,81 @@
   {
     "title": "Why Is My Outlet Warm?", "slug": "outlet-warm", "description": "A warm outlet can result from a heavy load or a loose electrical connection. Learn when to stop using it and request an electrician.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["heat", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 4, "featured_status": true,
-    "search_keywords": ["warm electrical outlet", "outlet feels hot", "hot plug socket"], "target_search_intent": "Explain why an outlet may feel warm and establish a conservative safety threshold.",
-    "direct_answer": "A receptacle should not become noticeably hot. Mild warmth can occur with some high-draw devices, but heat may also indicate a loose connection, worn receptacle, overloaded circuit, or damaged plug. Heat with odor, discoloration, buzzing, or sparking needs prompt attention.",
-    "likely_causes": ["High electrical load", "Loose or deteriorated connection", "Worn receptacle contacts", "Damaged plug or cord", "Overloaded circuit"],
-    "safe_checks": ["Unplug the device if it is safe to do so.", "Stop using the outlet and note any odor, noise, or discoloration.", "Check whether the plug itself or the wall plate feels warmer.", "Do not remove the cover or touch wiring."],
-    "professional_help": "Turn off the circuit if there is burning odor, smoke, sparking, melting, or significant heat and it is safe to reach the breaker. Arrange evaluation by a licensed electrician; call emergency services for active fire or smoke.",
-    "related_articles": ["ceiling-fan-wobbles"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": true,
+    "search_keywords": ["warm electrical outlet", "outlet feels hot", "hot plug socket", "warm wall plate", "outlet hot with burning smell"], "target_search_intent": "Help a homeowner distinguish heat associated with a plugged-in device from abnormal receptacle or wiring heat, recognize urgent warning signs, stop using the outlet safely, and choose qualified electrical help without opening the box.",
+    "direct_answer": "A wall receptacle or faceplate should not become noticeably hot. Heat can come from a heavily loaded plug or device, but it can also signal poor plug contact, a worn receptacle, a loose or deteriorated connection, an overloaded circuit, or damaged wiring. Stop using the outlet and arrange a qualified electrician when the wall plate is clearly warm or hot, especially if the heat persists after the device is unplugged. Burning or rubbery odor, discoloration, melting, buzzing, crackling, sparking, smoke, tingling, or intermittent power makes the situation more urgent.",
+    "likely_causes": ["Heat transferring from a high-load device or plug", "Loose fit between plug blades and receptacle contacts", "Worn or damaged receptacle", "Loose or deteriorated wiring connection", "Overloaded circuit or inappropriate power-strip/extension use", "Damaged appliance plug or cord"],
+    "safe_checks": ["Stop using the outlet and unplug the device only if the plug and surrounding area are not hot, sparking, smoking, or damaged.", "From a safe distance, note odor, discoloration, melting, buzzing, crackling, flickering, or intermittent power.", "Compare whether heat is concentrated at the device/plug or the wall plate without repeatedly touching a hot surface.", "Check the appliance cord and plug visually for cuts, looseness, darkening, or deformation.", "Do not remove the faceplate, probe the slots, or inspect energized wiring."],
+    "professional_help": "Have a licensed electrician evaluate any receptacle or faceplate that becomes unusually warm, stays warm after the load is removed, holds plugs loosely, or shows noise, odor, discoloration, intermittent power, or repeated breaker trips. For smoke, flame, active arcing, or fire, move away and call emergency services; do not touch the outlet or use water.",
+    "related_articles": ["ceiling-fan-wobbles"],
+    "body_sections": [
+      {
+        "id": "warm-or-hot",
+        "heading": "Slight warmth, noticeable heat, and urgent warning signs",
+        "paragraphs": [
+          "Temperature descriptions are subjective, so avoid relying on a precise touch test. CPSC guidance treats a receptacle faceplate that is hot or uncomfortable to touch as a potential fire hazard and advises discontinuing use and obtaining qualified electrical help. NFPA also lists warm or discolored outlets among conditions that call for an electrician.",
+          "A power adapter, charger, plug-in transformer, space heater plug, or other device may generate its own heat and transfer some of it to the outlet. That does not prove the wiring is sound. The safest distinction is whether the wall plate or receptacle itself becomes unusually warm, whether the plug fits loosely, and whether any other warning sign appears."
+        ],
+        "table": {
+          "headers": ["What you notice", "What to do"],
+          "rows": [
+            ["Device or power brick feels warm but the wall plate stays cool", "Follow the device instructions and inspect the cord/plug; stop if heat is unusual or damage appears"],
+            ["Wall plate is noticeably warm during use", "Stop using that outlet and arrange a qualified electrician"],
+            ["Unused outlet is warm", "Treat it as a wiring warning; current for another outlet can pass through its connections"],
+            ["Plug fits loosely or falls out", "Stop using the receptacle; worn contacts can overheat and need replacement"],
+            ["Heat comes with buzzing, crackling, flicker, or intermittent power", "Stop use and obtain prompt electrical evaluation"],
+            ["Discoloration, melting, burning odor, sparking, or smoke", "Move away; shut power off only if safely accessible and call appropriate emergency/electrical help"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Why an outlet may become warm",
+        "causes": [
+          { "heading": "A connected load is producing or transferring heat", "text": "High-wattage appliances and plug-in power supplies can warm their plugs. Major appliances and heat-producing equipment should follow manufacturer instructions and use appropriate wall outlets rather than undersized extension cords or overloaded adapters. Heat centered at the plug still deserves attention if the outlet is loose, the blades are discolored, or the wall plate warms." },
+          { "heading": "The plug does not make firm contact", "text": "Receptacle contacts wear with repeated use. A loose fit creates poor contact and can concentrate heat at a small area. USFA advises replacing outlets that no longer hold plugs snugly. Do not use outlet-tightener inserts or bend plug blades to create a tighter fit." },
+          { "heading": "A wiring connection is loose or deteriorated", "text": "Loose or damaged connections create resistance and heating. Importantly, an unused receptacle can become warm when it serves as a connection point carrying power downstream to another outlet. Locating that condition requires de-energizing and testing by a qualified electrician—not removing the faceplate for a look." },
+          { "heading": "The receptacle or plug is damaged", "text": "Cracked plastic, darkening, melted areas, scorched blades, a damaged cord, or movement of the receptacle in the wall can indicate wear or overheating. Stop using damaged equipment and the affected outlet. Replacement parts must match the circuit and installation requirements." },
+          { "heading": "The circuit or an adapter is overloaded", "text": "Too many devices, multiple high-load appliances, or inappropriate extension/power-strip use can overload components or the branch circuit. A breaker may trip, but absence of a trip does not prove a warm connection is safe. Do not install a larger breaker or fuse to stop trips." },
+          { "heading": "The heat source is elsewhere in the wall or circuit", "text": "A warm wall area, neighboring switch, shared connection, or device farther along the circuit can make the apparent source confusing. Repeated warmth at more than one device, flicker, or breaker behavior is useful information for an electrician but not a safe homeowner tracing exercise." }
+        ]
+      },
+      {
+        "id": "safe-response",
+        "heading": "What to do when you notice a warm outlet",
+        "bullets": [
+          "Stop using the outlet and keep combustible items away from the area.",
+          "Unplug the connected device only when the plug is not hot, melted, sparking, smoking, or stuck; otherwise leave it alone.",
+          "Do not keep touching the wall plate to see whether it gets hotter.",
+          "Note what device was operating, how long it had run, whether the plug fit loosely, and whether other lights or outlets changed.",
+          "Visually inspect the accessible cord and plug for cuts, crushing, darkening, cracked insulation, or deformation.",
+          "If there is no active hazard, leave the outlet unused until a licensed electrician evaluates it."
+        ],
+        "callout": { "title": "Do not open or test the outlet yourself", "text": "Do not remove the faceplate, insert a tester into a damaged or hot receptacle, touch wiring, tighten terminals, replace the receptacle while energized, or reset a breaker repeatedly. Water, smoke, flame, active sparking, or melting calls for distance and emergency or qualified electrical help—not a closer inspection." }
+      },
+      {
+        "id": "breaker-and-power",
+        "heading": "What if the breaker trips or power flickers?",
+        "paragraphs": [
+          "A trip, flicker, dimming, or intermittent power adds evidence of an electrical problem. Do not repeatedly reset the breaker or move the same high-load device to a nearby outlet and continue. A nearby receptacle may share the same circuit or even the same failing connection.",
+          "If the breaker handle or electrical panel is hot, buzzing, wet, smoking, or damaged, do not approach it. Use emergency services for active fire or smoke. Otherwise, tell the electrician which device was running and what the breaker did."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When to call an electrician—and when it is an emergency",
+        "subsections": [
+          { "heading": "Prompt licensed-electrical evaluation", "paragraphs": ["Arrange service for a warm wall plate, loose plug fit, recurring heat, discoloration, buzzing/crackling, intermittent power, unexplained trips, or an outlet that stays warm when unused. An electrician can de-energize the circuit, inspect the receptacle and upstream/downstream connections, and assess the circuit load."] },
+          { "heading": "Immediate emergency response", "paragraphs": ["For flame, smoke, active arcing, rapidly melting material, or a fire in the wall, leave the area and call emergency services. Do not use water on energized electrical equipment. Shut power off only when the disconnect or breaker can be reached without entering the hazard area."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf" },
+      { "title": "Home Electrical Safety Checklist", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/513.pdf" },
+      { "title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/" },
+      { "title": "Electrical Safety Checklist", "publisher": "National Fire Protection Association", "url": "https://content.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/electrical/electrical_safety_checklist.pdf" }
+    ]
   },
   {
     "title": "Why Does My Toilet Whistle After Flushing?", "slug": "toilet-whistles-after-flushing", "description": "A toilet that whistles while refilling usually has a restricted or aging fill valve. Learn what the timing of the sound can reveal.",

@@ -270,3 +270,22 @@ test("toilet-whistle guide stays on refill supply noise and separates drainage g
   assert.ok(whistle.sources.every((source) => source.url.startsWith("https://")));
   assert.equal(whistle.image, undefined);
 });
+
+test("warm-outlet guide preserves conservative stop-use boundaries without invasive electrical steps", () => {
+  const outlet = registry.find((item) => item.slug === "outlet-warm");
+  const breakerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
+  assert.ok(outlet);
+  assert.equal(outlet.published_date, "2026-08-24");
+  assert.equal(outlet.updated_date, "2026-08-27");
+  assert.ok(breakerTopic?.includes(",planned,"));
+  assert.ok(outlet.body_sections.some((section) => section.id === "warm-or-hot" && section.table?.rows.length === 6));
+  assert.ok(outlet.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
+  assert.ok(outlet.body_sections.some((section) => section.id === "safe-response" && section.callout?.title.includes("Do not open")));
+  assert.ok(outlet.body_sections.some((section) => section.id === "professional-help" && section.subsections?.length === 2));
+  const body = JSON.stringify(outlet.body_sections);
+  assert.match(body, /do not remove the faceplate/i);
+  assert.match(body, /Do not remove the faceplate[^.]+touch wiring[^.]+tighten terminals[^.]+replace the receptacle while energized/i);
+  assert.doesNotMatch(body, /step-by-step|open the electrical box|probe the wiring/);
+  assert.ok(outlet.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.equal(outlet.image, undefined);
+});
