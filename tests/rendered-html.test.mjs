@@ -69,6 +69,21 @@ test("AC vent dripping guide renders long-form content, metadata, and contextual
   assert.doesNotMatch(html, /FAQPage|github\.io|chatgpt\.site|og\.png/);
 });
 
+test("AC vent sweating guide renders room-side differentiation, cluster links, and conceptual visual", async () => {
+  const response = await render("/hvac/ac-vent-sweating"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My AC Vent Sweating\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/ac-vent-sweating\//);
+  assert.match(html, /What if one vent sweats—or several do\?/);
+  assert.match(html, /Vent sweating is different from water dripping from the vent/);
+  for (const slug of ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"]) assert.match(html, new RegExp(`href="/hvac/${slug}/"`));
+  assert.match(html, /src="\/images\/ac-register-surface-condensation\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
 test("house humidity guide renders article metadata, cluster links, and its original visual", async () => {
   const response = await render("/hvac/house-humid-with-ac-running"); const html = await response.text();
   assert.equal(response.status, 200);

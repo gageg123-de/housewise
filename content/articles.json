@@ -2,18 +2,111 @@
   {
     "title": "Why Is My AC Vent Sweating?", "slug": "ac-vent-sweating", "description": "Condensation on an AC vent usually means humid air is meeting a cold vent surface. Learn the common causes and what to check safely.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["whole-house", "attic"], "system": "hvac", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
-    "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent"], "target_search_intent": "Explain why condensation forms on an AC supply vent and help the reader distinguish humidity, insulation, and airflow causes.",
-    "direct_answer": "An AC vent usually sweats when warm, humid air reaches the cold metal register or nearby duct. High indoor humidity, an air leak around the boot, weak insulation, or unusually cold airflow can all contribute.",
-    "likely_causes": ["High indoor humidity", "Air leaking around the vent boot", "Missing or compressed duct insulation", "Restricted airflow making the vent unusually cold"],
-    "safe_checks": ["Dry the area and note how quickly moisture returns.", "Check whether several vents sweat or only one.", "Look for a visible gap between the register and ceiling without reaching into the duct.", "Confirm the HVAC filter is clean and return grilles are not blocked."],
-    "professional_help": "Arrange an HVAC evaluation if condensation is persistent, insulation is inaccessible, the ceiling is staining, or you suspect a duct leak. Address active mold growth or significant water damage separately.",
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["ac vent sweating", "condensation on air vent", "water around ceiling vent", "supply register sweating", "one ac vent has condensation"], "target_search_intent": "Explain surface condensation on a room-side AC supply register, distinguish localized boot/insulation conditions from broader humidity, and separate sweating from actual dripping or water elsewhere in the HVAC system.",
+    "direct_answer": "An AC supply vent usually sweats when its metal surface becomes colder than the dew point of the humid air touching it. High indoor humidity can affect several registers, while one wet vent more often points toward a local gap, missing or compressed insulation, or humid attic/wall-cavity air reaching that boot. Restricted airflow or unusually cold operating conditions can contribute, but condensation on the register does not by itself prove an airflow or refrigerant problem. Surface beads are also different from water arriving through the duct, ceiling, or condensate system.",
+    "likely_causes": ["High indoor humidity", "Air leakage around the register boot", "Missing, displaced, compressed, or wet insulation", "Humid attic or wall-cavity air reaching cold metal", "Airflow or operating conditions contributing to a colder surface"],
+    "safe_checks": ["Dry the register and note whether moisture reforms only while cooling runs.", "Compare one vent with registers in other rooms.", "Observe whether beads begin on the metal face or the ceiling around it.", "Check a safely accessible HVAC filter and keep supply/return openings unobstructed.", "Use a hygrometer to compare room humidity over time without treating one reading as a diagnosis."],
+    "professional_help": "Arrange HVAC evaluation when sweating persists, returns after reasonable humidity control, affects multiple registers, accompanies weak airflow or icing, or points to inaccessible boot/duct insulation. Use a roofer or plumber when rain or fixture use tracks the wetness. Address spreading stains, soft drywall, or water near electrical components promptly.",
     "related_articles": ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"],
-    "contextual_links": [
-      { "before": "If moisture has built up enough to fall into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with condensate-drain, roof, and plumbing sources." },
-      { "before": "If several vents are wet or the whole house feels clammy, see ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for broader causes of elevated indoor humidity while cooling." },
-      { "before": "If the wet surface is the duct itself in an attic rather than the room-side register, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to focus on attic humidity, duct insulation, and the outer jacket." },
-      { "before": "If water is pooling around the air handler, coil cabinet, pan, or drain area instead of the register, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on condensate collection and drainage." }
+    "image": {
+      "src": "/images/ac-register-surface-condensation.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual ceiling cutaway showing humid room air contacting a cold metal supply register, with small condensation beads on the room-side register and insulation surrounding the duct boot above the ceiling.",
+      "caption": "Conceptual illustration: A room-side supply register can collect condensation when humid air touches metal cold enough to be below the air's dew point. Actual boot, insulation, and ceiling assemblies vary.",
+      "kind": "conceptual",
+      "after_section": "how-condensation-forms"
+    },
+    "body_sections": [
+      {
+        "id": "how-condensation-forms",
+        "heading": "Why condensation forms on a cold supply register",
+        "paragraphs": [
+          "Cooling air lowers the temperature of the metal register and the duct boot behind it. Air in the room contains invisible water vapor. When that humid air touches a surface colder than its dew point, some vapor changes to liquid and beads on the metal—the same basic process that wets the outside of a cold glass.",
+          "Condensation can result from a higher moisture level, a colder surface, or both. That is why wiping the grille dry does not identify the cause. The useful next step is to determine whether the moisture is forming across the register face, around the boot/ceiling joint, or arriving from somewhere else."
+        ]
+      },
+      {
+        "id": "one-or-many",
+        "heading": "What if one vent sweats—or several do?",
+        "table": {
+          "headers": ["Pattern", "More useful clues"],
+          "rows": [
+            ["Only one register sweats", "A local boot gap, damaged/missing insulation, nearby humid cavity air, or a localized duct condition is more plausible"],
+            ["Several registers sweat on humid days", "Broader indoor humidity or a system-wide operating condition deserves attention"],
+            ["Only ceiling registers below an attic are wet", "Boot sealing, insulation, and humid attic-air contact become more relevant"],
+            ["Beads form evenly on the metal face while cooling runs", "Surface condensation is more consistent than a random roof or plumbing leak"],
+            ["The ceiling is wet but the register face starts dry", "Water may be arriving around the opening from another source"],
+            ["Moisture continues when cooling has been off", "Roofing, plumbing, or another non-condensation source needs consideration"],
+            ["Airflow is weak and frost or ice is visible safely elsewhere", "An HVAC airflow or equipment evaluation is appropriate"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons an AC vent sweats",
+        "causes": [
+          { "heading": "Indoor humidity is elevated", "text": "More water vapor in the room raises the dew point, so a register does not have to be as cold before condensation starts. Cooking, showering, outdoor-air leakage, damp basements or crawlspaces, and HVAC moisture-removal performance can all affect conditions. Multiple wet vents and a clammy house make this broader path more relevant." },
+          { "heading": "Humid air leaks around the duct boot", "text": "The boot is the fitting behind the visible register. A gap between it and the finished ceiling or wall can let warm, humid attic or cavity air contact the cold metal. DOE guidance treats register boots that cross the building enclosure as air-sealing locations. The gap may be hidden behind the grille and does not establish whether the duct itself leaks." },
+          { "heading": "Insulation is missing, compressed, displaced, or wet", "text": "Insulation helps keep the outside surface of a cold boot or duct warmer and separates it from humid surrounding air. Gaps at joints, transitions, or the boot can leave small metal areas cold enough to condense. Insulation type and required repair depend on the actual assembly; do not pull apart an attic installation just to inspect it." },
+          { "heading": "Humid attic or wall-cavity air reaches the cold surface", "text": "A register at the boundary between conditioned space and a hot, humid attic or wall cavity has two air environments nearby. If the air barrier and insulation are discontinuous, cavity air can reach cold metal. This is related to—but not the same as—condensation distributed along attic duct exteriors." },
+          { "heading": "Airflow or operating conditions contribute to a colder register", "text": "A loaded filter, blocked return, closed registers, duct restriction, or equipment issue can change airflow and coil conditions. Those changes may contribute to colder surfaces or icing, but a sweating register alone cannot establish the cause. Avoid closing additional vents as a moisture fix; have abnormal airflow or temperature patterns evaluated." }
+        ]
+      },
+      {
+        "id": "sweating-vs-dripping",
+        "heading": "Vent sweating is different from water dripping from the vent",
+        "paragraphs": ["Sweating means moisture forms on the room-side metal surface. Dripping means enough condensate has accumulated to fall, or water is arriving from the duct, ceiling, drain system, roof, or plumbing. Once water is falling, staining drywall, or emerging from a seam, the source list becomes broader."],
+        "links": [
+          { "before": "Use ", "label": "the AC vent dripping guide", "href": "/hvac/water-dripping-from-ac-vent/", "after": " when actual droplets fall into the room or the ceiling around the vent is wet." }
+        ]
+      },
+      {
+        "id": "related-moisture-patterns",
+        "heading": "How this differs from other HVAC moisture problems",
+        "links": [
+          { "before": "If several registers are wet and the whole home feels clammy, start with ", "label": "why a house can stay humid while the AC runs", "href": "/hvac/house-humid-with-ac-running/", "after": "." },
+          { "before": "If moisture coats the outside of duct runs in an attic, use ", "label": "the attic duct sweating guide", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for insulation, vapor-jacket, and attic dew-point clues." },
+          { "before": "If water is on the floor by the air handler, pan, pump, or drain, use ", "label": "the indoor AC unit water guide", "href": "/hvac/water-around-indoor-ac-unit/", "after": " instead of treating it as a register-sweating problem." }
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Dry the register and note whether beads return only while cooling operates.",
+          "Compare the affected register with vents in other rooms and on other levels.",
+          "Observe whether moisture begins on the metal face, at one corner, or on the ceiling around it.",
+          "Check whether the whole room feels clammy and record humidity over time with a basic hygrometer if available.",
+          "Inspect the HVAC filter if it is safely accessible and replace it according to the equipment instructions when visibly loaded or due.",
+          "Keep return grilles and supply registers unobstructed; do not close more registers to try to warm one vent.",
+          "Photograph staining or condensation before wiping it so an HVAC professional can see the pattern."
+        ],
+        "callout": { "title": "Keep the check on the room side", "text": "Do not enter a dangerously hot or unfinished attic, step between joists, disturb insulation or suspect growth, open HVAC cabinets, handle refrigerant, or work near exposed wiring. Stop and seek prompt help if water reaches electrical components or the ceiling becomes soft or actively leaks." }
+      },
+      {
+        "id": "moisture-damage",
+        "heading": "Why repeated sweating should not be ignored",
+        "paragraphs": [
+          "Repeated wetting can stain paint, soften paper-faced drywall, corrode metal, and reduce the performance of damp insulation. Moisture that remains on susceptible materials can also support microbial growth. Condensation does not prove mold is present, but it does justify correcting the moisture source and drying affected materials.",
+          "If the register is directly below an attic, ceiling stain, sagging material, or insulation that remains wet deserves timely evaluation. Water can travel along the boot and framing, so the visible stain may extend beyond the condensation point."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When an HVAC professional should evaluate the vent",
+        "paragraphs": [
+          "Arrange HVAC service when condensation returns through ordinary cooling cycles, one boot appears poorly sealed or insulated, several vents are affected, airflow is weak, icing is suspected, or the problem continues despite reasonable humidity control. The technician can compare temperatures, airflow, duct/boot condition, insulation, and equipment operation rather than replacing parts from appearance alone.",
+          "A building-performance professional may be useful when attic/cavity air leakage or broader humidity appears central. Call a roofer when the pattern follows rain and a plumber when fixture use matches the wetness. Promptly address soft drywall, spreading damage, or water near electricity."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/sites/default/files/2014-08/documents/moisture-control.pdf" },
+      { "title": "Mold Course Chapter 2: Humidity and Condensation", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/mold-course-chapter-2" },
+      { "title": "Air Sealing Duct Boots and Duct Chases", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf" },
+      { "title": "HVAC Sealed and Insulated Metal Ducts", "publisher": "Building Science Education, U.S. Department of Energy", "url": "https://bsesc.energy.gov/energy-basics/hvac-sealed-and-insulated-metal-ducts" }
     ]
   },
   {

@@ -72,12 +72,30 @@ test("published AC vent dripping guide is distinct and complete", () => {
   assert.ok(dripping.body_sections.some((section) => section.table));
   assert.ok(dripping.sources.every((source) => source.url.startsWith("https://")));
   assert.ok(dripping.related_articles.includes("ac-vent-sweating"));
-  assert.ok(sweating.contextual_links.some((link) => link.href === "/hvac/water-dripping-from-ac-vent/"));
+  assert.ok(sweating.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/water-dripping-from-ac-vent/")));
   assert.ok(dripping.search_keywords.includes("why is water dripping from my ac vent"));
   assert.ok(dripping.room_or_location.includes("living-area"));
   assert.ok(dripping.symptoms.includes("leaking"));
   assert.match(topics, /^Water dripping from AC vent,why is water dripping from my ac vent,hvac,leaking,living-area,diagnostic,published,high,\/hvac\/water-dripping-from-ac-vent\//m);
   for (const plannedTopic of ["AC smells musty when it turns on", "Condensate line keeps clogging", "AC filter is wet"]) assert.match(topics, new RegExp(`^${plannedTopic},`, "m"));
+});
+
+test("AC vent sweating guide stays focused on room-side surface condensation", () => {
+  const sweating = registry.find((item) => item.slug === "ac-vent-sweating");
+  const clusterSlugs = ["water-dripping-from-ac-vent", "house-humid-with-ac-running", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"];
+  assert.ok(sweating);
+  assert.equal(sweating.published_date, "2026-08-24");
+  assert.equal(sweating.updated_date, "2026-08-27");
+  assert.ok(sweating.target_search_intent.includes("room-side AC supply register"));
+  assert.ok(sweating.body_sections.some((section) => section.id === "one-or-many" && section.table?.rows.length === 7));
+  assert.ok(sweating.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 5));
+  assert.ok(sweating.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  const renderedLinks = sweating.body_sections.flatMap((section) => section.links ?? []).map((link) => link.href);
+  for (const slug of clusterSlugs) assert.ok(renderedLinks.includes(`/hvac/${slug}/`));
+  assert.deepEqual(sweating.related_articles, clusterSlugs);
+  assert.equal(sweating.image.src, "/images/ac-register-surface-condensation.webp");
+  assert.equal(sweating.image.kind, "conceptual");
+  assert.ok(sweating.sources.every((source) => source.url.startsWith("https://")));
 });
 
 test("house humidity guide is distinct, linked, sourced, and image-ready", () => {
@@ -96,7 +114,7 @@ test("house humidity guide is distinct, linked, sourced, and image-ready", () =>
   assert.ok(humidity.image.width > 0 && humidity.image.height > 0 && humidity.image.alt && humidity.image.caption);
   assert.ok(humidity.related_articles.includes("ac-vent-sweating"));
   assert.ok(humidity.related_articles.includes("water-dripping-from-ac-vent"));
-  assert.ok(sweating.contextual_links.some((link) => link.href === "/hvac/house-humid-with-ac-running/"));
+  assert.ok(sweating.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/house-humid-with-ac-running/")));
   assert.ok(dripping.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/house-humid-with-ac-running/")));
   assert.match(topics, /^AC runs but house stays humid,why is my house humid with the ac running,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/house-humid-with-ac-running\//m);
 });
@@ -120,7 +138,7 @@ test("attic duct condensation guide is distinct, connected, sourced, and image-r
   assert.equal(atticDuct.image.kind, "conceptual");
   assert.ok(atticDuct.image.width > 0 && atticDuct.image.height > 0 && atticDuct.image.alt && atticDuct.image.caption);
   for (const slug of ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent"]) assert.ok(atticDuct.related_articles.includes(slug));
-  assert.ok(sweating.contextual_links.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/"));
+  assert.ok(sweating.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/")));
   assert.ok(dripping.body_sections.some((section) => section.link?.href === "/hvac/ac-ductwork-sweating-in-attic/" || section.links?.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/")));
   assert.ok(humidity.body_sections.some((section) => section.links?.some((link) => link.href === "/hvac/ac-ductwork-sweating-in-attic/")));
   assert.match(topics, /^AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,moisture,attic,diagnostic,published,high,\/hvac\/ac-ductwork-sweating-in-attic\//m);

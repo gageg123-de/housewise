@@ -112,6 +112,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["toilet bubbling", "toilet-bubbles-when-washer-drains"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],
+    ["one ac vent condensation", "ac-vent-sweating"],
     ["house humid", "house-humid-with-ac-running"],
     ["attic duct sweating", "ac-ductwork-sweating-in-attic"],
     ["water around indoor ac", "water-around-indoor-ac-unit"],
