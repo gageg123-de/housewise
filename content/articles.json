@@ -223,14 +223,14 @@
   {
     "title": "Why Is My House Humid With the AC Running?", "slug": "house-humid-with-ac-running", "description": "If your house stays humid with the AC running, short cycles, fan settings, outdoor air, duct leaks, airflow, or moisture sources may be involved.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "heat"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my house humid with the ac running", "ac running but house humid", "house feels sticky with ac on", "indoor humidity high with air conditioner", "ac cools but does not lower humidity"],
     "target_search_intent": "Explain why a home can feel humid or measure high relative humidity while the air conditioner is running and cooling, provide safe homeowner observations, and preserve a separate future intent for deeper HVAC-performance diagnosis.",
     "direct_answer": "An air conditioner can lower the temperature without removing enough moisture to make the house feel dry. Short cooling cycles, oversized equipment, a thermostat fan set to ON, humid outdoor air entering the home, duct leakage, restricted airflow, heavy indoor moisture loads, or an HVAC performance or condensate problem may be involved. No single cause fits every house, so compare measured humidity, cycle timing, weather, and room-to-room patterns before drawing a conclusion.",
     "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
     "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
     "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
-    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit"],
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit", "ac-filter-wet"],
     "image": {
       "src": "/images/how-ac-removes-indoor-humidity.webp",
       "width": 1536,
@@ -304,7 +304,8 @@
           { "before": "If moisture is mainly beading on the metal register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to focus on surface condensation, the boot, insulation, and nearby air leakage." },
           { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." },
           { "before": "If moisture is collecting on the outside of duct runs in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to examine the attic dew-point, insulation, jacket, and air-leakage pattern." },
-          { "before": "If water is pooling around the indoor coil cabinet, pan, or drain area, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on condensate drainage, thawing ice, and nearby non-HVAC sources." }
+          { "before": "If water is pooling around the indoor coil cabinet, pan, or drain area, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on condensate drainage, thawing ice, and nearby non-HVAC sources." },
+          { "before": "If the moisture is on the filter media itself, use ", "label": "Why Is My AC Filter Wet?", "href": "/hvac/ac-filter-wet/", "after": " to start with filter location and the path water would need to take to reach it." }
         ]
       },
       {
@@ -446,14 +447,14 @@
   {
     "title": "Why Is There Water Around My Indoor AC Unit?", "slug": "water-around-indoor-ac-unit", "description": "Water around an indoor AC unit may involve a clogged drain, overflowing pan, thawing coil, condensate pump, or another nearby leak.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture"], "room_or_location": ["whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-27", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-27", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is there water around my indoor ac unit", "water around air handler", "ac unit leaking water inside", "water near furnace when ac runs", "condensate pan overflowing", "indoor ac unit puddle"],
     "target_search_intent": "Help a homeowner identify why water is collecting around indoor HVAC equipment or its drain area, distinguish condensate-management problems from thawing ice and unrelated leaks, make safe observations, and choose the appropriate professional.",
     "direct_answer": "Air conditioners normally make condensate as the indoor cooling coil removes moisture from the air, but that water should collect in a pan and drain away. Water around the indoor unit usually means the condensate is not draining normally, the pan or an optional condensate pump is not managing it, ice has formed and then melted, or water is coming from another nearby source. A clogged drain is common, but the puddle alone cannot prove the cause.",
     "likely_causes": ["A clogged condensate drain line", "A full or overflowing drain pan", "A cracked, rusted, damaged, or displaced pan", "A frozen evaporator coil thawing", "A condensate pump problem where one is installed", "A loose, disconnected, or poorly draining line", "A high condensate load during humid conditions", "A plumbing, roof, humidifier, water-heater, or other nearby leak"],
     "safe_checks": ["Note whether water is actively spreading and whether it appears during cooling or after the system stops.", "Keep away from wet electrical equipment and switch the HVAC system off at the thermostat if that can be done from a dry, safe location.", "Inspect the HVAC filter if it is safely accessible without opening equipment.", "Look from outside the cabinet for a visibly full accessible pan or an obvious loose drain connection.", "Note whether a condensate pump is present without opening or bypassing it.", "Check nearby visible plumbing, a water heater, humidifier, and the area above the unit for another source.", "Photograph the first wet location and record weather, cooling operation, and any ice or weak-airflow clues."],
     "professional_help": "Arrange HVAC service when water continues accumulating, the pan repeatedly fills, the drain appears blocked or disconnected, an installed condensate pump is not operating, coil icing is suspected, water returns after cleanup, or the source cannot be identified. Call a plumber, roofer, or the appropriate equipment service provider when timing and location point away from the AC. Do not touch wet electrical equipment; smoke, burning odor, sparking, or water reaching energized components requires prompt emergency or qualified electrical/HVAC help from a safe location.",
-    "related_articles": ["house-humid-with-ac-running", "water-dripping-from-ac-vent", "ac-vent-sweating", "ac-ductwork-sweating-in-attic"],
+    "related_articles": ["house-humid-with-ac-running", "water-dripping-from-ac-vent", "ac-vent-sweating", "ac-ductwork-sweating-in-attic", "ac-filter-wet"],
     "image": {
       "src": "/images/indoor-ac-condensate-drainage.webp",
       "width": 1536,
@@ -514,7 +515,8 @@
         "paragraphs": [
           "A cooling coil can accumulate frost or ice when its operating conditions are abnormal. When that ice melts, the pan may receive a sudden load or water may reach places it normally would not. Possible clues include weak supply airflow, cooling that seems abnormal, frost on safely visible external tubing or cabinet surfaces, and water that becomes noticeable after cooling stops.",
           "Those clues do not identify the cause of the icing. A dirty filter is a reasonable homeowner check, but coil contamination, blower or duct airflow, controls, and refrigerant-system performance may also be involved. Do not open the coil cabinet, chip ice, apply heat, or handle refrigerant. Turn the system off at the thermostat from a dry location and arrange HVAC evaluation when icing is suspected."
-        ]
+        ],
+        "link": { "before": "If the filter media itself is damp, stained, or soaked, use ", "label": "Why Is My AC Filter Wet?", "href": "/hvac/ac-filter-wet/", "after": " to compare equipment-adjacent filters with return-grille filters before assuming thawing ice reached it." }
       },
       {
         "id": "humidity-and-related-water",
@@ -566,6 +568,141 @@
       { "title": "AC Leaking Water? Find Out Why and What to Do", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/ac-leaking-water/" },
       { "title": "Troubleshoot an Air Conditioner", "publisher": "Carrier", "url": "https://www.carrier.com/residential/en/ca/products/air-conditioners/air-conditioner-service/troubleshoot-an-ac-not-working/" },
       { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" }
+    ]
+  },
+  {
+    "title": "Why Is My AC Filter Wet?", "slug": "ac-filter-wet", "description": "A wet AC filter may involve condensate overflow, thawing ice, condensation, air leakage, or another local water source. Filter location is the first clue.",
+    "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "leaking"], "room_or_location": ["whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-28", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["why is my ac filter wet", "wet hvac filter", "air filter damp", "water on ac filter", "ac filter soaked", "wet filter near air handler", "damp return air filter"],
+    "target_search_intent": "Help a homeowner identify how moisture could reach HVAC filter media, use filter location and wetness patterns to distinguish equipment drainage or thawing water from local condensation and unrelated leaks, replace damaged media safely, and know when HVAC or another trade should evaluate the source.",
+    "direct_answer": "An HVAC air filter normally should not be wet. Moisture may reach it from condensate overflow near the indoor unit, water released as a frozen coil thaws, condensation around a cold or leaky filter rack, or a separate roof, plumbing, spill, or return-grille moisture source. The first question is where the filter sits: a filter beside the air handler has different plausible water paths than one behind a return grille across the house. Replace genuinely wet or damaged disposable media, but do not treat a new filter as the repair—the moisture source still needs to be found.",
+    "likely_causes": ["Condensate overflow or drainage trouble near an equipment-mounted filter", "A frozen evaporator coil thawing", "Condensation near a cold filter rack or return cabinet", "Humid unconditioned air leaking around the return side", "A roof, plumbing, appliance, spill, or cleaning source", "A return-grille filter exposed to local dampness"],
+    "safe_checks": ["Identify whether the filter is behind a return grille or in a rack beside the indoor equipment.", "Note whether one edge, one face, or the entire filter is wet and photograph the pattern.", "Look for safely visible water near the air handler, drain, pan, return opening, wall, or ceiling without opening equipment.", "Note whether wetness appears during cooling, after shutdown, after rain, or during very humid weather.", "Observe weak airflow, a deformed filter, or safely visible external frost without accessing the coil cabinet.", "Use a hygrometer as one clue and record whether a replacement filter becomes wet again."],
+    "professional_help": "Arrange HVAC service when a replacement filter becomes wet again, water is visible around the indoor unit, a pan repeatedly fills, drainage appears abnormal, airflow is weak, coil icing is suspected, or the source cannot be identified. A roofer or plumber may be more appropriate when rain or fixture use tracks the wetness. Do not touch wet electrical equipment; smoke, burning odor, sparking, or water entering controls requires prompt emergency or qualified electrical/HVAC help from a safe location.",
+    "related_articles": ["water-around-indoor-ac-unit", "house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic"],
+    "image": {
+      "src": "/images/ac-filter-location-moisture-paths.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison of a return-grille HVAC filter away from the equipment and a return-side filter rack beside an indoor air handler, with different nearby moisture paths.",
+      "caption": "Conceptual illustration: A filter may sit behind a return grille or in a return-side rack near the indoor unit. Its location changes whether local moisture, condensation, condensate overflow, or thawing water is plausible; actual systems vary.",
+      "kind": "conceptual",
+      "after_section": "filter-location-first"
+    },
+    "body_sections": [
+      {
+        "id": "filter-location-first",
+        "heading": "Filter location changes the list of likely moisture sources",
+        "paragraphs": [
+          "Residential filters sit on the return side, before air reaches the blower and cooling equipment, but not in one universal place. Some slide into a rack beside an air handler or furnace. Others sit behind a wall or ceiling return grille, potentially many feet from the equipment.",
+          "Water escaping a coil pan may reach a nearby rack in some arrangements, but it cannot simply travel backward to every distant grille. A wet grille filter across the house should prompt inspection of that opening and surrounding wall or ceiling—not an automatic diagnosis of a clogged condensate line."
+        ],
+        "table": {
+          "headers": ["Filter location", "Moisture paths worth comparing"],
+          "rows": [
+            ["Rack beside or below the indoor unit", "Nearby pan or drain overflow, thawing water, cabinet condensation, or another local equipment-room leak"],
+            ["Rack in return duct near the air handler", "Condensation at a cold or poorly sealed rack, return-side air leakage, or water traveling from nearby equipment"],
+            ["Filter behind a wall return grille", "A local plumbing leak, spill, wall-cavity moisture, or condensation at that return opening"],
+            ["Filter behind a ceiling return grille", "A roof/attic/plumbing source above the grille, local condensation, or water entering the return opening"],
+            ["Several return-grille filters are damp", "A broader humidity or enclosure condition may deserve comparison, without proving humidity is the only cause"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons an AC filter becomes wet",
+        "paragraphs": ["A wet filter shows where moisture ended up, not necessarily where it began. Trace the first wet surface and the operating pattern before assigning a cause."],
+        "causes": [
+          { "heading": "Condensate is overflowing or not draining normally", "text": "Moisture normally condenses on the indoor coil, collects in a pan, and leaves through a drain or optional pump. A clogged line, damaged pan, displaced component, or failed pump can let water escape. This path is more plausible for an equipment-adjacent filter than a distant grille filter." },
+          { "heading": "A frozen evaporator coil has thawed", "text": "Ice can melt after cooling stops and release more water than the normal path handles at once. A severely dirty filter can restrict airflow, but blower, coil, duct, control, or refrigerant problems may also contribute. A wet filter does not prove it caused the icing." },
+          { "heading": "Condensation is forming near the filter rack", "text": "Humid air can condense on a surface below its dew point. Moisture on a cold rack, cabinet surface, or nearby duct may wick into filter media. High humidity increases condensation potential but does not explain every wet filter." },
+          { "heading": "Humid air is leaking around the return side", "text": "A poorly sealed slot or return connection can pull humid air from an attic, crawlspace, garage, or wall cavity. That air may promote condensation on colder surfaces. A technician may need to compare leakage, insulation, pressure, and temperature." },
+          { "heading": "Water is coming from another nearby source", "text": "A roof leak, pipe, water heater, humidifier, appliance, cleaning event, or spill can wet the filter area. Water may travel along framing, ducts, piping, or the floor, so rain timing, fixture use, and the highest wet point matter." },
+          { "heading": "A return grille is exposed to local moisture", "text": "A damp ceiling, wall cavity, utility area, or spill may wet a grille filter without any failure at the indoor coil. Evaluate the moisture where that particular filter lives." }
+        ]
+      },
+      {
+        "id": "where-wet",
+        "heading": "Where is the filter wet?",
+        "paragraphs": ["Use only the normal homeowner-access opening, with the system off according to its instructions. The wet pattern can narrow the path but cannot diagnose a hidden component."],
+        "table": {
+          "headers": ["Wetness pattern", "What it may suggest"],
+          "rows": [
+            ["One edge or corner is wet", "Localized dripping, wicking, a rack seam, or water entering from one nearby surface"],
+            ["The side nearest the indoor unit is soaked", "Equipment-side water, pan/drain overflow, or thawing water may deserve closer evaluation if the rack is adjacent"],
+            ["The entire filter feels uniformly damp", "Broader humid-air exposure, widespread condensation, or saturation after water pooled nearby"],
+            ["A return-grille filter far from the unit is wet", "A local ceiling, wall, roof, plumbing, spill, or return-opening source may be more plausible than equipment condensate"],
+            ["The filter is bowed, collapsed, or pulling out of its frame", "Moisture damage and airflow restriction; the media should not be reused"],
+            ["A new filter becomes wet in the same place", "The underlying moisture path is still active and needs evaluation"]
+          ]
+        }
+      },
+      {
+        "id": "timing-clues",
+        "heading": "When the filter gets wet can narrow the path",
+        "subsections": [
+          { "heading": "Wet only during cooling", "paragraphs": ["Condensate, cold-surface condensation, or blower-driven humid-air leakage becomes more relevant. Note water at a pan, drain, seam, or rack edge."] },
+          { "heading": "Wetter after the AC shuts off", "paragraphs": ["Melting ice may be releasing water, especially with weak airflow or safely visible frost. Do not open the coil cabinet or chip ice."] },
+          { "heading": "Wet after heavy rain", "paragraphs": ["Compare roof, attic, wall, or exterior-water sources, especially for a ceiling return or equipment below the roof."] },
+          { "heading": "Wet mainly during very humid weather", "paragraphs": ["Condensation or humid-air leakage may be involved, but humidity is not proven to be the only cause."] },
+          { "heading": "Wet repeatedly after replacement", "paragraphs": ["A new filter does not stop an active leak, overflow, condensation path, or icing problem. Repeated wetting warrants evaluation."] }
+        ]
+      },
+      {
+        "id": "keep-running-and-replace",
+        "heading": "Is it safe to keep running the AC—and should the filter be replaced?",
+        "paragraphs": [
+          "Do not keep operating indefinitely with a saturated, sagging, or damaged filter. Wet media can deform or restrict airflow. If water is spreading, ice is suspected, airflow is weak, or electricity is threatened, stop the system at the thermostat only from a dry location and arrange service.",
+          "Replace genuinely wet, stained, collapsed, contaminated, or damaged disposable media with the correct type after the source is controlled or during safe troubleshooting. Do not wash a disposable filter. Follow manufacturer instructions for reusable media and reinstall it only when fully dry. Changing a filter does not repair a drain, pan, air leak, roof leak, or icing condition."
+        ],
+        "callout": { "title": "Water near electrical equipment changes the response", "text": "Do not touch a wet cabinet, disconnect, pump, receptacle, control, wiring, or electrical panel. Do not open equipment compartments, bypass a float switch, handle refrigerant, cut drain lines, or use drain chemicals. Smoke, burning odor, sparking, active arcing, or flooding into energized equipment calls for immediate distance and emergency or qualified electrical/HVAC help from a safe location." }
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can check safely",
+        "paragraphs": ["Keep the investigation external and specific to the filter's location. Photographs of the filter, rack, and first wet point are more useful than opening equipment."],
+        "bullets": [
+          "Identify every filter and whether each one is at a return grille or beside the indoor equipment.",
+          "Note which face, edge, corner, or section is wet before discarding damaged disposable media.",
+          "Check for safely visible water near the indoor unit, drain connection, accessible pan, filter rack, return grille, wall, or ceiling.",
+          "Observe whether supply airflow has weakened or the filter has bowed, collapsed, or pulled away from its frame.",
+          "From outside closed equipment, note any frost or ice on safely visible tubing or cabinet surfaces; do not expose the coil.",
+          "Record whether wetness follows cooling, shutdown, heavy rain, nearby fixture use, a spill, or humid weather.",
+          "Use a hygrometer as one clue rather than treating one reading as the diagnosis.",
+          "Photograph the area and note whether a correctly installed replacement filter becomes wet again."
+        ]
+      },
+      {
+        "id": "related-hvac-moisture",
+        "heading": "How a wet filter differs from other AC moisture problems",
+        "paragraphs": ["Start with what is actually wet. Each moisture location changes the useful first questions."],
+        "links": [
+          { "before": "If water is collecting on the floor, cabinet, pan, pump, or drain area, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " for the broader equipment-drainage investigation." },
+          { "before": "If the home feels sticky or measured humidity stays elevated while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for the whole-house comfort and moisture pattern." },
+          { "before": "If moisture is beading on a room-side register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to examine register temperature, boot insulation, and local air leakage." },
+          { "before": "If water is falling from or appearing around a supply register, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with roof, plumbing, and drainage sources." },
+          { "before": "If droplets coat the outside of ducts in the attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for the separate insulation, vapor-jacket, and attic dew-point problem." }
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an HVAC professional—or another trade",
+        "paragraphs": [
+          "Call an HVAC professional when a replacement filter becomes wet again, water is visible around the equipment, a pan repeatedly fills, drainage looks abnormal, airflow is weak, icing is suspected, or the source remains unclear. A technician can compare filter placement, return sealing, temperatures, airflow, coil drainage, pumps, and controls.",
+          "Call a roofer when wetness follows rain or begins above a ceiling return. Call a plumber when it tracks fixture use, piping, a drain, or water heater. A building-envelope professional may help when humid unconditioned air is entering the return system.",
+          "Get prompt help for material damage, saturation, flooding, or water near electrical parts. Smoke, sparking, arcing, or burning odor requires distance and emergency or qualified electrical/HVAC help."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "HVAC Proper Installation of Filters", "publisher": "U.S. Department of Energy Building Science Education", "url": "https://bsesc.energy.gov/energy-basics/hvac-proper-installation-filters" },
+      { "title": "Where Is the Air Filter in My HVAC System?", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/blog/air-filter-hvac-system/" },
+      { "title": "Condensate Capture Potential Map", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/cmei/femp/condensate-capture-potential-map" },
+      { "title": "Heating and Cooling Maintenance Checklist", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist" },
+      { "title": "Troubleshoot an Air Conditioner", "publisher": "Carrier", "url": "https://www.carrier.com/residential/en/ca/products/air-conditioners/air-conditioner-service/troubleshoot-an-ac-not-working/" },
+      { "title": "Biological Contaminants and Indoor Air Quality", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality" },
+      { "title": "Should You Have the Air Ducts in Your Home Cleaned?", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned" }
     ]
   },
   {

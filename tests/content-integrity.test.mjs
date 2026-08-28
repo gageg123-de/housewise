@@ -151,6 +151,7 @@ test("indoor AC water guide is distinct, connected, sourced, and image-ready", (
     "ac-vent-sweating",
     "water-dripping-from-ac-vent",
     "ac-ductwork-sweating-in-attic",
+    "ac-filter-wet",
   ].includes(item.slug));
   assert.ok(indoorWater);
   assert.equal(indoorWater.primary_category, "hvac");
@@ -178,7 +179,7 @@ test("indoor AC water guide is distinct, connected, sourced, and image-ready", (
     assert.ok(links.some((link) => link.href === "/hvac/water-around-indoor-ac-unit/"), `${article.slug}: missing reciprocal indoor-unit link`);
   }
   assert.match(topics, /^Water around indoor AC unit,why is there water around my indoor ac unit,hvac,leaking,whole-house,diagnostic,published,high,\/hvac\/water-around-indoor-ac-unit\//m);
-  for (const plannedTopic of ["AC filter is wet", "Condensate line keeps clogging", "AC smells musty when it turns on"]) {
+  for (const plannedTopic of ["Condensate line keeps clogging", "AC smells musty when it turns on"]) {
     assert.match(topics, new RegExp(`^${plannedTopic},.*?,planned,`, "m"));
   }
 });
@@ -310,4 +311,32 @@ test("ceiling-fan guide separates blade imbalance from ceiling-mount movement", 
   assert.equal(fan.image.kind, "conceptual");
   assert.equal(fan.image.width, 1536);
   assert.equal(fan.image.height, 1024);
+});
+
+test("wet AC filter guide stays location-specific and distinct from equipment-water and recurring-drain intent", () => {
+  const filter = registry.find((item) => item.slug === "ac-filter-wet");
+  const indoorWater = registry.find((item) => item.slug === "water-around-indoor-ac-unit");
+  const humidity = registry.find((item) => item.slug === "house-humid-with-ac-running");
+  const recurringDrain = topics.split(/\r?\n/).find((row) => row.startsWith("Condensate line keeps clogging,"));
+  assert.ok(filter && indoorWater && humidity);
+  assert.equal(filter.published_date, "2026-08-28");
+  assert.equal(filter.updated_date, "2026-08-28");
+  assert.equal(filter.primary_category, "hvac");
+  assert.ok(filter.secondary_categories.includes("moisture-and-mold"));
+  assert.deepEqual(filter.room_or_location, ["whole-house"]);
+  assert.notEqual(filter.target_search_intent, indoorWater.target_search_intent);
+  assert.ok(recurringDrain?.includes(",planned,"), "recurring drain-clog intent remains planned");
+  assert.ok(filter.body_sections.some((section) => section.id === "filter-location-first" && section.table?.rows.length === 5));
+  assert.ok(filter.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
+  assert.ok(filter.body_sections.some((section) => section.id === "where-wet" && section.table?.rows.length === 6));
+  assert.ok(filter.body_sections.some((section) => section.id === "keep-running-and-replace" && section.callout));
+  assert.ok(filter.body_sections.some((section) => section.id === "related-hvac-moisture" && section.links?.length === 5));
+  assert.ok(filter.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(filter.image.src, "/images/ac-filter-location-moisture-paths.webp");
+  assert.equal(filter.image.kind, "conceptual");
+  assert.equal(filter.image.width, 1536);
+  assert.equal(filter.image.height, 1024);
+  const reciprocalLinks = [indoorWater, humidity].map((article) => (article.body_sections ?? []).flatMap((section) => [section.link, ...(section.links ?? [])].filter(Boolean)));
+  assert.ok(reciprocalLinks.every((links) => links.some((link) => link.href === "/hvac/ac-filter-wet/")));
+  assert.match(topics, /^AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/ac-filter-wet\//m);
 });

@@ -225,3 +225,23 @@ test("ceiling-fan guide renders blade-versus-mount distinction, safety boundary,
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ceiling-fan-wobble-vs-mount-movement\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("wet AC filter guide renders location-specific distinctions, cluster links, schema, and visual", async () => {
+  const response = await render("/hvac/ac-filter-wet"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My AC Filter Wet\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/ac-filter-wet\//);
+  assert.match(html, /Filter location changes the list of likely moisture sources/);
+  assert.match(html, /Is it safe to keep running the AC—and should the filter be replaced\?/);
+  assert.match(html, /Water near electrical equipment changes the response/);
+  for (const slug of ["water-around-indoor-ac-unit", "house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic"]) {
+    assert.match(html, new RegExp(`href="/hvac/${slug}/"`));
+  }
+  assert.match(html, /src="\/images\/ac-filter-location-moisture-paths\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ac-filter-location-moisture-paths\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

@@ -25,6 +25,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "drainage")[0].article.slug, "toilet-bubbles-when-washer-drains");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
+  assert.equal(rankFinderArticles(registry, "whole-house", "hvac-filter")[0].article.slug, "ac-filter-wet");
   assert.equal(rankFinderArticles(registry, "whole-house", "leaking")[0].article.slug, "water-around-indoor-ac-unit");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -52,6 +53,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["bathroom", "smell"],
     ["bathroom", "noise"],
     ["whole-house", "moisture"],
+    ["whole-house", "hvac-filter"],
     ["laundry", "appliance-behavior"],
     ["attic", "moisture"],
   ];
@@ -118,6 +120,11 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["attic duct sweating", "ac-ductwork-sweating-in-attic"],
     ["water around indoor ac", "water-around-indoor-ac-unit"],
     ["air handler puddle", "water-around-indoor-ac-unit"],
+    ["ac filter wet", "ac-filter-wet"],
+    ["wet hvac filter", "ac-filter-wet"],
+    ["air filter damp", "ac-filter-wet"],
+    ["water on ac filter", "ac-filter-wet"],
+    ["filter soaked near air handler", "ac-filter-wet"],
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
     ["dryer slow", "dryer-taking-two-cycles"],
