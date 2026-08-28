@@ -184,3 +184,21 @@ test("water heater leak guide preserves its canonical intent and adds safety-dep
   const indoorWater = registry.find((item) => item.slug === "water-around-indoor-ac-unit");
   assert.ok(indoorWater.body_sections.some((section) => section.link?.href === "/plumbing/water-under-water-heater/"));
 });
+
+test("washer-triggered toilet bubbling guide stays distinct from random gurgling and protects backup safety", () => {
+  const bubbling = registry.find((item) => item.slug === "toilet-bubbles-when-washer-drains");
+  const randomGurgle = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
+  assert.ok(bubbling);
+  assert.equal(bubbling.published_date, "2026-08-24");
+  assert.equal(bubbling.updated_date, "2026-08-27");
+  assert.ok(randomGurgle?.includes(",planned,"));
+  assert.match(bubbling.target_search_intent, /specifically during washing-machine discharge/i);
+  assert.ok(bubbling.body_sections.some((section) => section.id === "shared-drain-mechanism"));
+  assert.ok(bubbling.body_sections.some((section) => section.id === "likely-causes" && section.causes?.length === 5));
+  assert.ok(bubbling.body_sections.some((section) => section.id === "what-the-bowl-does" && section.table?.rows.length === 7));
+  assert.ok(bubbling.body_sections.some((section) => section.id === "bubbling-or-backup" && section.callout));
+  assert.ok(bubbling.body_sections.some((section) => section.link?.href === "/plumbing/toilet-whistles-after-flushing/"));
+  assert.ok(bubbling.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(bubbling.image.src, "/images/washer-toilet-shared-drain-pressure.webp");
+  assert.equal(bubbling.image.kind, "conceptual");
+});

@@ -51,9 +51,9 @@ test("editorial policy explains sourcing, review status, and original visual che
   assert.match(html, /Conceptual illustrations are labeled as conceptual/);
 });
 
-test("a second article overrides root social metadata without the site image", async () => {
+test("a second article overrides root social metadata with its record image", async () => {
   const response = await render("/plumbing/toilet-bubbles-when-washer-drains"); const html = await response.text();
-  assert.equal(response.status, 200); assert.match(html, /<title>Why Does My Toilet Bubble When the Washer Drains\? \| My House Is Doing What\?<\/title>/); assert.match(html, /shared drain is partly blocked/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-bubbles-when-washer-drains\//); assert.doesNotMatch(html, /Housewise|github\.io|chatgpt\.site|og\.png/);
+  assert.equal(response.status, 200); assert.match(html, /<title>Why Does My Toilet Bubble When the Washer Drains\? \| My House Is Doing What\?<\/title>/); assert.match(html, /washer pumps a substantial flow/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-bubbles-when-washer-drains\//); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/washer-toilet-shared-drain-pressure\.webp/); assert.doesNotMatch(html, /Housewise|github\.io|chatgpt\.site|og\.png/);
 });
 
 test("AC vent dripping guide renders long-form content, metadata, and contextual links", async () => {
@@ -132,6 +132,20 @@ test("water heater leak guide renders its unchanged canonical, safety distinctio
   assert.match(html, /Hot water, gas, pressure, and electricity change the response/);
   assert.match(html, /href="\/hvac\/water-around-indoor-ac-unit\/"/);
   assert.match(html, /src="\/images\/water-heater-leak-source-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("washer-triggered toilet bubbling guide renders drainage distinctions, safety, and conceptual visual", async () => {
+  const response = await render("/plumbing/toilet-bubbles-when-washer-drains"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-bubbles-when-washer-drains\//);
+  assert.match(html, /Why the washer can make the toilet bubble/);
+  assert.match(html, /Stop the test if wastewater rises or spills/);
+  assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
+  assert.match(html, /src="\/images\/washer-toilet-shared-drain-pressure\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);

@@ -476,15 +476,110 @@
     ]
   },
   {
-    "title": "Why Does My Toilet Bubble When the Washer Drains?", "slug": "toilet-bubbles-when-washer-drains", "description": "A toilet that bubbles when the washing machine drains often points to restricted drain airflow or a partial blockage in a shared drain line.",
+    "title": "Why Does My Toilet Bubble When the Washer Drains?", "slug": "toilet-bubbles-when-washer-drains", "description": "A toilet that bubbles when the washer drains may signal a partial shared-drain blockage, venting problem, or broader sewer issue. Learn which clues matter.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "clogging", "drainage"], "room_or_location": ["bathroom", "laundry"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 6, "featured_status": true,
-    "search_keywords": ["toilet bubbling washer drains", "toilet gurgles washing machine", "shared drain blockage"], "target_search_intent": "Explain the relationship between washer discharge, venting, and partial drain blockages.",
-    "direct_answer": "The washer releases a large volume of water quickly. If a shared drain is partly blocked or cannot draw enough air through its vent, pressure changes can push air through the toilet trap and make it bubble.",
-    "likely_causes": ["Partial blockage in a shared branch drain", "Restricted plumbing vent", "Developing main sewer line blockage", "Improperly configured drain connection"],
-    "safe_checks": ["Stop the washer if water rises in the toilet or another drain.", "Check whether nearby tubs or sinks drain slowly.", "Note whether the issue happens on every load.", "Avoid mixing drain-cleaning chemicals or opening rooftop vents."],
-    "professional_help": "Call a plumber promptly if sewage backs up, more than one fixture is affected, or the toilet water rises. A recurring bubble usually deserves drain and vent evaluation before it becomes a backup.",
-    "related_articles": ["toilet-whistles-after-flushing", "water-under-water-heater"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["toilet bubbling washer drains", "toilet gurgles washing machine", "shared drain blockage", "toilet water rises when washer drains", "washer standpipe and toilet gurgle"], "target_search_intent": "Explain why a toilet bowl bubbles specifically during washing-machine discharge, distinguish branch, main-drain, vent, standpipe, and sewer patterns, and identify backup warning signs.",
+    "direct_answer": "A washer pumps a substantial flow into its standpipe over a short period. If the washer and toilet connect to a drain that is partly restricted—or if the drainage system cannot move air normally—the discharge can create pressure changes that escape through the toilet trap as bubbles or gurgling. A vent problem is possible, but bubbling does not prove the vent is blocked. Rising toilet water, a standpipe overflow, or several slow and gurgling fixtures points to a more urgent drainage problem.",
+    "likely_causes": ["Partial restriction in a shared branch drain", "Restriction farther downstream in the building drain or sewer", "Plumbing venting problem", "Washer standpipe or connection problem", "Septic or municipal sewer condition"],
+    "safe_checks": ["Stop the washer if toilet water rises or wastewater appears anywhere.", "Note which washer cycle phase triggers the bubbling.", "Check whether the toilet, tub, shower, and sink are also slow.", "Observe whether the washer standpipe overflows without touching wastewater.", "Avoid chemical drain cleaners, rooftop vent access, and dismantling drainage connections."],
+    "professional_help": "A recurring washer-triggered bubble deserves plumbing evaluation, especially when the toilet water level changes or multiple fixtures respond. Stop water use and call promptly for sewage, a standpipe overflow, several backing-up drains, or a lowest-level fixture taking wastewater. A septic service provider or sewer utility may become appropriate after a plumber identifies where the restriction lies.",
+    "related_articles": ["toilet-whistles-after-flushing"],
+    "image": {
+      "src": "/images/washer-toilet-shared-drain-pressure.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway showing a washing machine draining into a standpipe connected to the same branch drain as a toilet, with a partial downstream restriction and air bubbles rising in the toilet bowl.",
+      "caption": "Conceptual illustration: A washer’s fast discharge can reveal a restriction or airflow problem in a shared drainage path, sending pressure toward the toilet trap. Actual drain and vent layouts vary, and the bubbles do not identify the exact fault.",
+      "kind": "conceptual",
+      "after_section": "shared-drain-mechanism"
+    },
+    "body_sections": [
+      {
+        "id": "shared-drain-mechanism",
+        "heading": "Why the washer can make the toilet bubble",
+        "paragraphs": [
+          "A washing machine does not drain like a slowly emptying sink. Its pump sends water into a standpipe, laundry tub, or other approved receptor at a rate the connected plumbing must carry away. Manufacturer installation instructions specify standpipe dimensions and drainage capacity for this reason.",
+          "A gravity drainage system also needs an air path. Plumbing vents help limit pressure differences that could disturb the water seal in a fixture trap. If wastewater meets a partial restriction, or if air movement is impaired, pressure can seek another path. The toilet bowl connects to its trap, so air moving through that water can create the visible bubbles and gurgling sound.",
+          "The washer did not necessarily create the underlying defect. Its concentrated discharge may simply be the event that reveals a developing restriction or venting problem that ordinary fixture use does not expose."
+        ]
+      },
+      {
+        "id": "likely-causes",
+        "heading": "Most likely causes",
+        "paragraphs": ["The pattern across other fixtures helps separate a local branch problem from a larger drainage issue. None of these causes can be confirmed from sound alone."],
+        "causes": [
+          { "heading": "A shared branch drain is partly restricted", "text": "If the washer and toilet join the same downstream branch, buildup or an obstruction can reduce the pipe’s usable capacity. The washer discharge then compresses or displaces air near the toilet. Symptoms may be limited to one bathroom and laundry area at first, especially when lower-flow use still drains normally." },
+          { "heading": "A blockage is developing farther downstream", "text": "A restriction in the building drain, building sewer, or another downstream section can affect several fixtures. Gurgling in more than one room, slow tubs or showers, changing toilet levels, or wastewater appearing at the lowest fixture makes a broader drain problem more plausible. Roots, pipe defects, debris, and inappropriate materials are among possible sewer blockage causes, but locating them requires inspection." },
+          { "heading": "The vent system is not admitting or releasing air normally", "text": "A blocked, undersized, disconnected, or incorrectly arranged vent can allow pressure changes to disturb traps. Venting is one possibility—not the automatic answer. A partial drain blockage can produce similar sounds, and rooftop vent inspection is not a safe homeowner diagnostic step." },
+          { "heading": "The washer standpipe or drain connection has a problem", "text": "An undersized, obstructed, improperly arranged, or overflowing standpipe can be part of the pattern. A loose or excessively inserted washer hose can cause other washer-specific drainage behavior, but a toilet bubbling during pump-out still suggests the shared drainage path needs attention. Use the washer’s model-specific installation requirements rather than generic measurements." },
+          { "heading": "A septic or municipal sewer condition is affecting drainage", "text": "A full or impaired septic system, saturated drainfield, municipal sewer obstruction, or overloaded sewer can cause multiple fixtures to react. Weather-related or neighborhood-wide symptoms can be useful context, but a plumber or septic professional must determine whether the problem is inside the building, on the private sewer, or beyond it." }
+        ]
+      },
+      {
+        "id": "what-the-bowl-does",
+        "heading": "What the toilet and nearby drains are doing matters",
+        "table": {
+          "headers": ["Observation", "What it may suggest"],
+          "rows": [
+            ["A few bubbles, normal water level, and no slow drains", "An early or modest pressure disturbance; still worth monitoring if repeatable"],
+            ["The toilet water rises while the washer pumps out", "Wastewater is meeting resistance downstream; stop the washer before overflow"],
+            ["The toilet drains slowly or its level changes afterward", "A toilet or shared-drain restriction may be affecting flow"],
+            ["The washer standpipe overflows", "The standpipe or connected drain cannot accept the discharge normally"],
+            ["Several fixtures gurgle or back up", "A downstream building drain, sewer, or septic problem becomes more plausible"],
+            ["Only one bathroom reacts", "A local branch or vent arrangement near that bathroom may be involved"],
+            ["The symptom occurs even when the washer is off", "The broader planned random-gurgling intent may require a different diagnostic path"]
+          ]
+        }
+      },
+      {
+        "id": "bubbling-or-backup",
+        "heading": "Bubbling is a clue; rising wastewater is a backup warning",
+        "paragraphs": [
+          "Air bubbles by themselves do not necessarily mean sewage is entering the bowl. The response changes when the water level rises, dirty water enters another fixture, the standpipe spills, or a floor drain becomes the outlet. Those signs mean the drainage system is no longer containing wastewater normally.",
+          "Sewage can contain disease-causing organisms. Keep people and pets away, avoid contact, stop using fixtures that add wastewater, and arrange prompt professional help. Do not keep running the washer to reproduce an overflow."
+        ],
+        "callout": { "title": "Stop the test if wastewater rises or spills", "text": "Cancel or pause the washer if that can be done without entering a contaminated area. Do not flush the toilet, run more fixtures, mix drain chemicals, or touch sewage. If wastewater is near electrical equipment, keep away and use qualified emergency help." }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can observe safely",
+        "bullets": [
+          "Note whether the bubbling begins during the washer’s drain or spin phase rather than while it fills.",
+          "Watch from a clean, dry location to see whether the toilet level stays steady, drops, or rises.",
+          "Check whether the nearby sink, tub, shower, or floor drain is slow or making noise.",
+          "Look for water at the washer standpipe and stop the washer before it overflows.",
+          "Note whether another bathroom or a lower-level fixture reacts at the same time.",
+          "Record whether heavy rain, recent drain work, or septic-system symptoms coincide with the problem.",
+          "Tell the plumber which fixtures share the area and exactly which washer phase triggers the symptom."
+        ],
+        "paragraphs": ["Keep checks observational. Do not remove the toilet, open cleanouts, snake an unknown shared line, climb to a roof vent, or pour chemicals into a system that may already contain another product."]
+      },
+      {
+        "id": "different-toilet-noise",
+        "heading": "A whistle after flushing is a different system",
+        "paragraphs": ["Bubbling from the bowl while the washer drains involves the drainage side of the plumbing. A high-pitched whistle while the toilet tank refills is usually associated with the water-supply and fill-valve side instead."],
+        "link": { "before": "If the sound occurs during tank refill rather than washer discharge, use ", "label": "Why Does My Toilet Whistle After Flushing?", "href": "/plumbing/toilet-whistles-after-flushing/", "after": " to compare fill-valve and supply clues." }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call a plumber",
+        "paragraphs": ["Schedule a plumber when bubbling repeats, the toilet level changes, the washer standpipe struggles, nearby fixtures drain slowly, or the pattern is spreading. A plumber can evaluate fixture branches, accessible cleanouts, venting, and the building drain without assuming the roof vent is the only cause."],
+        "bullets": [
+          "Call promptly and stop wastewater use when sewage enters a fixture or spills from a standpipe or drain.",
+          "Treat several backing-up fixtures or the lowest-level drain taking wastewater as a possible downstream blockage.",
+          "For a septic property, contact a qualified septic provider when the plumber’s findings, alarms, surfacing effluent, or drainfield conditions point beyond the building drain.",
+          "Contact the sewer utility when a professional identifies a public-side problem or neighbors report the same event."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Chapter 9: Vents, 2024 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2024V2.0/chapter-9-vents" },
+      { "title": "Chapter 7: Sanitary Drainage, 2021 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2021P1/chapter-7-sanitary-drainage" },
+      { "title": "Washer Installation Instructions and Drain-System Requirements", "publisher": "Whirlpool", "url": "https://www.whirlpool.com/content/dam/global/documents/200602/installation-instructions-W10044800.pdf" },
+      { "title": "Sanitary Sewer Overflows", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/npdes/sanitary-sewer-overflows-ssos" },
+      { "title": "What to Do If Your Septic System Fails", "publisher": "U.S. Environmental Protection Agency", "url": "https://19january2021snapshot.epa.gov/septic/what-do-if-your-septic-system-fails" }
+    ]
   },
   {
     "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles often has reduced airflow, an oversized load, or a moisture-sensing problem. Start with the vent path.",
