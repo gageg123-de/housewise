@@ -164,3 +164,16 @@ test("slow-dryer guide renders hot-versus-cool differentiation, fire safety, and
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("musty-garage guide renders moisture distinctions without claiming odor proves mold", async () => {
+  const response = await render("/moisture-and-mold/garage-smells-musty"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/garage-smells-musty\//);
+  assert.match(html, /A musty smell is a moisture clue, not a diagnosis/);
+  assert.match(html, /What the timing and location may tell you/);
+  assert.match(html, /Do not open hidden cavities just to chase an odor/);
+  assert.match(html, /href="\/plumbing\/water-under-water-heater\/"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

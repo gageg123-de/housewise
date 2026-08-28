@@ -219,3 +219,21 @@ test("slow-dryer guide separates airflow, washer, sensor, and heating paths with
   assert.equal(dryer.image.src, "/images/dryer-airflow-restriction-guide.webp");
   assert.equal(dryer.image.kind, "conceptual");
 });
+
+test("musty-garage guide preserves garage odor intent and avoids treating smell as a mold diagnosis", () => {
+  const garage = registry.find((item) => item.slug === "garage-smells-musty");
+  const nearbyTopics = topics.split(/\r?\n/).filter((row) => /^(Musty smell after rain|Concrete garage floor sweating|Attic smells musty),/.test(row));
+  assert.ok(garage);
+  assert.equal(garage.published_date, "2026-08-24");
+  assert.equal(garage.updated_date, "2026-08-27");
+  assert.equal(nearbyTopics.length, 3);
+  assert.ok(nearbyTopics.every((row) => row.includes(",planned,")));
+  assert.ok(garage.direct_answer.includes("does not prove mold"));
+  assert.ok(garage.body_sections.some((section) => section.id === "timing-and-location" && section.table?.rows.length === 8));
+  assert.ok(garage.body_sections.some((section) => section.id === "common-sources" && section.causes?.length === 7));
+  assert.ok(garage.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(garage.body_sections.some((section) => section.id === "professional-help" && section.subsections?.length === 3));
+  assert.deepEqual(garage.related_articles, ["water-under-water-heater"]);
+  assert.ok(garage.sources.every((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.equal(garage.image, undefined);
+});

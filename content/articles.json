@@ -684,15 +684,103 @@
     ]
   },
   {
-    "title": "Why Does My Garage Smell Musty?", "slug": "garage-smells-musty", "description": "A musty garage smell usually indicates damp materials, trapped humidity, or water entering around the slab, walls, or stored items.",
+    "title": "Why Does My Garage Smell Musty?", "slug": "garage-smells-musty", "description": "A musty garage odor can come from damp storage, humidity, vehicle water, leaks, slab moisture, or a drain. Use timing and location to narrow it down.",
     "primary_category": "moisture-and-mold", "secondary_categories": ["garage"], "symptoms": ["smell", "moisture"], "room_or_location": ["garage"], "system": "moisture-and-mold", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 6, "featured_status": true,
-    "search_keywords": ["musty garage smell", "garage smells damp", "mildew odor garage"], "target_search_intent": "Help readers locate likely moisture sources behind a musty garage odor.",
-    "direct_answer": "A musty odor is a clue that something stays damp long enough for microbial growth or earthy odors to develop. Common sources include wet cardboard, condensation, vehicle water, plumbing leaks, and moisture entering through walls or the slab.",
-    "likely_causes": ["Damp stored materials", "Poor air movement and high humidity", "Water intrusion at the door, wall, or slab", "Hidden plumbing or appliance leak", "Floor drain or sink trap odor"],
-    "safe_checks": ["Remove damp cardboard and fabric.", "Inspect wall edges and the garage door after rain.", "Check around water heaters, laundry hookups, and freezers.", "Use a humidity meter to compare the garage with outdoor conditions."],
-    "professional_help": "Seek help when moisture is widespread, keeps returning after cleanup, involves a large area of suspected mold, or appears to come through the structure.",
-    "related_articles": ["ac-vent-sweating", "water-under-water-heater"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["musty garage smell", "garage smells damp", "mildew odor garage", "garage smells musty after rain", "damp smell in attached garage"], "target_search_intent": "Help a homeowner locate moisture, damp materials, drainage, or building leaks behind a persistent or recurring musty garage odor without treating odor alone as proof of mold.",
+    "direct_answer": "A musty garage smell usually means moisture has lingered in stored belongings, finishes, framing, or another porous material, but the odor alone does not prove mold. Common sources include wet cardboard and fabric, rain or snow carried in by a vehicle, humid air condensing on cool surfaces, roof or wall leaks, moisture at the slab or foundation, nearby plumbing or equipment, and an infrequently used drain. Where the smell is strongest—and whether it changes after rain, humid weather, parking a wet vehicle, or running nearby equipment—helps narrow the source.",
+    "likely_causes": ["Wet stored materials", "Vehicle rainwater or melting snow", "High humidity and condensation", "Roof, wall, door, or foundation water entry", "Plumbing or equipment leak", "Slab or foundation moisture", "Floor drain or sink-trap odor"],
+    "safe_checks": ["Move damp cardboard, rugs, fabric, and paper away from walls and inspect them outdoors or in a well-ventilated area.", "Check the floor and lower wall edges after rain and after parking a wet or snowy vehicle.", "Look for stains, swollen trim, peeling finishes, rust lines, or dampness near the door, roof-to-wall edges, plumbing, and equipment.", "Use a hygrometer to compare garage humidity over several days rather than relying on one reading.", "Notice whether the odor is strongest at stored items, a drain, one wall, the ceiling, or nearby equipment."],
+    "professional_help": "Arrange help when dampness returns, staining spreads, drywall or wood remains wet, the source appears to be inside a wall or roof assembly, a plumbing or equipment leak is active, or visible suspected growth covers more than a small readily managed area. Use a roofer, plumber, building-envelope/foundation professional, equipment technician, or qualified moisture-remediation provider according to the evidence.",
+    "related_articles": ["water-under-water-heater"],
+    "body_sections": [
+      {
+        "id": "odor-is-a-clue",
+        "heading": "A musty smell is a moisture clue, not a diagnosis",
+        "paragraphs": [
+          "Musty or earthy odors deserve investigation because they often accompany damp materials or past water exposure. EPA guidance treats a musty odor as a reason to look for moisture and possible hidden growth, but smell cannot identify the organism, the material, or the exact source.",
+          "A garage also contains rubber, fuel, cleaners, stored textiles, cardboard, wood, floor drains, vehicles, and mechanical equipment. Several of those can produce odors that overlap. Start by locating the strongest odor and the moisture pattern instead of naming it from smell alone.",
+          "If the garage is attached, keep the door to the house closed while investigating. A combustion or gasoline odor, a running vehicle, dizziness, headache, or a carbon-monoxide alarm is not a musty-odor problem; leave the area and follow emergency or utility guidance."
+        ]
+      },
+      {
+        "id": "timing-and-location",
+        "heading": "What the timing and location may tell you",
+        "paragraphs": ["Compare the odor under repeatable conditions. These observations cannot prove a cause, but they can point the right trade toward the right area."],
+        "table": {
+          "headers": ["What you notice", "More consistent with"],
+          "rows": [
+            ["Odor is strongest inside boxes, rugs, sports gear, or fabric", "Damp stored material holding moisture and odor"],
+            ["Smell appears after parking a rain-soaked or snow-covered vehicle", "Water carried in and slow drying at the floor or nearby belongings"],
+            ["Smell worsens after rain, especially near one wall or ceiling area", "Possible roof, flashing, wall, door, or foundation water entry"],
+            ["Smell is strongest during hot, humid weather", "High moisture in the air, condensation, or damp materials that cannot dry"],
+            ["Odor is concentrated at a floor drain or utility sink", "A drain/trap or plumbing source rather than a general garage-humidity problem"],
+            ["Wetness starts near a water heater, washer, softener, freezer, or HVAC equipment", "A plumbing, defrost, or condensate source associated with that equipment"],
+            ["White mineral deposits or recurring dark wet edges appear at the slab or wall base", "Moisture movement at concrete or masonry that needs source evaluation"],
+            ["Odor remains after movable items are removed and the space dries", "A hidden or building-material source is more plausible"]
+          ]
+        }
+      },
+      {
+        "id": "common-sources",
+        "heading": "Common sources of a musty garage odor",
+        "causes": [
+          { "heading": "Stored cardboard, fabric, paper, or wood stayed damp", "text": "Cardboard boxes on a slab, rolled rugs, upholstered items, pet bedding, sports gear, and unfinished wood readily hold moisture. The odor may be much stronger inside or beneath the item than in the open garage. Porous belongings that cannot be cleaned and dried may need to be discarded according to their material and condition." },
+          { "heading": "A wet vehicle is supplying more water than the garage can dry", "text": "Rainwater, melting snow, and slush can collect beneath a parked vehicle and wet nearby boxes or wall edges. A garage with little air movement may stay damp long after the visible puddle disappears. Look for repeated wet tracks, trapped water beneath mats, and belongings stored directly on the floor." },
+          { "heading": "Humid air is meeting cooler surfaces", "text": "A warm, humid air mass can condense on a sufficiently cool slab, pipe, door, or stored object. Condensation is more plausible when many cool surfaces feel damp during humid weather rather than one area becoming wet after rain. A single humidity reading is not a diagnosis; compare conditions and look for actual surface moisture." },
+          { "heading": "Rain is entering at the roof, wall, door, or foundation", "text": "Failed flashing, roof damage, deteriorated sealant, a door threshold, grading, or foundation cracks can admit water. The visible stain may not sit directly below the entry point because water can travel along framing or masonry. A pattern tied to wind-driven rain or one exterior elevation is useful evidence for a building-envelope or roofing professional." },
+          { "heading": "A plumbing line or nearby appliance is leaking", "text": "Garages often contain water heaters, washers, hose connections, softeners, refrigerators, freezers, or HVAC equipment. Small leaks and intermittent condensate or defrost water may wet wallboard, stored goods, or the floor without producing a large puddle. Check timing against equipment operation and trace only visible, safely accessible surfaces." },
+          { "heading": "Moisture is moving through or collecting at the slab", "text": "Concrete is porous, and moisture conditions at slabs and foundations depend on drainage, groundwater, vapor control, cracks, and weather. Do not assume that every dark spot means groundwater is pushing through. Vehicle water, condensation, surface spills, and plumbing leaks can look similar and should be ruled out before planning foundation work." },
+          { "heading": "A floor drain or sink trap is producing a different odor", "text": "An infrequently used trapped drain can lose its water seal and admit sewer-gas odors. That smell may be described as musty even though the source is plumbing. Do not add chemicals or cover a drain permanently without identifying what it serves; a plumber can check the trap, drain, and venting when the odor is concentrated there." }
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Remove movable cardboard, paper, fabric, rugs, and wood from the suspected area and inspect the floor and wall behind them.",
+          "Check the garage after rain, after parking a wet vehicle, and during dry weather to see which condition changes the odor.",
+          "Look for ceiling stains, swollen drywall, peeling paint, rust marks, damp lower wall edges, or mineral deposits without opening walls.",
+          "Inspect safely visible connections around a water heater, washer, utility sink, softener, freezer, or indoor HVAC equipment.",
+          "Record humidity with a basic hygrometer over several days and note outdoor weather; avoid treating one number as proof of the source.",
+          "Photograph wet areas and mark the outline of a stain so growth or drying can be compared later.",
+          "Keep stored materials off any recurring damp area while the source is investigated."
+        ],
+        "callout": { "title": "Do not open hidden cavities just to chase an odor", "text": "Do not cut drywall, disturb suspect growth, enter unsafe roof or attic areas, handle wet electrical equipment, or service gas-fired equipment to find the source. Leave the garage and seek urgent help for fuel or gas odor, a carbon-monoxide alarm, smoke, sparking, or water reaching energized parts." }
+      },
+      {
+        "id": "drying-and-mold",
+        "heading": "Drying the garage matters more than masking the smell",
+        "paragraphs": [
+          "Air freshener can cover an odor without correcting the moisture that sustains it. EPA guidance emphasizes moisture control: stop the water source and dry wet materials promptly. Porous materials such as cardboard, insulation, and wallboard may be difficult to clean or save after extended wetting.",
+          "Ventilation helps only when the incoming air is drier than the garage air. Opening the door during warm, humid weather can add moisture instead. Dehumidification may help control the air while a source is corrected, but it cannot repair a roof, plumbing leak, or foundation drainage problem.",
+          "Visible spotting or a musty smell does not establish the species or extent of growth. Avoid spraying bleach or coating a damp surface simply to hide it; the water source and material condition still need attention."
+        ]
+      },
+      {
+        "id": "related-equipment",
+        "heading": "When the smell is near garage equipment",
+        "paragraphs": ["Water may travel across a sloped floor before reaching the place where you notice it. If dampness begins near the water heater, identify the highest wet point rather than assuming the slab or wall is responsible."],
+        "links": [
+          { "before": "Use the location-based checks in ", "label": "why there may be water under a water heater", "href": "/plumbing/water-under-water-heater/", "after": " when the wet area starts at or around that equipment." }
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "Who to call when the source is not obvious",
+        "subsections": [
+          { "heading": "Plumber or equipment technician", "paragraphs": ["Use a plumber for supply, drain, fixture, or water-heater leakage. Use the appropriate appliance or HVAC service provider when the timing points to defrost water, condensate, or equipment operation rather than household plumbing."] },
+          { "heading": "Roofer, building-envelope, or foundation professional", "paragraphs": ["Use a roofer when staining tracks rain or a roof penetration. A qualified building-envelope, drainage, or foundation professional may be appropriate when water repeatedly enters at walls, the door, masonry, or slab and surface sources have been ruled out."] },
+          { "heading": "Moisture or remediation professional", "paragraphs": ["Seek qualified moisture assessment or remediation help when the affected area is extensive, materials remain wet, the odor persists after the source is fixed, or hidden wall/ceiling damage is suspected. EPA notes that hidden investigations can require experienced professional help."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
+      { "title": "Mold Course Chapter 3: Finding Mold and Moisture", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/mold-course-chapter-3" },
+      { "title": "Biological Contaminants and Indoor Air Quality", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality" },
+      { "title": "Controlling Pollutants and Sources: Drain Traps", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/iaq-schools/controlling-pollutants-and-sources-indoor-air-quality-design-tools-schools" }
+    ]
   },
   {
     "title": "Why Is My Outlet Warm?", "slug": "outlet-warm", "description": "A warm outlet can result from a heavy load or a loose electrical connection. Learn when to stop using it and request an electrician.",
