@@ -12,6 +12,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
   const bathroom = getFinderSymptomOptions("bathroom");
   assert.ok(bathroom.some((item) => item.value === "drainage"));
+  assert.ok(bathroom.some((item) => item.value === "toilet-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
   assert.ok(!bathroom.some((item) => item.value === "pest-activity"));
 
@@ -23,6 +24,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
   assert.equal(rankFinderArticles(registry, "bathroom", "drainage")[0].article.slug, "toilet-bubbles-when-washer-drains");
+  assert.equal(rankFinderArticles(registry, "bathroom", "toilet-gurgling")[0].article.slug, "toilet-gurgles-randomly");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "hvac-filter")[0].article.slug, "ac-filter-wet");
@@ -49,6 +51,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["yard", "pest-activity"],
     ["yard", "smell"],
     ["bathroom", "drainage"],
+    ["bathroom", "toilet-gurgling"],
     ["bathroom", "leaking"],
     ["bathroom", "smell"],
     ["bathroom", "noise"],
@@ -112,6 +115,11 @@ test("every published article is reachable through at least one Problem Finder p
 test("site search ranks realistic homeowner queries and rejects weak partial matches", () => {
   const cases = [
     ["toilet bubbling", "toilet-bubbles-when-washer-drains"],
+    ["toilet gurgles randomly", "toilet-gurgles-randomly"],
+    ["toilet gurgling for no reason", "toilet-gurgles-randomly"],
+    ["toilet bubbles randomly", "toilet-gurgles-randomly"],
+    ["toilet makes gurgling noise", "toilet-gurgles-randomly"],
+    ["toilet gurgles when nothing is running", "toilet-gurgles-randomly"],
     ["toilet high pitched refill", "toilet-whistles-after-flushing"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],

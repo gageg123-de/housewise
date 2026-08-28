@@ -162,11 +162,29 @@ test("washer-triggered toilet bubbling guide renders drainage distinctions, safe
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-bubbles-when-washer-drains\//);
   assert.match(html, /Why the washer can make the toilet bubble/);
   assert.match(html, /Stop the test if wastewater rises or spills/);
+  assert.match(html, /href="\/plumbing\/toilet-gurgles-randomly\/"/);
   assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
   assert.match(html, /src="\/images\/washer-toilet-shared-drain-pressure\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("random toilet gurgling guide renders hidden triggers, backup safety, schema, and visual", async () => {
+  const response = await render("/plumbing/toilet-gurgles-randomly"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Toilet Gurgle Randomly\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-gurgles-randomly\//);
+  assert.match(html, /A “random” gurgle may have a hidden trigger/);
+  assert.match(html, /Do not keep testing a backing-up system/);
+  assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
+  assert.match(html, /src="\/images\/toilet-hidden-trigger-drain-pressure\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/toilet-hidden-trigger-drain-pressure\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 

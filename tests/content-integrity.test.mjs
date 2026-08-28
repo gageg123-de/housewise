@@ -209,17 +209,42 @@ test("washer-triggered toilet bubbling guide stays distinct from random gurgling
   const randomGurgle = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
   assert.ok(bubbling);
   assert.equal(bubbling.published_date, "2026-08-24");
-  assert.equal(bubbling.updated_date, "2026-08-27");
-  assert.ok(randomGurgle?.includes(",planned,"));
+  assert.equal(bubbling.updated_date, "2026-08-28");
+  assert.ok(randomGurgle?.includes(",published,"));
   assert.match(bubbling.target_search_intent, /specifically during washing-machine discharge/i);
   assert.ok(bubbling.body_sections.some((section) => section.id === "shared-drain-mechanism"));
   assert.ok(bubbling.body_sections.some((section) => section.id === "likely-causes" && section.causes?.length === 5));
   assert.ok(bubbling.body_sections.some((section) => section.id === "what-the-bowl-does" && section.table?.rows.length === 7));
   assert.ok(bubbling.body_sections.some((section) => section.id === "bubbling-or-backup" && section.callout));
+  assert.ok(bubbling.body_sections.some((section) => section.link?.href === "/plumbing/toilet-gurgles-randomly/"));
   assert.ok(bubbling.body_sections.some((section) => section.link?.href === "/plumbing/toilet-whistles-after-flushing/"));
   assert.ok(bubbling.sources.every((source) => source.url.startsWith("https://")));
   assert.equal(bubbling.image.src, "/images/washer-toilet-shared-drain-pressure.webp");
   assert.equal(bubbling.image.kind, "conceptual");
+});
+
+test("random toilet gurgling guide owns hidden-trigger intent without absorbing fixture-specific drainage pages", () => {
+  const gurgling = registry.find((item) => item.slug === "toilet-gurgles-randomly");
+  const washer = registry.find((item) => item.slug === "toilet-bubbles-when-washer-drains");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
+  const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Toilet water rises when another toilet flushes|Shower drain gurgles when toilet flushes|Sink gurgles when washer drains|Multiple drains back up at same time),/.test(row));
+  assert.ok(gurgling && washer);
+  assert.equal(gurgling.published_date, "2026-08-28");
+  assert.equal(gurgling.updated_date, "2026-08-28");
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/toilet-gurgles-randomly/"));
+  assert.equal(futureTopics.length, 4);
+  assert.ok(futureTopics.every((row) => row.includes(",planned,")));
+  assert.match(gurgling.target_search_intent, /without an obvious trigger/i);
+  assert.ok(gurgling.body_sections.some((section) => section.id === "hidden-trigger"));
+  assert.ok(gurgling.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
+  assert.ok(gurgling.body_sections.some((section) => section.id === "what-it-is-doing" && section.table?.rows.length === 6));
+  assert.ok(gurgling.body_sections.some((section) => section.id === "sewage-safety" && section.callout));
+  assert.ok(gurgling.body_sections.some((section) => section.link?.href === "/plumbing/toilet-bubbles-when-washer-drains/"));
+  assert.ok(gurgling.body_sections.some((section) => section.link?.href === "/plumbing/toilet-whistles-after-flushing/"));
+  assert.ok(washer.related_articles.includes("toilet-gurgles-randomly"));
+  assert.ok(gurgling.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(gurgling.image.src, "/images/toilet-hidden-trigger-drain-pressure.webp");
+  assert.equal(gurgling.image.kind, "conceptual");
 });
 
 test("slow-dryer guide separates airflow, washer, sensor, and heating paths without absorbing burning-odor intent", () => {
@@ -263,7 +288,7 @@ test("toilet-whistle guide stays on refill supply noise and separates drainage g
   assert.ok(whistle);
   assert.equal(whistle.published_date, "2026-08-24");
   assert.equal(whistle.updated_date, "2026-08-27");
-  assert.ok(randomGurgle?.includes(",planned,"));
+  assert.ok(randomGurgle?.includes(",published,"));
   assert.ok(whistle.body_sections.some((section) => section.id === "when-it-whistles" && section.table?.rows.length === 7));
   assert.ok(whistle.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 5));
   assert.ok(whistle.body_sections.some((section) => section.id === "safe-checks" && section.callout));
