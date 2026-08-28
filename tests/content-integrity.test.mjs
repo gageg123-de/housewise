@@ -202,3 +202,20 @@ test("washer-triggered toilet bubbling guide stays distinct from random gurgling
   assert.equal(bubbling.image.src, "/images/washer-toilet-shared-drain-pressure.webp");
   assert.equal(bubbling.image.kind, "conceptual");
 });
+
+test("slow-dryer guide separates airflow, washer, sensor, and heating paths without absorbing burning-odor intent", () => {
+  const dryer = registry.find((item) => item.slug === "dryer-taking-two-cycles");
+  const burningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer smells like burning,"));
+  assert.ok(dryer);
+  assert.equal(dryer.published_date, "2026-08-24");
+  assert.equal(dryer.updated_date, "2026-08-27");
+  assert.ok(burningTopic?.includes(",planned,"));
+  assert.ok(dryer.body_sections.some((section) => section.id === "how-drying-works"));
+  assert.ok(dryer.body_sections.some((section) => section.id === "hot-or-cool" && section.table?.rows.length === 7));
+  assert.ok(dryer.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 8));
+  assert.ok(dryer.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(dryer.body_sections.some((section) => section.id === "when-to-call" && section.subsections?.length === 3));
+  assert.ok(dryer.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(dryer.image.src, "/images/dryer-airflow-restriction-guide.webp");
+  assert.equal(dryer.image.kind, "conceptual");
+});

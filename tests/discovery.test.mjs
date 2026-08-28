@@ -119,6 +119,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
     ["dryer slow", "dryer-taking-two-cycles"],
+    ["clothes hot damp", "dryer-taking-two-cycles"],
     ["water heater leak", "water-under-water-heater"],
     ["toilet bubblng", "toilet-bubbles-when-washer-drains"],
   ];

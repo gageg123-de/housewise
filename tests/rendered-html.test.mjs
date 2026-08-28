@@ -151,3 +151,16 @@ test("washer-triggered toilet bubbling guide renders drainage distinctions, safe
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("slow-dryer guide renders hot-versus-cool differentiation, fire safety, and corrected airflow visual", async () => {
+  const response = await render("/appliances/dryer-taking-two-cycles"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dryer-taking-two-cycles\//);
+  assert.match(html, /Are the clothes hot but damp, or cool and wet\?/);
+  assert.match(html, /Why restricted airflow is also a safety issue/);
+  assert.match(html, /src="\/images\/dryer-airflow-restriction-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

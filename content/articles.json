@@ -582,15 +582,106 @@
     ]
   },
   {
-    "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles often has reduced airflow, an oversized load, or a moisture-sensing problem. Start with the vent path.",
+    "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles may have restricted exhaust airflow, oversized loads, overly wet clothes, sensor trouble, or inadequate heat. Learn how to tell.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": true,
-    "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying"], "target_search_intent": "Help readers identify airflow, load, washer, and sensor causes of slow drying.",
-    "direct_answer": "Long drying times most often come from restricted airflow. A full lint screen, crushed transition duct, clogged exterior vent, or long vent run keeps moist air in the drum. Heavy loads and clothes leaving the washer too wet can also be responsible.",
-    "likely_causes": ["Restricted exhaust airflow", "Load is too large or dense", "Washer is not extracting enough water", "Dirty moisture sensor bars", "Heating or control fault"],
-    "safe_checks": ["Clean the lint screen before every load.", "Inspect the visible transition duct for crushing or sharp bends.", "Run a smaller mixed-fabric load.", "Check whether the exterior flap opens strongly while the dryer runs."],
-    "professional_help": "Stop using the dryer if it smells hot, scorches fabric, or the cabinet becomes unusually hot. Have an inaccessible or heavily clogged vent cleaned and appliance faults diagnosed professionally.",
-    "related_articles": []
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying", "clothes hot but damp after dryer", "dryer runs but clothes stay wet"], "target_search_intent": "Help a homeowner distinguish exhaust-airflow, load, washer extraction, cycle, moisture-sensor, and heating causes when drying consistently requires a second cycle.",
+    "direct_answer": "A dryer often needs two cycles because hot, moisture-laden air is not leaving efficiently. A loaded lint screen, crushed transition duct, obstructed exterior hood, lint in the house vent, or an overly long/restrictive vent can leave clothes hot but damp. Clothes that remain cool and wet point more toward a heat, power, gas, cycle, or control problem. Oversized loads, a washer that leaves clothes unusually wet, and sensor-cycle issues can also extend drying time.",
+    "likely_causes": ["Restricted exhaust airflow", "Loaded lint screen or internal lint path", "Crushed or overly restrictive vent route", "Load too large or dense", "Washer leaving excessive water in clothes", "Cycle or setting mismatch", "Moisture-sensor or tumbling issue", "Heating, power, gas, or control fault"],
+    "safe_checks": ["Clean the lint screen before each load and inspect it for residue or damage.", "Look behind the dryer for a visibly crushed or sharply kinked transition duct without moving gas piping or straining connections.", "Compare a smaller mixed load with the usual load.", "Check whether clothes leave the washer dripping or much heavier than expected.", "From outside, observe whether the exhaust hood opens and warm air exits while the dryer runs."],
+    "professional_help": "Stop using the dryer for smoke, a burning or gas odor, scorching, sparking, repeated breaker trips, or an unusually hot cabinet or laundry room. Have inaccessible or heavily restricted venting cleaned by a qualified provider, and use an appliance technician for inadequate heat, controls, sensors, tumbling, gas, or internal lint concerns.",
+    "related_articles": [],
+    "image": {
+      "src": "/images/dryer-airflow-restriction-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway of a clothes dryer showing warm air moving through tumbling laundry and moist exhaust traveling through a metal vent with a localized lint restriction before the outdoor hood.",
+      "caption": "Conceptual illustration: A vented dryer needs heat, tumbling, and a clear exhaust path so moisture can leave the drum. A restriction anywhere along that path can lengthen drying time; actual dryer and vent layouts vary.",
+      "kind": "conceptual",
+      "after_section": "how-drying-works"
+    },
+    "body_sections": [
+      {
+        "id": "how-drying-works",
+        "heading": "A vented dryer must move moisture out, not just make heat",
+        "paragraphs": [
+          "A traditional vented dryer heats air, moves that air through tumbling clothes, and sends the resulting warm, humid air outdoors. Heat speeds evaporation, tumbling exposes more fabric surface, and airflow carries moisture away. Losing any one of those functions can extend the cycle.",
+          "That is why a dryer can feel hot and still dry poorly. If the exhaust path is restricted, heat and humidity remain in the drum longer and safety controls may cycle the heat source differently. CPSC guidance identifies unusually long drying and clothes that remain damp after a normal cycle as possible signs of a blocked lint screen or exhaust duct.",
+          "Ventless condenser and heat-pump dryers manage moisture differently and often use longer cycles by design. Consult the model manual before applying vented-dryer checks to equipment with no outdoor exhaust."
+        ]
+      },
+      {
+        "id": "hot-or-cool",
+        "heading": "Are the clothes hot but damp, or cool and wet?",
+        "paragraphs": ["Check the load promptly when the cycle ends without touching any unusually hot surface. Temperature is not a diagnosis, but it helps decide which path deserves attention first."],
+        "table": {
+          "headers": ["What you notice", "More consistent with"],
+          "rows": [
+            ["Clothes are hot or steamy but still damp", "Restricted exhaust, overloaded drum, dense fabrics, or moisture not leaving efficiently"],
+            ["Clothes are cool and wet after a heated cycle", "Incorrect setting, inadequate heating, power or gas problem, or control fault"],
+            ["Only large towel or bedding loads need a second cycle", "Load size, fabric density, poor tumbling, or washer extraction"],
+            ["Every load is gradually taking longer", "A developing lint or vent restriction is more plausible"],
+            ["Sensor cycles stop early but timed drying works differently", "Load-to-sensor contact, settings, sensor residue, leveling, or sensor/control issue"],
+            ["Laundry room becomes hot or humid", "Exhaust restriction, leakage, or a vent connection problem"],
+            ["Exterior hood barely opens during operation", "Weak exhaust airflow or an obstructed hood/duct path"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons a dryer needs a second cycle",
+        "paragraphs": ["Start with the load and the visible airflow path, then escalate to equipment diagnosis. Do not assume the heating element or gas burner is at fault simply because the clothes are damp."],
+        "causes": [
+          { "heading": "The exhaust path is restricted", "text": "Lint inside the house duct, an obstructed outdoor hood, a damaged transition duct, or another restriction can keep hot, humid air from leaving. Drying time often worsens gradually, clothes may feel hot and damp, and the dryer or room may feel warmer than usual. Exterior airflow is only a clue; inaccessible ductwork may need professional inspection and cleaning." },
+          { "heading": "The lint screen or lint path is loaded", "text": "A visibly coated screen reduces airflow before air reaches the house vent. Fine residue can also affect some screens even when loose lint has been removed. Clean and maintain the screen according to the model instructions. Internal lint paths and the dryer chassis are not homeowner-access areas and may require qualified service." },
+          { "heading": "The transition duct is crushed, kinked, or too restrictive", "text": "Pushing the dryer too close to the wall can flatten or sharply bend the connector. Long vent runs and multiple turns also add resistance, with allowable length depending on the model and installation. CPSC recommends rigid or corrugated semi-rigid metal ducting rather than plastic or foil accordion-style material that traps lint and crushes more readily." },
+          { "heading": "The load is too large, dense, or poorly mixed", "text": "A packed drum prevents items from tumbling freely and limits air circulation. Heavy towels, bedding, and mixed thick-and-thin fabrics may dry unevenly. If a smaller comparable load finishes normally, capacity and fabric mix deserve attention before replacing parts." },
+          { "heading": "The washer is leaving too much water in the load", "text": "Dryers must remove whatever water the washer leaves behind. A low spin selection, unbalanced load, drainage issue, or washer performance problem can make normal dryer operation look slow. Compare how wet and heavy clothes feel before drying and whether an extra spin meaningfully changes the result." },
+          { "heading": "The selected cycle does not fit the load", "text": "Air-only, low-temperature, eco, delicate, or damp-dry selections intentionally behave differently from a normal heated cycle. Automatic cycles can also stop based on sensed conditions. Confirm the manual’s recommended cycle for towels, mixed loads, bedding, or delicate fabrics before treating one result as a fault." },
+          { "heading": "The moisture sensor is not getting a representative reading", "text": "On sensor-equipped models, small loads may not contact the sensing surfaces consistently; residue, poor tumbling, or an unlevel dryer can also affect contact. A repeatable difference between sensor and timed cycles is useful service information. Clean only what the owner’s manual identifies as homeowner-maintenance access." },
+          { "heading": "The dryer is not producing or controlling heat normally", "text": "Electric supply issues, gas supply or ignition problems, heating components, thermostats, airflow safety controls, or electronic controls can leave clothing cool, unevenly heated, or wet. These systems involve high voltage, gas, and hot components, so diagnosis belongs to a qualified appliance professional." }
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Clean the lint screen and make sure it is correctly reinstalled before running the next load.",
+          "Compare one smaller, normally spun mixed load with the load that usually takes two cycles.",
+          "Confirm the selected cycle includes appropriate heat and dryness for the fabric type.",
+          "Notice whether the clothes are hot but damp, cool and wet, or unevenly dry when the cycle ends.",
+          "Look for crushing, sharp bends, or separation in the visible transition duct without moving the dryer against connected gas or electrical lines.",
+          "From outdoors and clear of the opening, observe whether the hood damper opens and exhaust air is escaping.",
+          "Check whether snow, vegetation, a screen, or visible debris is obstructing the outside termination without reaching into a running vent.",
+          "Record error codes or a check-vent alert and use the model-specific manual."
+        ],
+        "callout": { "title": "Do not test a dryer with unsafe vent or utility changes", "text": "Do not run a gas dryer with the exhaust disconnected, bypass safety switches, open gas or electrical compartments, reach into a running vent, or continue using a dryer that smells like gas or burning material. Keep the appliance off and arrange qualified help when those conditions appear." }
+      },
+      {
+        "id": "fire-safety",
+        "heading": "Why restricted airflow is also a safety issue",
+        "paragraphs": [
+          "Lint can block airflow and contribute to excessive heat buildup. The U.S. Fire Administration advises cleaning the lint filter with every use, keeping the vent system free of damage and restriction, and confirming the outdoor vent covering opens during operation. CPSC likewise links lint buildup in dryers and exhaust ducts with fire risk.",
+          "Long drying time is not proof that a fire is imminent, but it is a reason to stop stacking extra cycles on top of an unresolved airflow problem. A second cycle adds more heat and operating time without correcting the restriction."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to arrange service or vent cleaning",
+        "subsections": [
+          { "heading": "Qualified dryer-vent service", "paragraphs": ["Use a qualified vent-cleaning or appropriate home-service provider when the duct is inaccessible, airflow remains weak after visible maintenance, the route is long or damaged, lint returns quickly, or the exterior termination cannot be safely accessed."] },
+          { "heading": "Appliance technician", "paragraphs": ["Use a qualified appliance technician when clothes remain cool on a heated cycle, the drum does not tumble normally, sensor cycles behave inconsistently, the dryer reports persistent errors, or safe airflow checks do not explain the problem."] },
+          { "heading": "Immediate stop-use conditions", "paragraphs": ["Stop the dryer for smoke, a burning or gas odor, scorching, sparking, repeated breaker trips, unusual banging with drum contact, or a cabinet or plug that becomes unusually hot. Use emergency services for active fire or smoke; do not move a burning appliance."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Overheated Clothes Dryers Can Cause Fires", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Home-Fire-Electronics-and-Electrical/Overheated-Clothes-Dryers-Can-Cause-Fires" },
+      { "title": "Clothes Dryer Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf" },
+      { "title": "Clothes Dryers", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/products/clothes_dryers" },
+      { "title": "Dryer Vent May Be Blocked or Restricted", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Laundry/Dryers/Product_Info/Dryer_Product_Assistance/Dryer_Vent_may_be_Blocked_or_Restricted" },
+      { "title": "Dryer Taking Too Long to Dry Clothes or Not Drying at All", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=18058" }
+    ]
   },
   {
     "title": "Why Does My Garage Smell Musty?", "slug": "garage-smells-musty", "description": "A musty garage smell usually indicates damp materials, trapped humidity, or water entering around the slab, walls, or stored items.",
