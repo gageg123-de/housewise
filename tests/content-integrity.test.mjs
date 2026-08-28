@@ -164,3 +164,23 @@ test("indoor AC water guide is distinct, connected, sourced, and image-ready", (
     assert.match(topics, new RegExp(`^${plannedTopic},.*?,planned,`, "m"));
   }
 });
+
+test("water heater leak guide preserves its canonical intent and adds safety-depth safeguards", () => {
+  const waterHeater = registry.find((item) => item.slug === "water-under-water-heater");
+  const reliefTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Water heater relief valve drips,"));
+  assert.ok(waterHeater);
+  assert.equal(waterHeater.primary_category, "plumbing");
+  assert.equal(waterHeater.published_date, "2026-08-24");
+  assert.equal(waterHeater.updated_date, "2026-08-27");
+  assert.ok(reliefTopic?.includes(",planned,"), "narrow relief-valve intent remains planned");
+  assert.ok(waterHeater.body_sections.some((section) => section.id === "where-water-starts" && section.table?.rows.length === 6));
+  assert.ok(waterHeater.body_sections.some((section) => section.id === "common-sources" && section.causes?.length === 6));
+  assert.ok(waterHeater.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(waterHeater.body_sections.some((section) => section.id === "which-professional" && section.subsections?.length === 3));
+  assert.ok(waterHeater.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(waterHeater.image.src, "/images/water-heater-leak-source-guide.webp");
+  assert.equal(waterHeater.image.kind, "conceptual");
+  assert.ok(waterHeater.related_articles.includes("water-around-indoor-ac-unit"));
+  const indoorWater = registry.find((item) => item.slug === "water-around-indoor-ac-unit");
+  assert.ok(indoorWater.body_sections.some((section) => section.link?.href === "/plumbing/water-under-water-heater/"));
+});

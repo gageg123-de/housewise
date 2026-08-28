@@ -122,3 +122,18 @@ test("indoor AC water guide renders drainage distinctions, cluster links, schema
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/indoor-ac-condensate-drainage\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("water heater leak guide renders its unchanged canonical, safety distinctions, sources, and visual", async () => {
+  const response = await render("/plumbing/water-under-water-heater"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Water Under My Water Heater\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/water-under-water-heater\//);
+  assert.match(html, /Start with where the water first appears/);
+  assert.match(html, /Hot water, gas, pressure, and electricity change the response/);
+  assert.match(html, /href="\/hvac\/water-around-indoor-ac-unit\/"/);
+  assert.match(html, /src="\/images\/water-heater-leak-source-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

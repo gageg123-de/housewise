@@ -412,7 +412,8 @@
             ["Water follows nearby fixture or water-heater operation", "A possible plumbing or equipment leak"],
             ["Staining expands after rain", "A possible roof or building-envelope leak"]
           ]
-        }
+        },
+        "link": { "before": "If the wet trail begins at a nearby hot-water tank or its piping, use ", "label": "the water-heater leak-source guide", "href": "/plumbing/water-under-water-heater/", "after": " to compare top connections, valves, relief discharge, condensate, and a possible tank-body leak." }
       },
       {
         "id": "frozen-coil-clues",
@@ -530,15 +531,117 @@
     "related_articles": ["toilet-bubbles-when-washer-drains"]
   },
   {
-    "title": "Why Is There Water Under My Water Heater?", "slug": "water-under-water-heater", "description": "Water beneath a water heater may come from condensation, nearby plumbing, a valve, or a leaking tank. Identify the source without unsafe contact.",
+    "title": "Why Is There Water Under My Water Heater?", "slug": "water-under-water-heater", "description": "Water under a water heater may come from a connection, drain or relief valve, condensate, another fixture, or the tank itself. Learn what the location suggests.",
     "primary_category": "plumbing", "secondary_categories": ["garage"], "symptoms": ["leaking", "moisture", "heat"], "room_or_location": ["garage", "basement"], "system": "plumbing", "content_type": "safety-reference",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 6, "featured_status": true,
-    "search_keywords": ["water under water heater", "water heater leaking bottom", "puddle by hot water tank"], "target_search_intent": "Help readers identify observable leak sources and know when to shut down or call for service.",
-    "direct_answer": "A puddle may come from a loose connection, temperature-and-pressure relief discharge, drain valve, condensation, nearby pipe, or an internal tank leak. Water emerging from the tank body or base often means the tank needs replacement.",
-    "likely_causes": ["Leaking supply connection", "Relief valve discharge", "Drain valve seepage", "Condensation", "Corroded tank", "Leak from nearby equipment"],
-    "safe_checks": ["Keep away from hot water and wet electrical components.", "Blot visible areas and observe where water first reappears.", "Look from a distance at pipe connections and the relief-valve discharge tube.", "Do not cap or plug the relief valve."],
-    "professional_help": "Request prompt service for water from the tank body, repeated relief-valve discharge, active flow, gas odor, or water near electrical connections. Use the manufacturer’s shutdown guidance only if conditions are safe.",
-    "related_articles": ["garage-smells-musty"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["water under water heater", "water heater leaking bottom", "puddle by hot water tank", "water heater leaking from top", "water from relief valve pipe"], "target_search_intent": "Help a homeowner distinguish the visible source of water around a water heater, recognize a possible tank failure, and choose a safe escalation path.",
+    "direct_answer": "Water under a water heater can come from a loose inlet or outlet connection, the drain valve, temperature-and-pressure relief discharge, condensate on equipment designed to produce it, a nearby plumbing source, or a leaking storage tank. The puddle does not identify the cause by itself. Water emerging through the tank jacket, a seam, or the base is more consistent with tank failure and usually needs prompt professional evaluation.",
+    "likely_causes": ["Cold-water inlet or hot-water outlet connection leak", "Temperature-and-pressure relief valve discharge", "Drain valve seepage", "Condensate from applicable equipment", "Corroded or leaking storage tank", "Nearby plumbing or appliance leak"],
+    "safe_checks": ["Keep clear of hot discharge water and wet electrical components.", "From a dry floor, note where the first drop or wet trail appears.", "Look without touching at top connections, the drain valve, tank jacket, and relief-valve discharge pipe.", "Check whether nearby plumbing or equipment is wet above or beside the heater.", "Do not cap, plug, operate, or test a relief valve while investigating an active leak."],
+    "professional_help": "Request prompt plumbing service for water from the tank body or base, repeated relief discharge, a pan that keeps filling, active flow, or an uncertain source. Water near electrical parts, a gas odor, a carbon-monoxide alarm, smoke, sparking, or flooding calls for immediate separation from the area and the appropriate emergency, utility, electrical, or qualified combustion help.",
+    "related_articles": ["garage-smells-musty", "water-around-indoor-ac-unit"],
+    "image": {
+      "src": "/images/water-heater-leak-source-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual water heater illustration showing possible water origins at the top pipe connections, relief discharge pipe, drain valve, tank body, and a separate nearby floor source.",
+      "caption": "Conceptual illustration: Water found beneath a storage water heater can travel from several locations. Trace the first wet point without touching hot, pressurized, gas, or electrical components; actual heater configurations vary.",
+      "kind": "conceptual",
+      "after_section": "where-water-starts"
+    },
+    "body_sections": [
+      {
+        "id": "where-water-starts",
+        "heading": "Start with where the water first appears",
+        "paragraphs": [
+          "Water often runs down the tank jacket, follows a pipe, or spreads across a sloped floor before forming a puddle. That means water under the heater is a location, not yet a diagnosis. If the area is safe and dry enough to observe, look for the highest or earliest wet point rather than the deepest part of the puddle.",
+          "The equipment type matters. A conventional storage heater, a tankless unit, a condensing gas model, and a heat-pump water heater do not have identical drains or components. Use the model label and manufacturer instructions when arranging service rather than assuming a generic diagram matches your heater."
+        ],
+        "table": {
+          "headers": ["First wet location", "May be more consistent with"],
+          "rows": [
+            ["At the top pipe connections", "Cold-water inlet, hot-water outlet, shutoff, flexible connector, or nearby piping leak"],
+            ["At the relief valve or its discharge pipe", "Relief-valve seepage or discharge related to temperature, pressure, thermal expansion, or the valve itself"],
+            ["At the drain valve near the bottom", "A valve that is not fully closed, a damaged valve, or leakage at its connection"],
+            ["Through the jacket, seam, or base", "Possible internal tank corrosion or tank-body failure"],
+            ["From a separate small drain or tubing", "Condensate on a heat-pump or condensing model, depending on configuration"],
+            ["Across the floor from one side", "Nearby plumbing, HVAC equipment, a drain, appliance, foundation, or rainwater source"]
+          ]
+        }
+      },
+      {
+        "id": "common-sources",
+        "heading": "Common sources of water around a water heater",
+        "paragraphs": ["Several sources can create a similar puddle. The first visible wet point and whether the water is intermittent or continuous are more useful than guessing from the puddle alone."],
+        "causes": [
+          { "heading": "A cold-water inlet or hot-water outlet connection is leaking", "text": "Connections at the top of a storage heater can loosen, corrode, or leak at a fitting, connector, valve, or nearby pipe. Water may run down the outside of the tank and appear to come from the bottom. Condensation can also form on a cold inlet pipe in humid conditions, so a damp pipe surface and an active fitting drip are different observations." },
+          { "heading": "The temperature-and-pressure relief system is discharging", "text": "The T&P relief valve is a safety device that limits unsafe temperature or pressure. Water may appear at the valve connection or at the open end of its discharge pipe. Repeated discharge can involve excessive pressure, thermal expansion, temperature control, a faulty valve, or another system condition. Never cap or plug the valve or discharge pipe; doing so defeats a critical safety path." },
+          { "heading": "The drain valve is seeping", "text": "The drain valve sits low on many tank-style heaters and is used during service. A slightly open, damaged, or leaking valve—or leakage where it joins the tank—can wet the base. Do not force, remove, or attach equipment to a questionable valve during an active leak; it contains hot water under pressure." },
+          { "heading": "The equipment is producing condensate", "text": "Heat-pump water heaters remove moisture from surrounding air and have a condensate drain. Condensing fuel-fired equipment also requires model-specific condensate handling. A blocked, disconnected, or overflowing condensate path can put water on the floor, but a conventional non-condensing tank should not be assumed to have the same drainage arrangement." },
+          { "heading": "The storage tank is leaking", "text": "Water emerging through the tank jacket, a seam, or the base may indicate that the inner tank has corroded or failed. Top leaks can travel downward, so the base must be observed in context. When the tank body itself is leaking, the repair is generally replacement rather than patching the pressurized vessel." },
+          { "heading": "The water comes from somewhere nearby", "text": "Water heaters often share space with HVAC condensate drains, washers, softeners, boilers, floor drains, plumbing lines, or foundation walls. A leak above the heater can follow piping or framing; water on the floor can travel toward the tank. Rain timing, fixture use, and which neighboring equipment was operating can help a professional avoid blaming the heater too quickly." }
+        ]
+      },
+      {
+        "id": "intermittent-or-continuous",
+        "heading": "Intermittent water and continuous leaking suggest different patterns",
+        "subsections": [
+          { "heading": "Water appears only after hot-water use", "paragraphs": ["Expansion, active heating, a hot-water connection, or a nearby drain event may be involved. Note whether the relief discharge pipe becomes wet, but stay clear of its outlet because discharged water can be very hot."] },
+          { "heading": "Water appears during humid weather or heat-pump operation", "paragraphs": ["Surface condensation or a condensate drain may be involved on equipment designed to remove moisture from air. Pooling water still indicates that the intended drainage path deserves inspection."] },
+          { "heading": "The area stays wet continuously", "paragraphs": ["A pressurized supply connection, active valve leak, nearby plumbing leak, or tank failure becomes more concerning. Continuous or increasing flow deserves prompt action because a small leak can become damaging quickly."] }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can check without servicing the heater",
+        "paragraphs": ["Keep the investigation visual. A photograph of the first wet point, the model label, and the piping around the heater is usually more useful to a plumber than a part removed during guesswork."],
+        "bullets": [
+          "From a dry, stable floor, note whether water is spreading or actively flowing.",
+          "Look for a wet trail beginning at the top inlet or outlet connections.",
+          "Observe whether water begins at the relief valve, its discharge pipe, or the drain valve.",
+          "Check whether the tank jacket, a seam, or the base itself is the first wet surface.",
+          "Note whether water appears after hot-water use, during heating, during humid weather, or when nearby equipment runs.",
+          "Visually compare nearby pipes, HVAC equipment, appliances, drains, walls, and the ceiling above.",
+          "Keep children and pets away from the area, and document the pattern for the service professional."
+        ],
+        "callout": { "title": "Hot water, gas, pressure, and electricity change the response", "text": "Do not step into water to reach controls, touch wet electrical equipment, operate a relief valve, open burner or electrical compartments, or attempt to repair a pressurized tank. If you smell gas, hear a carbon-monoxide alarm, see smoke or sparking, or find water contacting electrical parts, leave the immediate area and use the appropriate emergency or utility procedure from a safe location." }
+      },
+      {
+        "id": "which-professional",
+        "heading": "Who should evaluate the leak?",
+        "subsections": [
+          { "heading": "Plumber", "paragraphs": ["A licensed plumber is the usual starting point for inlet or outlet connections, drain valves, relief discharge, tank leaks, expansion or pressure concerns, and replacement decisions."] },
+          { "heading": "Qualified combustion or HVAC professional", "paragraphs": ["A qualified technician may be appropriate when a fuel-fired heater has venting, combustion, condensate, burner, or carbon-monoxide concerns, depending on local trade licensing and the equipment type."] },
+          { "heading": "Electrician or emergency service", "paragraphs": ["An electrician should evaluate water exposure involving wiring, disconnects, panels, or electrical components after the area and equipment have been made safe. Gas odor, a CO alarm, smoke, sparking, or uncontrolled flooding calls for the relevant emergency service or utility rather than ordinary scheduling."] }
+        ]
+      },
+      {
+        "id": "related-moisture",
+        "heading": "When the puddle may belong to another moisture problem",
+        "paragraphs": ["A nearby appliance or HVAC drain can send water toward the heater, and repeated dampness can leave stored materials or wall surfaces smelling musty even after the visible puddle dries."],
+        "links": [
+          { "before": "If the first wet area is around the indoor cooling equipment rather than the heater, use ", "label": "the indoor AC water guide", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to compare pans, drains, pumps, thawing ice, and nearby sources." },
+          { "before": "If the immediate leak has stopped but the garage remains damp or earthy-smelling, see ", "label": "why a garage can smell musty", "href": "/moisture-and-mold/garage-smells-musty/", "after": " for moisture-source clues." }
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to get help promptly",
+        "paragraphs": ["Arrange prompt professional evaluation when water comes through the tank body or base, the relief system repeatedly discharges, the drain pan keeps filling, corrosion is visible, flow is continuous, hot water is escaping, or the source cannot be identified. Even a slow leak can damage flooring, drywall, framing, or stored belongings."],
+        "bullets": [
+          "Move away and use emergency or utility procedures for gas odor, a carbon-monoxide alarm, smoke, or sparking.",
+          "Do not approach controls through standing water or touch wet electrical equipment.",
+          "Use only manufacturer-specific shutdown instructions when the controls are safely reachable from a dry location and you understand the procedure.",
+          "If water is spreading rapidly, protect people first and contact a plumber or emergency water-damage service from a safe place."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Water heater leakage checkpoints and safety instructions", "publisher": "A. O. Smith", "url": "https://assets.hotwater.com/damroot/Original/10004/100341945.pdf" },
+      { "title": "Technical Bulletin 52: Leaking Temperature and Pressure Relief Valve", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/technical-bulletins/bulletin-52.html" },
+      { "title": "Heat Pump Water Heaters — What You Need to Know Right Now", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/eere/better-buildings-residential-network/downloads/heat-pump-water-heaters-what-you-need-know-right" },
+      { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" }
+    ]
   },
   {
     "title": "Why Does My Ceiling Fan Wobble?", "slug": "ceiling-fan-wobbles", "description": "A wobbling ceiling fan may have uneven blades, loose hardware, or an insecure mounting connection. Learn safe observations and stop signs.",
