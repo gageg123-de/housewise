@@ -110,6 +110,7 @@ test("every published article is reachable through at least one Problem Finder p
 test("site search ranks realistic homeowner queries and rejects weak partial matches", () => {
   const cases = [
     ["toilet bubbling", "toilet-bubbles-when-washer-drains"],
+    ["toilet high pitched refill", "toilet-whistles-after-flushing"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],
     ["one ac vent condensation", "ac-vent-sweating"],

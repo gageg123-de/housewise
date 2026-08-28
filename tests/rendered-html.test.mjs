@@ -192,3 +192,16 @@ test("musty-garage guide renders moisture distinctions without claiming odor pro
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("toilet-whistle guide renders refill timing, conservative shutoff safety, and drainage distinction", async () => {
+  const response = await render("/plumbing/toilet-whistles-after-flushing"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-whistles-after-flushing\//);
+  assert.match(html, /The timing of the whistle is the best first clue/);
+  assert.match(html, /Do not force an old shutoff valve/);
+  assert.match(html, /A refill whistle is different from a drain gurgle/);
+  assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

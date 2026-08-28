@@ -889,13 +889,86 @@
   {
     "title": "Why Does My Toilet Whistle After Flushing?", "slug": "toilet-whistles-after-flushing", "description": "A toilet that whistles while refilling usually has a restricted or aging fill valve. Learn what the timing of the sound can reveal.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "plumbing-behavior"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 4, "featured_status": false,
-    "search_keywords": ["toilet whistles after flushing", "toilet refill squeal", "fill valve noise"], "target_search_intent": "Connect a refill-time whistle with fill valve and supply restriction causes.",
-    "direct_answer": "A whistle that occurs while the tank refills usually comes from water squeezing through a restricted fill valve or partly closed supply valve. An aging fill-valve seal is a common source.",
-    "likely_causes": ["Worn or restricted fill valve", "Supply stop not fully open", "Debris in the valve", "Elevated water pressure"],
-    "safe_checks": ["Confirm the sound starts only during refill.", "Observe whether the tank fills slowly.", "Check that the supply stop is not visibly leaking.", "Avoid forcing a stuck shutoff valve."],
-    "professional_help": "A plumber can replace the fill valve, address a seized supply stop, or evaluate pressure. Get help sooner if the valve leaks or will not shut off.",
-    "related_articles": ["toilet-bubbles-when-washer-drains"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": false,
+    "search_keywords": ["toilet whistles after flushing", "toilet refill squeal", "fill valve noise", "toilet makes high pitched noise while filling", "toilet whistles after tank fills"], "target_search_intent": "Help a homeowner use the timing, refill speed, shutoff behavior, and other-fixture clues to distinguish fill-valve noise from a local supply restriction or broader pressure problem.",
+    "direct_answer": "A whistle that starts after the flush and lasts while the tank refills usually comes from water moving through the toilet's fill valve or supply path. A worn or restricted fill valve is common; a partly open or failing shutoff valve, restricted supply connector, or debris can produce a similar high-pitched sound. If the noise continues after the tank reaches its normal water level, the fill valve may not be shutting off cleanly. Whistling at several fixtures points away from this toilet alone and can justify a broader pressure or supply evaluation.",
+    "likely_causes": ["Worn or restricted fill valve", "Partly open, deteriorated, or restricted toilet shutoff valve", "Kinked or restricted supply connector", "Debris or scale in the toilet supply path", "Broader water-pressure or piping noise"],
+    "safe_checks": ["Confirm whether the whistle occurs only during tank refill and stops at the normal water level.", "Time the refill and compare it with the toilet's usual behavior.", "Look for leaks at the visible shutoff valve, supply connector, and tank connection without tightening anything.", "Observe whether the flexible connector is sharply kinked or crushed.", "Note whether faucets or other toilets whistle too."],
+    "professional_help": "A plumber can replace or service a model-appropriate fill valve, address a seized/leaking shutoff or damaged connector, and evaluate building pressure when multiple fixtures are noisy. Get prompt help if the toilet will not stop filling, the shutoff leaks or cannot control water, the connector bulges, or water is reaching the floor.",
+    "related_articles": ["toilet-bubbles-when-washer-drains"],
+    "body_sections": [
+      {
+        "id": "when-it-whistles",
+        "heading": "The timing of the whistle is the best first clue",
+        "paragraphs": ["A tank-type toilet uses stored tank water for the flush, then opens a fill valve to replace that water. A whistle during this refill period points toward incoming-water flow. A noise during the bowl discharge, a gurgle from the drain, or a sound that begins when another fixture drains follows a different path."],
+        "table": {
+          "headers": ["What you notice", "More consistent with"],
+          "rows": [
+            ["Whistle starts immediately after flushing and stops when the tank is full", "Fill valve or local supply flow noise"],
+            ["Whistle grows sharper near the end of refill", "Fill valve restriction or valve components changing position as the float rises"],
+            ["Tank refills much more slowly than before", "Restricted fill valve, shutoff, connector, or supply path"],
+            ["Whistle continues after the normal water level is reached", "Fill valve not shutting off cleanly or water continuing into the overflow path"],
+            ["Sound changes when another fixture runs", "Available pressure, shared supply piping, or a broader plumbing interaction"],
+            ["Several fixtures whistle or pipes sing", "Building pressure, pressure-reducing valve, or piping condition rather than this toilet alone"],
+            ["Toilet bubbles when a washer or another fixture drains", "A drainage/venting symptom, not ordinary fill-valve noise"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons a toilet whistles during refill",
+        "causes": [
+          { "heading": "The fill valve is worn or internally restricted", "text": "The fill valve meters water into the tank and closes as the float reaches its set level. Aging seals, internal wear, scale, or debris can create a narrow flow path that produces a whistle or hiss. A repeatable refill-only noise makes this component a logical first service target, but model-specific design matters." },
+          { "heading": "The toilet shutoff valve is not providing a clear flow path", "text": "A partly open, deteriorated, or internally restricted stop valve can make water noisy before it reaches the tank. Do not repeatedly force an old valve to test the theory; a seized stem or corroded connection can begin leaking when disturbed." },
+          { "heading": "The supply connector is kinked, crushed, or restricted", "text": "A sharply bent flexible connector can limit flow and contribute to noise or slow refill. Bulging, corrosion, fraying, or leakage calls for replacement by someone who can safely shut off and restore the water. Do not twist or straighten a connector under pressure." },
+          { "heading": "Debris or scale is affecting the local supply path", "text": "Mineral scale or debris can lodge in the fill valve or other small passages, especially after water service work. The onset after a shutoff or plumbing repair is useful history. Disassembly and flushing steps differ by valve, so use manufacturer instructions or a plumber instead of improvising." },
+          { "heading": "Water pressure or another supply component is contributing", "text": "Higher pressure can make flow noise more noticeable, but a whistle by itself does not prove excessive pressure. Codes commonly limit building static pressure and require pressure reduction above the applicable threshold. If several fixtures are noisy, a plumber can measure static and flowing pressure and evaluate the pressure-reducing valve where one is installed." }
+        ]
+      },
+      {
+        "id": "whistle-after-fill",
+        "heading": "What if the whistle continues after the tank fills?",
+        "paragraphs": [
+          "Watch from a normal standing position and listen for whether water continues to run. A fill valve that does not close cleanly may keep sending water into the tank or overflow tube. That wastes water and can make a hiss or whistle sound continuous rather than limited to refill.",
+          "The tank water level should follow the toilet manufacturer's mark or instructions. Do not bend, clamp, or defeat the float to silence the noise. Persistent filling calls for a fill-valve and water-level check with the correct parts for that toilet."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Flush once and note exactly when the sound begins, changes, and stops.",
+          "Compare the refill time with previous behavior or another similar toilet.",
+          "Look through the open top of the tank only if the lid can be lifted and set down safely; keep breakable porcelain secure.",
+          "Check whether the tank reaches its normal marked water level and whether water continues into the overflow tube.",
+          "Inspect the visible floor shutoff, connector, and tank connection for drops, corrosion, kinks, or bulging without touching or tightening them.",
+          "Listen at other fixtures to determine whether the high-pitched noise is local or house-wide."
+        ],
+        "callout": { "title": "Do not force an old shutoff valve", "text": "Do not force, dismantle, or repeatedly throttle a seized or leaking toilet shutoff; do not twist a pressurized connector or improvise parts inside the tank. If water starts leaking, use a safe known building shutoff or call a plumber rather than continuing the test." }
+      },
+      {
+        "id": "not-a-drain-gurgle",
+        "heading": "A refill whistle is different from a drain gurgle",
+        "paragraphs": ["A whistle is a high-pitched supply-flow sound that usually follows a flush while clean water refills the tank. Bubbling in the bowl when another fixture discharges concerns air and wastewater movement in the drainage system."],
+        "links": [
+          { "before": "If the bowl bubbles specifically when the washing machine pumps out, use ", "label": "the washer-drain toilet bubbling guide", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " instead of treating it as fill-valve noise." }
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When to call a plumber",
+        "paragraphs": [
+          "Arrange plumbing service when refill is very slow, the whistle is persistent, the tank will not stop filling, the shutoff is seized or leaking, the connector is damaged, or model-specific fill-valve service is not straightforward. A plumber can isolate the local restriction and replace compatible components without guessing.",
+          "Ask for a pressure evaluation when multiple toilets or faucets whistle, flow changes throughout the house, pipes vibrate, or a pressure-reducing valve may be involved. A local toilet whistle does not justify replacing a whole-house pressure regulator without measurement."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "WaterSense Specification for Tank-Type Toilets", "publisher": "U.S. Environmental Protection Agency", "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010LNF.TXT" },
+      { "title": "WaterSense at Work: Toilets (Water Closets)", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/system/files/documents/2023-06/ws-commercial-watersense-at-work_Section_3.1_Toilets.pdf" },
+      { "title": "2021 International Plumbing Code, Chapter 6: Water Supply and Distribution", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2021P1/chapter-6-water-supply-and-distribution" },
+      { "title": "Pocket Toilet Repair Guide", "publisher": "Fluidmaster", "url": "https://fluidmaster.com/wp-content/uploads/2020/11/Pocket-Toilet-Repair-Guide_web.pdf" }
+    ]
   },
   {
     "title": "Why Is There Water Under My Water Heater?", "slug": "water-under-water-heater", "description": "Water under a water heater may come from a connection, drain or relief valve, condensate, another fixture, or the tank itself. Learn what the location suggests.",

@@ -255,3 +255,18 @@ test("musty-garage guide preserves garage odor intent and avoids treating smell 
   assert.ok(garage.sources.every((source) => source.publisher === "U.S. Environmental Protection Agency"));
   assert.equal(garage.image, undefined);
 });
+
+test("toilet-whistle guide stays on refill supply noise and separates drainage gurgling", () => {
+  const whistle = registry.find((item) => item.slug === "toilet-whistles-after-flushing");
+  const randomGurgle = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
+  assert.ok(whistle);
+  assert.equal(whistle.published_date, "2026-08-24");
+  assert.equal(whistle.updated_date, "2026-08-27");
+  assert.ok(randomGurgle?.includes(",planned,"));
+  assert.ok(whistle.body_sections.some((section) => section.id === "when-it-whistles" && section.table?.rows.length === 7));
+  assert.ok(whistle.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 5));
+  assert.ok(whistle.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(whistle.body_sections.some((section) => section.id === "not-a-drain-gurgle" && section.links?.some((link) => link.href === "/plumbing/toilet-bubbles-when-washer-drains/")));
+  assert.ok(whistle.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(whistle.image, undefined);
+});
