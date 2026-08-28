@@ -208,3 +208,20 @@ test("toilet-whistle guide renders refill timing, conservative shutoff safety, a
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("ceiling-fan guide renders blade-versus-mount distinction, safety boundary, and visual", async () => {
+  const response = await render("/electrical/ceiling-fan-wobbles"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Ceiling Fan Wobble\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/ceiling-fan-wobbles\//);
+  assert.match(html, /First distinguish blade wobble from movement at the ceiling/);
+  assert.match(html, /Keep it off when the ceiling attachment moves/);
+  assert.match(html, /When a balancing kit fits—and when it does not/);
+  assert.match(html, /src="\/images\/ceiling-fan-wobble-vs-mount-movement\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ceiling-fan-wobble-vs-mount-movement\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

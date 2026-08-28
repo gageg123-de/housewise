@@ -289,3 +289,25 @@ test("warm-outlet guide preserves conservative stop-use boundaries without invas
   assert.ok(outlet.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
   assert.equal(outlet.image, undefined);
 });
+
+test("ceiling-fan guide separates blade imbalance from ceiling-mount movement", () => {
+  const fan = registry.find((item) => item.slug === "ceiling-fan-wobbles");
+  assert.ok(fan);
+  assert.equal(fan.published_date, "2026-08-24");
+  assert.equal(fan.updated_date, "2026-08-27");
+  assert.match(fan.target_search_intent, /blade-set imbalance from movement at the fan's ceiling attachment/i);
+  assert.ok(fan.body_sections.some((section) => section.id === "blades-or-mount" && section.table?.rows.length === 6));
+  assert.ok(fan.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
+  assert.ok(fan.body_sections.some((section) => section.id === "safe-observations" && section.callout?.title.includes("ceiling attachment")));
+  assert.ok(fan.body_sections.some((section) => section.id === "balancing-boundary"));
+  assert.ok(fan.body_sections.some((section) => section.id === "when-to-call"));
+  const body = JSON.stringify(fan.body_sections);
+  assert.match(body, /Do not operate a fan whose canopy[^.]+ceiling attachment visibly moves/i);
+  assert.match(body, /Do not remove the canopy, touch wiring, or work from an unstable ladder/i);
+  assert.ok(fan.sources.some((source) => source.publisher === "International Code Council"));
+  assert.ok(fan.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(fan.image.src, "/images/ceiling-fan-wobble-vs-mount-movement.webp");
+  assert.equal(fan.image.kind, "conceptual");
+  assert.equal(fan.image.width, 1536);
+  assert.equal(fan.image.height, 1024);
+});

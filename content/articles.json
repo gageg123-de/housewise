@@ -1152,14 +1152,105 @@
     ]
   },
   {
-    "title": "Why Does My Ceiling Fan Wobble?", "slug": "ceiling-fan-wobbles", "description": "A wobbling ceiling fan may have uneven blades, loose hardware, or an insecure mounting connection. Learn safe observations and stop signs.",
+    "title": "Why Does My Ceiling Fan Wobble?", "slug": "ceiling-fan-wobbles", "description": "A ceiling fan may wobble because its blades are uneven, damaged, or loose—or because the mounting system is moving. Learn which clues matter and when to stop the fan.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["vibration", "noise", "electrical-behavior"], "room_or_location": ["bedroom", "living-area"], "system": "electrical", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 5, "featured_status": false,
-    "search_keywords": ["ceiling fan wobble", "fan shakes at high speed", "wobbly ceiling fan"], "target_search_intent": "Distinguish blade-balance issues from loose or unsuitable mounting.",
-    "direct_answer": "A small amount of movement can be normal, but visible wobble usually comes from uneven blade position, loose blade hardware, a bent blade arm, or movement at the mounting point. Movement where the fan meets the ceiling is the more concerning clue.",
-    "likely_causes": ["Loose blade screws", "Uneven or warped blades", "Bent blade arm", "Loose mounting hardware", "Electrical box not rated for fan support"],
-    "safe_checks": ["Turn the fan off and let it stop completely.", "From the floor, observe whether the canopy moves at the ceiling.", "Check for a visibly warped blade without climbing beneath an unstable fan.", "Keep the fan off if it knocks, drops, or moves at its mount."],
-    "professional_help": "Have an electrician or qualified installer check movement at the ceiling, uncertain fan-box support, damaged hardware, or wiring symptoms. Do not run a fan that appears loose at its mount.",
-    "related_articles": ["outlet-warm"]
+    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 8, "featured_status": false,
+    "search_keywords": ["ceiling fan wobble", "fan shakes at high speed", "wobbly ceiling fan", "ceiling fan mount moving", "ceiling fan blades unbalanced", "fan canopy moves"], "target_search_intent": "Help a homeowner distinguish blade-set imbalance from movement at the fan's ceiling attachment, observe speed and noise patterns safely, and know when qualified mounting or electrical evaluation is appropriate.",
+    "direct_answer": "A ceiling fan usually wobbles because the rotating blade set is uneven: a blade may be warped, damaged, at a different height or pitch, attached to a bent blade arm, or carrying a different amount of weight. Loose blade or light-kit hardware can add movement and noise. But if the canopy, downrod connection, outlet box, or ceiling attachment moves, treat that as a mounting concern rather than a simple balance problem and keep the fan off until it is evaluated.",
+    "likely_causes": ["Uneven blade weight or position", "Warped, damaged, or incorrectly installed blade", "Bent blade arm or unequal blade pitch", "Loose blade, light-kit, or fan-body hardware", "Loose mounting bracket or downrod connection", "Unsuitable, loose, or damaged ceiling support box"],
+    "safe_checks": ["Switch the fan off and let it stop completely before standing beneath it or looking closely.", "From the floor, watch whether only the blade plane oscillates or the canopy/ceiling attachment moves too.", "Note whether wobble occurs at every speed or mainly at high speed.", "Look from a safe position for a visibly warped, drooping, damaged, or differently positioned blade.", "Listen for clicking, knocking, scraping, or electrical buzzing and note whether the noise changes with speed.", "Keep the fan off if the mount moves, the canopy drops, a part is loose, wiring symptoms appear, or safe access would require an unstable ladder."],
+    "professional_help": "Have a qualified ceiling-fan installer or licensed electrician evaluate movement at the canopy or ceiling, questionable fan-rated support, a loose downrod or mounting bracket, damaged blade arms, persistent wobble after model-appropriate balancing, or any electrical noise, odor, flicker, or intermittent operation. Stop using the fan if the ceiling attachment moves or hardware appears ready to fall.",
+    "related_articles": ["outlet-warm"],
+    "image": {
+      "src": "/images/ceiling-fan-wobble-vs-mount-movement.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison of a ceiling fan with an uneven rotating blade plane and a separate fan showing movement at the canopy where it meets the ceiling.",
+      "caption": "Conceptual illustration: Wobble within the blade plane often points toward blade position, condition, or balance; movement at the canopy or ceiling attachment is a different and more concerning mounting clue. Actual fan assemblies vary.",
+      "kind": "conceptual",
+      "after_section": "blades-or-mount"
+    },
+    "body_sections": [
+      {
+        "id": "blades-or-mount",
+        "heading": "First distinguish blade wobble from movement at the ceiling",
+        "paragraphs": [
+          "A fan can appear to shake for two fundamentally different reasons. The rotating blade plane may move from side to side while the canopy stays firm, or the fan's suspension and ceiling attachment may move. The first pattern more often fits blade alignment, condition, weight, or blade-arm problems. The second deserves more caution because the mounting bracket, downrod connection, fan-support box, or building attachment may be involved.",
+          "Watch from the floor with the area below the fan clear. If the canopy edge shifts against the ceiling, the downrod connection appears loose, or the ceiling surface flexes, switch the fan off. Do not assume a balancing weight can correct movement in the support system. Electrical codes require ceiling-suspended fans to use support identified for that purpose or an independent support arrangement; an ordinary light-fixture box is not automatically suitable for a fan's weight and motion."
+        ],
+        "table": {
+          "headers": ["What you observe", "May be more consistent with"],
+          "rows": [
+            ["Blade tips trace an uneven plane; canopy stays still", "Uneven blade height or pitch, a bent arm, blade damage, or balance difference"],
+            ["Wobble becomes obvious mainly at high speed", "A modest blade-position or weight difference amplified by speed"],
+            ["Fan wobbles at every speed", "More substantial blade, arm, assembly, or mounting irregularity"],
+            ["Canopy or ceiling attachment visibly moves", "Mounting bracket, downrod, support box, or structural attachment concern"],
+            ["Clicking or knocking repeats with each rotation", "Loose blade or holder hardware, a component contacting another part, or a damaged rotating part"],
+            ["Wobble began suddenly", "Newly loose/damaged hardware, blade damage, impact, or a mounting change rather than ordinary gradual dust accumulation"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons a ceiling fan starts wobbling",
+        "paragraphs": ["A visible wobble does not identify one failed part. The pattern, recent changes, and whether the ceiling attachment moves help separate the possibilities."],
+        "causes": [
+          { "heading": "The blades do not carry equal weight", "text": "A small difference in blade weight, uneven dust buildup, or a misplaced balance weight can shift the rotating center of mass. The resulting imbalance may be mild at low speed and more obvious at high speed. A model-appropriate balancing kit can address weight imbalance, but it should not be used to disguise loose mounting or a damaged blade." },
+          { "heading": "One blade sits at a different height or pitch", "text": "Blades are intended to follow a consistent plane and angle. A blade installed in the wrong position, unevenly seated hardware, or an arm with a different pitch can produce uneven lift and an irregular path. Measuring and adjustment procedures vary by model, so the owner's manual matters." },
+          { "heading": "A blade is warped or damaged", "text": "Humidity, age, impact, or material deterioration can leave a blade bowed, twisted, cracked, or drooping. A visibly damaged blade should be replaced with a compatible part rather than loaded with extra balancing weight. Do not interchange blades casually; manufacturers may supply matched sets." },
+          { "heading": "A blade arm is bent", "text": "The metal arm between the motor and blade can be bent or misaligned, changing blade height and pitch. Trying to bend an installed arm back by guesswork can damage the part or create a new mismatch. A qualified installer or manufacturer-approved replacement is safer when an arm is visibly distorted." },
+          { "heading": "Blade, light-kit, or fan-body hardware is loose", "text": "Loose blade screws can create both wobble and a rhythmic click. Other attached components may rattle or shift as the fan rotates. Hardware and tightening instructions are model-specific, and power should be disconnected according to the manufacturer before any accessible maintenance. Do not work overhead if safe ladder access is unavailable." },
+          { "heading": "The mounting system is moving", "text": "A loose bracket, downrod connection, canopy assembly, fan-support box, or structural attachment can let the whole fan move. That is not a blade-balance issue. Because the assembly includes electrical connections and overhead support, visible movement at the ceiling belongs with a qualified installer or electrician." }
+        ]
+      },
+      {
+        "id": "speed-and-timing",
+        "heading": "Speed, timing, and sound provide useful clues",
+        "subsections": [
+          { "heading": "It wobbles only at high speed", "paragraphs": ["Higher speed can make a relatively small blade difference easier to see. Record the pattern, then turn the fan off before inspection. High-speed-only wobble does not prove the mount is safe, so still confirm visually that the canopy and ceiling remain stationary."] },
+          { "heading": "It wobbles at every speed", "paragraphs": ["A large mismatch, warped blade, bent arm, loose assembly, or moving mount becomes more plausible. Persistent all-speed movement deserves a closer model-specific inspection rather than repeated operation to see whether it settles."] },
+          { "heading": "The wobble appeared after installation or blade work", "paragraphs": ["A blade may be in the wrong position, hardware may not be seated evenly, the downrod ball may not be positioned correctly, or the support arrangement may need verification. Have the installer compare the assembly with the exact manual."] },
+          { "heading": "A click, knock, scrape, buzz, or flicker appears too", "paragraphs": ["A repeating mechanical sound may follow a loose blade or contact between moving parts. Electrical buzzing, burning odor, flickering light, intermittent operation, or sparking is different: switch the fan off and arrange electrical evaluation rather than treating it as a balance problem."] }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can observe safely",
+        "paragraphs": ["The most useful first check is visual and can usually be done from the floor. A short video showing the canopy and blade tips together can help a technician see whether the rotating assembly or the mount is moving."],
+        "bullets": [
+          "Clear people, pets, and breakable items from beneath the fan, then turn it off and allow every blade to stop.",
+          "From the floor, compare blade-tip height and look for one blade that droops, twists, cracks, or follows a visibly different path.",
+          "Observe whether the canopy remains fixed against the ceiling during a brief test at the speed where wobble occurs.",
+          "Note whether the symptom began after installation, cleaning, impact, blade removal, or a change in speed setting.",
+          "Listen for a once-per-revolution click versus a constant electrical buzz or intermittent power symptom.",
+          "Use the exact manufacturer manual before any model-specific balancing or hardware check, and stop if the work requires removing the canopy or accessing wiring."
+        ],
+        "callout": { "title": "Keep it off when the ceiling attachment moves", "text": "Do not operate a fan whose canopy, downrod connection, outlet box area, or ceiling attachment visibly moves. Do not remove the canopy, touch wiring, or work from an unstable ladder. Burning odor, sparking, smoke, or active electrical arcing calls for immediate separation from the area and emergency help as appropriate." }
+      },
+      {
+        "id": "balancing-boundary",
+        "heading": "When a balancing kit fits—and when it does not",
+        "paragraphs": [
+          "A manufacturer-approved balancing kit is intended to correct small blade-weight differences after installation, blade condition, hardware, and mounting have been checked. It is not a repair for a cracked blade, bent arm, loose bracket, moving support box, or damaged downrod connection. Follow the manual for the exact fan because clip and weight placement procedures differ.",
+          "If a fan was previously smooth and suddenly develops a strong wobble, do not start by adding weight. Look for a changed condition—damage, a shifted part, loose hardware, impact, or movement at the ceiling—and keep the fan off until the cause is understood."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician or qualified fan installer",
+        "paragraphs": ["Arrange evaluation when the canopy or ceiling moves, the support box is not known to be fan-rated, a blade arm is bent, a blade is damaged, the fan remains strongly unbalanced after manufacturer-directed checks, or safe access is not available. A qualified fan installer can address model-specific mechanical assembly; a licensed electrician is appropriate when the support box, wiring, switch, power, buzzing, odor, flicker, or sparking may be involved."],
+        "bullets": [
+          "Keep the fan off when mounting movement, a dropping canopy, loose parts, or damaged blades are visible.",
+          "Stop ordinary troubleshooting for burning odor, smoke, sparking, electrical crackling, or intermittent power.",
+          "Do not stand below a running fan that knocks, sheds material, or appears ready to drop hardware.",
+          "Provide the fan model, installation history, speed pattern, and a safe floor-level video to the professional."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "How to Fix a Wobbly Ceiling Fan", "publisher": "Hunter Fan Company", "url": "https://www.hunterfan.com/pages/how-to-fix-a-wobbly-ceiling-fan/1000" },
+      { "title": "Why is my fan wobbling?", "publisher": "Hunter Fan Support", "url": "https://support.hunterfan.com/hc/en-us/articles/115001410473-Why-is-my-fan-wobbling" },
+      { "title": "2021 International Residential Code: Boxes at Fan Outlets", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IRC2021P3/chapter-39-power-and-lighting-distribution" }
+    ]
   }
 ]
