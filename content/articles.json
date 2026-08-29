@@ -714,7 +714,7 @@
     "likely_causes": ["A hidden discharge from another fixture or appliance", "Partial restriction in the toilet branch or a downstream drain", "Plumbing venting that is not equalizing pressure normally", "Developing building-drain or sewer restriction", "Septic-system drainage trouble", "A temporary municipal sewer pressure event"],
     "safe_checks": ["Record which fixtures or appliances ran shortly before the sound.", "Note whether bowl water bubbles, rises, drops, or remains steady.", "Check whether sinks, tubs, showers, floor drains, or another toilet are slow or noisy.", "Compare one toilet with toilets on other floors.", "Stop unnecessary water use if wastewater rises or appears in another fixture.", "Avoid roof access, open cleanouts, main-line snaking, septic entry, and chemical drain cleaners."],
     "professional_help": "Arrange plumbing evaluation when random gurgling repeats, the bowl level changes, drains slow, more than one fixture reacts, or the pattern is worsening. Stop unnecessary wastewater use and call promptly if sewage enters a fixture, a tub or shower takes wastewater, or several drains back up. A septic provider or municipal sewer utility may be appropriate after the location of the problem is narrowed.",
-    "related_articles": ["toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
+    "related_articles": ["toilet-water-rises-when-another-toilet-flushes", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
     "image": {
       "src": "/images/toilet-hidden-trigger-drain-pressure.webp",
       "width": 1536,
@@ -791,6 +791,17 @@
         }
       },
       {
+        "id": "known-toilet-trigger",
+        "heading": "When another toilet is the clear trigger",
+        "paragraphs": ["A repeatable toilet-to-toilet interaction is more specific than an unexplained gurgle. If one flush makes another bowl rise, bubble, or surge, compare the size of the water-level change and whether other low fixtures react."],
+        "link": {
+          "before": "Use ",
+          "label": "Why Does My Toilet Water Rise When Another Toilet Flushes?",
+          "href": "/plumbing/toilet-water-rises-when-another-toilet-flushes/",
+          "after": " for that known-trigger pattern and its backup warning signs."
+        }
+      },
+      {
         "id": "safe-observations",
         "heading": "What you can observe safely",
         "bullets": [
@@ -839,6 +850,141 @@
       { "title": "Resolving Septic System Malfunctions", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/septic/resolving-septic-system-malfunctions" },
       { "title": "If You Have a Plumbing Blockage", "publisher": "Town of Simsbury Water Pollution Control", "url": "https://www.simsbury-ct.gov/776/If-You-Have-a-Plumbing-Blockage" },
       { "title": "Side Sewer Backups", "publisher": "Seattle Public Utilities", "url": "https://seattle.gov/utilities/your-services/sewer-and-drainage/side-sewers/backups" }
+    ]
+  },
+  {
+    "title": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "slug": "toilet-water-rises-when-another-toilet-flushes", "description": "If one toilet's water rises when another toilet flushes, a shared drain restriction, pressure change, venting issue, or broader sewer problem may be involved.",
+    "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["drainage", "clogging", "noise"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-28", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["toilet water rises when another toilet flushes", "one toilet affects another toilet", "toilet bubbles when other toilet flushes", "toilet water moves when another toilet flushes", "second toilet rises when first toilet flushes", "toilet water level rises when upstairs toilet flushes"], "target_search_intent": "Explain why flushing one toilet can make another toilet's bowl water rise, bubble, or move, distinguish modest pressure movement from backup warning signs, and help homeowners decide when shared drainage needs professional evaluation.",
+    "direct_answer": "Toilets in the same home ultimately connect to shared drainage and venting paths. When one toilet flushes, its wastewater displaces air and adds a short, concentrated flow to those pipes. If a shared branch or farther-downstream drain is partly restricted—or if the system is not managing air pressure normally—the second toilet's trap water may ripple, bubble, rise, or surge. A slight movement does not locate a fault, but a pronounced rise, repeated reactions, several slow drains, or water entering a tub, shower, or floor drain can signal a developing backup and deserves prompt plumbing evaluation.",
+    "likely_causes": ["Partial restriction in a shared toilet branch", "Restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized toilet or nearby branch condition", "Septic-system drainage trouble", "A municipal sewer condition"],
+    "safe_checks": ["Identify which toilet flush triggers the reaction and which toilet responds.", "Note whether the second bowl only ripples, bubbles, rises slightly, or approaches the rim.", "Check nearby tubs, showers, sinks, floor drains, and other toilets for slow drainage or movement.", "Compare same-floor and different-floor fixtures.", "Record whether several flushes or heavy household use make the reaction worse.", "Minimize wastewater use if any fixture begins backing up."],
+    "professional_help": "Arrange a plumber when toilet-to-toilet interaction repeats, the responding bowl rises noticeably, several fixtures are slow or noisy, or the symptoms worsen. Stop unnecessary wastewater use and call promptly if a bowl approaches the rim, a tub or shower takes wastewater, sewage appears, or multiple drains back up. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
+    "related_articles": ["toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
+    "image": {
+      "src": "/images/toilet-shared-drain-interaction.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway showing one toilet flushing into a shared drain while pressure movement makes the trap water in a second connected toilet rise.",
+      "caption": "Conceptual illustration: Toilets can share downstream drainage and venting paths, so one flush may disturb another toilet's trap water when flow or pressure is abnormal. Actual layouts vary, and bowl movement does not identify the fault location by itself.",
+      "kind": "conceptual",
+      "after_section": "shared-path"
+    },
+    "body_sections": [
+      {
+        "id": "shared-path",
+        "heading": "Why one toilet can affect another",
+        "paragraphs": [
+          "Each toilet has an integral trap that holds the water visible in the bowl. Its fixture drain eventually joins a branch, stack, building drain, or sewer used by other fixtures. A flush therefore changes flow and air pressure in piping that may also serve the second bathroom.",
+          "A properly functioning drainage and venting system is designed to carry wastewater while protecting trap seals from disruptive pressure differences. If the available drain capacity is reduced or the air path is ineffective, pressure can push or pull at the second toilet's water. That interaction explains the movement; it does not prove where a restriction or vent problem is located."
+        ]
+      },
+      {
+        "id": "what-rise-means",
+        "heading": "What does “the water rises” actually look like?",
+        "table": {
+          "headers": ["What the second toilet does", "How to interpret it"],
+          "rows": [
+            ["The surface ripples or the level shifts slightly", "A modest pressure interaction; compare repetition, other drains, and whether the change is becoming stronger"],
+            ["Bubbles or gurgles rise through the bowl", "Air is passing through the trap water, but the sound does not locate the underlying condition"],
+            ["The water rises noticeably, then falls", "Stronger displacement or temporary downstream resistance; repeated events warrant plumbing evaluation"],
+            ["The water climbs toward the rim", "A potential overflow or backup warning; minimize fixture use and call promptly"],
+            ["Dirty water or sewage enters the bowl", "An active sanitation and backup concern requiring reduced water use, isolation from contact, and professional help"],
+            ["The second toilet also flushes or drains slowly", "A local or shared downstream restriction becomes more plausible"]
+          ]
+        },
+        "paragraphs": ["Avoid declaring every small ripple normal or every movement an emergency. The size of the change, whether it repeats, and what other fixtures do determine the useful response."]
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons another toilet makes the bowl rise",
+        "causes": [
+          { "heading": "The toilets share a partly restricted branch drain", "text": "Nearby toilets may join a common downstream branch. A partial narrowing reduces usable capacity, so the flush from Toilet A can displace water or air toward Toilet B's trap. This is plausible when two nearby bathrooms interact, but a floor plan cannot confirm concealed pipe connections." },
+          { "heading": "A farther-downstream drain or sewer is restricted", "text": "A restriction in the building drain or private sewer can affect toilets and other fixtures on several branches. Multiple slow drains, reactions in more than one bathroom, a low tub or floor drain taking water, repeated backups, or steadily worsening symptoms make a broader restriction more concerning. This article uses those as escalation clues rather than attempting a complete main-sewer diagnosis." },
+          { "heading": "The venting system is not controlling pressure normally", "text": "Plumbing vents admit or release air so trap seals are not exposed to excessive pressure differences during drainage. A restricted, damaged, undersized, or incorrectly arranged vent can contribute to toilet-water movement. Venting is not the automatic answer, and roof access or vent clearing is not a safe homeowner test." },
+          { "heading": "A toilet or nearby branch has a more localized problem", "text": "If only two neighboring toilets react and all other drains remain normal, a local fixture drain, shared branch, or nearby vent arrangement may deserve attention first. The exact branch cannot be diagnosed from bathroom location or bowl movement alone." },
+          { "heading": "The septic system is not accepting wastewater normally", "text": "On a septic property, tank or outlet trouble, pumping-component problems, an overloaded or saturated drainfield, or another downstream condition can coincide with gurgling, slow drains, odors, alarms, wet drainfield areas, or backups. One moving toilet bowl is not proof of septic failure." },
+          { "heading": "A public sewer condition is affecting drainage", "text": "Municipal sewer obstruction, surcharge, or maintenance activity can occasionally affect connected homes. Neighbor reports, utility work, widespread symptoms, or a utility notice are useful context, but homeowners should not assume the city is responsible before the private and public drainage paths are distinguished." }
+        ]
+      },
+      {
+        "id": "location-clues",
+        "heading": "What the bathroom locations may tell you",
+        "subsections": [
+          { "heading": "The toilets are in nearby bathrooms", "paragraphs": ["A shared branch connection may be involved, particularly if only those two fixtures react. Nearby rooms do not guarantee nearby concealed piping, so treat this as a starting clue rather than a pipe map."] },
+          { "heading": "An upstairs flush affects a lower-floor toilet", "paragraphs": ["The fixtures necessarily connect somewhere downstream, and the lower toilet may reveal pressure or backup behavior at a lower elevation. Check other low fixtures, but do not assume the blockage sits directly below either toilet."] },
+          { "heading": "The lowest toilet or drain reacts first", "paragraphs": ["Lower fixtures can sometimes show downstream backup symptoms before higher ones because rising wastewater reaches the lowest available opening. This is a common warning pattern, not an absolute rule for every layout."] }
+        ]
+      },
+      {
+        "id": "timing-clues",
+        "heading": "When does the second toilet react?",
+        "table": {
+          "headers": ["Timing", "What it may suggest"],
+          "rows": [
+            ["Immediately as the first toilet flushes", "A relatively direct pressure or drainage interaction between connected paths"],
+            ["A few seconds after the flush", "The pressure or flow effect may be developing farther downstream"],
+            ["Only after several flushes", "Available drainage capacity may be progressively exceeded"],
+            ["Only during showers, laundry, or other heavy use", "A broader drainage-capacity or downstream condition becomes more plausible"],
+            ["The reaction is getting stronger over days or weeks", "A developing restriction deserves earlier evaluation before a full backup occurs"]
+          ]
+        },
+        "paragraphs": ["Timing helps describe the sequence to a plumber; it cannot measure distance to a restriction or prove which pipe is involved."]
+      },
+      {
+        "id": "random-versus-known-trigger",
+        "heading": "A known toilet trigger is different from random gurgling",
+        "paragraphs": ["When the second toilet reacts predictably to a specific flush, the known trigger makes this a narrower toilet-to-toilet drainage question. If the bowl gurgles with no recognized trigger, track showers, sinks, appliances, and other hidden discharge events instead."],
+        "link": { "before": "Use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": " when the timing remains unexplained." }
+      },
+      {
+        "id": "other-toilet-sounds",
+        "heading": "Washer bubbling and refill whistling are different patterns",
+        "links": [
+          { "before": "If the bowl reacts specifically while the washing machine pumps out, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that high-flow laundry trigger." },
+          { "before": "If the sound is a high-pitched whistle while a flushed toilet's tank refills, use ", "label": "Why Does My Toilet Whistle After Flushing?", "href": "/plumbing/toilet-whistles-after-flushing/", "after": " for the clean-water supply and fill-valve side." }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can observe safely",
+        "bullets": [
+          "Identify the exact triggering toilet and the exact toilet that reacts.",
+          "Note whether the second bowl ripples, bubbles, rises slightly, rises substantially, or approaches the rim.",
+          "Check nearby sinks, tubs, showers, floor drains, and other toilets for slow drainage or gurgling without deliberately adding large volumes of water.",
+          "Record whether the fixtures are adjacent, on different floors, or near the home's lowest drain.",
+          "Note whether several flushes or heavy household water use makes the reaction stronger.",
+          "Record sewer odor, recent heavy rain, utility work, and whether neighboring homes report drainage trouble.",
+          "For septic homes, note alarms, recent service history, odors, slow drains, or wet drainfield areas without opening the tank."
+        ],
+        "paragraphs": ["Keep the investigation observational. Do not remove toilets, disconnect fixtures, open a cleanout that may be holding wastewater, run a large sewer snake, climb to a roof vent, enter a septic tank, or use aggressive chemical drain cleaners. Chemicals may not reach a downstream restriction and can expose anyone who later opens or services the system."]
+      },
+      {
+        "id": "stop-using-fixtures",
+        "heading": "When to stop or minimize fixture use",
+        "paragraphs": ["Continued flushing, showering, laundry, and dishwashing adds wastewater to a path that may already be restricted. Minimize or stop those uses and call a plumber promptly when a toilet approaches the rim, another fixture backs up, several drains slow at once, multiple toilets react, or symptoms worsen quickly."],
+        "callout": {
+          "title": "Sewage or rising wastewater is not a test condition",
+          "text": "Do not flush again to reproduce a backup. Avoid direct contact, keep children and pets away, and stop unnecessary use of affected plumbing. Do not mix drain chemicals or open a potentially pressurized cleanout. Keep away from electrical equipment in wet areas and arrange prompt professional assessment."
+        }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who to call",
+        "subsections": [
+          { "heading": "Plumber or drain professional", "paragraphs": ["Start here for repeated toilet interaction, suspected branch or private-sewer restrictions, multiple affected fixtures, worsening bowl rise, backups, or an uncertain drainage pattern. A professional can evaluate accessible cleanouts, venting, branches, and the private building sewer without guessing from the bathroom layout."] },
+          { "heading": "Septic professional", "paragraphs": ["For septic homes, involve a qualified septic provider when alarms, surfacing wastewater, drainfield saturation, service history, or the plumber's findings point beyond the building drain. Never enter or open a septic tank as a homeowner diagnostic step."] },
+          { "heading": "Sewer utility or municipality", "paragraphs": ["Contact the utility when neighbors are affected, public work is underway, a plumber locates the problem beyond the private lateral, or the utility instructs residents to report symptoms. Do not assume responsibility lies with the municipality without evidence."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Chapter 9: Vents, 2024 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2024V2.0/chapter-9-vents" },
+      { "title": "Chapter 7: Sanitary Drainage, 2021 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2021P1/chapter-7-sanitary-drainage" },
+      { "title": "Resolving Septic System Malfunctions", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/septic/resolving-septic-system-malfunctions" },
+      { "title": "Call Us First: Sewer Backup Warning Signs", "publisher": "City of Roseville Environmental Utilities", "url": "https://www.roseville.ca.gov/environmental_utilities/at_your_service/sewer/call_us_first/index.php" },
+      { "title": "If You Have a Plumbing Blockage", "publisher": "Town of Simsbury Water Pollution Control", "url": "https://simsbury-ct.gov/776/If-You-Have-a-Plumbing-Blockage" }
     ]
   },
   {

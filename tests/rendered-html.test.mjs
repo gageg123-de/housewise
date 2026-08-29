@@ -179,12 +179,31 @@ test("random toilet gurgling guide renders hidden triggers, backup safety, schem
   assert.match(html, /A “random” gurgle may have a hidden trigger/);
   assert.match(html, /Do not keep testing a backing-up system/);
   assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-water-rises-when-another-toilet-flushes\/"/);
   assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
   assert.match(html, /src="\/images\/toilet-hidden-trigger-drain-pressure\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/toilet-hidden-trigger-drain-pressure\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("toilet flush interaction guide renders known-trigger distinctions, safety, schema, and visual", async () => {
+  const response = await render("/plumbing/toilet-water-rises-when-another-toilet-flushes"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Toilet Water Rise When Another Toilet Flushes\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-water-rises-when-another-toilet-flushes\//);
+  assert.match(html, /What does “the water rises” actually look like\?/);
+  assert.match(html, /Sewage or rising wastewater is not a test condition/);
+  assert.match(html, /href="\/plumbing\/toilet-gurgles-randomly\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
+  assert.match(html, /src="\/images\/toilet-shared-drain-interaction\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/toilet-shared-drain-interaction\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 
