@@ -14,6 +14,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "drainage"));
   assert.ok(bathroom.some((item) => item.value === "toilet-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
+  assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
   assert.ok(!bathroom.some((item) => item.value === "pest-activity"));
 
@@ -27,6 +28,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "drainage")[0].article.slug, "toilet-bubbles-when-washer-drains");
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-gurgling")[0].article.slug, "toilet-gurgles-randomly");
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-water-level")[0].article.slug, "toilet-water-rises-when-another-toilet-flushes");
+  assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "hvac-filter")[0].article.slug, "ac-filter-wet");
@@ -55,6 +57,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["bathroom", "drainage"],
     ["bathroom", "toilet-gurgling"],
     ["bathroom", "toilet-water-level"],
+    ["bathroom", "shower-gurgling"],
     ["bathroom", "leaking"],
     ["bathroom", "smell"],
     ["bathroom", "noise"],
@@ -129,6 +132,12 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["toilet water moves when another toilet flushes", "toilet-water-rises-when-another-toilet-flushes"],
     ["second toilet rises when first toilet flushes", "toilet-water-rises-when-another-toilet-flushes"],
     ["toilet water level rises when upstairs toilet flushes", "toilet-water-rises-when-another-toilet-flushes"],
+    ["shower drain gurgles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
+    ["shower gurgles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
+    ["tub drain gurgles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
+    ["shower drain bubbles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
+    ["toilet flush makes shower drain gurgle", "shower-drain-gurgles-when-toilet-flushes"],
+    ["bath drain gurgles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
     ["toilet high pitched refill", "toilet-whistles-after-flushing"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],
