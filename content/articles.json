@@ -714,7 +714,7 @@
     "likely_causes": ["A hidden discharge from another fixture or appliance", "Partial restriction in the toilet branch or a downstream drain", "Plumbing venting that is not equalizing pressure normally", "Developing building-drain or sewer restriction", "Septic-system drainage trouble", "A temporary municipal sewer pressure event"],
     "safe_checks": ["Record which fixtures or appliances ran shortly before the sound.", "Note whether bowl water bubbles, rises, drops, or remains steady.", "Check whether sinks, tubs, showers, floor drains, or another toilet are slow or noisy.", "Compare one toilet with toilets on other floors.", "Stop unnecessary water use if wastewater rises or appears in another fixture.", "Avoid roof access, open cleanouts, main-line snaking, septic entry, and chemical drain cleaners."],
     "professional_help": "Arrange plumbing evaluation when random gurgling repeats, the bowl level changes, drains slow, more than one fixture reacts, or the pattern is worsening. Stop unnecessary wastewater use and call promptly if sewage enters a fixture, a tub or shower takes wastewater, or several drains back up. A septic provider or municipal sewer utility may be appropriate after the location of the problem is narrowed.",
-    "related_articles": ["toilet-water-rises-when-another-toilet-flushes", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
+    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
     "image": {
       "src": "/images/toilet-hidden-trigger-drain-pressure.webp",
       "width": 1536,
@@ -822,7 +822,8 @@
         "callout": {
           "title": "Do not keep testing a backing-up system",
           "text": "Do not flush again to see what happens, mix drain chemicals, or open a cleanout that may be holding wastewater under pressure. Keep away from sewage and from electrical equipment in wet areas. Call a plumber or drain professional promptly; contact the septic provider or sewer utility when the evidence points beyond the private indoor drain."
-        }
+        },
+        "link": { "before": "When several fixtures are slow, gurgling, or taking wastewater together, use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader shared-drain pattern." }
       },
       {
         "id": "different-noise",
@@ -861,7 +862,7 @@
     "likely_causes": ["Partial restriction in a shared toilet branch", "Restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized toilet or nearby branch condition", "Septic-system drainage trouble", "A municipal sewer condition"],
     "safe_checks": ["Identify which toilet flush triggers the reaction and which toilet responds.", "Note whether the second bowl only ripples, bubbles, rises slightly, or approaches the rim.", "Check nearby tubs, showers, sinks, floor drains, and other toilets for slow drainage or movement.", "Compare same-floor and different-floor fixtures.", "Record whether several flushes or heavy household use make the reaction worse.", "Minimize wastewater use if any fixture begins backing up."],
     "professional_help": "Arrange a plumber when toilet-to-toilet interaction repeats, the responding bowl rises noticeably, several fixtures are slow or noisy, or the symptoms worsen. Stop unnecessary wastewater use and call promptly if a bowl approaches the rim, a tub or shower takes wastewater, sewage appears, or multiple drains back up. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
-    "related_articles": ["shower-drain-gurgles-when-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
+    "related_articles": ["multiple-drains-back-up-at-same-time", "shower-drain-gurgles-when-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains", "toilet-whistles-after-flushing"],
     "image": {
       "src": "/images/toilet-shared-drain-interaction.webp",
       "width": 1536,
@@ -973,7 +974,8 @@
         "callout": {
           "title": "Sewage or rising wastewater is not a test condition",
           "text": "Do not flush again to reproduce a backup. Avoid direct contact, keep children and pets away, and stop unnecessary use of affected plumbing. Do not mix drain chemicals or open a potentially pressurized cleanout. Keep away from electrical equipment in wet areas and arrange prompt professional assessment."
-        }
+        },
+        "link": { "before": "If the symptom has spread beyond the two toilets, use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " to compare one branch with a broader building-drain pattern." }
       },
       {
         "id": "who-to-call",
@@ -1002,7 +1004,7 @@
     "likely_causes": ["A partial restriction in a shared bathroom branch", "A restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized bathroom branch condition", "A broader building-drain or main-line problem", "A septic-system drainage problem", "A municipal sewer condition"],
     "safe_checks": ["Identify which toilet triggers the sound and which shower or tub reacts.", "Note whether the drain only gurgles or whether water visibly bubbles, rises, or becomes dirty.", "Check whether the shower and nearby sinks drain slowly without deliberately adding a large test volume.", "Compare fixtures on other floors and note whether another toilet or low drain reacts.", "Record whether the symptom happens after every flush, after several flushes, or during other household water use.", "Minimize plumbing use if wastewater rises or several fixtures become slow."],
     "professional_help": "Arrange a plumber when the toilet-to-shower interaction repeats, the shower drains slowly, water visibly moves upward, several fixtures react, or symptoms worsen. Stop unnecessary wastewater use and call promptly if dirty water or sewage enters the shower, multiple drains back up, or a lower fixture begins taking wastewater. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
-    "related_articles": ["toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
+    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
     "image": {
       "src": "/images/toilet-shower-shared-drain-gurgling.webp", "width": 1536, "height": 1024,
       "alt": "Conceptual bathroom cutaway showing a toilet discharging into a shared drain while pressure movement disturbs water in a connected shower trap.",
@@ -1074,7 +1076,8 @@
       {
         "id": "urgent-warning", "heading": "When the symptom becomes urgent",
         "paragraphs": ["Continued flushing, showering, laundry, and dishwashing adds wastewater to a path that may already be restricted. Minimize or stop those uses and contact a plumber promptly when shower water rises, wastewater enters the fixture, multiple drains slow or gurgle, more than one toilet reacts, lower fixtures begin backing up, or the pattern worsens quickly."],
-        "callout": { "title": "Sewage in the shower is a backup, not a sound test", "text": "Do not flush again to reproduce it. Avoid direct contact, keep children and pets away, and stop unnecessary plumbing use. Do not mix drain chemicals or open a potentially pressurized cleanout. Keep away from electrical equipment in wet areas and arrange prompt professional assessment." }
+        "callout": { "title": "Sewage in the shower is a backup, not a sound test", "text": "Do not flush again to reproduce it. Avoid direct contact, keep children and pets away, and stop unnecessary plumbing use. Do not mix drain chemicals or open a potentially pressurized cleanout. Keep away from electrical equipment in wet areas and arrange prompt professional assessment." },
+        "link": { "before": "When several fixtures now share the problem, use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader escalation pattern." }
       },
       {
         "id": "who-to-call", "heading": "Who to call",
@@ -1095,6 +1098,108 @@
     ]
   },
   {
+    "title": "Why Do Multiple Drains Back Up at the Same Time?", "slug": "multiple-drains-back-up-at-same-time", "description": "When several drains slow, gurgle, or back up together, a shared branch, building drain, sewer line, or septic problem may be restricting wastewater flow.",
+    "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["drainage", "clogging", "noise"], "room_or_location": ["whole-house", "bathroom", "basement", "kitchen", "laundry"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-08-31", "updated_date": "2026-08-31", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["multiple drains back up at the same time", "multiple drains backing up", "multiple drains clogged at once", "several drains backing up", "all drains backing up", "multiple drains slow at same time", "toilet and shower backing up", "several drains gurgling"], "target_search_intent": "Explain why several fixtures can become slow, gurgle, rise, or back up together, distinguish a shared branch problem from a broader building-drain, sewer, or septic condition, and identify when homeowners should stop using water and seek professional help.",
+    "direct_answer": "When several drains become slow, gurgle, rise, or back up at roughly the same time, the problem is more likely to be in drainage piping those fixtures share than in several unrelated fixtures. A partial shared-branch restriction can affect one zone, while symptoms across rooms or floors make a building drain, private sewer, septic system, or outside sewer condition more concerning. Multiple drains do not prove the main sewer is clogged, but wastewater rising in a low fixture or sewage entering the home means you should stop unnecessary water use and arrange prompt professional evaluation.",
+    "likely_causes": ["A partial restriction in a shared branch drain", "A building drain or private sewer restriction", "A low fixture revealing a downstream backup first", "A septic-system problem", "A municipal sewer condition", "Drainage pressure changes involving venting", "More than one localized problem occurring together"],
+    "safe_checks": ["List every slow, noisy, rising, or backing-up fixture and the floor where it is located.", "Note which fixture reacts first and whether it only drains slowly or receives wastewater.", "Record whether laundry, dishwashing, showers, or repeated flushing makes another drain react.", "Compare one room with fixtures elsewhere without deliberately adding a large test volume.", "Note septic alarms, recent service, utility work, heavy rain, and similar neighbor reports where relevant.", "Stop unnecessary water use if wastewater rises, sewage appears, or continued use worsens another fixture."],
+    "professional_help": "Contact a plumber or drain professional when multiple fixtures are affected, lower drains react, symptoms spread across rooms or floors, or the pattern is worsening. Stop unnecessary wastewater use and call promptly if sewage enters a tub, shower, toilet, floor drain, or living area. A qualified septic provider or sewer utility may be appropriate after the private drainage path and local responsibility boundary are considered.",
+    "related_articles": ["shower-drain-gurgles-when-toilet-flushes", "toilet-water-rises-when-another-toilet-flushes", "toilet-bubbles-when-washer-drains", "toilet-gurgles-randomly"],
+    "image": {
+      "src": "/images/multiple-drains-shared-downstream-restriction.webp", "width": 1536, "height": 1024,
+      "alt": "Conceptual house drainage cutaway showing several fixtures joining a shared downstream drain, with a possible restriction and a lower shower reacting first.",
+      "caption": "Conceptual illustration: Several fixtures can show symptoms when a shared downstream drain is restricted. A lower fixture may react first, but actual plumbing layouts and restriction locations vary.",
+      "kind": "conceptual", "after_section": "what-counts"
+    },
+    "body_sections": [
+      {
+        "id": "what-counts", "heading": "What counts as several drains backing up?",
+        "table": { "headers": ["What you notice", "How to treat the pattern"], "rows": [
+          ["Several drains are slow", "Shared drainage resistance is possible, but wastewater is not necessarily moving backward"],
+          ["Several fixtures gurgle", "Air and water pressure are changing in connected drainage; the sounds do not locate the problem"],
+          ["Water rises in one fixture when another is used", "A shared downstream path may not be carrying the added flow normally"],
+          ["Wastewater appears in a lower fixture", "A more concerning downstream restriction may be pushing water toward a lower opening"],
+          ["Sewage enters tubs, showers, toilets, or floor drains", "An active sanitation and drainage problem requiring stopped water use and prompt help"]
+        ] },
+        "paragraphs": ["These observations have different urgency. Two sinks draining a little slowly are not the same as wastewater entering a basement shower. Focus on whether water is merely slow, whether another fixture triggers movement, and whether dirty water is coming back into the home."]
+      },
+      {
+        "id": "why-shared-drains-matter", "heading": "Why several fixtures can react together",
+        "paragraphs": ["Each fixture begins with its own drain connection, but those paths join branch drains, stacks, the building drain, and eventually a private sewer or septic system. A restriction after two or more fixture drains join can affect every upstream fixture that depends on that section.", "The same pattern can be produced at different scales. Two nearby fixtures may share a restricted bathroom branch, while fixtures across several rooms or floors may share only a farther-downstream building drain or sewer. The number and location of affected fixtures narrow the possibilities; they do not reveal the hidden pipe layout or exact obstruction by themselves."]
+      },
+      {
+        "id": "common-causes", "heading": "Common reasons multiple drains have problems together",
+        "causes": [
+          { "heading": "A shared branch drain is partly restricted", "text": "Fixtures in one bathroom, kitchen area, or laundry zone may connect before joining the rest of the building drainage. A narrowing in that shared branch can make only the nearby group slow, gurgle, or interact while fixtures elsewhere remain normal. Room proximity is useful context, not proof of the pipe arrangement." },
+          { "heading": "The building drain or private sewer is restricted", "text": "When several branches lose capacity together, a restriction farther downstream becomes more plausible. Clues include problems in different rooms, more than one floor, lower fixtures receiving water, symptoms during heavy use, or repeated backups. This establishes concern for a shared downstream path without attempting to diagnose every possible main-sewer defect." },
+          { "heading": "A lower fixture is revealing the backup first", "text": "Rising wastewater can appear at a low shower, tub, toilet, laundry sink, or floor drain before it reaches higher fixtures. Elevation can make a low opening the first visible outlet, but pumping arrangements, backwater protection, and actual piping layouts create exceptions." },
+          { "heading": "The septic system is not accepting wastewater normally", "text": "On septic properties, tank or outlet trouble, pumping-component issues, a restriction, hydraulic overload, saturated soil, or drainfield malfunction can coincide with slow drains, gurgling, odors, alarms, wet drainfield areas, and indoor backups. Multiple slow drains are a warning pattern, not proof of which septic component is responsible." },
+          { "heading": "A public sewer condition is affecting the property", "text": "A municipal main obstruction, surcharge, or maintenance event can sometimes affect connected homes. Similar neighbor reports, utility alerts, or a plumber locating the restriction beyond the private lateral strengthen this possibility. Local ownership and responsibility boundaries vary." },
+          { "heading": "Venting is contributing to pressure symptoms", "text": "Plumbing vents provide an air path that protects fixture trap seals while wastewater moves. Ineffective venting can contribute to gurgling and trap-water movement, but actual wastewater rising in several fixtures puts a shared drainage restriction higher on the practical concern list. Gurgling alone cannot separate the two, and roof access is not a homeowner test." },
+          { "heading": "More than one localized issue is present", "text": "Coincidental local clogs can happen, especially when different fixtures have had separate problems for some time. That explanation becomes less convincing when symptoms begin together, one fixture use affects another, or wastewater appears at a low drain." }
+        ]
+      },
+      {
+        "id": "fixture-pattern", "heading": "Which fixtures are affected together?",
+        "subsections": [
+          { "heading": "Only one bathroom or one zone", "paragraphs": ["A shared branch serving that area may deserve attention before assuming a whole-house sewer problem. Check whether every other room truly drains normally, but do not deliberately stress the system with repeated tests."] },
+          { "heading": "Kitchen and bathroom fixtures", "paragraphs": ["Different rooms reacting together makes a farther-downstream shared drain more relevant because their local branches eventually join. The joining point still cannot be located from room names alone."] },
+          { "heading": "Multiple bathrooms", "paragraphs": ["A building drain, private sewer, or septic-side condition becomes more plausible, especially when toilets, tubs, and sinks all show changes or the pattern spans floors."] },
+          { "heading": "Fixtures on several floors", "paragraphs": ["A shared vertical stack or downstream building drainage path deserves prompt evaluation. Note whether the lowest fixture reacts first, but remember that pumps and protective devices can change the visible pattern."] },
+          { "heading": "A low shower or floor drain receives wastewater", "paragraphs": ["Treat this as a backup rather than a routine slow-drain problem. Stop adding wastewater, avoid contact, and arrange prompt help."] }
+        ]
+      },
+      {
+        "id": "timing-clues", "heading": "When do the problems appear?",
+        "table": { "headers": ["Timing pattern", "What it may suggest"], "rows": [
+          ["Only during laundry, several showers, dishwashing, or repeated flushing", "A restricted path may cope with light flow but lose capacity during concentrated use"],
+          ["Even one ordinary fixture use affects another drain", "The available drainage path may be more substantially restricted"],
+          ["Symptoms come and go", "A partial restriction, changing septic load, or outside sewer condition can behave inconsistently; intermittent does not mean harmless"],
+          ["Symptoms are becoming more frequent or severe", "The problem deserves earlier evaluation before a full backup occurs"]
+        ] },
+        "paragraphs": ["Record the sequence rather than repeatedly reproducing it. A short timeline of which fixture ran, which drain reacted, and whether water rose can be more useful than another test flush."]
+      },
+      {
+        "id": "specific-patterns", "heading": "Use the narrower guide when the trigger is specific",
+        "paragraphs": ["This page fits when several fixtures share a broader slow-drain or backup pattern. A repeatable trigger involving one reacting fixture has a more focused explanation."],
+        "links": [
+          { "before": "If washing-machine discharge makes a toilet bubble, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that laundry-to-toilet interaction." },
+          { "before": "If one toilet flush changes the water level in another toilet, use ", "label": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "href": "/plumbing/toilet-water-rises-when-another-toilet-flushes/", "after": " for the toilet-to-toilet pattern." },
+          { "before": "If a toilet flush makes a shower or tub trap gurgle, use ", "label": "Why Does My Shower Drain Gurgle When the Toilet Flushes?", "href": "/plumbing/shower-drain-gurgles-when-toilet-flushes/", "after": " for that known trigger." },
+          { "before": "If one toilet gurgles without an obvious trigger, use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": " to look for hidden fixture activity." }
+        ]
+      },
+      {
+        "id": "safe-observations", "heading": "What you can observe safely",
+        "bullets": ["Make a list of every affected toilet, sink, tub, shower, floor drain, appliance drain, and the floor or room where it sits.", "Note which fixture reacts first and whether it is only slow, gurgles, changes level, or receives dirty water.", "Record whether laundry, dishwashing, showers, or repeated flushing makes another fixture react.", "Compare one zone with other rooms without intentionally sending a large test volume into the drains.", "Note sewer odors, recent heavy rain or utility work, and whether nearby properties report similar sewer symptoms.", "For septic homes, note alarms, service history, wet drainfield areas, or odors without opening or entering the tank.", "Photograph visible water from a safe, dry location and record whether the pattern is worsening."],
+        "paragraphs": ["Keep the investigation observational. Do not remove toilets, open a cleanout that may be holding wastewater under pressure, snake the building sewer, climb to roof vents, enter a septic tank, dismantle multiple traps, or use aggressive chemical drain cleaners. A product poured into one fixture may not reach a shared restriction and cannot repair venting, sewer, or septic problems; mixing products creates additional exposure risk."]
+      },
+      {
+        "id": "stop-water-use", "heading": "When to stop using water",
+        "paragraphs": ["Reduce or stop toilet flushing, showers, sinks, laundry, and dishwashing when wastewater rises in fixtures, sewage appears, the lowest drain overflows, several fixtures back up, or using one fixture visibly worsens another. Continuing to send water into a restricted system increases the volume of wastewater that has nowhere to go."],
+        "callout": { "title": "Sewage in the home requires distance, not another test", "text": "Avoid direct contact, keep children and pets away, and stop unnecessary plumbing use. Do not try to cap a flowing drain, mix chemicals, or open a potentially pressurized cleanout. Stay away from electrical equipment in wet areas. Arrange prompt plumbing or sewer assessment, and use qualified cleanup help for significant contamination." }
+      },
+      {
+        "id": "who-to-call", "heading": "Who to call",
+        "subsections": [
+          { "heading": "Plumber or drain professional", "paragraphs": ["Start here when multiple fixtures are slow or backing up, rooms or floors are affected together, a lower drain takes wastewater, backups repeat, or the source is unclear. A professional can evaluate branches, accessible cleanouts, the building drain, and the private sewer without guessing from a single symptom."] },
+          { "heading": "Septic professional", "paragraphs": ["For septic homes, involve a qualified provider when alarms, surfacing wastewater, saturated drainfield conditions, service history, or plumbing findings point beyond the building drain. Do not open or enter the tank."] },
+          { "heading": "Sewer utility or municipality", "paragraphs": ["Contact the utility when neighbors report similar problems, an official alert or public work is relevant, a plumber locates the issue beyond the private lateral, or local instructions direct residents to report backups. Responsibility limits differ by jurisdiction, so do not assume the public system is responsible without evidence."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Chapter 7: Sanitary Drainage, 2021 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2021P1/chapter-7-sanitary-drainage" },
+      { "title": "Chapter 9: Vents, 2024 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2024V2.0/chapter-9-vents" },
+      { "title": "Resolving Septic System Malfunctions", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/septic/resolving-septic-system-malfunctions" },
+      { "title": "Sewer Backup Warning Signs", "publisher": "City of Roseville Environmental Utilities", "url": "https://www.roseville.ca.gov/environmental_utilities/at_your_service/sewer/call_us_first/index.php" },
+      { "title": "Side Sewer Backups", "publisher": "Seattle Public Utilities", "url": "https://seattle.gov/utilities/your-services/sewer-and-drainage/side-sewers/backups" },
+      { "title": "Signs of Septic System Failure", "publisher": "Washington State Department of Health", "url": "https://doh.wa.gov/community-and-environment/wastewater-management/septic-system/signs-failure" }
+    ]
+  },
+  {
     "title": "Why Does My Toilet Bubble When the Washer Drains?", "slug": "toilet-bubbles-when-washer-drains", "description": "A toilet that bubbles when the washer drains may signal a partial shared-drain blockage, venting problem, or broader sewer issue. Learn which clues matter.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "clogging", "drainage"], "room_or_location": ["bathroom", "laundry"], "system": "plumbing", "content_type": "diagnostic-guide",
     "published_date": "2026-08-24", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
@@ -1103,7 +1208,7 @@
     "likely_causes": ["Partial restriction in a shared branch drain", "Restriction farther downstream in the building drain or sewer", "Plumbing venting problem", "Washer standpipe or connection problem", "Septic or municipal sewer condition"],
     "safe_checks": ["Stop the washer if toilet water rises or wastewater appears anywhere.", "Note which washer cycle phase triggers the bubbling.", "Check whether the toilet, tub, shower, and sink are also slow.", "Observe whether the washer standpipe overflows without touching wastewater.", "Avoid chemical drain cleaners, rooftop vent access, and dismantling drainage connections."],
     "professional_help": "A recurring washer-triggered bubble deserves plumbing evaluation, especially when the toilet water level changes or multiple fixtures respond. Stop water use and call promptly for sewage, a standpipe overflow, several backing-up drains, or a lowest-level fixture taking wastewater. A septic service provider or sewer utility may become appropriate after a plumber identifies where the restriction lies.",
-    "related_articles": ["toilet-gurgles-randomly", "toilet-whistles-after-flushing"],
+    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-gurgles-randomly", "toilet-whistles-after-flushing"],
     "image": {
       "src": "/images/washer-toilet-shared-drain-pressure.webp",
       "width": 1536,
@@ -1158,7 +1263,8 @@
           "Air bubbles by themselves do not necessarily mean sewage is entering the bowl. The response changes when the water level rises, dirty water enters another fixture, the standpipe spills, or a floor drain becomes the outlet. Those signs mean the drainage system is no longer containing wastewater normally.",
           "Sewage can contain disease-causing organisms. Keep people and pets away, avoid contact, stop using fixtures that add wastewater, and arrange prompt professional help. Do not keep running the washer to reproduce an overflow."
         ],
-        "callout": { "title": "Stop the test if wastewater rises or spills", "text": "Cancel or pause the washer if that can be done without entering a contaminated area. Do not flush the toilet, run more fixtures, mix drain chemicals, or touch sewage. If wastewater is near electrical equipment, keep away and use qualified emergency help." }
+        "callout": { "title": "Stop the test if wastewater rises or spills", "text": "Cancel or pause the washer if that can be done without entering a contaminated area. Do not flush the toilet, run more fixtures, mix drain chemicals, or touch sewage. If wastewater is near electrical equipment, keep away and use qualified emergency help." },
+        "link": { "before": "If the washer is no longer the only trigger and several drains are affected, use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the wider shared-drain pattern." }
       },
       {
         "id": "safe-checks",

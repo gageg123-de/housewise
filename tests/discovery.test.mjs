@@ -22,6 +22,9 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(attic.some((item) => item.value === "moisture"));
   assert.ok(attic.some((item) => item.value === "pest-activity"));
   assert.ok(!attic.some((item) => item.value === "appliance-behavior"));
+
+  const wholeHouse = getFinderSymptomOptions("whole-house");
+  assert.ok(wholeHouse.some((item) => item.value === "multiple-drains"));
 });
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
@@ -33,6 +36,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "hvac-filter")[0].article.slug, "ac-filter-wet");
   assert.equal(rankFinderArticles(registry, "whole-house", "leaking")[0].article.slug, "water-around-indoor-ac-unit");
+  assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
 
@@ -62,6 +66,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["bathroom", "smell"],
     ["bathroom", "noise"],
     ["whole-house", "moisture"],
+    ["whole-house", "multiple-drains"],
     ["whole-house", "hvac-filter"],
     ["laundry", "appliance-behavior"],
     ["attic", "moisture"],
@@ -87,6 +92,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
 
   assert.match(getFinderSymptomOptions("yard").find((item) => item.value === "drainage").label, /standing water/i);
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
+  assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug, "ac-ductwork-sweating-in-attic");
 });
@@ -138,6 +144,13 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["shower drain bubbles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
     ["toilet flush makes shower drain gurgle", "shower-drain-gurgles-when-toilet-flushes"],
     ["bath drain gurgles when toilet flushes", "shower-drain-gurgles-when-toilet-flushes"],
+    ["multiple drains backing up at same time", "multiple-drains-back-up-at-same-time"],
+    ["multiple drains clogged at once", "multiple-drains-back-up-at-same-time"],
+    ["several drains backing up", "multiple-drains-back-up-at-same-time"],
+    ["all drains backing up", "multiple-drains-back-up-at-same-time"],
+    ["multiple drains slow at same time", "multiple-drains-back-up-at-same-time"],
+    ["toilet and shower backing up", "multiple-drains-back-up-at-same-time"],
+    ["several drains gurgling", "multiple-drains-back-up-at-same-time"],
     ["toilet high pitched refill", "toilet-whistles-after-flushing"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],

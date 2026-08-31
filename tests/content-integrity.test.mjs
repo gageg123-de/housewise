@@ -229,14 +229,14 @@ test("random toilet gurgling guide owns hidden-trigger intent without absorbing 
   const toiletRiseTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet water rises when another toilet flushes,"));
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
   const showerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Shower drain gurgles when toilet flushes,"));
-  const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Sink gurgles when washer drains|Multiple drains back up at same time),/.test(row));
+  const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Sink gurgles when washer drains),/.test(row));
   assert.ok(gurgling && washer);
   assert.equal(gurgling.published_date, "2026-08-28");
   assert.equal(gurgling.updated_date, "2026-08-28");
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/toilet-gurgles-randomly/"));
   assert.ok(toiletRiseTopic?.includes(",published,") && toiletRiseTopic.includes("/plumbing/toilet-water-rises-when-another-toilet-flushes/"));
   assert.ok(showerTopic?.includes(",published,") && showerTopic.includes("/plumbing/shower-drain-gurgles-when-toilet-flushes/"));
-  assert.equal(futureTopics.length, 2);
+  assert.equal(futureTopics.length, 1);
   assert.ok(futureTopics.every((row) => row.includes(",planned,")));
   assert.match(gurgling.target_search_intent, /without an obvious trigger/i);
   assert.ok(gurgling.body_sections.some((section) => section.id === "hidden-trigger"));
@@ -256,12 +256,12 @@ test("toilet-to-toilet flush interaction guide owns the known-trigger water-leve
   const article = registry.find((item) => item.slug === "toilet-water-rises-when-another-toilet-flushes");
   const random = registry.find((item) => item.slug === "toilet-gurgles-randomly");
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet water rises when another toilet flushes,"));
-  const protectedTopics = topics.split(/\r?\n/).filter((row) => /^(Sink gurgles when washer drains|Multiple drains back up at same time|Tub backs up when toilet flushes),/.test(row));
+  const protectedTopics = topics.split(/\r?\n/).filter((row) => /^(Sink gurgles when washer drains|Tub backs up when toilet flushes),/.test(row));
   assert.ok(article && random);
   assert.equal(article.published_date, "2026-08-28");
   assert.equal(article.updated_date, "2026-08-28");
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/toilet-water-rises-when-another-toilet-flushes/"));
-  assert.ok(protectedTopics.length >= 3);
+  assert.ok(protectedTopics.length >= 2);
   assert.ok(protectedTopics.every((row) => row.includes(",planned,")));
   assert.match(article.target_search_intent, /flushing one toilet can make another toilet's bowl water rise/i);
   assert.ok(article.body_sections.some((section) => section.id === "what-rise-means" && section.table?.rows.length === 6));
@@ -281,12 +281,12 @@ test("toilet-triggered shower gurgling guide stays distinct from sound-only, tub
   const article = registry.find((item) => item.slug === "shower-drain-gurgles-when-toilet-flushes");
   const toiletRise = registry.find((item) => item.slug === "toilet-water-rises-when-another-toilet-flushes");
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Shower drain gurgles when toilet flushes,"));
-  const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Multiple drains back up at same time|Tub backs up when toilet flushes|Sink gurgles when washer drains),/.test(row));
+  const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Tub backs up when toilet flushes|Sink gurgles when washer drains),/.test(row));
   assert.ok(article && toiletRise);
   assert.equal(article.published_date, "2026-08-30");
   assert.equal(article.updated_date, "2026-08-30");
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/shower-drain-gurgles-when-toilet-flushes/"));
-  assert.equal(futureTopics.length, 3);
+  assert.equal(futureTopics.length, 2);
   assert.ok(futureTopics.every((row) => row.includes(",planned,")));
   assert.match(article.target_search_intent, /toilet flush can make a shower or tub drain gurgle/i);
   assert.ok(article.body_sections.some((section) => section.id === "why-shower-gurgles"));
@@ -300,6 +300,39 @@ test("toilet-triggered shower gurgling guide stays distinct from sound-only, tub
   assert.equal(article.image.src, "/images/toilet-shower-shared-drain-gurgling.webp");
   assert.equal(article.image.kind, "conceptual");
   assert.ok(toiletRise.related_articles.includes(article.slug));
+});
+
+test("multiple-drain backup guide owns broad multi-fixture intent without absorbing main-sewer or fixture-trigger pages", () => {
+  const article = registry.find((item) => item.slug === "multiple-drains-back-up-at-same-time");
+  const random = registry.find((item) => item.slug === "toilet-gurgles-randomly");
+  const toiletRise = registry.find((item) => item.slug === "toilet-water-rises-when-another-toilet-flushes");
+  const shower = registry.find((item) => item.slug === "shower-drain-gurgles-when-toilet-flushes");
+  const washer = registry.find((item) => item.slug === "toilet-bubbles-when-washer-drains");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Multiple drains back up at same time,"));
+  const protectedTopics = topics.split(/\r?\n/).filter((row) => /^(Tub backs up when toilet flushes|Sink gurgles when washer drains),/.test(row));
+  assert.ok(article && random && toiletRise && shower && washer);
+  assert.equal(article.published_date, "2026-08-31");
+  assert.equal(article.updated_date, "2026-08-31");
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(protectedTopics.every((row) => row.includes(",planned,")));
+  assert.match(article.target_search_intent, /several fixtures can become slow, gurgle, rise, or back up together/i);
+  assert.ok(article.body_sections.some((section) => section.id === "what-counts" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "fixture-pattern" && section.subsections?.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "timing-clues" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "stop-water-use" && section.callout));
+  for (const slug of ["shower-drain-gurgles-when-toilet-flushes", "toilet-water-rises-when-another-toilet-flushes", "toilet-bubbles-when-washer-drains", "toilet-gurgles-randomly"]) {
+    assert.ok(article.body_sections.some((section) => section.links?.some((link) => link.href === `/plumbing/${slug}/`)));
+  }
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/multiple-drains-shared-downstream-restriction.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.ok(random.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(toiletRise.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(shower.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(washer.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
 });
 
 test("slow-dryer guide separates airflow, washer, sensor, and heating paths without absorbing burning-odor intent", () => {

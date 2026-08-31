@@ -181,6 +181,7 @@ test("shower drain gurgling guide renders trap distinctions, backup safety, sche
   assert.match(html, /href="\/plumbing\/toilet-water-rises-when-another-toilet-flushes\/"/);
   assert.match(html, /href="\/plumbing\/toilet-gurgles-randomly\/"/);
   assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
   assert.match(html, /src="\/images\/toilet-shower-shared-drain-gurgling\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
@@ -199,6 +200,7 @@ test("random toilet gurgling guide renders hidden triggers, backup safety, schem
   assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
   assert.match(html, /href="\/plumbing\/toilet-water-rises-when-another-toilet-flushes\/"/);
   assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
   assert.match(html, /src="\/images\/toilet-hidden-trigger-drain-pressure\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
@@ -218,11 +220,31 @@ test("toilet flush interaction guide renders known-trigger distinctions, safety,
   assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
   assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
   assert.match(html, /href="\/plumbing\/shower-drain-gurgles-when-toilet-flushes\/"/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
   assert.match(html, /src="\/images\/toilet-shared-drain-interaction\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/toilet-shared-drain-interaction\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("multiple-drain backup guide renders broad fixture patterns, sewage safety, schema, and conceptual visual", async () => {
+  const response = await render("/plumbing/multiple-drains-back-up-at-same-time"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Do Multiple Drains Back Up at the Same Time\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/multiple-drains-back-up-at-same-time\//);
+  assert.match(html, /What counts as several drains backing up\?/);
+  assert.match(html, /Sewage in the home requires distance, not another test/);
+  assert.match(html, /href="\/plumbing\/shower-drain-gurgles-when-toilet-flushes\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-water-rises-when-another-toilet-flushes\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-gurgles-randomly\/"/);
+  assert.match(html, /src="\/images\/multiple-drains-shared-downstream-restriction\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/multiple-drains-shared-downstream-restriction\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 
