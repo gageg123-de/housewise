@@ -426,7 +426,7 @@ test("warm-outlet guide preserves conservative stop-use boundaries without invas
   const breakerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
   assert.ok(outlet);
   assert.equal(outlet.published_date, "2026-08-24");
-  assert.equal(outlet.updated_date, "2026-08-27");
+  assert.equal(outlet.updated_date, "2026-09-02");
   assert.ok(breakerTopic?.includes(",planned,"));
   assert.ok(outlet.body_sections.some((section) => section.id === "warm-or-hot" && section.table?.rows.length === 6));
   assert.ok(outlet.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
@@ -437,7 +437,47 @@ test("warm-outlet guide preserves conservative stop-use boundaries without invas
   assert.match(body, /Do not remove the faceplate[^.]+touch wiring[^.]+tighten terminals[^.]+replace the receptacle while energized/i);
   assert.doesNotMatch(body, /step-by-step|open the electrical box|probe the wiring/);
   assert.ok(outlet.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(outlet.related_articles.includes("lights-flicker-when-appliance-turns-on"));
+  assert.ok(outlet.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
   assert.equal(outlet.image, undefined);
+});
+
+test("appliance-triggered light-flicker guide preserves startup nuance and electrical stop boundaries", () => {
+  const article = registry.find((item) => item.slug === "lights-flicker-when-appliance-turns-on");
+  const outlet = registry.find((item) => item.slug === "outlet-warm");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Lights flicker when appliance turns on,"));
+  assert.ok(article && outlet);
+  assert.equal(article.published_date, "2026-09-02");
+  assert.equal(article.updated_date, "2026-09-02");
+  assert.ok(topic?.includes(",published,"));
+  assert.ok(topic?.includes("/electrical/lights-flicker-when-appliance-turns-on/"));
+  assert.doesNotMatch(topics, /^Lights dim when AC starts,.*?,planned,/m);
+  assert.ok(article.body_sections.some((section) => section.id === "brief-or-warning" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "startup-load"));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 8));
+  assert.ok(article.body_sections.some((section) => section.id === "appliance-clues" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "scope-clues" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "brightness-pattern" && section.subsections?.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout?.title.includes("outside the wiring")));
+  assert.ok(article.body_sections.some((section) => section.id === "warning-signs" && section.callout?.title.includes("dangerous pattern")));
+  assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 3));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/outlet-warm/"));
+  assert.ok(outlet.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
+  assert.deepEqual(article.related_articles, ["outlet-warm"]);
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /startup current/i);
+  assert.match(body, /do not remove a panel cover/i);
+  assert.match(body, /Do not keep reproducing a dangerous pattern/i);
+  assert.match(body, /some lights become unusually bright while others dim/i);
+  assert.doesNotMatch(body, /install a larger breaker as a fix|tighten the neutral yourself|open the panel and/iu);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
+  assert.ok(article.sources.some((source) => source.publisher === "Hydro One"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/lights-flicker-appliance-startup-load.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
 });
 
 test("ceiling-fan guide separates blade imbalance from ceiling-mount movement", () => {

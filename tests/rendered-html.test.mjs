@@ -363,3 +363,22 @@ test("air-handler sweating guide renders cabinet-specific distinctions, cluster 
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/air-handler-cabinet-condensation\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("appliance-triggered light-flicker guide renders startup nuance, safety boundaries, reciprocal discovery, schema, and visual", async () => {
+  const response = await render("/electrical/lights-flicker-when-appliance-turns-on"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Do My Lights Flicker When an Appliance Turns On\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/lights-flicker-when-appliance-turns-on\//);
+  assert.match(html, /A brief startup dip is different from repeated flickering/);
+  assert.match(html, /Why an appliance can briefly dim the lights/);
+  assert.match(html, /When flickering lights are an electrical warning sign/);
+  assert.match(html, /Keep the inspection outside the wiring/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /src="\/images\/lights-flicker-appliance-startup-load\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/lights-flicker-appliance-startup-load\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

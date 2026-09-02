@@ -1650,13 +1650,13 @@
   {
     "title": "Why Is My Outlet Warm?", "slug": "outlet-warm", "description": "A warm outlet can result from a heavy load or a loose electrical connection. Learn when to stop using it and request an electrician.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["heat", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
-    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": true,
     "search_keywords": ["warm electrical outlet", "outlet feels hot", "hot plug socket", "warm wall plate", "outlet hot with burning smell"], "target_search_intent": "Help a homeowner distinguish heat associated with a plugged-in device from abnormal receptacle or wiring heat, recognize urgent warning signs, stop using the outlet safely, and choose qualified electrical help without opening the box.",
     "direct_answer": "A wall receptacle or faceplate should not become noticeably hot. Heat can come from a heavily loaded plug or device, but it can also signal poor plug contact, a worn receptacle, a loose or deteriorated connection, an overloaded circuit, or damaged wiring. Stop using the outlet and arrange a qualified electrician when the wall plate is clearly warm or hot, especially if the heat persists after the device is unplugged. Burning or rubbery odor, discoloration, melting, buzzing, crackling, sparking, smoke, tingling, or intermittent power makes the situation more urgent.",
     "likely_causes": ["Heat transferring from a high-load device or plug", "Loose fit between plug blades and receptacle contacts", "Worn or damaged receptacle", "Loose or deteriorated wiring connection", "Overloaded circuit or inappropriate power-strip/extension use", "Damaged appliance plug or cord"],
     "safe_checks": ["Stop using the outlet and unplug the device only if the plug and surrounding area are not hot, sparking, smoking, or damaged.", "From a safe distance, note odor, discoloration, melting, buzzing, crackling, flickering, or intermittent power.", "Compare whether heat is concentrated at the device/plug or the wall plate without repeatedly touching a hot surface.", "Check the appliance cord and plug visually for cuts, looseness, darkening, or deformation.", "Do not remove the faceplate, probe the slots, or inspect energized wiring."],
     "professional_help": "Have a licensed electrician evaluate any receptacle or faceplate that becomes unusually warm, stays warm after the load is removed, holds plugs loosely, or shows noise, odor, discoloration, intermittent power, or repeated breaker trips. For smoke, flame, active arcing, or fire, move away and call emergency services; do not touch the outlet or use water.",
-    "related_articles": ["ceiling-fan-wobbles"],
+    "related_articles": ["lights-flicker-when-appliance-turns-on", "ceiling-fan-wobbles"],
     "body_sections": [
       {
         "id": "warm-or-hot",
@@ -1708,7 +1708,8 @@
         "paragraphs": [
           "A trip, flicker, dimming, or intermittent power adds evidence of an electrical problem. Do not repeatedly reset the breaker or move the same high-load device to a nearby outlet and continue. A nearby receptacle may share the same circuit or even the same failing connection.",
           "If the breaker handle or electrical panel is hot, buzzing, wet, smoking, or damaged, do not approach it. Use emergency services for active fire or smoke. Otherwise, tell the electrician which device was running and what the breaker did."
-        ]
+        ],
+        "link": { "before": "When the power change happens predictably as a large load starts, use ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": " to compare a brief startup dip with broader circuit, connection, service, and utility warning patterns." }
       },
       {
         "id": "professional-help",
@@ -1724,6 +1725,154 @@
       { "title": "Home Electrical Safety Checklist", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/513.pdf" },
       { "title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/" },
       { "title": "Electrical Safety Checklist", "publisher": "National Fire Protection Association", "url": "https://content.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/electrical/electrical_safety_checklist.pdf" }
+    ]
+  },
+  {
+    "title": "Why Do My Lights Flicker When an Appliance Turns On?", "slug": "lights-flicker-when-appliance-turns-on", "description": "A brief light dip can follow appliance startup, but severe or repeated flickering may signal a circuit, connection, neutral, service, or utility problem.",
+    "primary_category": "electrical", "secondary_categories": [], "symptoms": ["electrical-behavior"], "room_or_location": ["whole-house", "kitchen"], "system": "electrical", "content_type": "diagnostic-guide",
+    "published_date": "2026-09-02", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["lights flicker when appliance turns on", "lights dim when ac turns on", "lights flicker when refrigerator starts", "lights dim when microwave runs", "lights flicker when washer starts", "lights flicker when dryer runs", "lights blink when compressor starts", "lights dim when heater turns on", "lights flicker when motor starts"], "target_search_intent": "Help a homeowner distinguish a slight momentary light dip when an appliance or motor starts from repeated, severe, widespread, or brightness-changing flicker that may involve the appliance, branch circuit, a loose connection, neutral, service equipment, or utility supply.",
+    "direct_answer": "A slight, very brief dimming can occur when some motor-driven appliances start because their startup current is temporarily higher than their normal running current. It is not a blanket explanation for every flicker. Repeated, severe, prolonged, worsening, room-wide, or house-wide fluctuations deserve electrical evaluation—especially when lights also brighten or the symptom comes with buzzing, burning odor, hot outlets or switches, breaker trips, sparking, discoloration, or partial power loss.",
+    "likely_causes": ["Brief startup current from a motor or compressor", "Lighting and appliance sharing a branch circuit", "Heavily loaded branch circuit", "Loose or deteriorated electrical connection", "Neutral connection problem", "Appliance motor, compressor, cord, or internal fault", "Service, feeder, or panel problem", "Utility-side voltage disturbance"],
+    "safe_checks": ["Note which appliance triggers the change and whether it happens only at startup or continues while the appliance runs.", "Record whether one lamp, one room, several rooms, or the whole house is affected.", "Notice whether lights only dim or also become unusually bright.", "Listen from a safe distance for buzzing or crackling and note breaker trips, burning odor, discoloration, melting, sparking, or partial power loss.", "Inspect accessible appliance cords and plugs externally without opening equipment or touching damaged parts.", "Do not remove panel covers, open electrical boxes, test live conductors, tighten connections, change breaker sizes, or touch service or meter equipment."],
+    "professional_help": "Arrange a licensed electrician for severe, repeated, prolonged, worsening, multi-room, or whole-house flicker; simultaneous brightening and dimming; hot or noisy devices; burning odor; damage; recurring breaker trips; or partial power loss. An appliance or HVAC technician may also be appropriate when one machine struggles, sounds abnormal, or has changed performance. Contact the utility when an electrician or the pattern indicates an upstream supply problem. For active arcing, smoke, fire, or obvious energized-equipment damage, move away and use emergency services rather than continuing to test the load.",
+    "related_articles": ["outlet-warm"],
+    "image": {
+      "src": "/images/lights-flicker-appliance-startup-load.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual home electrical illustration comparing a small momentary light dip when a motor appliance starts with repeated light fluctuations across several circuits.",
+      "caption": "Conceptual illustration: Some motor-driven equipment briefly increases electrical demand at startup, while repeated or widespread brightness changes point to a different level of concern. Actual circuits and service arrangements vary; the visual is not a wiring diagram or diagnosis.",
+      "kind": "conceptual",
+      "after_section": "startup-load"
+    },
+    "body_sections": [
+      {
+        "id": "brief-or-warning",
+        "heading": "A brief startup dip is different from repeated flickering",
+        "paragraphs": [
+          "The trigger, duration, severity, and number of affected lights matter more than the word “flicker.” A refrigerator compressor, central air conditioner, heat pump, or well-pump motor may briefly demand more current as it starts. That can create a small, momentary voltage dip that a light makes visible. It does not prove the circuit or appliance is healthy, and there is no useful universal brightness threshold a homeowner can judge by eye.",
+          "A light that repeatedly pulses while the appliance runs, dims dramatically, changes for several seconds, affects several rooms, or has worsened over time no longer fits the simple one-time-startup pattern. CPSC and ESFI both treat recurring dimming or flickering—especially with heat, odor, noise, damage, or breaker trouble—as a reason for qualified electrical inspection."
+        ],
+        "table": {
+          "headers": ["What you notice", "How to treat the pattern"],
+          "rows": [
+            ["One slight, fraction-of-a-moment dip as a motor or compressor starts", "Startup demand may be involved; observe whether the pattern stays slight, brief, and stable"],
+            ["Lights pulse or flicker repeatedly while the appliance runs", "This is not explained by a single startup event; arrange evaluation if it recurs"],
+            ["Dimming is severe, prolonged, or getting worse", "Do not dismiss it as normal appliance load"],
+            ["Several rooms or the whole house changes brightness", "A feeder, neutral, service, panel, or utility issue becomes more relevant"],
+            ["Some lights brighten while others dim", "Seek prompt electrical evaluation for possible neutral or broader voltage trouble"],
+            ["Flicker comes with heat, buzzing, burning odor, trips, sparking, or partial power", "Stop testing the load and use prompt or emergency help appropriate to the hazard"]
+          ]
+        }
+      },
+      {
+        "id": "startup-load",
+        "heading": "Why an appliance can briefly dim the lights",
+        "paragraphs": [
+          "Motors and compressors can draw substantially more current during the instant they start than after they reach normal speed. That short demand can produce a temporary voltage drop that a light reveals as a momentary brightness change.",
+          "The effect depends on the appliance, circuit, wiring length and condition, service, utility supply, and the lamp or dimmer. A small startup dip therefore explains a mechanism, not a diagnosis. Flicker that continues after startup, appears at ordinary loads, or suddenly becomes stronger needs a different question: what has changed in the appliance or electrical system?"
+        ]
+      },
+      {
+        "id": "common-causes",
+        "heading": "What can make appliance-triggered flickering more noticeable?",
+        "causes": [
+          { "heading": "The motor or compressor is drawing startup current", "text": "Refrigerators, air conditioners, heat pumps, well pumps, disposals, and some washer loads use motors or compressors. A single slight dip at startup can follow this short inrush. Repeated starts, a long struggling start, new noises, trips, or worsening dimming make appliance condition or the electrical supply more important." },
+          { "heading": "The appliance and lights share a branch circuit", "text": "An appliance may share a branch circuit with nearby lighting, making voltage drop on that branch more visible. That does not justify moving the load randomly or installing a larger breaker. Breaker size must match the conductors and circuit design." },
+          { "heading": "The circuit is heavily loaded", "text": "Flicker that grows when several devices operate can indicate limited remaining circuit capacity. A breaker trip adds useful evidence, but no trip does not prove the circuit or its connections are sound. A qualified electrician can determine actual load, voltage drop, and required circuit arrangement." },
+          { "heading": "A connection is loose or deteriorated", "text": "A poor connection at a receptacle, switch, junction, appliance connection, panel, or service point can create unstable voltage, heat, or arcing. Intermittent flicker, crackling, buzzing, warmth, odor, discoloration, or a response when a cord or device moves makes this more urgent. Locating it is not a homeowner live-wiring task." },
+          { "heading": "The neutral connection is not stable", "text": "A loose or failing neutral can produce abnormal voltage relationships. A concerning pattern is substantial change across multiple circuits, especially when some lights become brighter while others dim. Do not test, tighten, or trace a neutral yourself; service and panel conductors can remain hazardous even when branch breakers are off." },
+          { "heading": "The appliance has an electrical or mechanical problem", "text": "A failing motor, compressor, start component, cord, plug, or internal connection can change startup demand. Suspect the appliance more strongly when only that machine triggers the problem and it also hums, struggles, starts slowly, trips a breaker, smells hot, or performs differently. Flicker alone cannot identify the failed part." },
+          { "heading": "A feeder, panel, or service condition is involved", "text": "Several rooms reacting to one large load can point beyond a single branch circuit. Service capacity, connections, feeders, or panel components may be relevant, but service age alone does not prove replacement is needed." },
+          { "heading": "The voltage disturbance is utility-side", "text": "Whole-house changes, symptoms independent of one appliance, or similar reports from neighbors can indicate an upstream supply issue. A licensed electrician can help separate property wiring from supply behavior; the utility can investigate conditions on its side. Never approach meter, service-drop, or service-entrance conductors." }
+        ]
+      },
+      {
+        "id": "appliance-clues",
+        "heading": "What appliance causes the flicker?",
+        "table": {
+          "headers": ["Appliance or equipment", "Useful clues—not a diagnosis"],
+          "rows": [
+            ["Central AC or heat pump", "A slight startup dip may follow compressor inrush; severe, repeated, strained, worsening, or trip-related starts need HVAC and electrical evaluation"],
+            ["Refrigerator", "A brief change may coincide with compressor startup; repeated hard starts, abnormal sounds, heat, or trips make appliance condition more relevant"],
+            ["Microwave", "Kitchen-light dimming can expose shared or heavily loaded branch wiring; a hot receptacle, odor, or persistent voltage change is more concerning"],
+            ["Washer", "Motor and cycle changes alter load; repeated heavy flicker, a struggling drum, heat, or breaker trips deserve inspection"],
+            ["Dryer", "An electric dryer is a large dedicated load, but dramatic house-light flicker should not be excused merely because the dryer uses substantial power"],
+            ["Vacuum or space heater", "These portable loads can reveal voltage drop or a loaded circuit shared with lighting; stop if a plug or outlet becomes hot"],
+            ["Well pump or garbage disposal", "Motor startup can create a brief dip; long starts, rapid cycling, humming, or worsening flicker can indicate equipment or supply trouble"]
+          ]
+        }
+      },
+      {
+        "id": "scope-clues",
+        "heading": "One light, one circuit, or the whole house?",
+        "paragraphs": ["The affected area helps set the scope but cannot locate a fault. A dimmer, LED driver, fixture connection, or loose bulb can make one light react."],
+        "table": {
+          "headers": ["Affected area", "What becomes more relevant"],
+          "rows": [
+            ["One light only", "Bulb seating, fixture, LED driver, dimmer compatibility, or a local connection; the timing may be coincidental"],
+            ["One room or circuit", "Shared branch loading, local voltage drop, or a branch-circuit connection problem"],
+            ["Several rooms or circuits", "Panel, feeder, neutral, service, or a larger supply disturbance"],
+            ["Whole house", "Service or utility-side voltage behavior becomes more plausible and warrants prompt evaluation"]
+          ]
+        }
+      },
+      {
+        "id": "brightness-pattern",
+        "heading": "Dimming, flickering, and brightening are different clues",
+        "subsections": [
+          { "heading": "A brief dim", "paragraphs": ["A single slight drop exactly as a motor starts can fit temporary startup demand. Track whether it remains brief and unchanged rather than deciding that every future dip is normal."] },
+          { "heading": "Repeated flicker or pulsing", "paragraphs": ["Irregular or repeated changes while the appliance runs can point to a connection, appliance, circuit, control, or supply problem rather than one startup event."] },
+          { "heading": "Lights brighten as well as dim", "paragraphs": ["Substantial opposing brightness changes across circuits are a stronger warning pattern because abnormal neutral or supply voltage can expose some loads to higher voltage while others receive less. Arrange prompt electrical evaluation and avoid continued load testing."] }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can observe without opening electrical equipment",
+        "bullets": [
+          "Write down which appliance triggers the change and whether it happens at startup, throughout operation, or when the appliance cycles off.",
+          "Record whether the change is a single dip, repeated pulse, prolonged dim, or a mix of brightening and dimming.",
+          "Identify whether one lamp, one room, several rooms, or the entire house is affected.",
+          "Note breaker trips, partial power loss, appliance humming or struggling, or a performance change.",
+          "Listen from a safe distance for buzzing or crackling and note any burning or hot-plastic odor.",
+          "Look at accessible cords and plugs for darkening, cuts, deformation, or melting without moving damaged equipment.",
+          "Check whether a wall plate seems unusually warm only when it is safe to approach; do not repeatedly touch a suspect device.",
+          "Ask whether neighbors have similar voltage symptoms when a broader utility issue seems possible.",
+          "Record a short video from a safe location for an electrician when the behavior is intermittent."
+        ],
+        "callout": { "title": "Keep the inspection outside the wiring", "text": "Do not remove a panel cover, open a junction box, probe a receptacle, measure live panel voltage, tighten a neutral or service connection, increase breaker size, bypass protection, or touch meter and service equipment. Those checks expose energized parts and belong to qualified electrical professionals." },
+        "link": { "before": "If the receptacle, faceplate, or plug is also hot, use the stop conditions in ", "label": "Why Is My Outlet Warm?", "href": "/electrical/outlet-warm/", "after": " and leave the connection unused until it is evaluated." }
+      },
+      {
+        "id": "warning-signs",
+        "heading": "When flickering lights are an electrical warning sign",
+        "bullets": [
+          "The flicker is severe, prolonged, repeated, or getting worse.",
+          "Several rooms or the whole house is affected.",
+          "Some lights become unusually bright while others dim.",
+          "An outlet, switch, plug, cord, panel, or appliance is hot, discolored, melted, buzzing, or crackling.",
+          "There is a burning or hot-plastic odor, recurring breaker trip, partial power loss, sparking, or visible arcing.",
+          "The behavior occurs without the appliance trigger or continues after the appliance stops."
+        ],
+        "callout": { "title": "Do not keep reproducing a dangerous pattern", "text": "For active arcing, smoke, fire, severe electrical burning odor, or obvious energized-equipment damage, move away and call emergency services. Do not touch the equipment or operate breakers inside the hazard area. For the other warning patterns, stop using the triggering load when safe and arrange prompt licensed-electrical evaluation." }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should investigate the flicker?",
+        "subsections": [
+          { "heading": "Licensed electrician", "paragraphs": ["Start here for repeated or severe flicker, several affected rooms, brightening and dimming, hot or noisy devices, damaged connections, breaker trips, partial power, or an uncertain boundary between the appliance and building wiring. An electrician can evaluate branch voltage drop, connections, neutral, feeders, panel, and service without unsafe guesswork."] },
+          { "heading": "Appliance or HVAC technician", "paragraphs": ["Add equipment service when one refrigerator, washer, dryer, pump, air conditioner, or heat pump alone triggers the symptom and also starts slowly, hums, cycles abnormally, trips protection, smells hot, or performs differently. Building wiring may still need separate evaluation."] },
+          { "heading": "Electric utility", "paragraphs": ["Contact the utility when the electrician or the pattern points upstream—such as whole-house fluctuation, neighborhood reports, or voltage changes unrelated to one circuit. Responsibility boundaries vary, so do not assume the problem is on either side before it is assessed."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf" },
+      { "title": "Electrical Safety", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/elecsafety.pdf" },
+      { "title": "Don't Overload Your Home", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/dont-overload-your-home/" },
+      { "title": "Switch to Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/switch-to-safety/" },
+      { "title": "Power Quality Reference Guide", "publisher": "Hydro One", "url": "https://www.hydroone.com/savingmoneyandenergy_/energysavingsforbusiness_/Documents/Power_Quality_Reference_Guide.pdf" }
     ]
   },
   {

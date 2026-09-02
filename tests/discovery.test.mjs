@@ -27,6 +27,11 @@ test("Problem Finder choices are contextual to the selected location", () => {
   const wholeHouse = getFinderSymptomOptions("whole-house");
   assert.ok(wholeHouse.some((item) => item.value === "multiple-drains"));
   assert.ok(wholeHouse.some((item) => item.value === "air-handler-sweating"));
+  assert.ok(wholeHouse.some((item) => item.value === "appliance-light-flicker"));
+
+  const kitchen = getFinderSymptomOptions("kitchen");
+  assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "appliance-light-flicker"));
 
   const laundry = getFinderSymptomOptions("laundry");
   assert.ok(laundry.some((item) => item.value === "dryer-burning-smell"));
@@ -45,6 +50,8 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "leaking")[0].article.slug, "water-around-indoor-ac-unit");
   assert.equal(rankFinderArticles(registry, "whole-house", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
+  assert.equal(rankFinderArticles(registry, "whole-house", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
+  assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -78,6 +85,8 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "multiple-drains"],
     ["whole-house", "hvac-filter"],
     ["whole-house", "air-handler-sweating"],
+    ["whole-house", "appliance-light-flicker"],
+    ["kitchen", "appliance-light-flicker"],
     ["laundry", "appliance-behavior"],
     ["laundry", "dryer-burning-smell"],
     ["attic", "moisture"],
@@ -105,6 +114,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
   assert.match(getFinderSymptomOptions("yard").find((item) => item.value === "drainage").label, /standing water/i);
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
+  assert.equal(rankFinderArticles(registry, "whole-house", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug, "ac-ductwork-sweating-in-attic");
@@ -187,6 +197,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["moisture on air handler", "air-handler-sweating"],
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
+    ["lights flicker when appliance turns on", "lights-flicker-when-appliance-turns-on"],
+    ["why do my lights flicker when appliance turns on", "lights-flicker-when-appliance-turns-on"],
+    ["lights dim when ac turns on", "lights-flicker-when-appliance-turns-on"],
+    ["lights flicker when refrigerator starts", "lights-flicker-when-appliance-turns-on"],
+    ["lights dim when microwave runs", "lights-flicker-when-appliance-turns-on"],
+    ["lights flicker when washer starts", "lights-flicker-when-appliance-turns-on"],
+    ["lights flicker when dryer runs", "lights-flicker-when-appliance-turns-on"],
+    ["lights blink when compressor starts", "lights-flicker-when-appliance-turns-on"],
     ["dryer slow", "dryer-taking-two-cycles"],
     ["clothes hot damp", "dryer-taking-two-cycles"],
     ["dryer smells like burning", "dryer-smells-like-burning"],
@@ -206,4 +224,5 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   ];
   for (const [query, expected] of cases) assert.equal(searchArticles(registry, query)[0]?.slug, expected, query);
   assert.deepEqual(searchArticles(registry, "yard standing water"), []);
+  assert.notEqual(searchArticles(registry, "lights flicker randomly")[0]?.slug, "lights-flicker-when-appliance-turns-on");
 });
