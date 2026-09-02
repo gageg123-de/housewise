@@ -323,3 +323,23 @@ test("wet AC filter guide renders location-specific distinctions, cluster links,
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ac-filter-location-moisture-paths\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("air-handler sweating guide renders cabinet-specific distinctions, cluster links, schema, and visual", async () => {
+  const response = await render("/hvac/air-handler-sweating"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Air Handler Sweating\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/air-handler-sweating\//);
+  assert.match(html, /Is the cabinet sweating, or is something leaking\?/);
+  assert.match(html, /Why the air handler&#x27;s location matters/);
+  assert.match(html, /Water and energized HVAC equipment require distance/);
+  for (const slug of ["water-around-indoor-ac-unit", "ac-ductwork-sweating-in-attic", "house-humid-with-ac-running", "ac-filter-wet", "ac-vent-sweating", "water-dripping-from-ac-vent"]) {
+    assert.match(html, new RegExp(`href="/hvac/${slug}/"`));
+  }
+  assert.match(html, /src="\/images\/air-handler-cabinet-condensation\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/air-handler-cabinet-condensation\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

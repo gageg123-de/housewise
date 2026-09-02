@@ -453,3 +453,34 @@ test("wet AC filter guide stays location-specific and distinct from equipment-wa
   assert.ok(reciprocalLinks.every((links) => links.some((link) => link.href === "/hvac/ac-filter-wet/")));
   assert.match(topics, /^AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/ac-filter-wet\//m);
 });
+
+test("air-handler sweating guide owns cabinet condensation without absorbing adjacent HVAC moisture intents", () => {
+  const airHandler = registry.find((item) => item.slug === "air-handler-sweating");
+  const indoorWater = registry.find((item) => item.slug === "water-around-indoor-ac-unit");
+  const atticDuct = registry.find((item) => item.slug === "ac-ductwork-sweating-in-attic");
+  assert.ok(airHandler && indoorWater && atticDuct);
+  assert.equal(airHandler.published_date, "2026-09-02");
+  assert.equal(airHandler.updated_date, "2026-09-02");
+  assert.equal(airHandler.primary_category, "hvac");
+  assert.ok(airHandler.secondary_categories.includes("moisture-and-mold"));
+  assert.ok(airHandler.room_or_location.includes("attic"));
+  assert.notEqual(airHandler.target_search_intent, indoorWater.target_search_intent);
+  assert.notEqual(airHandler.target_search_intent, atticDuct.target_search_intent);
+  assert.ok(airHandler.body_sections.some((section) => section.id === "sweating-or-leaking" && section.table?.rows.length === 5));
+  assert.ok(airHandler.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 7));
+  assert.ok(airHandler.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(airHandler.sources.length >= 5);
+  assert.ok(airHandler.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(airHandler.image.src, "/images/air-handler-cabinet-condensation.webp");
+  assert.equal(airHandler.image.kind, "conceptual");
+  assert.equal(airHandler.image.width, 1536);
+  assert.equal(airHandler.image.height, 1024);
+  for (const slug of ["water-around-indoor-ac-unit", "ac-ductwork-sweating-in-attic", "house-humid-with-ac-running", "ac-filter-wet", "ac-vent-sweating", "water-dripping-from-ac-vent"]) {
+    assert.ok(airHandler.related_articles.includes(slug));
+  }
+  for (const article of [indoorWater, atticDuct]) {
+    const links = article.body_sections.flatMap((section) => [section.link, ...(section.links ?? [])].filter(Boolean));
+    assert.ok(links.some((link) => link.href === "/hvac/air-handler-sweating/"), `${article.slug}: missing reciprocal cabinet link`);
+  }
+  assert.match(topics, /^Air handler sweating,why is my air handler sweating,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/air-handler-sweating\//m);
+});

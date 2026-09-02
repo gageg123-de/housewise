@@ -15,6 +15,7 @@ AC ductwork sweating in attic,why is my ac ductwork sweating in the attic,hvac,m
 Water around indoor AC unit,why is there water around my indoor ac unit,hvac,leaking,whole-house,diagnostic,published,high,/hvac/water-around-indoor-ac-unit/,Indoor-equipment condensate and drainage intent; distinct from vent water and future recurring drain-clog maintenance
 AC smells musty when it turns on,why does my ac smell musty when it turns on,hvac,smell,whole-house,diagnostic,planned,high,,HVAC odor and moisture cluster
 AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,published,high,/hvac/ac-filter-wet/,Wet filter-media intent; filter location changes whether condensate overflow, thawing ice, condensation, or a separate local leak is plausible
+Air handler sweating,why is my air handler sweating,hvac,moisture,whole-house,diagnostic,published,high,/hvac/air-handler-sweating/,Exterior cabinet-surface condensation intent; distinct from equipment-area puddles, wet filters, sweating ducts or registers, and whole-house humidity
 One room warmer than others,one room hotter than rest of house,hvac,heat,bedroom,diagnostic,planned,high,,Airflow cluster
 Thermostat clicks but AC does not start,thermostat clicks ac does not turn on,hvac,electrical-behavior,whole-house,diagnostic,planned,medium,,Electrical boundaries
 Furnace smells dusty,furnace smells like burning dust,hvac,smell,whole-house,explanation,planned,medium,,Seasonal first-use distinction

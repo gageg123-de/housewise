@@ -329,14 +329,14 @@
   {
     "title": "Why Is My AC Ductwork Sweating in the Attic?", "slug": "ac-ductwork-sweating-in-attic", "description": "Attic AC ducts sweat when humid air reaches a surface below its dew point. Learn how insulation, duct leakage, and other water sources fit in.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold", "attic-and-insulation"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["attic"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-26", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-26", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my ac ductwork sweating in the attic", "attic duct condensation", "sweating ductwork", "condensation on ac ducts", "wet duct insulation", "hvac ducts sweating in attic"],
     "target_search_intent": "Explain why condensation forms on the exterior of HVAC ductwork in an attic, distinguish duct sweating from HVAC drainage, roof, and plumbing leaks, and help a homeowner make safe observations before choosing the right professional.",
     "direct_answer": "AC ductwork in an attic usually sweats because the duct or its outer covering is cold enough to fall below the dew point of the surrounding humid air. Water vapor then condenses on the exterior as liquid droplets. High attic humidity, missing or damaged insulation, a compromised outer jacket, and gaps at duct joints or supports can contribute. That does not automatically mean water is leaking from inside the duct, and water near a duct can also come from an HVAC drain, roof, or plumbing source.",
     "likely_causes": ["High attic humidity", "Missing, damaged, compressed, or inadequate insulation", "A compromised outer jacket or vapor-retarding layer", "Duct or connection air leakage", "A very cold exterior duct surface", "Gaps at joints, transitions, boots, or supports"],
     "safe_checks": ["Note whether moisture appears during cooling operation and whether it is widespread or localized.", "From a safely accessible location, observe whether droplets cover the duct exterior or arrive from above or nearby.", "Look for obvious jacket tears, crushed insulation, wet insulation, or gaps without touching or cutting the duct.", "Check ceilings below the area for staining, softness, or peeling paint.", "Measure indoor humidity with a hygrometer and record weather, timing, and affected locations.", "Check the HVAC filter if it is safely accessible and photograph the pattern for a professional."],
     "professional_help": "Arrange HVAC evaluation when attic duct condensation is repeated or widespread, insulation is saturated or damaged, duct leakage is suspected, ceiling staining recurs, or the system has airflow or performance problems. Use a roofer when the pattern follows rain and a plumber when it follows nearby fixture or pipe use. Keep away from wet electrical equipment and get prompt help if water is approaching wiring or unstable ceiling material.",
-    "related_articles": ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "water-around-indoor-ac-unit"],
+    "related_articles": ["house-humid-with-ac-running", "ac-vent-sweating", "water-dripping-from-ac-vent", "water-around-indoor-ac-unit", "air-handler-sweating"],
     "image": {
       "src": "/images/attic-ac-duct-condensation.webp",
       "width": 1536,
@@ -388,7 +388,8 @@
         },
         "link": { "before": "If water is appearing at or falling from a ceiling register inside the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with drain, roof, and plumbing sources at that location." },
         "links": [
-          { "before": "If water begins around the air handler, coil cabinet, pan, or condensate piping, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on the equipment drainage path rather than duct-surface condensation." }
+          { "before": "If water begins around the air handler, coil cabinet, pan, or condensate piping, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on the equipment drainage path rather than duct-surface condensation." },
+          { "before": "If droplets coat the exterior of the air-handler cabinet rather than the duct, use ", "label": "Why Is My Air Handler Sweating?", "href": "/hvac/air-handler-sweating/", "after": " to focus on cabinet temperature, insulation, seams, and surrounding humidity." }
         ]
       },
       {
@@ -447,14 +448,14 @@
   {
     "title": "Why Is There Water Around My Indoor AC Unit?", "slug": "water-around-indoor-ac-unit", "description": "Water around an indoor AC unit may involve a clogged drain, overflowing pan, thawing coil, condensate pump, or another nearby leak.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["leaking", "moisture"], "room_or_location": ["whole-house"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-27", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-27", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is there water around my indoor ac unit", "water around air handler", "ac unit leaking water inside", "water near furnace when ac runs", "condensate pan overflowing", "indoor ac unit puddle"],
     "target_search_intent": "Help a homeowner identify why water is collecting around indoor HVAC equipment or its drain area, distinguish condensate-management problems from thawing ice and unrelated leaks, make safe observations, and choose the appropriate professional.",
     "direct_answer": "Air conditioners normally make condensate as the indoor cooling coil removes moisture from the air, but that water should collect in a pan and drain away. Water around the indoor unit usually means the condensate is not draining normally, the pan or an optional condensate pump is not managing it, ice has formed and then melted, or water is coming from another nearby source. A clogged drain is common, but the puddle alone cannot prove the cause.",
     "likely_causes": ["A clogged condensate drain line", "A full or overflowing drain pan", "A cracked, rusted, damaged, or displaced pan", "A frozen evaporator coil thawing", "A condensate pump problem where one is installed", "A loose, disconnected, or poorly draining line", "A high condensate load during humid conditions", "A plumbing, roof, humidifier, water-heater, or other nearby leak"],
     "safe_checks": ["Note whether water is actively spreading and whether it appears during cooling or after the system stops.", "Keep away from wet electrical equipment and switch the HVAC system off at the thermostat if that can be done from a dry, safe location.", "Inspect the HVAC filter if it is safely accessible without opening equipment.", "Look from outside the cabinet for a visibly full accessible pan or an obvious loose drain connection.", "Note whether a condensate pump is present without opening or bypassing it.", "Check nearby visible plumbing, a water heater, humidifier, and the area above the unit for another source.", "Photograph the first wet location and record weather, cooling operation, and any ice or weak-airflow clues."],
     "professional_help": "Arrange HVAC service when water continues accumulating, the pan repeatedly fills, the drain appears blocked or disconnected, an installed condensate pump is not operating, coil icing is suspected, water returns after cleanup, or the source cannot be identified. Call a plumber, roofer, or the appropriate equipment service provider when timing and location point away from the AC. Do not touch wet electrical equipment; smoke, burning odor, sparking, or water reaching energized components requires prompt emergency or qualified electrical/HVAC help from a safe location.",
-    "related_articles": ["house-humid-with-ac-running", "water-dripping-from-ac-vent", "ac-vent-sweating", "ac-ductwork-sweating-in-attic", "ac-filter-wet"],
+    "related_articles": ["house-humid-with-ac-running", "water-dripping-from-ac-vent", "ac-vent-sweating", "ac-ductwork-sweating-in-attic", "ac-filter-wet", "air-handler-sweating"],
     "image": {
       "src": "/images/indoor-ac-condensate-drainage.webp",
       "width": 1536,
@@ -526,7 +527,8 @@
           { "before": "If the home feels clammy or readings stay high while cooling, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for the broader indoor-moisture pattern. Humid conditions can increase condensate production but do not excuse overflow." },
           { "before": "If water is falling from or appearing around a supply register in a room, see ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to distinguish register condensation from drain, roof, and plumbing sources." },
           { "before": "If moisture is only beading on the room-side register, start with ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " for the surface-condensation pattern." },
-          { "before": "If droplets are forming on the outside of ducts in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for attic dew point, insulation, and jacket conditions." }
+          { "before": "If droplets are forming on the outside of ducts in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for attic dew point, insulation, and jacket conditions." },
+          { "before": "If water is beading across the metal equipment cabinet itself, use ", "label": "Why Is My Air Handler Sweating?", "href": "/hvac/air-handler-sweating/", "after": " to distinguish cabinet condensation from a pan, drain, or thawing-coil leak." }
         ]
       },
       {
@@ -1889,6 +1891,265 @@
       { "title": "How to Fix a Wobbly Ceiling Fan", "publisher": "Hunter Fan Company", "url": "https://www.hunterfan.com/pages/how-to-fix-a-wobbly-ceiling-fan/1000" },
       { "title": "Why is my fan wobbling?", "publisher": "Hunter Fan Support", "url": "https://support.hunterfan.com/hc/en-us/articles/115001410473-Why-is-my-fan-wobbling" },
       { "title": "2021 International Residential Code: Boxes at Fan Outlets", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IRC2021P3/chapter-39-power-and-lighting-distribution" }
+    ]
+  },
+  {
+    "title": "Why Is My Air Handler Sweating?",
+    "slug": "air-handler-sweating",
+    "description": "An air handler can sweat when humid air reaches a cold cabinet surface. Learn how to distinguish condensation from drainage, thawing ice, and other leaks.",
+    "primary_category": "hvac",
+    "secondary_categories": ["moisture-and-mold", "attic-and-insulation"],
+    "symptoms": ["moisture", "leaking", "discoloration"],
+    "room_or_location": ["whole-house", "attic", "garage"],
+    "system": "hvac",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-02",
+    "updated_date": "2026-09-02",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 9,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my air handler sweating",
+      "air handler sweating",
+      "air handler condensation",
+      "condensation on air handler",
+      "air handler sweating in attic",
+      "ac unit sweating in attic",
+      "indoor ac unit sweating",
+      "moisture on air handler",
+      "air handler cabinet sweating"
+    ],
+    "target_search_intent": "Explain why condensation forms on the exterior of an indoor air-handler cabinet, distinguish cabinet sweating from condensate drainage, thawing ice, wet filters, duct or vent condensation, and unrelated leaks, and help a homeowner choose safe observations and the right professional.",
+    "direct_answer": "An air handler can sweat when its cabinet surface becomes colder than the dew point of the humid air around it. Water vapor then condenses into a film or droplets on the outside of the metal cabinet. Humid attic, garage, or crawlspace air; missing or damaged cabinet insulation; air leakage at seams; unusually cold equipment conditions; or a drainage problem that only looks like sweating may be involved. Surface droplets do not prove a refrigerant problem or a clogged drain, so first distinguish condensation on the cabinet from water leaking or pooling around it.",
+    "likely_causes": [
+      "Humid air contacting a cold cabinet surface",
+      "Missing, damaged, displaced, or inadequate cabinet insulation",
+      "Air leakage at cabinet seams, panels, or nearby connections",
+      "High humidity in an attic, garage, crawlspace, or mechanical area",
+      "Restricted airflow or an abnormally cold or frozen evaporator coil",
+      "A condensate pan, drain, or pump problem that resembles sweating",
+      "A roof, plumbing, or other nearby leak"
+    ],
+    "safe_checks": [
+      "Note whether moisture beads across the cabinet or begins at a drain fitting, seam, pipe, or surface above it.",
+      "Observe whether the whole cabinet is damp or only one panel, seam, or connection.",
+      "Check for a puddle below the unit and whether nearby ducts or the filter are also wet.",
+      "Inspect the visible filter without opening electrical or equipment compartments.",
+      "Record cooling performance, visible icing from a safe exterior viewpoint, weather, humidity, and timing.",
+      "Photograph staining, corrosion, wet insulation, or recurring droplet patterns for an HVAC technician."
+    ],
+    "professional_help": "Call an HVAC technician for persistent or heavy cabinet sweating, suspected insulation or panel-seal problems, weak airflow, icing, poor cooling, recurring condensate trouble, or an uncertain source. Use a plumber or roofing/building professional only when the evidence points to piping or a building leak. Keep away from water reaching wiring, controls, or other electrical parts, and obtain prompt qualified help for tripped breakers, burning odor, smoke, sparking, substantial leaking, or ceiling damage.",
+    "related_articles": [
+      "water-around-indoor-ac-unit",
+      "ac-ductwork-sweating-in-attic",
+      "house-humid-with-ac-running",
+      "ac-filter-wet",
+      "ac-vent-sweating",
+      "water-dripping-from-ac-vent"
+    ],
+    "image": {
+      "src": "/images/air-handler-cabinet-condensation.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual air-handler cabinet with condensation droplets beading on its cold exterior as humid surrounding air reaches the metal surface.",
+      "caption": "Conceptual illustration: When humid surrounding air reaches an air-handler cabinet surface that is below the air's dew point, water vapor can condense into exterior droplets. The image does not identify why the surface is cold or prove an equipment failure.",
+      "kind": "conceptual",
+      "after_section": "why-air-handlers-sweat"
+    },
+    "body_sections": [
+      {
+        "id": "why-air-handlers-sweat",
+        "heading": "Why an air-handler cabinet can sweat",
+        "paragraphs": [
+          "The air handler is the indoor HVAC assembly that moves air through the system and commonly houses or connects to the cooling coil, blower, filter arrangement, and condensate collection components. Configurations vary: the equipment may be vertical or horizontal, combined with a furnace, installed in a closet, or placed in an attic, garage, basement, or crawlspace.",
+          "During cooling, parts of the air handler and the air passing through it become cold. If the exterior cabinet surface falls below the dew point of the humid air touching it, water vapor changes into liquid on the metal. It is the same basic reason an iced drink becomes wet on the outside. Heat alone does not cause sweating; the surrounding air must contain enough moisture, and the cabinet surface must be cold enough relative to that air.",
+          "A few transient beads during unusually humid conditions do not identify a failure. Persistent, dripping, or damaging moisture deserves investigation because humidity, insulation, air leakage, airflow, and drainage can overlap. Droplets show where water formed or arrived—not which condition caused it."
+        ]
+      },
+      {
+        "id": "sweating-or-leaking",
+        "heading": "Is the cabinet sweating, or is something leaking?",
+        "paragraphs": [
+          "True cabinet sweating often looks like a thin film or many small droplets distributed over a cold panel. A leak is more likely to create a concentrated trail, drip, or puddle beginning at a fitting, pan edge, drain line, pump, pipe, or surface above the equipment. These patterns are useful clues, but water can travel along sheet metal, insulation, framing, and piping before it becomes visible.",
+          "Notice whether the cabinet becomes damp while cooling runs, whether water continues after it warms, and whether it appears after rain, plumbing use, or icing."
+        ],
+        "table": {
+          "headers": ["Observation", "May fit more closely"],
+          "rows": [
+            ["Fine droplets or a damp film across a cold cabinet panel", "Surface condensation or ‘sweating’"],
+            ["Water concentrated at a drain connection, pan edge, or pump", "A condensate-management problem"],
+            ["A larger amount appears after weak cooling, frost, or ice", "A frozen coil thawing or overflowing drainage"],
+            ["Wetness tracks from above or follows rain or plumbing use", "A roof, building, or plumbing leak"],
+            ["Moisture is on filter media rather than the cabinet", "A wet-filter problem whose source depends on filter location"]
+          ]
+        },
+        "links": [
+          {
+            "before": "If water is pooling under the unit or begins at the pan, pump, or drain, use ",
+            "label": "Why Is There Water Around My Indoor AC Unit?",
+            "href": "/hvac/water-around-indoor-ac-unit/",
+            "after": " to focus on condensate collection, drainage, thawing ice, and nearby leaks."
+          },
+          {
+            "before": "If the filter media is damp or soaked, see ",
+            "label": "Why Is My AC Filter Wet?",
+            "href": "/hvac/ac-filter-wet/",
+            "after": " because filter position changes which moisture paths are plausible."
+          }
+        ]
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons an air handler sweats",
+        "paragraphs": ["Several conditions can create the same wet-cabinet appearance. Temperature, humidity, airflow, pressure, and drainage measurements may be needed to separate them."],
+        "causes": [
+          {
+            "heading": "Humid air is contacting a cold cabinet",
+            "text": "A higher surrounding-air dew point makes condensation on a cool surface easier. This matters in an unconditioned attic, garage, or crawlspace, where outdoor moisture and building leakage can expose equipment to humid air. The cabinet can sweat even though cold interior air is expected during cooling."
+          },
+          {
+            "heading": "Cabinet insulation is missing, damaged, displaced, or inadequate",
+            "text": "Cabinet insulation reduces heat transfer between cold interior surfaces and the exterior. A gap, compressed section, loose liner, damaged panel insulation, or uninsulated transition can create a colder patch. Designs differ, so do not remove an energized panel to inspect insulation."
+          },
+          {
+            "heading": "Air is leaking at a seam, panel, gasket, or connection",
+            "text": "A poorly seated panel, damaged gasket, seam, filter-slot gap, or duct connection can change which air reaches a cold surface. Condensation at one edge may make a sealing or insulation detail more relevant. Do not tape service panels shut; they must remain properly fitted and accessible."
+          },
+          {
+            "heading": "The surrounding space has an unusually high moisture load",
+            "text": "A humid attic, damp crawlspace, open garage, water intrusion, or humid mechanical closet can raise the dew point around the cabinet. Lowering temperature is not the same as controlling moisture. A whole-house reading provides context but does not measure conditions at the equipment."
+          },
+          {
+            "heading": "Airflow is restricted or the coil is becoming abnormally cold",
+            "text": "A severely dirty filter, blocked return, blower problem, dirty coil, or another airflow issue can contribute to unusually cold conditions and icing. That can alter cabinet temperatures and later create thaw water. Sweating does not prove restricted airflow."
+          },
+          {
+            "heading": "The evaporator coil is icing or another cooling-system problem exists",
+            "text": "A frozen coil may accompany weak airflow, poor cooling, visible frost, or water after shutdown. Refrigerant-side problems can contribute, but cabinet droplets cannot reveal charge or leak condition. Repeated icing belongs with an HVAC technician, not DIY refrigerant work."
+          },
+          {
+            "heading": "A condensate problem is making the cabinet look sweaty",
+            "text": "Cooling normally produces condensate that should collect and drain. An overflowing pan, leaking connection, blocked line, or failed optional pump can wet the cabinet from one point. Even beading differs from water tracking from a fitting, but neither pattern is foolproof."
+          }
+        ]
+      },
+      {
+        "id": "location-matters",
+        "heading": "Why the air handler's location matters",
+        "paragraphs": [
+          "An air handler in a vented attic is surrounded by outdoor-like heat and humidity. The important condensation variables are the attic air's moisture content and dew point, the cabinet surface temperature, and the condition of insulation and seals. A hot attic may increase the cooling load, but heat without sufficient moisture does not create condensation.",
+          "A garage or crawlspace can also expose equipment to humid air. In a conditioned closet, heavy sweating may be more notable because surrounding air should generally be drier, though leakage, insulation, or indoor humidity can still matter."
+        ],
+        "links": [
+          {
+            "before": "If the equipment cabinet is wet and the attic ducts are also beading, compare the separate duct-surface problem in ",
+            "label": "Why Is My AC Ductwork Sweating in the Attic?",
+            "href": "/hvac/ac-ductwork-sweating-in-attic/",
+            "after": "."
+          },
+          {
+            "before": "If living spaces feel clammy or measure persistently high humidity, use ",
+            "label": "Why Is My House Humid With the AC Running?",
+            "href": "/hvac/house-humid-with-ac-running/",
+            "after": " for the broader indoor-comfort and moisture-load pattern."
+          }
+        ]
+      },
+      {
+        "id": "how-much-is-normal",
+        "heading": "Is a little condensation normal?",
+        "paragraphs": [
+          "It is possible for a small amount of transient condensation to appear when humid air meets an unusually cold surface. That observation does not automatically mean the equipment is failing. It also does not make recurring water harmless.",
+          "Investigate persistent beads, dripping, a growing puddle, saturated insulation, staining, corrosion, or moisture that returns. What matters is whether it recurs, spreads, damages materials, or accompanies poor performance."
+        ]
+      },
+      {
+        "id": "why-it-matters",
+        "heading": "Why persistent cabinet sweating matters",
+        "paragraphs": [
+          "Repeated moisture can corrode the cabinet and wet insulation, drywall, wood, or flooring. Water may travel before a ceiling stain reveals it. Damp materials can support microbial growth, but condensation does not prove mold is present.",
+          "The electrical concern is more immediate when water reaches controls, wiring, disconnects, or other energized parts. Do not touch wet HVAC electrical equipment. A damp exterior panel is not permission to open the cabinet and trace the water inside."
+        ]
+      },
+      {
+        "id": "related-moisture-patterns",
+        "heading": "Match the guide to the wet HVAC surface",
+        "paragraphs": ["The HVAC moisture cluster separates the location and behavior of the water because each observation changes the likely path."],
+        "links": [
+          {
+            "before": "For condensation on a room-side register, use ",
+            "label": "Why Is My AC Vent Sweating?",
+            "href": "/hvac/ac-vent-sweating/",
+            "after": "."
+          },
+          {
+            "before": "For droplets falling from or around a supply register, use ",
+            "label": "Why Is Water Dripping From My AC Vent?",
+            "href": "/hvac/water-dripping-from-ac-vent/",
+            "after": "."
+          }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can observe safely",
+        "paragraphs": ["The most useful homeowner work is identifying the moisture pattern without entering the cabinet or creating an attic hazard."],
+        "bullets": [
+          "Determine whether fine droplets cover the cabinet or whether water begins at a fitting, pan edge, pump, pipe, seam, or surface above it.",
+          "Note whether the whole cabinet sweats or only one panel, access edge, duct connection, refrigerant-line entry, or lower corner.",
+          "Look for a puddle, wet insulation, corrosion, ceiling staining, or water trails without touching electrical parts.",
+          "Observe whether nearby supply ducts also sweat and whether the filter itself is dry, damp, collapsed, or overdue for replacement.",
+          "Note weak airflow, poor cooling, unusual runtime, or safely visible frost on an exterior line or component; do not remove panels to find ice.",
+          "Record the equipment location, outdoor weather, available indoor humidity reading, and whether moisture appears only during cooling or after shutdown.",
+          "Take dated photographs from a stable, safe viewpoint so a technician can compare where the moisture begins and how the pattern changes."
+        ],
+        "callout": {
+          "title": "Water and energized HVAC equipment require distance",
+          "text": "Do not remove energized access panels, reach into the air handler, touch wet wiring or controls, bypass switches, handle refrigerant, cut cabinet insulation, tape over service panels, or cross an attic without a safe walkway. Keep away and arrange prompt qualified help if water reaches electrical parts, breakers trip, smoke, sparking, or a burning odor occurs, or active leaking is damaging ceilings or structural materials."
+        }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an HVAC technician—or another trade",
+        "paragraphs": [
+          "Call an HVAC technician when cabinet sweating is persistent, widespread, or heavy; insulation or panel sealing appears damaged; airflow is weak; ice is visible; cooling has changed; a pan or drain repeatedly overflows; or the source remains uncertain. A technician can compare cabinet and air temperatures, humidity, airflow, coil operation, insulation, panel fit, leakage, and drainage rather than guessing from droplets alone.",
+          "Call a plumber when the wetness follows nearby piping or fixture use. Call a roofer or building professional when water starts above the equipment, follows rain, or traces to the roof or enclosure. Share timing and photographs so the first professional can route the problem if another system is responsible.",
+          "Get prompt help when water is near wiring or electrical controls, breakers trip, the unit is icing heavily, substantial water continues, ceiling material is soft or sagging, or moisture is damaging the building. Persistent sweating deserves correction even if the air handler still cools the home."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moisture Control Guidance for Building Design, Construction and Maintenance",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0"
+      },
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Condensate Capture Potential Map",
+        "publisher": "U.S. Department of Energy",
+        "url": "https://www.energy.gov/cmei/femp/condensate-capture-potential-map"
+      },
+      {
+        "title": "Measure Guideline: Air Sealing Mechanical Closets in Slab-On-Grade Homes",
+        "publisher": "U.S. Department of Energy Building America",
+        "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/measure_guide_mech_closets.pdf"
+      },
+      {
+        "title": "What To Do If the AC Evaporator Coil Is Frozen",
+        "publisher": "Trane",
+        "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/evaporator-coil-is-frozen/"
+      },
+      {
+        "title": "What Is an Air Handler for HVAC?",
+        "publisher": "Carrier",
+        "url": "https://www.carrier.com/residential/en/ca/homeowner-resources/hvac-glossary/air-handler/"
+      }
     ]
   }
 ]

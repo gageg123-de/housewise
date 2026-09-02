@@ -20,11 +20,13 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
   const attic = getFinderSymptomOptions("attic");
   assert.ok(attic.some((item) => item.value === "moisture"));
+  assert.ok(attic.some((item) => item.value === "air-handler-sweating"));
   assert.ok(attic.some((item) => item.value === "pest-activity"));
   assert.ok(!attic.some((item) => item.value === "appliance-behavior"));
 
   const wholeHouse = getFinderSymptomOptions("whole-house");
   assert.ok(wholeHouse.some((item) => item.value === "multiple-drains"));
+  assert.ok(wholeHouse.some((item) => item.value === "air-handler-sweating"));
 });
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
@@ -33,9 +35,11 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-water-level")[0].article.slug, "toilet-water-rises-when-another-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
+  assert.equal(rankFinderArticles(registry, "attic", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "hvac-filter")[0].article.slug, "ac-filter-wet");
   assert.equal(rankFinderArticles(registry, "whole-house", "leaking")[0].article.slug, "water-around-indoor-ac-unit");
+  assert.equal(rankFinderArticles(registry, "whole-house", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -68,8 +72,10 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "moisture"],
     ["whole-house", "multiple-drains"],
     ["whole-house", "hvac-filter"],
+    ["whole-house", "air-handler-sweating"],
     ["laundry", "appliance-behavior"],
     ["attic", "moisture"],
+    ["attic", "air-handler-sweating"],
   ];
 
   for (const [locationValue, symptomValue] of matrix) {
@@ -164,6 +170,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["air filter damp", "ac-filter-wet"],
     ["water on ac filter", "ac-filter-wet"],
     ["filter soaked near air handler", "ac-filter-wet"],
+    ["why is my air handler sweating", "air-handler-sweating"],
+    ["air handler sweating", "air-handler-sweating"],
+    ["air handler condensation", "air-handler-sweating"],
+    ["condensation on air handler", "air-handler-sweating"],
+    ["air handler sweating in attic", "air-handler-sweating"],
+    ["ac unit sweating in attic", "air-handler-sweating"],
+    ["indoor ac unit sweating", "air-handler-sweating"],
+    ["moisture on air handler", "air-handler-sweating"],
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
     ["dryer slow", "dryer-taking-two-cycles"],
