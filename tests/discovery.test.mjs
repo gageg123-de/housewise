@@ -27,6 +27,10 @@ test("Problem Finder choices are contextual to the selected location", () => {
   const wholeHouse = getFinderSymptomOptions("whole-house");
   assert.ok(wholeHouse.some((item) => item.value === "multiple-drains"));
   assert.ok(wholeHouse.some((item) => item.value === "air-handler-sweating"));
+
+  const laundry = getFinderSymptomOptions("laundry");
+  assert.ok(laundry.some((item) => item.value === "dryer-burning-smell"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dryer-burning-smell"));
 });
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
@@ -42,6 +46,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
+  assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
 
   for (const { value: locationValue } of finderLocations) {
@@ -74,6 +79,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "hvac-filter"],
     ["whole-house", "air-handler-sweating"],
     ["laundry", "appliance-behavior"],
+    ["laundry", "dryer-burning-smell"],
     ["attic", "moisture"],
     ["attic", "air-handler-sweating"],
   ];
@@ -100,6 +106,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
+  assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug, "ac-ductwork-sweating-in-attic");
 });
 
@@ -182,6 +189,18 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["warm outlet", "outlet-warm"],
     ["dryer slow", "dryer-taking-two-cycles"],
     ["clothes hot damp", "dryer-taking-two-cycles"],
+    ["dryer smells like burning", "dryer-smells-like-burning"],
+    ["why does my dryer smell like it's burning", "dryer-smells-like-burning"],
+    ["burning smell from dryer", "dryer-smells-like-burning"],
+    ["dryer smells burnt", "dryer-smells-like-burning"],
+    ["dryer burning smell", "dryer-smells-like-burning"],
+    ["dryer smells like burning rubber", "dryer-smells-like-burning"],
+    ["dryer smells electrical", "dryer-smells-like-burning"],
+    ["dryer smells like burnt lint", "dryer-smells-like-burning"],
+    ["dryer takes two cycles", "dryer-taking-two-cycles"],
+    ["dryer not drying clothes", "dryer-taking-two-cycles"],
+    ["dryer takes forever to dry", "dryer-taking-two-cycles"],
+    ["clothes still damp after dryer", "dryer-taking-two-cycles"],
     ["water heater leak", "water-under-water-heater"],
     ["toilet bubblng", "toilet-bubbles-when-washer-drains"],
   ];

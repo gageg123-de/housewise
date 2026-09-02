@@ -48,7 +48,7 @@ Freezer cold refrigerator warm,freezer cold but fridge warm,appliances,heat,kitc
 Oven smells like gas when preheating,oven smells like gas when preheating,appliances,smell,kitchen,safety,planned,high,,Fuel-specific emergency guidance
 Dishwasher leaves grit on dishes,dishwasher leaves grit on dishes,appliances,discoloration,kitchen,diagnostic,planned,medium,,Filter/water/detergent
 Washer smells musty,front load washer smells musty,appliances,smell,laundry,maintenance,planned,high,,Gasket/drainage cluster
-Dryer smells like burning,dryer burning smell,appliances,smell,laundry,safety,planned,high,,Stop-use guidance
+Dryer smells like burning,why does my dryer smell like it's burning,appliances,smell,laundry,safety,published,high,/appliances/dryer-smells-like-burning/,Burning odor and stop-use intent; distinct from slow drying and future overheating or breaker topics
 Ceiling stain after rain,ceiling stain after rain,roofing,moisture,attic,diagnostic,planned,high,,Roof/plumbing/condensation compare
 Roof leaks only in heavy rain,roof leaks in heavy rain,roofing,leaking,attic,diagnostic,planned,high,,Wind-driven versus flashing
 Gutter overflows in one spot,gutter overflowing in one spot,roofing,drainage,exterior,maintenance,planned,medium,,Clog/slope/downspout

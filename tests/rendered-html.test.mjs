@@ -254,10 +254,30 @@ test("slow-dryer guide renders hot-versus-cool differentiation, fire safety, and
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dryer-taking-two-cycles\//);
   assert.match(html, /Are the clothes hot but damp, or cool and wet\?/);
   assert.match(html, /Why restricted airflow is also a safety issue/);
+  assert.match(html, /href="\/appliances\/dryer-smells-like-burning\/"/);
   assert.match(html, /src="\/images\/dryer-airflow-restriction-guide\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("dryer burning-smell guide renders early stop-use guidance, distinctions, reciprocal discovery, and schema", async () => {
+  const response = await render("/appliances/dryer-smells-like-burning"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Dryer Smell Like It’s Burning\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dryer-smells-like-burning\//);
+  assert.match(html, /Stop first when the odor is strong, electrical, or smoky/);
+  assert.match(html, /What kind of burning smell is it\?/);
+  assert.match(html, /When to stop using the dryer immediately/);
+  assert.match(html, /For active fire or smoke, leave and call emergency services/);
+  assert.match(html, /href="\/appliances\/dryer-taking-two-cycles\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /src="\/images\/dryer-burning-smell-causes\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dryer-burning-smell-causes\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 

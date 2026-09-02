@@ -335,13 +335,14 @@ test("multiple-drain backup guide owns broad multi-fixture intent without absorb
   assert.ok(washer.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
 });
 
-test("slow-dryer guide separates airflow, washer, sensor, and heating paths without absorbing burning-odor intent", () => {
+test("slow-dryer guide separates airflow performance from the published burning-odor safety intent", () => {
   const dryer = registry.find((item) => item.slug === "dryer-taking-two-cycles");
   const burningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer smells like burning,"));
   assert.ok(dryer);
   assert.equal(dryer.published_date, "2026-08-24");
-  assert.equal(dryer.updated_date, "2026-08-27");
-  assert.ok(burningTopic?.includes(",planned,"));
+  assert.equal(dryer.updated_date, "2026-09-02");
+  assert.ok(burningTopic?.includes(",published,"));
+  assert.ok(burningTopic?.includes("/appliances/dryer-smells-like-burning/"));
   assert.ok(dryer.body_sections.some((section) => section.id === "how-drying-works"));
   assert.ok(dryer.body_sections.some((section) => section.id === "hot-or-cool" && section.table?.rows.length === 7));
   assert.ok(dryer.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 8));
@@ -350,6 +351,41 @@ test("slow-dryer guide separates airflow, washer, sensor, and heating paths with
   assert.ok(dryer.sources.every((source) => source.url.startsWith("https://")));
   assert.equal(dryer.image.src, "/images/dryer-airflow-restriction-guide.webp");
   assert.equal(dryer.image.kind, "conceptual");
+  assert.deepEqual(dryer.related_articles, ["dryer-smells-like-burning"]);
+  assert.ok(dryer.body_sections.some((section) => section.link?.href === "/appliances/dryer-smells-like-burning/"));
+});
+
+test("dryer burning-smell guide preserves fire, load, airflow, friction, and electrical safety boundaries", () => {
+  const article = registry.find((item) => item.slug === "dryer-smells-like-burning");
+  const slowDryer = registry.find((item) => item.slug === "dryer-taking-two-cycles");
+  const burningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer smells like burning,"));
+  assert.ok(article && slowDryer);
+  assert.equal(article.published_date, "2026-09-02");
+  assert.equal(article.updated_date, "2026-09-02");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(burningTopic?.includes(",published,"));
+  assert.match(article.target_search_intent, /burning, scorched, electrical, rubber, hot-lint, or chemical odor/i);
+  assert.ok(article.body_sections.some((section) => section.id === "stop-first" && section.callout?.title.includes("stop-use")));
+  assert.ok(article.body_sections.some((section) => section.id === "smell-pattern" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 9));
+  assert.ok(article.body_sections.some((section) => section.id === "timing-clues" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "stop-using" && section.callout?.title.includes("emergency services")));
+  assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/dryer-taking-two-cycles/"));
+  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "outlet-warm"]);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Fire Administration"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/dryer-burning-smell-causes.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /do not repeatedly restart|Do not turn a stop-use condition into a test cycle/i);
+  assert.match(body, /oil|gasoline|solvent/i);
+  assert.match(body, /Do not remove energized panels, test live voltage, bypass fuses or switches/i);
+  assert.doesNotMatch(body, /instructions to bypass|step-by-step burner adjustment|remove the dryer panel and/i);
 });
 
 test("musty-garage guide preserves garage odor intent and avoids treating smell as a mold diagnosis", () => {

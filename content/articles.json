@@ -1317,13 +1317,13 @@
   {
     "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles may have restricted exhaust airflow, oversized loads, overly wet clothes, sensor trouble, or inadequate heat. Learn how to tell.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying", "clothes hot but damp after dryer", "dryer runs but clothes stay wet"], "target_search_intent": "Help a homeowner distinguish exhaust-airflow, load, washer extraction, cycle, moisture-sensor, and heating causes when drying consistently requires a second cycle.",
     "direct_answer": "A dryer often needs two cycles because hot, moisture-laden air is not leaving efficiently. A loaded lint screen, crushed transition duct, obstructed exterior hood, lint in the house vent, or an overly long/restrictive vent can leave clothes hot but damp. Clothes that remain cool and wet point more toward a heat, power, gas, cycle, or control problem. Oversized loads, a washer that leaves clothes unusually wet, and sensor-cycle issues can also extend drying time.",
     "likely_causes": ["Restricted exhaust airflow", "Loaded lint screen or internal lint path", "Crushed or overly restrictive vent route", "Load too large or dense", "Washer leaving excessive water in clothes", "Cycle or setting mismatch", "Moisture-sensor or tumbling issue", "Heating, power, gas, or control fault"],
     "safe_checks": ["Clean the lint screen before each load and inspect it for residue or damage.", "Look behind the dryer for a visibly crushed or sharply kinked transition duct without moving gas piping or straining connections.", "Compare a smaller mixed load with the usual load.", "Check whether clothes leave the washer dripping or much heavier than expected.", "From outside, observe whether the exhaust hood opens and warm air exits while the dryer runs."],
     "professional_help": "Stop using the dryer for smoke, a burning or gas odor, scorching, sparking, repeated breaker trips, or an unusually hot cabinet or laundry room. Have inaccessible or heavily restricted venting cleaned by a qualified provider, and use an appliance technician for inadequate heat, controls, sensors, tumbling, gas, or internal lint concerns.",
-    "related_articles": [],
+    "related_articles": ["dryer-smells-like-burning"],
     "image": {
       "src": "/images/dryer-airflow-restriction-guide.webp",
       "width": 1536,
@@ -1396,7 +1396,8 @@
         "paragraphs": [
           "Lint can block airflow and contribute to excessive heat buildup. The U.S. Fire Administration advises cleaning the lint filter with every use, keeping the vent system free of damage and restriction, and confirming the outdoor vent covering opens during operation. CPSC likewise links lint buildup in dryers and exhaust ducts with fire risk.",
           "Long drying time is not proof that a fire is imminent, but it is a reason to stop stacking extra cycles on top of an unresolved airflow problem. A second cycle adds more heat and operating time without correcting the restriction."
-        ]
+        ],
+        "link": { "before": "If the dryer also produces a scorched, electrical, rubber, or hot-lint odor, stop using it and use ", "label": "Why Does My Dryer Smell Like It’s Burning?", "href": "/appliances/dryer-smells-like-burning/", "after": " to sort the odor and urgent warning signs before running another cycle." }
       },
       {
         "id": "when-to-call",
@@ -1414,6 +1415,137 @@
       { "title": "Clothes Dryers", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/products/clothes_dryers" },
       { "title": "Dryer Vent May Be Blocked or Restricted", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Laundry/Dryers/Product_Info/Dryer_Product_Assistance/Dryer_Vent_may_be_Blocked_or_Restricted" },
       { "title": "Dryer Taking Too Long to Dry Clothes or Not Drying at All", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=18058" }
+    ]
+  },
+  {
+    "title": "Why Does My Dryer Smell Like It’s Burning?", "slug": "dryer-smells-like-burning", "description": "A burning dryer smell can point to lint, restricted exhaust, friction, a contaminated load, or electrical trouble. Learn when to stop using it.",
+    "primary_category": "appliances", "secondary_categories": ["sounds-and-smells"], "symptoms": ["smell", "heat", "appliance-behavior", "electrical-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "safety-reference",
+    "published_date": "2026-09-02", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["dryer smells like burning", "burning smell from dryer", "dryer smells burnt", "dryer burning smell", "dryer smells like burning rubber", "dryer smells electrical", "dryer smells like burnt lint", "dryer burning smell after running"],
+    "target_search_intent": "Help a homeowner respond safely to a burning, scorched, electrical, rubber, hot-lint, or chemical odor from a dryer, distinguish broad source patterns, and choose vent, appliance, electrical, gas, or emergency help without opening the machine.",
+    "direct_answer": "If a dryer smells strongly burned, electrical, smoky, or unusually hot, stop the cycle and do not keep running it to see whether the odor clears. A loaded lint path or restricted exhaust can trap heat, but friction at a belt or rotating part, an overheating motor, a heater or burner-area problem, damaged wiring or a power connection, and an unsuitable or contaminated item can produce similar odors. Visible smoke, sparking, flame, rapidly increasing heat, scorching, or a tripped breaker accompanied by burning odor calls for distance and emergency or qualified electrical help—not another test cycle.",
+    "likely_causes": ["Lint buildup or restricted exhaust airflow", "Foreign material near a hot area", "Belt or rotating-component friction", "Overheating motor", "Heating-element or burner-area problem", "Power-cord, receptacle, terminal, wiring, or control fault", "Oil-, solvent-, rubber-, foam-, or plastic-containing item", "Brief first-use residue or dust on a new appliance"],
+    "safe_checks": ["Stop the cycle and let the dryer cool without touching any hot, smoking, sparking, or damaged part.", "Clean and inspect the lint screen for unusual loading, residue, or scorching.", "Visually inspect the accessible cord, plug, and receptacle for darkening, melting, deformation, or unusual heat without opening any enclosure.", "Look for an obviously crushed or sharply kinked transition duct without moving the dryer against gas or electrical connections.", "Observe the exterior vent termination from ground level and note whether airflow is weak when safe operation has been restored by a qualified person.", "Identify whether the smell follows one load, one heat setting, abnormal noise, long drying, or a shutdown."],
+    "professional_help": "Keep the dryer off when the odor is strong, returns promptly, accompanies abnormal heat or noise, or cannot be tied safely to a harmless external source. Use an appliance technician for internal heat, motor, belt, drum, control, or lint-path concerns; qualified dryer-vent service for an inaccessible restriction; an electrician for a hot or damaged receptacle, cord, branch circuit, or repeated trips; and qualified gas-appliance service for gas or burner concerns. For active smoke, flame, or fire, leave the area and call emergency services.",
+    "related_articles": ["dryer-taking-two-cycles", "outlet-warm"],
+    "image": {
+      "src": "/images/dryer-burning-smell-causes.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual cutaway of a clothes dryer with separate highlighted zones for lint and exhaust airflow, moving parts, the heating area, and the rear power connection.",
+      "caption": "Conceptual illustration: A burning odor can come from the load, restricted lint or exhaust airflow, moving-part friction, the heating area, or an electrical connection. Actual gas and electric dryer layouts differ; the highlighted zones are possibilities, not a diagnosis.",
+      "kind": "conceptual",
+      "after_section": "smell-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "stop-first",
+        "heading": "Stop first when the odor is strong, electrical, or smoky",
+        "paragraphs": [
+          "A dryer should not produce a persistent burning odor. End the cycle and leave the appliance off when the smell is strong, resembles hot plastic or wiring, comes with smoke, or the cabinet, cord, plug, or receptacle is unusually hot. Do not repeatedly restart it to reproduce the symptom.",
+          "For visible flame, active smoke, or sparking, get everyone out and call emergency services. Do not open or move the dryer, reach behind it, use water on energized equipment, or keep resetting a tripped breaker."
+        ],
+        "callout": { "title": "A burning smell is a stop-use clue", "text": "Keep the dryer off for smoke, flame, sparking, scorching, melting, severe heat, strong electrical odor, a damaged cord or receptacle, repeated breaker trips, or a burning smell that returns immediately. Troubleshooting begins only after the immediate hazard is gone." }
+      },
+      {
+        "id": "smell-pattern",
+        "heading": "What kind of burning smell is it?",
+        "paragraphs": ["Odor descriptions are subjective, and several problems can smell alike. The pattern can still help a technician decide whether to begin with airflow, the load, moving parts, heating, or the electrical supply."],
+        "table": {
+          "headers": ["What it smells or feels like", "What the pattern may point toward"],
+          "rows": [
+            ["Hot lint, dust, or a dry scorched odor", "Loaded lint path, restricted exhaust, dust after long inactivity, or debris in a hot area"],
+            ["Burning rubber", "A slipping belt, rubbing seal or roller, stalled rotating part, or a rubber/plastic item in the load"],
+            ["Electrical, melting-plastic, or acrid odor", "Cord, plug, receptacle, motor, control, or wiring overheating; treat promptly"],
+            ["Chemical or fabric odor from one load", "Oil, solvent, gasoline residue, adhesive, foam, rubber backing, or another item not suitable for tumble drying"],
+            ["Mild oily odor only on the first uses of a new dryer", "Residue or dust may be transient; persistent, smoky, or electrical odor is not"],
+            ["Odor plus squealing, scraping, thumping, or a struggling drum", "Friction or a motor, belt, roller, idler, bearing, or foreign-object problem"],
+            ["Odor plus long drying and an unusually hot cabinet or room", "Restricted airflow becomes more plausible, though it is not the only possible cause"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common sources of a dryer burning smell",
+        "paragraphs": ["The smell alone cannot identify the failed part. Dryer designs vary, and gas and electric models create heat differently. Use the surrounding clues to choose a safe next step rather than opening the cabinet."],
+        "causes": [
+          { "heading": "Lint is restricting airflow or collecting where it should not", "text": "Lint can accumulate at the screen, inside the dryer, in the transition duct, or in the house exhaust. CPSC and USFA warn that restrictions can reduce airflow, increase heat, and contribute to fires. Clean the screen routinely; internal chassis cleaning belongs to qualified service." },
+          { "heading": "The exhaust path is crushed, blocked, or overly restrictive", "text": "A kinked connector, obstructed outdoor hood, lint in the building duct, or a long route can retain heat and moisture. Long drying, an unusually hot cabinet or room, and weak exterior airflow support this path. The separate two-cycle guide covers drying performance in more detail." },
+          { "heading": "A foreign object or escaped material reached a hot area", "text": "Pocket debris, a small fabric item, packaging, or lint can lodge where normal heat creates an odor. Check only the visible drum and lint-screen area after the dryer cools. Do not reach beyond homeowner-access areas or open a heater housing." },
+          { "heading": "A belt or moving component is rubbing", "text": "A deteriorating drum belt, idler, roller, bearing, felt seal, or another moving part can generate friction and a rubbery odor. Squealing, scraping, thumping, delayed drum movement, or a drum that struggles to start strengthens this path, but odor does not prove which component is responsible." },
+          { "heading": "The motor is overheating", "text": "A motor facing mechanical resistance or an electrical fault may smell hot, buzz, struggle to start, or restart after cooling. Keep the dryer off; motor and drive-system diagnosis requires appliance service." },
+          { "heading": "The heating or burner area has a problem", "text": "Electric heating components, thermostats, airflow safety controls, and nearby debris can create excessive heat or odor when something fails. Gas dryers use a burner and ignition system instead. Neither system is a homeowner repair area: do not handle high-voltage parts, adjust a burner, manipulate gas valves, or bypass a thermal control." },
+          { "heading": "A cord, receptacle, terminal, wire, or control is overheating", "text": "Loose or damaged electrical connections can concentrate heat and produce an acrid or melting-plastic smell. Darkened blades, a deformed plug, a warm wall plate, sparking, intermittent power, or breaker trips make electrical evaluation more urgent. If heat is centered at the wall connection, the guide to a warm outlet explains why the receptacle and branch circuit need separate attention." },
+          { "heading": "The load contains oil, solvent, foam, rubber, or plastic", "text": "CPSC and dryer manuals warn that textiles exposed to cooking oil, gasoline, solvents, or finishing oils can remain hazardous after washing. Rubber-backed rugs, foam, plastics, and adhesives may also be unsuitable for tumble heat. Stop the cycle and follow the item and dryer instructions." },
+          { "heading": "A new or recently serviced dryer is heating residual dust or coatings", "text": "Manufacturers note that a mild oily or semi-burning odor can occur briefly during first use as residue or dust heats. That narrow explanation fits a new appliance with a mild fading odor—not smoke, sparking, intense heat, persistent electrical smell, or an odor that grows stronger. When in doubt, stop and use model-specific support." }
+        ]
+      },
+      {
+        "id": "timing-clues",
+        "heading": "When the smell appears changes the next question",
+        "table": {
+          "headers": ["Timing or companion symptom", "Useful direction"],
+          "rows": [
+            ["Odor begins immediately after Start", "Power connection, motor start, foreign material, or the load itself deserves attention"],
+            ["Odor develops after 15 to 30 minutes", "Heat retention, vent restriction, motor temperature, or friction becomes more relevant"],
+            ["Only high-heat cycles produce the smell", "Heat-related components, airflow, or an unsuitable fabric/item may be involved"],
+            ["Only one load smells", "Check the contents, care labels, rubber/foam/plastic parts, oils, solvents, and pocket debris"],
+            ["Smell remains after the cycle stops", "Retained heat, hot lint, or an overheated component may still be present; leave the unit off"],
+            ["Dryer shuts off, then works after cooling", "Motor overheating, restricted airflow, or a heat-control problem needs appliance evaluation"],
+            ["Breaker trips or the plug/outlet is hot", "Stop use and involve a licensed electrician as well as appliance service when appropriate"]
+          ]
+        }
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can check without opening the dryer",
+        "bullets": [
+          "Stop the cycle and allow the appliance to cool; do not touch a surface that is smoking, sparking, melted, or severely hot.",
+          "Clean the lint screen and check it for heavy loading, waxy residue, darkening, scorch marks, or damage.",
+          "Identify whether the odor is strongest at the drum opening, lint-screen area, rear vent, power connection, wall outlet, or a particular item in the load.",
+          "Look at the cord, plug, and receptacle for darkening, deformation, looseness, or melting without removing covers or probing the outlet.",
+          "Look for an obvious crushed transition duct without moving the appliance or straining its connections.",
+          "Check the exterior vent termination from ground level for a stuck cover or visible obstruction; do not climb onto a roof or reach into a running vent.",
+          "Note whether clothes have also begun taking longer to dry, whether the room feels unusually hot, and whether the dryer reports a check-vent alert.",
+          "Listen for squealing, scraping, buzzing, thumping, or a drum that does not turn normally, then leave internal inspection to a technician.",
+          "Review the load and care labels for rubber, foam, plastic, oil, solvent, gasoline, or other heat-sensitive material.",
+          "Record when the smell begins, which cycle and load were involved, any shutdowns or breaker trips, and whether the odor returned after cooling."
+        ],
+        "callout": { "title": "Do not turn a stop-use condition into a test cycle", "text": "Do not remove energized panels, test live voltage, bypass fuses or switches, reach near a heating element, manipulate gas controls, operate with panels or exhaust disconnected, or keep running a dryer that is smoking. Qualified service can inspect those areas after the appliance is made safe." }
+      },
+      {
+        "id": "vent-and-fire-risk",
+        "heading": "Why the exhaust path deserves early attention",
+        "paragraphs": [
+          "A vented dryer needs a continuous path through the transition duct and house duct to the exterior. A restriction can lengthen drying, retain heat, and collect lint. USFA recommends a clean filter, an undamaged connector, and an outdoor cover that opens during operation.",
+          "Those checks do not clear a dryer with a burning odor. If the route is inaccessible, airflow stays weak, or internal lint is suspected, keep it off and arrange vent or appliance service."
+        ],
+        "link": { "before": "If long drying is the main symptom and no stop-use odor or electrical warning is present, compare the airflow, washer, load, sensor, and heat paths in ", "label": "Why Is My Dryer Taking Two Cycles?", "href": "/appliances/dryer-taking-two-cycles/", "after": "." }
+      },
+      {
+        "id": "stop-using",
+        "heading": "When to stop using the dryer immediately",
+        "bullets": ["Visible smoke, flame, sparking, or glowing where it should not occur", "Strong electrical, burning-plastic, or smoky odor", "Scorch marks, melted plastic, or a damaged cord, plug, or receptacle", "Severe cabinet heat or rapidly increasing heat around the appliance", "Repeated breaker trips, especially with odor or heat", "A burning smell that returns immediately after Start", "Suspected gas odor, burner problem, or abnormal combustion", "Signs that lint or material inside the appliance may be burning"],
+        "callout": { "title": "For active fire or smoke, leave and call emergency services", "text": "Do not open or move the dryer, reach behind it, or use water on energized equipment. Keep people away and follow emergency instructions. Troubleshooting can wait until the immediate hazard has been handled." }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should inspect a dryer that smells burned?",
+        "subsections": [
+          { "heading": "Appliance repair technician", "paragraphs": ["Use appliance service for friction, abnormal drum motion, motor overheating, internal lint, heating or control components, internal wiring, or an odor whose source remains unclear."] },
+          { "heading": "Dryer-vent professional", "paragraphs": ["Use an appropriate qualified vent provider when exterior airflow is weak, the route is long or inaccessible, the transition duct is damaged, or a building-duct restriction is suspected. Vent service does not replace appliance inspection when the smell appears to originate inside the machine."] },
+          { "heading": "Licensed electrician", "paragraphs": ["Use an electrician when the receptacle, plug, cord, branch wiring, or breaker shows heat, damage, sparking, intermittent power, or repeated trips. Do not use an adapter or extension cord."] },
+          { "heading": "Qualified gas-appliance professional", "paragraphs": ["For a gas dryer, use qualified appliance or gas service for burner, ignition, combustion, connector, or gas-supply concerns. If you smell gas, leave the area and follow the gas utility or emergency instructions; do not operate switches or test the dryer."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Clothes Dryer Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf" },
+      { "title": "Overheated Clothes Dryers Can Cause Fires", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/5022.pdf" },
+      { "title": "Hidden Hazard in the Home: Cloths Heavily Soiled With Vegetable Oil Can Start Fires", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/1992/Hidden-Hazard-In-The-Home-Cloths-Heavily-Soiled-With-Vegetable-Oil-Can-Start-Fires" },
+      { "title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/" },
+      { "title": "Dryer Odor", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=18962" },
+      { "title": "Dryer Owner’s Manual and Fire-Hazard Warnings", "publisher": "Whirlpool", "url": "https://www.whirlpool.com/content/dam/global/documents/202202/owners-manual-w11555811-revC.pdf" }
     ]
   },
   {
