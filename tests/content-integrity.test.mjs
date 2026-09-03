@@ -388,6 +388,45 @@ test("dryer burning-smell guide preserves fire, load, airflow, friction, and ele
   assert.doesNotMatch(body, /instructions to bypass|step-by-step burner adjustment|remove the dryer panel and/i);
 });
 
+test("dishwasher drying guide separates normal wet plastics from whole-load drying problems", () => {
+  const article = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
+  const odorTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher smells bad,"));
+  const gritTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher leaves grit on dishes,"));
+  const dryingTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher does not dry dishes,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-03");
+  assert.equal(article.updated_date, "2026-09-03");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(dryingTopic?.includes(",published,"));
+  assert.ok(dryingTopic?.includes("/appliances/dishwasher-not-drying-dishes/"));
+  assert.ok(odorTopic?.includes(",planned,"));
+  assert.ok(gritTopic?.includes(",planned,"));
+  assert.match(article.target_search_intent, /dishes remain wet after an otherwise completed dishwasher cycle/i);
+  assert.ok(article.body_sections.some((section) => section.id === "what-not-drying-means" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "drying-methods" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 10));
+  assert.ok(article.body_sections.some((section) => section.id === "plastic-items"));
+  assert.ok(article.body_sections.some((section) => section.id === "cycle-clues" && section.table?.rows.length === 8));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "door-opening"));
+  assert.ok(article.body_sections.some((section) => section.id === "when-to-call" && section.subsections?.length === 3));
+  assert.ok(article.sources.some((source) => source.publisher === "Whirlpool Product Help"));
+  assert.ok(article.sources.some((source) => source.publisher === "Bosch Home Appliances"));
+  assert.ok(article.sources.some((source) => source.publisher === "LG Support"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/dishwasher-drying-performance-factors.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "dryer-smells-like-burning"]);
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /plastic is the classic exception|plastic items cool too quickly/i);
+  assert.match(body, /rinse aid lowers water's surface tension/i);
+  assert.match(body, /do not raise the water-heater temperature solely as an experiment/i);
+  assert.match(body, /do not remove access panels, test live voltage/i);
+  assert.doesNotMatch(body, /remove the heating element|bypass the door switch|set the water heater to \d+/i);
+});
+
 test("musty-garage guide preserves garage odor intent and avoids treating smell as a mold diagnosis", () => {
   const garage = registry.find((item) => item.slug === "garage-smells-musty");
   const nearbyTopics = topics.split(/\r?\n/).filter((row) => /^(Musty smell after rain|Concrete garage floor sweating|Attic smells musty),/.test(row));

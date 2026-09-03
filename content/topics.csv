@@ -42,6 +42,7 @@ Ceiling light flickers,flickering ceiling light,electrical,electrical-behavior,l
 GFCI will not reset,gfci outlet will not reset,electrical,electrical-behavior,bathroom,safety,planned,high,,Wet-location precautions
 Doorbell transformer hums,doorbell transformer humming,electrical,noise,whole-house,diagnostic,planned,low,,Transformer normal versus fault
 Dishwasher smells bad,dishwasher smells bad,appliances,smell,kitchen,maintenance,planned,high,,Filter/drain cluster
+Dishwasher does not dry dishes,why is my dishwasher not drying dishes,appliances,appliance-behavior,kitchen,diagnostic,published,high,/appliances/dishwasher-not-drying-dishes/,Post-cycle drying performance; preserves cleaning draining leaking odor residue filling and noise intents
 Washing machine shakes,washer shaking during spin,appliances,vibration,laundry,diagnostic,planned,high,,Level/load/shipping bolts
 Refrigerator makes knocking noise,refrigerator knocking noise,appliances,noise,kitchen,diagnostic,planned,medium,,Cycle timing clues
 Freezer cold refrigerator warm,freezer cold but fridge warm,appliances,heat,kitchen,diagnostic,planned,high,,Airflow/defrost cluster

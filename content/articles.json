@@ -1549,6 +1549,142 @@
     ]
   },
   {
+    "title": "Why Is My Dishwasher Not Drying Dishes?", "slug": "dishwasher-not-drying-dishes", "description": "Wet plastics can be normal, but a whole load left wet may point to rinse aid, cycle, loading, water-temperature, heating, or venting conditions.",
+    "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
+    "published_date": "2026-09-03", "updated_date": "2026-09-03", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["dishwasher not drying dishes", "why is my dishwasher not drying dishes", "dishwasher leaves dishes wet", "dishes wet after dishwasher", "dishwasher not drying plastic", "dishwasher dishes still wet", "dishwasher not drying after cycle", "dishwasher not drying properly", "dishwasher not heat drying", "water on dishes after dishwasher"],
+    "target_search_intent": "Help a homeowner understand why dishes remain wet after an otherwise completed dishwasher cycle, distinguish normal wet plastics or pooled water from settings, rinse-aid, loading, water-temperature, heating, or model-dependent venting problems, and know when appliance service is appropriate.",
+    "direct_answer": "Dishwashers do not all dry the same way. Drying depends on the machine's design, the chosen cycle and options, rinse aid, loading, incoming water conditions, ventilation, and the materials in the load. Plastic commonly stays wetter than glass, ceramic, or metal because it gives up heat quickly. If a dishwasher that used to dry well suddenly leaves the entire load wet, check the selected drying option and rinse-aid supply first; a water-temperature, heating, sensor, control, vent, or fan problem may also be involved depending on the model.",
+    "likely_causes": ["Normal differences among dishwasher drying systems", "Empty or disabled rinse-aid dispenser", "Cycle or drying option selection", "Plastic items cooling faster than glass ceramic or metal", "Loading that traps or pools water", "Incoming water conditions outside model requirements", "Heating component problem on models that use one", "Temperature sensor thermostat or control issue", "Vent fan or automatic-door feature issue where equipped", "Interrupted or incomplete cycle"],
+    "safe_checks": ["Confirm the selected cycle and drying option in the model's manual.", "Check the rinse-aid indicator or reservoir and use only the product and setting the manufacturer recommends.", "Compare plastic items with glass ceramic and metal items rather than judging the whole load from plastics alone.", "Angle cups bowls lids and recessed bases so clean rinse water can drain instead of pooling.", "Note whether performance changed suddenly or only on quick eco or no-heat cycles.", "Confirm household hot water is behaving normally without raising the water-heater setting solely for the dishwasher.", "Note error codes unusual noises or an incomplete cycle.", "Look for smoke burning odor breaker trips unusual heat or water reaching electrical areas and stop use if any are present."],
+    "professional_help": "Arrange appliance service when the dishwasher previously dried well and suddenly stopped, the entire load stays unusually wet despite correct settings and rinse aid, the heated-dry option no longer changes results, an error code appears, or a model-dependent heater, sensor, control, vent, fan, or automatic-door feature is suspected. Stop using the dishwasher and seek appropriate appliance or electrical help for smoke, sparking, burning electrical odor, breaker trips, unusual overheating, melted parts, or water reaching electrical components.",
+    "related_articles": ["dryer-taking-two-cycles", "dryer-smells-like-burning"],
+    "image": {
+      "src": "/images/dishwasher-drying-performance-factors.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual dishwasher rack with mostly dry glass, ceramic, and metal dishes beside wetter plastic containers and a recessed item holding pooled water.",
+      "caption": "Conceptual illustration: Materials that retain heat often dry more readily, while fast-cooling plastics and recessed surfaces can keep droplets or pooled water. Actual drying systems and rack layouts vary by model.",
+      "kind": "conceptual",
+      "after_section": "what-not-drying-means"
+    },
+    "body_sections": [
+      {
+        "id": "what-not-drying-means",
+        "heading": "What does ‘not drying’ actually look like?",
+        "paragraphs": [
+          "The pattern matters more than a single droplet. A few wet plastic lids after an otherwise normal cycle point in a different direction from every plate, glass, and utensil coming out cold and covered with water.",
+          "Also separate water left on the load from water on the stainless-steel tub walls. In a condensation-drying machine, moisture collecting on the cooler tub can be part of the intended process even when the dishes are drying normally."
+        ],
+        "table": {
+          "headers": ["What remains wet", "What that pattern may suggest"],
+          "rows": [
+            ["Everything in the load", "Drying option, rinse aid, final-rinse heat, an interrupted cycle, or a model-dependent heating or venting problem deserves attention"],
+            ["Mostly plastic containers and lids", "Fast-cooling material may be behaving normally even when heavier dishes dry"],
+            ["Cup bottoms, bowl rims, and recessed bases", "The item's shape or angle is holding a small pool that cannot drain"],
+            ["Dishes that used to come out drier", "A setting change, empty rinse aid, different cycle or detergent, changed hot-water conditions, or a component problem is more plausible"],
+            ["Tub walls, while dishes are mostly dry", "Condensation on the cooler tub may be normal for the machine's drying design"],
+            ["One rack or tightly packed area", "Loading, nesting, blocked water movement, or poor drainage from item surfaces may be contributing"]
+          ]
+        }
+      },
+      {
+        "id": "drying-methods",
+        "heading": "Dishwashers do not all use the same drying system",
+        "paragraphs": [
+          "Some machines use an exposed heating element during a heated-dry phase. Others depend mainly on a hot final rinse and the heat stored in the dishes. Condensation-drying models encourage moisture to leave the load and collect on a cooler stainless-steel tub. Some designs add a fan, a passive vent, mineral-assisted drying, or an automatic door-opening feature.",
+          "That variety is why the absence of a glowing heater, audible fan, or automatically opening door does not prove a fault. Check the model's manual for its actual drying method and for the cycles or options that activate it."
+        ],
+        "callout": { "title": "Model details change the diagnosis", "text": "A feature that is normal on one dishwasher may not exist on another. Use the model number and owner’s manual before treating a quiet fan, closed door, or hidden heater as a failed component." }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons dishes stay wet",
+        "paragraphs": ["Start with the conditions that affect the whole drying process. Component failure becomes more plausible when simple conditions are correct and a machine that once dried well changes suddenly."],
+        "causes": [
+          { "heading": "The dishwasher's drying method leaves some moisture by design", "text": "Energy-conscious, condensation, and unheated drying strategies can leave more residual moisture than a long heated-dry phase. That does not mean the design is defective. Expectations should match the selected cycle, option, and manufacturer description." },
+          { "heading": "The rinse-aid reservoir is empty or the setting is too low", "text": "Rinse aid lowers water's surface tension so rinse water spreads and sheets off instead of clinging as many separate droplets. Modern condensation-drying machines may rely heavily on this effect. It can improve drying and spotting, but it cannot repair a failed heater or control." },
+          { "heading": "The selected cycle reduces or skips drying", "text": "Quick, express, eco, air-dry, and no-heat cycles may shorten or reduce drying, while a heated-dry, extra-dry, or sanitize-related option may change the result on models that offer it. Names and behavior vary, so verify the control setting rather than assuming the default includes full drying." },
+          { "heading": "Plastic items cool too quickly", "text": "Glass, ceramic, and metal generally retain more heat from the final rinse. Many plastics store less heat and cool sooner, leaving less energy to evaporate the remaining film of water. Wet plastics alone are therefore a weak sign of machine failure." },
+          { "heading": "Loading traps water on the dishes", "text": "Nested bowls, flat lids, upward-facing cups, crowded surfaces, and recessed bottoms can hold water even when drying is working. Angle items toward drainage, keep them from nesting, and follow the rack guidance in the manual without blocking spray or detergent access." },
+          { "heading": "Incoming water conditions do not match the model's needs", "text": "The final rinse and drying process depend partly on water reaching the temperatures the dishwasher was designed around, although many machines also heat water internally. If household hot water has changed or cleaning has weakened too, compare the model's inlet requirements with actual conditions. Do not raise the water-heater temperature solely as an experiment; excessive hot-water temperature creates scald risk." },
+          { "heading": "A heating component is not operating where the model uses one", "text": "A failed exposed element, hidden heater, relay, or related circuit can leave an entire load cooler and wetter than before. The heated-dry option making no difference is a useful clue, not proof. Electrical testing and heater access belong to appliance service." },
+          { "heading": "A thermostat, thermistor, sensor, or control is misreading the cycle", "text": "Temperature and control components help the machine manage wash and dry phases. A fault may interrupt heating or end a phase incorrectly, sometimes with an error code. Wet dishes alone cannot identify which component is responsible." },
+          { "heading": "A vent, fan, or automatic-door feature is not working where equipped", "text": "Some models release moist air passively, some use a powered fan, and some open the door automatically near the end. Retained steam, a new noise, a feature-specific error, or a door that no longer performs its documented action can justify service. Do not assume every machine should vent the same way." },
+          { "heading": "The cycle did not finish normally", "text": "A power interruption, opened door, error, drain problem, or canceled cycle can prevent the intended final rinse or drying phase. Confirm that the cycle truly completed. If standing water, leaking, or failure to drain is the main symptom, that is a different problem from ordinary drying performance." }
+        ]
+      },
+      {
+        "id": "plastic-items",
+        "heading": "Why are my plastic dishes still wet?",
+        "paragraphs": [
+          "Plastic is the classic exception because it loses heat quickly. A glass or ceramic plate can remain warm enough to encourage evaporation while a nearby plastic lid has already cooled and is still beaded with droplets. Lightweight plastic can also flip, shift, or collect water in rims and recesses.",
+          "If the product manual permits the items in the dishwasher, use rinse aid as directed, secure lightweight pieces, angle openings downward, keep recessed surfaces from lying flat, and select the intended drying option. Those changes can help, but no ordinary cycle guarantees completely dry plastic."
+        ]
+      },
+      {
+        "id": "cycle-clues",
+        "heading": "Use the cycle pattern to narrow the cause",
+        "table": {
+          "headers": ["When the load stays wet", "What to check next"],
+          "rows": [
+            ["After a quick or express cycle", "Whether that cycle shortens or omits drying"],
+            ["Only on an eco or no-heat cycle", "Whether reduced energy use changes the drying method or time"],
+            ["After every cycle", "Rinse aid, loading, incoming water, completion of the cycle, and the documented drying system"],
+            ["Suddenly, after months of better results", "Changed settings or detergent, empty rinse aid, changed hot water, an error, or a component problem"],
+            ["Only on plastics", "Material heat retention and pooling before assuming a machine failure"],
+            ["Only where items touch or face upward", "Rack arrangement, nesting, recessed surfaces, and drainage angle"],
+            ["Along with weak cleaning or a very cool interior", "Cycle completion, incoming water, or model-dependent heating concerns"],
+            ["With an error code or new fan/door behavior", "The manual's code or feature guidance and appliance service if the symptom repeats"]
+          ]
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Confirm the cycle completed and review which drying option was selected.",
+          "Check the rinse-aid indicator or reservoir and follow the model's product and dosage instructions.",
+          "Compare plastics with glass, ceramic, and metal items after the same load.",
+          "Reposition cups, bowls, lids, and recessed bases so clean water can run off.",
+          "Avoid nesting pieces or packing them so tightly that water stays trapped between surfaces.",
+          "Review the manual for the model's drying method, option names, and any automatic-door behavior.",
+          "Note whether the interior feels normally warm after completion without touching a heater or reaching behind panels.",
+          "Confirm household hot water otherwise behaves normally; do not increase its temperature just to test the dishwasher.",
+          "Write down any error code, interrupted cycle, unusual fan sound, or feature that stopped behaving as documented.",
+          "Clean only routine user-serviceable filters or areas identified in the manual, with the dishwasher off."
+        ],
+        "callout": { "title": "Keep troubleshooting outside electrical and heated parts", "text": "Do not remove access panels, test live voltage, probe a heating element, defeat the door interlock, bypass a safety device, reach into energized controls, or improvise wiring repairs. These checks cannot safely prove which internal component failed." }
+      },
+      {
+        "id": "door-opening",
+        "heading": "Should you open the door after the cycle?",
+        "paragraphs": [
+          "There is no universal answer. Some manufacturers suggest opening the door after completion to release humid air; some machines do this automatically; and other designs are intended to complete condensation drying with the door closed for a period. Follow the manual for the specific model.",
+          "If opening is permitted, wait until the cycle has completed and be mindful of hot steam. Do not force a latched door, defeat a lock, or treat manual door opening as a substitute for a feature or heating system that has stopped working."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When appliance service makes sense",
+        "paragraphs": ["Service is more reasonable when the whole load remains unusually wet after settings, rinse aid, loading, and model guidance have been checked—especially if drying changed abruptly."],
+        "subsections": [
+          { "heading": "Call an appliance technician", "paragraphs": ["Arrange service when heated dry no longer changes the result, the machine stays much cooler than before, an error code repeats, the cycle does not finish, or a model-dependent heater, thermostat, sensor, control, vent, fan, or automatic-door system may not be working."] },
+          { "heading": "Stop use for electrical or overheating signs", "paragraphs": ["Leave the dishwasher off for smoke, sparking, a burning-electrical smell, melted parts, repeated breaker trips, unusual overheating, or water reaching electrical components. Do not repeat a cycle to reproduce those symptoms; use qualified appliance or electrical help as appropriate."] },
+          { "heading": "Keep other dishwasher symptoms separate", "paragraphs": ["An active leak, standing water that does not drain, poor cleaning, bad odor, residue, filling trouble, or grinding noise needs its own diagnosis. Those symptoms can coexist with wet dishes, but they are not explained by drying performance alone."] }
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Dishes Not Drying: Quick Fix Guide", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Dishwashers/Product_Info/Dishwasher_Product_Assistance/Dishes_Not_Drying%3A_Quick_Fix_Guide" },
+      { "title": "Dishwasher Not Drying", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Dishwashers/Dishwasher/Drying_Performance/Not_Drying_-_Dishwasher" },
+      { "title": "Dishwasher Tips and Condensation Drying", "publisher": "Bosch Home Appliances", "url": "https://www.bosch-home.com/us/experience-bosch/heart-of-the-home/tips-and-tricks/tips-dishwasher" },
+      { "title": "Dishwasher Not Drying", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/not-drying-dishwasher-CT10000009-20150933408322" },
+      { "title": "Dishwasher Condensation Drying", "publisher": "Samsung Support", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10007201/" },
+      { "title": "Dishwasher Poor Drying", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=17451" }
+    ]
+  },
+  {
     "title": "Why Does My Garage Smell Musty?", "slug": "garage-smells-musty", "description": "A musty garage odor can come from damp storage, humidity, vehicle water, leaks, slab moisture, or a drain. Use timing and location to narrow it down.",
     "primary_category": "moisture-and-mold", "secondary_categories": ["garage"], "symptoms": ["smell", "moisture"], "room_or_location": ["garage"], "system": "moisture-and-mold", "content_type": "diagnostic-guide",
     "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,

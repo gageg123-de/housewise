@@ -382,3 +382,21 @@ test("appliance-triggered light-flicker guide renders startup nuance, safety bou
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/lights-flicker-appliance-startup-load\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("dishwasher drying guide renders material distinctions, safe checks, schema, and visual", async () => {
+  const response = await render("/appliances/dishwasher-not-drying-dishes"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Dishwasher Not Drying Dishes\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dishwasher-not-drying-dishes\//);
+  assert.match(html, /What does ‘not drying’ actually look like\?/);
+  assert.match(html, /Dishwashers do not all use the same drying system/);
+  assert.match(html, /Why are my plastic dishes still wet\?/);
+  assert.match(html, /Keep troubleshooting outside electrical and heated parts/);
+  assert.match(html, /src="\/images\/dishwasher-drying-performance-factors\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dishwasher-drying-performance-factors\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
