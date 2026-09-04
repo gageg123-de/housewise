@@ -28,6 +28,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(wholeHouse.some((item) => item.value === "multiple-drains"));
   assert.ok(wholeHouse.some((item) => item.value === "air-handler-sweating"));
   assert.ok(wholeHouse.some((item) => item.value === "appliance-light-flicker"));
+  assert.ok(wholeHouse.some((item) => item.value === "outlet-buzzing"));
 
   const kitchen = getFinderSymptomOptions("kitchen");
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
@@ -53,6 +54,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "multiple-drains")[0].article.slug, "multiple-drains-back-up-at-same-time");
   assert.equal(rankFinderArticles(registry, "whole-house", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
+  assert.equal(rankFinderArticles(registry, "whole-house", "outlet-buzzing")[0].article.slug, "outlet-buzzing");
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
@@ -89,6 +91,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "hvac-filter"],
     ["whole-house", "air-handler-sweating"],
     ["whole-house", "appliance-light-flicker"],
+    ["whole-house", "outlet-buzzing"],
     ["kitchen", "appliance-light-flicker"],
     ["kitchen", "dishwasher-drying"],
     ["laundry", "appliance-behavior"],
@@ -201,6 +204,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["moisture on air handler", "air-handler-sweating"],
     ["musty garage", "garage-smells-musty"],
     ["warm outlet", "outlet-warm"],
+    ["outlet buzzing", "outlet-buzzing"],
+    ["why does my outlet buzz", "outlet-buzzing"],
+    ["electrical outlet buzzing", "outlet-buzzing"],
+    ["outlet making buzzing noise", "outlet-buzzing"],
+    ["wall outlet buzzing", "outlet-buzzing"],
+    ["outlet humming", "outlet-buzzing"],
+    ["buzzing sound from outlet", "outlet-buzzing"],
+    ["outlet buzzes when something plugged in", "outlet-buzzing"],
     ["lights flicker when appliance turns on", "lights-flicker-when-appliance-turns-on"],
     ["why do my lights flicker when appliance turns on", "lights-flicker-when-appliance-turns-on"],
     ["lights dim when ac turns on", "lights-flicker-when-appliance-turns-on"],
@@ -239,4 +250,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.notEqual(searchArticles(registry, "lights flicker randomly")[0]?.slug, "lights-flicker-when-appliance-turns-on");
   assert.notEqual(searchArticles(registry, "dishwasher not cleaning dishes")[0]?.slug, "dishwasher-not-drying-dishes");
   assert.notEqual(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-drying-dishes");
+  assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
+  assert.equal(searchArticles(registry, "outlet warm")[0]?.slug, "outlet-warm");
+  assert.equal(searchArticles(registry, "lights flicker when appliance starts")[0]?.slug, "lights-flicker-when-appliance-turns-on");
 });

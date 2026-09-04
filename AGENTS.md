@@ -64,6 +64,12 @@ Before drafting any article:
 
 Near-duplicate SEO pages and thin programmatic combinations are prohibited.
 
+## Article-reality preflight (mandatory)
+
+Before drafting any new article, verify from authoritative, manufacturer, utility, code, safety, or otherwise reliable sources that the described symptom is a real and meaningful residential problem. Confirm that it can occur in the system named, identify at least one credible physical or operational mechanism, verify that the homeowner framing is technically accurate, and check whether an existing canonical article already represents the problem better.
+
+Do not publish an invented, contrived, technically implausible, misleading, materially distorted, unsupported, or merely keyword-shaped premise. Search opportunity never overrides factual reality. If the premise fails this gate, stop publication, document what is inaccurate, and recommend a technically valid reframing when one exists.
+
 ## Audit-derived permanent guardrails
 
 These mandatory rules derive from the deployed 2026-08-25 site audit. Preserve them unless later evidence supports a documented policy change; never remove a guardrail merely to make a content or feature change pass.

@@ -1792,7 +1792,7 @@
     "likely_causes": ["Heat transferring from a high-load device or plug", "Loose fit between plug blades and receptacle contacts", "Worn or damaged receptacle", "Loose or deteriorated wiring connection", "Overloaded circuit or inappropriate power-strip/extension use", "Damaged appliance plug or cord"],
     "safe_checks": ["Stop using the outlet and unplug the device only if the plug and surrounding area are not hot, sparking, smoking, or damaged.", "From a safe distance, note odor, discoloration, melting, buzzing, crackling, flickering, or intermittent power.", "Compare whether heat is concentrated at the device/plug or the wall plate without repeatedly touching a hot surface.", "Check the appliance cord and plug visually for cuts, looseness, darkening, or deformation.", "Do not remove the faceplate, probe the slots, or inspect energized wiring."],
     "professional_help": "Have a licensed electrician evaluate any receptacle or faceplate that becomes unusually warm, stays warm after the load is removed, holds plugs loosely, or shows noise, odor, discoloration, intermittent power, or repeated breaker trips. For smoke, flame, active arcing, or fire, move away and call emergency services; do not touch the outlet or use water.",
-    "related_articles": ["lights-flicker-when-appliance-turns-on", "ceiling-fan-wobbles"],
+    "related_articles": ["lights-flicker-when-appliance-turns-on", "outlet-buzzing", "ceiling-fan-wobbles"],
     "body_sections": [
       {
         "id": "warm-or-hot",
@@ -1836,7 +1836,8 @@
           "Visually inspect the accessible cord and plug for cuts, crushing, darkening, cracked insulation, or deformation.",
           "If there is no active hazard, leave the outlet unused until a licensed electrician evaluates it."
         ],
-        "callout": { "title": "Do not open or test the outlet yourself", "text": "Do not remove the faceplate, insert a tester into a damaged or hot receptacle, touch wiring, tighten terminals, replace the receptacle while energized, or reset a breaker repeatedly. Water, smoke, flame, active sparking, or melting calls for distance and emergency or qualified electrical help—not a closer inspection." }
+        "callout": { "title": "Do not open or test the outlet yourself", "text": "Do not remove the faceplate, insert a tester into a damaged or hot receptacle, touch wiring, tighten terminals, replace the receptacle while energized, or reset a breaker repeatedly. Water, smoke, flame, active sparking, or melting calls for distance and emergency or qualified electrical help—not a closer inspection." },
+        "link": { "before": "If sound is part of the warning pattern, use ", "label": "Why Does My Outlet Buzz?", "href": "/electrical/outlet-buzzing/", "after": " to separate noise from a plugged-in device from noise that appears to originate at the receptacle." }
       },
       {
         "id": "breaker-and-power",
@@ -2009,6 +2010,146 @@
       { "title": "Don't Overload Your Home", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/dont-overload-your-home/" },
       { "title": "Switch to Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/switch-to-safety/" },
       { "title": "Power Quality Reference Guide", "publisher": "Hydro One", "url": "https://www.hydroone.com/savingmoneyandenergy_/energysavingsforbusiness_/Documents/Power_Quality_Reference_Guide.pdf" }
+    ]
+  },
+  {
+    "title": "Why Does My Outlet Buzz?", "slug": "outlet-buzzing", "description": "A buzz near an outlet may come from a plug-in device or the receptacle itself. Learn how to separate the source and when to stop using the outlet.",
+    "primary_category": "electrical", "secondary_categories": [], "symptoms": ["noise", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
+    "published_date": "2026-09-04", "updated_date": "2026-09-04", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "search_keywords": ["why does my outlet buzz", "outlet buzzing", "electrical outlet buzzing", "outlet making buzzing noise", "wall outlet buzzing", "receptacle buzzing", "outlet humming", "buzzing sound from outlet", "outlet buzzes when something plugged in"],
+    "target_search_intent": "Help a homeowner determine whether buzzing, humming, sizzling, or vibration near a receptacle comes from a plugged-in device or the outlet area, recognize poor-contact, wear, arcing, heat, and load warning patterns, and choose safe electrical or device support without opening the box.",
+    "direct_answer": "A sound near an outlet does not always come from the receptacle. A plug-in power adapter, transformer, smart plug, surge protector, appliance, dimmer, or nearby device can produce or transmit a faint hum. But buzzing, sizzling, or crackling that appears to originate at the receptacle itself should not be ignored. Stop using it and arrange licensed-electrical evaluation, especially if the sound comes with warmth, burning odor, discoloration, a loose plug, intermittent power, sparks, or breaker trips. For active arcing, smoke, fire, or severe overheating, move away and use emergency help rather than touching or testing the outlet.",
+    "likely_causes": ["Noise from a plug-in adapter or electronic device", "Loose receptacle wiring connection", "Worn or damaged receptacle contacts", "Electrical arcing at a poor or damaged connection", "Heavy load exposing an existing connection problem", "Loose plug or poor plug-to-receptacle fit", "Nearby dimmer switch transformer or electronic control", "GFCI AFCI USB or smart-receptacle electronics requiring model-specific evaluation"],
+    "safe_checks": ["From a safe distance identify whether the sound is centered on the receptacle face the plug a power adapter or a nearby device.", "If there is no heat odor damage sparking or other warning sign turn the connected device off and unplug it by the plug to see whether the sound stops.", "Inspect the accessible plug cord and adapter externally for cracking darkening melting looseness or damage.", "Note whether the plug fits loosely or power cuts in and out without moving or wiggling it.", "Listen for a faint steady hum versus sharper buzzing crackling or sizzling without placing an ear against the outlet.", "Note whether the sound occurs only under load continues with nothing plugged in or appears with breaker trips flicker heat or odor.", "Leave the outlet unused and call an electrician when the receptacle appears to be the source.", "Do not remove the faceplate probe the slots pull the receptacle from the box or test live wiring."],
+    "professional_help": "Use a licensed electrician for confirmed or suspected receptacle-origin buzzing, loose plug fit, worn or damaged receptacles, intermittent power, suspected arcing, heat, discoloration, repeated trips, or noise with nothing plugged in. Use the device manufacturer's support or an appropriate appliance/electronics technician when the sound clearly follows one undamaged adapter or device and the receptacle shows no warning signs. For active arcing, smoke, flame, severe overheating, or fire, keep away and call emergency services.",
+    "related_articles": ["outlet-warm", "lights-flicker-when-appliance-turns-on"],
+    "image": {
+      "src": "/images/outlet-buzzing-source-check.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison of sound coming from a plug-in power adapter and sound appearing to come from the wall receptacle around a plug.",
+      "caption": "Conceptual illustration: First determine whether the sound follows the plug-in device or appears centered at the receptacle. The picture identifies possible source areas; it does not show internal wiring or diagnose arcing.",
+      "kind": "conceptual",
+      "after_section": "source-check"
+    },
+    "body_sections": [
+      {
+        "id": "source-check",
+        "heading": "Is the outlet actually making the noise?",
+        "paragraphs": [
+          "Sound can travel through a plug, cord, faceplate, wall cavity, or cabinet and make its source difficult to pinpoint. Start by observing from a safe distance rather than assuming the receptacle is at fault—or assuming a noisy adapter makes the outlet safe.",
+          "If there is no warmth, burning odor, discoloration, melting, sparking, crackling, loose fit, or intermittent power, switch the connected device off and unplug it by the plug. If the sound stops, the adapter or device becomes more relevant. If the receptacle still seems to buzz with nothing connected, leave it unused and arrange an electrician. Do not repeat this isolation step when any warning sign is present."
+        ],
+        "table": {
+          "headers": ["What changes the sound", "What that observation may mean"],
+          "rows": [
+            ["Noise stops when one adapter or device is safely unplugged", "The device, its plug, or the interaction under load becomes more relevant; inspect it externally and follow manufacturer support"],
+            ["Noise follows the same undamaged adapter to another suitable outlet", "The adapter is a more likely source; stop using it if the noise is strong, new, hot, damaged, or accompanied by odor"],
+            ["Noise remains with nothing plugged in", "A receptacle, wiring connection, nearby control, or sound transmitted through the wall needs qualified evaluation"],
+            ["Noise changes when the plug shifts or power cuts in and out", "Poor plug fit, worn contacts, or an unstable connection is possible; stop using the outlet rather than wiggling the plug"],
+            ["A nearby dimmer, smart device, power strip, or appliance is louder than the receptacle", "The apparent outlet noise may originate in that device; device-specific guidance matters"],
+            ["Sound comes with heat, odor, damage, sparks, or trips", "Treat the combination as an electrical warning and stop testing"]
+          ]
+        }
+      },
+      {
+        "id": "common-causes",
+        "heading": "What can cause buzzing near a receptacle?",
+        "paragraphs": ["Buzzing describes a sound, not a diagnosis. Several electrical and mechanical sources can sound similar, so the companion clues and confirmed source matter."],
+        "causes": [
+          { "heading": "A power adapter or electronic device is making the sound", "text": "Switching power supplies, small transformers, smart plugs, surge protectors, and appliance electronics can produce audible vibration or hum. Dell, for example, documents adapter-noise troubleshooting that separates the adapter from the computer and outlet. A faint device-specific sound does not prove a receptacle fault, but persistent, loud, new, hot, damaged, or burned-smelling equipment should be disconnected when safe and referred to its manufacturer." },
+          { "heading": "A receptacle wiring connection is loose or deteriorated", "text": "A loose terminal or conductor can create unstable contact, resistance heating, and arcing. CPSC fire investigations identify loose wire-to-receptacle connections as a recurring receptacle failure mechanism. Buzzing cannot confirm that condition from outside the wall, and the safe response is not to remove the cover—it is to stop using the outlet and have it de-energized and inspected by an electrician." },
+          { "heading": "The receptacle contacts are worn or damaged", "text": "The metal contacts inside a receptacle are supposed to grip plug blades firmly. Wear, distortion, heat damage, or mechanical damage can reduce contact pressure. A plug that sags, falls out, loses power, or feels unusually loose supports this path. Do not bend the plug blades, insert a so-called outlet tightener, or modify the slots." },
+          { "heading": "Arcing is occurring at a poor or damaged contact", "text": "An electrical arc can form when current crosses an unintended gap or unstable connection. It may produce sharper buzzing, crackling, sizzling, light, heat, or odor, but not every buzz proves arcing. CPSC and ESFI treat arcing and unusual electrical sounds as fire-warning conditions that deserve qualified evaluation." },
+          { "heading": "A heavy load is exposing an existing weakness", "text": "A space heater, hair dryer, vacuum, microwave, portable air conditioner, or other high-current device can make a poor contact or overloaded circuit show symptoms. A healthy receptacle should not be described as expected to buzz simply because the load is large. If the sound occurs only under heavy load, stop using that combination and have the connection, circuit, and device assessed." },
+          { "heading": "The plug fits poorly or is itself damaged", "text": "A loose, scorched, bent, cracked, or deformed plug may make inconsistent contact with the receptacle. CPSC reports show that plug and receptacle damage can be difficult to separate after overheating. Replace or service the damaged device as appropriate and have the receptacle checked rather than trying to improve contact by repositioning the cord." },
+          { "heading": "The sound comes from a nearby dimmer, switch, transformer, or control", "text": "A dimmer, LED driver, doorbell transformer, appliance control, or smart switch can transmit sound through a wall or faceplate. Pinpointing the location can redirect service, but it does not justify opening an electrical box. Keep future switch, dimmer, transformer, and light-fixture noise diagnoses separate from a confirmed receptacle symptom." },
+          { "heading": "A specialty receptacle contains electronics", "text": "GFCI, AFCI, USB, and smart receptacles may contain more components than a basic outlet. That does not make audible buzzing automatically normal. Check the exact manufacturer's instructions and arrange qualified evaluation for new, persistent, strong, or warning-sign noise; never defeat the protective function or keep resetting a device to silence it." }
+        ]
+      },
+      {
+        "id": "sound-patterns",
+        "heading": "What does the sound resemble?",
+        "paragraphs": ["Descriptions are subjective, and a quiet electrical fault can still matter. Use the sound only to choose the next safe response, not to name a failed part."],
+        "table": {
+          "headers": ["Sound pattern", "Useful interpretation"],
+          "rows": [
+            ["Faint, steady hum centered on an adapter", "May be device-specific; check whether it stops with that device and use manufacturer guidance"],
+            ["Buzz begins only when a load runs", "The device, plug fit, receptacle connection, or circuit under load may be involved; do not normalize it"],
+            ["Sharper buzzing, crackling, popping, or sizzling", "Poor contact or arcing becomes more concerning; stop using the outlet"],
+            ["Intermittent buzz with power cutting in and out", "An unstable connection or cycling device is possible; leave the outlet unused"],
+            ["Vibration that can be felt in a plug-in adapter", "The device may be the source, but heat, damage, odor, or increasing noise still calls for discontinuing it"],
+            ["Buzzing with warmth, burned odor, discoloration, or melting", "Treat as an urgent electrical warning rather than a sound-only question"]
+          ]
+        }
+      },
+      {
+        "id": "nothing-plugged-in",
+        "heading": "What if the outlet buzzes with nothing plugged in?",
+        "paragraphs": [
+          "Noise that remains after all connected equipment is removed is more suspicious for the receptacle, its wiring, an upstream or downstream connection, a nearby electronic control, or sound transmitted through the wall. An unused receptacle can still be energized and can serve as a connection point for other devices on the circuit.",
+          "Leave the receptacle unused and call a licensed electrician. Do not remove the faceplate, press an ear against it, insert a tester into a noisy or damaged outlet, or flip breakers repeatedly to experiment. Tell the electrician whether the noise is constant, load-related, or accompanied by changes elsewhere."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can check without opening the outlet",
+        "bullets": [
+          "Identify every item connected directly or through a power strip, surge protector, or smart plug.",
+          "From a safe distance, decide whether the sound is loudest at an adapter, plug, receptacle face, nearby switch, or appliance.",
+          "Turn off and unplug a device only when the plug and outlet are cool, intact, dry, and free of odor, sparking, or intermittent power.",
+          "Inspect the visible cord, plug, adapter, and faceplate for cracks, darkening, distortion, melting, or looseness.",
+          "Notice whether a plug sits firmly without pushing, bending, or wiggling it.",
+          "Record which device was operating, whether the sound began immediately or after time under load, and whether it stops when the device is removed.",
+          "Note breaker trips, light flicker, power loss, heat, burning odor, crackling, or sparks.",
+          "Keep the outlet unused when its condition is uncertain and give those observations to an electrician."
+        ],
+        "callout": { "title": "Keep the inspection outside the electrical box", "text": "Do not remove the outlet cover, pull the receptacle from the wall, probe voltage, insert tools, tighten terminals, touch conductors, replace breaker sizes, bypass GFCI or AFCI protection, or work inside a panel. A quiet circuit can still be energized." }
+      },
+      {
+        "id": "warmth-and-load",
+        "heading": "Buzzing plus heat changes the response",
+        "paragraphs": [
+          "A high-draw appliance can reveal a weak contact, but it does not excuse receptacle noise. Stop using the outlet when buzzing appears under load, particularly if the plug or faceplate becomes warm, the plug fits loosely, or the sound has grown stronger. Moving the device to a nearby outlet may place it on the same circuit and does not diagnose the original connection.",
+          "Do not install a larger breaker, add an adapter, or use an extension cord as a workaround. Breaker size and circuit capacity must match the installed wiring and equipment."
+        ],
+        "link": { "before": "If temperature is the main clue, use ", "label": "Why Is My Outlet Warm?", "href": "/electrical/outlet-warm/", "after": " for the specific heat, plug-fit, and stop-use distinctions." }
+      },
+      {
+        "id": "stop-using",
+        "heading": "When to stop using the outlet",
+        "paragraphs": ["Confirmed receptacle-origin noise deserves electrical evaluation even without dramatic damage. The following combinations make leaving it unused especially important:"],
+        "bullets": [
+          "Sizzling, crackling, popping, or strong buzzing from the receptacle",
+          "Burning, hot-plastic, or ozone-like odor",
+          "A warm or hot faceplate, plug, or wall area",
+          "Scorching, darkening, melted plastic, cracks, or visible damage",
+          "Sparks or visible arcing",
+          "A plug that fits loosely or loses power intermittently",
+          "Repeated breaker trips or unexplained partial power loss",
+          "Noise that rapidly worsens or remains with nothing plugged in"
+        ],
+        "callout": { "title": "Smoke, fire, active arcing, or severe heat requires distance", "text": "Do not touch the outlet, cord, device, or nearby breaker in the hazard area. Move people away and call emergency services for active fire, smoke, or an immediate electrical hazard. Never use water on energized electrical equipment." }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should investigate the sound?",
+        "subsections": [
+          { "heading": "Licensed electrician", "paragraphs": ["Start here when the receptacle appears to buzz, the outlet is loose or worn, the sound remains with nothing plugged in, power is intermittent, or there is heat, odor, damage, sparking, or repeated breaker behavior. The electrician can de-energize the circuit and evaluate the receptacle, connections, protection, and load."] },
+          { "heading": "Device manufacturer or appliance/electronics support", "paragraphs": ["Use model-specific support when the sound clearly follows one adapter, smart plug, surge protector, charger, or appliance and the outlet itself remains cool, intact, and quiet without it. Stop using the device rather than assuming the noise is harmless when it is new, loud, hot, damaged, or burned-smelling."] },
+          { "heading": "Emergency services", "paragraphs": ["Use emergency help for active fire, smoke, visible sustained arcing, or severe overheating. Do not keep testing the outlet while deciding which component failed."] }
+        ],
+        "link": { "before": "If the larger symptom is lights dimming or flickering when an appliance starts, compare that load pattern in ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": "." }
+      }
+    ],
+    "sources": [
+      { "title": "Don't Overload Your Home", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/dont-overload-your-home/" },
+      { "title": "Switch to Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/switch-to-safety/" },
+      { "title": "8 Signs You May Have a Problem with Your Electrical Wiring", "publisher": "UL Solutions", "url": "https://www.ul.com/insights/8-signs-you-may-have-problem-your-electrical-wiring" },
+      { "title": "What Causes Wiring Fires in Residences?", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/firejournal.pdf" },
+      { "title": "Preventing Home Fires: Arc Fault Circuit Interrupters", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/electronics-and-electrical/preventing-home-fires-arc-fault-circuit" },
+      { "title": "Electrical Outlet Safety Guide", "publisher": "Leviton", "url": "https://leviton.com/support/literature/blogs/electrical-outlet-safety-guide--warning-signs--when-to-replace-faqs" },
+      { "title": "How to Troubleshoot Noise Coming from the AC Adapter", "publisher": "Dell Support", "url": "https://www.dell.com/support/kbdoc/en-us/000130860/troubleshooting-ac-adapter-noise" }
     ]
   },
   {

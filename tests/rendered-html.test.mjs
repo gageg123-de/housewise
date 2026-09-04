@@ -400,3 +400,23 @@ test("dishwasher drying guide renders material distinctions, safe checks, schema
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dishwasher-drying-performance-factors\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("outlet-buzzing guide renders source distinctions, electrical stop conditions, schema, and visual", async () => {
+  const response = await render("/electrical/outlet-buzzing"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Outlet Buzz\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/outlet-buzzing\//);
+  assert.match(html, /Is the outlet actually making the noise\?/);
+  assert.match(html, /What if the outlet buzzes with nothing plugged in\?/);
+  assert.match(html, /When to stop using the outlet/);
+  assert.match(html, /Keep the inspection outside the electrical box/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-when-appliance-turns-on\/"/);
+  assert.match(html, /src="\/images\/outlet-buzzing-source-check\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/outlet-buzzing-source-check\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

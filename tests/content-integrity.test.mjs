@@ -519,6 +519,51 @@ test("appliance-triggered light-flicker guide preserves startup nuance and elect
   assert.equal(article.image.height, 1024);
 });
 
+test("outlet-buzzing guide distinguishes device noise from receptacle-origin electrical warnings", () => {
+  const article = registry.find((item) => item.slug === "outlet-buzzing");
+  const warmOutlet = registry.find((item) => item.slug === "outlet-warm");
+  const flicker = registry.find((item) => item.slug === "lights-flicker-when-appliance-turns-on");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Outlet buzzes,"));
+  const breakerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
+  assert.ok(article && warmOutlet && flicker);
+  assert.equal(article.published_date, "2026-09-04");
+  assert.equal(article.updated_date, "2026-09-04");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic?.includes(",published,"));
+  assert.ok(topic?.includes("/electrical/outlet-buzzing/"));
+  assert.ok(breakerTopic?.includes(",planned,"));
+  assert.notEqual(article.target_search_intent, warmOutlet.target_search_intent);
+  assert.notEqual(article.target_search_intent, flicker.target_search_intent);
+  assert.ok(article.body_sections.some((section) => section.id === "source-check" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 8));
+  assert.ok(article.body_sections.some((section) => section.id === "sound-patterns" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "nothing-plugged-in"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "stop-using" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 3));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/outlet-warm/"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
+  assert.ok(warmOutlet.related_articles.includes("outlet-buzzing"));
+  assert.ok(warmOutlet.body_sections.some((section) => section.link?.href === "/electrical/outlet-buzzing/"));
+  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-when-appliance-turns-on"]);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
+  assert.ok(article.sources.some((source) => source.publisher === "UL Solutions"));
+  assert.ok(article.sources.some((source) => source.publisher === "Dell Support"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/outlet-buzzing-source-check.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /does not prove a receptacle fault|does not prove a receptacle fault/i);
+  assert.match(body, /not every buzz proves arcing/i);
+  assert.match(body, /healthy receptacle should not be described as expected to buzz/i);
+  assert.match(body, /does not make audible buzzing automatically normal/i);
+  assert.match(body, /Do not remove the outlet cover, pull the receptacle from the wall, probe voltage/i);
+  assert.doesNotMatch(body, /you can tighten the wiring|replace it with a larger breaker|open the electrical box to inspect/i);
+});
+
 test("ceiling-fan guide separates blade imbalance from ceiling-mount movement", () => {
   const fan = registry.find((item) => item.slug === "ceiling-fan-wobbles");
   assert.ok(fan);

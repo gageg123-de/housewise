@@ -4,6 +4,14 @@ import { readFile } from "node:fs/promises";
 
 const readProjectFile = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
+test("article reality remains a mandatory pre-draft publication gate", async () => {
+  const agents = await readProjectFile("AGENTS.md");
+  assert.match(agents, /Article-reality preflight \(mandatory\)/);
+  assert.match(agents, /verify from authoritative, manufacturer, utility, code, safety, or otherwise reliable sources/i);
+  assert.match(agents, /Search opportunity never overrides factual reality/i);
+  assert.match(agents, /If the premise fails this gate, stop publication/i);
+});
+
 test("mobile containment, table containment, and article rail breakpoint remain protected", async () => {
   const css = await readProjectFile("app/globals.css");
   assert.match(css, /html, body\s*\{[^}]*overflow-x:\s*clip[^}]*overscroll-behavior-x:\s*none/s);
