@@ -1558,7 +1558,7 @@
     "likely_causes": ["Normal differences among dishwasher drying systems", "Empty or disabled rinse-aid dispenser", "Cycle or drying option selection", "Plastic items cooling faster than glass ceramic or metal", "Loading that traps or pools water", "Incoming water conditions outside model requirements", "Heating component problem on models that use one", "Temperature sensor thermostat or control issue", "Vent fan or automatic-door feature issue where equipped", "Interrupted or incomplete cycle"],
     "safe_checks": ["Confirm the selected cycle and drying option in the model's manual.", "Check the rinse-aid indicator or reservoir and use only the product and setting the manufacturer recommends.", "Compare plastic items with glass ceramic and metal items rather than judging the whole load from plastics alone.", "Angle cups bowls lids and recessed bases so clean rinse water can drain instead of pooling.", "Note whether performance changed suddenly or only on quick eco or no-heat cycles.", "Confirm household hot water is behaving normally without raising the water-heater setting solely for the dishwasher.", "Note error codes unusual noises or an incomplete cycle.", "Look for smoke burning odor breaker trips unusual heat or water reaching electrical areas and stop use if any are present."],
     "professional_help": "Arrange appliance service when the dishwasher previously dried well and suddenly stopped, the entire load stays unusually wet despite correct settings and rinse aid, the heated-dry option no longer changes results, an error code appears, or a model-dependent heater, sensor, control, vent, fan, or automatic-door feature is suspected. Stop using the dishwasher and seek appropriate appliance or electrical help for smoke, sparking, burning electrical odor, breaker trips, unusual overheating, melted parts, or water reaching electrical components.",
-    "related_articles": ["dryer-taking-two-cycles", "dryer-smells-like-burning"],
+    "related_articles": ["dishwasher-not-cleaning-dishes", "dryer-taking-two-cycles", "dryer-smells-like-burning"],
     "image": {
       "src": "/images/dishwasher-drying-performance-factors.webp",
       "width": 1536,
@@ -1671,8 +1671,9 @@
         "subsections": [
           { "heading": "Call an appliance technician", "paragraphs": ["Arrange service when heated dry no longer changes the result, the machine stays much cooler than before, an error code repeats, the cycle does not finish, or a model-dependent heater, thermostat, sensor, control, vent, fan, or automatic-door system may not be working."] },
           { "heading": "Stop use for electrical or overheating signs", "paragraphs": ["Leave the dishwasher off for smoke, sparking, a burning-electrical smell, melted parts, repeated breaker trips, unusual overheating, or water reaching electrical components. Do not repeat a cycle to reproduce those symptoms; use qualified appliance or electrical help as appropriate."] },
-          { "heading": "Keep other dishwasher symptoms separate", "paragraphs": ["An active leak, standing water that does not drain, poor cleaning, bad odor, residue, filling trouble, or grinding noise needs its own diagnosis. Those symptoms can coexist with wet dishes, but they are not explained by drying performance alone."] }
-        ]
+          { "heading": "Keep other dishwasher symptoms separate", "paragraphs": ["An active leak, standing water that does not drain, bad odor, residue, filling trouble, or grinding noise needs its own diagnosis. Those symptoms can coexist with wet dishes, but they are not explained by drying performance alone."] }
+        ],
+        "link": { "before": "If food, grease, or soil remains after a completed wash cycle, use ", "label": "Why Is My Dishwasher Not Cleaning Dishes?", "href": "/appliances/dishwasher-not-cleaning-dishes/", "after": " for the separate wash-performance problem." }
       }
     ],
     "sources": [
@@ -1682,6 +1683,132 @@
       { "title": "Dishwasher Not Drying", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/not-drying-dishwasher-CT10000009-20150933408322" },
       { "title": "Dishwasher Condensation Drying", "publisher": "Samsung Support", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10007201/" },
       { "title": "Dishwasher Poor Drying", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=17451" }
+    ]
+  },
+  {
+    "title": "Why Is My Dishwasher Not Cleaning Dishes?", "slug": "dishwasher-not-cleaning-dishes", "description": "Food or grease left after a completed cycle can come from loading, blocked spray paths, filter or spray-arm buildup, detergent, cycle selection, water conditions, or a wash-system problem.",
+    "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
+    "published_date": "2026-09-05", "updated_date": "2026-09-05", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
+    "search_keywords": ["dishwasher not cleaning dishes", "why is my dishwasher not cleaning dishes", "dishwasher leaves food on dishes", "dishes still dirty after dishwasher", "dishwasher not washing properly", "dishwasher leaves dishes greasy", "dishwasher top rack not cleaning", "dishwasher bottom rack not cleaning", "food left on dishes after dishwasher", "dishwasher cleaning poorly"],
+    "target_search_intent": "Help a homeowner determine why food, grease, or soil remains on dishes after a completed dishwasher cycle, safely check loading, spray paths, user-serviceable filters, detergent, cycles, and water conditions, and recognize when a fill, circulation, heating, or rack-delivery problem needs appliance service.",
+    "direct_answer": "When a dishwasher finishes but leaves food, grease, or soil behind, start with the pattern. Crowded loading, a blocked spray arm, clogged spray-arm holes, a dirty user-serviceable filter, unsuitable detergent, or a cycle that is too light can all weaken cleaning. If nearly everything suddenly comes out dirty despite correct loading and routine maintenance, low water fill, weak circulation, inadequate wash temperature, or another component problem becomes more plausible. One dirty rack, greasy dishes, and debris redeposited across the load are different clues—not proof of one failed part.",
+    "likely_causes": ["Crowded or incorrectly positioned dishes blocking spray and detergent", "Spray arm obstructed or spray openings clogged", "User-serviceable filter loaded with debris", "Detergent amount type storage or dispenser problem", "Cycle too light for the soil level", "Water conditions outside the model's requirements", "Low water fill or inlet-system problem", "Weak circulation from a pump or related wash-system fault", "Rack-specific water-delivery problem", "Hard-water mineral buildup or excessive soil redeposition"],
+    "safe_checks": ["Identify whether the whole load or only one rack or area stays dirty.", "Reload dishes so spray arms can rotate and water paths are not blocked.", "Inspect and clean only the filter and spray arms the manufacturer identifies as user-serviceable, with the dishwasher off.", "Confirm detergent is fresh suitable for the machine and placed in an unobstructed dispenser.", "Match the cycle to the load and follow the manual's scraping or pre-rinsing guidance.", "Note whether household hot water or water pressure has changed without adjusting the water heater to an unsafe setting.", "Record error codes unusual pump sounds weak spray or a cycle that does not complete.", "Stop use for smoke sparking burning odor breaker trips unusual overheating or water reaching electrical parts."],
+    "professional_help": "Arrange appliance service when correct loading, the intended cycle, fresh detergent, and model-approved filter or spray-arm care do not restore cleaning; when one rack repeatedly receives little wash action; when the machine fills abnormally, sounds as though circulation is weak, shows an error, or no longer heats or completes cycles as designed. Stop using it and seek appropriate appliance or electrical help for smoke, sparking, a burning-electrical smell, breaker trips, unusual overheating, or water reaching electrical components.",
+    "related_articles": ["dishwasher-not-drying-dishes"],
+    "image": {
+      "src": "/images/dishwasher-cleaning-performance-factors.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual dishwasher rack comparing open spray paths around well-spaced dishes with a crowded area that obstructs water from the lower spray arm.",
+      "caption": "Conceptual illustration: open spray paths help wash water reach dish surfaces, while crowding, nesting, and tall items can block coverage. Rack and spray-system layouts vary by model.",
+      "kind": "conceptual",
+      "after_section": "identify-the-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "identify-the-pattern",
+        "heading": "What is the dishwasher failing to clean?",
+        "paragraphs": [
+          "Do not judge the machine from one spoon with dried oatmeal welded to it. The useful clue is where soil remains and what kind of residue it is. A whole load covered in food points in a different direction from one crowded corner or one rack that consistently misses the wash.",
+          "Confirm that the cycle completed and that the complaint is actually cleaning. Clear water droplets on otherwise clean dishes belong to drying performance. Standing water that never drained, an active leak, a bad odor, or a white mineral film can affect results, but each has a different primary diagnosis."
+        ],
+        "table": {
+          "headers": ["Cleaning pattern", "What it may suggest"],
+          "rows": [
+            ["Food remains on dishes throughout both racks", "Loading, cycle, detergent, water conditions, low fill, weak circulation, or an interrupted cycle"],
+            ["Only the top rack cleans poorly", "Tall items below, an obstructed upper spray path, rack connection, or model-specific water-delivery problem"],
+            ["Only the bottom rack cleans poorly", "A blocked lower arm, crowded lower rack, large cookware, or reduced lower spray coverage"],
+            ["Dishes feel greasy", "Cycle and temperature conditions, detergent, heavy soil, blocked spray, or weak circulation"],
+            ["Small food particles appear on otherwise washed items", "Filter maintenance, excessive loose soil, blocked spray, or debris being recirculated"],
+            ["One item or one corner stays dirty", "Position, nesting, a shadowed spray path, or food that dried onto that surface before washing"]
+          ]
+        }
+      },
+      {
+        "id": "how-cleaning-works",
+        "heading": "How the wash system is supposed to clean",
+        "paragraphs": [
+          "A dishwasher combines water, detergent, time, temperature, and mechanical spray action. Water enters the tub, a circulation system sends it through rotating spray arms, and filters or screens manage food particles according to the machine's design. The cycle then drains and repeats portions of that process before rinsing.",
+          "The details vary. Some machines have a filter the owner removes and rinses; others use a different filtration or disposer arrangement. Some have multiple rack-specific spray devices. That is why the model manual—not a generic video—is the authority for routine filter, arm, and loading care."
+        ],
+        "callout": { "title": "A completed cycle can still have weak wash action", "text": "The control reaching “complete” only shows that its programmed sequence ended. It does not prove that every spray path was open, enough water circulated, the detergent released properly, or the selected cycle matched the soil." }
+      },
+      {
+        "id": "common-causes",
+        "heading": "Common reasons a dishwasher leaves dishes dirty",
+        "paragraphs": ["Begin with conditions you can observe without opening the appliance. Internal component faults become more credible after loading, cycle, detergent, and manufacturer-approved maintenance have been checked."],
+        "causes": [
+          { "heading": "Dishes are blocking the spray path", "text": "Large pans, cutting boards, tall utensils, and crowded bowls can prevent a spray arm from turning or cast a water shadow over other items. Nested spoons and overlapping plates hide surfaces from both water and detergent. Reload according to the rack diagram, then gently confirm that visible spray arms can rotate freely with the dishwasher off." },
+          { "heading": "Spray-arm openings are restricted", "text": "Food particles or mineral buildup can reduce or redirect the jets that make an arm rotate and cover the rack. Inspect only removable or user-serviceable arms described in the manual. Do not force an arm off, enlarge its holes, or run the machine with parts removed." },
+          { "heading": "The user-serviceable filter needs cleaning", "text": "A debris-loaded filter can interfere with water movement and allow particles to return to the load. Follow the model's interval and removal instructions; filter locations and designs are not universal. A damaged filter or debris that cannot be safely reached is a service issue, not an invitation to dismantle the sump." },
+          { "heading": "Detergent is not doing its part", "text": "Old, damp, poorly stored, unsuitable, or incorrectly measured detergent can clean weakly. A tall item may also block the dispenser door. Use the detergent type and amount recommended for the model and local water conditions. More detergent is not automatically better and can create its own residue." },
+          { "heading": "The chosen cycle is too light for the load", "text": "Quick, delicate, or energy-saving programs may use different time, temperature, or spray patterns than a heavy or auto cycle. Match the cycle to baked-on or greasy soil using the manual. This does not mean the longest cycle is required for every load." },
+          { "heading": "Water conditions are not supporting the cycle", "text": "Wash performance can suffer if incoming water is outside the appliance's requirements, household hot water behavior has changed, or the machine is not filling as designed. Water hardness can also affect detergent performance and leave mineral-related film. Do not raise the water-heater setting or change plumbing pressure as a trial; use the manufacturer's requirements and scald-safe household guidance." },
+          { "heading": "The dishwasher is not filling with enough water", "text": "An inlet restriction, supply issue, float or sensor problem, or valve fault can leave the circulation system short of water. Clues may include a changed fill sound, unusually dry areas after the wash starts, an error code, or poor results everywhere. Do not bypass a float or test an energized valve." },
+          { "heading": "Wash circulation is weak", "text": "A circulation pump, diverter, seal, or related wash-system problem can reduce pressure or fail to send water where the cycle expects it. A new hum, grinding sound, unusually quiet wash phase, one consistently neglected rack, or a sudden whole-load decline supports professional evaluation, but sound alone cannot name the failed part." },
+          { "heading": "A rack-specific delivery path is not connecting", "text": "On some models, upper-rack tubes or manifold connections must align when the rack is pushed in. Adjustable-rack position, a displaced seal, or an internal delivery fault can leave one level dirty. Check only the rack position and connections the manual identifies; do not disassemble the water path." },
+          { "heading": "Routine cleaning has fallen behind", "text": "Grease, mineral scale, labels, seeds, and food debris can collect in user-accessible filters, arms, seals, and tub areas. Use only model-approved cleaning steps and products. Never mix cleaning chemicals, and do not assume a cleaning product can repair weak filling, circulation, or heating." }
+        ]
+      },
+      {
+        "id": "rack-clues",
+        "heading": "What top-rack and bottom-rack patterns can tell you",
+        "subsections": [
+          { "heading": "Only the top rack is dirty", "paragraphs": ["Look for tall items below that block a middle or upper arm, an adjustable rack that is not seated as the manual describes, or a model-specific feed connection that does not align. If the pattern repeats with an open rack and correct position, a diverter, pump, or delivery problem may need service."] },
+          { "heading": "Only the bottom rack is dirty", "paragraphs": ["Check whether platters, pans, handles, or dropped utensils prevent the lower arm from rotating. If the arm and loading are clear but the lower rack repeatedly receives little action, document the pattern for a technician rather than guessing at pump pressure."] },
+          { "heading": "Grease remains but loose food is gone", "paragraphs": ["Detergent, cycle choice, soil load, wash temperature, and circulation all affect grease removal. Avoid diagnosing the heater from this clue alone. Confirm the manual's detergent and cycle guidance before treating it as an internal fault."] },
+          { "heading": "Debris moves from one dish to another", "paragraphs": ["Loose particles can point toward filter maintenance, excessive food scraps, restricted drainage during the cycle, or weak spray that fails to carry soil away. Scrape large solids as the manufacturer recommends, but routine scraping is different from prewashing every dish clean."] }
+        ]
+      },
+      {
+        "id": "detergent-water-cycle",
+        "heading": "Detergent, water, and cycle clues work together",
+        "paragraphs": [
+          "Changing one factor can expose another. A shorter cycle may be adequate with fresh detergent and light soil but struggle with a crowded load of dried-on food. Hard water may require the detergent and rinse-aid approach described by the appliance maker, while soft water may need less product. A dispenser blocked by a cutting board can make a perfectly good detergent look ineffective.",
+          "Use the manual's instructions for scraping, detergent form, dispenser filling, rinse aid, cycle, and water requirements. Avoid improvised soap, hand-dishwashing liquid, excessive detergent, and chemical mixtures. If household water temperature or pressure changed recently, treat that as context for service—not a reason to create a scald or plumbing hazard."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Confirm the wash cycle completed and note any code or interruption.",
+          "Photograph the rack before unloading so the pattern and possible spray obstructions are visible.",
+          "With the dishwasher off, reload items so nothing prevents the visible spray arms from rotating.",
+          "Separate nested bowls, spoons, and overlapping plates, and face soiled surfaces toward the spray zones described in the manual.",
+          "Check that the detergent dispenser is not blocked and that the detergent is fresh, dry, and recommended for the machine.",
+          "Select a cycle appropriate for the soil instead of using a quick or light program for dried-on or greasy loads.",
+          "Inspect and clean only the filter, screen, or spray arm the owner documentation identifies as user-serviceable.",
+          "Note whether the top rack, bottom rack, or whole tub is affected and whether the wash phase sounds different than before.",
+          "Confirm household hot water and supply conditions have not obviously changed without increasing temperature or altering plumbing.",
+          "Check for smoke, burning odor, breaker trips, leaking near electrical areas, or unusual heat and stop use if any appears."
+        ],
+        "callout": { "title": "Keep hands out of the powered wash system", "text": "Do not remove service panels, bypass the door switch or float, test live voltage, reach near a moving spray system, probe a heater or pump, or dismantle the sump. Turn the dishwasher off before routine owner-approved cleaning, and use qualified service for internal diagnosis." }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When appliance service makes sense",
+        "paragraphs": [
+          "Service is reasonable when both racks stay dirty after correct loading, the intended cycle, fresh detergent, and model-approved filter or spray-arm cleaning. It is also warranted when one rack repeatedly receives little spray, the fill or wash sound changes, an error repeats, the cycle does not finish, or performance suddenly declines after months of normal operation.",
+          "A technician can evaluate fill level, inlet operation, circulation pressure, pump and diverter behavior, heating where the wash design uses it, sensors, and controls without guessing from one dirty load. Provide photos of the loading pattern, the model number, error codes, and whether the problem affects one rack or the whole machine."
+        ],
+        "subsections": [
+          { "heading": "Stop use for electrical or overheating signs", "paragraphs": ["Leave the dishwasher off for smoke, sparking, a burning-electrical smell, melted parts, repeated breaker trips, unusual overheating, or water reaching electrical components. Do not run another diagnostic cycle under those conditions; seek qualified appliance or electrical help as appropriate."] },
+          { "heading": "Keep drying and other symptoms separate", "paragraphs": ["Food and grease left after washing define a cleaning problem. Clear water left on otherwise clean items is a drying issue. Standing water, an active leak, odor, white residue, fill failure, or grinding noise may coexist but should not be folded into this diagnosis."] }
+        ],
+        "link": { "before": "If the load is clean but remains wet after the cycle, use ", "label": "Why Is My Dishwasher Not Drying Dishes?", "href": "/appliances/dishwasher-not-drying-dishes/", "after": " for material, rinse-aid, cycle, loading, and drying-system clues." }
+      }
+    ],
+    "sources": [
+      { "title": "Dishwasher Not Cleaning Dishes", "publisher": "Bosch Home Appliances", "url": "https://www.bosch-home.com/us/owner-support/get-support/support-selfhelp-dishwasher-not-cleaning-dishes" },
+      { "title": "How to Clean Dishwasher Spray Arms", "publisher": "Bosch Home Appliances", "url": "https://www.bosch-home.com/us/experience-bosch/heart-of-the-home/tips-and-tricks/all-articles/how-to-clean-dishwasher-spray-arms" },
+      { "title": "Dishwasher Use and Care Manual", "publisher": "Bosch Home Appliances", "url": "https://media3.bosch-home.com/Documents/9001238307_B.pdf" },
+      { "title": "Dishes Are Still Dirty After a Dishwasher Cycle", "publisher": "Samsung Support", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10000118/" },
+      { "title": "Dishwasher Detergent Does Not Dispense", "publisher": "Samsung Support", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10007107/" },
+      { "title": "Why Your LG Dishwasher Isn't Cleaning Dishes Well and How to Fix It", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/why-your-lg-dishwasher-isnt-cleaning-dishes-well-and-how-to-fix-it--20155370301554" },
+      { "title": "Dishwasher Spray Arm Maintenance", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/lg-dishwasher-spray-arm-maintenance--1366644956160" },
+      { "title": "Dishwasher Water Too Hot or Too Cold", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/dishwasher-water-too-hot-or-too-cold-CT10000009-20150995684577" }
     ]
   },
   {

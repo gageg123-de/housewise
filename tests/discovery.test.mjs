@@ -33,8 +33,10 @@ test("Problem Finder choices are contextual to the selected location", () => {
   const kitchen = getFinderSymptomOptions("kitchen");
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-drying"));
+  assert.ok(kitchen.some((item) => item.value === "dishwasher-cleaning"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "appliance-light-flicker"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-drying"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-cleaning"));
 
   const laundry = getFinderSymptomOptions("laundry");
   assert.ok(laundry.some((item) => item.value === "dryer-burning-smell"));
@@ -57,6 +59,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "outlet-buzzing")[0].article.slug, "outlet-buzzing");
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
+  assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-cleaning")[0].article.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -94,6 +97,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "outlet-buzzing"],
     ["kitchen", "appliance-light-flicker"],
     ["kitchen", "dishwasher-drying"],
+    ["kitchen", "dishwasher-cleaning"],
     ["laundry", "appliance-behavior"],
     ["laundry", "dryer-burning-smell"],
     ["attic", "moisture"],
@@ -238,6 +242,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dishwasher dishes still wet", "dishwasher-not-drying-dishes"],
     ["dishwasher not drying after cycle", "dishwasher-not-drying-dishes"],
     ["dishwasher not drying properly", "dishwasher-not-drying-dishes"],
+    ["dishwasher not cleaning dishes", "dishwasher-not-cleaning-dishes"],
+    ["why is my dishwasher not cleaning dishes", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher leaves food on dishes", "dishwasher-not-cleaning-dishes"],
+    ["dishes still dirty after dishwasher", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher not washing properly", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher leaves dishes greasy", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher top rack not cleaning", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher bottom rack not cleaning", "dishwasher-not-cleaning-dishes"],
     ["dryer takes two cycles", "dryer-taking-two-cycles"],
     ["dryer not drying clothes", "dryer-taking-two-cycles"],
     ["dryer takes forever to dry", "dryer-taking-two-cycles"],
@@ -248,8 +260,12 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const [query, expected] of cases) assert.equal(searchArticles(registry, query)[0]?.slug, expected, query);
   assert.deepEqual(searchArticles(registry, "yard standing water"), []);
   assert.notEqual(searchArticles(registry, "lights flicker randomly")[0]?.slug, "lights-flicker-when-appliance-turns-on");
-  assert.notEqual(searchArticles(registry, "dishwasher not cleaning dishes")[0]?.slug, "dishwasher-not-drying-dishes");
+  assert.equal(searchArticles(registry, "dishwasher not cleaning dishes")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.notEqual(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-drying-dishes");
+  assert.notEqual(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-cleaning-dishes");
+  assert.notEqual(searchArticles(registry, "dishwasher leaking")[0]?.slug, "dishwasher-not-cleaning-dishes");
+  assert.notEqual(searchArticles(registry, "dishwasher smells bad")[0]?.slug, "dishwasher-not-cleaning-dishes");
+  assert.equal(searchArticles(registry, "dishwasher not drying dishes")[0]?.slug, "dishwasher-not-drying-dishes");
   assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
   assert.equal(searchArticles(registry, "outlet warm")[0]?.slug, "outlet-warm");
   assert.equal(searchArticles(registry, "lights flicker when appliance starts")[0]?.slug, "lights-flicker-when-appliance-turns-on");

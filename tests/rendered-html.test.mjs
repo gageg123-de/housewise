@@ -401,6 +401,25 @@ test("dishwasher drying guide renders material distinctions, safe checks, schema
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 
+test("dishwasher cleaning guide renders symptom patterns, safe checks, reciprocal link, schema, and visual", async () => {
+  const response = await render("/appliances/dishwasher-not-cleaning-dishes"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Dishwasher Not Cleaning Dishes\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dishwasher-not-cleaning-dishes\//);
+  assert.match(html, /What is the dishwasher failing to clean\?/);
+  assert.match(html, /Common reasons a dishwasher leaves dishes dirty/);
+  assert.match(html, /What top-rack and bottom-rack patterns can tell you/);
+  assert.match(html, /Keep hands out of the powered wash system/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-drying-dishes\/"/);
+  assert.match(html, /src="\/images\/dishwasher-cleaning-performance-factors\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dishwasher-cleaning-performance-factors\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
 test("outlet-buzzing guide renders source distinctions, electrical stop conditions, schema, and visual", async () => {
   const response = await render("/electrical/outlet-buzzing"); const html = await response.text();
   assert.equal(response.status, 200);

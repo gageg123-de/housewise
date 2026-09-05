@@ -418,13 +418,51 @@ test("dishwasher drying guide separates normal wet plastics from whole-load dryi
   assert.equal(article.image.kind, "conceptual");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
-  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "dryer-smells-like-burning"]);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dryer-taking-two-cycles", "dryer-smells-like-burning"]);
   const body = JSON.stringify(article.body_sections);
   assert.match(body, /plastic is the classic exception|plastic items cool too quickly/i);
   assert.match(body, /rinse aid lowers water's surface tension/i);
   assert.match(body, /do not raise the water-heater temperature solely as an experiment/i);
   assert.match(body, /do not remove access panels, test live voltage/i);
   assert.doesNotMatch(body, /remove the heating element|bypass the door switch|set the water heater to \d+/i);
+});
+
+test("dishwasher cleaning guide passes the reality gate and preserves neighboring dishwasher intents", () => {
+  const article = registry.find((item) => item.slug === "dishwasher-not-cleaning-dishes");
+  const cleaningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher does not clean dishes,"));
+  const drying = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-05");
+  assert.equal(article.updated_date, "2026-09-05");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(cleaningTopic?.includes(",published,"));
+  assert.ok(cleaningTopic?.includes("/appliances/dishwasher-not-cleaning-dishes/"));
+  assert.match(article.target_search_intent, /food, grease, or soil remains on dishes after a completed dishwasher cycle/i);
+  assert.ok(article.body_sections.some((section) => section.id === "identify-the-pattern" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "how-cleaning-works" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 10));
+  assert.ok(article.body_sections.some((section) => section.id === "rack-clues" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.bullets?.length === 10 && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "when-to-call" && section.subsections?.length === 2));
+  assert.ok(article.sources.some((source) => source.publisher === "Bosch Home Appliances"));
+  assert.ok(article.sources.some((source) => source.publisher === "Samsung Support"));
+  assert.ok(article.sources.some((source) => source.publisher === "LG Support"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/dishwasher-cleaning-performance-factors.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-drying-dishes"]);
+  assert.ok(drying.related_articles.includes(article.slug));
+  const body = JSON.stringify(article.body_sections);
+  const dryingBody = JSON.stringify(drying.body_sections);
+  assert.match(body, /spray path|spray-arm openings/i);
+  assert.match(body, /user-serviceable filter/i);
+  assert.match(body, /do not raise the water-heater setting|without increasing temperature/i);
+  assert.match(body, /do not remove service panels, bypass the door switch or float, test live voltage/i);
+  assert.match(body, /If the load is clean but remains wet after the cycle/i);
+  assert.match(dryingBody, /If food, grease, or soil remains after a completed wash cycle/i);
+  assert.doesNotMatch(body, /remove the circulation pump|bypass the float|set the water heater to \d+/i);
 });
 
 test("musty-garage guide preserves garage odor intent and avoids treating smell as a mold diagnosis", () => {
