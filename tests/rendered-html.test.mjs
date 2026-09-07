@@ -439,3 +439,23 @@ test("outlet-buzzing guide renders source distinctions, electrical stop conditio
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/outlet-buzzing-source-check\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+test("sink drain leak guide renders the highest-wet-point framework, safety, schema, and visual", async () => {
+  const response = await render("/plumbing/sink-leaking-from-drain"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Sink Leaking From the Drain\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/sink-leaking-from-drain\//);
+  assert.match(html, /First, determine whether the drain is actually leaking/);
+  assert.match(html, /Find the highest wet point—not the lowest drip/);
+  assert.match(html, /Where is the water starting\?/);
+  assert.match(html, /Four common leak-finding mistakes/);
+  assert.match(html, /Avoid force and improvised sealants/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
+  assert.match(html, /src="\/images\/sink-drain-leak-locations\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sink-drain-leak-locations\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});

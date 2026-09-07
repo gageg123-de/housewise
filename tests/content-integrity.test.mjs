@@ -682,3 +682,34 @@ test("air-handler sweating guide owns cabinet condensation without absorbing adj
   }
   assert.match(topics, /^Air handler sweating,why is my air handler sweating,hvac,moisture,whole-house,diagnostic,published,high,\/hvac\/air-handler-sweating\//m);
 });
+
+test("sink drain leak guide uses location and timing without absorbing supply or sink-drainage intents", () => {
+  const article = registry.find((item) => item.slug === "sink-leaking-from-drain");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Sink leaks from drain,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-07");
+  assert.equal(article.updated_date, "2026-09-07");
+  assert.equal(article.primary_category, "plumbing");
+  assert.deepEqual(article.room_or_location, ["bathroom", "kitchen"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/sink-leaking-from-drain/"));
+  assert.ok(article.body_sections.some((section) => section.id === "is-it-the-drain" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "highest-wet-point" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "where-water-starts" && section.subsections?.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "timing-clues" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "common-mistakes" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "kitchen-vs-bathroom"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.equal(article.image.src, "/images/sink-drain-leak-locations.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.ok(article.sources.some((source) => source.publisher === "Oatey"));
+  assert.ok(article.sources.some((source) => source.publisher === "Moen Solutions"));
+  assert.ok(article.sources.some((source) => source.publisher === "Kohler"));
+  assert.ok(article.sources.some((source) => source.publisher === "Delta Faucet"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /highest wet point/i);
+  assert.match(body, /washer—not tape wrapped around the threads—makes the water seal/i);
+  assert.match(body, /do not.*tighten everything blindly/i);
+  assert.match(body, /Kitchen and bathroom sink drains are not identical/i);
+});

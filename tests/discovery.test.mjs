@@ -15,6 +15,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "toilet-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
+  assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
   assert.ok(!bathroom.some((item) => item.value === "pest-activity"));
 
@@ -34,6 +35,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-drying"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-cleaning"));
+  assert.ok(kitchen.some((item) => item.value === "sink-drain-leak"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "appliance-light-flicker"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-drying"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-cleaning"));
@@ -48,6 +50,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-gurgling")[0].article.slug, "toilet-gurgles-randomly");
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-water-level")[0].article.slug, "toilet-water-rises-when-another-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
+  assert.equal(rankFinderArticles(registry, "bathroom", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "attic", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
@@ -60,6 +63,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-cleaning")[0].article.slug, "dishwasher-not-cleaning-dishes");
+  assert.equal(rankFinderArticles(registry, "kitchen", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
@@ -250,6 +254,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dishwasher leaves dishes greasy", "dishwasher-not-cleaning-dishes"],
     ["dishwasher top rack not cleaning", "dishwasher-not-cleaning-dishes"],
     ["dishwasher bottom rack not cleaning", "dishwasher-not-cleaning-dishes"],
+    ["sink leaking from drain", "sink-leaking-from-drain"],
+    ["sink drain leaking", "sink-leaking-from-drain"],
+    ["bathroom sink leaking from drain", "sink-leaking-from-drain"],
+    ["kitchen sink leaking from drain", "sink-leaking-from-drain"],
+    ["sink leaking underneath when draining", "sink-leaking-from-drain"],
+    ["sink tailpiece leaking", "sink-leaking-from-drain"],
+    ["leak at sink drain pipe", "sink-leaking-from-drain"],
+    ["water leaking from drain under sink", "sink-leaking-from-drain"],
     ["dryer takes two cycles", "dryer-taking-two-cycles"],
     ["dryer not drying clothes", "dryer-taking-two-cycles"],
     ["dryer takes forever to dry", "dryer-taking-two-cycles"],
@@ -267,6 +279,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.notEqual(searchArticles(registry, "dishwasher smells bad")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(searchArticles(registry, "dishwasher not drying dishes")[0]?.slug, "dishwasher-not-drying-dishes");
   assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
+  for (const query of ["sink supply line leaking", "faucet leaking under sink", "sink drains slowly", "sink gurgles", "dishwasher leaking", "garbage disposal leaking"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "sink-leaking-from-drain", query);
+  }
   assert.equal(searchArticles(registry, "outlet warm")[0]?.slug, "outlet-warm");
   assert.equal(searchArticles(registry, "lights flicker when appliance starts")[0]?.slug, "lights-flicker-when-appliance-turns-on");
 });
