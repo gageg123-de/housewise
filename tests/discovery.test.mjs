@@ -42,7 +42,9 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
   const laundry = getFinderSymptomOptions("laundry");
   assert.ok(laundry.some((item) => item.value === "dryer-burning-smell"));
+  assert.ok(laundry.some((item) => item.value === "dryer-shuts-off"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dryer-burning-smell"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dryer-shuts-off"));
 });
 
 test("Problem Finder ranks exact location and symptom matches without unrelated leakage", () => {
@@ -66,6 +68,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "kitchen", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
+  assert.equal(rankFinderArticles(registry, "laundry", "dryer-shuts-off")[0].article.slug, "dryer-keeps-shutting-off");
   assert.deepEqual(rankFinderArticles(registry, "yard", "drainage"), []);
 
   for (const { value: locationValue } of finderLocations) {
@@ -104,6 +107,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["kitchen", "dishwasher-cleaning"],
     ["laundry", "appliance-behavior"],
     ["laundry", "dryer-burning-smell"],
+    ["laundry", "dryer-shuts-off"],
     ["attic", "moisture"],
     ["attic", "air-handler-sweating"],
   ];
@@ -132,6 +136,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
   assert.equal(rankFinderArticles(registry, "whole-house", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
+  assert.equal(rankFinderArticles(registry, "laundry", "dryer-shuts-off")[0].article.slug, "dryer-keeps-shutting-off");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0]?.article.slug, "ac-ductwork-sweating-in-attic");
 });
 
@@ -238,6 +243,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dryer smells like burning rubber", "dryer-smells-like-burning"],
     ["dryer smells electrical", "dryer-smells-like-burning"],
     ["dryer smells like burnt lint", "dryer-smells-like-burning"],
+    ["dryer keeps shutting off", "dryer-keeps-shutting-off"],
+    ["dryer shuts off mid cycle", "dryer-keeps-shutting-off"],
+    ["dryer stops after a few minutes", "dryer-keeps-shutting-off"],
+    ["dryer starts then stops", "dryer-keeps-shutting-off"],
+    ["dryer keeps stopping", "dryer-keeps-shutting-off"],
+    ["dryer turns off while drying", "dryer-keeps-shutting-off"],
+    ["dryer stops before cycle finishes", "dryer-keeps-shutting-off"],
+    ["dryer stops and starts again later", "dryer-keeps-shutting-off"],
     ["dishwasher not drying dishes", "dishwasher-not-drying-dishes"],
     ["why is my dishwasher not drying dishes", "dishwasher-not-drying-dishes"],
     ["dishwasher leaves dishes wet", "dishwasher-not-drying-dishes"],
@@ -284,4 +297,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   }
   assert.equal(searchArticles(registry, "outlet warm")[0]?.slug, "outlet-warm");
   assert.equal(searchArticles(registry, "lights flicker when appliance starts")[0]?.slug, "lights-flicker-when-appliance-turns-on");
+  for (const query of ["dryer not heating", "dryer will not start", "dryer trips breaker"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "dryer-keeps-shutting-off", query);
+  }
 });

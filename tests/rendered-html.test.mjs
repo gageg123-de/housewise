@@ -255,6 +255,7 @@ test("slow-dryer guide renders hot-versus-cool differentiation, fire safety, and
   assert.match(html, /Are the clothes hot but damp, or cool and wet\?/);
   assert.match(html, /Why restricted airflow is also a safety issue/);
   assert.match(html, /href="\/appliances\/dryer-smells-like-burning\/"/);
+  assert.match(html, /href="\/appliances\/dryer-keeps-shutting-off\/"/);
   assert.match(html, /src="\/images\/dryer-airflow-restriction-guide\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
@@ -272,6 +273,7 @@ test("dryer burning-smell guide renders early stop-use guidance, distinctions, r
   assert.match(html, /When to stop using the dryer immediately/);
   assert.match(html, /For active fire or smoke, leave and call emergency services/);
   assert.match(html, /href="\/appliances\/dryer-taking-two-cycles\/"/);
+  assert.match(html, /href="\/appliances\/dryer-keeps-shutting-off\/"/);
   assert.match(html, /href="\/electrical\/outlet-warm\/"/);
   assert.match(html, /src="\/images\/dryer-burning-smell-causes\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
@@ -279,6 +281,22 @@ test("dryer burning-smell guide renders early stop-use guidance, distinctions, r
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dryer-burning-smell-causes\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("dryer shutdown guide renders pattern distinctions, safety boundaries, sibling links, and schema", async () => {
+  const response = await render("/appliances/dryer-keeps-shutting-off"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Dryer Keep Shutting Off\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dryer-keeps-shutting-off\//);
+  assert.match(html, /What happens when the dryer stops\?/);
+  assert.match(html, /Did the drum stop, or did the dryer lose power\?/);
+  assert.match(html, /Vented, ventless, gas, and electric dryers need different checks/);
+  assert.match(html, /A larger breaker is not a dryer repair/);
+  assert.match(html, /href="\/appliances\/dryer-taking-two-cycles\/"/);
+  assert.match(html, /href="\/appliances\/dryer-smells-like-burning\/"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
 test("musty-garage guide renders moisture distinctions without claiming odor proves mold", async () => {

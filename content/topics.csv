@@ -75,3 +75,4 @@ Musty smell after rain,musty smell in house after rain,moisture-and-mold,smell,w
 Wall paint bubbles,paint bubbling on wall,moisture-and-mold,moisture,living-area,diagnostic,planned,high,,Leak/humidity/adhesion
 Black spots on bathroom ceiling,black spots bathroom ceiling,moisture-and-mold,discoloration,bathroom,safety,planned,high,,Avoid visual mold certainty
 Condensation versus roof leak,condensation vs roof leak,moisture-and-mold,moisture,attic,comparison,planned,high,,Broader explanatory guide
+Dryer keeps shutting off,why does my dryer keep shutting off,appliances,appliance-behavior,laundry,diagnostic,published,high,/appliances/dryer-keeps-shutting-off/,Premature shutdown intent; distinct from completed-cycle poor drying, burning odor, no-start, no-power, and breaker-trip topics

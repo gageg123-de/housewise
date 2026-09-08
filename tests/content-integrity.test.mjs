@@ -340,7 +340,7 @@ test("slow-dryer guide separates airflow performance from the published burning-
   const burningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer smells like burning,"));
   assert.ok(dryer);
   assert.equal(dryer.published_date, "2026-08-24");
-  assert.equal(dryer.updated_date, "2026-09-02");
+  assert.equal(dryer.updated_date, "2026-09-08");
   assert.ok(burningTopic?.includes(",published,"));
   assert.ok(burningTopic?.includes("/appliances/dryer-smells-like-burning/"));
   assert.ok(dryer.body_sections.some((section) => section.id === "how-drying-works"));
@@ -351,8 +351,9 @@ test("slow-dryer guide separates airflow performance from the published burning-
   assert.ok(dryer.sources.every((source) => source.url.startsWith("https://")));
   assert.equal(dryer.image.src, "/images/dryer-airflow-restriction-guide.webp");
   assert.equal(dryer.image.kind, "conceptual");
-  assert.deepEqual(dryer.related_articles, ["dryer-smells-like-burning"]);
+  assert.deepEqual(dryer.related_articles, ["dryer-smells-like-burning", "dryer-keeps-shutting-off"]);
   assert.ok(dryer.body_sections.some((section) => section.link?.href === "/appliances/dryer-smells-like-burning/"));
+  assert.ok(dryer.body_sections.some((section) => section.link?.href === "/appliances/dryer-keeps-shutting-off/"));
 });
 
 test("dryer burning-smell guide preserves fire, load, airflow, friction, and electrical safety boundaries", () => {
@@ -361,7 +362,7 @@ test("dryer burning-smell guide preserves fire, load, airflow, friction, and ele
   const burningTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer smells like burning,"));
   assert.ok(article && slowDryer);
   assert.equal(article.published_date, "2026-09-02");
-  assert.equal(article.updated_date, "2026-09-02");
+  assert.equal(article.updated_date, "2026-09-08");
   assert.equal(article.reviewed_date, null);
   assert.ok(burningTopic?.includes(",published,"));
   assert.match(article.target_search_intent, /burning, scorched, electrical, rubber, hot-lint, or chemical odor/i);
@@ -373,7 +374,8 @@ test("dryer burning-smell guide preserves fire, load, airflow, friction, and ele
   assert.ok(article.body_sections.some((section) => section.id === "stop-using" && section.callout?.title.includes("emergency services")));
   assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 4));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/dryer-taking-two-cycles/"));
-  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "outlet-warm"]);
+  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "dryer-keeps-shutting-off", "outlet-warm"]);
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/dryer-keeps-shutting-off/"));
   assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
   assert.ok(article.sources.some((source) => source.publisher === "U.S. Fire Administration"));
   assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
@@ -386,6 +388,41 @@ test("dryer burning-smell guide preserves fire, load, airflow, friction, and ele
   assert.match(body, /oil|gasoline|solvent/i);
   assert.match(body, /Do not remove energized panels, test live voltage, bypass fuses or switches/i);
   assert.doesNotMatch(body, /instructions to bypass|step-by-step burner adjustment|remove the dryer panel and/i);
+});
+
+test("dryer shutdown guide classifies stopping behavior without claiming one failed component", () => {
+  const article = registry.find((item) => item.slug === "dryer-keeps-shutting-off");
+  const slowDryer = registry.find((item) => item.slug === "dryer-taking-two-cycles");
+  const burningDryer = registry.find((item) => item.slug === "dryer-smells-like-burning");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Dryer keeps shutting off,"));
+  assert.ok(article && slowDryer && burningDryer);
+  assert.equal(article.published_date, "2026-09-08");
+  assert.equal(article.updated_date, "2026-09-08");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic?.includes(",published,") && topic.includes("/appliances/dryer-keeps-shutting-off/"));
+  assert.match(article.target_search_intent, /starts and then stops before the expected cycle/i);
+  assert.ok(article.body_sections.some((section) => section.id === "shutdown-pattern" && section.table?.rows.length === 8));
+  assert.ok(article.body_sections.some((section) => section.id === "timing-clues"));
+  assert.ok(article.body_sections.some((section) => section.id === "airflow-and-overheating"));
+  assert.ok(article.body_sections.some((section) => section.id === "power-state" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "sensor-and-cycle"));
+  assert.ok(article.body_sections.some((section) => section.id === "dryer-design"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "dryer-smells-like-burning"]);
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/dryer-taking-two-cycles/"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/dryer-smells-like-burning/"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Fire Administration"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "ENERGY STAR"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image, undefined);
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /display.*remain|all lights and display power disappeared/i);
+  assert.match(body, /after cooling|cool-down/i);
+  assert.match(body, /door.*latch|door-switch/i);
+  assert.match(body, /breaker trips|tripped/i);
+  assert.match(body, /heat-pump|condenser/i);
+  assert.doesNotMatch(body, /definitely (the )?motor|reset the breaker repeatedly|bypass the door/i);
 });
 
 test("dishwasher drying guide separates normal wet plastics from whole-load drying problems", () => {

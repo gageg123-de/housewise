@@ -1317,13 +1317,13 @@
   {
     "title": "Why Is My Dryer Taking Two Cycles?", "slug": "dryer-taking-two-cycles", "description": "A dryer that needs two cycles may have restricted exhaust airflow, oversized loads, overly wet clothes, sensor trouble, or inadequate heat. Learn how to tell.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["heat", "appliance-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-09-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["dryer takes two cycles", "clothes still damp after dryer", "dryer slow drying", "clothes hot but damp after dryer", "dryer runs but clothes stay wet"], "target_search_intent": "Help a homeowner distinguish exhaust-airflow, load, washer extraction, cycle, moisture-sensor, and heating causes when drying consistently requires a second cycle.",
     "direct_answer": "A dryer often needs two cycles because hot, moisture-laden air is not leaving efficiently. A loaded lint screen, crushed transition duct, obstructed exterior hood, lint in the house vent, or an overly long/restrictive vent can leave clothes hot but damp. Clothes that remain cool and wet point more toward a heat, power, gas, cycle, or control problem. Oversized loads, a washer that leaves clothes unusually wet, and sensor-cycle issues can also extend drying time.",
     "likely_causes": ["Restricted exhaust airflow", "Loaded lint screen or internal lint path", "Crushed or overly restrictive vent route", "Load too large or dense", "Washer leaving excessive water in clothes", "Cycle or setting mismatch", "Moisture-sensor or tumbling issue", "Heating, power, gas, or control fault"],
     "safe_checks": ["Clean the lint screen before each load and inspect it for residue or damage.", "Look behind the dryer for a visibly crushed or sharply kinked transition duct without moving gas piping or straining connections.", "Compare a smaller mixed load with the usual load.", "Check whether clothes leave the washer dripping or much heavier than expected.", "From outside, observe whether the exhaust hood opens and warm air exits while the dryer runs."],
     "professional_help": "Stop using the dryer for smoke, a burning or gas odor, scorching, sparking, repeated breaker trips, or an unusually hot cabinet or laundry room. Have inaccessible or heavily restricted venting cleaned by a qualified provider, and use an appliance technician for inadequate heat, controls, sensors, tumbling, gas, or internal lint concerns.",
-    "related_articles": ["dryer-smells-like-burning"],
+    "related_articles": ["dryer-smells-like-burning", "dryer-keeps-shutting-off"],
     "image": {
       "src": "/images/dryer-airflow-restriction-guide.webp",
       "width": 1536,
@@ -1358,6 +1358,12 @@
             ["Laundry room becomes hot or humid", "Exhaust restriction, leakage, or a vent connection problem"],
             ["Exterior hood barely opens during operation", "Weak exhaust airflow or an obstructed hood/duct path"]
           ]
+        },
+        "link": {
+          "before": "If the dryer itself stops before the expected cycle finishes, use ",
+          "label": "Why Does My Dryer Keep Shutting Off?",
+          "href": "/appliances/dryer-keeps-shutting-off/",
+          "after": " to classify the shutdown by timing, heat, power, door, and load behavior."
         }
       },
       {
@@ -1420,14 +1426,14 @@
   {
     "title": "Why Does My Dryer Smell Like It’s Burning?", "slug": "dryer-smells-like-burning", "description": "A burning dryer smell can point to lint, restricted exhaust, friction, a contaminated load, or electrical trouble. Learn when to stop using it.",
     "primary_category": "appliances", "secondary_categories": ["sounds-and-smells"], "symptoms": ["smell", "heat", "appliance-behavior", "electrical-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "safety-reference",
-    "published_date": "2026-09-02", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-09-02", "updated_date": "2026-09-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["dryer smells like burning", "burning smell from dryer", "dryer smells burnt", "dryer burning smell", "dryer smells like burning rubber", "dryer smells electrical", "dryer smells like burnt lint", "dryer burning smell after running"],
     "target_search_intent": "Help a homeowner respond safely to a burning, scorched, electrical, rubber, hot-lint, or chemical odor from a dryer, distinguish broad source patterns, and choose vent, appliance, electrical, gas, or emergency help without opening the machine.",
     "direct_answer": "If a dryer smells strongly burned, electrical, smoky, or unusually hot, stop the cycle and do not keep running it to see whether the odor clears. A loaded lint path or restricted exhaust can trap heat, but friction at a belt or rotating part, an overheating motor, a heater or burner-area problem, damaged wiring or a power connection, and an unsuitable or contaminated item can produce similar odors. Visible smoke, sparking, flame, rapidly increasing heat, scorching, or a tripped breaker accompanied by burning odor calls for distance and emergency or qualified electrical help—not another test cycle.",
     "likely_causes": ["Lint buildup or restricted exhaust airflow", "Foreign material near a hot area", "Belt or rotating-component friction", "Overheating motor", "Heating-element or burner-area problem", "Power-cord, receptacle, terminal, wiring, or control fault", "Oil-, solvent-, rubber-, foam-, or plastic-containing item", "Brief first-use residue or dust on a new appliance"],
     "safe_checks": ["Stop the cycle and let the dryer cool without touching any hot, smoking, sparking, or damaged part.", "Clean and inspect the lint screen for unusual loading, residue, or scorching.", "Visually inspect the accessible cord, plug, and receptacle for darkening, melting, deformation, or unusual heat without opening any enclosure.", "Look for an obviously crushed or sharply kinked transition duct without moving the dryer against gas or electrical connections.", "Observe the exterior vent termination from ground level and note whether airflow is weak when safe operation has been restored by a qualified person.", "Identify whether the smell follows one load, one heat setting, abnormal noise, long drying, or a shutdown."],
     "professional_help": "Keep the dryer off when the odor is strong, returns promptly, accompanies abnormal heat or noise, or cannot be tied safely to a harmless external source. Use an appliance technician for internal heat, motor, belt, drum, control, or lint-path concerns; qualified dryer-vent service for an inaccessible restriction; an electrician for a hot or damaged receptacle, cord, branch circuit, or repeated trips; and qualified gas-appliance service for gas or burner concerns. For active smoke, flame, or fire, leave the area and call emergency services.",
-    "related_articles": ["dryer-taking-two-cycles", "outlet-warm"],
+    "related_articles": ["dryer-taking-two-cycles", "dryer-keeps-shutting-off", "outlet-warm"],
     "image": {
       "src": "/images/dryer-burning-smell-causes.webp",
       "width": 1536,
@@ -1494,6 +1500,12 @@
             ["Dryer shuts off, then works after cooling", "Motor overheating, restricted airflow, or a heat-control problem needs appliance evaluation"],
             ["Breaker trips or the plug/outlet is hot", "Stop use and involve a licensed electrician as well as appliance service when appropriate"]
           ]
+        },
+        "link": {
+          "before": "If the dryer stops unexpectedly but no burning odor is present, use ",
+          "label": "Why Does My Dryer Keep Shutting Off?",
+          "href": "/appliances/dryer-keeps-shutting-off/",
+          "after": " to separate heat, power, door, load, sensor, and motor clues."
         }
       },
       {
@@ -3072,6 +3084,222 @@
         "title": "Plastic Pop-Up Drain Assembly Guidance",
         "publisher": "Delta Faucet",
         "url": "https://www.deltafaucet.com/parts/product/RP62472BN.html"
+      }
+    ]
+  },
+  {
+    "title": "Why Does My Dryer Keep Shutting Off?", "slug": "dryer-keeps-shutting-off", "description": "A dryer that stops mid-cycle may involve airflow, heat, load, door, power, sensor, or motor conditions. Learn what its shutdown pattern can reveal.",
+    "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior", "heat", "electrical-behavior"], "room_or_location": ["laundry"], "system": "appliances", "content_type": "symptom-guide",
+    "published_date": "2026-09-08", "updated_date": "2026-09-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["dryer keeps shutting off", "dryer shuts off mid cycle", "dryer stops after a few minutes", "dryer starts then stops", "dryer keeps stopping", "dryer turns off while drying", "dryer stops before cycle finishes", "dryer stops and starts again later"], "target_search_intent": "Help a homeowner classify why a dryer starts and then stops before the expected cycle is complete by comparing shutdown timing, heat, power state, door behavior, load, airflow, and model-specific cycle behavior without assuming one failed component.",
+    "direct_answer": "A dryer that repeatedly stops before its cycle should be finished may be reacting to restricted airflow and excess heat, but the cause can also involve the load, door latch or switch, household power, motor protection, moisture-sensor logic, controls, or model-specific cycle behavior. What happens immediately after the stop matters: note whether the display stays on, the breaker trips, the machine feels unusually hot, the door moves, or the dryer works again only after cooling. Stop using it for burning odor, smoke, sparking, gas odor, severe overheating, a damaged cord or receptacle, or repeated breaker trips.",
+    "likely_causes": ["Restricted exhaust airflow or lint accumulation", "Load size or distribution outside model guidance", "Door latch, alignment, or door-switch signal", "Motor overheating or temperature-dependent protection", "Household power, cord, receptacle, or circuit interruption", "Automatic-cycle or moisture-sensor behavior", "Thermal control, control board, or another internal fault", "Model-specific ventless drainage, filter, or maintenance condition"],
+    "safe_checks": ["Clean the lint filter and note whether it is damaged or unusually loaded.", "Record exactly when the dryer stops and whether it was already hot from an earlier load.", "Check whether the display remains on or the machine loses all power.", "Check whether a breaker tripped without repeatedly resetting it.", "Inspect accessible exhaust ducting for obvious crushing or kinking and observe the outdoor termination only from a safe location.", "Confirm the door closes and latches normally without holding, bypassing, or modifying its safety switch.", "Compare the load with the manufacturer's capacity and cycle guidance.", "Record error codes, selected cycle, unusual sounds, heat, odor, and whether operation returns after cooling."],
+    "professional_help": "Arrange appliance service when shutdown repeats after basic checks, the dryer stops hot and restarts only after cooling, the door interlock is unreliable, error codes persist, or an internal motor, thermal, sensor, or control fault is plausible. Use qualified vent service for inaccessible or persistently restricted exhaust, an electrician for intermittent power, damaged connections, or breaker trips, and qualified gas-appliance or gas-utility help for gas concerns. Stop use immediately for smoke, burning odor, sparking, gas odor, severe heat, scorching, or damaged electrical parts.",
+    "related_articles": ["dryer-taking-two-cycles", "dryer-smells-like-burning"],
+    "body_sections": [
+      {
+        "id": "shutdown-pattern",
+        "heading": "What happens when the dryer stops?",
+        "paragraphs": [
+          "Start with the behavior you can observe rather than guessing at a part. “Shuts off” can mean the drum stops while the controls remain awake, the entire machine loses power, an automatic cycle decides the load is dry, or a protective condition interrupts operation. Those patterns do not point to the same troubleshooting path."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What it makes more relevant"
+          ],
+          "rows": [
+            [
+              "Stops after only a few minutes",
+              "Automatic-cycle sensing, a small or unbalanced load, an intermittent door signal, power interruption, overheating, or an internal fault"
+            ],
+            [
+              "Runs for a while, becomes very hot, then stops",
+              "Restricted airflow, lint or exhaust trouble, load conditions, motor temperature, or thermal protection"
+            ],
+            [
+              "Works again after cooling down",
+              "A temperature-dependent motor or protective condition; useful service evidence, not proof of a failed motor"
+            ],
+            [
+              "Drum stops but display or lights remain on",
+              "Cycle logic, moisture sensing, door switch, drive motor, or control behavior rather than complete household power loss"
+            ],
+            [
+              "Display goes dark and all power is lost",
+              "Breaker, receptacle, cord, supply connection, household circuit, or an internal power fault"
+            ],
+            [
+              "Stops when the door moves or the cabinet vibrates",
+              "Door fit, latch damage, alignment, or an intermittent door-switch signal"
+            ],
+            [
+              "Stops mainly with large or heavy loads",
+              "Load capacity, tumbling, motor load, airflow through the load, or a door forced out of position"
+            ],
+            [
+              "Stops and trips the breaker",
+              "An electrical fault or circuit problem that should not be handled by repeatedly resetting the breaker"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "timing-clues",
+        "heading": "Timing is evidence, not a diagnosis",
+        "paragraphs": [
+          "Write down when the stop occurs, the selected cycle, the load, and whether the dryer had already completed another load. A repeatable pattern gives an appliance technician far more useful information than “it sometimes quits.”",
+          "A stop immediately after Start makes the door signal, power, load movement, cycle selection, or a starting fault relevant. A stop after several minutes of heating moves airflow, temperature, and motor behavior higher on the list. Near the end of an automatic cycle, the machine may be responding to its dryness logic rather than failing.",
+          "If consecutive loads make the symptom more likely, retained heat or a temperature-sensitive condition deserves attention. Intermittent operation still matters: an unstable connection, switch, control, or cycling component can behave normally between failures.",
+          "Patterns become more useful when they repeat under similar loads and settings."
+        ]
+      },
+      {
+        "id": "airflow-and-overheating",
+        "heading": "Restricted airflow can raise heat and trigger trouble",
+        "paragraphs": [
+          "A conventional vented dryer moves heated air through the drum, transition duct, building exhaust, and outdoor termination. A loaded lint filter, crushed connector, obstructed exterior hood, lint-filled house duct, or other restriction can keep heat and moisture from leaving normally.",
+          "The result may be long drying, an unusually hot cabinet or room, weak exterior exhaust, safety-control activity, or shutdown behavior depending on the model and fault. A restricted vent is important to rule out, but it is not a universal explanation for every dryer that stops.",
+          "Clean the lint filter, look for an obvious crush or sharp kink in accessible ducting, and observe the outdoor cover from a safe ground-level location if the dryer can be operated without a warning condition. Inaccessible, long, damaged, or persistently weak exhaust paths need qualified cleaning or repair."
+        ],
+        "link": {
+          "before": "If the dryer completes its cycle but clothing remains damp, follow the airflow, load, washer, sensor, and heat checks in ",
+          "label": "Why Is My Dryer Taking Two Cycles?",
+          "href": "/appliances/dryer-taking-two-cycles/",
+          "after": ". That completed-cycle drying problem is different from an unexpected stop."
+        }
+      },
+      {
+        "id": "door-load-and-motor",
+        "heading": "Door, load, and motor patterns can look similar",
+        "subsections": [
+          {
+            "heading": "Door latch or safety-switch behavior",
+            "paragraphs": [
+              "Dryers use a door-related interlock so tumbling stops or cannot begin when the machine detects an open door. A door that does not latch firmly, visible latch damage, or a stop that follows vibration makes that signal relevant. Do not hold the switch closed, tape the door, or bypass the interlock."
+            ]
+          },
+          {
+            "heading": "Load size and distribution",
+            "paragraphs": [
+              "An overloaded drum can strain movement, reduce tumbling and airflow, or push against the door. A very small load may not contact moisture sensors consistently on some automatic cycles. Follow the model's capacity and cycle guidance rather than using a universal weight limit. If a reasonable mixed load behaves differently, record that clue."
+            ]
+          },
+          {
+            "heading": "Motor or temperature-dependent protection",
+            "paragraphs": [
+              "Manufacturer guidance documents that motor overload protection can stop some dryers when the motor becomes too hot, with operation potentially returning after a cool-down. That pattern can also have other causes, so it supports professional diagnosis; it does not identify the motor, capacitor, bearing, or thermal component by itself."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "power-state",
+        "heading": "Did the drum stop, or did the dryer lose power?",
+        "paragraphs": [
+          "If controls remain illuminated, household power is still reaching at least part of the dryer. Cycle logic, the door circuit, the drive system, or another control condition becomes more relevant than a total supply interruption.",
+          "If the display goes dark, check only whether the breaker is tripped and whether the cord, plug, or receptacle shows visible damage, melting, discoloration, or abnormal heat. Do not remove covers, probe voltage, replace a breaker, or keep resetting a breaker that trips again.",
+          "A repeated trip, intermittent total power loss, hot receptacle, burning-plastic odor, buzzing, or sparking needs a qualified electrician or appliance technician as appropriate. The symptom alone cannot establish whether the problem is in the appliance or the building circuit."
+        ],
+        "callout": {
+          "title": "A larger breaker is not a dryer repair",
+          "text": "Breaker size must match the circuit conductors and equipment requirements. Never upsize a breaker, bypass protection, use an extension cord, or disassemble a dryer receptacle to keep the machine running."
+        }
+      },
+      {
+        "id": "sensor-and-cycle",
+        "heading": "An automatic cycle may be ending early, not losing power",
+        "paragraphs": [
+          "Many dryers use moisture sensing or model-specific algorithms to change cycle time. A small load may miss the sensing surfaces, residue may affect sensor contact, or the selected automatic cycle may decide the load has reached its target dryness. Some displays change the estimated time as the cycle progresses.",
+          "Compare the observed behavior with the owner's manual, selected dryness level, load type, and any error code. If the manufacturer documents a different supported cycle for diagnosis, the result can help service—but do not invent test modes or run a machine that has heat, odor, electrical, gas, or mechanical warning signs.",
+          "A sudden change across several appropriate loads, an error code, or a drum that stops while the control appears to continue makes a component or control problem more plausible. Wet clothes alone do not identify a moisture sensor, thermostat, relay, or control board."
+        ]
+      },
+      {
+        "id": "dryer-design",
+        "heading": "Vented, ventless, gas, and electric dryers need different checks",
+        "paragraphs": [
+          "Most familiar full-size dryers are vented, but condenser and heat-pump dryers recirculate air and manage moisture without a conventional outdoor exhaust. A heat-pump or condenser dryer may instead depend on model-specific filters, a water container, a drain path, and longer low-temperature cycles. Do not apply exterior-vent advice to a machine that has no exhaust duct.",
+          "Electric and gas vented dryers share airflow concerns but use different heat sources. High-voltage electric components and gas burner, valve, ignition, and connector systems are not homeowner diagnostic areas. Use the model number and manual to identify the configuration before acting on generic advice.",
+          "If a gas odor is present, stop using the dryer, leave the area, and follow the gas utility or emergency authority's instructions. Do not operate switches, disconnect piping, adjust a burner, or repeatedly start the machine to confirm the smell."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can check safely",
+        "bullets": [
+          "Stop the cycle and note the elapsed time, selected cycle, load, and whether this was the first or a later load.",
+          "Determine whether the drum alone stopped or all lights and display power disappeared.",
+          "Clean the lint filter and inspect it for heavy loading, residue, or damage.",
+          "Look for an accessible transition duct that is crushed, sharply kinked, separated, or damaged without moving the appliance against its utilities.",
+          "Observe an outdoor vent cover only from a safe location and only when no stop-use warning is present.",
+          "Check that the door closes and latches normally; do not manipulate the safety switch.",
+          "Reduce an obviously overfilled load according to the manufacturer's guidance.",
+          "Record error codes, unusual heat, buzzing, grinding, odor, breaker trips, and whether the dryer returns after cooling.",
+          "Consult the owner's manual for automatic-cycle, moisture-sensor, ventless-filter, water-container, and maintenance instructions."
+        ],
+        "callout": {
+          "title": "Keep panels closed",
+          "text": "Do not test live voltage, remove service panels, bypass a door switch or thermal protection, reach into moving or hot parts, disconnect gas piping, manipulate burner components, or continue diagnostic cycles when the dryer is smoking, sparking, severely hot, or producing a burning or gas odor."
+        }
+      },
+      {
+        "id": "stop-and-call",
+        "heading": "When to stop using the dryer and who to call",
+        "paragraphs": [
+          "Stop using the dryer for smoke, sparking, visible scorching, a melting or burning odor, gas odor, severe overheating, a damaged cord, a hot or melted plug or receptacle, signs of arcing, abnormal grinding with shutdown, or repeated breaker trips. Do not run another cycle to gather more evidence under those conditions. For active fire or smoke, leave the area and call emergency services.",
+          "Use an appliance technician when the shutdown repeats after basic safe checks, the machine stops hot and reliably restarts only after cooling, the door safety mechanism is inconsistent, an error code persists, or a motor, sensor, thermal, drive, or control fault is plausible. Use qualified dryer-vent service when the exhaust path is inaccessible or airflow remains weak.",
+          "Use a licensed electrician for repeated breaker trips, intermittent household power, receptacle or cord heat, sparking, discoloration, or other building-circuit concerns. Use qualified gas-appliance service for burner, ignition, connector, or gas-supply concerns after the immediate gas-safety steps have been followed."
+        ],
+        "link": {
+          "before": "When a burned, electrical, rubber, smoky, or hot-lint odor is the defining symptom, stop use and follow ",
+          "label": "Why Does My Dryer Smell Like It’s Burning?",
+          "href": "/appliances/dryer-smells-like-burning/",
+          "after": " for the odor-specific safety path."
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Why Does My Dryer Keep Stopping Mid-Cycle?",
+        "publisher": "Maytag",
+        "url": "https://www.maytag.com/blog/washers-and-dryers/why-does-dryer-keep-stopping.html"
+      },
+      {
+        "title": "Why Does My Dryer Turn Off Abnormally?",
+        "publisher": "LG",
+        "url": "https://www.lg.com/us/support/help-library/lg-dryer-why-does-my-dryer-turn-off-abnormally--20150485215101"
+      },
+      {
+        "title": "Dryer Cycles, Settings, and Features",
+        "publisher": "Samsung",
+        "url": "https://www.samsung.com/us/support/answer/ANS10001020/"
+      },
+      {
+        "title": "What Should I Do If My Dryer Stops Operating?",
+        "publisher": "Electrolux",
+        "url": "https://owner.electrolux.com/support-articles/article/1853011-what-should-i-do-if-my-dryer-stops-operating-?locale=en-US"
+      },
+      {
+        "title": "Dryer Owner’s Manual",
+        "publisher": "Maytag",
+        "url": "https://www.maytag.com/content/dam/global/documents/201306/owners-manual-40033801.pdf"
+      },
+      {
+        "title": "Clothes Dryer Fire Safety",
+        "publisher": "U.S. Fire Administration",
+        "url": "https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf"
+      },
+      {
+        "title": "Overheated Clothes Dryers Can Cause Fires",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Home-Fire-Electronics-and-Electrical/Overheated-Clothes-Dryers-Can-Cause-Fires"
+      },
+      {
+        "title": "Heat Pump Dryer",
+        "publisher": "ENERGY STAR",
+        "url": "https://www.energystar.gov/products/clothes_dryers/heat-pump-dryer"
       }
     ]
   }
