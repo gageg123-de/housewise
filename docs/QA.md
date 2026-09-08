@@ -8,6 +8,7 @@
 - `npm test` builds and verifies the export, then runs every Node regression test.
 - `npm run build` creates the production static export in `dist/client/`.
 - `npm run verify:export` checks the already-built artifact: routes, links, crawl depth, metadata, schema, sitemap, assets, host consistency, and regression budgets.
+- `npm run verify:pinterest-content` checks one-to-one Pinterest coverage against the published article registry, required package files and metadata, index uniqueness, and orphan packages.
 
 Do not remove or loosen an invariant merely to make a content change pass. Fix the content/data or document a deliberate policy change.
 
@@ -29,6 +30,7 @@ Do not remove or loosen an invariant merely to make a content change pass. Fix t
 | Sitemap integrity | Missing, duplicate, noindex, empty-hub, or fabricated-date URLs | Yes | exact canonical-set and verified-lastmod checks |
 | Structured data placement | Repeated WebSite schema or obsolete SearchAction | Yes | schema placement checks and representative Article/Breadcrumb tests |
 | Image prerequisites | Missing dimensions/alt/caption or oversized article assets | Partial | registry/image budget tests; factual visual review remains manual |
+| Pinterest package coverage | A published article missing its internal distribution package, or an orphan/duplicate package | Yes | `tests/pinterest-content.test.mjs` and `npm run verify:pinterest-content`; visual/copy judgment remains manual |
 | Mobile containment | Sideways document drift and table/image escape | Partial | CSS guardrail test plus manual widths and real iOS review |
 | Desktop article layout | 1024px overflow and premature side-rail layout | Partial | 1150px CSS breakpoint test plus manual width review |
 | Accessibility | Keyboard, focus, labeling, target-size, or announcement regressions | Partial | lint/source invariants plus manual keyboard/screen-reader review |

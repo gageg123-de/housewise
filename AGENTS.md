@@ -159,6 +159,23 @@ For every future article visual:
 
 Article visuals should be original, high resolution, clean, professional, editorial rather than advertisement-like, consistent with the cream/green brand system, useful on desktop and mobile, free from unnecessary embedded text, watermarks, and stock-photo clichés, and appropriately compressed for the web. Avoid generic confused homeowners, random technicians, suburban houses, wrench poses, and meaningless equipment close-ups unless they materially improve the explanation. Use explicit dimensions, responsive sizing, modern formats where supported, lazy loading below the fold, a descriptive filename, factual alt text, and a concise caption. Accuracy always outranks aesthetics.
 
+## Pinterest Content Package Requirement
+
+Every normal new published editorial article must receive one matching internal Pinterest package before its implementation is considered fully complete, unless the user explicitly instructs otherwise. The purpose is to make each article distribution-ready at publication time instead of requiring a later catch-up pass. Emergency factual or safety corrections to existing articles are not blocked by this rule.
+
+Use this publishing sequence: (1) pass the article-reality preflight, (2) pass duplicate-intent review, (3) implement the article, (4) finalize its visual strategy, (5) create the Pinterest package, (6) validate the package, (7) compare published-article and package counts, (8) pass full project QA, (9) commit the article and package together whenever practical, (10) deploy, (11) verify the production article URL, and (12) include Pinterest status in the final report.
+
+Packages live at `content-deployment/pinterest-blog-content/{category}/{article-slug}/` and contain `pin.webp` plus `pin.md`. Update `content-deployment/pinterest-blog-content/index.csv` with exactly one matching row. Follow the existing library structure and README; do not redesign it.
+
+- Create a 1000 × 1500 WebP (2:3), prioritizing a light adaptation of the article visual, then a crop/reframe, then a simple Pinterest-specific visual only when needed. Keep it mobile-readable, accurate, uncluttered, and free of unsafe repair implications or false diagnostic certainty.
+- Write a natural, non-clickbait Pinterest title of roughly 40–80 characters and a useful description of roughly 120–300 characters. Use no irrelevant hashtags by default.
+- `pin.md` records the exact source title, category, production URL, route, Pinterest copy, `./pin.webp`, image origin (`reused`, `lightly adapted`, or `newly created`), image notes, and status. Mark `ready` only after validation.
+- The registry-driven coverage invariant is: number of published records in `content/articles.json` = number of Pinterest package folders = number of unique `index.csv` rows. About, contact, policy, taxonomy/search/finder routes, unpublished topics, and drafts are excluded because they are not registry articles.
+- Run `npm run verify:pinterest-content`. It must reject missing package files, missing or mismatched fields, duplicate slugs/index rows, and packages or rows for unpublished articles. Automated checks do not replace manual image-accuracy and copy-quality review.
+- Keep this library internal. Never expose `content-deployment` as a route, add it to sitemap/search/Finder, change article canonicals, add Pinterest-specific production metadata without explicit approval, or change site CSS for it.
+- If a new article is deployable but its package cannot be completed, do not report the article implementation as fully complete. Set the package to `needs-review` when possible and report the article status, exact package failure, reason, and remaining action.
+
+Every new-article final report includes a **Pinterest package** section with package path, title, description, image file, image origin, status, whether the master index was updated, and coverage in the form `Published articles: N; Pinterest packages: N; Coverage: N/N`.
 ## Performance budget
 
 - Static-first HTML; no general UI framework beyond the existing React renderer.
@@ -192,6 +209,7 @@ Tracking is intentionally absent. Preserve privacy-safe event contracts for `pro
 - Direct answer, uncertainty, factual sources, safe checks, stop conditions, dates, metadata, canonical, H1, and review disclosure are complete.
 - Parent hub, relevant outbound links, reciprocal/inbound-link opportunities, search metadata, and Finder mapping/fallback were evaluated; no backlog-only link is live.
 - Visual usefulness, factual accuracy, alt/caption/dimensions/format/size, or documented accuracy-first no-image exception reviewed.
+- Matching Pinterest package and index row created, manually reviewed, and validated; registry/package/index coverage remains equal.
 - Registry/taxonomy/backlog and expected sitemap route are aligned.
 - Required responsive containment/accessibility/safety review completed under `docs/QA.md`.
 - `npm run lint`, `npm test`, `npm run build`, and `npm run verify:export` pass. Inspect the actual `dist/client` article, hub, 404, assets, sitemap, and robots—not source alone.
@@ -201,6 +219,7 @@ Tracking is intentionally absent. Preserve privacy-safe event contracts for `pro
 - Confirm GitHub Actions/Pages succeeded and the production URL returns HTTP 200.
 - Confirm production canonical, indexability, sitemap entry, structured data, intended hub, search result, and Finder behavior.
 - Confirm planned reciprocal/contextual links are live, the working tree is clean, and `origin/main` contains the commit.
+- Confirm the final report records Pinterest package status, master-index update, and registry/package coverage.
 - Request indexing only when appropriate; then inspect Search Console after discovery without creating thin keyword variants from isolated impressions.
 
 ## Modifying pages and taxonomies

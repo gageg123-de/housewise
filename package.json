@@ -14,6 +14,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "preview:pages": "node scripts/serve-pages-preview.mjs",
     "verify:export": "node scripts/verify-static-export.mjs",
+    "verify:pinterest-content": "node scripts/verify-pinterest-content.mjs",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
