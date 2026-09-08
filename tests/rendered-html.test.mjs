@@ -392,6 +392,7 @@ test("appliance-triggered light-flicker guide renders startup nuance, safety bou
   assert.match(html, /When flickering lights are an electrical warning sign/);
   assert.match(html, /Keep the inspection outside the wiring/);
   assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-randomly\/"/);
   assert.match(html, /src="\/images\/lights-flicker-appliance-startup-load\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /Conceptual illustration:/);
@@ -475,5 +476,26 @@ test("sink drain leak guide renders the highest-wet-point framework, safety, sch
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sink-drain-leak-locations\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+
+test("random light-flicker guide renders scope, timing, safety, canonical routing, schema, and visual", async () => {
+  const response = await render("/electrical/lights-flicker-randomly"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Do My Lights Flicker Randomly\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/lights-flicker-randomly\//);
+  assert.match(html, /Start with one question: what lights are flickering\?/);
+  assert.match(html, /When does the flickering happen\?/);
+  assert.match(html, /Could it actually be an appliance or AC starting\?/);
+  assert.match(html, /What else happens at the same time\?/);
+  assert.match(html, /Keep the investigation outside energized equipment/);
+  assert.match(html, /href="\/electrical\/lights-flicker-when-appliance-turns-on\/"/);
+  assert.match(html, /src="\/images\/random-light-flicker-scope\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/random-light-flicker-scope\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });

@@ -562,7 +562,7 @@ test("appliance-triggered light-flicker guide preserves startup nuance and elect
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Lights flicker when appliance turns on,"));
   assert.ok(article && outlet);
   assert.equal(article.published_date, "2026-09-02");
-  assert.equal(article.updated_date, "2026-09-02");
+  assert.equal(article.updated_date, "2026-09-08");
   assert.ok(topic?.includes(",published,"));
   assert.ok(topic?.includes("/electrical/lights-flicker-when-appliance-turns-on/"));
   assert.doesNotMatch(topics, /^Lights dim when AC starts,.*?,planned,/m);
@@ -577,7 +577,7 @@ test("appliance-triggered light-flicker guide preserves startup nuance and elect
   assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 3));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/outlet-warm/"));
   assert.ok(outlet.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
-  assert.deepEqual(article.related_articles, ["outlet-warm"]);
+  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-randomly"]);
   const body = JSON.stringify(article.body_sections);
   assert.match(body, /startup current/i);
   assert.match(body, /do not remove a panel cover/i);
@@ -749,4 +749,32 @@ test("sink drain leak guide uses location and timing without absorbing supply or
   assert.match(body, /washer—not tape wrapped around the threads—makes the water seal/i);
   assert.match(body, /do not.*tighten everything blindly/i);
   assert.match(body, /Kitchen and bathroom sink drains are not identical/i);
+});
+
+
+test("random light-flicker guide owns no-obvious-trigger scope while preserving appliance-triggered intent", () => {
+  const random = registry.find((item) => item.slug === "lights-flicker-randomly");
+  const triggered = registry.find((item) => item.slug === "lights-flicker-when-appliance-turns-on");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Lights flicker randomly,"));
+  assert.ok(random && triggered);
+  assert.equal(random.published_date, "2026-09-08");
+  assert.equal(random.updated_date, "2026-09-08");
+  assert.equal(random.primary_category, "electrical");
+  assert.deepEqual(random.room_or_location, ["whole-house", "living-area", "bedroom"]);
+  assert.notEqual(random.target_search_intent, triggered.target_search_intent);
+  assert.ok(topic?.includes(",published,") && topic.includes("/electrical/lights-flicker-randomly/"));
+  assert.ok(random.body_sections.some((section) => section.id === "scope" && section.table?.rows.length === 5));
+  assert.ok(random.body_sections.some((section) => section.id === "timing" && section.table?.rows.length >= 6));
+  assert.ok(random.body_sections.some((section) => section.id === "companion-symptoms" && section.table?.rows.length >= 6));
+  assert.ok(random.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(random.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
+  assert.ok(triggered.related_articles.includes("lights-flicker-randomly"));
+  assert.ok(triggered.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-randomly/"));
+  assert.equal(random.image.src, "/images/random-light-flicker-scope.webp");
+  assert.equal(random.image.kind, "conceptual");
+  assert.equal(random.image.width, 1536);
+  assert.equal(random.image.height, 1024);
+  assert.ok(random.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(random.sources.some((source) => source.publisher === "PG&E"));
+  assert.ok(random.sources.every((source) => source.url.startsWith("https://")));
 });

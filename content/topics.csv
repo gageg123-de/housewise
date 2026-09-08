@@ -76,3 +76,4 @@ Wall paint bubbles,paint bubbling on wall,moisture-and-mold,moisture,living-area
 Black spots on bathroom ceiling,black spots bathroom ceiling,moisture-and-mold,discoloration,bathroom,safety,planned,high,,Avoid visual mold certainty
 Condensation versus roof leak,condensation vs roof leak,moisture-and-mold,moisture,attic,comparison,planned,high,,Broader explanatory guide
 Dryer keeps shutting off,why does my dryer keep shutting off,appliances,appliance-behavior,laundry,diagnostic,published,high,/appliances/dryer-keeps-shutting-off/,Premature shutdown intent; distinct from completed-cycle poor drying, burning odor, no-start, no-power, and breaker-trip topics
+Lights flicker randomly,why do my lights flicker randomly,electrical,electrical-behavior,whole-house,diagnostic,published,high,/electrical/lights-flicker-randomly/,Canonical no-obvious-trigger flicker intent; route repeatable AC and appliance startup patterns to the existing appliance-triggered guide
