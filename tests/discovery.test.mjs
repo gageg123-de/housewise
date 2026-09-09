@@ -16,6 +16,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
+  assert.ok(bathroom.some((item) => item.value === "window-condensation"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
   assert.ok(!bathroom.some((item) => item.value === "pest-activity"));
 
@@ -31,16 +32,21 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(wholeHouse.some((item) => item.value === "appliance-light-flicker"));
   assert.ok(wholeHouse.some((item) => item.value === "random-light-flicker"));
   assert.ok(wholeHouse.some((item) => item.value === "outlet-buzzing"));
+  assert.ok(wholeHouse.some((item) => item.value === "window-condensation"));
 
   const kitchen = getFinderSymptomOptions("kitchen");
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-drying"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-cleaning"));
   assert.ok(kitchen.some((item) => item.value === "sink-drain-leak"));
+  assert.ok(kitchen.some((item) => item.value === "window-condensation"));
+  assert.ok(getFinderSymptomOptions("bedroom").some((item) => item.value === "window-condensation"));
+  assert.ok(getFinderSymptomOptions("living-area").some((item) => item.value === "window-condensation"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "appliance-light-flicker"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "random-light-flicker"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-drying"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-cleaning"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "window-condensation"));
 
   const laundry = getFinderSymptomOptions("laundry");
   assert.ok(laundry.some((item) => item.value === "dryer-burning-smell"));
@@ -55,6 +61,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-water-level")[0].article.slug, "toilet-water-rises-when-another-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
+  assert.equal(rankFinderArticles(registry, "bathroom", "window-condensation")[0].article.slug, "condensation-inside-windows");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "attic", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
@@ -65,10 +72,14 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "whole-house", "random-light-flicker")[0].article.slug, "lights-flicker-randomly");
   assert.equal(rankFinderArticles(registry, "whole-house", "outlet-buzzing")[0].article.slug, "outlet-buzzing");
+  assert.equal(rankFinderArticles(registry, "whole-house", "window-condensation")[0].article.slug, "condensation-inside-windows");
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-cleaning")[0].article.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
+  assert.equal(rankFinderArticles(registry, "kitchen", "window-condensation")[0].article.slug, "condensation-inside-windows");
+  assert.equal(rankFinderArticles(registry, "bedroom", "window-condensation")[0].article.slug, "condensation-inside-windows");
+  assert.equal(rankFinderArticles(registry, "living-area", "window-condensation")[0].article.slug, "condensation-inside-windows");
   assert.equal(rankFinderArticles(registry, "laundry", "appliance-behavior")[0].article.slug, "dryer-taking-two-cycles");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-burning-smell")[0].article.slug, "dryer-smells-like-burning");
   assert.equal(rankFinderArticles(registry, "laundry", "dryer-shuts-off")[0].article.slug, "dryer-keeps-shutting-off");
@@ -97,9 +108,11 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["bathroom", "toilet-water-level"],
     ["bathroom", "shower-gurgling"],
     ["bathroom", "leaking"],
+    ["bathroom", "window-condensation"],
     ["bathroom", "smell"],
     ["bathroom", "noise"],
     ["whole-house", "moisture"],
+    ["whole-house", "window-condensation"],
     ["whole-house", "multiple-drains"],
     ["whole-house", "hvac-filter"],
     ["whole-house", "air-handler-sweating"],
@@ -109,6 +122,9 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["kitchen", "appliance-light-flicker"],
     ["kitchen", "dishwasher-drying"],
     ["kitchen", "dishwasher-cleaning"],
+    ["kitchen", "window-condensation"],
+    ["bedroom", "window-condensation"],
+    ["living-area", "window-condensation"],
     ["laundry", "appliance-behavior"],
     ["laundry", "dryer-burning-smell"],
     ["laundry", "dryer-shuts-off"],
@@ -245,6 +261,13 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["lights occasionally flicker", "lights-flicker-randomly"],
     ["lights flicker intermittently", "lights-flicker-randomly"],
     ["random lights flickering in house", "lights-flicker-randomly"],
+    ["condensation inside windows", "condensation-inside-windows"],
+    ["windows wet on inside", "condensation-inside-windows"],
+    ["window sweating inside", "condensation-inside-windows"],
+    ["moisture on inside of windows", "condensation-inside-windows"],
+    ["windows foggy inside", "condensation-inside-windows"],
+    ["wet windows in morning", "condensation-inside-windows"],
+    ["condensation on interior window glass", "condensation-inside-windows"],
     ["dryer slow", "dryer-taking-two-cycles"],
     ["clothes hot damp", "dryer-taking-two-cycles"],
     ["dryer smells like burning", "dryer-smells-like-burning"],
@@ -303,6 +326,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.notEqual(searchArticles(registry, "dishwasher leaking")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.notEqual(searchArticles(registry, "dishwasher smells bad")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(searchArticles(registry, "dishwasher not drying dishes")[0]?.slug, "dishwasher-not-drying-dishes");
+  for (const query of ["condensation between window panes", "window leaking when it rains", "mold around windows"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-inside-windows", query);
+  assert.equal(searchArticles(registry, "house humid with ac running")[0]?.slug, "house-humid-with-ac-running");
+  assert.equal(searchArticles(registry, "water dripping from ac vent")[0]?.slug, "water-dripping-from-ac-vent");
   assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
   for (const query of ["sink supply line leaking", "faucet leaking under sink", "sink drains slowly", "sink gurgles", "dishwasher leaking", "garbage disposal leaking"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "sink-leaking-from-drain", query);

@@ -778,3 +778,32 @@ test("random light-flicker guide owns no-obvious-trigger scope while preserving 
   assert.ok(random.sources.some((source) => source.publisher === "PG&E"));
   assert.ok(random.sources.every((source) => source.url.startsWith("https://")));
 });
+
+
+test("indoor window-condensation guide owns room-side moisture and preserves neighboring intents", () => {
+  const article = registry.find((item) => item.slug === "condensation-inside-windows");
+  const humidity = registry.find((item) => item.slug === "house-humid-with-ac-running");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window condensation inside,"));
+  assert.ok(article && humidity);
+  assert.equal(article.published_date, "2026-09-08");
+  assert.equal(article.updated_date, "2026-09-08");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/condensation-inside-windows/"));
+  assert.ok(article.body_sections.some((section) => section.id === "moisture-location" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "scope" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "timing" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "between-panes"));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-or-leak"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/house-humid-with-ac-running/"));
+  assert.ok(humidity.related_articles.includes("condensation-inside-windows"));
+  assert.ok(humidity.body_sections.some((section) => section.link?.href === "/moisture-and-mold/condensation-inside-windows/"));
+  assert.equal(article.image.src, "/images/window-condensation-location-guide.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "ENERGY STAR"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+});

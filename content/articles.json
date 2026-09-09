@@ -223,14 +223,14 @@
   {
     "title": "Why Is My House Humid With the AC Running?", "slug": "house-humid-with-ac-running", "description": "If your house stays humid with the AC running, short cycles, fan settings, outdoor air, duct leaks, airflow, or moisture sources may be involved.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold"], "symptoms": ["moisture", "heat"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-25", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-25", "updated_date": "2026-09-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my house humid with the ac running", "ac running but house humid", "house feels sticky with ac on", "indoor humidity high with air conditioner", "ac cools but does not lower humidity"],
     "target_search_intent": "Explain why a home can feel humid or measure high relative humidity while the air conditioner is running and cooling, provide safe homeowner observations, and preserve a separate future intent for deeper HVAC-performance diagnosis.",
     "direct_answer": "An air conditioner can lower the temperature without removing enough moisture to make the house feel dry. Short cooling cycles, oversized equipment, a thermostat fan set to ON, humid outdoor air entering the home, duct leakage, restricted airflow, heavy indoor moisture loads, or an HVAC performance or condensate problem may be involved. No single cause fits every house, so compare measured humidity, cycle timing, weather, and room-to-room patterns before drawing a conclusion.",
     "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
     "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
     "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
-    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit", "ac-filter-wet"],
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit", "ac-filter-wet", "condensation-inside-windows"],
     "image": {
       "src": "/images/how-ac-removes-indoor-humidity.webp",
       "width": 1536,
@@ -270,7 +270,8 @@
         "paragraphs": [
           "Comfort depends on temperature, relative humidity, air movement, clothing, and activity. A room with weak air circulation may feel sticky even when the humidity is not unusually high, while cool air with elevated moisture can feel clammy. One thermostat reading cannot describe every room.",
           "A basic digital hygrometer gives you an observation instead of a guess. Place it away from a supply vent, exterior door, shower, stove, or direct sunlight, and give it time to stabilize. Compare readings in the problem area and a more comfortable room. Consumer meters vary, so look for the pattern over several hours or days rather than treating one decimal point as exact."
-        ]
+        ],
+        "link": { "before": "If visible moisture is collecting on the room-side window glass, use ", "label": "Why Is There Condensation on the Inside of My Windows?", "href": "/moisture-and-mold/condensation-inside-windows/", "after": " to distinguish interior condensation from exterior moisture, between-pane fogging, and rainwater intrusion." }
       },
       {
         "id": "humidity-guidance",
@@ -3635,6 +3636,344 @@
         "title": "About Voltage Disturbances",
         "publisher": "Hydro One",
         "url": "https://www.hydroone.com/power-outages-and-safety/damage-claims"
+      }
+    ]
+  },
+  {
+    "title": "Why Is There Condensation on the Inside of My Windows?",
+    "slug": "condensation-inside-windows",
+    "description": "Indoor window condensation forms when humid room air meets cold glass. Learn how surface location, timing, and affected windows narrow the cause.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "windows-and-doors"
+    ],
+    "symptoms": [
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "living-area",
+      "bedroom",
+      "bathroom",
+      "kitchen"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-08",
+    "updated_date": "2026-09-08",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "why is there condensation on the inside of my windows",
+      "condensation inside windows",
+      "windows wet on inside",
+      "moisture on inside of windows",
+      "windows sweating inside",
+      "windows fogging up inside house",
+      "windows foggy inside",
+      "condensation on interior window glass",
+      "wet windows in morning",
+      "water on windows in winter",
+      "windows dripping with condensation"
+    ],
+    "target_search_intent": "Help a homeowner identify room-side window condensation, distinguish it from exterior condensation, between-pane fogging, and rainwater intrusion, then use the number of affected windows, timing, indoor moisture sources, and damage pattern to choose safe moisture-control or professional next steps.",
+    "direct_answer": "Condensation forms on the indoor side of a window when moisture in the room air reaches glass or frame surfaces cold enough to be below that air's dew point. Indoor humidity, outdoor temperature, glass temperature, air movement, room moisture sources, and window thermal performance all affect the result. A wet room-side surface does not automatically mean the window has failed. First confirm whether the moisture wipes from the inside, sits outside, or is trapped between panes; then note when it appears and how many windows are affected.",
+    "likely_causes": [
+      "Humid indoor air contacting cold glass",
+      "Cold outdoor weather lowering interior glass temperature",
+      "Temporary moisture from showers or cooking",
+      "Overnight bedroom moisture and limited air movement",
+      "Humidifier output or other indoor moisture sources",
+      "Window coverings limiting warm room-air circulation",
+      "Lower window thermal performance or colder edge-of-glass areas",
+      "Broader persistent indoor humidity"
+    ],
+    "safe_checks": [
+      "Wipe each exposed glass face to confirm whether the moisture is indoors, outdoors, or trapped between panes.",
+      "Record which windows and rooms are affected, the time, outdoor weather, and nearby shower, cooking, laundry, or humidifier activity.",
+      "Dry wet sills and trim promptly and watch for staining, peeling, swelling, or recurring dampness.",
+      "Confirm kitchen and bathroom exhaust fans operate and discharge as intended without dismantling ducts or electrical equipment.",
+      "Use a basic hygrometer to compare patterns over time without treating one reading as a universal diagnosis.",
+      "Follow the window manufacturer's care and ventilation guidance for the actual product."
+    ],
+    "professional_help": "Use an HVAC or building-performance professional when many windows stay wet and broader indoor humidity or ventilation appears involved. Use a window or glazing professional when moisture is trapped between panes or the product is damaged. Use a building-envelope professional when wetness follows rain, tracks from the frame or wall, or damages nearby materials. Obtain qualified moisture or remediation help for extensive persistent growth or damage rather than treating condensation alone as proof of mold.",
+    "related_articles": [
+      "house-humid-with-ac-running"
+    ],
+    "image": {
+      "src": "/images/window-condensation-location-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison of condensation on the room-side window surface, the outdoor surface, and trapped between two panes.",
+      "caption": "Conceptual illustration: Moisture that wipes from the room side, forms outdoors, or remains trapped between panes represents three different observations. Window and glazing designs vary.",
+      "kind": "conceptual",
+      "after_section": "moisture-location"
+    },
+    "body_sections": [
+      {
+        "id": "moisture-location",
+        "heading": "First, check which side of the glass is wet",
+        "paragraphs": [
+          "Touching the lowest puddle on the sill does not identify where the moisture formed. Dry the accessible glass and frame, then check which exposed surface becomes wet first. Do not open a stuck, iced, or damaged window just to reach the exterior.",
+          "If you cannot wipe the haze from either exposed face, do not keep treating it as ordinary room-side condensation. The moisture may be inside a glazing space or the apparent fog may have another surface source."
+        ],
+        "table": {
+          "headers": [
+            "Where the moisture is",
+            "What that observation means"
+          ],
+          "rows": [
+            [
+              "Room-side glass or frame",
+              "Indoor water vapor is condensing on a cold exposed surface; this is the primary pattern covered here"
+            ],
+            [
+              "Outdoor glass surface",
+              "Outdoor air and glass temperature are creating exterior condensation; it is not evidence of excess indoor humidity by itself"
+            ],
+            [
+              "Between sealed panes",
+              "Moisture inside a conventional insulated-glass unit is a different glazing or seal-related issue"
+            ],
+            [
+              "Sill, frame, or wall after rain",
+              "Water intrusion becomes more plausible; trace timing and water tracks rather than assuming condensation"
+            ],
+            [
+              "One unexplained wet spot",
+              "Confirm that a plant, cleaning water, nearby appliance, roof path, or plumbing source is not contributing"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "condensation-physics",
+        "heading": "Why indoor window condensation happens",
+        "paragraphs": [
+          "Room air contains invisible water vapor. When that air touches glass whose surface temperature is below the air's dew point, some vapor changes to liquid water. You do not need to calculate dew point to use the idea: more indoor moisture or colder glass makes condensation more likely.",
+          "Cold outdoor conditions pull heat from the window, lowering the temperature of the room-side glass and frame. That is why the same indoor humidity may leave windows dry on a mild day but create beads or frost during a cold snap. Edge areas and frames can be colder than the center of the glass, so moisture may start there.",
+          "Indoor humidity, outdoor temperature, window construction, installation, shading, curtains, blinds, and normal room-air circulation interact. The drops reveal that a surface crossed the condensation threshold; they do not identify one failed component."
+        ]
+      },
+      {
+        "id": "scope",
+        "heading": "Does it affect one window or the whole house?",
+        "table": {
+          "headers": [
+            "Scope",
+            "Useful clues to compare"
+          ],
+          "rows": [
+            [
+              "One window",
+              "Local glass temperature, window construction, shading, air circulation, room use, or installation differences may matter"
+            ],
+            [
+              "Several windows in one room",
+              "A room moisture source, closed door, limited exhaust, humidifier, or air-circulation pattern becomes more relevant"
+            ],
+            [
+              "Bathroom or kitchen windows",
+              "Short moisture spikes from showers, cooking, boiling water, or dishwashing may explain the timing"
+            ],
+            [
+              "Bedroom windows overnight",
+              "Occupants, a closed room, a humidifier, falling outdoor temperature, and restricted air movement can overlap"
+            ],
+            [
+              "Many windows throughout the house",
+              "Broader indoor humidity, seasonal weather, ventilation, or widespread cold surfaces becomes more plausible"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Room proximity does not prove that windows share the same construction or exposure. A shaded north-facing unit, a window behind a tight blind, and a more exposed corner can run colder than neighboring glass."
+        ]
+      },
+      {
+        "id": "timing",
+        "heading": "When does the condensation appear?",
+        "paragraphs": [
+          "Timing turns a vague wet-window complaint into a usable pattern. Note when the glass first fogs, when droplets disappear, whether the same weather recreates it, and what was happening in the room."
+        ],
+        "table": {
+          "headers": [
+            "Timing pattern",
+            "What becomes more relevant"
+          ],
+          "rows": [
+            [
+              "Overnight or early morning",
+              "Colder nighttime glass, a closed bedroom, occupants, humidifiers, and limited circulation"
+            ],
+            [
+              "During a cold snap",
+              "A lower interior surface temperature even if the household moisture level did not suddenly change"
+            ],
+            [
+              "After a shower",
+              "A temporary bathroom moisture spike and exhaust performance"
+            ],
+            [
+              "While cooking",
+              "Steam and moisture from cooking or dishwashing, especially with limited kitchen exhaust"
+            ],
+            [
+              "When a humidifier runs",
+              "Output may be too high for current outdoor conditions or concentrated in one room"
+            ],
+            [
+              "Only during or after rain",
+              "Water entry around the opening, wall, roof, or flashing deserves separate investigation"
+            ],
+            [
+              "Persistent in mild weather",
+              "Sustained indoor humidity, a very cold local surface, or another moisture source needs closer review"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "overnight-and-rooms",
+        "heading": "Why windows get wet overnight—and in bathrooms or kitchens",
+        "subsections": [
+          {
+            "heading": "Bedroom windows in the morning",
+            "paragraphs": ["People add moisture to indoor air through normal breathing, but that is only one contributor. A closed bedroom door, limited air exchange, a room humidifier, tightly closed window coverings, and a nighttime outdoor-temperature drop can combine. Compare the bedroom with another room and note whether opening the door or changing a manufacturer-approved humidifier setting changes the pattern."]
+          },
+          {
+            "heading": "Bathroom windows after showers",
+            "paragraphs": ["A shower can raise room humidity quickly. Use an exhaust fan that actually vents outdoors, following its instructions, and keep it unobstructed. A fan sound alone does not prove that air is moving through the complete duct. Avoid opening electrical fan housings or entering an unsafe attic to inspect it."]
+          },
+          {
+            "heading": "Kitchen windows during cooking",
+            "paragraphs": ["Boiling, simmering, dishwashing, and some combustion appliances add water vapor. Use the kitchen ventilation intended for the activity when practical. A recirculating hood may filter grease and odors without exhausting moisture outdoors, so its effect differs from a ducted exhaust system."]
+          }
+        ]
+      },
+      {
+        "id": "window-performance",
+        "heading": "Does window quality or construction matter?",
+        "paragraphs": [
+          "Window thermal performance influences how cold the room-side surface becomes. Single-pane glass generally provides less thermal separation than insulated glazing. Double- or triple-pane units, low-emissivity coatings, gas fills, spacers, frames, and storm-window arrangements change heat flow and edge temperatures. Actual performance also depends on product condition and installation.",
+          "Better-performing windows can keep the inside glass warmer and resist condensation under the same conditions, but no window is immune when outdoor temperatures are low enough or indoor humidity is high enough. New-window condensation is therefore not automatic proof of a defective product, and condensation on an older window is not automatic proof that replacement is the only answer.",
+          "Check the manufacturer's care information before altering storm panels, vents, weep systems, or window coverings; configurations do not manage moisture identically."
+        ]
+      },
+      {
+        "id": "indoor-humidity",
+        "heading": "How indoor humidity affects wet windows",
+        "paragraphs": [
+          "Higher indoor relative humidity raises the dew point, allowing condensation to form on a less-cold surface. EPA moisture guidance advises keeping indoor relative humidity below 60 percent when possible and often describes 30 to 50 percent as an ideal range. Those numbers are broad moisture-control guidance, not a universal winter setting for every climate, house, window, or occupant.",
+          "During very cold weather, a home may need a lower humidity level to keep its coldest windows dry. Avoid chasing one exact number. Use a basic hygrometer to compare rooms and several days, note outdoor conditions, and follow any humidifier, HVAC, and window-manufacturer guidance. Over-drying can create comfort problems, while a dehumidifier does not correct rain entry or failed glazing."
+        ],
+        "link": {
+          "before": "If the windows are only one sign of a clammy home during cooling season, use ",
+          "label": "Why Is My House Humid With the AC Running?",
+          "href": "/hvac/house-humid-with-ac-running/",
+          "after": " for the whole-home HVAC and humidity-control intent."
+        }
+      },
+      {
+        "id": "between-panes",
+        "heading": "Condensation between panes is a different window problem",
+        "paragraphs": [
+          "Fog or droplets that cannot be wiped from either exposed glass surface may be trapped inside a conventional sealed insulated-glass unit. DOE window guidance describes these units as panes separated and hermetically sealed; moisture barriers at the spacer help keep water vapor out. Persistent fog inside that sealed space can be consistent with an insulating-glass seal problem.",
+          "Configuration matters. Some older or storm-window systems have removable panels and intentionally different cavity details, so do not diagnose every multi-layer window from appearance alone. Record which surface is accessible and consult the product documentation or a window/glazing professional.",
+          "Do not drill the glass, inject sealant, remove glazing, or attempt a do-it-yourself defogging procedure."
+        ]
+      },
+      {
+        "id": "condensation-or-leak",
+        "heading": "Is it condensation or a window leak?",
+        "paragraphs": [
+          "Surface condensation usually tracks cold conditions or indoor moisture and appears as fog, beads, or a film on exposed glass or frame surfaces. Rainwater intrusion more often follows rain or wind, traces from the head or sides of the opening, stains adjacent wall finishes, or wets drywall and trim beyond the cold-glass surface. These are patterns, not proof.",
+          "DOE building guidance explains that flashing around a window is part of the wall's drainage system. Water may travel inside an assembly before becoming visible, so the first indoor stain may not be the entry point. If moisture appears only after rain, spreads through the wall, or begins above the glass, use a qualified window or building-envelope professional rather than trying to seal random interior gaps.",
+          "Do not cover drainage openings or weep paths with caulk. Window water-management details vary, and an improvised interior seal can conceal or redirect moisture instead of correcting its source."
+        ]
+      },
+      {
+        "id": "damage-and-safe-steps",
+        "heading": "What you can safely check and reduce",
+        "paragraphs": [
+          "A small temporary film and recurring dripping are not the same severity. Dry room-side moisture promptly and document the pattern before changing several things at once."
+        ],
+        "bullets": [
+          "Wipe the glass and confirm which exposed face becomes wet first.",
+          "Record the affected windows, room, time, outdoor temperature, weather, and nearby moisture-producing activity.",
+          "Compare plastic-free, uncovered glass areas with sections behind blinds or curtains; avoid forcing frozen coverings or windows.",
+          "Use bathroom and kitchen exhaust ventilation while producing moisture, following the equipment instructions.",
+          "Check whether a humidifier is running and use its outdoor-temperature or manufacturer guidance rather than an arbitrary maximum setting.",
+          "Keep normal room air able to reach the glass where practical; tightly closed coverings can create a colder, less-circulated pocket.",
+          "Use a basic hygrometer for trends, placing it away from the wet glass, supply vents, direct sun, and steam.",
+          "Dry sills and trim and inspect for staining, peeling paint, swelling, softness, corrosion, or recurring musty odor."
+        ],
+        "callout": {
+          "title": "Do not turn observation into window disassembly",
+          "text": "Do not drill insulated glass, remove glazing, dismantle frames, block weep paths, enter unsafe exterior or attic areas, or disturb extensive suspected growth. Follow product instructions and stop using any electrical device that has become wet."
+        }
+      },
+      {
+        "id": "damage-and-professionals",
+        "heading": "Can condensation cause mold or damage—and who should help?",
+        "paragraphs": [
+          "Repeated wetting can stain finishes, peel paint, swell or deteriorate wood and composite trim, corrode hardware, and keep adjacent porous materials damp. Persistent moisture can support mold or mildew growth, but condensation itself does not prove that growth is present and appearance alone may not identify a material.",
+          "Start with an HVAC or building-performance professional when many windows stay wet, humidity remains elevated, exhaust or ventilation is inadequate, or the building's air and moisture balance appears central. Use a window or glazing professional when fog remains between panes, glass or frames are damaged, or product-specific drainage and sealing need evaluation.",
+          "Use a building-envelope professional when moisture follows rain, tracks through the wall, or suggests flashing or exterior water management. Seek qualified moisture/remediation help for extensive persistent growth, significant water-damaged materials, or contamination beyond a small safely manageable area. Promptly address soft drywall, rotting trim, recurring puddles, or water near electrical equipment."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Moisture that wipes from the indoor glass usually means humid room air met a surface cold enough to condense it—not that the window automatically failed. First locate the moisture, then compare how many windows are affected, when it appears, and what indoor activities or weather coincide with it.",
+          "One wet bedroom window on a cold morning, many wet windows throughout the house, fog trapped between panes, and staining that appears only after rain are four different troubleshooting paths. Classifying that pattern before adjusting equipment or discussing replacement leads to a more useful—and safer—next step."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Moisture Control Guidance for Building Design, Construction and Maintenance",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100HF07.TXT"
+      },
+      {
+        "title": "Residential Windows, Doors, and Skylights",
+        "publisher": "ENERGY STAR",
+        "url": "https://www.energystar.gov/products/res_windows_doors_skylights"
+      },
+      {
+        "title": "Window Types and Technologies",
+        "publisher": "U.S. Department of Energy",
+        "url": "https://www.energy.gov/energysaver/window-types-and-technologies"
+      },
+      {
+        "title": "Understanding Indoor Condensation",
+        "publisher": "Fenestration and Glazing Industry Alliance",
+        "url": "https://fgiaonline.org/resources/homeowner-resources/understanding-indoor-condensation/"
+      },
+      {
+        "title": "Caring for Your Windows, Doors and Skylights",
+        "publisher": "Fenestration and Glazing Industry Alliance",
+        "url": "https://fgiaonline.org/resources/homeowner-resources/caring-for-your-windows-doors-skylights/"
+      },
+      {
+        "title": "Window Flashing",
+        "publisher": "Building Science Education, U.S. Department of Energy",
+        "url": "https://bsesc.energy.gov/energy-basics/window-flashing"
+      },
+      {
+        "title": "Controlling Moisture Problems in Your Home",
+        "publisher": "University of Minnesota Extension",
+        "url": "https://extension.umn.edu/garden-and-home/home-maintenance/caring-for-a-home/controlling-moisture-problems-in-your-home"
       }
     ]
   }

@@ -499,3 +499,30 @@ test("random light-flicker guide renders scope, timing, safety, canonical routin
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/random-light-flicker-scope\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
+
+
+test("indoor window-condensation guide renders location, scope, leak distinction, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/condensation-inside-windows"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Condensation on the Inside of My Windows\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/condensation-inside-windows\//);
+  assert.match(html, /First, check which side of the glass is wet/);
+  assert.match(html, /Does it affect one window or the whole house\?/);
+  assert.match(html, /Condensation between panes is a different window problem/);
+  assert.match(html, /Is it condensation or a window leak\?/);
+  assert.match(html, /Do not turn observation into window disassembly/);
+  assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
+  assert.match(html, /src="\/images\/window-condensation-location-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/window-condensation-location-guide\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("whole-house humidity guide renders reciprocal window-condensation routing", async () => {
+  const response = await render("/hvac/house-humid-with-ac-running"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+});
