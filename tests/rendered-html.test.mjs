@@ -526,3 +526,26 @@ test("whole-house humidity guide renders reciprocal window-condensation routing"
   assert.equal(response.status, 200);
   assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
 });
+
+
+test("window mold guide renders moisture-source framework, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/mold-growing-around-windows"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Mold Growing Around My Windows\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/mold-growing-around-windows\//);
+  assert.match(html, /The first question: what is keeping the window area wet\?/);
+  assert.match(html, /Condensation versus a window leak/);
+  assert.match(html, /Do you need a mold test\?/);
+  assert.match(html, /Do not disturb hidden or extensive growth/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /src="\/images\/mold-around-window-moisture-sources\.webp"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
+test("window condensation guide renders reciprocal mold-moisture routing", async () => {
+  const response = await render("/moisture-and-mold/condensation-inside-windows"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /href="\/moisture-and-mold\/mold-growing-around-windows\/"/);
+});

@@ -786,7 +786,7 @@ test("indoor window-condensation guide owns room-side moisture and preserves nei
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window condensation inside,"));
   assert.ok(article && humidity);
   assert.equal(article.published_date, "2026-09-08");
-  assert.equal(article.updated_date, "2026-09-08");
+  assert.equal(article.updated_date, "2026-09-09");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/condensation-inside-windows/"));
@@ -806,4 +806,29 @@ test("indoor window-condensation guide owns room-side moisture and preserves nei
   assert.ok(article.sources.some((source) => source.publisher === "ENERGY STAR"));
   assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
   assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+});
+
+
+test("window mold guide keeps moisture-source diagnosis and mold guardrails distinct", () => {
+  const article = registry.find((item) => item.slug === "mold-growing-around-windows");
+  const condensation = registry.find((item) => item.slug === "condensation-inside-windows");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Mold growing around windows,"));
+  assert.ok(article && condensation);
+  assert.equal(article.published_date, "2026-09-09");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.ok(topic?.includes(",published,"));
+  assert.ok(article.body_sections.some((section) => section.id === "moisture-source" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-vs-leak"));
+  assert.ok(article.body_sections.some((section) => section.id === "cleanup"));
+  assert.ok(article.body_sections.some((section) => section.id === "testing"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/condensation-inside-windows/"));
+  assert.ok(condensation.related_articles.includes("mold-growing-around-windows"));
+  assert.ok(condensation.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-growing-around-windows/"));
+  assert.equal(article.image.src, "/images/mold-around-window-moisture-sources.webp");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Centers for Disease Control and Prevention"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /cannot reliably identify a species/i);
+  assert.match(body, /Do not equate black-colored material/i);
+  assert.match(body, /moisture problem first/i);
 });

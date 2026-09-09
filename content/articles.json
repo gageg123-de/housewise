@@ -3661,7 +3661,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-08",
-    "updated_date": "2026-09-08",
+    "updated_date": "2026-09-09",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -3701,7 +3701,8 @@
     ],
     "professional_help": "Use an HVAC or building-performance professional when many windows stay wet and broader indoor humidity or ventilation appears involved. Use a window or glazing professional when moisture is trapped between panes or the product is damaged. Use a building-envelope professional when wetness follows rain, tracks from the frame or wall, or damages nearby materials. Obtain qualified moisture or remediation help for extensive persistent growth or damage rather than treating condensation alone as proof of mold.",
     "related_articles": [
-      "house-humid-with-ac-running"
+      "house-humid-with-ac-running",
+      "mold-growing-around-windows"
     ],
     "image": {
       "src": "/images/window-condensation-location-guide.webp",
@@ -3923,7 +3924,8 @@
           "Repeated wetting can stain finishes, peel paint, swell or deteriorate wood and composite trim, corrode hardware, and keep adjacent porous materials damp. Persistent moisture can support mold or mildew growth, but condensation itself does not prove that growth is present and appearance alone may not identify a material.",
           "Start with an HVAC or building-performance professional when many windows stay wet, humidity remains elevated, exhaust or ventilation is inadequate, or the building's air and moisture balance appears central. Use a window or glazing professional when fog remains between panes, glass or frames are damaged, or product-specific drainage and sealing need evaluation.",
           "Use a building-envelope professional when moisture follows rain, tracks through the wall, or suggests flashing or exterior water management. Seek qualified moisture/remediation help for extensive persistent growth, significant water-damaged materials, or contamination beyond a small safely manageable area. Promptly address soft drywall, rotting trim, recurring puddles, or water near electrical equipment."
-        ]
+        ],
+        "link": { "before": "If mold-like growth is recurring on the sill, frame, trim, caulk, or adjacent wall, use ", "label": "Why Is Mold Growing Around My Windows?", "href": "/moisture-and-mold/mold-growing-around-windows/", "after": " to focus on finding and correcting the moisture source before cleanup." }
       },
       {
         "id": "bottom-line",
@@ -3974,6 +3976,345 @@
         "title": "Controlling Moisture Problems in Your Home",
         "publisher": "University of Minnesota Extension",
         "url": "https://extension.umn.edu/garden-and-home/home-maintenance/caring-for-a-home/controlling-moisture-problems-in-your-home"
+      }
+    ]
+  },
+  {
+    "title": "Why Is Mold Growing Around My Windows?",
+    "slug": "mold-growing-around-windows",
+    "description": "Mold-like growth around a window means the area stays damp. Use moisture timing, location, and damage patterns to find the source before cleaning.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "windows-and-doors"
+    ],
+    "symptoms": [
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "living-area",
+      "bedroom",
+      "bathroom",
+      "kitchen"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-09",
+    "updated_date": "2026-09-09",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "why is mold growing around my windows",
+      "mold around windows",
+      "mold growing around window",
+      "mold on window sill",
+      "mold around window frame",
+      "mold on window trim",
+      "black stuff around windows",
+      "mold around windows in winter",
+      "mold around bedroom window",
+      "mold around bathroom window",
+      "why do my windows get moldy",
+      "mold from window condensation"
+    ],
+    "target_search_intent": "Help a homeowner investigate visible or suspected mold-like growth on an interior window sill, frame, trim, caulk, or nearby surface by identifying the recurring moisture source, while preserving separate intents for surface condensation, between-pane fogging, wet sills, and rainwater intrusion.",
+    "direct_answer": "Mold-like growth can develop around a window when the sill, frame, trim, caulk, or nearby wall stays damp long enough. Recurring room-side condensation, high room humidity, rainwater intrusion, slow drying, or another moisture source may be responsible. The color or texture cannot tell you the species or the moisture source. First determine what gets wet, when it gets wet, and whether one window or many are affected; then correct that moisture problem before expecting cleanup to last.",
+    "likely_causes": [
+      "Recurring condensation running from room-side glass",
+      "Elevated room or whole-home humidity",
+      "Rainwater intrusion around the window opening",
+      "Bathroom, kitchen, bedroom, or laundry moisture",
+      "Limited air circulation and slow drying near coverings",
+      "Deteriorated or moisture-sensitive sill, trim, caulk, or wall materials",
+      "Another localized leak or spill near the window"
+    ],
+    "safe_checks": [
+      "Photograph and note exactly where growth and dampness appear without disturbing suspect material.",
+      "Watch whether exposed room-side glass becomes wet before the sill or trim.",
+      "Record whether dampness follows rain, cold nights, showers, cooking, humidifier use, or indoor clothes drying.",
+      "Compare one affected window with other rooms and windows.",
+      "Dry active surface condensation promptly where it is safe to do so.",
+      "Use a basic hygrometer to compare humidity trends without treating one reading as a diagnosis.",
+      "Inspect visible paint, caulk, sill, trim, and nearby wall for staining, swelling, softness, or peeling.",
+      "Follow EPA guidance and product instructions before attempting any limited cleanup."
+    ],
+    "professional_help": "Use a window or building-envelope professional when dampness follows rain, enters around the frame or wall, or materials are deteriorating. Use an HVAC or building-performance professional when many windows are affected and broader humidity or ventilation appears involved. Seek experienced mold/moisture remediation help for extensive or recurring growth, significant porous-material damage, hidden moisture, contaminated water, suspected HVAC involvement, or work that cannot be done safely. Consult a healthcare professional about individual health concerns rather than using the article to diagnose exposure.",
+    "related_articles": [
+      "condensation-inside-windows",
+      "house-humid-with-ac-running"
+    ],
+    "image": {
+      "src": "/images/mold-around-window-moisture-sources.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison of window-area dampness caused by room-side condensation, rain-related moisture, and a persistently wet sill or trim area.",
+      "caption": "Conceptual illustration: Suspected growth around a window can follow recurring condensation, rain-related water entry, or another persistently damp surface. The image does not identify a mold species or a specific failed component.",
+      "kind": "conceptual",
+      "after_section": "moisture-source"
+    },
+    "body_sections": [
+      {
+        "id": "moisture-source",
+        "heading": "The first question: what is keeping the window area wet?",
+        "paragraphs": [
+          "Visible or suspected growth is evidence that the surface has had enough moisture to support it; it is not a diagnosis of the water source. Start with the moisture pattern rather than the color. Photograph the area, dry any active surface water, and record what becomes wet first.",
+          "Look at the exposed glass, sill, frame, trim, caulk, and adjacent wall. Moisture descending from glass suggests a different path from a stain that starts beside the frame after rain. A plant, cleaning water, roof path, plumbing source, or humidifier can also complicate the picture."
+        ],
+        "table": {
+          "headers": [
+            "Moisture pattern",
+            "More useful question"
+          ],
+          "rows": [
+            [
+              "Room-side glass wets first",
+              "Does condensation repeatedly run or drip onto the sill and trim?"
+            ],
+            [
+              "Wetness appears during or after rain",
+              "Does water track from the frame, wall, head, or side rather than form across cold glass?"
+            ],
+            [
+              "One room is much worse",
+              "What moisture sources, exhaust, humidifier use, or airflow differ there?"
+            ],
+            [
+              "Many windows are affected",
+              "Is broader indoor humidity or seasonal condensation keeping multiple areas damp?"
+            ],
+            [
+              "Only caulk or sealant is discolored",
+              "Is it actually growth, old staining, dirt, or a repeatedly wet surface?"
+            ],
+            [
+              "Wood, drywall, or trim is soft or swollen",
+              "Has moisture progressed into porous or damaged material that needs professional evaluation?"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "glass-wet-first",
+        "heading": "Does the window glass get wet first?",
+        "paragraphs": [
+          "When droplets form on the room-facing glass during cold weather or overnight and then reach the sill, recurring condensation is a plausible moisture supply. Warm, moist room air contacting sufficiently cold glass can condense; repeated wetting and incomplete drying can keep dust, paint, caulk, wood, or nearby finishes damp enough for growth.",
+          "This sequence is conditional. Growth beside a window does not prove condensation caused it, and a single brief fogging event does not mean mold will follow."
+        ],
+        "link": {
+          "before": "If the primary symptom is water or fog on the exposed indoor glass, use ",
+          "label": "Why Is There Condensation on the Inside of My Windows?",
+          "href": "/moisture-and-mold/condensation-inside-windows/",
+          "after": " to distinguish room-side condensation from exterior moisture, between-pane fogging, and rainwater intrusion."
+        }
+      },
+      {
+        "id": "rain-pattern",
+        "heading": "Does the moisture show up during or after rain?",
+        "paragraphs": [
+          "Wetness that strongly follows rain or wind, starts above or beside the opening, stains adjacent drywall, or creates a localized water track is more compatible with water intrusion than ordinary surface condensation. Window openings interrupt the wall drainage plane, and DOE guidance explains that flashing is intended to direct water outward rather than into the wall.",
+          "Those clues do not identify failed flashing, siding, sealant, roofing, or the window itself. Water may travel within an assembly before it appears indoors. Do not caulk random interior gaps or open the wall as a diagnostic experiment; obtain window or building-envelope evaluation and preserve the separate rain-leak troubleshooting intent."
+        ]
+      },
+      {
+        "id": "scope",
+        "heading": "Is it one window, one room, or many windows?",
+        "table": {
+          "headers": [
+            "Scope",
+            "What to compare"
+          ],
+          "rows": [
+            [
+              "One window",
+              "Local rain exposure, colder glass, coverings, product condition, nearby plants, or a localized moisture path"
+            ],
+            [
+              "Bedroom window",
+              "Overnight occupants, a closed door, humidifier use, cold glass, and reduced air movement"
+            ],
+            [
+              "Bathroom window",
+              "Shower moisture, exhaust performance, wet finishes, and drying time"
+            ],
+            [
+              "Kitchen or laundry window",
+              "Cooking, dishwashing, indoor clothes drying, and ventilation"
+            ],
+            [
+              "Many windows",
+              "Whole-home humidity, widespread winter condensation, ventilation, and seasonal conditions"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "A widespread pattern makes simultaneous failure of every window less likely, but it does not prove one humidity cause. A single affected window can still reflect room use or surface temperature rather than a defective unit. Scope narrows the investigation; it does not complete it."
+        ]
+      },
+      {
+        "id": "winter",
+        "heading": "Why window-area growth often gets worse in winter",
+        "paragraphs": [
+          "Cold outdoor conditions lower the temperature of indoor glass, frames, and edge areas. If indoor air still carries substantial moisture, condensation becomes easier on those surfaces. Closed blinds or curtains can sometimes reduce warm room-air circulation at the glass and slow drying, but coverings do not independently “cause mold.”",
+          "Winter is a common pattern, not a requirement. Rain intrusion, humid rooms, spills, and other persistent moisture can support growth in any season."
+        ]
+      },
+      {
+        "id": "appearance",
+        "heading": "Is it mold, staining, or something else?",
+        "paragraphs": [
+          "Dark, green, white, orange, or fuzzy-looking material may be visible mold, but color, location, texture, or a photograph cannot reliably identify a species. Dirt, deteriorated sealant, corrosion, paint staining, and old water marks can also resemble growth.",
+          "Do not equate black-colored material with “toxic black mold,” and do not use appearance to declare Stachybotrys, Aspergillus, Penicillium, or another species. CDC says that when mold is seen or smelled, the practical priorities are removal and correction of the moisture problem—not determining the type.",
+          "Health effects vary among people. This guide does not diagnose symptoms or exposure. People with health concerns should seek advice from a healthcare professional, especially before participating in cleanup."
+        ]
+      },
+      {
+        "id": "condensation-vs-leak",
+        "heading": "Condensation versus a window leak",
+        "table": {
+          "headers": [
+            "Condensation clues",
+            "Water-intrusion clues"
+          ],
+          "rows": [
+            [
+              "Fog or droplets form directly on exposed room-side glass",
+              "Wetness correlates strongly with rain or wind"
+            ],
+            [
+              "More noticeable overnight, in cold weather, or after moisture-producing activities",
+              "Water tracks from the head, side, frame, or adjacent wall"
+            ],
+            [
+              "May affect several windows under similar conditions",
+              "Localized staining, peeling, or damp drywall extends beyond the cold glass"
+            ],
+            [
+              "Often reduces as the glass warms or room moisture falls",
+              "May appear even when the glass itself was not condensing"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "These are comparison clues, not definitive tests. Both patterns can occur at the same window, and water can travel before becoming visible. Persistent or hidden dampness warrants evaluation rather than repeated cosmetic cleanup."
+        ]
+      },
+      {
+        "id": "between-panes",
+        "heading": "What if moisture is between the panes?",
+        "paragraphs": [
+          "Fog or droplets trapped inside a conventional sealed insulated-glass unit are a different glazing problem. They do not directly explain growth on an exposed interior sill or frame unless a separate moisture source is also wetting that surface.",
+          "Confirm that the haze cannot be wiped from either exposed face. Do not drill glass, inject sealants, remove glazing, or treat between-pane fogging as a mold cleanup task. Preserve it for product-specific window or glazing evaluation."
+        ]
+      },
+      {
+        "id": "materials",
+        "heading": "What do damaged caulk, wood, or trim tell you?",
+        "paragraphs": [
+          "Discoloration limited to caulk can reflect persistent dampness, surface growth, embedded staining, age, or material deterioration. Do not apply fresh caulk over active growth or a wet, unresolved source. EPA guidance specifically cautions against painting or caulking moldy surfaces before cleaning and drying them.",
+          "Swelling, softness, peeling paint, flaking finish, crumbling drywall, or recurring dampness suggests that moisture has moved beyond a wipeable surface. Porous materials can be difficult or impossible to clean completely once growth penetrates them. Avoid probing, sanding, or opening damaged assemblies when that may spread material or expose hidden contamination."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "paragraphs": [
+          "Keep the investigation observational and change one variable at a time so the pattern remains useful."
+        ],
+        "bullets": [
+          "Mark whether growth is on glass, gasket, caulk, sill, frame, trim, drywall, or a nearby object.",
+          "Note cold-weather, overnight, shower, cooking, humidifier, laundry, and rain timing.",
+          "Compare the room with other windows and record basic hygrometer trends over several days.",
+          "Confirm bathroom and kitchen exhaust equipment operates, without opening electrical housings or entering unsafe attics.",
+          "Move ordinary objects only if safe so you can see whether coverings or furniture are trapping damp air at the window.",
+          "Dry active condensation and protect nearby materials; stop if water is near electrical equipment.",
+          "Document recurring wetness and damage with dated photographs for a contractor or property manager."
+        ],
+        "callout": {
+          "title": "Do not disturb hidden or extensive growth",
+          "text": "Do not open walls, remove glazing, sand suspect material, mix cleaning chemicals, block window drainage paths, or perform cleanup involving sewage, contaminated water, HVAC contamination, or an area you cannot safely contain."
+        }
+      },
+      {
+        "id": "cleanup",
+        "heading": "Can you clean mold around a window yourself?",
+        "paragraphs": [
+          "EPA says many limited mold problems under about 10 square feet can often be handled by the homeowner, but that is a cleanup-planning guideline—not proof that every small window problem is safe or superficial. Water damage, porous materials, contaminated water, HVAC involvement, hidden growth, occupant health concerns, and personal ability all change the decision.",
+          "For a small accessible hard surface, EPA guidance describes scrubbing with detergent and water and drying completely. Wear appropriate gloves and eye protection; EPA also discusses a properly fitted N95 when limiting exposure to airborne mold. Follow product labels and never mix cleaning products. Routine biocide or bleach use is not required by EPA, and simply killing growth is not the same as removing it.",
+          "Porous caulk, drywall, insulation, carpet, or deteriorated wood may not clean like a hard nonporous surface. Do not improvise a chemical recipe or paint and caulk over remaining growth. If the material cannot be cleaned and dried safely, use experienced professional help."
+        ]
+      },
+      {
+        "id": "testing",
+        "heading": "Do you need a mold test?",
+        "paragraphs": [
+          "Testing is not the default response to visible growth and a moisture problem. EPA says sampling is generally unnecessary when visible mold is present, and CDC does not recommend routine home mold testing. There are no federal limits that turn a consumer result into a simple pass-or-fail safety judgment.",
+          "Testing can have specialized uses when designed and interpreted by an experienced professional, but a kit does not replace finding the water source. Correcting moisture, removing growth safely, and confirming that the area stays dry are usually the more actionable priorities."
+        ]
+      },
+      {
+        "id": "recurrence",
+        "heading": "Why does the growth keep coming back?",
+        "paragraphs": [
+          "Cleanup that leaves the sill wet, rain entry unresolved, humidity elevated, or damaged porous material in place does not remove the conditions that supported growth. EPA warns that mold will likely return if the water problem is not fixed.",
+          "Recheck the area after cleanup and during the conditions that used to trigger it. If glass still drips nightly, trim wets after each rain, or humidity remains broadly elevated, the next step is moisture diagnosis—not stronger chemicals."
+        ],
+        "link": {
+          "before": "When many windows are involved and the home also feels clammy during cooling, use ",
+          "label": "Why Is My House Humid With the AC Running?",
+          "href": "/hvac/house-humid-with-ac-running/",
+          "after": " for the separate whole-home HVAC humidity pattern."
+        }
+      },
+      {
+        "id": "professional-help",
+        "heading": "When to call a professional",
+        "paragraphs": [
+          "Seek experienced mold/moisture help when growth is extensive, recurring, hidden, or involves significantly damaged porous materials; when contaminated water or HVAC equipment may be involved; or when occupants cannot safely perform cleanup. Use a window or building-envelope professional for rain-timed wetness, damaged assemblies, or uncertain exterior water paths.",
+          "An HVAC or building-performance professional may help when multiple rooms and windows indicate a broader humidity or ventilation problem. A qualified contractor or inspector may be appropriate for soft framing, damaged drywall, or suspected concealed moisture. Individual health concerns belong with a healthcare professional, not a visual diagnosis from the window."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Mold-like growth around a window is a moisture problem first. Find what is wetting the area, when it happens, and how widespread it is before choosing cleanup or repair.",
+          "Condensation running from room-side glass, rain-related water tracks, one humid room, and widespread winter window moisture are different patterns. Correct the source, clean only within a safe scope, and escalate recurring or damaged conditions without guessing the species or immediately replacing the window."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Mold Cleanup in Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/mold-cleanup-your-home"
+      },
+      {
+        "title": "Mold",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/mold-health/about/"
+      },
+      {
+        "title": "Facts About Stachybotrys chartarum",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/mold-health/data-research/facts-stats/index.html"
+      },
+      {
+        "title": "Window Flashing",
+        "publisher": "Building Science Education, U.S. Department of Energy",
+        "url": "https://bsesc.energy.gov/energy-basics/window-flashing"
+      },
+      {
+        "title": "Understanding Indoor Condensation",
+        "publisher": "Fenestration and Glazing Industry Alliance",
+        "url": "https://fgiaonline.org/resources/homeowner-resources/understanding-indoor-condensation/"
       }
     ]
   }

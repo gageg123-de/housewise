@@ -17,6 +17,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
   assert.ok(bathroom.some((item) => item.value === "window-condensation"));
+  assert.ok(bathroom.some((item) => item.value === "window-mold"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
   assert.ok(!bathroom.some((item) => item.value === "pest-activity"));
 
@@ -33,6 +34,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(wholeHouse.some((item) => item.value === "random-light-flicker"));
   assert.ok(wholeHouse.some((item) => item.value === "outlet-buzzing"));
   assert.ok(wholeHouse.some((item) => item.value === "window-condensation"));
+  assert.ok(wholeHouse.some((item) => item.value === "window-mold"));
 
   const kitchen = getFinderSymptomOptions("kitchen");
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
@@ -62,6 +64,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
   assert.equal(rankFinderArticles(registry, "bathroom", "window-condensation")[0].article.slug, "condensation-inside-windows");
+  assert.equal(rankFinderArticles(registry, "bathroom", "window-mold")[0].article.slug, "mold-growing-around-windows");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
   assert.equal(rankFinderArticles(registry, "attic", "air-handler-sweating")[0].article.slug, "air-handler-sweating");
   assert.equal(rankFinderArticles(registry, "whole-house", "moisture")[0].article.slug, "house-humid-with-ac-running");
@@ -73,6 +76,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "random-light-flicker")[0].article.slug, "lights-flicker-randomly");
   assert.equal(rankFinderArticles(registry, "whole-house", "outlet-buzzing")[0].article.slug, "outlet-buzzing");
   assert.equal(rankFinderArticles(registry, "whole-house", "window-condensation")[0].article.slug, "condensation-inside-windows");
+  assert.equal(rankFinderArticles(registry, "whole-house", "window-mold")[0].article.slug, "mold-growing-around-windows");
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-cleaning")[0].article.slug, "dishwasher-not-cleaning-dishes");
@@ -113,6 +117,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["bathroom", "noise"],
     ["whole-house", "moisture"],
     ["whole-house", "window-condensation"],
+    ["whole-house", "window-mold"],
     ["whole-house", "multiple-drains"],
     ["whole-house", "hvac-filter"],
     ["whole-house", "air-handler-sweating"],
@@ -261,6 +266,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["lights occasionally flicker", "lights-flicker-randomly"],
     ["lights flicker intermittently", "lights-flicker-randomly"],
     ["random lights flickering in house", "lights-flicker-randomly"],
+    ["mold around windows", "mold-growing-around-windows"],
+    ["mold growing around window", "mold-growing-around-windows"],
+    ["mold on window sill", "mold-growing-around-windows"],
+    ["mold around window frame", "mold-growing-around-windows"],
+    ["mold around windows in winter", "mold-growing-around-windows"],
+    ["mold around bedroom window", "mold-growing-around-windows"],
+    ["mold around bathroom window", "mold-growing-around-windows"],
+    ["why do my windows get moldy", "mold-growing-around-windows"],
     ["condensation inside windows", "condensation-inside-windows"],
     ["windows wet on inside", "condensation-inside-windows"],
     ["window sweating inside", "condensation-inside-windows"],
@@ -329,6 +342,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["condensation between window panes", "window leaking when it rains", "mold around windows"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-inside-windows", query);
   assert.equal(searchArticles(registry, "house humid with ac running")[0]?.slug, "house-humid-with-ac-running");
   assert.equal(searchArticles(registry, "water dripping from ac vent")[0]?.slug, "water-dripping-from-ac-vent");
+  for (const query of ["condensation inside windows", "condensation between window panes", "window leaking when it rains", "windows wet in morning", "house humid with ac running", "garage smells musty"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-around-windows", query);
   assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
   for (const query of ["sink supply line leaking", "faucet leaking under sink", "sink drains slowly", "sink gurgles", "dishwasher leaking", "garbage disposal leaking"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "sink-leaking-from-drain", query);
