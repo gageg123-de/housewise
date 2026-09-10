@@ -832,3 +832,19 @@ test("window mold guide keeps moisture-source diagnosis and mold guardrails dist
   assert.match(body, /Do not equate black-colored material/i);
   assert.match(body, /moisture problem first/i);
 });
+
+test("bedroom musty-smell guide uses location evidence without diagnosing mold", () => {
+ const a=registry.find(x=>x.slug==="bedroom-smells-musty"); assert.ok(a);
+ assert.equal(a.published_date,"2026-09-10"); assert.equal(a.primary_category,"moisture-and-mold");
+ assert.deepEqual(a.room_or_location,["bedroom"]);
+ assert.ok(topics.includes("Bedroom smells musty,why does my bedroom smell musty"));
+ assert.ok(a.body_sections.some(s=>s.id==="odor-location"&&s.table?.rows.length>=7));
+ assert.ok(a.body_sections.some(s=>s.id==="mold-accuracy"&&s.callout));
+ assert.ok(a.body_sections.some(s=>s.id==="safe-observations"&&s.callout));
+ assert.ok(a.body_sections.some(s=>s.links?.some(l=>l.href==="/moisture-and-mold/condensation-inside-windows/")));
+ assert.ok(a.body_sections.some(s=>s.link?.href==="/hvac/house-humid-with-ac-running/"));
+ assert.equal(a.image.src,"/images/bedroom-musty-smell-check-zones.webp");
+ assert.ok(a.sources.some(s=>s.publisher==="U.S. Environmental Protection Agency"));
+ assert.ok(a.sources.some(s=>s.publisher==="CDC/NIOSH"));
+ const body=JSON.stringify(a.body_sections); assert.match(body,/not proof that mold is present/i); assert.match(body,/Do not cut drywall/i);
+});

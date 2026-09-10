@@ -549,3 +549,16 @@ test("window condensation guide renders reciprocal mold-moisture routing", async
   assert.equal(response.status, 200);
   assert.match(html, /href="\/moisture-and-mold\/mold-growing-around-windows\/"/);
 });
+
+test("bedroom musty-smell guide renders location framework, mold caveat, schema, and visual", async () => {
+ const response=await render("/moisture-and-mold/bedroom-smells-musty"); const html=await response.text();
+ assert.equal(response.status,200);
+ assert.match(html,/<title>Why Does My Bedroom Smell Musty\? \| My House Is Doing What\?<\/title>/);
+ assert.match(html,/Start with where the smell is strongest/);
+ assert.match(html,/A clue, not a diagnosis/);
+ assert.match(html,/Do not turn an odor search into demolition/);
+ assert.match(html,/href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+ assert.match(html,/src="\/images\/bedroom-musty-smell-check-zones\.webp"/);
+ assert.match(html,/"@type":"Article"/); assert.match(html,/"@type":"BreadcrumbList"/);
+ assert.doesNotMatch(html,/FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

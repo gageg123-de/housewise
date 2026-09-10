@@ -242,6 +242,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["indoor ac unit sweating", "air-handler-sweating"],
     ["moisture on air handler", "air-handler-sweating"],
     ["musty garage", "garage-smells-musty"],
+    ["bedroom smells musty", "bedroom-smells-musty"],
+    ["musty smell in bedroom", "bedroom-smells-musty"],
+    ["bedroom smells damp", "bedroom-smells-musty"],
+    ["bedroom smells like mildew", "bedroom-smells-musty"],
+    ["bedroom smells musty in morning", "bedroom-smells-musty"],
+    ["musty smell near bedroom window", "bedroom-smells-musty"],
+    ["room smells musty after rain", "bedroom-smells-musty"],
+    ["bedroom smells musty but no mold", "bedroom-smells-musty"],
     ["warm outlet", "outlet-warm"],
     ["outlet buzzing", "outlet-buzzing"],
     ["why does my outlet buzz", "outlet-buzzing"],
@@ -356,4 +364,10 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["dryer not heating", "dryer will not start", "dryer trips breaker"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "dryer-keeps-shutting-off", query);
   }
+});
+
+test("bedroom musty-smell Finder path is narrow and preserves neighboring odor intents", () => {
+  assert.ok(getFinderSymptomOptions("bedroom").some((item) => item.value === "bedroom-musty-smell"));
+  assert.equal(rankFinderArticles(registry, "bedroom", "bedroom-musty-smell")[0]?.article.slug, "bedroom-smells-musty");
+  for (const query of ["garage smells musty","mold around window","condensation inside windows","house humid with ac running","house smells musty when ac turns on","closet smells musty","carpet smells musty"]) assert.notEqual(searchArticles(registry,query)[0]?.slug,"bedroom-smells-musty",query);
 });
