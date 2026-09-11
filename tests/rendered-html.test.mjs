@@ -562,3 +562,21 @@ test("bedroom musty-smell guide renders location framework, mold caveat, schema,
  assert.match(html,/"@type":"Article"/); assert.match(html,/"@type":"BreadcrumbList"/);
  assert.doesNotMatch(html,/FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("bath-water sediment guide renders the three-clue framework, safety, schema, and visual", async () => {
+  const response = await render("/plumbing/sediment-in-bath-water");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Sediment in My Bath Water\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /Start with three clues: appearance, temperature, and location/);
+  assert.match(html, /Does it happen with hot water, cold water, or both\?/);
+  assert.match(html, /Is the sediment only in the bathtub\?/);
+  assert.match(html, /Do not decide water safety by appearance/);
+  assert.match(html, /href="\/plumbing\/water-under-water-heater\/"/);
+  assert.match(html, /src="\/images\/bath-water-sediment-diagnostic-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/bath-water-sediment-diagnostic-guide\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

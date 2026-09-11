@@ -848,3 +848,29 @@ test("bedroom musty-smell guide uses location evidence without diagnosing mold",
  assert.ok(a.sources.some(s=>s.publisher==="CDC/NIOSH"));
  const body=JSON.stringify(a.body_sections); assert.match(body,/not proof that mold is present/i); assert.match(body,/Do not cut drywall/i);
 });
+
+test("bath-water sediment guide uses appearance, temperature, and fixture scope without color certainty", () => {
+  const article = registry.find((item) => item.slug === "sediment-in-bath-water");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Sediment in bath water,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-11");
+  assert.equal(article.updated_date, "2026-09-11");
+  assert.equal(article.primary_category, "plumbing");
+  assert.deepEqual(article.room_or_location, ["bathroom"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/sediment-in-bath-water/"));
+  assert.ok(article.body_sections.some((section) => section.id === "three-clues" && section.table?.rows.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "temperature" && section.table?.rows.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "fixture-scope"));
+  assert.ok(article.body_sections.some((section) => section.id === "water-heater"));
+  assert.ok(article.body_sections.some((section) => section.id === "supply-water"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/plumbing/water-under-water-heater/"));
+  assert.equal(article.image.src, "/images/bath-water-sediment-diagnostic-guide.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  for (const publisher of ["Portland Water Bureau", "San Francisco Public Utilities Commission", "U.S. Geological Survey", "U.S. Environmental Protection Agency"]) assert.ok(article.sources.some((source) => source.publisher === publisher));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /color alone/i);
+  assert.match(body, /Do not decide water safety by appearance/i);
+  assert.match(body, /Do not reflexively flush the heater/i);
+});

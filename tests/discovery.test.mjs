@@ -16,6 +16,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
+  assert.ok(bathroom.some((item) => item.value === "bath-water-sediment"));
   assert.ok(bathroom.some((item) => item.value === "window-condensation"));
   assert.ok(bathroom.some((item) => item.value === "window-mold"));
   assert.ok(bathroom.some((item) => item.value === "noise"));
@@ -63,6 +64,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "bathroom", "toilet-water-level")[0].article.slug, "toilet-water-rises-when-another-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "shower-gurgling")[0].article.slug, "shower-drain-gurgles-when-toilet-flushes");
   assert.equal(rankFinderArticles(registry, "bathroom", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
+  assert.equal(rankFinderArticles(registry, "bathroom", "bath-water-sediment")[0].article.slug, "sediment-in-bath-water");
   assert.equal(rankFinderArticles(registry, "bathroom", "window-condensation")[0].article.slug, "condensation-inside-windows");
   assert.equal(rankFinderArticles(registry, "bathroom", "window-mold")[0].article.slug, "mold-growing-around-windows");
   assert.equal(rankFinderArticles(registry, "attic", "moisture")[0].article.slug, "ac-ductwork-sweating-in-attic");
@@ -323,6 +325,15 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dishwasher leaves dishes greasy", "dishwasher-not-cleaning-dishes"],
     ["dishwasher top rack not cleaning", "dishwasher-not-cleaning-dishes"],
     ["dishwasher bottom rack not cleaning", "dishwasher-not-cleaning-dishes"],
+    ["sediment in bath water", "sediment-in-bath-water"],
+    ["particles in bath water", "sediment-in-bath-water"],
+    ["grit in bathtub water", "sediment-in-bath-water"],
+    ["dirt in bathtub water", "sediment-in-bath-water"],
+    ["sand in bath water", "sediment-in-bath-water"],
+    ["brown particles in bathtub", "sediment-in-bath-water"],
+    ["black specks in bath water", "sediment-in-bath-water"],
+    ["white flakes in bathtub water", "sediment-in-bath-water"],
+    ["sediment coming from bathtub faucet", "sediment-in-bath-water"],
     ["sink leaking from drain", "sink-leaking-from-drain"],
     ["sink drain leaking", "sink-leaking-from-drain"],
     ["bathroom sink leaking from drain", "sink-leaking-from-drain"],
@@ -352,6 +363,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.equal(searchArticles(registry, "water dripping from ac vent")[0]?.slug, "water-dripping-from-ac-vent");
   for (const query of ["condensation inside windows", "condensation between window panes", "window leaking when it rains", "windows wet in morning", "house humid with ac running", "garage smells musty"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-around-windows", query);
   assert.notEqual(searchArticles(registry, "charger buzzing")[0]?.slug, "outlet-buzzing");
+  for (const query of ["brown hot water", "cloudy water", "black specks in faucet water", "water heater sediment", "sediment in hot water", "bathtub drain clogged", "dirt coming up from bathtub drain", "water heater leaking"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "sediment-in-bath-water", query);
+  }
   for (const query of ["sink supply line leaking", "faucet leaking under sink", "sink drains slowly", "sink gurgles", "dishwasher leaking", "garbage disposal leaking"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "sink-leaking-from-drain", query);
   }

@@ -4611,5 +4611,304 @@
         "url": "https://extension.umn.edu/garden-and-home/home-maintenance/caring-for-a-home/controlling-moisture-problems-in-your-home"
       }
     ]
+  },
+  {
+    "title": "Why Is There Sediment in My Bath Water?",
+    "slug": "sediment-in-bath-water",
+    "description": "Seeing grit, flakes, or particles in your bath water? Compare appearance, hot versus cold water, and other fixtures to narrow the source safely.",
+    "primary_category": "plumbing",
+    "secondary_categories": [
+      "bathroom"
+    ],
+    "symptoms": [
+      "discoloration",
+      "plumbing-behavior"
+    ],
+    "room_or_location": [
+      "bathroom"
+    ],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-11",
+    "updated_date": "2026-09-11",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": false,
+    "search_keywords": [
+      "sediment in bath water",
+      "particles in bathtub water",
+      "grit in bath water",
+      "dirt in bathtub water",
+      "sand in bath water",
+      "flakes in bath water",
+      "brown particles in bath water",
+      "black specks in bath water",
+      "white flakes in bathtub water",
+      "sediment coming from bathtub faucet",
+      "debris in bathtub water"
+    ],
+    "target_search_intent": "Help a homeowner use particle appearance, hot-versus-cold comparison, and fixture scope to narrow whether bath-water sediment is local, hot-water-system related, or supply-wide.",
+    "direct_answer": "Sediment in bath water can come from the water heater, household piping, the bathtub fixture, or the incoming water supply. Do not diagnose it from color alone. First collect a fresh sample and look at the particles, then compare hot water with cold water, and finally check another fixture. Hot-water-only debris shifts attention toward the heater or hot-water piping; particles in both temperatures at several fixtures point farther upstream; a tub-only pattern suggests a local fixture or branch-pipe source.",
+    "likely_causes": [
+      "Mineral scale released from plumbing or water-heating equipment",
+      "Corrosion products from metal piping or components",
+      "Deteriorating rubber, plastic, connector, or fixture material",
+      "Sediment disturbed in a municipal water main",
+      "Sand or sediment entering a private-well system",
+      "Debris released from a bathtub fixture or nearby branch pipe"
+    ],
+    "safe_checks": [
+      "Collect fresh water in a clean light-colored container.",
+      "Compare separate cold- and hot-water samples.",
+      "Check a second fixture under comparable conditions.",
+      "Note particle appearance without assuming composition.",
+      "Check utility notices and record changes in odor, color, or pressure.",
+      "Photograph recurring particles for a utility or service professional."
+    ],
+    "professional_help": "Contact the water utility for a sudden multi-fixture municipal-water change, a qualified well professional or health authority for a persistent private-well change, and a plumber or water-heater professional for recurring fixture-local or hot-water-only debris. Follow official advisories and stop ordinary troubleshooting when particles accompany fuel, chemical, or sewage odor, major pressure loss, equipment leakage, or another contamination warning.",
+    "related_articles": [
+      "water-under-water-heater"
+    ],
+    "image": {
+      "src": "/images/bath-water-sediment-diagnostic-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual three-step guide showing a bath-water particle sample, separate hot and cold samples, and comparison between a bathtub and sink.",
+      "caption": "Conceptual illustration: Particle appearance is a clue, not a chemical identification. Compare separate hot and cold samples, then check another fixture to learn how local or widespread the pattern is.",
+      "kind": "conceptual",
+      "after_section": "three-clues"
+    },
+    "body_sections": [
+      {
+        "id": "three-clues",
+        "heading": "Start with three clues: appearance, temperature, and location",
+        "paragraphs": [
+          "Before blaming the water heater, make sure the particles are arriving with fresh water. Rinse the tub, then catch water in a clean white or light-colored container. Soap flakes, bath products, residue on the tub, or debris left from a previous use can otherwise look like supply-water sediment.",
+          "Use the same order every time: look at the particles without naming them, collect cold and hot water separately, then repeat the comparison at another fixture. Those three observations usually narrow the source more reliably than color by itself."
+        ],
+        "table": {
+          "headers": [
+            "Clue",
+            "What it helps separate"
+          ],
+          "rows": [
+            [
+              "Appearance",
+              "Scale, corrosion, grit, or component debris as possibilities—not proof"
+            ],
+            [
+              "Hot, cold, or both",
+              "Hot-water system versus cold-side or shared supply"
+            ],
+            [
+              "Tub only or several fixtures",
+              "Fixture/branch issue versus a broader household or utility source"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "appearance",
+        "heading": "What does the sediment look like?",
+        "paragraphs": [
+          "Color, texture, whether particles float, and whether they smear can guide the next comparison. They cannot establish chemical composition or water safety. More than one material can look brown, white, black, clear, or gritty, so treat each description as a category to investigate."
+        ],
+        "subsections": [
+          {
+            "heading": "Brown or rust-colored particles",
+            "paragraphs": [
+              "Brown or reddish particles may be consistent with iron-bearing sediment or corrosion products from metal piping, a water heater, or another component. Older galvanized steel or iron-containing plumbing can contribute rust-colored material, but house age alone does not identify the pipe material or prove the source.",
+              "If brown particles occur only in hot samples, the heater and hot-water piping deserve closer evaluation. If comparable particles appear in cold and hot water at several fixtures, a main disturbance, incoming supply, or broader piping source becomes more plausible. Brown particles do not by themselves prove a failing tank."
+            ]
+          },
+          {
+            "heading": "White or chalky particles",
+            "paragraphs": [
+              "White or tan flakes can sometimes be mineral scale. USGS notes that heating hard water can form solid calcium-carbonate deposits, and scale can accumulate in water heaters and piping before pieces break loose. That does not mean every white flake is calcium.",
+              "Some tank-style heaters also use plastic dip tubes, and utility guidance documents deteriorated dip-tube fragments as one possible hot-water-only source. Applicability depends on the heater's design, materials, and condition. Clear or white fragments at one fixture may instead come from a local component."
+            ]
+          },
+          {
+            "heading": "Black particles or specks",
+            "paragraphs": [
+              "Black particles may come from degraded rubber in a washer, gasket, hose, or flexible connector; a household filter can also release dark media when one is actually installed. In some water supplies, iron or manganese-related material can create dark deposits. None of those can be confirmed by color alone.",
+              "A soft or oily speck that smears is different evidence from a hard mineral grain, but it still does not identify the exact part. Tub-only debris shifts attention toward the fixture and nearby components. Similar black particles throughout the house call for a broader plumbing, filtration, well, or utility investigation. Do not label black specks as mold."
+            ]
+          },
+          {
+            "heading": "Sand-like or gritty material",
+            "paragraphs": [
+              "Grit can reflect disturbed distribution-system deposits, mineral or pipe scale, or sediment entering a private-well system. A sudden change at many cold-water fixtures after hydrant use, a main break, or utility maintenance suggests a different source from a long-running bathtub-only pattern.",
+              "On a private well, persistent new sand or sediment deserves evaluation of the well, screen, pump, and treatment setup by an appropriate well professional. Do not attempt a well repair from the particle appearance."
+            ]
+          },
+          {
+            "heading": "Translucent or plastic-like flakes",
+            "paragraphs": [
+              "Clear, translucent, or plastic-looking pieces may be scale or deteriorating component material. A dip tube is relevant only on heater designs that use one; fixture cartridges, seals, connectors, and other local parts vary as well. Repeated unusual fragments justify service when the hot/cold and fixture comparison does not isolate the source."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "temperature",
+        "heading": "Does it happen with hot water, cold water, or both?",
+        "paragraphs": [
+          "If the tub controls allow it and there are no contamination warnings, collect cold water first in a clean container, empty it, then collect hot water separately. Avoid scalding water and do not taste the samples. A nearby sink can be used for comparison when the tub valve does not provide a clear cold-only or hot-only setting."
+        ],
+        "table": {
+          "headers": [
+            "Pattern",
+            "Where it shifts attention"
+          ],
+          "rows": [
+            [
+              "Hot only",
+              "Water heater, hot-water distribution piping, or hot-side fixture components"
+            ],
+            [
+              "Cold only",
+              "Cold-side branch piping, fixture components, or incoming supply; the heater is less likely"
+            ],
+            [
+              "Hot and cold",
+              "A shared incoming source or household piping—unless the problem remains limited to this fixture"
+            ]
+          ]
+        },
+        "callout": {
+          "title": "A comparison, not a diagnosis",
+          "text": "Hot-only particles make the hot-water system more relevant. They do not prove the heater tank or any particular component has failed."
+        }
+      },
+      {
+        "id": "fixture-scope",
+        "heading": "Is the sediment only in the bathtub?",
+        "paragraphs": [
+          "Repeat the clean-container test at one or two other fixtures. Compare cold with cold and hot with hot so the result is meaningful. Remove the question of tub residue by catching the water before it contacts the basin."
+        ],
+        "subsections": [
+          {
+            "heading": "Only the bathtub is affected",
+            "paragraphs": [
+              "A tub-only pattern makes the spout, valve-side components, or nearby branch piping more plausible. Local deposits may also release after the fixture has been unused. Do not dismantle a concealed tub valve or pressurized piping simply to search for debris."
+            ]
+          },
+          {
+            "heading": "Several hot-water fixtures are affected",
+            "paragraphs": [
+              "When particles appear from hot taps in multiple rooms but cold samples remain clear, the shared hot-water equipment or distribution system becomes a stronger lead. Record the heater type, whether the water itself is rusty, and whether hot-water performance or equipment noise has changed."
+            ]
+          },
+          {
+            "heading": "Hot and cold fixtures throughout the house are affected",
+            "paragraphs": [
+              "A widespread pattern points upstream of the tub: incoming municipal water, a private well, treatment or filtration equipment, or household piping. A sudden start favors checking current utility work or a recent pressure/flow event; a persistent well-water change calls for qualified well and water-quality evaluation."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "water-heater",
+        "heading": "Could the water heater be causing it?",
+        "paragraphs": [
+          "In a conventional storage heater, minerals can precipitate or settle in the tank, and scale or corrosion products may sometimes reach hot-water fixtures. Hot-only particles at several fixtures make this possibility more relevant. Tankless equipment does not store a tankful of sediment, but hardness scale can form in its heat exchanger and its maintenance requirements are model-specific.",
+          "Do not reflexively flush the heater. Designs, shutoffs, drain valves, fuel and electrical systems, maintenance history, and manufacturer procedures vary. An older neglected drain valve can create a new leak when disturbed. Use the exact manual or arrange qualified service; do not open the heater, remove elements, operate a relief valve as a test, access gas or electrical compartments, or dismantle pressurized connections."
+        ]
+      },
+      {
+        "id": "supply-water",
+        "heading": "Could it be coming from the water supply?",
+        "paragraphs": [
+          "Municipal main work, a main break, hydrant use, or flushing can change flow and stir settled material. Portland Water Bureau advises comparing hot and cold water and then checking all fixtures when investigating discoloration. A sudden multi-fixture cold-water change is a reason to check the utility's notices or water-quality line rather than servicing the tub first.",
+          "Private-well owners are responsible for monitoring their water. EPA recommends testing when color, taste, or odor changes and using a certified laboratory or local health department. Well screens are intended to limit sediment, so persistent new sand or grit can justify a well-professional inspection. Flooding, pressure loss, construction, or a suspected contamination event requires the relevant health-authority guidance, not a visual guess."
+        ]
+      },
+      {
+        "id": "piping-fixture",
+        "heading": "Could old plumbing or the tub fixture be releasing particles?",
+        "paragraphs": [
+          "Metal piping and components can corrode and develop internal scale. Recurring rust-colored debris, widespread particles, reduced flow, or known galvanized steel piping makes the distribution plumbing more relevant, but do not infer material or replacement need from the home's age alone. EPA notes that galvanized pipe can also retain and later release lead particles under some conditions, which is one reason laboratory testing—not appearance—is the way to answer a safety question.",
+          "If other fixtures remain clear under comparable tests, focus the service history on the tub spout, local branch, and hot/cold valve path. A plumber can inspect configuration-specific components without turning a supply-water symptom into a drain repair. Particles delivered from the spout are different from debris or wastewater coming up through the bathtub drain."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can safely check yourself",
+        "paragraphs": [
+          "Keep the investigation observational. Clean the tub, collect fresh samples in a clean light-colored container, compare cold and hot separately, and repeat at another fixture. Note whether particles float, sink, smear, or feel gritty without tasting or chemically testing them. Photograph the sample and record whether the water itself is discolored, pressure changed, an odor appeared, or the problem began suddenly.",
+          "Confirm whether the home uses municipal water or a private well, note the water-heater type, and check official utility notices. Do not open water-heating equipment, remove elements, operate relief valves, access gas controls or energized parts, dismantle tub valves, taste abnormal water, or experiment with household chemicals."
+        ],
+        "callout": {
+          "title": "Do not decide water safety by appearance",
+          "text": "Visible particles can be an aesthetic or equipment issue, but appearance cannot rule contamination in or out. Follow utility advisories and use the appropriate utility, health authority, certified laboratory, or well professional when safety is uncertain."
+        }
+      },
+      {
+        "id": "escalation",
+        "heading": "When to call a plumber, utility, or well professional",
+        "paragraphs": [
+          "Call the water utility when municipal-water particles or discoloration begin suddenly at multiple fixtures, persist beyond its published guidance, or accompany nearby work. For a private well, seek well and water-quality help when sediment is new or persistent, pressure changes, flooding or construction occurred, or contamination is plausible. Use a certified drinking-water laboratory or local health authority when testing is warranted.",
+          "Call a plumber or water-heater professional for recurring hot-only particles at several fixtures, tub-only debris that persists, substantial corrosion, reduced flow, or a source you cannot isolate. Stop ordinary troubleshooting and follow official guidance if there is a utility advisory, sewage, fuel, or chemical odor, dramatic water-quality change, suspected well contamination, equipment distress, or water contacting electrical components."
+        ],
+        "link": {
+          "before": "If the heater is also leaking or water is collecting around it, use ",
+          "label": "Why Is There Water Under My Water Heater?",
+          "href": "/plumbing/water-under-water-heater/",
+          "after": " to identify the first wet point and the appropriate safety response."
+        }
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Look at the particles, compare hot versus cold, then check another fixture. Hot-only debris across several fixtures raises the relevance of the water heater or hot piping. Hot-and-cold debris throughout the house points farther upstream. Tub-only debris suggests a local fixture or branch source.",
+          "Particle color is supporting evidence, not a material identification or safety test. Keep checks non-invasive, follow model-specific and utility guidance, and bring in the appropriate plumber, water-heater technician, utility, well professional, health authority, or certified laboratory when the pattern persists or safety is uncertain."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Troubleshooting discolored drinking water",
+        "publisher": "Portland Water Bureau",
+        "url": "https://www.portland.gov/water/drinking-water-quality/troubleshooting-drinking-water-quality-home/discolored-water"
+      },
+      {
+        "title": "Dirty or Discolored Water",
+        "publisher": "San Francisco Public Utilities Commission",
+        "url": "https://www.sfpuc.gov/accounts-services/water-quality/dirty-or-discolored-water"
+      },
+      {
+        "title": "Hardness in water: Lime scale buildup inside a water pipe",
+        "publisher": "U.S. Geological Survey",
+        "url": "https://www.usgs.gov/media/images/hardness-water-lime-scale-buildup-inside-water-pipe"
+      },
+      {
+        "title": "Contamination of Groundwater",
+        "publisher": "U.S. Geological Survey",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/contamination-groundwater"
+      },
+      {
+        "title": "Protect Your Home's Water",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/privatewells/protect-your-homes-water"
+      },
+      {
+        "title": "Learn About Private Water Wells",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/privatewells/learn-about-private-water-wells"
+      },
+      {
+        "title": "Sources of Lead in Drinking Water",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/ground-water-and-drinking-water/sources-lead-drinking-water-text-only"
+      },
+      {
+        "title": "Tankless Water Heater Buying Guide",
+        "publisher": "A. O. Smith",
+        "url": "https://www.hotwater.com/info-center/tankless-water-heater-buying-guide.html"
+      }
+    ]
   }
 ]
