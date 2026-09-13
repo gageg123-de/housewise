@@ -73,7 +73,8 @@ Scratching sound in attic at night,scratching in attic at night,pests,noise,atti
 Ants appear near sink,ants around kitchen sink,pests,pest-activity,kitchen,diagnostic,planned,medium,,Moisture/food/entry paths
 Musty smell after rain,musty smell in house after rain,moisture-and-mold,smell,whole-house,diagnostic,planned,high,,Cross-system moisture cluster
 Wall paint bubbles,paint bubbling on wall,moisture-and-mold,moisture,living-area,diagnostic,planned,high,,Leak/humidity/adhesion
-Black spots on bathroom ceiling,black spots bathroom ceiling,moisture-and-mold,discoloration,bathroom,safety,planned,high,,Avoid visual mold certainty
+Black spots on bathroom ceiling,black spots bathroom ceiling,moisture-and-mold,discoloration,bathroom,safety,planned,high,,Potential evidence-dependent subtopic; separate only if GSC shows bathroom-specific intent not served by ceiling-mold parent; avoid visual species certainty
+Ceiling getting moldy,why is my ceiling getting moldy,moisture-and-mold,discoloration,living-area,diagnostic,published,high,/moisture-and-mold/mold-growing-on-ceiling/,Visible or suspected ceiling growth; moisture-source intent distinct from stains rain-wet ceilings attic mold window mold and future bathroom-only variants
 Condensation versus roof leak,condensation vs roof leak,moisture-and-mold,moisture,attic,comparison,planned,high,,Broader explanatory guide
 Dryer keeps shutting off,why does my dryer keep shutting off,appliances,appliance-behavior,laundry,diagnostic,published,high,/appliances/dryer-keeps-shutting-off/,Premature shutdown intent; distinct from completed-cycle poor drying, burning odor, no-start, no-power, and breaker-trip topics
 Lights flicker randomly,why do my lights flicker randomly,electrical,electrical-behavior,whole-house,diagnostic,published,high,/electrical/lights-flicker-randomly/,Canonical no-obvious-trigger flicker intent; route repeatable AC and appliance startup patterns to the existing appliance-triggered guide

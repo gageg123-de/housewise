@@ -284,6 +284,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["mold around bedroom window", "mold-growing-around-windows"],
     ["mold around bathroom window", "mold-growing-around-windows"],
     ["why do my windows get moldy", "mold-growing-around-windows"],
+    ["mold on ceiling", "mold-growing-on-ceiling"],
+    ["mold growing on ceiling", "mold-growing-on-ceiling"],
+    ["ceiling mold", "mold-growing-on-ceiling"],
+    ["mold spots on ceiling", "mold-growing-on-ceiling"],
+    ["mold on bathroom ceiling", "mold-growing-on-ceiling"],
+    ["mold on bedroom ceiling", "mold-growing-on-ceiling"],
+    ["mold in ceiling corner", "mold-growing-on-ceiling"],
+    ["mold keeps coming back on ceiling", "mold-growing-on-ceiling"],
     ["condensation inside windows", "condensation-inside-windows"],
     ["windows wet on inside", "condensation-inside-windows"],
     ["window sweating inside", "condensation-inside-windows"],
@@ -378,10 +386,23 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["dryer not heating", "dryer will not start", "dryer trips breaker"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "dryer-keeps-shutting-off", query);
   }
+  for (const query of ["water stain on ceiling", "ceiling wet after rain", "mold around windows", "condensation inside windows", "water dripping from ac vent", "house humid with ac running"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-on-ceiling", query);
+  }
 });
 
 test("bedroom musty-smell Finder path is narrow and preserves neighboring odor intents", () => {
   assert.ok(getFinderSymptomOptions("bedroom").some((item) => item.value === "bedroom-musty-smell"));
   assert.equal(rankFinderArticles(registry, "bedroom", "bedroom-musty-smell")[0]?.article.slug, "bedroom-smells-musty");
   for (const query of ["garage smells musty","mold around window","condensation inside windows","house humid with ac running","house smells musty when ac turns on","closet smells musty","carpet smells musty"]) assert.notEqual(searchArticles(registry,query)[0]?.slug,"bedroom-smells-musty",query);
+});
+
+
+test("ceiling-mold Finder paths stay location-specific and separate from window growth", () => {
+  for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "ceiling-mold"), location);
+    assert.equal(rankFinderArticles(registry, location, "ceiling-mold")[0]?.article.slug, "mold-growing-on-ceiling", location);
+  }
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "ceiling-mold"));
+  assert.ok(!getFinderSymptomOptions("garage").some((item) => item.value === "ceiling-mold"));
 });

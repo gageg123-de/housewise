@@ -874,3 +874,35 @@ test("bath-water sediment guide uses appearance, temperature, and fixture scope 
   assert.match(body, /Do not decide water safety by appearance/i);
   assert.match(body, /Do not reflexively flush the heater/i);
 });
+
+
+test("ceiling mold guide uses location, timing, and moisture evidence without species certainty", () => {
+  const article = registry.find((item) => item.slug === "mold-growing-on-ceiling");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling getting moldy,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-13");
+  assert.equal(article.updated_date, "2026-09-13");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.room_or_location, ["whole-house", "bathroom", "bedroom", "living-area"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/mold-growing-on-ceiling/"));
+  assert.ok(article.body_sections.some((section) => section.id === "location-timing-source" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-or-leak" && section.table?.rows.length === 4 && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "mold-or-stain"));
+  assert.ok(article.body_sections.some((section) => section.id === "cleanup-testing"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/ac-ductwork-sweating-in-attic/"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/house-humid-with-ac-running/"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-growing-around-windows/"));
+  assert.equal(article.image.src, "/images/ceiling-mold-location-guide.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Centers for Disease Control and Prevention"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /cannot reliably identify a species/i);
+  assert.match(body, /moisture investigation, not a species diagnosis/i);
+  assert.match(body, /Do not turn a ceiling inspection into demolition/i);
+});
