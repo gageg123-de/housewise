@@ -906,3 +906,37 @@ test("ceiling mold guide uses location, timing, and moisture evidence without sp
   assert.match(body, /moisture investigation, not a species diagnosis/i);
   assert.match(body, /Do not turn a ceiling inspection into demolition/i);
 });
+
+
+test("sweating walls guide distinguishes surface condensation from localized water sources", () => {
+  const article = registry.find((item) => item.slug === "walls-sweating");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Walls sweating,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-14");
+  assert.equal(article.updated_date, "2026-09-14");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/walls-sweating/"));
+  assert.ok(article.body_sections.some((section) => section.id === "surface-or-source" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "exterior-walls-corners"));
+  assert.ok(article.body_sections.some((section) => section.id === "behind-furniture"));
+  assert.ok(article.body_sections.some((section) => section.id === "summer"));
+  assert.ok(article.body_sections.some((section) => section.id === "winter"));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-rain-plumbing" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  for (const href of ["/hvac/house-humid-with-ac-running/", "/moisture-and-mold/condensation-inside-windows/", "/moisture-and-mold/mold-growing-around-windows/", "/moisture-and-mold/mold-growing-on-ceiling/"]) {
+    assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  }
+  assert.equal(article.image.src, "/images/sweating-walls-moisture-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
+  assert.ok(article.sources.some((source) => source.publisher === "ENERGY STAR"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /not automatically a leak/i);
+  assert.match(body, /not automatically condensation/i);
+  assert.match(body, /cannot identify a leak, hidden mold, or structural damage/i);
+  assert.match(body, /Do not open the wall to diagnose the first clue/i);
+});

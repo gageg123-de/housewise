@@ -292,6 +292,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["mold on bedroom ceiling", "mold-growing-on-ceiling"],
     ["mold in ceiling corner", "mold-growing-on-ceiling"],
     ["mold keeps coming back on ceiling", "mold-growing-on-ceiling"],
+    ["walls sweating", "walls-sweating"],
+    ["why are my walls sweating", "walls-sweating"],
+    ["condensation on walls", "walls-sweating"],
+    ["water droplets on walls", "walls-sweating"],
+    ["interior walls sweating", "walls-sweating"],
+    ["walls wet from condensation", "walls-sweating"],
+    ["walls sweating in summer", "walls-sweating"],
+    ["walls sweating in winter", "walls-sweating"],
+    ["bathroom walls sweating", "walls-sweating"],
+    ["moisture forming on walls", "walls-sweating"],
     ["condensation inside windows", "condensation-inside-windows"],
     ["windows wet on inside", "condensation-inside-windows"],
     ["window sweating inside", "condensation-inside-windows"],
@@ -389,6 +399,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["water stain on ceiling", "ceiling wet after rain", "mold around windows", "condensation inside windows", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-on-ceiling", query);
   }
+  for (const query of ["wet spot on wall", "wall wet after rain", "mold on wall", "mold around windows", "condensation inside windows", "ceiling mold", "water dripping from ac vent", "house humid with ac running"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "walls-sweating", query);
+  }
 });
 
 test("bedroom musty-smell Finder path is narrow and preserves neighboring odor intents", () => {
@@ -405,4 +418,13 @@ test("ceiling-mold Finder paths stay location-specific and separate from window 
   }
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "ceiling-mold"));
   assert.ok(!getFinderSymptomOptions("garage").some((item) => item.value === "ceiling-mold"));
+});
+
+
+test("sweating-wall Finder paths preserve localized leak and mold distinctions", () => {
+  for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "walls-sweating"), location);
+    assert.equal(rankFinderArticles(registry, location, "walls-sweating")[0]?.article.slug, "walls-sweating", location);
+  }
+  for (const location of ["yard", "garage", "attic"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "walls-sweating"), location);
 });

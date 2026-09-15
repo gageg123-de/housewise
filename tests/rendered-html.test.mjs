@@ -599,3 +599,23 @@ test("ceiling mold guide renders moisture-source diagnosis, safety, schema, and 
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ceiling-mold-location-guide\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+
+test("sweating walls guide renders source distinction, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/walls-sweating");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Are My Walls Sweating\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/walls-sweating\//);
+  assert.match(html, /First: is water forming on the wall or coming from somewhere else\?/);
+  assert.match(html, /Is it condensation, rainwater, or a plumbing leak\?/);
+  assert.match(html, /Do not open the wall to diagnose the first clue/);
+  assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /src="\/images\/sweating-walls-moisture-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sweating-walls-moisture-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
