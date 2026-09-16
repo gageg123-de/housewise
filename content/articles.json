@@ -4933,7 +4933,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-13",
-    "updated_date": "2026-09-13",
+    "updated_date": "2026-09-16",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -4974,7 +4974,8 @@
       "mold-growing-around-windows",
       "condensation-inside-windows",
       "house-humid-with-ac-running",
-      "ac-ductwork-sweating-in-attic"
+      "ac-ductwork-sweating-in-attic",
+      "water-stain-on-ceiling"
     ],
     "image": {
       "src": "/images/ceiling-mold-location-guide.webp",
@@ -5133,7 +5134,15 @@
           "label": "Why Is Mold Growing Around My Windows?",
           "href": "/moisture-and-mold/mold-growing-around-windows/",
           "after": " for the window-specific condensation and rain-entry pattern."
-        }
+        },
+        "links": [
+          {
+            "before": "If the mark is mainly a brown, yellow, or tan water-like discoloration rather than visible growth, use ",
+            "label": "Why Is There a Water Stain on My Ceiling?",
+            "href": "/moisture-and-mold/water-stain-on-ceiling/",
+            "after": " to compare old and active moisture clues."
+          }
+        ]
       },
       {
         "id": "recurrence",
@@ -5572,6 +5581,331 @@
         "title": "Homeowner's Guide to Retrofitting",
         "publisher": "Federal Emergency Management Agency",
         "url": "https://www.fema.gov/sites/default/files/2020-08/FEMA_P-312.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Why Is There a Water Stain on My Ceiling?",
+    "slug": "water-stain-on-ceiling",
+    "description": "A ceiling water stain shows that moisture reached the material, but not whether it is active or where it began. Use location, timing, and what is above it to narrow the source safely.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "attic-and-insulation",
+      "plumbing"
+    ],
+    "symptoms": [
+      "moisture",
+      "discoloration",
+      "leaking"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "bathroom",
+      "bedroom",
+      "living-area"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-16",
+    "updated_date": "2026-09-16",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why is there a water stain on my ceiling",
+      "water stain on ceiling",
+      "brown water stain on ceiling",
+      "brown spot on ceiling",
+      "yellow stain on ceiling",
+      "water mark on ceiling",
+      "ceiling water stain",
+      "old water stain on ceiling",
+      "water stain on ceiling but no leak",
+      "dry water stain on ceiling",
+      "ceiling stain below bathroom",
+      "ceiling stain getting bigger"
+    ],
+    "target_search_intent": "Help a homeowner investigate visible water-like ceiling discoloration by distinguishing current from previous moisture and using stain location, change timing, and what is above it to narrow roof, plumbing, HVAC, attic, and old-leak possibilities without absorbing active dripping, rain-specific, sagging-ceiling, or ceiling-mold intents.",
+    "direct_answer": "A brown, yellow, tan, or ring-shaped ceiling stain usually means moisture reached the ceiling material at some point. The mark alone cannot show whether moisture is still active or identify its source. A roof or exterior path, plumbing above, a bathroom fixture, HVAC condensate, duct or attic condensation, or an older leak may all leave similar discoloration. First determine whether the stain is wet or changing. Then identify what is above or near it and note whether it changes after rain, plumbing use, or HVAC operation.",
+    "likely_causes": [
+      "A previous leak that stopped but left discoloration",
+      "Roof or exterior water intrusion",
+      "Plumbing supply, drain, fixture, or overflow leakage above",
+      "HVAC condensate drainage or equipment leakage",
+      "Condensation dripping from attic ductwork or piping",
+      "Cold-weather attic condensation",
+      "A different surface stain such as soot, rust, or paint bleed"
+    ],
+    "safe_checks": [
+      "Photograph the stain and record whether its visible boundary, color, texture, or dampness changes.",
+      "Identify the room, plumbing, attic, roof, or HVAC equipment directly above or nearest the stained area.",
+      "Note whether changes follow rain, bathing, tub draining, toilet use, other plumbing, or cooling operation.",
+      "Observe bubbling paint, softness, sagging, musty odor, visible growth, or active dripping from a safe floor-level position.",
+      "Keep people and belongings away from sagging, bulging, actively dripping, contaminated, or electrically affected ceiling areas.",
+      "Share dated photographs and timing notes with the professional whose trade matches the strongest evidence."
+    ],
+    "professional_help": "Use a plumber when the pattern follows fixtures or piping above; a roofer or building-envelope professional when it follows rain; an HVAC professional when condensate equipment or duct moisture is implicated; and a qualified inspector or contractor when several systems remain plausible. Keep clear and obtain prompt help for sagging, bulging, water-loaded, rapidly deteriorating, actively dripping, electrically affected, or sewage-contaminated ceiling material.",
+    "related_articles": [
+      "mold-growing-on-ceiling",
+      "ac-ductwork-sweating-in-attic",
+      "water-around-indoor-ac-unit"
+    ],
+    "image": {
+      "src": "/images/ceiling-water-stain-clues.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing a ceiling stain below a bathroom, below an attic or roof area, near an HVAC register, and as an old stain compared with a worsening stain.",
+      "caption": "Conceptual illustration: Stain location, what is above it, and when it changes can narrow the investigation, but none of these patterns proves the water source by itself.",
+      "kind": "conceptual",
+      "after_section": "wet-or-dry"
+    },
+    "body_sections": [
+      {
+        "id": "wet-or-dry",
+        "heading": "First: is the stain wet right now?",
+        "paragraphs": [
+          "Start with current condition, not color or shape. A water-like stain is evidence that moisture reached the ceiling, but it is not proof that moisture is active today. It may be dry residue from an older event, periodically active moisture, or a problem that is worsening now. A tan ring does not prove a roof leak, and a dry surface does not prove the source was repaired.",
+          "Photograph the whole mark in consistent light and record the date. Compare its boundary and surface texture over time. Do not press hard, puncture, drill, or cut the ceiling to decide whether it is wet."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What it tells you"
+          ],
+          "rows": [
+            [
+              "Dry and unchanged",
+              "The moisture event may be old, but the stain alone cannot confirm that the source was corrected."
+            ],
+            [
+              "Becomes damp under certain conditions",
+              "The timing can connect the symptom with rain, plumbing use, HVAC operation, or seasonal condensation."
+            ],
+            [
+              "Boundary is expanding or color is darkening",
+              "Ongoing or recurring moisture becomes more concerning and deserves timely investigation."
+            ],
+            [
+              "Paint bubbles, material softens, or the ceiling deforms",
+              "Moisture may have damaged the finish or ceiling material; stop treating it as a cosmetic stain."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "what-is-above",
+        "heading": "What is directly above or near the stain?",
+        "paragraphs": [
+          "Water can travel across framing, pipes, insulation, or the back of drywall before appearing, so the stain may not sit directly below the source. Still, mapping the ceiling to the space above is one of the most useful first steps. Combine that map with timing rather than assuming the nearest system is responsible."
+        ],
+        "table": {
+          "headers": [
+            "What is above or nearby",
+            "Timing to record"
+          ],
+          "rows": [
+            [
+              "Bathroom, kitchen, laundry, or water piping",
+              "Showers, tub draining, toilet use, appliance cycles, or water use"
+            ],
+            [
+              "Attic or roof assembly",
+              "Rain, wind direction, snowmelt, cold weather, or humid attic conditions"
+            ],
+            [
+              "Air handler, condensate piping, drain pan, or ductwork",
+              "Cooling operation, humid weather, or condensate production"
+            ],
+            [
+              "No obvious system above",
+              "Whether the stain changes at all and whether nearby rooms show related moisture"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bathroom-plumbing",
+        "heading": "A ceiling stain below a bathroom or other plumbing",
+        "paragraphs": [
+          "Below a bathroom, plausible sources include tub or shower leakage, a drain or overflow connection, a toilet-related leak, a supply connection, or a one-time spill. Below a kitchen or laundry area, supply lines, drains, and water-using appliances may be relevant. The ceiling stain cannot identify which component failed.",
+          "Timing can narrow the branch. A change after showering is different evidence from a change only when the tub drains or toilet is used. Continuous dampness may make a pressurized supply source worth evaluating, but that pattern is not proof. Stop using a suspect fixture if the ceiling becomes actively wet or worsens, and let a plumber trace the source without enlarging the damage through repeated testing."
+        ]
+      },
+      {
+        "id": "attic-roof-rain",
+        "heading": "A stain below an attic or roof",
+        "paragraphs": [
+          "A ceiling below an attic may be affected by exterior water entry, attic condensation, plumbing or equipment in the attic, HVAC condensate, or condensation on ducts or pipes. A stain in that location does not automatically mean the roof covering has failed.",
+          "If the mark darkens, becomes damp, expands, or starts dripping during or after rain, exterior water intrusion becomes more plausible. Wind and delayed appearance matter because water may follow framing before reaching the ceiling. Do not diagnose shingles, flashing, penetrations, or sealant from the interior mark, and do not climb onto the roof. Preserve a repeatable rain-triggered wet ceiling as a separate, more specific troubleshooting intent."
+        ]
+      },
+      {
+        "id": "hvac",
+        "heading": "A stain near HVAC equipment, ductwork, or a register",
+        "paragraphs": [
+          "HVAC moisture is plausible when equipment, condensate piping, a drain pan, or attic ductwork is above the stain and the mark changes during cooling operation. DOE/PNNL guidance documents that condensation from an uninsulated condensate line in a hot, humid attic can wet drywall and eventually appear below as a ceiling spot. Attic duct condensation can create a similar downstream symptom.",
+          "Proximity is not proof. A stain near a supply register could still come from a roof or plumbing path, and ordinary dust patterns around a register are not the same as a water stain. Do not open equipment, remove ceiling registers, or enter an unsafe attic to investigate."
+        ],
+        "links": [
+          {
+            "before": "If moisture is visibly forming on the outside of attic ductwork, use ",
+            "label": "Why Is My AC Ductwork Sweating in the Attic?",
+            "href": "/hvac/ac-ductwork-sweating-in-attic/",
+            "after": " for that equipment-specific pattern."
+          },
+          {
+            "before": "If water is collecting around the indoor equipment itself, use ",
+            "label": "Why Is There Water Around My Indoor AC Unit?",
+            "href": "/hvac/water-around-indoor-ac-unit/",
+            "after": " instead of treating the ceiling stain as the primary symptom."
+          }
+        ]
+      },
+      {
+        "id": "old-dry-stain",
+        "heading": "What if the ceiling stain is dry and has not changed?",
+        "paragraphs": [
+          "A dry, unchanged mark may remain after a previous leak, spill, condensate problem, or repair. Dryness today is useful evidence, but it does not establish when the wetting occurred, whether hidden material dried fully, or whether the source will return under the same weather or operating conditions.",
+          "Before cosmetic work, build reasonable confidence that the trigger has stopped and the ceiling material is sound. Review repair history, monitor through the conditions that previously mattered, and look for renewed darkening, paint failure, odor, softness, or growth. There is no universal waiting period that proves every ceiling assembly is dry."
+        ]
+      },
+      {
+        "id": "getting-bigger",
+        "heading": "What if the ceiling stain is getting bigger?",
+        "paragraphs": [
+          "An expanding edge, increasing discoloration, recurring dampness, bubbling paint, or new dripping makes ongoing moisture more likely and raises the urgency. Do not wait for the ceiling to sag simply to collect more evidence. Stop using a suspected fixture when practical, move belongings from below, and arrange evaluation by the trade that matches the timing.",
+          "If the material is soft, crumbling, delaminating, sagging, or bulging, the problem has moved beyond a stain. Keep clear because wet ceiling material can lose strength, and hidden water may add weight."
+        ]
+      },
+      {
+        "id": "stain-mold-lookalikes",
+        "heading": "Water stain, mold-like growth, or another discoloration?",
+        "paragraphs": [
+          "Water staining is often tan, yellow, brown, or darker than the surrounding paint, but color and ring shape do not identify the source. Mold-like growth may appear spotted, fuzzy, or irregular, yet appearance cannot identify a species. Soot or dust deposition, rust from a metal fastener, paint bleed, smoke residue, and an old repair can also create ceiling discoloration.",
+          "Treat visible growth as a moisture clue rather than naming it by sight. The existing ceiling-mold guide owns suspected growth, cleanup boundaries, testing, and recurrence. This page remains focused on water-like staining."
+        ],
+        "link": {
+          "before": "If growth rather than discoloration is the defining symptom, use ",
+          "label": "Why Is My Ceiling Getting Moldy?",
+          "href": "/moisture-and-mold/mold-growing-on-ceiling/",
+          "after": " for that separate investigation."
+        }
+      },
+      {
+        "id": "attic-condensation",
+        "heading": "Could attic condensation cause a ceiling stain?",
+        "paragraphs": [
+          "Yes, under some conditions. Building America guidance explains that warm, moisture-laden indoor air can leak into a cold attic and condense on cold roof or framing surfaces. That moisture may wet insulation or ceiling materials. Seasonal cold-weather recurrence can make attic condensation relevant, but a ceiling stain alone cannot diagnose ventilation, insulation, or air-barrier defects.",
+          "Do not walk on ceiling drywall, disturb insulation, or enter an attic without a proper access route, stable walking surface, safe temperature, and clear electrical conditions. A roofing, building-performance, HVAC, or insulation professional may need to determine which system is involved."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "paragraphs": [
+          "Keep the investigation visible and non-invasive. A dated pattern is more useful than a guessed component. A consumer moisture meter may compare accessible areas, but readings vary with material, paint, fasteners, salts, meter type, and depth. One reading cannot identify a roof leak, plumbing failure, mold, or structural damage, and a meter is not required."
+        ],
+        "bullets": [
+          "Photograph the stain from the same position and record its visible boundary.",
+          "Note whether it is dry, damp, periodically wet, expanding, or changing texture.",
+          "Map the room, fixture, attic area, roof area, or HVAC equipment above it.",
+          "Record rain, wind, snowmelt, plumbing use, showers, appliance cycles, and cooling operation.",
+          "From the floor, look for bubbling paint, softness, sagging, bulging, visible growth, odor, or active dripping without probing.",
+          "Move belongings away from an active leak and keep people out from beneath damaged material."
+        ],
+        "callout": {
+          "title": "Do not turn a ceiling stain into an invasive inspection",
+          "text": "Do not drill, cut drywall, puncture a bulge, remove a light or register, open electrical boxes, remove insulation, dismantle HVAC equipment, enter an unsafe attic, or climb onto the roof."
+        }
+      },
+      {
+        "id": "paint-over",
+        "heading": "Should you paint over a ceiling water stain?",
+        "paragraphs": [
+          "Not before the moisture question is resolved. Paint can hide discoloration without fixing a roof path, plumbing leak, condensate problem, or damp ceiling material. EPA guidance also says not to paint over moldy surfaces, and paint-manufacturer guidance calls for finding and correcting the water source before stain-blocking and repainting.",
+          "Once the source has been addressed, the material is dry and sound, and any mold or damage has been handled appropriately, cosmetic repair may make sense. This article does not turn that later step into proof that the ceiling was safe to cover."
+        ]
+      },
+      {
+        "id": "urgent",
+        "heading": "When a ceiling stain becomes urgent",
+        "paragraphs": [
+          "A sagging, bulging, visibly water-loaded, actively deforming, or shedding ceiling is no longer an ordinary stain problem. FEMA guidance treats sagging and trapped water in ceilings as a safety concern. Keep people and valuables out from below and arrange prompt professional help. Do not puncture a bulge or attempt to drain it yourself.",
+          "Water near a ceiling light, fan, smoke alarm, wiring, junction box, or other electrical equipment requires conservative handling. Do not touch the wet fixture, remove it, open electrical equipment, or perform live testing. Keep clear and use qualified electrical help as appropriate. If sewage or wastewater may be involved, avoid contact and use experienced contaminated-water cleanup help."
+        ],
+        "callout": {
+          "title": "Keep clear of water-loaded ceilings and wet electrical equipment",
+          "text": "Do not stand beneath a sagging or bulging area, puncture it, or touch wet electrical devices. Restrict access and obtain prompt qualified help."
+        }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should you call?",
+        "paragraphs": [
+          "Choose one starting trade from the evidence. Call a plumber when the stain changes with fixture or appliance water use. Use a roofer or building-envelope professional when it reliably changes after rain. An HVAC professional fits condensate equipment, drain, or duct evidence. A qualified contractor or inspector can coordinate when the source remains unclear or material damage involves several systems.",
+          "Experienced mold or moisture-remediation help may be appropriate for significant recurring growth, hidden wet material, contaminated water, or a scope that cannot be handled safely. Do not send every unchanged stain to every trade; give the chosen professional your timeline, photographs, and map of what is above."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A ceiling water stain tells you that moisture was present. It does not, by itself, tell you whether the source remains active or whether the water came from the roof, plumbing, HVAC equipment, duct condensation, or an older event.",
+          "Start with whether the stain is wet or changing, then identify what is above it and record rain, plumbing, and HVAC timing. Keep checks non-invasive. Escalate spreading moisture, damaged ceiling material, electrical exposure, active dripping, or contaminated water promptly."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moisture Control Guidance for Building Design, Construction and Maintenance",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0"
+      },
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Mold Cleanup in Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/mold-cleanup-your-home"
+      },
+      {
+        "title": "Dampness and Mold Assessment Tool for General Buildings",
+        "publisher": "CDC/NIOSH",
+        "url": "https://www.epa.gov/sites/default/files/2019-02/documents/2019-115.pdf"
+      },
+      {
+        "title": "Pre-Retrofit Assessment of Attics, Ceilings, and Roofs",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/information/pre-retrofit-assessment-attics-ceilings-and-roofs"
+      },
+      {
+        "title": "Condensation Control in Attics and Roofs in Cold Weather",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/resource-guides/condensation-control-attics-and-roofs-cold-weather"
+      },
+      {
+        "title": "Look for Condensate Drain Line Insulation",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/diy-guides/look-condensate-drain-line-insulation"
+      },
+      {
+        "title": "Tips for Returning Home Safely After a Disaster",
+        "publisher": "Federal Emergency Management Agency",
+        "url": "https://www.fema.gov/vi/print/pdf/node/693071"
+      },
+      {
+        "title": "Water-Damaged Electrical Equipment",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/water-damaged-electrical-equipment/"
+      },
+      {
+        "title": "Interior Surface Preparation FAQs",
+        "publisher": "Sherwin-Williams",
+        "url": "https://www.sherwin-williams.com/home-builders/ceiling-paint/resources/faqs/interior-surface-preparation-faqs"
       }
     ]
   }

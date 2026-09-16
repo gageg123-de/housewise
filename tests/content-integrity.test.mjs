@@ -881,7 +881,7 @@ test("ceiling mold guide uses location, timing, and moisture evidence without sp
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling getting moldy,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-13");
-  assert.equal(article.updated_date, "2026-09-13");
+  assert.equal(article.updated_date, "2026-09-16");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.room_or_location, ["whole-house", "bathroom", "bedroom", "living-area"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/mold-growing-on-ceiling/"));
@@ -893,6 +893,8 @@ test("ceiling mold guide uses location, timing, and moisture evidence without sp
   assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/ac-ductwork-sweating-in-attic/"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/house-humid-with-ac-running/"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-growing-around-windows/"));
+  assert.ok(article.body_sections.some((section) => section.links?.some((link) => link.href === "/moisture-and-mold/water-stain-on-ceiling/")));
+  assert.ok(article.related_articles.includes("water-stain-on-ceiling"));
   assert.equal(article.image.src, "/images/ceiling-mold-location-guide.webp");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
@@ -907,6 +909,34 @@ test("ceiling mold guide uses location, timing, and moisture evidence without sp
   assert.match(body, /Do not turn a ceiling inspection into demolition/i);
 });
 
+
+test("ceiling water stain guide separates old and active moisture without guessing the source", () => {
+  const article = registry.find((item) => item.slug === "water-stain-on-ceiling");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling water stain,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-16");
+  assert.equal(article.updated_date, "2026-09-16");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/water-stain-on-ceiling/"));
+  assert.ok(article.body_sections.some((section) => section.id === "wet-or-dry" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "what-is-above" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
+  for (const href of ["/moisture-and-mold/mold-growing-on-ceiling/", "/hvac/ac-ductwork-sweating-in-attic/", "/hvac/water-around-indoor-ac-unit/"]) {
+    assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  }
+  assert.equal(article.image.src, "/images/ceiling-water-stain-clues.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Federal Emergency Management Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /not proof that moisture is active/i);
+  assert.match(body, /Do not puncture/i);
+  assert.match(body, /Do not touch the wet fixture/i);
+});
 
 test("sweating walls guide distinguishes surface condensation from localized water sources", () => {
   const article = registry.find((item) => item.slug === "walls-sweating");

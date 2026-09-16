@@ -292,6 +292,17 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["mold on bedroom ceiling", "mold-growing-on-ceiling"],
     ["mold in ceiling corner", "mold-growing-on-ceiling"],
     ["mold keeps coming back on ceiling", "mold-growing-on-ceiling"],
+    ["water stain on ceiling", "water-stain-on-ceiling"],
+    ["why is there a water stain on my ceiling", "water-stain-on-ceiling"],
+    ["brown water stain on ceiling", "water-stain-on-ceiling"],
+    ["brown spot on ceiling", "water-stain-on-ceiling"],
+    ["yellow stain on ceiling", "water-stain-on-ceiling"],
+    ["water mark on ceiling", "water-stain-on-ceiling"],
+    ["ceiling water stain", "water-stain-on-ceiling"],
+    ["old water stain on ceiling", "water-stain-on-ceiling"],
+    ["dry water stain on ceiling", "water-stain-on-ceiling"],
+    ["ceiling stain below bathroom", "water-stain-on-ceiling"],
+    ["ceiling stain getting bigger", "water-stain-on-ceiling"],
     ["walls sweating", "walls-sweating"],
     ["why are my walls sweating", "walls-sweating"],
     ["condensation on walls", "walls-sweating"],
@@ -399,6 +410,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["water stain on ceiling", "ceiling wet after rain", "mold around windows", "condensation inside windows", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-on-ceiling", query);
   }
+  for (const query of ["mold on ceiling", "ceiling mold", "ceiling wet after rain", "ceiling stain after rain", "water dripping from ceiling", "ceiling sagging", "ceiling bulging", "mold in attic", "water dripping from ac vent", "water around indoor ac unit"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "water-stain-on-ceiling", query);
+  }
   for (const query of ["wet spot on wall", "wall wet after rain", "mold on wall", "mold around windows", "condensation inside windows", "ceiling mold", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "walls-sweating", query);
   }
@@ -420,6 +434,14 @@ test("ceiling-mold Finder paths stay location-specific and separate from window 
   assert.ok(!getFinderSymptomOptions("garage").some((item) => item.value === "ceiling-mold"));
 });
 
+
+test("ceiling-stain Finder paths stay narrow and separate from active ceiling hazards", () => {
+  for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "ceiling-stain"), location);
+    assert.equal(rankFinderArticles(registry, location, "ceiling-stain")[0]?.article.slug, "water-stain-on-ceiling", location);
+  }
+  for (const location of ["yard", "garage", "attic"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ceiling-stain"), location);
+});
 
 test("sweating-wall Finder paths preserve localized leak and mold distinctions", () => {
   for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {

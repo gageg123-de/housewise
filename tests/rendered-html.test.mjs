@@ -601,6 +601,25 @@ test("ceiling mold guide renders moisture-source diagnosis, safety, schema, and 
 });
 
 
+test("ceiling water stain guide renders timing, source uncertainty, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/water-stain-on-ceiling");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There a Water Stain on My Ceiling\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/water-stain-on-ceiling\//);
+  assert.match(html, /First: is the stain wet right now\?/);
+  assert.match(html, /What is directly above or near the stain\?/);
+  assert.match(html, /Do not puncture/);
+  assert.match(html, /Do not touch the wet fixture/);
+  assert.match(html, /href="\/moisture-and-mold\/mold-growing-on-ceiling\/"/);
+  assert.match(html, /src="\/images\/ceiling-water-stain-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ceiling-water-stain-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("sweating walls guide renders source distinction, safety, schema, and visual", async () => {
   const response = await render("/moisture-and-mold/walls-sweating");
   const html = await response.text();
