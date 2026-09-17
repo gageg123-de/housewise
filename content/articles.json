@@ -4975,7 +4975,8 @@
       "condensation-inside-windows",
       "house-humid-with-ac-running",
       "ac-ductwork-sweating-in-attic",
-      "water-stain-on-ceiling"
+      "water-stain-on-ceiling",
+      "mold-in-attic"
     ],
     "image": {
       "src": "/images/ceiling-mold-location-guide.webp",
@@ -5055,7 +5056,15 @@
           "label": "Why Is My AC Ductwork Sweating in the Attic?",
           "href": "/hvac/ac-ductwork-sweating-in-attic/",
           "after": " for that separate HVAC-specific moisture pattern."
-        }
+        },
+        "links": [
+          {
+            "before": "If growth is visible on attic-side sheathing, rafters, or trusses, use ",
+            "label": "Why Is There Mold in My Attic?",
+            "href": "/moisture-and-mold/mold-in-attic/",
+            "after": " for the attic-specific moisture-source framework."
+          }
+        ]
       },
       {
         "id": "below-plumbing",
@@ -5649,7 +5658,8 @@
     "related_articles": [
       "mold-growing-on-ceiling",
       "ac-ductwork-sweating-in-attic",
-      "water-around-indoor-ac-unit"
+      "water-around-indoor-ac-unit",
+      "mold-in-attic"
     ],
     "image": {
       "src": "/images/ceiling-water-stain-clues.webp",
@@ -5798,7 +5808,13 @@
         "paragraphs": [
           "Yes, under some conditions. Building America guidance explains that warm, moisture-laden indoor air can leak into a cold attic and condense on cold roof or framing surfaces. That moisture may wet insulation or ceiling materials. Seasonal cold-weather recurrence can make attic condensation relevant, but a ceiling stain alone cannot diagnose ventilation, insulation, or air-barrier defects.",
           "Do not walk on ceiling drywall, disturb insulation, or enter an attic without a proper access route, stable walking surface, safe temperature, and clear electrical conditions. A roofing, building-performance, HVAC, or insulation professional may need to determine which system is involved."
-        ]
+        ],
+        "link": {
+          "before": "If mold-like growth is visible on attic-side wood or sheathing, use ",
+          "label": "Why Is There Mold in My Attic?",
+          "href": "/moisture-and-mold/mold-in-attic/",
+          "after": " for that distinct growth-and-moisture investigation."
+        }
       },
       {
         "id": "safe-observations",
@@ -5906,6 +5922,326 @@
         "title": "Interior Surface Preparation FAQs",
         "publisher": "Sherwin-Williams",
         "url": "https://www.sherwin-williams.com/home-builders/ceiling-paint/resources/faqs/interior-surface-preparation-faqs"
+      }
+    ]
+  },
+  {
+    "title": "Why Is There Mold in My Attic?",
+    "slug": "mold-in-attic",
+    "description": "Mold-like growth in an attic points to a moisture problem, but not one specific cause. Use location, wetness, rain timing, season, and nearby systems to narrow the source.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "attic-and-insulation",
+      "hvac"
+    ],
+    "symptoms": [
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "attic"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-16",
+    "updated_date": "2026-09-16",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is there mold in my attic",
+      "mold in attic",
+      "attic mold",
+      "mold on attic wood",
+      "mold on roof sheathing",
+      "mold on attic rafters",
+      "mold on attic trusses",
+      "mold growing in attic",
+      "why is my attic moldy",
+      "mold on plywood in attic",
+      "black spots on attic wood",
+      "white mold looking growth in attic",
+      "mold in attic but roof not leaking",
+      "attic mold from condensation",
+      "mold in attic in winter",
+      "mold near bathroom vent in attic"
+    ],
+    "target_search_intent": "Help a homeowner investigate visible or suspected mold-like growth on attic sheathing, rafters, trusses, or other attic materials by using growth location, current wetness, rain timing, season, attic configuration, exhaust, and HVAC clues to narrow the moisture source without identifying a species or absorbing separate attic-dampness, condensation, frost, roof-leak, ceiling-mold, or duct-sweating intents.",
+    "direct_answer": "Mold-like growth in an attic means the material experienced moisture conditions that supported growth. It does not, by itself, prove the roof leaks, show whether the material is wet now, identify a mold species, or mean the attic simply needs more ventilation. Possible moisture sources include roof or exterior water entry, condensation on cold surfaces, humid indoor air leaking through the ceiling plane, exhaust released into the attic, HVAC condensate, or repeatedly wet ductwork. Start with where the growth is concentrated, whether nearby material is currently wet, whether it changes after rain or by season, and what equipment or exhaust paths are nearby.",
+    "likely_causes": [
+      "Roof or exterior water intrusion affecting a localized area",
+      "Condensation on roof sheathing or framing under the relevant seasonal conditions",
+      "Humid indoor air leaking through attic access points or ceiling penetrations",
+      "Bathroom or kitchen exhaust discharging moisture into the attic",
+      "HVAC condensate leakage or another equipment-related water source",
+      "Condensation on cold attic ductwork in an applicable configuration"
+    ],
+    "safe_checks": [
+      "Observe only from a stable, safe access point or established walkway",
+      "Photograph where growth is concentrated without touching or disturbing it",
+      "Note whether wood or insulation appears dry, damp, stained, dripping, or deteriorated",
+      "Record rain, season, bathroom use, cooling operation, and other timing clues",
+      "Identify visible nearby exhaust ducts, HVAC equipment, or ductwork from a safe position",
+      "Check rooms below for ceiling stains or visible moisture without cutting materials"
+    ],
+    "professional_help": "Use a roofer or building-envelope professional when evidence follows rain or a localized roof area; an HVAC professional when condensate or duct moisture is involved; a building-science or energy professional for widespread seasonal condensation or air-leakage concerns; and an experienced mold/moisture professional when growth is extensive, inaccessible, recurring, or unsafe to disturb. Structural deterioration warrants appropriately qualified evaluation.",
+    "related_articles": [
+      "mold-growing-on-ceiling",
+      "water-stain-on-ceiling",
+      "ac-ductwork-sweating-in-attic",
+      "water-around-indoor-ac-unit"
+    ],
+    "image": {
+      "src": "/images/attic-mold-moisture-source-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel attic guide showing localized growth near a roof penetration, broader growth on sheathing, growth near an exhaust duct, and growth near HVAC ductwork.",
+      "caption": "Conceptual illustration: Where attic growth is concentrated can narrow the moisture investigation, but location alone does not prove a roof, exhaust, condensation, or HVAC cause.",
+      "kind": "conceptual",
+      "after_section": "location"
+    },
+    "body_sections": [
+      {
+        "id": "moisture-first",
+        "heading": "First: attic mold means moisture got in or stayed there",
+        "paragraphs": [
+          "Mold needs moisture and a food source, and attic wood products can provide a surface where growth remains visible after a damp period. The useful conclusion is that moisture conditions supported growth—not that one hidden component has failed. Dark, white, green, or other coloring cannot name a species, establish health risk, or reveal the water source.",
+          "Separate the growth from the current condition. Sheathing may look dry today even though it became damp during rain, a winter cold snap, humid summer weather, shower use, or an earlier equipment problem. Conversely, active droplets, staining, dripping, wet insulation, or soft wood show that the investigation is no longer about an old cosmetic mark."
+        ],
+        "callout": {
+          "title": "Do not assume the roof leaks—or that more vents are the answer",
+          "text": "Roof intrusion and inadequate drying are possibilities, but condensation, indoor-air leakage, exhaust, HVAC water, and attic design also matter. Identify the moisture pattern before choosing a repair."
+        }
+      },
+      {
+        "id": "location",
+        "heading": "Where is the growth concentrated?",
+        "paragraphs": [
+          "Location changes which questions deserve attention, but it is evidence rather than a diagnosis. Compare a localized patch with the rest of the visible attic from a safe access point. Widespread growth can indicate a broader moisture condition, while a small area can make a nearby source more relevant; neither pattern proves a particular cause."
+        ],
+        "table": {
+          "headers": [
+            "Visible pattern",
+            "What to investigate"
+          ],
+          "rows": [
+            [
+              "Localized near a roof penetration",
+              "Rain timing, staining, and current dampness; do not diagnose flashing or roofing from growth alone"
+            ],
+            [
+              "Broadly across roof sheathing",
+              "Seasonal condensation, indoor moisture, air leakage, and the attic's vented or unvented design"
+            ],
+            [
+              "Near an exhaust duct or termination",
+              "Whether the duct visibly releases indoors or is disconnected; do not assume every visible duct is wrong"
+            ],
+            [
+              "Near HVAC equipment",
+              "Condensate, drain-pan, or other equipment water evidence without opening the cabinet"
+            ],
+            [
+              "Near repeatedly wet ductwork",
+              "Visible exterior duct condensation and damaged insulation during cooling operation"
+            ],
+            [
+              "On rafters, trusses, or isolated framing",
+              "Nearby moisture evidence and material condition; surface growth alone does not mean structural failure"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "wet-now",
+        "heading": "Is the attic material wet right now?",
+        "paragraphs": [
+          "Visible growth can remain after wood dries, so mold-like spotting does not prove active moisture. Likewise, one dry observation does not prove the original source was corrected. Photograph the area and record whether the wood, insulation, fasteners, and nearby surfaces look dry, stained, damp, frosted, dripping, soft, swollen, or deteriorated.",
+          "Active water, saturated insulation, a spreading ceiling stain below, or repeated wetness deserves timely source investigation. Do not press, scrape, sand, drill, or cut suspect material to test it. If the defining symptom is a water-like mark on the finished ceiling below, use the ceiling-stain guide for that separate current-versus-old moisture question."
+        ],
+        "link": {
+          "before": "For brown or yellow discoloration on the room-side ceiling, use ",
+          "label": "Why Is There a Water Stain on My Ceiling?",
+          "href": "/moisture-and-mold/water-stain-on-ceiling/",
+          "after": "."
+        }
+      },
+      {
+        "id": "roof-intrusion",
+        "heading": "Could the roof be leaking?",
+        "paragraphs": [
+          "Yes, roof or exterior water entry is one plausible source. It becomes more relevant when dampness, staining, or growth is concentrated near one roof area or penetration and repeatedly changes during or after rain. Water can travel along sheathing or framing, so the visible patch still may not sit directly below its entry point.",
+          "Attic mold alone cannot identify failed shingles, flashing, a vent boot, underlayment, sealant, or another roof component. Do not climb onto the roof or repeatedly wet-test it. A roofer or building-envelope professional should correlate interior evidence with exterior conditions when the pattern follows rain."
+        ]
+      },
+      {
+        "id": "condensation-air-leakage",
+        "heading": "Could condensation or indoor-air leakage be causing it?",
+        "paragraphs": [
+          "Condensation occurs when moisture-containing air reaches a surface cold enough for water vapor to condense. In cold weather, Building America documents warm, humid air from the home or attic ducts reaching cold roof sheathing, rafters, or trusses. Openings at attic hatches, top plates, plumbing and electrical penetrations, recessed fixtures, chases, and exhaust housings can connect indoor air with an unconditioned attic.",
+          "Those pathways are concepts for a qualified investigation, not instructions to spray foam every opening. Heat-producing fixtures, flues, combustion-air provisions, fire-rated assemblies, and electrical penetrations require appropriate materials and clearances. Do not disturb insulation or seal an unknown opening as an experiment."
+        ]
+      },
+      {
+        "id": "exhaust",
+        "heading": "Could a bathroom or kitchen exhaust fan be involved?",
+        "paragraphs": [
+          "DOE/PNNL guidance states that bathroom and kitchen exhaust should discharge outdoors rather than into an attic. Moist exhaust released into an attic can support growth and damage wood. A disconnected duct, an open duct end, or moisture concentrated near a visible termination makes this branch worth professional evaluation.",
+          "Do not assume a duct is wrong merely because it passes through the attic; it may continue to a roof or wall termination. Observe only what is plainly visible from a safe position. Do not reroute, disconnect, or modify an exhaust duct while diagnosing mold."
+        ]
+      },
+      {
+        "id": "hvac-ducts",
+        "heading": "Could HVAC equipment or sweating ductwork be involved?",
+        "paragraphs": [
+          "When an air handler or condensate system is in the attic, water around the equipment, pan, or drain area can wet nearby materials. Insulated cooling ducts in a hot, humid attic may also collect exterior condensation when surface conditions permit. Growth close to those wet areas makes HVAC moisture relevant, but proximity alone does not prove the equipment caused it.",
+          "Do not open cabinets, pans, electrical compartments, or insulated ducts. If condensation is visibly forming on duct exteriors, keep that equipment-specific diagnosis with the duct-sweating guide. If water is collecting around the indoor unit, use the indoor-unit water guide."
+        ],
+        "links": [
+          {
+            "before": "For visible condensation on attic ducts, use ",
+            "label": "Why Is My AC Ductwork Sweating in the Attic?",
+            "href": "/hvac/ac-ductwork-sweating-in-attic/",
+            "after": "."
+          },
+          {
+            "before": "For a puddle or active water around attic HVAC equipment, use ",
+            "label": "Why Is There Water Around My Indoor AC Unit?",
+            "href": "/hvac/water-around-indoor-ac-unit/",
+            "after": "."
+          }
+        ]
+      },
+      {
+        "id": "season-configuration",
+        "heading": "Why attic mold may be worse in certain seasons",
+        "paragraphs": [
+          "In heating climates, winter condensation can develop when warm indoor moisture reaches cold roof-deck surfaces; frost or droplets may appear and later wet materials as conditions change. In hot-humid climates, humid outdoor air and cold HVAC or duct surfaces can create a different moisture pattern. Rain, snowmelt, cooling operation, and indoor moisture production are separate timing clues.",
+          "Attic configuration changes the explanation. A traditional vented attic with insulation and the air barrier near the ceiling plane behaves differently from an unvented or conditioned attic insulated at the roofline. HVAC location, pressure relationships, vapor and thermal boundaries, and climate all matter. Do not apply cold-climate venting advice universally to a hot-humid or intentionally unvented assembly."
+        ]
+      },
+      {
+        "id": "ventilation-insulation",
+        "heading": "Does attic ventilation cause or fix mold?",
+        "paragraphs": [
+          "Ventilation can help some vented attics dry, especially when the assembly is designed for that airflow, but it is only one part of moisture control. Adding vents cannot repair a roof leak, reconnect an exhaust duct, stop indoor-air leakage, or correct an HVAC condensate problem. DOE research also recognizes intentionally unvented and conditioned attic designs.",
+          "Insulation affects surface temperatures and the thermal boundary, but growth does not prove insulation is missing or defective. Wet, contaminated, compressed, or deteriorated insulation may need evaluation. Do not move or remove suspect insulation, alter soffit baffles, or add ventilation until the attic design and moisture source are understood."
+        ]
+      },
+      {
+        "id": "sheathing-framing",
+        "heading": "What growth on sheathing, rafters, or trusses can tell you",
+        "paragraphs": [
+          "Growth on plywood, OSB, or other roof sheathing means that surface experienced enough moisture to support growth. It does not say whether the moisture came from condensation, exterior water, exhaust, or another attic condition, and it does not automatically mean the sheathing requires replacement.",
+          "The same distinction applies to rafters and trusses. Surface spotting is different from rot, softness, delamination, cracking, sagging, or structural deformation. Material condition and structural capacity require separate evaluation; do not probe or repair structural members yourself."
+        ],
+        "link": {
+          "before": "If the visible growth is on the finished ceiling inside the room rather than attic-side materials, use ",
+          "label": "Why Is My Ceiling Getting Moldy?",
+          "href": "/moisture-and-mold/mold-growing-on-ceiling/",
+          "after": "."
+        }
+      },
+      {
+        "id": "color-testing-cleanup",
+        "heading": "Can color or a mold test identify the problem?",
+        "paragraphs": [
+          "No color chart can reliably identify mold species, source, or danger. CDC notes that molds occur in many colors and that color does not determine whether one is more or less dangerous. Do not call dark growth “toxic black mold,” and do not sniff, touch, or photographically identify a species.",
+          "EPA says routine sampling is usually unnecessary when visible growth is present; the priority is locating and correcting moisture. Professional assessment or sampling can be useful when results would change a decision, the extent is unclear, litigation is involved, or an experienced professional recommends it. Consumer petri-dish results do not map the hidden moisture source.",
+          "Cleanup is secondary to this diagnostic guide. Do not sand, grind, brush, spray, coat, or disturb attic growth or insulation as a first step. EPA bases cleanup scope partly on area and water damage, and HVAC contamination or extensive/inaccessible growth warrants experienced help. Cleanup without moisture correction invites recurrence."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely observe",
+        "paragraphs": [
+          "Attic access is optional, not a prerequisite. Make observations only from a stable access point or established walkway when temperature, structure, electrical conditions, and clearance are safe. Otherwise, use a professional inspector. A photograph showing location and extent is more useful than disturbed material."
+        ],
+        "bullets": [
+          "Photograph visible areas and note whether growth is localized or widespread.",
+          "Record dry, damp, stained, dripping, frosted, soft, or deteriorated material without touching it.",
+          "Note rain, season, bathroom use, HVAC operation, and previous repair timing.",
+          "Identify visible exhaust ducts, HVAC equipment, ductwork, and roof penetrations from the safe observation point.",
+          "Check living spaces below for ceiling stains or mold-like growth.",
+          "Keep people away from active leakage, visibly deteriorated framing, or unsafe equipment."
+        ],
+        "callout": {
+          "title": "Stop if the attic cannot be observed safely",
+          "text": "Do not walk on ceiling drywall, step between joists, balance on framing, crawl into confined areas, enter dangerous heat, disturb insulation or animal contamination, approach wet or exposed electrical equipment, or climb onto the roof. Suspected asbestos-containing material and structural deterioration require professional handling."
+        }
+      },
+      {
+        "id": "professional-help",
+        "heading": "When to call a professional",
+        "paragraphs": [
+          "Choose help based on evidence. Use a roofer or building-envelope professional for rain-correlated localized moisture; an HVAC professional for condensate, equipment, or duct condensation; and a building-science or energy professional for widespread seasonal condensation, attic-configuration, or ceiling-plane air-leakage questions.",
+          "An experienced mold/moisture professional is appropriate when growth is extensive, recurring, hidden, inaccessible, or beyond safe cleanup scope. A contractor or qualified inspector can coordinate uncertain multi-system problems. Soft or rotted wood, a sagging roof deck, structural deformation, extensive water damage, severe wetting, or an active significant leak warrants prompt appropriately qualified evaluation."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Attic mold-like growth tells you that moisture conditions supported growth; it does not identify the species, prove a roof leak, or prescribe more ventilation. Start with location and extent, then add current wetness, rain timing, seasonal behavior, attic design, exhaust, and HVAC evidence. Keep the investigation non-invasive and use the professional whose trade matches the pattern."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Mold Cleanup in Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/mold-cleanup-your-home"
+      },
+      {
+        "title": "Is Sampling/Testing for Mold Necessary?",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/samplingtesting-mold-necessary"
+      },
+      {
+        "title": "Mold, Testing, and Remediation",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/niosh/mold/testing-remediation/index.html"
+      },
+      {
+        "title": "Condensation Control in Attics and Roofs in Cold Weather",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/resource-guides/condensation-control-attics-and-roofs-cold-weather"
+      },
+      {
+        "title": "Look at Exhaust Fans for Venting to Outside",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/diy-guides/look-exhaust-fans-venting-outside"
+      },
+      {
+        "title": "Pre-Retrofit Assessment of Attics, Ceilings, and Roofs",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/information/pre-retrofit-assessment-attics-ceilings-and-roofs"
+      },
+      {
+        "title": "Air Sealing Attic Access",
+        "publisher": "U.S. Department of Energy Building Science Education",
+        "url": "https://bsesc.energy.gov/energy-basics/air-sealing-attic-access"
+      },
+      {
+        "title": "Unvented, Conditioned Attics — Building America Top Innovation",
+        "publisher": "U.S. Department of Energy",
+        "url": "https://www.energy.gov/cmei/buildings/articles/unvented-conditioned-attics-building-america-top-innovation"
+      },
+      {
+        "title": "Moisture Risk in Unvented Attics Due to Air Leakage Paths",
+        "publisher": "U.S. Department of Energy Building America",
+        "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/moisture-risk-unvented-attics.pdf"
+      },
+      {
+        "title": "HVAC Sealed and Insulated Metal Ducts",
+        "publisher": "U.S. Department of Energy Building Science Education",
+        "url": "https://bsesc.energy.gov/energy-basics/hvac-sealed-and-insulated-metal-ducts"
       }
     ]
   }

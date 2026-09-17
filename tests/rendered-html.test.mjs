@@ -582,6 +582,25 @@ test("bath-water sediment guide renders the three-clue framework, safety, schema
 });
 
 
+test("attic mold guide renders source patterns, configuration caveats, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/mold-in-attic");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Mold in My Attic\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/mold-in-attic\//);
+  assert.match(html, /Where is the growth concentrated\?/);
+  assert.match(html, /Could condensation or indoor-air leakage be causing it\?/);
+  assert.match(html, /Do not walk on ceiling drywall/);
+  assert.match(html, /href="\/hvac\/ac-ductwork-sweating-in-attic\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/water-stain-on-ceiling\/"/);
+  assert.match(html, /src="\/images\/attic-mold-moisture-source-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/attic-mold-moisture-source-guide\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("ceiling mold guide renders moisture-source diagnosis, safety, schema, and visual", async () => {
   const response = await render("/moisture-and-mold/mold-growing-on-ceiling");
   const html = await response.text();

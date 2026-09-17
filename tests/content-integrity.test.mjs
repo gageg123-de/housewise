@@ -876,6 +876,37 @@ test("bath-water sediment guide uses appearance, temperature, and fixture scope 
 });
 
 
+test("attic mold guide uses location, wetness, season, and configuration without species certainty", () => {
+  const article = registry.find((item) => item.slug === "mold-in-attic");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Attic mold,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-16");
+  assert.equal(article.updated_date, "2026-09-16");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.room_or_location, ["attic"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/mold-in-attic/"));
+  assert.ok(article.body_sections.some((section) => section.id === "location" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "wet-now"));
+  assert.ok(article.body_sections.some((section) => section.id === "season-configuration"));
+  assert.ok(article.body_sections.some((section) => section.id === "ventilation-insulation"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  for (const href of ["/moisture-and-mold/mold-growing-on-ceiling/", "/moisture-and-mold/water-stain-on-ceiling/", "/hvac/ac-ductwork-sweating-in-attic/", "/hvac/water-around-indoor-ac-unit/"]) {
+    assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  }
+  assert.equal(article.image.src, "/images/attic-mold-moisture-source-guide.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Centers for Disease Control and Prevention"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /Do not assume the roof leaks/i);
+  assert.match(body, /Do not call dark growth/i);
+  assert.match(body, /Do not walk on ceiling drywall/i);
+  assert.match(body, /intentionally unvented and conditioned attic designs/i);
+});
+
 test("ceiling mold guide uses location, timing, and moisture evidence without species certainty", () => {
   const article = registry.find((item) => item.slug === "mold-growing-on-ceiling");
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling getting moldy,"));
@@ -895,6 +926,8 @@ test("ceiling mold guide uses location, timing, and moisture evidence without sp
   assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-growing-around-windows/"));
   assert.ok(article.body_sections.some((section) => section.links?.some((link) => link.href === "/moisture-and-mold/water-stain-on-ceiling/")));
   assert.ok(article.related_articles.includes("water-stain-on-ceiling"));
+  assert.ok(article.related_articles.includes("mold-in-attic"));
+  assert.ok(article.body_sections.some((section) => section.links?.some((link) => link.href === "/moisture-and-mold/mold-in-attic/")));
   assert.equal(article.image.src, "/images/ceiling-mold-location-guide.webp");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
@@ -936,6 +969,8 @@ test("ceiling water stain guide separates old and active moisture without guessi
   assert.match(body, /not proof that moisture is active/i);
   assert.match(body, /Do not puncture/i);
   assert.match(body, /Do not touch the wet fixture/i);
+  assert.ok(article.related_articles.includes("mold-in-attic"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-in-attic/"));
 });
 
 test("sweating walls guide distinguishes surface condensation from localized water sources", () => {

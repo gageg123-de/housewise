@@ -292,6 +292,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["mold on bedroom ceiling", "mold-growing-on-ceiling"],
     ["mold in ceiling corner", "mold-growing-on-ceiling"],
     ["mold keeps coming back on ceiling", "mold-growing-on-ceiling"],
+    ["mold in attic", "mold-in-attic"],
+    ["attic mold", "mold-in-attic"],
+    ["mold on attic wood", "mold-in-attic"],
+    ["mold on roof sheathing", "mold-in-attic"],
+    ["mold on attic rafters", "mold-in-attic"],
+    ["mold on attic trusses", "mold-in-attic"],
+    ["mold growing in attic", "mold-in-attic"],
+    ["attic mold from condensation", "mold-in-attic"],
+    ["mold in attic but roof not leaking", "mold-in-attic"],
+    ["black spots on attic wood", "mold-in-attic"],
     ["water stain on ceiling", "water-stain-on-ceiling"],
     ["why is there a water stain on my ceiling", "water-stain-on-ceiling"],
     ["brown water stain on ceiling", "water-stain-on-ceiling"],
@@ -410,6 +420,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["water stain on ceiling", "ceiling wet after rain", "mold around windows", "condensation inside windows", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-on-ceiling", query);
   }
+  for (const query of ["mold on ceiling", "ceiling mold", "water stain on ceiling", "ceiling wet after rain", "attic damp", "condensation in attic", "frost in attic", "ductwork sweating in attic", "water around air handler", "why is my roof leaking"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-in-attic", query);
+  }
   for (const query of ["mold on ceiling", "ceiling mold", "ceiling wet after rain", "ceiling stain after rain", "water dripping from ceiling", "ceiling sagging", "ceiling bulging", "mold in attic", "water dripping from ac vent", "water around indoor ac unit"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "water-stain-on-ceiling", query);
   }
@@ -424,6 +437,12 @@ test("bedroom musty-smell Finder path is narrow and preserves neighboring odor i
   for (const query of ["garage smells musty","mold around window","condensation inside windows","house humid with ac running","house smells musty when ac turns on","closet smells musty","carpet smells musty"]) assert.notEqual(searchArticles(registry,query)[0]?.slug,"bedroom-smells-musty",query);
 });
 
+
+test("attic-mold Finder path remains attic-specific and separate from generic attic moisture", () => {
+  assert.ok(getFinderSymptomOptions("attic").some((item) => item.value === "attic-mold"));
+  assert.equal(rankFinderArticles(registry, "attic", "attic-mold")[0]?.article.slug, "mold-in-attic");
+  for (const location of ["yard", "garage", "bathroom", "bedroom", "living-area"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "attic-mold"), location);
+});
 
 test("ceiling-mold Finder paths stay location-specific and separate from window growth", () => {
   for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {
