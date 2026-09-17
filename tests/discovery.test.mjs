@@ -313,6 +313,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dry water stain on ceiling", "water-stain-on-ceiling"],
     ["ceiling stain below bathroom", "water-stain-on-ceiling"],
     ["ceiling stain getting bigger", "water-stain-on-ceiling"],
+    ["ceiling wet after rain", "ceiling-wet-after-rain"],
+    ["ceiling gets wet when it rains", "ceiling-wet-after-rain"],
+    ["wet spot on ceiling after rain", "ceiling-wet-after-rain"],
+    ["ceiling damp after rain", "ceiling-wet-after-rain"],
+    ["ceiling leaking when it rains", "ceiling-wet-after-rain"],
+    ["ceiling leak only when it rains", "ceiling-wet-after-rain"],
+    ["ceiling stain gets darker when it rains", "ceiling-wet-after-rain"],
+    ["water coming through ceiling during rain", "ceiling-wet-after-rain"],
+    ["ceiling wet after heavy rain", "ceiling-wet-after-rain"],
+    ["ceiling leak during wind driven rain", "ceiling-wet-after-rain"],
     ["walls sweating", "walls-sweating"],
     ["why are my walls sweating", "walls-sweating"],
     ["condensation on walls", "walls-sweating"],
@@ -423,6 +433,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["mold on ceiling", "ceiling mold", "water stain on ceiling", "ceiling wet after rain", "attic damp", "condensation in attic", "frost in attic", "ductwork sweating in attic", "water around air handler", "why is my roof leaking"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-in-attic", query);
   }
+  for (const query of ["water stain on ceiling", "mold on ceiling", "water dripping from ceiling", "ceiling sagging", "mold in attic", "attic condensation", "ductwork sweating in attic", "water dripping from ac vent", "water around indoor ac unit", "plumbing leak through ceiling"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "ceiling-wet-after-rain", query);
+  }
   for (const query of ["mold on ceiling", "ceiling mold", "ceiling wet after rain", "ceiling stain after rain", "water dripping from ceiling", "ceiling sagging", "ceiling bulging", "mold in attic", "water dripping from ac vent", "water around indoor ac unit"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "water-stain-on-ceiling", query);
   }
@@ -453,6 +466,14 @@ test("ceiling-mold Finder paths stay location-specific and separate from window 
   assert.ok(!getFinderSymptomOptions("garage").some((item) => item.value === "ceiling-mold"));
 });
 
+
+test("rain-wet ceiling Finder paths remain location-specific and separate from generic stains", () => {
+  for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "ceiling-rain"), location);
+    assert.equal(rankFinderArticles(registry, location, "ceiling-rain")[0]?.article.slug, "ceiling-wet-after-rain", location);
+  }
+  for (const location of ["yard", "garage", "attic"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ceiling-rain"), location);
+});
 
 test("ceiling-stain Finder paths stay narrow and separate from active ceiling hazards", () => {
   for (const location of ["bathroom", "bedroom", "living-area", "whole-house"]) {

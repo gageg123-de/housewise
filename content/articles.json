@@ -5616,7 +5616,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-16",
-    "updated_date": "2026-09-16",
+    "updated_date": "2026-09-17",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -5659,7 +5659,8 @@
       "mold-growing-on-ceiling",
       "ac-ductwork-sweating-in-attic",
       "water-around-indoor-ac-unit",
-      "mold-in-attic"
+      "mold-in-attic",
+      "ceiling-wet-after-rain"
     ],
     "image": {
       "src": "/images/ceiling-water-stain-clues.webp",
@@ -5748,7 +5749,13 @@
         "paragraphs": [
           "A ceiling below an attic may be affected by exterior water entry, attic condensation, plumbing or equipment in the attic, HVAC condensate, or condensation on ducts or pipes. A stain in that location does not automatically mean the roof covering has failed.",
           "If the mark darkens, becomes damp, expands, or starts dripping during or after rain, exterior water intrusion becomes more plausible. Wind and delayed appearance matter because water may follow framing before reaching the ceiling. Do not diagnose shingles, flashing, penetrations, or sealant from the interior mark, and do not climb onto the roof. Preserve a repeatable rain-triggered wet ceiling as a separate, more specific troubleshooting intent."
-        ]
+        ],
+        "link": {
+          "before": "If the stain repeatedly becomes damp or darker during or after rainfall, use ",
+          "label": "Why Is My Ceiling Wet After It Rains?",
+          "href": "/moisture-and-mold/ceiling-wet-after-rain/",
+          "after": " for the rain-specific investigation."
+        }
       },
       {
         "id": "hvac",
@@ -5944,7 +5951,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-16",
-    "updated_date": "2026-09-16",
+    "updated_date": "2026-09-17",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -5990,7 +5997,8 @@
       "mold-growing-on-ceiling",
       "water-stain-on-ceiling",
       "ac-ductwork-sweating-in-attic",
-      "water-around-indoor-ac-unit"
+      "water-around-indoor-ac-unit",
+      "ceiling-wet-after-rain"
     ],
     "image": {
       "src": "/images/attic-mold-moisture-source-guide.webp",
@@ -6073,7 +6081,13 @@
         "paragraphs": [
           "Yes, roof or exterior water entry is one plausible source. It becomes more relevant when dampness, staining, or growth is concentrated near one roof area or penetration and repeatedly changes during or after rain. Water can travel along sheathing or framing, so the visible patch still may not sit directly below its entry point.",
           "Attic mold alone cannot identify failed shingles, flashing, a vent boot, underlayment, sealant, or another roof component. Do not climb onto the roof or repeatedly wet-test it. A roofer or building-envelope professional should correlate interior evidence with exterior conditions when the pattern follows rain."
-        ]
+        ],
+        "link": {
+          "before": "If a finished ceiling below repeatedly becomes wet during or after rain, use ",
+          "label": "Why Is My Ceiling Wet After It Rains?",
+          "href": "/moisture-and-mold/ceiling-wet-after-rain/",
+          "after": " for that distinct interior symptom."
+        }
       },
       {
         "id": "condensation-air-leakage",
@@ -6242,6 +6256,356 @@
         "title": "HVAC Sealed and Insulated Metal Ducts",
         "publisher": "U.S. Department of Energy Building Science Education",
         "url": "https://bsesc.energy.gov/energy-basics/hvac-sealed-and-insulated-metal-ducts"
+      }
+    ]
+  },
+  {
+    "title": "Why Is My Ceiling Wet After It Rains?",
+    "slug": "ceiling-wet-after-rain",
+    "description": "A ceiling that repeatedly gets wet after rain makes exterior water entry more plausible, but the wet spot may be far from where rain entered. Use timing, location, and attic clues to narrow the source safely.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "attic-and-insulation"
+    ],
+    "symptoms": [
+      "moisture",
+      "leaking",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "bathroom",
+      "bedroom",
+      "living-area"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-17",
+    "updated_date": "2026-09-17",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my ceiling wet after it rains",
+      "ceiling wet after rain",
+      "ceiling gets wet when it rains",
+      "wet spot on ceiling after rain",
+      "ceiling leaking when it rains",
+      "ceiling damp after rain",
+      "water spot on ceiling after heavy rain",
+      "ceiling gets wet during heavy rain",
+      "ceiling wet but not dripping",
+      "ceiling leak only when it rains",
+      "water coming through ceiling when raining",
+      "ceiling wet after storm",
+      "ceiling stain gets darker when it rains",
+      "ceiling leak during wind driven rain"
+    ],
+    "target_search_intent": "Help a homeowner investigate an interior ceiling area that repeatedly becomes wet, damp, darker, or newly stained during or after rain by using rainfall timing, storm conditions, interior location, attic evidence, and nearby exterior features to distinguish likely bulk-water intrusion from condensation, plumbing, and HVAC moisture without claiming the interior wet spot identifies the exterior entry point.",
+    "direct_answer": "If the same ceiling area repeatedly becomes wet or darker during or shortly after rain, exterior water intrusion becomes more plausible than an unrelated indoor source. That does not prove the roof covering directly above the spot has failed. Water can enter at a penetration, intersection, roof edge, wall, or another exterior location, then follow decking, framing, fasteners, pipes, ducts, insulation, or other surfaces before reaching the ceiling. Record how reliably it follows rain, which storm conditions trigger it, where it appears, what is above or uphill from it, and whether safely visible attic materials show a current wet path.",
+    "likely_causes": [
+      "Rain entering through a roof penetration, transition, joint, or damaged water-control layer",
+      "Wind-driven rain entering through an exposed roof or wall feature",
+      "Water traveling along decking, framing, fasteners, pipes, ducts, or insulation before reaching the ceiling",
+      "A roof-to-wall, chimney, skylight, dormer, valley, or other flashing context that needs professional evaluation",
+      "Attic condensation that happens near the same time but is driven by temperature and humidity rather than rain",
+      "Plumbing or HVAC moisture whose timing happens to overlap with weather"
+    ],
+    "safe_checks": [
+      "Photograph the ceiling before, during, and after rain and record when moisture first appears.",
+      "Compare brief, heavy, prolonged, and wind-driven storms without going outdoors during unsafe weather.",
+      "Identify the room and what attic, upper floor, roof slope, wall transition, penetration, plumbing, or HVAC equipment is above or nearby.",
+      "Observe accessible attic evidence only from a safe access point or stable walkway; do not step on ceiling drywall or disturb insulation.",
+      "Keep people and belongings away from active dripping, sagging, bulging, electrically affected, or deteriorating ceiling material.",
+      "Give dated photographs and timing notes to the professional whose system best matches the evidence."
+    ],
+    "professional_help": "Use a qualified roofer when moisture reliably follows rain and exterior roof inspection is needed; a building-envelope professional when roof-to-wall or other exterior transitions may be involved; a plumber when fixture use is the repeatable trigger; and an HVAC professional when cooling operation, condensate equipment, or wet ductwork fits better than rainfall. Keep clear and obtain prompt help for active dripping, water near electrical equipment, sagging or bulging material, widespread wetting, or structural deterioration.",
+    "related_articles": [
+      "water-stain-on-ceiling",
+      "mold-growing-on-ceiling",
+      "mold-in-attic",
+      "ac-ductwork-sweating-in-attic",
+      "water-around-indoor-ac-unit"
+    ],
+    "image": {
+      "src": "/images/ceiling-wet-after-rain-clues.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing a ceiling wet spot after rain, a possible offset water path through an attic, nearby roof features as clues, and localized rain wetting compared with broad condensation.",
+      "caption": "Conceptual illustration: Water may travel within a roof and ceiling assembly before becoming visible, so the indoor wet spot does not identify the exterior entry point by itself.",
+      "kind": "conceptual",
+      "after_section": "water-travel"
+    },
+    "body_sections": [
+      {
+        "id": "rain-correlation",
+        "heading": "First: does the wet spot really follow the rain?",
+        "paragraphs": [
+          "A repeatable weather relationship is the strongest first clue. Record whether the same area becomes damp during rain, shortly afterward, or only after several hours. Compare that pattern with dry weather. If the ceiling stays dry through ordinary plumbing and HVAC use but changes with storms, bulk water entering from outdoors becomes more plausible.",
+          "Not every storm has to trigger the symptom. A brief light shower may not wet the same surfaces as prolonged rain, and wind can expose roof or wall features from a different direction. Treat those differences as observations rather than component diagnoses. One storm direction cannot tell you which flashing, vent, joint, or covering failed."
+        ],
+        "table": {
+          "headers": [
+            "Timing pattern",
+            "What it changes"
+          ],
+          "rows": [
+            [
+              "Every rain",
+              "A recurring exterior water path becomes more plausible."
+            ],
+            [
+              "Only heavy or prolonged rain",
+              "The assembly may take time or a larger moisture load before water becomes visible."
+            ],
+            [
+              "Only wind-driven storms",
+              "An exposed roof, vent, or wall transition deserves evaluation, but wind direction does not identify the defect."
+            ],
+            [
+              "Hours after rain",
+              "Water may have moved through or been held by materials before reaching the ceiling."
+            ],
+            [
+              "No consistent rain relationship",
+              "Plumbing, HVAC, condensation, or an older stain remains important to compare."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "water-travel",
+        "heading": "Why the ceiling wet spot may not be directly below the entry point",
+        "paragraphs": [
+          "Think of the visible spot as an exit or observation point, not a map pin. Once water gets past an exterior water-control layer, gravity, surface tension, gaps, and the shape of the assembly can guide it along roof decking, underlayment interfaces, framing, fasteners, pipes, ducts, insulation, or the back of drywall. It may move sideways while following a sloped or horizontal surface, then drop at a joint or low point.",
+          "That is why the nearest shingle, vent, skylight, chimney, or roof edge should not be named as the leak from inside the room. A qualified investigation has to connect interior timing and wetness with attic and exterior evidence. Random hose testing, roof cement, or sealant can redirect water, conceal evidence, or create a second problem."
+        ],
+        "callout": {
+          "title": "The wet ceiling is not an exterior leak locator",
+          "text": "Use the interior spot to begin mapping what is above and uphill from it. Do not assume the roof component directly overhead is the failed component."
+        }
+      },
+      {
+        "id": "above-nearby",
+        "heading": "What is above or near the wet area?",
+        "paragraphs": [
+          "Map the room to the building above it. Depending on the home's geometry, that may be an open attic, another floor, a roof slope, an exterior wall, or several overlapping systems. Nearby features change what should be inspected, but their presence is not proof of failure."
+        ],
+        "table": {
+          "headers": [
+            "Above or nearby",
+            "Useful evidence"
+          ],
+          "rows": [
+            [
+              "Open attic and roof slope",
+              "Current wet sheathing, a localized trail, wet insulation, or staining that changes with rain"
+            ],
+            [
+              "Chimney, skylight, plumbing vent, roof vent, or other penetration",
+              "Professional evaluation of the surrounding water-control details; proximity alone is not proof"
+            ],
+            [
+              "Dormer, valley, roof-to-wall intersection, or exterior wall",
+              "Whether wind-driven or prolonged rain changes the same interior area"
+            ],
+            [
+              "Bathroom, kitchen, laundry, or upper-floor plumbing",
+              "Whether moisture follows fixture use when it is not raining"
+            ],
+            [
+              "Air handler, condensate piping, or ductwork",
+              "Whether cooling operation, equipment water, or visible duct condensation fits better than weather"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "heavy-wind-driven",
+        "heading": "Why some ceiling leaks appear only in heavy or wind-driven rain",
+        "paragraphs": [
+          "Rain does not load every exterior surface the same way in every storm. Wind can drive water toward vents, roof edges, intersections, and wall surfaces that receive little water during a calm shower. FEMA investigations have documented wind-driven water intrusion through roof vents during severe storms. That supports the mechanism, but it does not mean every rain-specific ceiling leak comes from a vent.",
+          "Long or heavy rain can also supply more water than a brief shower. Materials and small spaces may store some moisture before it drains or reaches an interior finish, so visible wetness may be delayed. There is no universal rainfall amount or delay that identifies the entry point."
+        ]
+      },
+      {
+        "id": "penetrations-flashing",
+        "heading": "Could a roof penetration or flashing area be involved?",
+        "paragraphs": [
+          "Roof penetrations—such as plumbing vents, exhaust outlets, chimneys, skylights, and some equipment mounts—interrupt the roof's water-control layer. Building America guidance explains that these openings require flashing or other detailing integrated with that layer so water continues down and out. Roof-to-wall intersections, dormers, valleys, and similar transitions also depend on water-management details appropriate to the roof type.",
+          "A feature near the wet area is only a candidate for inspection. The roof may not use asphalt shingles, may be low-slope, and may have no chimney, skylight, or vent near the symptom. Do not lift roofing, remove flashing, smear sealant around likely-looking joints, or attempt roof access. Different roof systems and climates require different details."
+        ]
+      },
+      {
+        "id": "attic-observation",
+        "heading": "What you may be able to see from the attic",
+        "paragraphs": [
+          "A safely accessible attic can add useful evidence. From a proper access point or stable walkway, look for current wet roof sheathing, droplets, a localized water trail, damp framing, wet insulation, active dripping, or staining near—but not automatically caused by—a penetration. Compare what is visible during or soon after rain with dry-weather conditions.",
+          "An old stain on attic wood does not prove the current path, and a dry snapshot does not prove the leak has stopped. Do not require attic entry. Never step on ceiling drywall, balance on joists or trusses, crawl into an inaccessible area, move unknown insulation, approach exposed wiring, or enter an attic that is dangerously hot or contaminated."
+        ],
+        "callout": {
+          "title": "Skip the attic when access is not clearly safe",
+          "text": "A professional inspection is the right choice when there is no stable walkway, visibility is poor, wiring or contamination is present, or the area cannot be reached without crawling or disturbing insulation."
+        }
+      },
+      {
+        "id": "rain-vs-condensation",
+        "heading": "Rain intrusion or attic condensation?",
+        "paragraphs": [
+          "Bulk rainwater and condensation are different mechanisms. A localized wet trail that repeatedly appears during storms supports exterior intrusion. Condensation depends more on air moisture and surface temperature: in cold weather, warm humid indoor air leaking into an attic can condense on cold sheathing or framing, sometimes across a broader area. Frost or widespread droplets may follow temperature and humidity rather than rainfall.",
+          "The patterns can overlap, and roof vents can admit wind-blown rain under some conditions, so observation alone may not settle the question. Do not diagnose ventilation, insulation, or air sealing from one ceiling spot. If the defining symptom is mold-like growth on attic wood, keep that investigation with the attic-mold guide."
+        ],
+        "link": {
+          "before": "For visible or suspected growth on attic-side materials, use ",
+          "label": "Why Is There Mold in My Attic?",
+          "href": "/moisture-and-mold/mold-in-attic/",
+          "after": "."
+        }
+      },
+      {
+        "id": "rain-vs-indoor-sources",
+        "heading": "Rain intrusion, plumbing leak, or HVAC moisture?",
+        "paragraphs": [
+          "Let timing separate the branches. Moisture that reliably follows rain makes exterior entry more plausible. Moisture that appears after a shower, tub drain, toilet flush, laundry cycle, or other water use regardless of weather shifts attention toward plumbing. A leak can still occur during a storm by coincidence, so repeat the comparison without deliberately causing more damage.",
+          "HVAC becomes more relevant when the ceiling changes with cooling operation, water is present around attic equipment, or duct exteriors are visibly condensing. Rain and HVAC operation can occur together in humid weather; neither clue automatically excludes the other. Do not open equipment, pans, drain connections, registers, or electrical compartments."
+        ],
+        "links": [
+          {
+            "before": "If moisture is forming on the outside of attic ducts, use ",
+            "label": "Why Is My AC Ductwork Sweating in the Attic?",
+            "href": "/hvac/ac-ductwork-sweating-in-attic/",
+            "after": "."
+          },
+          {
+            "before": "If water is collecting around indoor HVAC equipment, use ",
+            "label": "Why Is There Water Around My Indoor AC Unit?",
+            "href": "/hvac/water-around-indoor-ac-unit/",
+            "after": "."
+          }
+        ]
+      },
+      {
+        "id": "old-stain-reactivates",
+        "heading": "What if an old ceiling stain gets darker when it rains?",
+        "paragraphs": [
+          "A permanently dry, unchanged stain may record an earlier moisture event. If that same mark repeatedly darkens, feels damp, grows, bubbles, or begins dripping during or after rain, the renewed change is stronger evidence that moisture is active again. The old stain and today's exterior entry point still may not be directly aligned.",
+          "Do not repaint or apply stain blocker until the moisture source is addressed, affected material is dry, and damage or growth has been evaluated. The general ceiling-stain guide covers marks whose timing or current activity is unclear; this page owns the repeatable rain relationship."
+        ],
+        "link": {
+          "before": "For a dry or unexplained ceiling mark without clear rain timing, use ",
+          "label": "Why Is There a Water Stain on My Ceiling?",
+          "href": "/moisture-and-mold/water-stain-on-ceiling/",
+          "after": "."
+        }
+      },
+      {
+        "id": "mold-damage",
+        "heading": "Why recurring wetness and mold-like growth matter",
+        "paragraphs": [
+          "Repeated wetting can soften drywall, loosen paint, wet insulation, stain finishes, and create conditions that support mold growth. A wet ceiling does not prove mold is present, and dark or spotted growth cannot be identified by color. Fixing the moisture source and drying affected materials matter more than hiding the mark.",
+          "If visible or suspected growth is on the finished ceiling, use the ceiling-mold guide for cleanup and testing boundaries. Significant recurring growth, hidden wet material, or material that cannot be dried safely may require experienced moisture or remediation help."
+        ],
+        "link": {
+          "before": "If growth is the defining ceiling symptom, use ",
+          "label": "Why Is My Ceiling Getting Moldy?",
+          "href": "/moisture-and-mold/mold-growing-on-ceiling/",
+          "after": "."
+        }
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "paragraphs": [
+          "Keep the investigation observational and build a timeline for the professional who will inspect the relevant system. Do not keep exposing the ceiling to water simply to confirm what is already repeatable."
+        ],
+        "bullets": [
+          "Photograph the area before, during, and after rain from the same safe floor-level position.",
+          "Record whether wetness begins during rain, shortly afterward, or hours later and whether it dries between storms.",
+          "Compare light, heavy, prolonged, and obviously wind-driven rain only from existing safe observations.",
+          "Identify the room and what attic, upper floor, roof slope, wall transition, plumbing, or HVAC equipment is above or nearby.",
+          "Note whether the boundary spreads, paint bubbles, drywall softens, odor appears, or active drops begin.",
+          "Move belongings away and restrict access beneath damaged material without touching wet electrical equipment."
+        ],
+        "callout": {
+          "title": "Do not turn leak tracing into a hazardous repair",
+          "text": "Do not climb onto a wet roof, use a ladder during a storm, lift roofing or flashing, apply sealant experimentally, drill or cut the ceiling, puncture a bulge, disturb insulation, remove fixtures, open electrical boxes, or dismantle HVAC equipment."
+        }
+      },
+      {
+        "id": "urgent",
+        "heading": "When a wet ceiling becomes urgent",
+        "paragraphs": [
+          "Active dripping is more urgent than a merely damp surface. Move people and valuables away without standing beneath compromised material. If the ceiling is sagging, bulging, visibly water-loaded, cracking, shedding, or deforming, keep everyone clear and obtain prompt professional help. FEMA warns that water trapped in ceilings and sagging material can be unsafe. Do not puncture or drain a bulge.",
+          "Treat water at a ceiling light, fan, smoke alarm, wiring, or junction box conservatively. Do not touch the wet device, operate its switch, remove it, open a box, or perform live testing. Keep clear and use qualified electrical help. Suspected sewage or contaminated water requires a more conservative professional cleanup response than ordinary rainwater."
+        ],
+        "callout": {
+          "title": "Keep clear of water-loaded ceilings and wet electrical equipment",
+          "text": "Restrict access below sagging, bulging, actively dripping, or electrically affected areas. Protect people first and obtain prompt qualified help from a safe location."
+        }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should you call?",
+        "paragraphs": [
+          "Start with the trade that fits the evidence. A qualified roofer is appropriate when the pattern reliably follows rain and exterior roof inspection is needed. A building-envelope professional may be a better fit when a wall-to-roof transition, dormer, chimney, or other exterior assembly is involved or the entry path remains unclear.",
+          "Use a plumber when fixture or pipe use—not rain—is the repeatable trigger. Use an HVAC professional when condensate equipment, drain components, or wet ductwork matches operation. A qualified contractor or inspector can coordinate when several systems remain plausible. Significant structural deformation may require a structural professional, while substantial recurring growth or hidden wet material may require an experienced moisture or remediation professional."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Repeated wetness during or after rain is strong evidence that exterior water entry deserves investigation, but the interior spot does not identify the exterior failure. Water may travel along several materials before it becomes visible.",
+          "Record rain timing, storm conditions, interior location, what is above or nearby, and any safely visible attic evidence. Compare those clues with plumbing and HVAC operation, keep the inspection non-invasive, and escalate active dripping, wet electrical equipment, widespread wetting, or ceiling deformation promptly."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Flashing of Penetrations in Existing Roofs",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/resource-guides/flashing-penetrations-existing-roofs"
+      },
+      {
+        "title": "Minimizing Water Intrusion through Roof Vents in High-Wind Regions",
+        "publisher": "FEMA / Building America Solution Center",
+        "url": "https://basc.pnnl.gov/library/minimizing-water-intrusion-through-roof-vents-high-wind-regions-fema-technical-fact-sheet"
+      },
+      {
+        "title": "Rain Control in Buildings",
+        "publisher": "Building Science Corporation",
+        "url": "https://buildingscience.com/documents/digests/bsd-013-rain-control-in-buildings"
+      },
+      {
+        "title": "Common Flashing Details",
+        "publisher": "Building Science Corporation",
+        "url": "https://buildingscience.com/documents/information-sheets/common-flashing-details"
+      },
+      {
+        "title": "Condensation Control in Attics and Roofs in Cold Weather",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/resource-guides/condensation-control-attics-and-roofs-cold-weather"
+      },
+      {
+        "title": "Pre-Retrofit Assessment of Attics, Ceilings, and Roofs",
+        "publisher": "U.S. Department of Energy Building America Solution Center",
+        "url": "https://basc.pnnl.gov/information/pre-retrofit-assessment-attics-ceilings-and-roofs"
+      },
+      {
+        "title": "A Brief Guide to Mold, Moisture and Your Home",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+      },
+      {
+        "title": "Tips for Returning Home Safely After a Disaster",
+        "publisher": "Federal Emergency Management Agency",
+        "url": "https://www.fema.gov/vi/print/pdf/node/693071"
+      },
+      {
+        "title": "CPSC Urges Flood Victims to Prevent Electrocution and Fires",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Urges-Flood-Victims-to-Take-Steps-to-Prevent-CO-Poisoning-Electrocution-Explosion-and-Fires"
       }
     ]
   }

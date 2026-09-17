@@ -601,6 +601,25 @@ test("attic mold guide renders source patterns, configuration caveats, safety, s
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("rain-wet ceiling guide renders timing, water travel, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/ceiling-wet-after-rain");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Ceiling Wet After It Rains\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/ceiling-wet-after-rain\//);
+  assert.match(html, /does the wet spot really follow the rain\?/i);
+  assert.match(html, /The wet ceiling is not an exterior leak locator/);
+  assert.match(html, /Do not climb onto a wet roof/);
+  assert.match(html, /href="\/moisture-and-mold\/water-stain-on-ceiling\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/mold-in-attic\/"/);
+  assert.match(html, /src="\/images\/ceiling-wet-after-rain-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ceiling-wet-after-rain-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("ceiling mold guide renders moisture-source diagnosis, safety, schema, and visual", async () => {
   const response = await render("/moisture-and-mold/mold-growing-on-ceiling");
   const html = await response.text();

@@ -881,7 +881,7 @@ test("attic mold guide uses location, wetness, season, and configuration without
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Attic mold,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-16");
-  assert.equal(article.updated_date, "2026-09-16");
+  assert.equal(article.updated_date, "2026-09-17");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.room_or_location, ["attic"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/mold-in-attic/"));
@@ -905,6 +905,8 @@ test("attic mold guide uses location, wetness, season, and configuration without
   assert.match(body, /Do not call dark growth/i);
   assert.match(body, /Do not walk on ceiling drywall/i);
   assert.match(body, /intentionally unvented and conditioned attic designs/i);
+  assert.ok(article.related_articles.includes("ceiling-wet-after-rain"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/ceiling-wet-after-rain/"));
 });
 
 test("ceiling mold guide uses location, timing, and moisture evidence without species certainty", () => {
@@ -948,7 +950,7 @@ test("ceiling water stain guide separates old and active moisture without guessi
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling water stain,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-16");
-  assert.equal(article.updated_date, "2026-09-16");
+  assert.equal(article.updated_date, "2026-09-17");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/water-stain-on-ceiling/"));
   assert.ok(article.body_sections.some((section) => section.id === "wet-or-dry" && section.table?.rows.length === 4));
@@ -971,6 +973,40 @@ test("ceiling water stain guide separates old and active moisture without guessi
   assert.match(body, /Do not touch the wet fixture/i);
   assert.ok(article.related_articles.includes("mold-in-attic"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-in-attic/"));
+  assert.ok(article.related_articles.includes("ceiling-wet-after-rain"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/ceiling-wet-after-rain/"));
+});
+
+test("rain-wet ceiling guide uses rainfall timing, offset water travel, and safe escalation", () => {
+  const article = registry.find((item) => item.slug === "ceiling-wet-after-rain");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Ceiling wet after rain,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-17");
+  assert.equal(article.updated_date, "2026-09-17");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/ceiling-wet-after-rain/"));
+  assert.ok(article.body_sections.some((section) => section.id === "rain-correlation" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "water-travel" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "above-nearby" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "rain-vs-condensation"));
+  assert.ok(article.body_sections.some((section) => section.id === "rain-vs-indoor-sources"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
+  for (const href of ["/moisture-and-mold/water-stain-on-ceiling/", "/moisture-and-mold/mold-growing-on-ceiling/", "/moisture-and-mold/mold-in-attic/", "/hvac/ac-ductwork-sweating-in-attic/", "/hvac/water-around-indoor-ac-unit/"]) {
+    assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  }
+  assert.equal(article.image.src, "/images/ceiling-wet-after-rain-clues.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher.includes("Building America")));
+  assert.ok(article.sources.some((source) => source.publisher.includes("FEMA")));
+  assert.ok(article.sources.some((source) => source.publisher.includes("Consumer Product Safety Commission")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /exit or observation point, not a map pin/i);
+  assert.match(body, /Do not climb onto a wet roof/i);
+  assert.match(body, /Do not puncture or drain a bulge/i);
+  assert.match(body, /Do not touch the wet device/i);
 });
 
 test("sweating walls guide distinguishes surface condensation from localized water sources", () => {

@@ -53,7 +53,7 @@ Dishwasher leaves grit on dishes,dishwasher leaves grit on dishes,appliances,dis
 Washer smells musty,front load washer smells musty,appliances,smell,laundry,maintenance,planned,high,,Gasket/drainage cluster
 Dryer smells like burning,why does my dryer smell like it's burning,appliances,smell,laundry,safety,published,high,/appliances/dryer-smells-like-burning/,Burning odor and stop-use intent; distinct from slow drying and future overheating or breaker topics
 Ceiling water stain,why is there a water stain on my ceiling,moisture-and-mold,discoloration,living-area,diagnostic,published,high,/moisture-and-mold/water-stain-on-ceiling/,Water-like ceiling discoloration parent; distinct from mold active dripping sagging and rain-specific wetness
-Ceiling stain after rain,ceiling stain after rain,roofing,moisture,attic,diagnostic,planned,high,,Roof/plumbing/condensation compare
+Ceiling wet after rain,why is my ceiling wet after it rains,moisture-and-mold,moisture,living-area,diagnostic,published,high,/moisture-and-mold/ceiling-wet-after-rain/,Rain-correlated active or renewed ceiling moisture; distinct from generic stains active dripping sagging attic mold HVAC moisture and generic roof leaks
 Roof leaks only in heavy rain,roof leaks in heavy rain,roofing,leaking,attic,diagnostic,planned,high,,Wind-driven versus flashing
 Gutter overflows in one spot,gutter overflowing in one spot,roofing,drainage,exterior,maintenance,planned,medium,,Clog/slope/downspout
 Attic nails are rusty,rusty nails in attic,attic-and-insulation,moisture,attic,diagnostic,planned,medium,,Condensation indicator
