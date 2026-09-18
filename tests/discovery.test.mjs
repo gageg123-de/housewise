@@ -340,6 +340,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["windows foggy inside", "condensation-inside-windows"],
     ["wet windows in morning", "condensation-inside-windows"],
     ["condensation on interior window glass", "condensation-inside-windows"],
+    ["condensation between window panes", "condensation-between-window-panes"],
+    ["moisture between window panes", "condensation-between-window-panes"],
+    ["fog between double pane windows", "condensation-between-window-panes"],
+    ["double pane window fogging", "condensation-between-window-panes"],
+    ["condensation inside double pane window", "condensation-between-window-panes"],
+    ["water between window panes", "condensation-between-window-panes"],
+    ["cloudy between window panes", "condensation-between-window-panes"],
+    ["haze between window panes", "condensation-between-window-panes"],
+    ["window seal failed", "condensation-between-window-panes"],
+    ["foggy insulated glass", "condensation-between-window-panes"],
     ["dryer slow", "dryer-taking-two-cycles"],
     ["clothes hot damp", "dryer-taking-two-cycles"],
     ["dryer smells like burning", "dryer-smells-like-burning"],
@@ -408,6 +418,7 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.notEqual(searchArticles(registry, "dishwasher smells bad")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(searchArticles(registry, "dishwasher not drying dishes")[0]?.slug, "dishwasher-not-drying-dishes");
   for (const query of ["condensation between window panes", "window leaking when it rains", "mold around windows"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-inside-windows", query);
+  for (const query of ["condensation inside windows", "condensation on inside of windows", "windows wet inside", "mold around windows", "wet window sill", "window leaking when it rains", "water around window frame", "house humid with ac running"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-between-window-panes", query);
   assert.equal(searchArticles(registry, "house humid with ac running")[0]?.slug, "house-humid-with-ac-running");
   assert.equal(searchArticles(registry, "water dripping from ac vent")[0]?.slug, "water-dripping-from-ac-vent");
   for (const query of ["condensation inside windows", "condensation between window panes", "window leaking when it rains", "windows wet in morning", "house humid with ac running", "garage smells musty"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "mold-growing-around-windows", query);
@@ -442,6 +453,14 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["wet spot on wall", "wall wet after rain", "mold on wall", "mold around windows", "condensation inside windows", "ceiling mold", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "walls-sweating", query);
   }
+});
+
+test("between-pane window Finder paths stay separate from exposed-surface condensation", () => {
+  for (const location of ["bathroom", "kitchen", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "window-between-panes"), location);
+    assert.equal(rankFinderArticles(registry, location, "window-between-panes")[0]?.article.slug, "condensation-between-window-panes", location);
+  }
+  for (const location of ["yard", "garage", "attic", "laundry"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "window-between-panes"), location);
 });
 
 test("bedroom musty-smell Finder path is narrow and preserves neighboring odor intents", () => {

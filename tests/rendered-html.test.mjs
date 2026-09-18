@@ -521,6 +521,25 @@ test("indoor window-condensation guide renders location, scope, leak distinction
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 
+test("between-pane window condensation guide renders surface location, repair choices, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/condensation-between-window-panes");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Condensation Between My Window Panes\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/condensation-between-window-panes\//);
+  assert.match(html, /First: which side of the glass is actually wet\?/);
+  assert.match(html, /Does the whole window need to be replaced\?/);
+  assert.match(html, /Do not drill or open the glazing unit/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/mold-growing-around-windows\/"/);
+  assert.match(html, /src="\/images\/window-condensation-surface-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/window-condensation-surface-guide\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("whole-house humidity guide renders reciprocal window-condensation routing", async () => {
   const response = await render("/hvac/house-humid-with-ac-running"); const html = await response.text();
   assert.equal(response.status, 200);
@@ -538,6 +557,7 @@ test("window mold guide renders moisture-source framework, safety, schema, and v
   assert.match(html, /Do you need a mold test\?/);
   assert.match(html, /Do not disturb hidden or extensive growth/);
   assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-between-window-panes\/"/);
   assert.match(html, /src="\/images\/mold-around-window-moisture-sources\.webp"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
@@ -548,6 +568,7 @@ test("window condensation guide renders reciprocal mold-moisture routing", async
   const response = await render("/moisture-and-mold/condensation-inside-windows"); const html = await response.text();
   assert.equal(response.status, 200);
   assert.match(html, /href="\/moisture-and-mold\/mold-growing-around-windows\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-between-window-panes\/"/);
 });
 
 test("bedroom musty-smell guide renders location framework, mold caveat, schema, and visual", async () => {

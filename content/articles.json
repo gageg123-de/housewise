@@ -3661,7 +3661,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-08",
-    "updated_date": "2026-09-09",
+    "updated_date": "2026-09-18",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -3702,7 +3702,8 @@
     "professional_help": "Use an HVAC or building-performance professional when many windows stay wet and broader indoor humidity or ventilation appears involved. Use a window or glazing professional when moisture is trapped between panes or the product is damaged. Use a building-envelope professional when wetness follows rain, tracks from the frame or wall, or damages nearby materials. Obtain qualified moisture or remediation help for extensive persistent growth or damage rather than treating condensation alone as proof of mold.",
     "related_articles": [
       "house-humid-with-ac-running",
-      "mold-growing-around-windows"
+      "mold-growing-around-windows",
+      "condensation-between-window-panes"
     ],
     "image": {
       "src": "/images/window-condensation-location-guide.webp",
@@ -3885,7 +3886,13 @@
           "Fog or droplets that cannot be wiped from either exposed glass surface may be trapped inside a conventional sealed insulated-glass unit. DOE window guidance describes these units as panes separated and hermetically sealed; moisture barriers at the spacer help keep water vapor out. Persistent fog inside that sealed space can be consistent with an insulating-glass seal problem.",
           "Configuration matters. Some older or storm-window systems have removable panels and intentionally different cavity details, so do not diagnose every multi-layer window from appearance alone. Record which surface is accessible and consult the product documentation or a window/glazing professional.",
           "Do not drill the glass, inject sealant, remove glazing, or attempt a do-it-yourself defogging procedure."
-        ]
+        ],
+        "link": {
+          "before": "If the fog cannot be wiped from either exposed face and appears trapped in the glazing cavity, use ",
+          "label": "Why Is There Condensation Between My Window Panes?",
+          "href": "/moisture-and-mold/condensation-between-window-panes/",
+          "after": " for the sealed-glass diagnostic path."
+        }
       },
       {
         "id": "condensation-or-leak",
@@ -4001,7 +4008,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-09",
-    "updated_date": "2026-09-09",
+    "updated_date": "2026-09-18",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -4044,7 +4051,8 @@
     "professional_help": "Use a window or building-envelope professional when dampness follows rain, enters around the frame or wall, or materials are deteriorating. Use an HVAC or building-performance professional when many windows are affected and broader humidity or ventilation appears involved. Seek experienced mold/moisture remediation help for extensive or recurring growth, significant porous-material damage, hidden moisture, contaminated water, suspected HVAC involvement, or work that cannot be done safely. Consult a healthcare professional about individual health concerns rather than using the article to diagnose exposure.",
     "related_articles": [
       "condensation-inside-windows",
-      "house-humid-with-ac-running"
+      "house-humid-with-ac-running",
+      "condensation-between-window-panes"
     ],
     "image": {
       "src": "/images/mold-around-window-moisture-sources.webp",
@@ -4207,7 +4215,13 @@
         "paragraphs": [
           "Fog or droplets trapped inside a conventional sealed insulated-glass unit are a different glazing problem. They do not directly explain growth on an exposed interior sill or frame unless a separate moisture source is also wetting that surface.",
           "Confirm that the haze cannot be wiped from either exposed face. Do not drill glass, inject sealants, remove glazing, or treat between-pane fogging as a mold cleanup task. Preserve it for product-specific window or glazing evaluation."
-        ]
+        ],
+        "link": {
+          "before": "If haze or droplets remain inside the glazing cavity after both exposed faces are clean, use ",
+          "label": "Why Is There Condensation Between My Window Panes?",
+          "href": "/moisture-and-mold/condensation-between-window-panes/",
+          "after": " instead of treating the internal fog as surface mold."
+        }
       },
       {
         "id": "materials",
@@ -6606,6 +6620,306 @@
         "title": "CPSC Urges Flood Victims to Prevent Electrocution and Fires",
         "publisher": "U.S. Consumer Product Safety Commission",
         "url": "https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Urges-Flood-Victims-to-Take-Steps-to-Prevent-CO-Poisoning-Electrocution-Explosion-and-Fires"
+      }
+    ]
+  },
+  {
+    "title": "Why Is There Condensation Between My Window Panes?",
+    "slug": "condensation-between-window-panes",
+    "description": "Fog or moisture trapped between window panes points to a different problem than condensation on accessible glass. Learn how to locate the moisture and compare glass, sash, and window options.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [
+      "windows-and-doors"
+    ],
+    "symptoms": [
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "living-area",
+      "bedroom",
+      "bathroom",
+      "kitchen"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-18",
+    "updated_date": "2026-09-18",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "why is there condensation between my window panes",
+      "condensation between window panes",
+      "moisture between window panes",
+      "fog between double pane windows",
+      "double pane window fogging",
+      "condensation inside double pane window",
+      "water between window panes",
+      "foggy double pane window",
+      "moisture inside window glass",
+      "window cloudy between panes",
+      "haze between window panes",
+      "streaks between window panes",
+      "double pane window seal failed",
+      "window fogged between panes",
+      "foggy insulated glass"
+    ],
+    "target_search_intent": "Help a homeowner confirm whether fog, haze, droplets, or streaks are genuinely trapped between panes of a sealed insulated glass unit, distinguish that condition from room-side and exterior condensation, understand seal-integrity and performance caveats, and choose among warranty, glass-unit, sash, or whole-window evaluation without assuming complete replacement is always necessary.",
+    "direct_answer": "If fog, haze, droplets, or streaks cannot be wiped from either accessible face of a double-pane or other insulated-glass window, they may be inside the sealed space between the panes. Persistent moisture there is commonly consistent with loss of integrity in the insulated glass unit's perimeter seal system, which can let moisture-containing air enter the cavity. That is different from ordinary room-side condensation, which forms on accessible glass when humid indoor air meets a cold surface. First locate the wet surface; then identify whether the window is a sealed insulated glass unit or a removable storm-panel arrangement before discussing repair or replacement.",
+    "likely_causes": [
+      "Loss of integrity in an insulated glass unit perimeter seal system",
+      "Moisture-containing air entering a sealed glazing cavity and condensing as temperatures change",
+      "Aging, thermal cycling, physical damage, manufacturing, or installation conditions affecting one glazing unit",
+      "Several similar-age or similar-product glazing units developing the same symptom",
+      "Moisture in a removable storm-window or secondary-glazing space rather than a factory-sealed IGU"
+    ],
+    "safe_checks": [
+      "Wipe the room-side glass with a clean dry cloth and see whether the mark remains.",
+      "Inspect the outside face only from a safe ground- or floor-level position; do not use a ladder solely to touch the glass.",
+      "Photograph the window in morning, afternoon, sun, and shade to document whether internal fog comes and goes.",
+      "Compare the affected unit with neighboring windows and note whether haze is inside the cavity or on accessible glass.",
+      "Identify whether the window has a sealed insulating glass unit, removable storm panel, or another layered configuration.",
+      "Record product labels, serial numbers, purchase documents, and warranty information only when safely accessible."
+    ],
+    "professional_help": "Use a window or glass professional to confirm trapped moisture and determine whether the insulated glass unit, a complete sash, or the full window is serviceable. Contact the manufacturer, dealer, or installer first when product identification or warranty coverage may apply. Use a building-envelope professional when water reaches the sill, trim, wall, or frame during rain; that pattern is not explained by between-pane fogging alone. Promptly address cracked or loose glass, an unsafe sash, a frame that cannot secure the opening, or surrounding material deterioration.",
+    "related_articles": [
+      "condensation-inside-windows",
+      "mold-growing-around-windows",
+      "house-humid-with-ac-running"
+    ],
+    "image": {
+      "src": "/images/window-condensation-surface-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual comparison showing condensation on room-side window glass, dew on the outdoor surface, and fog trapped between two panes, with a simple insulated-glass cutaway.",
+      "caption": "Conceptual illustration: Room-side moisture, exterior dew, and fog inside a sealed glazing cavity are three different observations. Insulated-glass spacer, seal, and frame designs vary by product.",
+      "kind": "conceptual",
+      "after_section": "surface-location"
+    },
+    "body_sections": [
+      {
+        "id": "surface-location",
+        "heading": "First: which side of the glass is actually wet?",
+        "paragraphs": [
+          "Start with the surface, not the diagnosis. Wipe the room-side glass with a clean, dry cloth. If the fog or drops disappear, the moisture was accessible interior condensation. If the mark remains, inspect the outdoor face only from a safe ground- or floor-level position. Never lean out or use a ladder just to touch exterior glass.",
+          "If both accessible faces are clean and dry but haze, droplets, or streaks remain, the symptom may be inside the glazing space. Look along the glass at an angle and compare the mark with reflections on each face. A photograph at different times of day can help a window professional see a pattern that is not always visible."
+        ],
+        "table": {
+          "headers": [
+            "Where the moisture is",
+            "What it means for the next step"
+          ],
+          "rows": [
+            [
+              "Room-side accessible glass",
+              "Indoor moisture and glass temperature are the main starting points; this does not prove an IGU seal problem."
+            ],
+            [
+              "Outdoor accessible glass",
+              "Outdoor temperature, humidity, and glass temperature can create dew; this alone does not prove seal failure."
+            ],
+            [
+              "Trapped between panes",
+              "A sealed glazing-unit problem becomes more plausible if neither exposed face can be wiped clean."
+            ],
+            [
+              "Between removable panels",
+              "A storm-window or secondary-panel air space may have a different moisture and drainage path than a sealed IGU."
+            ]
+          ]
+        },
+        "link": {
+          "before": "If the moisture wipes off from the room side, use ",
+          "label": "Why Is There Condensation on the Inside of My Windows?",
+          "href": "/moisture-and-mold/condensation-inside-windows/",
+          "after": " for the indoor-humidity, surface-temperature, and room-timing path."
+        }
+      },
+      {
+        "id": "igu-basics",
+        "heading": "How double-pane insulated glass works",
+        "paragraphs": [
+          "An insulated glass unit, often shortened to IGU, is the sealed glass assembly inside a window sash or frame. A typical unit uses two or more panes held apart by a spacer at the perimeter. The edge system helps maintain the cavity and limit moisture movement. Many spacer systems also incorporate desiccant to manage small amounts of residual moisture from manufacturing.",
+          "Construction varies. The cavity may contain dry air or an insulating gas, and manufacturers use different spacer, sealant, coating, and glazing designs. Not every double-pane-looking window contains argon, and not every two-layer arrangement is a factory-sealed IGU. The generic cutaway above explains the relationship, not one universal product."
+        ]
+      },
+      {
+        "id": "why-moisture-enters",
+        "heading": "Why moisture can appear between sealed panes",
+        "paragraphs": [
+          "The perimeter system is intended to keep moisture from fogging the cavity and, where applicable, retain a low-conductance gas fill. If that sealed system loses integrity, moisture-containing air can enter over time. Changes in glass temperature can then bring an internal surface below that trapped air's dew point, producing fog or droplets where a cloth cannot reach.",
+          "Homeowners often call this a failed window seal. More precisely, it is consistent with a loss of insulated-glass seal integrity. That wording matters because the glazing unit can be affected while the surrounding sash, frame, flashing, and wall remain serviceable. Age, repeated temperature and pressure cycling, physical damage, manufacturing, installation, and edge exposure can all affect durability, but appearance alone cannot identify which factor caused one unit to fail."
+        ]
+      },
+      {
+        "id": "intermittent",
+        "heading": "Why the fog may come and go",
+        "paragraphs": [
+          "Internal fog does not have to be visible all day. Sunlight, shade, outdoor temperature, and seasonal changes alter glass temperature and the vapor conditions inside a compromised cavity. Moisture may condense at one time and become less visible later, while the underlying seal condition remains unchanged.",
+          "Intermittent appearance is not proof of a failed IGU by itself because accessible indoor or outdoor condensation also changes with weather. Confirm that the mark cannot be wiped from either face. Persistent milky haze, streaking, or deposits that remain after both exposed surfaces are cleaned adds stronger evidence that the issue is internal."
+        ]
+      },
+      {
+        "id": "haze-deposits",
+        "heading": "What persistent haze, streaks, or deposits can mean",
+        "paragraphs": [
+          "Repeated moisture inside the cavity can leave a cloudy film, streaks, or residue on an internal glass face. Those marks may become more noticeable in direct sun and cannot be cleaned like ordinary room-side dirt. Color or texture does not identify the residue's chemistry, the original gas fill, or the exact condition of the edge seal.",
+          "Before assuming the mark is internal, clean only the safely accessible surfaces according to the window manufacturer's care instructions. Do not remove glazing beads, cut sealant, separate panes, or try to reach the cavity."
+        ]
+      },
+      {
+        "id": "humidity-distinction",
+        "heading": "Is indoor humidity causing the problem?",
+        "paragraphs": [
+          "Indoor humidity is central when water is on the room-side glass: humid air meets a sufficiently cold surface and condenses. Lowering excessive indoor humidity or improving normal ventilation may reduce that exposed-surface symptom. Exterior dew similarly depends on outdoor air and exterior-glass temperature and is not, by itself, evidence of a failed IGU.",
+          "Once moisture is confirmed inside a factory-sealed cavity, adjusting a humidifier or dehumidifier does not restore the perimeter seal or clean the internal glass. Indoor conditions may complicate unusual removable-panel arrangements, so identify the construction before applying the sealed-IGU explanation."
+        ],
+        "link": {
+          "before": "If many accessible room-side surfaces are wet and the home feels clammy while cooling runs, use ",
+          "label": "Why Is My House Humid With the AC Running?",
+          "href": "/hvac/house-humid-with-ac-running/",
+          "after": " for that separate whole-home humidity pattern."
+        }
+      },
+      {
+        "id": "gas-performance",
+        "heading": "Does a foggy unit still insulate properly?",
+        "paragraphs": [
+          "Some IGUs use argon, krypton, or another low-conductance gas; others use air, and designs vary. A compromised edge system can allow special gas to escape and moisture vapor to enter over time, so the unit may no longer perform exactly as designed. Visible fog cannot tell you which gas was used, how much remains, or how much the U-factor changed.",
+          "Avoid dramatic energy-cost claims. Fogging is useful evidence of a glazing condition and loss of clear view, not a homeowner measurement of energy loss. Product identification and professional evaluation are more useful than estimating performance from cloudiness."
+        ]
+      },
+      {
+        "id": "repair-options",
+        "heading": "Does the whole window need to be replaced?",
+        "paragraphs": [
+          "Not automatically. Depending on the design and available parts, a glass shop or window professional may be able to replace the insulated glass unit while retaining the sash and frame. Some products are designed so the complete sash or panel is the service part. Full-window replacement becomes more relevant when the frame is deteriorated, the opening cannot be secured or operated safely, water is entering the wall, suitable parts are unavailable, or broader performance and installation problems exist.",
+          "Ask the evaluator to identify which component is proposed for replacement: the sealed glass unit, the glazed sash, or the complete frame-and-sash assembly. That prevents a cloudy cavity from being treated as automatic proof that every part of the installed window has failed."
+        ],
+        "callout": {
+          "title": "Do not drill or open the glazing unit",
+          "text": "Do not drill vent holes, insert tubing or desiccant, heat the glass, cut perimeter sealant, remove glazing beads, or disassemble the sash. Those experiments can damage glass, coatings, safety glazing, drainage, warranties, and the remaining assembly."
+        }
+      },
+      {
+        "id": "clean-defog",
+        "heading": "Can you clean or defog between the panes?",
+        "paragraphs": [
+          "The internal faces of a factory-sealed IGU are not ordinary user-cleanable surfaces. Some commercial services access a cavity to reduce visible moisture or haze, but that should not automatically be described as restoring the original factory seal, gas fill, certified performance, or warranty. Ask what the service changes, what remains unchanged, and what warranty it provides.",
+          "A removable storm panel or separate secondary window is different. Its intermediate space may be intentionally accessible and may respond to product-specific cleaning, drainage, or air-leakage guidance. If you cannot tell which design you have, a manufacturer or window professional should identify it before anything is removed."
+        ]
+      },
+      {
+        "id": "one-or-many",
+        "heading": "What if several windows are fogging?",
+        "paragraphs": [
+          "One affected window often points toward that individual glass unit or sash. Several units can share age, product design, exposure, installation history, or environmental stress, but the pattern does not prove a manufacturing defect. Record which elevations and units are affected and whether the symptoms began around the same time.",
+          "If several relatively recent windows show similar internal fogging, collect product labels, serial numbers, order records, and photographs before authorizing work. The manufacturer, dealer, or installer may recognize a product-specific service or warranty path."
+        ]
+      },
+      {
+        "id": "warranty",
+        "heading": "Check the window warranty before paying for replacement",
+        "paragraphs": [
+          "Insulated-glass warranty terms vary by manufacturer, product, glass size, purchaser, transfer status, installation, and date. Some product warranties address visible obstruction caused by seal failure and may provide a replacement glass unit or glazed sash; labor, finishing, shipping, or installation may be treated separately.",
+          "Photograph any safely accessible label rather than dismantling the window to find one. Gather the purchase order, installation paperwork, and proof of ownership if available, then read the written warranty or contact the manufacturer or dealer. Do not assume coverage—or lack of coverage—from the age of the home alone."
+        ]
+      },
+      {
+        "id": "rain-mold",
+        "heading": "Between-pane fog is different from a rain leak or window mold",
+        "paragraphs": [
+          "Fog contained inside an IGU does not explain water running onto the sill, trim, drywall, or floor during rain. Rain-timed wetness around the opening suggests a separate bulk-water path involving the window or surrounding wall assembly. Do not caulk random interior gaps or assume replacing the glass unit will correct that intrusion.",
+          "Likewise, discoloration or growth on the sill, frame, trim, caulk, or nearby wall is an exposed-material moisture problem—not growth floating inside the sealed cavity. Keep identification and cleanup with the window-mold guide rather than treating internal haze as proof of mold."
+        ],
+        "link": {
+          "before": "If visible or suspected growth is on the window surround, use ",
+          "label": "Why Is Mold Growing Around My Windows?",
+          "href": "/moisture-and-mold/mold-growing-around-windows/",
+          "after": " to identify what keeps those exposed materials damp."
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Wipe the indoor face and observe the outdoor face only from a safe ground- or floor-level position.",
+          "Photograph the haze in different light and weather without leaning outside or climbing.",
+          "Compare neighboring windows and note whether one unit or several are affected.",
+          "Look for an accessible product label, serial number, installation record, or warranty document.",
+          "Note cracked glass, loose sash parts, difficult operation, frame decay, or rainwater on surrounding materials.",
+          "Keep people away from sharp or unstable glass and use a qualified glass professional for breakage."
+        ],
+        "callout": {
+          "title": "Keep the check non-invasive",
+          "text": "Do not use a ladder solely to touch exterior glass, lean out, remove panes or glazing beads, drill glass or frames, break seals, apply experimental sealant, use heat-gun or hair-dryer tricks, or handle cracked glass."
+        }
+      },
+      {
+        "id": "professional-help",
+        "heading": "When to call a window professional",
+        "paragraphs": [
+          "A window or glass professional can confirm that the moisture is internal, identify the glazing construction, and determine whether the IGU, sash, or complete window is serviceable. Start with the manufacturer or warranty provider when the product is identifiable and may still be covered. Use the installer when several similar units or installation concerns are involved.",
+          "Use a building-envelope professional when water enters the sill, frame, wall, or trim during rain, because that is not merely a sealed-cavity fogging problem. Cracked glass, a loose or broken sash, an opening that cannot be secured, sharp edges, rot, or surrounding material damage deserves prompt evaluation rather than ordinary cosmetic planning."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Before adjusting humidity or assuming the whole window has failed, identify the wet surface. Moisture that wipes from the room side, dew on the outdoor face, and fog trapped inside an insulated glazing cavity have different mechanisms and next steps.",
+          "Confirmed between-pane haze is commonly consistent with loss of IGU seal integrity, but it does not identify the gas fill, quantify performance loss, or prove the frame and installation failed. Document the unit, check its warranty, and ask whether the appropriate service part is the glass unit, sash, or complete window."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Window Types and Technologies",
+        "publisher": "U.S. Department of Energy",
+        "url": "https://www.energy.gov/energysaver/window-types-and-technologies"
+      },
+      {
+        "title": "Measure Guideline: Energy-Efficient Window Performance and Selection",
+        "publisher": "Efficient Windows Collaborative / U.S. Department of Energy",
+        "url": "https://efficientwindows.org/wp-content/uploads/2020/10/55444.pdf"
+      },
+      {
+        "title": "Residential Windows, Doors, and Skylights",
+        "publisher": "ENERGY STAR",
+        "url": "https://www.energystar.gov/products/res_windows_doors_skylights"
+      },
+      {
+        "title": "2025 Windows Partner Toolkit",
+        "publisher": "ENERGY STAR",
+        "url": "https://www.energystar.gov/sites/default/files/2025-01/2025%20Windows%20Partner%20Toolkit.pdf"
+      },
+      {
+        "title": "Spacers — Consumer Guide to Windows",
+        "publisher": "Efficient Windows Collaborative / NFRC",
+        "url": "https://efficientwindows.org/spacers/"
+      },
+      {
+        "title": "Measure Guideline: Wood Window Repair, Rehabilitation, and Replacement",
+        "publisher": "U.S. Department of Energy Building America",
+        "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/measure_guide_wood_windows.pdf"
+      },
+      {
+        "title": "Frequently Asked Questions About Windows",
+        "publisher": "Pella",
+        "url": "https://www.pella.com/ideas/windows/faq/"
+      },
+      {
+        "title": "Window and Patio Door Glass Replacement Options",
+        "publisher": "Andersen Windows",
+        "url": "https://helpcenter.andersenwindows.com/aw/articles/Knowledge/Can-I-Apply-Film-to-Glass-on-Andersen-Windows-or-Patio-Doors"
+      },
+      {
+        "title": "Customer Support and Warranty FAQs",
+        "publisher": "Pella",
+        "url": "https://www.pella.com/support/"
       }
     ]
   }

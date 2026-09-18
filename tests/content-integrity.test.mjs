@@ -786,14 +786,15 @@ test("indoor window-condensation guide owns room-side moisture and preserves nei
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window condensation inside,"));
   assert.ok(article && humidity);
   assert.equal(article.published_date, "2026-09-08");
-  assert.equal(article.updated_date, "2026-09-09");
+  assert.equal(article.updated_date, "2026-09-18");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/condensation-inside-windows/"));
   assert.ok(article.body_sections.some((section) => section.id === "moisture-location" && section.table?.rows.length === 5));
   assert.ok(article.body_sections.some((section) => section.id === "scope" && section.table?.rows.length === 5));
   assert.ok(article.body_sections.some((section) => section.id === "timing" && section.table?.rows.length === 7));
-  assert.ok(article.body_sections.some((section) => section.id === "between-panes"));
+  assert.ok(article.body_sections.some((section) => section.id === "between-panes" && section.link?.href === "/moisture-and-mold/condensation-between-window-panes/"));
+  assert.ok(article.related_articles.includes("condensation-between-window-panes"));
   assert.ok(article.body_sections.some((section) => section.id === "condensation-or-leak"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/hvac/house-humid-with-ac-running/"));
   assert.ok(humidity.related_articles.includes("condensation-inside-windows"));
@@ -815,6 +816,7 @@ test("window mold guide keeps moisture-source diagnosis and mold guardrails dist
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Mold growing around windows,"));
   assert.ok(article && condensation);
   assert.equal(article.published_date, "2026-09-09");
+  assert.equal(article.updated_date, "2026-09-18");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.ok(topic?.includes(",published,"));
   assert.ok(article.body_sections.some((section) => section.id === "moisture-source" && section.table?.rows.length === 6));
@@ -822,6 +824,8 @@ test("window mold guide keeps moisture-source diagnosis and mold guardrails dist
   assert.ok(article.body_sections.some((section) => section.id === "cleanup"));
   assert.ok(article.body_sections.some((section) => section.id === "testing"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/condensation-inside-windows/"));
+  assert.ok(article.body_sections.some((section) => section.id === "between-panes" && section.link?.href === "/moisture-and-mold/condensation-between-window-panes/"));
+  assert.ok(article.related_articles.includes("condensation-between-window-panes"));
   assert.ok(condensation.related_articles.includes("mold-growing-around-windows"));
   assert.ok(condensation.body_sections.some((section) => section.link?.href === "/moisture-and-mold/mold-growing-around-windows/"));
   assert.equal(article.image.src, "/images/mold-around-window-moisture-sources.webp");
@@ -831,6 +835,40 @@ test("window mold guide keeps moisture-source diagnosis and mold guardrails dist
   assert.match(body, /cannot reliably identify a species/i);
   assert.match(body, /Do not equate black-colored material/i);
   assert.match(body, /moisture problem first/i);
+});
+
+test("between-pane condensation guide owns sealed-cavity fog without absorbing surface or rain intents", () => {
+  const article = registry.find((item) => item.slug === "condensation-between-window-panes");
+  const inside = registry.find((item) => item.slug === "condensation-inside-windows");
+  const windowMold = registry.find((item) => item.slug === "mold-growing-around-windows");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window condensation between panes,"));
+  assert.ok(article && inside && windowMold);
+  assert.equal(article.published_date, "2026-09-18");
+  assert.equal(article.updated_date, "2026-09-18");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/condensation-between-window-panes/"));
+  assert.ok(article.body_sections.some((section) => section.id === "surface-location" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "igu-basics"));
+  assert.ok(article.body_sections.some((section) => section.id === "repair-options" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "clean-defog"));
+  assert.ok(article.body_sections.some((section) => section.id === "warranty"));
+  assert.ok(article.body_sections.some((section) => section.id === "rain-mold"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  for (const href of ["/moisture-and-mold/condensation-inside-windows/", "/moisture-and-mold/mold-growing-around-windows/", "/hvac/house-humid-with-ac-running/"]) assert.ok(article.body_sections.some((section) => section.link?.href === href), href);
+  assert.ok(inside.related_articles.includes(article.slug));
+  assert.ok(windowMold.related_articles.includes(article.slug));
+  assert.equal(article.image.src, "/images/window-condensation-surface-guide.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy"));
+  assert.ok(article.sources.some((source) => source.publisher === "ENERGY STAR"));
+  assert.ok(article.sources.some((source) => source.publisher.includes("Efficient Windows Collaborative")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /First: which side of the glass is actually wet/i);
+  assert.match(body, /Do not drill vent holes/i);
+  assert.match(body, /glass unit, the glazed sash, or the complete frame-and-sash assembly/i);
 });
 
 test("bedroom musty-smell guide uses location evidence without diagnosing mold", () => {
