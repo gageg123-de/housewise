@@ -333,6 +333,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["walls sweating in winter", "walls-sweating"],
     ["bathroom walls sweating", "walls-sweating"],
     ["moisture forming on walls", "walls-sweating"],
+    ["wet spot on wall", "wet-spot-on-wall"],
+    ["damp spot on wall", "wet-spot-on-wall"],
+    ["wet patch on wall", "wet-spot-on-wall"],
+    ["wall wet in one spot", "wet-spot-on-wall"],
+    ["random wet spot on wall", "wet-spot-on-wall"],
+    ["damp patch on interior wall", "wet-spot-on-wall"],
+    ["wet spot on drywall", "wet-spot-on-wall"],
+    ["moisture spot on wall", "wet-spot-on-wall"],
+    ["wall feels wet", "wet-spot-on-wall"],
+    ["unexplained wet spot on wall", "wet-spot-on-wall"],
     ["condensation inside windows", "condensation-inside-windows"],
     ["windows wet on inside", "condensation-inside-windows"],
     ["window sweating inside", "condensation-inside-windows"],
@@ -453,6 +463,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["wet spot on wall", "wall wet after rain", "mold on wall", "mold around windows", "condensation inside windows", "ceiling mold", "water dripping from ac vent", "house humid with ac running"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "walls-sweating", query);
   }
+  for (const query of ["walls sweating", "condensation on walls", "wall wet after rain", "mold on wall", "bubbling paint", "soft drywall", "window leaking when it rains", "mold around windows", "condensation inside windows", "water stain on ceiling", "ceiling wet after rain"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "wet-spot-on-wall", query);
+  }
 });
 
 test("between-pane window Finder paths stay separate from exposed-surface condensation", () => {
@@ -500,6 +513,14 @@ test("ceiling-stain Finder paths stay narrow and separate from active ceiling ha
     assert.equal(rankFinderArticles(registry, location, "ceiling-stain")[0]?.article.slug, "water-stain-on-ceiling", location);
   }
   for (const location of ["yard", "garage", "attic"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ceiling-stain"), location);
+});
+
+test("localized wall-wet-spot Finder paths stay separate from broad condensation", () => {
+  for (const location of ["bathroom", "kitchen", "bedroom", "living-area", "laundry"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "wall-wet-spot"), location);
+    assert.equal(rankFinderArticles(registry, location, "wall-wet-spot")[0]?.article.slug, "wet-spot-on-wall", location);
+  }
+  for (const location of ["yard", "garage", "attic", "exterior", "whole-house"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "wall-wet-spot"), location);
 });
 
 test("sweating-wall Finder paths preserve localized leak and mold distinctions", () => {

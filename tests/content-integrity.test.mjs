@@ -1047,12 +1047,47 @@ test("rain-wet ceiling guide uses rainfall timing, offset water travel, and safe
   assert.match(body, /Do not touch the wet device/i);
 });
 
+test("localized wall wet-spot guide uses location and timing without diagnosing the hidden source", () => {
+  const article = registry.find((item) => item.slug === "wet-spot-on-wall");
+  const sweating = registry.find((item) => item.slug === "walls-sweating");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Wet spot on wall,"));
+  assert.ok(article && sweating);
+  assert.equal(article.published_date, "2026-09-21");
+  assert.equal(article.updated_date, "2026-09-21");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, ["plumbing", "hvac"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/wet-spot-on-wall/"));
+  assert.ok(article.body_sections.some((section) => section.id === "wet-now" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "location" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "plumbing-timing" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "rain-timing"));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation"));
+  assert.ok(article.body_sections.some((section) => section.id === "hvac"));
+  assert.ok(article.body_sections.some((section) => section.id === "moisture-travel" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
+  for (const href of ["/moisture-and-mold/walls-sweating/", "/moisture-and-mold/condensation-inside-windows/", "/hvac/house-humid-with-ac-running/", "/hvac/water-around-indoor-ac-unit/", "/hvac/ac-ductwork-sweating-in-attic/"]) assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  assert.ok(sweating.related_articles.includes(article.slug));
+  assert.equal(article.image.src, "/images/wet-spot-on-wall-source-clues.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy Building America"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /observation point—not a map pin/i);
+  assert.match(body, /Do not open the wall as a first-line test/i);
+  assert.match(body, /Do not touch the wet device/i);
+  assert.match(body, /not automatically mean condensation/i);
+});
+
 test("sweating walls guide distinguishes surface condensation from localized water sources", () => {
   const article = registry.find((item) => item.slug === "walls-sweating");
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Walls sweating,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-14");
-  assert.equal(article.updated_date, "2026-09-14");
+  assert.equal(article.updated_date, "2026-09-21");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/walls-sweating/"));
   assert.ok(article.body_sections.some((section) => section.id === "surface-or-source" && section.table?.rows.length === 6));
@@ -1060,7 +1095,8 @@ test("sweating walls guide distinguishes surface condensation from localized wat
   assert.ok(article.body_sections.some((section) => section.id === "behind-furniture"));
   assert.ok(article.body_sections.some((section) => section.id === "summer"));
   assert.ok(article.body_sections.some((section) => section.id === "winter"));
-  assert.ok(article.body_sections.some((section) => section.id === "condensation-rain-plumbing" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-rain-plumbing" && section.table?.rows.length === 5 && section.link?.href === "/moisture-and-mold/wet-spot-on-wall/"));
+  assert.ok(article.related_articles.includes("wet-spot-on-wall"));
   assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
   for (const href of ["/hvac/house-humid-with-ac-running/", "/moisture-and-mold/condensation-inside-windows/", "/moisture-and-mold/mold-growing-around-windows/", "/moisture-and-mold/mold-growing-on-ceiling/"]) {
     assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);

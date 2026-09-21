@@ -679,6 +679,26 @@ test("ceiling water stain guide renders timing, source uncertainty, safety, sche
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("localized wall wet-spot guide renders timing, source uncertainty, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/wet-spot-on-wall");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There a Wet Spot on My Wall\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/wet-spot-on-wall\//);
+  assert.match(html, /First: is the wall actually wet right now\?/);
+  assert.match(html, /Why the source may not be directly behind the spot/);
+  assert.match(html, /Do not open the wall as a first-line test/);
+  assert.match(html, /Do not touch the wet device/);
+  assert.match(html, /href="\/moisture-and-mold\/walls-sweating\/"/);
+  assert.match(html, /href="\/hvac\/water-around-indoor-ac-unit\/"/);
+  assert.match(html, /src="\/images\/wet-spot-on-wall-source-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/wet-spot-on-wall-source-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("sweating walls guide renders source distinction, safety, schema, and visual", async () => {
   const response = await render("/moisture-and-mold/walls-sweating");
   const html = await response.text();
@@ -690,6 +710,7 @@ test("sweating walls guide renders source distinction, safety, schema, and visua
   assert.match(html, /Do not open the wall to diagnose the first clue/);
   assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
   assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/wet-spot-on-wall\/"/);
   assert.match(html, /src="\/images\/sweating-walls-moisture-patterns\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
