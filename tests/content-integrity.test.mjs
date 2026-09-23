@@ -1049,11 +1049,12 @@ test("rain-wet ceiling guide uses rainfall timing, offset water travel, and safe
 
 test("localized wall wet-spot guide uses location and timing without diagnosing the hidden source", () => {
   const article = registry.find((item) => item.slug === "wet-spot-on-wall");
+  const rainArticle = registry.find((item) => item.slug === "wall-wet-after-rain");
   const sweating = registry.find((item) => item.slug === "walls-sweating");
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Wet spot on wall,"));
-  assert.ok(article && sweating);
+  assert.ok(article && rainArticle && sweating);
   assert.equal(article.published_date, "2026-09-21");
-  assert.equal(article.updated_date, "2026-09-21");
+  assert.equal(article.updated_date, "2026-09-23");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, ["plumbing", "hvac"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/wet-spot-on-wall/"));
@@ -1068,6 +1069,8 @@ test("localized wall wet-spot guide uses location and timing without diagnosing 
   assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
   for (const href of ["/moisture-and-mold/walls-sweating/", "/moisture-and-mold/condensation-inside-windows/", "/hvac/house-humid-with-ac-running/", "/hvac/water-around-indoor-ac-unit/", "/hvac/ac-ductwork-sweating-in-attic/"]) assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
   assert.ok(sweating.related_articles.includes(article.slug));
+  assert.ok(article.related_articles.includes(rainArticle.slug));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/wall-wet-after-rain/"));
   assert.equal(article.image.src, "/images/wet-spot-on-wall-source-clues.webp");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
@@ -1080,6 +1083,42 @@ test("localized wall wet-spot guide uses location and timing without diagnosing 
   assert.match(body, /Do not open the wall as a first-line test/i);
   assert.match(body, /Do not touch the wet device/i);
   assert.match(body, /not automatically mean condensation/i);
+});
+
+test("rain-related wall guide uses storm pattern and exterior context without claiming an entry point", () => {
+  const article = registry.find((item) => item.slug === "wall-wet-after-rain");
+  const parent = registry.find((item) => item.slug === "wet-spot-on-wall");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Wall wet after rain,"));
+  assert.ok(article && parent);
+  assert.equal(article.published_date, "2026-09-23");
+  assert.equal(article.updated_date, "2026-09-23");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, []);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/wall-wet-after-rain/"));
+  assert.ok(article.body_sections.some((section) => section.id === "storm-pattern" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "water-travel" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "wall-location" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "wind-driven-rain"));
+  assert.ok(article.body_sections.some((section) => section.id === "wall-system" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "condensation-alternative"));
+  assert.ok(article.body_sections.some((section) => section.id === "plumbing-hvac-alternatives"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
+  for (const href of ["/moisture-and-mold/wet-spot-on-wall/", "/moisture-and-mold/walls-sweating/", "/moisture-and-mold/ceiling-wet-after-rain/", "/moisture-and-mold/condensation-inside-windows/", "/hvac/house-humid-with-ac-running/", "/hvac/water-around-indoor-ac-unit/"]) assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  assert.ok(parent.related_articles.includes(article.slug));
+  assert.equal(article.image.src, "/images/wall-wet-after-rain-source-clues.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "Building America Solution Center"));
+  assert.ok(article.sources.some((source) => source.publisher === "Federal Emergency Management Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /observation point, not an exterior leak locator/i);
+  assert.match(body, /Do not caulk everything/i);
+  assert.match(body, /Do not try to recreate a storm with a hose/i);
+  assert.match(body, /Do not walk on a roof/i);
+  assert.match(body, /Do not touch the wet device/i);
 });
 
 test("sweating walls guide distinguishes surface condensation from localized water sources", () => {

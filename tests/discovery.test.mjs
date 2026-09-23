@@ -343,6 +343,16 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["moisture spot on wall", "wet-spot-on-wall"],
     ["wall feels wet", "wet-spot-on-wall"],
     ["unexplained wet spot on wall", "wet-spot-on-wall"],
+    ["wall wet after rain", "wall-wet-after-rain"],
+    ["wall gets wet when it rains", "wall-wet-after-rain"],
+    ["wet spot on wall after rain", "wall-wet-after-rain"],
+    ["damp wall after rain", "wall-wet-after-rain"],
+    ["interior wall wet after rain", "wall-wet-after-rain"],
+    ["wall leaking when it rains", "wall-wet-after-rain"],
+    ["wall wet during heavy rain", "wall-wet-after-rain"],
+    ["wall wet after storm", "wall-wet-after-rain"],
+    ["water coming through wall when it rains", "wall-wet-after-rain"],
+    ["wall only gets wet when it rains", "wall-wet-after-rain"],
     ["condensation inside windows", "condensation-inside-windows"],
     ["windows wet on inside", "condensation-inside-windows"],
     ["window sweating inside", "condensation-inside-windows"],
@@ -466,6 +476,9 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   for (const query of ["walls sweating", "condensation on walls", "wall wet after rain", "mold on wall", "bubbling paint", "soft drywall", "window leaking when it rains", "mold around windows", "condensation inside windows", "water stain on ceiling", "ceiling wet after rain"]) {
     assert.notEqual(searchArticles(registry, query)[0]?.slug, "wet-spot-on-wall", query);
   }
+  for (const query of ["wet spot on wall", "walls sweating", "condensation on walls", "mold on wall", "bubbling paint", "soft drywall", "window leaking when it rains", "ceiling wet after rain", "water stain on ceiling", "house humid with ac running"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "wall-wet-after-rain", query);
+  }
 });
 
 test("between-pane window Finder paths stay separate from exposed-surface condensation", () => {
@@ -521,6 +534,14 @@ test("localized wall-wet-spot Finder paths stay separate from broad condensation
     assert.equal(rankFinderArticles(registry, location, "wall-wet-spot")[0]?.article.slug, "wet-spot-on-wall", location);
   }
   for (const location of ["yard", "garage", "attic", "exterior", "whole-house"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "wall-wet-spot"), location);
+});
+
+test("rain-related wall Finder paths remain narrow and separate from generic wet spots", () => {
+  for (const location of ["bathroom", "kitchen", "bedroom", "living-area", "laundry"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "wall-rain"), location);
+    assert.equal(rankFinderArticles(registry, location, "wall-rain")[0]?.article.slug, "wall-wet-after-rain", location);
+  }
+  for (const location of ["yard", "garage", "attic", "exterior", "whole-house"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "wall-rain"), location);
 });
 
 test("sweating-wall Finder paths preserve localized leak and mold distinctions", () => {

@@ -699,6 +699,27 @@ test("localized wall wet-spot guide renders timing, source uncertainty, safety, 
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("rain-related wall guide renders storm diagnosis, source uncertainty, safety, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/wall-wet-after-rain");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Wall Wet After It Rains\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/wall-wet-after-rain\//);
+  assert.match(html, /does the wall get wet every time it rains\?/i);
+  assert.match(html, /Why the wet spot may not be where the rain entered/);
+  assert.match(html, /Do not caulk everything/);
+  assert.match(html, /Do not walk on a roof/);
+  assert.match(html, /Do not touch the wet device/);
+  assert.match(html, /href="\/moisture-and-mold\/wet-spot-on-wall\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/walls-sweating\/"/);
+  assert.match(html, /src="\/images\/wall-wet-after-rain-source-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/wall-wet-after-rain-source-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("sweating walls guide renders source distinction, safety, schema, and visual", async () => {
   const response = await render("/moisture-and-mold/walls-sweating");
   const html = await response.text();
