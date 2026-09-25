@@ -551,3 +551,27 @@ test("sweating-wall Finder paths preserve localized leak and mold distinctions",
   }
   for (const location of ["yard", "garage", "attic"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "walls-sweating"), location);
 });
+
+test("window-rain Finder and search paths remain distinct from wall moisture and condensation", () => {
+  const positives = [
+    "window leaking when it rains",
+    "window leaks during rain",
+    "rain coming through window",
+    "water around window after rain",
+    "window leaking during heavy rain",
+    "window leaks only when it rains",
+    "water at top of window when it rains",
+    "water at bottom of window after rain",
+    "water leaking beside window during rain",
+    "window leaking during wind driven rain",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "window-leaking-when-it-rains", query);
+  for (const query of ["wall wet after rain", "wet spot on wall", "condensation inside windows", "condensation between window panes", "window sill wet", "mold around windows", "walls sweating", "ceiling wet after rain", "water stain on ceiling"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "window-leaking-when-it-rains", query);
+  }
+  for (const location of ["bathroom", "kitchen", "bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "window-rain"), location);
+    assert.equal(rankFinderArticles(registry, location, "window-rain")[0]?.article.slug, "window-leaking-when-it-rains", location);
+  }
+  for (const location of ["yard", "garage", "attic", "laundry", "exterior"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "window-rain"), location);
+});

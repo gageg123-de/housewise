@@ -739,3 +739,25 @@ test("sweating walls guide renders source distinction, safety, schema, and visua
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sweating-walls-moisture-patterns\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("window rain-leak guide renders storm distinctions, safety, reciprocal links, schema, and visual", async () => {
+  const response = await render("/moisture-and-mold/window-leaking-when-it-rains");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Window Leaking When It Rains\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/window-leaking-when-it-rains\//);
+  assert.match(html, /Where does the water first become visible\?/);
+  assert.match(html, /How flashing and wall drainage affect rainwater/);
+  assert.match(html, /Do not seal every opening you see/);
+  assert.match(html, /Do not use a ladder during or after a storm/);
+  assert.match(html, /Do not touch the wet device/);
+  assert.match(html, /href="\/moisture-and-mold\/wall-wet-after-rain\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-inside-windows\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/condensation-between-window-panes\/"/);
+  assert.match(html, /src="\/images\/window-leaking-during-rain-source-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/window-leaking-during-rain-source-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

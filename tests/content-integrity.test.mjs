@@ -786,7 +786,7 @@ test("indoor window-condensation guide owns room-side moisture and preserves nei
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window condensation inside,"));
   assert.ok(article && humidity);
   assert.equal(article.published_date, "2026-09-08");
-  assert.equal(article.updated_date, "2026-09-18");
+  assert.equal(article.updated_date, "2026-09-25");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/condensation-inside-windows/"));
@@ -1091,7 +1091,7 @@ test("rain-related wall guide uses storm pattern and exterior context without cl
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Wall wet after rain,"));
   assert.ok(article && parent);
   assert.equal(article.published_date, "2026-09-23");
-  assert.equal(article.updated_date, "2026-09-23");
+  assert.equal(article.updated_date, "2026-09-25");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, []);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/wall-wet-after-rain/"));
@@ -1153,4 +1153,42 @@ test("sweating walls guide distinguishes surface condensation from localized wat
   assert.match(body, /not automatically condensation/i);
   assert.match(body, /cannot identify a leak, hidden mold, or structural damage/i);
   assert.match(body, /Do not open the wall to diagnose the first clue/i);
+});
+
+test("window rain-leak guide owns opening-specific rain intrusion without diagnosing the failed detail", () => {
+  const article = registry.find((item) => item.slug === "window-leaking-when-it-rains");
+  const wallRain = registry.find((item) => item.slug === "wall-wet-after-rain");
+  const inside = registry.find((item) => item.slug === "condensation-inside-windows");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Window leaking when it rains,"));
+  assert.ok(article && wallRain && inside);
+  assert.equal(article.published_date, "2026-09-25");
+  assert.equal(article.updated_date, "2026-09-25");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, []);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/window-leaking-when-it-rains/"));
+  assert.ok(article.body_sections.some((section) => section.id === "storm-pattern" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "first-visible-location" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "flashing-drainage" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "window-drainage"));
+  assert.ok(article.body_sections.some((section) => section.id === "caulk" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "urgent" && section.callout));
+  for (const href of ["/moisture-and-mold/wall-wet-after-rain/", "/moisture-and-mold/wet-spot-on-wall/", "/moisture-and-mold/condensation-inside-windows/", "/moisture-and-mold/condensation-between-window-panes/", "/moisture-and-mold/mold-growing-around-windows/", "/moisture-and-mold/walls-sweating/"]) {
+    assert.ok(article.body_sections.some((section) => section.link?.href === href || section.links?.some((link) => link.href === href)), href);
+  }
+  assert.ok(wallRain.related_articles.includes(article.slug));
+  assert.ok(inside.related_articles.includes(article.slug));
+  assert.ok(wallRain.body_sections.some((section) => section.links?.some((link) => link.href === "/moisture-and-mold/window-leaking-when-it-rains/")));
+  assert.ok(inside.body_sections.some((section) => section.link?.href === "/moisture-and-mold/window-leaking-when-it-rains/"));
+  assert.equal(article.image.src, "/images/window-leaking-during-rain-source-clues.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "Federal Emergency Management Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "Building America Solution Center"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /does not automatically mean the window itself failed/i);
+  assert.match(body, /Do not drill new holes/i);
+  assert.match(body, /Do not seal every opening/i);
+  assert.match(body, /uncontrolled hose testing/i);
 });

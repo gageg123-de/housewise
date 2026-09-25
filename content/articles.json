@@ -3661,7 +3661,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-08",
-    "updated_date": "2026-09-18",
+    "updated_date": "2026-09-25",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -3703,7 +3703,8 @@
     "related_articles": [
       "house-humid-with-ac-running",
       "mold-growing-around-windows",
-      "condensation-between-window-panes"
+      "condensation-between-window-panes",
+      "window-leaking-when-it-rains"
     ],
     "image": {
       "src": "/images/window-condensation-location-guide.webp",
@@ -3901,7 +3902,13 @@
           "Surface condensation usually tracks cold conditions or indoor moisture and appears as fog, beads, or a film on exposed glass or frame surfaces. Rainwater intrusion more often follows rain or wind, traces from the head or sides of the opening, stains adjacent wall finishes, or wets drywall and trim beyond the cold-glass surface. These are patterns, not proof.",
           "DOE building guidance explains that flashing around a window is part of the wall's drainage system. Water may travel inside an assembly before becoming visible, so the first indoor stain may not be the entry point. If moisture appears only after rain, spreads through the wall, or begins above the glass, use a qualified window or building-envelope professional rather than trying to seal random interior gaps.",
           "Do not cover drainage openings or weep paths with caulk. Window water-management details vary, and an improvised interior seal can conceal or redirect moisture instead of correcting its source."
-        ]
+        ],
+        "link": {
+          "before": "If water appears at the frame, trim, sill, or surrounding wall specifically during rain, use ",
+          "label": "Why Is My Window Leaking When It Rains?",
+          "href": "/moisture-and-mold/window-leaking-when-it-rains/",
+          "after": " for the storm-pattern and first-visible-location framework."
+        }
       },
       {
         "id": "damage-and-safe-steps",
@@ -7331,7 +7338,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-23",
-    "updated_date": "2026-09-23",
+    "updated_date": "2026-09-25",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -7376,6 +7383,7 @@
     "professional_help": "Use a building-envelope or exterior specialist when rain correlation is strong and the wall, cladding, window, door, or penetration interface appears involved; a roofer when evidence points toward a roof edge, penetration, or roof-to-wall transition; and a window or door professional for a strongly opening-specific pattern. Use a plumber when the spot also changes during dry weather with water use, or an HVAC professional when it tracks condensate or cooling instead of rainfall. A qualified inspector or general contractor can coordinate investigation when several systems remain plausible or material damage is significant.",
     "related_articles": [
       "wet-spot-on-wall",
+      "window-leaking-when-it-rains",
       "walls-sweating",
       "ceiling-wet-after-rain",
       "water-around-indoor-ac-unit"
@@ -7487,14 +7495,22 @@
         "heading": "Could the water be coming from a window or door?",
         "paragraphs": [
           "Windows and doors interrupt a wall's water-control layers. DOE building-science guidance explains that their flashing should be integrated with the wall's drainage plane so incidental water is directed outward. Rain-related dampness near an opening can therefore justify professional examination of the unit, flashing, trim, and adjacent wall as one system.",
-          "Do not confuse this with room-side glass condensation or fog between sealed panes. Between-pane fog does not explain rainwater soaking the surrounding drywall. Also do not remove trim, glazing, or the window itself. A future window-rain guide remains the narrower owner when water entry is clearly specific to an opening."
+          "Do not confuse this with room-side glass condensation or fog between sealed panes. Between-pane fog does not explain rainwater soaking the surrounding drywall. Also do not remove trim, glazing, or the window itself. When water entry is clearly centered at the opening, use the narrower window-rain guide."
         ],
-        "link": {
-          "before": "If moisture is on the accessible room-side glass rather than the wall, use ",
-          "label": "Why Is There Condensation on the Inside of My Windows?",
-          "href": "/moisture-and-mold/condensation-inside-windows/",
-          "after": " instead."
-        }
+        "links": [
+          {
+            "before": "If water appears at or immediately around the opening during rain, use ",
+            "label": "Why Is My Window Leaking When It Rains?",
+            "href": "/moisture-and-mold/window-leaking-when-it-rains/",
+            "after": "."
+          },
+          {
+            "before": "If moisture is on the accessible room-side glass rather than the wall, use ",
+            "label": "Why Is There Condensation on the Inside of My Windows?",
+            "href": "/moisture-and-mold/condensation-inside-windows/",
+            "after": " instead."
+          }
+        ]
       },
       {
         "id": "roof-wall",
@@ -7669,6 +7685,276 @@
         "publisher": "U.S. Consumer Product Safety Commission",
         "url": "https://www.cpsc.gov/about-cpsc/chairman/ann-marie-buerkle/statements/statement-from-cpsc-acting-chairman-ann-marie"
       }
+    ]
+  },
+  {
+    "title": "Why Is My Window Leaking When It Rains?",
+    "slug": "window-leaking-when-it-rains",
+    "description": "Water around a window during rain may come through the window, its wall interfaces, or somewhere above. Use storm timing and the first wet location to narrow it.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [],
+    "symptoms": [
+      "leaking",
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "bathroom",
+      "kitchen",
+      "bedroom",
+      "living-area",
+      "whole-house"
+    ],
+    "system": "moisture-and-mold",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-25",
+    "updated_date": "2026-09-25",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my window leaking when it rains",
+      "window leaking when it rains",
+      "window leaks during rain",
+      "water coming in around window when it rains",
+      "window leaking during heavy rain",
+      "window leaks only when it rains",
+      "rain coming through window",
+      "water around window after rain",
+      "water at bottom of window after rain",
+      "water at top of window when it rains",
+      "window leaking from top during rain",
+      "window leaking from bottom during rain",
+      "water leaking beside window",
+      "window leaks during wind driven rain",
+      "rainwater coming through window frame",
+      "window frame leaking when it rains",
+      "water inside window frame after rain"
+    ],
+    "target_search_intent": "Help a homeowner investigate water that appears at or immediately around a window during or after rain by comparing storm pattern, first-visible location, surrounding wall conditions, applicable drainage features, and condensation alternatives without assuming the window unit itself failed.",
+    "direct_answer": "If water appears at or around a window during or after rain, exterior water intrusion becomes more plausible, but the symptom does not prove the window unit failed. Water may enter through the window assembly, the window-to-wall interface, surrounding flashing or cladding details, or an area above or beside the opening before becoming visible indoors. Record which storms trigger it and where water first appears—top, side, bottom, sill, trim, or surrounding wall—then compare room-side condensation and between-pane fog before assigning a source.",
+    "likely_causes": [
+      "Rain entering through an operable or fixed part of the window assembly",
+      "Water entering at the window-to-wall perimeter or another exterior interface",
+      "Flashing or drainage-plane integration that is not directing incidental water outward",
+      "Water entering above or beside the opening and traveling before it becomes visible",
+      "A manufacturer-designed window drainage path that is obstructed or overwhelmed where that design applies",
+      "Room-side condensation mistaken for rainwater",
+      "A surrounding-wall or roof-related source rather than the window itself",
+      "A non-rain plumbing or HVAC source that happens to overlap with storm weather"
+    ],
+    "safe_checks": [
+      "Photograph where water first becomes visible during naturally occurring rain.",
+      "Record rain intensity, duration, approximate wind direction, and any delay before wetting appears.",
+      "Compare the top, sides, bottom, sill, trim, and surrounding wall without removing parts.",
+      "Note whether the same window leaks during every storm or only heavy, prolonged, or wind-driven rain.",
+      "Check whether accessible room-side glass also condenses during dry weather.",
+      "Observe existing visible drainage openings only from a safe position; do not drill, enlarge, or seal them.",
+      "Inspect safely visible exterior conditions from ground level and document swelling, staining, softness, or growth indoors."
+    ],
+    "professional_help": "Use a window or building-envelope professional when rain leakage is tightly localized to the opening or its perimeter; a building-envelope specialist or general contractor when the surrounding wall and several exterior systems may be involved; and a roofer only when evidence points toward an upstream roof or roof-wall source. Use a plumber or HVAC professional when the symptom also occurs during dry weather and follows water use or cooling. Seek faster evaluation for active flow, major recurring entry, unstable window parts, bulging or severely softened material, storm damage, suspected contamination, or water near electrical equipment.",
+    "related_articles": [
+      "wall-wet-after-rain",
+      "condensation-inside-windows",
+      "condensation-between-window-panes",
+      "mold-growing-around-windows",
+      "wet-spot-on-wall",
+      "walls-sweating"
+    ],
+    "image": {
+      "src": "/images/window-leaking-during-rain-source-clues.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel comparison of rainwater first appearing at the top, side, and bottom of a window plus uncertain paths from the surrounding wall.",
+      "caption": "Conceptual illustration: Where water first appears can narrow the investigation, but it does not prove where rain entered or which component failed.",
+      "kind": "conceptual",
+      "after_section": "first-visible-location"
+    },
+    "body_sections": [
+      {
+        "id": "rain-trigger",
+        "heading": "First: does it leak only when it rains?",
+        "paragraphs": [
+          "Start with the trigger. If the frame, trim, sill, or nearby wall becomes wet only during or after rainfall, exterior water intrusion deserves more weight. If moisture also appears on dry days, after showers, during humid cold weather, with plumbing use, or while the air conditioner runs, keep condensation, plumbing, and HVAC sources in the comparison.",
+          "Record when rain starts and when water first appears. Immediate wetting and a patch that appears hours later are both useful patterns, but neither identifies the entry point. Water can collect or travel within an assembly before reaching the indoor finish."
+        ]
+      },
+      {
+        "id": "storm-pattern",
+        "heading": "Does it leak during every storm or only certain storms?",
+        "paragraphs": [
+          "A light vertical rain does not expose a wall exactly like hours of heavy rain or gusts striking one side of the house. FEMA has documented wind-driven rain entering through and around windows and doors. Wind can load the vertical wall and opening in ways that calmer rain does not.",
+          "Note intensity, duration, approximate wind direction, and which face of the house was exposed. Those observations describe the water load; they do not prove a failed seal, flashing detail, or window product."
+        ],
+        "table": {
+          "headers": ["Storm pattern", "What it adds"],
+          "rows": [
+            ["Nearly every rain", "A consistently exposed path at or near the opening becomes more plausible."],
+            ["Heavy or prolonged rain only", "The assembly may handle smaller loads but be overwhelmed or wet through during longer exposure."],
+            ["Wind-driven rain only", "The exposed window face, perimeter, and surrounding wall deserve attention."],
+            ["Rain from one direction", "That exposure is relevant, but it still does not identify the failed detail."],
+            ["Moisture during dry weather too", "Compare condensation, plumbing, and HVAC timing before calling it a rain leak."]
+          ]
+        }
+      },
+      {
+        "id": "first-visible-location",
+        "heading": "Where does the water first become visible?",
+        "paragraphs": [
+          "Watch the first wet location rather than the largest puddle at the end of the storm. Water at the sill may have arrived from higher in the opening, and a stain beside the frame may have traveled from above or through the adjacent wall. Dry accessible surfaces before a future natural storm only if doing so is safe, then photograph the first change.",
+          "Location narrows where a professional should investigate. It does not identify a failed component from the interior alone."
+        ],
+        "table": {
+          "headers": ["First visible location", "What deserves comparison"],
+          "rows": [
+            ["Top or upper corners", "The head area, wall above, nearby exterior interfaces, and any plausible upstream source"],
+            ["One side or jamb", "The perimeter, adjacent wall, wind exposure, and water arriving from above"],
+            ["Bottom or sill", "Water descending from higher areas, the operable assembly, applicable drainage features, and condensation"],
+            ["Interior trim", "The opening-to-wall interface and hidden travel behind the finish"],
+            ["Wall above, beside, or below", "The surrounding wall may be the primary observation rather than the window unit"]
+          ]
+        }
+      },
+      {
+        "id": "top-window",
+        "heading": "What does water at the top of the window suggest?",
+        "paragraphs": [
+          "Water first appearing at the top makes the head of the opening and conditions above it worth investigating. Depending on construction, rain could involve the window perimeter, wall drainage layers, cladding or trim interfaces, a nearby penetration, or a more distant source that sends water downward.",
+          "Do not translate that location into a diagnosis. Water at the top does not prove head flashing failed, and it does not prove a roof leak. A qualified inspection must connect the storm pattern to the actual wall and window configuration."
+        ]
+      },
+      {
+        "id": "sides-bottom",
+        "heading": "What about water at the sides or bottom?",
+        "paragraphs": [
+          "Side wetting makes the jamb or perimeter and wind exposure relevant, but water can still arrive from above. Bottom or sill water may come through an operable window, collect after traveling down the sides, emerge from an interface, or simply be room-side condensation that ran down the glass.",
+          "Do not assume the sill is the entry point because gravity leaves the puddle there. The broader future wet-sill intent also includes condensation and other non-rain sources; this page remains focused on a repeatable storm relationship."
+        ]
+      },
+      {
+        "id": "window-or-wall",
+        "heading": "Could the water be coming from the wall above the window?",
+        "paragraphs": [
+          "Yes. A window interrupts the wall's water-management layers, but the unit itself is only one part of the opening. Bulk water can move along sheathing, framing, insulation, fasteners, membranes, trim, or drywall before it becomes visible. Porous materials and narrow gaps can also move water away from its first contact point.",
+          "That is why water around a window does not automatically mean the window failed. If the wet area extends well into the wall or begins away from the frame, compare the broader rain-related wall pattern."
+        ],
+        "links": [
+          {"before": "For rain-correlated moisture centered on the surrounding wall, use ", "label": "Why Is My Wall Wet After It Rains?", "href": "/moisture-and-mold/wall-wet-after-rain/", "after": "."},
+          {"before": "If the trigger is still unknown, return to ", "label": "Why Is There a Wet Spot on My Wall?", "href": "/moisture-and-mold/wet-spot-on-wall/", "after": " for the broader location-and-timing framework."}
+        ]
+      },
+      {
+        "id": "flashing-drainage",
+        "heading": "How flashing and wall drainage affect rainwater",
+        "paragraphs": [
+          "DOE and Building America guidance describes window openings as interruptions in a wall's drainage plane. In many modern assemblies, sill or pan flashing, side flashing, head flashing, and the water-resistive barrier are layered so incidental water moves down and outward rather than into the wall. Head or drip-cap details may also be used where the design calls for them.",
+          "Those terms describe functions, not a universal construction recipe. Older windows, replacement installations, masonry, stucco, wood, vinyl, metal, and other wall systems can use different materials and sequences. The symptom cannot reveal which hidden detail exists or which one failed."
+        ],
+        "callout": {
+          "title": "The opening and wall work as a system",
+          "text": "A professional may need to evaluate the window, its perimeter, visible exterior interfaces, and the surrounding wall together rather than replacing the window based on an indoor puddle."
+        }
+      },
+      {
+        "id": "window-drainage",
+        "heading": "Could a window drainage path be blocked?",
+        "paragraphs": [
+          "Some window designs include channels or weep openings intended to release water. Other products and storm-window arrangements manage drainage differently, and not every window has the same visible features. A homeowner can note an existing manufacturer-designed opening and obvious surface debris from a safe position, but appearance alone does not prove a blockage caused the leak.",
+          "Do not drill new holes, enlarge openings, push tools into the frame, or seal every gap. Follow product-specific instructions or use a window professional when the drainage design is unclear."
+        ]
+      },
+      {
+        "id": "condensation",
+        "heading": "Is it actually condensation instead of rainwater?",
+        "paragraphs": [
+          "Room-side condensation forms when humid indoor air meets glass or frame surfaces cold enough for water vapor to condense. It may appear without rain, affect several windows, track cold weather or indoor moisture, and wipe from the accessible indoor surface. Water can then run to the sill and look like a leak.",
+          "Rain intrusion becomes more plausible when the frame, trim, or nearby wall wets only during particular storms, especially with wind-driven exposure. These are patterns, not proof."
+        ],
+        "links": [
+          {"before": "If the moisture forms on the accessible room-side glass, use ", "label": "Why Is There Condensation on the Inside of My Windows?", "href": "/moisture-and-mold/condensation-inside-windows/", "after": "."},
+          {"before": "For broad droplets or dampness across wall surfaces, compare ", "label": "Why Are My Walls Sweating?", "href": "/moisture-and-mold/walls-sweating/", "after": "."}
+        ]
+      },
+      {
+        "id": "between-panes",
+        "heading": "What if the moisture is between the window panes?",
+        "paragraphs": [
+          "Fog, haze, or droplets trapped inside a sealed insulated-glass cavity are a glazing-unit problem, not evidence that rainwater is entering the surrounding wall. Between-pane moisture cannot be wiped from either accessible glass surface and may come and go with temperature changes.",
+          "A loss of insulated-glass seal integrity does not explain water running onto trim or drywall during rain. Keep those symptoms separate even when the same window has both."
+        ],
+        "link": {"before": "For unreachable fog or haze inside the glazing space, use ", "label": "Why Is There Condensation Between My Window Panes?", "href": "/moisture-and-mold/condensation-between-window-panes/", "after": "."}
+      },
+      {
+        "id": "caulk",
+        "heading": "Should you just caulk the window?",
+        "paragraphs": [
+          "Not as a diagnosis. Sealant is appropriate in some designed joints, but indiscriminate caulking can miss an upstream entry point, cover a drainage route, redirect water, or temporarily hide evidence. PNNL guidance specifically warns against sealing designed window weep holes.",
+          "Do not create a universal caulking map from an interior stain. Identify the window and wall system, follow manufacturer and assembly guidance, and correct the actual water path."
+        ],
+        "callout": {"title": "Do not seal every opening you see", "text": "Never drill a new weep hole or cover a visible drainage opening as an experiment. Window and wall drainage details vary by product and construction."}
+      },
+      {
+        "id": "damage",
+        "heading": "What if trim, paint, or drywall is deteriorating?",
+        "paragraphs": [
+          "Swollen trim, peeling or bubbling paint, staining, softened drywall, deteriorated wood, a recurring musty odor, or mold-like growth shows that moisture is affecting materials. None of those observations identifies the entry point, but recurring wetting deserves timely correction before cosmetic repair.",
+          "Do not identify mold by color or species. If visible growth is the primary symptom, use the window-mold guide after addressing the moisture source."
+        ],
+        "link": {"before": "For visible or suspected growth on the sill, frame, trim, caulk, or nearby wall, use ", "label": "Why Is Mold Growing Around My Windows?", "href": "/moisture-and-mold/mold-growing-around-windows/", "after": "."}
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can safely check yourself",
+        "paragraphs": [
+          "Keep the investigation observational. Controlled water testing can help a qualified professional isolate an assembly, but random hose spraying can force water into places normal rain would not reach and produce a misleading result. Document natural storms instead."
+        ],
+        "bullets": [
+          "Photograph where water first appears and how far it spreads.",
+          "Record storm intensity, duration, approximate wind direction, and any delay before wetting.",
+          "Compare this window with nearby windows exposed to the same storm.",
+          "Note whether moisture occurs during dry weather or forms on accessible glass.",
+          "Inspect visible interior trim, sill, frame, and wall without removing parts.",
+          "From ground level, record obvious exterior damage or open joints without assigning a cause.",
+          "Observe existing drainage openings without modifying, probing, or sealing them.",
+          "Record swelling, softness, bubbling paint, odor, suspected growth, or unstable operation."
+        ],
+        "callout": {"title": "Keep leak tracing non-destructive", "text": "Do not use a ladder during or after a storm, walk on a roof, remove siding or trim, dismantle the window, cut drywall, drill the frame or wall, open electrical boxes, or perform uncontrolled hose testing."}
+      },
+      {
+        "id": "urgent",
+        "heading": "When a leaking window needs faster attention",
+        "paragraphs": [
+          "Arrange prompt evaluation for active flowing water, rapidly worsening leakage, repeated substantial entry, major swelling, severely soft or crumbling finishes, bulging wall or ceiling material, storm damage, an unstable sash or frame, broken glass, rot, significant mold-like growth, or suspected contaminated water. Keep away from material that appears water-loaded or unstable.",
+          "Water near an outlet, switch, wiring, fan, or other electrical equipment requires conservative handling. Do not touch the wet device, remove a cover, perform live testing, or probe nearby. Keep clear and obtain qualified help appropriate to the severity."
+        ],
+        "callout": {"title": "Water and electricity do not mix", "text": "Do not operate or open wet electrical equipment. Only isolate power from a known dry, safely accessible location when established safety guidance and the situation permit it."}
+      },
+      {
+        "id": "professional",
+        "heading": "Who should you call?",
+        "paragraphs": [
+          "Start with a window or building-envelope professional when leakage is tightly localized to the window, its perimeter, or the opening-to-wall interface. Use a building-envelope specialist, qualified inspector, or general contractor when water extends into the surrounding wall or several exterior systems interact. A roofer fits evidence centered on an upstream roof or roof-wall condition, and an exterior or siding professional fits evidence centered on cladding interfaces.",
+          "If the moisture also appears during dry weather and follows plumbing use, call a plumber; if it follows cooling or condensate, call an HVAC professional. The strongest repeatable evidence should choose the first trade—not the nearest visible component."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Water appearing around a window during rain does not automatically mean the window itself failed. First confirm the rain relationship, compare every storm with heavy or wind-driven storms, and document whether water first appears at the top, side, bottom, trim, sill, or surrounding wall.",
+          "Then separate accessible-glass condensation and between-pane fog from bulk rainwater. Preserve drainage paths, avoid blind caulking and destructive testing, and give the storm record and photographs to the professional whose system best matches the evidence."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Windows and Doors are Fully Flashed", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/windows-and-doors-are-fully-flashed"},
+      {"title": "Look for Missing Window and Door Flashing", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/diy-guides/look-missing-window-and-door-flashing"},
+      {"title": "2021 IECC Window Detail: Framed Wall with Plywood or OSB Sheathing, a WRB, and Siding", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/images/2021-iecc-window-detail-framed-wall-plywood-or-osb-sheathing-wrb-and-siding-wood-fiber"},
+      {"title": "Reducing Water Intrusion Through Windows and Doors", "publisher": "Federal Emergency Management Agency", "url": "https://www.fema.gov/sites/default/files/documents/fema_mat-hurricane-ian-recovery-advisory-3.pdf"},
+      {"title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0"},
+      {"title": "Moisture Control Guidance for Building Design, Construction and Maintenance (PDF)", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/sites/default/files/2014-08/documents/moisture-control.pdf"},
+      {"title": "Statement Regarding Hurricane Harvey Electrical Safety", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/about-cpsc/chairman/ann-marie-buerkle/statements/statement-from-cpsc-acting-chairman-ann-marie"}
     ]
   }
 ]
