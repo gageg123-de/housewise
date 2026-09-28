@@ -1223,3 +1223,33 @@ test("toilet-triggered sink gurgling guide owns the sink response without diagno
   assert.match(body, /Never mix drain products/i);
   assert.match(body, /Dirty water is a backup/i);
 });
+
+test("HVAC register airflow guide evaluates the outlet without promising a system fix", () => {
+  const article = registry.find((item) => item.slug === "can-replacing-registers-improve-airflow");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Replacing HVAC registers for airflow,"));
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-09-28");
+  assert.equal(article.updated_date, "2026-09-28");
+  assert.equal(article.primary_category, "hvac");
+  assert.equal(article.content_type, "comparison-explanation-guide");
+  assert.ok(topic?.includes(",published,") && topic.includes("/hvac/can-replacing-registers-improve-airflow/"));
+  assert.match(article.target_search_intent, /preserving weak-airflow, one-room comfort, duct, return, filter, balancing, and register-sizing/i);
+  assert.ok(article.body_sections.some((section) => section.id === "is-register-restricting" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "one-or-many" && section.subsections?.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "bigger-register" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "measurement"));
+  assert.equal(article.image.src, "/images/hvac-register-airflow-bottlenecks.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "Air Conditioning Contractors of America"));
+  assert.ok(article.sources.some((source) => source.publisher === "Building America Solution Center"));
+  assert.ok(article.sources.some((source) => source.publisher === "Greenheck"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /Age by itself is not evidence/i);
+  assert.match(body, /Gross size is not free area/i);
+  assert.match(body, /Do not close registers in other rooms/i);
+  assert.match(body, /Do not remove the register as a permanent upgrade or casual test/i);
+  assert.doesNotMatch(body, /\b\d+\s*%/);
+});

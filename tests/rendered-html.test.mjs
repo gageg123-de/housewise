@@ -780,3 +780,22 @@ test("sink gurgling guide renders fixture-pattern distinctions, backup safety, s
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sink-gurgles-when-toilet-flushes-patterns\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("HVAC register airflow guide renders outlet-versus-upstream distinctions, safety, schema, and visual", async () => {
+  const response = await render("/hvac/can-replacing-registers-improve-airflow");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Can Replacing HVAC Registers Improve Airflow\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/can-replacing-registers-improve-airflow\//);
+  assert.match(html, /First: is the register itself restricting airflow\?/);
+  assert.match(html, /Follow the whole airflow path/);
+  assert.match(html, /Gross size is not free area/);
+  assert.match(html, /Do not remove the register as a permanent upgrade or casual test/);
+  assert.match(html, /do not close registers in other rooms/i);
+  assert.match(html, /src="\/images\/hvac-register-airflow-bottlenecks\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/hvac-register-airflow-bottlenecks\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

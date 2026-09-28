@@ -185,14 +185,14 @@ test("every configured Problem Finder path returns valid results or a safe searc
   assert.equal(getFinderFallbackHref("not-a-location", "noise"), "/search/?q=");
 });
 
-test("every published article is reachable through at least one Problem Finder path", () => {
+test("every symptom article is reachable through Finder while the register solution guide stays search-only", () => {
   const reachable = new Set();
   for (const { value: location } of finderLocations) {
     for (const symptom of getFinderSymptomOptions(location)) {
       for (const { article } of rankFinderArticles(registry, location, symptom.value)) reachable.add(article.slug);
     }
   }
-  assert.deepEqual([...registry.map((article) => article.slug).filter((slug) => !reachable.has(slug))], []);
+  assert.deepEqual([...registry.map((article) => article.slug).filter((slug) => !reachable.has(slug))], ["can-replacing-registers-improve-airflow"]);
 });
 
 test("site search ranks realistic homeowner queries and rejects weak partial matches", () => {
@@ -598,4 +598,11 @@ test("toilet-triggered sink gurgling Finder and search stay distinct from neighb
   for (const location of ["yard", "garage", "attic", "laundry", "bedroom", "living-area", "exterior", "whole-house"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "sink-toilet-gurgling"), location);
   }
+});
+
+test("register replacement search intent stays separate from weak-airflow symptoms and Finder", () => {
+  const positives = ["can replacing hvac registers improve airflow", "will new registers improve airflow", "do new air vents improve airflow", "can old registers restrict airflow", "replacing air vents increase airflow", "bigger register improve airflow", "restrictive hvac register", "decorative register airflow", "register size airflow", "old floor registers airflow"];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "can-replacing-registers-improve-airflow", query);
+  for (const query of ["weak airflow from vents", "one room not getting enough air", "hvac register sizing", "should i close vents in unused rooms", "filter restriction", "duct restriction", "duct leakage", "hvac balancing", "return air problems"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "can-replacing-registers-improve-airflow", query);
+  for (const { value: location } of finderLocations) for (const symptom of getFinderSymptomOptions(location)) assert.ok(!rankFinderArticles(registry, location, symptom.value).some(({ article }) => article.slug === "can-replacing-registers-improve-airflow"), `${location}/${symptom.value}`);
 });
