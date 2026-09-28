@@ -1001,13 +1001,13 @@
   {
     "title": "Why Does My Shower Drain Gurgle When the Toilet Flushes?", "slug": "shower-drain-gurgles-when-toilet-flushes", "description": "A shower drain that gurgles when the toilet flushes may be reacting to a shared drain restriction, pressure change, venting issue, or developing sewer problem.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "drainage", "clogging"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-30", "updated_date": "2026-08-30", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-08-30", "updated_date": "2026-09-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["shower drain gurgles when toilet flushes", "shower gurgles when toilet flushes", "tub drain gurgles when toilet flushes", "shower drain bubbles when toilet flushes", "toilet flush makes shower drain gurgle", "bath drain gurgles when toilet flushes"], "target_search_intent": "Explain why a toilet flush can make a shower or tub drain gurgle, distinguish pressure noise from visible wastewater backup, and help homeowners identify when a shared drain, venting, sewer, or septic condition needs professional evaluation.",
     "direct_answer": "A toilet and nearby shower often connect to shared drainage and venting paths somewhere downstream. When the toilet sends a concentrated flow through that system, a partial restriction or abnormal pressure change can move air through the shower's water-filled trap and create a gurgle, bubble, or glug. Ineffective venting can contribute, but the sound alone does not prove a vent blockage or identify the affected pipe. If water rises in the shower, dirty water appears, several fixtures slow down, or the pattern is worsening, minimize plumbing use and arrange prompt evaluation because a backup may be developing.",
     "likely_causes": ["A partial restriction in a shared bathroom branch", "A restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized bathroom branch condition", "A broader building-drain or main-line problem", "A septic-system drainage problem", "A municipal sewer condition"],
     "safe_checks": ["Identify which toilet triggers the sound and which shower or tub reacts.", "Note whether the drain only gurgles or whether water visibly bubbles, rises, or becomes dirty.", "Check whether the shower and nearby sinks drain slowly without deliberately adding a large test volume.", "Compare fixtures on other floors and note whether another toilet or low drain reacts.", "Record whether the symptom happens after every flush, after several flushes, or during other household water use.", "Minimize plumbing use if wastewater rises or several fixtures become slow."],
     "professional_help": "Arrange a plumber when the toilet-to-shower interaction repeats, the shower drains slowly, water visibly moves upward, several fixtures react, or symptoms worsen. Stop unnecessary wastewater use and call promptly if dirty water or sewage enters the shower, multiple drains back up, or a lower fixture begins taking wastewater. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
-    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
+    "related_articles": ["sink-gurgles-when-toilet-flushes", "multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
     "image": {
       "src": "/images/toilet-shower-shared-drain-gurgling.webp", "width": 1536, "height": 1024,
       "alt": "Conceptual bathroom cutaway showing a toilet discharging into a shared drain while pressure movement disturbs water in a connected shower trap.",
@@ -1066,6 +1066,7 @@
         "id": "related-patterns", "heading": "Keep the triggering and reacting fixtures straight",
         "paragraphs": ["The same drainage system can produce neighboring symptoms, but the known trigger and the fixture that reacts determine which guide fits best."],
         "links": [
+          { "before": "If the reacting fixture is a sink rather than a shower or tub, use ", "label": "Why Does My Sink Gurgle When the Toilet Flushes?", "href": "/plumbing/sink-gurgles-when-toilet-flushes/", "after": " to compare sink drainage speed, visible water movement, and other affected fixtures." },
           { "before": "If another toilet's bowl rises or bubbles when a toilet flushes, use ", "label": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "href": "/plumbing/toilet-water-rises-when-another-toilet-flushes/", "after": " for the toilet-to-toilet pattern." },
           { "before": "If a toilet gurgles and no repeatable trigger is apparent, use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": " to track hidden discharges." },
           { "before": "If washing-machine discharge makes a toilet bubble, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that high-flow laundry interaction." }
@@ -7955,6 +7956,206 @@
       {"title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0"},
       {"title": "Moisture Control Guidance for Building Design, Construction and Maintenance (PDF)", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/sites/default/files/2014-08/documents/moisture-control.pdf"},
       {"title": "Statement Regarding Hurricane Harvey Electrical Safety", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/about-cpsc/chairman/ann-marie-buerkle/statements/statement-from-cpsc-acting-chairman-ann-marie"}
+    ]
+  },
+  {
+    "title": "Why Does My Sink Gurgle When the Toilet Flushes?",
+    "slug": "sink-gurgles-when-toilet-flushes",
+    "description": "A sink that gurgles when a toilet flushes is reacting to drainage pressure or airflow. Use sink behavior and other fixtures to narrow the pattern safely.",
+    "primary_category": "plumbing",
+    "secondary_categories": ["bathroom"],
+    "symptoms": ["noise", "drainage", "clogging"],
+    "room_or_location": ["bathroom", "kitchen"],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-27",
+    "updated_date": "2026-09-27",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "sink gurgles when toilet flushes",
+      "sink gurgling when toilet flushes",
+      "bathroom sink gurgles when toilet flushes",
+      "kitchen sink gurgles when toilet flushes",
+      "toilet flush makes sink gurgle",
+      "sink bubbles when toilet flushes",
+      "sink water rises when toilet flushes",
+      "sink makes noise when toilet flushes"
+    ],
+    "target_search_intent": "Explain why a sink can gurgle specifically when a toilet flushes, distinguish a brief pressure sound from slow drainage or visible backup, and use the reacting fixtures to narrow local, shared-drain, venting, sewer, or septic patterns without diagnosing the exact fault from sound alone.",
+    "direct_answer": "A toilet flush sends a concentrated flow through the drainage system and displaces air. If a nearby or connected path is partly restricted, or if drainage-system pressure is not being managed normally, air may move through the sink trap and make it gurgle. The sound proves that the fixtures are interacting; it does not prove a clogged vent, identify a blockage, or show the concealed pipe layout. First note what the sink does, then check how the sink drains during ordinary use and whether any other fixtures react. A brief sound with a normal water level is different from a slow sink, rising water, dirty water, or several affected drains.",
+    "likely_causes": [
+      "A partial restriction in the sink fixture drain or nearby branch",
+      "A restriction in a bathroom branch shared by the toilet and sink",
+      "A restriction farther downstream in the building drain or private sewer",
+      "A drainage-system pressure issue involving venting",
+      "A broader septic-system or public-sewer condition"
+    ],
+    "safe_checks": [
+      "Identify which toilet triggers the sound and which sink reacts.",
+      "Note whether the sink only gurgles or whether clean water bubbles, rises, or changes level.",
+      "Observe how the sink drains during normal use without adding a large test volume.",
+      "Check whether a nearby shower, tub, another sink, or another toilet also reacts.",
+      "Record whether every flush causes the symptom or only repeated flushes and heavy household water use.",
+      "Stop unnecessary water use if the sink rises, dirty water appears, or several fixtures back up."
+    ],
+    "professional_help": "Arrange a plumber when the toilet-to-sink interaction repeats, the sink also drains slowly, the trap water visibly rises or drops, sewer odor persists, several fixtures react, or symptoms are worsening. Stop unnecessary wastewater use and call promptly if dirty water or sewage enters the sink or another fixture, multiple drains back up, or a low fixture begins taking wastewater. A septic professional or sewer utility may become appropriate after the private drainage path is evaluated.",
+    "related_articles": [
+      "shower-drain-gurgles-when-toilet-flushes",
+      "toilet-water-rises-when-another-toilet-flushes",
+      "toilet-gurgles-randomly",
+      "toilet-bubbles-when-washer-drains",
+      "multiple-drains-back-up-at-same-time"
+    ],
+    "image": {
+      "src": "/images/sink-gurgles-when-toilet-flushes-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel comparison of a sink making a brief sound, draining slowly, bubbling slightly, and reacting along with several fixtures when a toilet flushes.",
+      "caption": "Conceptual illustration: What the sink and other fixtures do helps set the scope. These visible patterns narrow the investigation but do not identify a hidden restriction or vent condition by themselves.",
+      "kind": "conceptual",
+      "after_section": "what-sink-does"
+    },
+    "body_sections": [
+      {
+        "id": "what-sink-does",
+        "heading": "Start with what the sink does",
+        "paragraphs": [
+          "Do not begin by naming a pipe. Watch the reacting fixture. A sound, a change in drainage speed, and water moving upward represent different levels of evidence. Keep the sink empty and clean enough to see what happens, then observe from a dry position when the toilet is used normally. Do not keep flushing merely to make the symptom more dramatic.",
+          "The water held in the sink's P-trap below the drain opening forms a seal between the room and the sanitary drainage system. When pressure changes move air through that water, the result can be a gurgle, glug, or bubble. That explains the sound mechanism, not the reason the pressure changed."
+        ],
+        "table": {
+          "headers": ["What the sink does", "How to treat the clue"],
+          "rows": [
+            ["Brief gurgle; basin stays empty and sink drains normally", "A drainage-air interaction without a visible backup; note repetition and other fixtures"],
+            ["Gurgles and also drains slowly during normal use", "A local or shared restriction becomes more plausible"],
+            ["Clean bubbles or slight water-level movement", "Pressure is disturbing trap water, but the observation does not locate the cause"],
+            ["Water rises into the basin", "Downstream resistance is more concerning; avoid repeated testing and arrange evaluation"],
+            ["Dirty water or sewage appears", "Treat it as a wastewater backup, stop unnecessary water use, and avoid contact"]
+          ]
+        }
+      },
+      {
+        "id": "how-sink-drains",
+        "heading": "Next, check how the sink drains by itself",
+        "paragraphs": [
+          "Use only ordinary sink use as the comparison. If the basin empties at its usual rate and never rises, the evidence is still limited to sound or small trap-water movement. If the sink is slow even when no toilet is flushing, its own fixture drain or a nearby branch deserves more attention. A local sink restriction can coexist with a shared pressure effect.",
+          "Do not fill the basin repeatedly or run a high-volume test. If the sink is already slow, more water can turn a diagnostic clue into an overflow. A sink that becomes slower over days, carries debris back into the basin, or no longer drains normally needs evaluation even if the gurgle is brief."
+        ]
+      },
+      {
+        "id": "other-fixtures",
+        "heading": "Then ask whether other fixtures react",
+        "subsections": [
+          {"heading": "Only one sink reacts", "paragraphs": ["One bathroom or kitchen sink reacting while every other fixture behaves normally may point toward that sink's fixture drain, its branch, or a nearby venting arrangement. It does not prove that the restriction sits directly below the basin."]},
+          {"heading": "The sink and toilet are in the same bathroom", "paragraphs": ["A shared bathroom branch becomes more relevant, but fixtures next to each other do not always connect in the way the room suggests. Concealed routing varies by building and floor plan."]},
+          {"heading": "A distant or lower sink reacts", "paragraphs": ["A sink in another room or on a lower floor may share a stack or downstream building drain with the toilet. Distance from the flushing toilet does not measure distance to a restriction."]},
+          {"heading": "Several fixtures react", "paragraphs": ["If other sinks, showers, tubs, or toilets gurgle, slow, rise, or back up, the scope is no longer one sink. A shared branch, building drain, private sewer, septic system, or public sewer condition becomes more plausible and deserves earlier attention."]}
+        ]
+      },
+      {
+        "id": "one-or-every-toilet",
+        "heading": "Does one toilet trigger it—or every toilet?",
+        "paragraphs": [
+          "If one nearby toilet consistently triggers one sink while another toilet does not, a local shared path may deserve attention first. If toilets on different floors or in different bathrooms all make the same sink react, the shared connection may be farther downstream.",
+          "The same logic works in reverse: if one flush makes several drains respond, investigate the multi-fixture pattern rather than treating the sink sound as an isolated nuisance. Timing narrows scope, but it cannot reveal the concealed layout or pinpoint a blockage."
+        ]
+      },
+      {
+        "id": "why-it-happens",
+        "heading": "Why a toilet flush can make a sink gurgle",
+        "paragraphs": [
+          "A toilet releases water quickly. As that discharge travels through gravity drainage piping, air also needs a path through the drainage and vent system. Plumbing vents are intended to admit or release air so pressure differences do not disrupt fixture trap seals. The sink gurgle can occur when air moves through the trap water instead of following its normal path.",
+          "Several conditions can produce that result. The full fixture pattern—not the loudness or tone—helps separate them."
+        ],
+        "causes": [
+          {"heading": "A partial local restriction", "text": "Buildup or another narrowing in the sink's fixture drain may leave less room for air and water. A sink that is independently slow makes this category more plausible, but it does not prove the exact location or material."},
+          {"heading": "A shared bathroom or branch restriction", "text": "The toilet and sink may join a common branch. Reduced capacity downstream of that connection can make the toilet's concentrated discharge disturb air at the sink trap. Actual connections vary."},
+          {"heading": "A restriction farther downstream", "text": "When multiple rooms, levels, or low fixtures react, a building drain or private sewer losing capacity becomes more concerning. Broader symptoms matter more than the original sink noise."},
+          {"heading": "A venting-related pressure problem", "text": "A restricted, damaged, undersized, or incorrectly arranged vent can contribute to abnormal pressure. Venting is one category, not the default diagnosis, and sound alone cannot establish a blocked roof vent."},
+          {"heading": "A septic or public-sewer condition", "text": "On septic properties, gurgling combined with several slow drains, odors, alarms, surfacing wastewater, or drainfield changes can accompany system trouble. On sewer service, neighbor reports or utility notices can add context. One sink sound does not assign responsibility."}
+        ]
+      },
+      {
+        "id": "trap-seal-and-odor",
+        "heading": "What trap-water movement and sewer odor mean",
+        "paragraphs": [
+          "The trap's liquid seal helps block drainage-system gases from the room. A small ripple does not prove the seal was lost. A noticeable level drop, repeated gulping, or sewer-like odor makes trap-seal disturbance or another drainage issue more relevant, but odor has other possible paths and still does not identify a vent blockage by itself.",
+          "Do not remove the P-trap simply to investigate a toilet-triggered sound. That can spill wastewater, disturb joints, and miss a shared condition farther downstream. A plumber can evaluate the drainage and venting pattern without treating one odor or sound as a map."
+        ]
+      },
+      {
+        "id": "nearby-intents",
+        "heading": "Keep the triggering and reacting fixtures straight",
+        "paragraphs": ["Several related symptoms may share drainage pressure, but each calls for a different first observation."],
+        "links": [
+          {"before": "If the toilet makes a shower or tub drain gurgle, use ", "label": "Why Does My Shower Drain Gurgle When the Toilet Flushes?", "href": "/plumbing/shower-drain-gurgles-when-toilet-flushes/", "after": " for the shower-trap pattern."},
+          {"before": "If another toilet's bowl water rises or bubbles, use ", "label": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "href": "/plumbing/toilet-water-rises-when-another-toilet-flushes/", "after": " for the toilet-to-toilet pattern."},
+          {"before": "If a toilet gurgles without a repeatable trigger, use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": " to look for hidden fixture discharges."},
+          {"before": "If a washing machine makes the toilet bubble, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that high-flow laundry trigger."}
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check",
+        "bullets": [
+          "Identify the exact toilet that triggers the sound and the exact sink that reacts.",
+          "Observe whether the sink stays empty, bubbles cleanly, rises, or receives dirty water.",
+          "Use the sink normally once and note whether it drains at its usual speed.",
+          "Check whether nearby showers, tubs, sinks, or toilets are slow or noisy without adding a large test volume.",
+          "Compare one flush trigger with other toilets only through normal household use; do not repeatedly flush a suspected restriction.",
+          "Note sewer odor, septic alarms, recent heavy rain, utility work, and whether neighbors report sewer trouble.",
+          "Photograph visible water movement or record the timing for the plumber without touching wastewater."
+        ],
+        "callout": {
+          "title": "Keep the investigation observational",
+          "text": "Do not climb onto a roof to inspect a vent, remove the sink trap or toilet, open a cleanout that may be holding wastewater, cut a wall, run a main-line snake, or pour chemical drain cleaner into the system as a default test. Drain chemicals cannot correct venting, sewer, or septic problems. Never mix drain products or mix them with bleach or other cleaners."
+        }
+      },
+      {
+        "id": "when-to-stop",
+        "heading": "When to stop using water",
+        "paragraphs": [
+          "Sound alone and an active backup are not the same condition. A brief gurgle with a normal, fast-draining sink allows careful documentation and a scheduled evaluation if it repeats. Once water rises, dirty water appears, or several fixtures slow or back up, additional flushing, laundry, showering, and dishwashing add more wastewater to a path that may already be restricted.",
+          "Stop unnecessary water use and call a plumber promptly for rising or dirty sink water, sewage in any fixture, multiple reacting drains, rapidly worsening behavior, or a low fixture taking wastewater. Avoid contact with sewage, keep children and pets away, and do not use electrical equipment while standing in water."
+        ],
+        "callout": {
+          "title": "Dirty water is a backup—not another sound test",
+          "text": "Do not flush again to reproduce the symptom. Avoid direct contact, keep people and pets away, stop unnecessary plumbing use, and arrange prompt professional assessment."
+        },
+        "link": {
+          "before": "When several fixtures now share the problem, use ",
+          "label": "Why Do Multiple Drains Back Up at the Same Time?",
+          "href": "/plumbing/multiple-drains-back-up-at-same-time/",
+          "after": " for the broader stop-use and escalation pattern."
+        }
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should you call?",
+        "subsections": [
+          {"heading": "Plumber or drain professional", "paragraphs": ["Start here for repeated sink-to-toilet interaction, a sink that is also slow, visible water movement, several reacting fixtures, or an uncertain drainage pattern. A professional can distinguish the sink fixture drain, shared branch, building drain, private sewer, and venting without guessing from sound."]},
+          {"heading": "Septic professional", "paragraphs": ["For a septic property, involve a qualified provider when plumbing findings, alarms, maintenance history, surfacing wastewater, odors, or drainfield conditions point beyond the building drain. Never open or enter a septic tank."]},
+          {"heading": "Sewer utility or municipality", "paragraphs": ["Contact the utility when neighbors are affected, public work or an advisory is current, or a plumber locates the problem beyond the private lateral. Ownership boundaries vary, so do not assume the public sewer is responsible from household symptoms alone."]}
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A sink gurgling when a toilet flushes reveals a drainage and air-pressure interaction, not a specific clogged pipe. First watch what the sink does, then compare how it drains by itself, and finally check whether other fixtures react.",
+          "A brief sound with a normal water level is different from a slow sink, rising water, dirty water, or a whole-house pattern. Use those observable differences to set the scope and urgency, while leaving concealed drain and vent diagnosis to a qualified professional."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Chapter 9: Vents, 2024 International Plumbing Code", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/IPC2024V2.0/chapter-9-vents"},
+      {"title": "Chapter 10: Traps, Interceptors and Separators", "publisher": "International Code Council", "url": "https://codes.iccsafe.org/content/get-pdf/7844/CHAPTER10.html"},
+      {"title": "Resolving Septic System Malfunctions", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/septic/resolving-septic-system-malfunctions"},
+      {"title": "Side Sewer Backups", "publisher": "Seattle Public Utilities", "url": "https://seattle.gov/utilities/your-services/sewer-and-drainage/side-sewers/backups"},
+      {"title": "Dangers of Mixing Bleach with Cleaners", "publisher": "Washington State Department of Health", "url": "https://doh.wa.gov/community-and-environment/contaminants/bleach-mixing-dangers"}
     ]
   }
 ]

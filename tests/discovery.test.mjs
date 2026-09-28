@@ -575,3 +575,27 @@ test("window-rain Finder and search paths remain distinct from wall moisture and
   }
   for (const location of ["yard", "garage", "attic", "laundry", "exterior"]) assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "window-rain"), location);
 });
+
+test("toilet-triggered sink gurgling Finder and search stay distinct from neighboring drainage intents", () => {
+  const positives = [
+    "sink gurgles when toilet flushes",
+    "sink gurgling when toilet flushes",
+    "bathroom sink gurgles when toilet flushes",
+    "kitchen sink gurgles when toilet flushes",
+    "toilet flush makes sink gurgle",
+    "sink bubbles when toilet flushes",
+    "sink water rises when toilet flushes",
+    "sink makes noise when toilet flushes",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "sink-gurgles-when-toilet-flushes", query);
+  for (const query of ["shower drain gurgles when toilet flushes", "toilet water rises when another toilet flushes", "toilet gurgles randomly", "toilet bubbles when washer drains", "multiple drains back up", "sink gurgles when washer drains", "sink gurgles", "slow sink"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "sink-gurgles-when-toilet-flushes", query);
+  }
+  for (const location of ["bathroom", "kitchen"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "sink-toilet-gurgling"), location);
+    assert.equal(rankFinderArticles(registry, location, "sink-toilet-gurgling")[0]?.article.slug, "sink-gurgles-when-toilet-flushes", location);
+  }
+  for (const location of ["yard", "garage", "attic", "laundry", "bedroom", "living-area", "exterior", "whole-house"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "sink-toilet-gurgling"), location);
+  }
+});

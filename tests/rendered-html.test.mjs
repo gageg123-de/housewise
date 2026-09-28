@@ -761,3 +761,22 @@ test("window rain-leak guide renders storm distinctions, safety, reciprocal link
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/window-leaking-during-rain-source-clues\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("sink gurgling guide renders fixture-pattern distinctions, backup safety, schema, and visual", async () => {
+  const response = await render("/plumbing/sink-gurgles-when-toilet-flushes");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Sink Gurgle When the Toilet Flushes\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/sink-gurgles-when-toilet-flushes\//);
+  assert.match(html, /Start with what the sink does/);
+  assert.match(html, /Then ask whether other fixtures react/);
+  assert.match(html, /Dirty water is a backup—not another sound test/);
+  assert.match(html, /href="\/plumbing\/shower-drain-gurgles-when-toilet-flushes\/"/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
+  assert.match(html, /src="\/images\/sink-gurgles-when-toilet-flushes-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sink-gurgles-when-toilet-flushes-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});

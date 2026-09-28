@@ -284,7 +284,7 @@ test("toilet-triggered shower gurgling guide stays distinct from sound-only, tub
   const futureTopics = topics.split(/\r?\n/).filter((row) => /^(Tub backs up when toilet flushes|Sink gurgles when washer drains),/.test(row));
   assert.ok(article && toiletRise);
   assert.equal(article.published_date, "2026-08-30");
-  assert.equal(article.updated_date, "2026-08-30");
+  assert.equal(article.updated_date, "2026-09-27");
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/shower-drain-gurgles-when-toilet-flushes/"));
   assert.equal(futureTopics.length, 2);
   assert.ok(futureTopics.every((row) => row.includes(",planned,")));
@@ -1191,4 +1191,35 @@ test("window rain-leak guide owns opening-specific rain intrusion without diagno
   assert.match(body, /Do not drill new holes/i);
   assert.match(body, /Do not seal every opening/i);
   assert.match(body, /uncontrolled hose testing/i);
+});
+
+test("toilet-triggered sink gurgling guide owns the sink response without diagnosing a vent or clog", () => {
+  const article = registry.find((item) => item.slug === "sink-gurgles-when-toilet-flushes");
+  const shower = registry.find((item) => item.slug === "shower-drain-gurgles-when-toilet-flushes");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Sink gurgles when toilet flushes,"));
+  const washerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Sink gurgles when washer drains,"));
+  assert.ok(article && shower);
+  assert.equal(article.published_date, "2026-09-27");
+  assert.equal(article.updated_date, "2026-09-27");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/sink-gurgles-when-toilet-flushes/"));
+  assert.ok(washerTopic?.includes(",planned,"));
+  assert.match(article.target_search_intent, /sink can gurgle specifically when a toilet flushes/i);
+  assert.ok(article.body_sections.some((section) => section.id === "what-sink-does" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "how-sink-drains"));
+  assert.ok(article.body_sections.some((section) => section.id === "other-fixtures" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "why-it-happens" && section.causes?.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "when-to-stop" && section.callout));
+  assert.equal(article.image.src, "/images/sink-gurgles-when-toilet-flushes-patterns.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "International Code Council"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  assert.ok(shower.related_articles.includes(article.slug));
+  assert.ok(shower.body_sections.some((section) => section.links?.some((link) => link.href === "/plumbing/sink-gurgles-when-toilet-flushes/")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /venting is one category, not the default diagnosis/i);
+  assert.match(body, /Do not climb onto a roof/i);
+  assert.match(body, /Never mix drain products/i);
+  assert.match(body, /Dirty water is a backup/i);
 });
