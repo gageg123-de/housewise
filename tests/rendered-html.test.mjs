@@ -799,3 +799,25 @@ test("HVAC register airflow guide renders outlet-versus-upstream distinctions, s
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/hvac-register-airflow-bottlenecks\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("one-vent weak-airflow guide renders localized diagnosis, safety, reciprocal link, schema, and visual", async () => {
+  const response = await render("/hvac/weak-airflow-from-one-vent");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Airflow Weak From One Vent\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/weak-airflow-from-one-vent\//);
+  assert.match(html, /First: is it really just one vent\?/);
+  assert.match(html, /Was this vent always weak, or did the airflow change\?/);
+  assert.match(html, /Register damper versus balancing damper/);
+  assert.match(html, /Do not remove the register as a casual airflow test/);
+  assert.match(html, /href="\/hvac\/can-replacing-registers-improve-airflow\/"/);
+  assert.match(html, /src="\/images\/weak-airflow-one-vent-source-clues\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/weak-airflow-one-vent-source-clues\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/hvac/can-replacing-registers-improve-airflow");
+  assert.match(await reciprocal.text(), /href="\/hvac\/weak-airflow-from-one-vent\/"/);
+});

@@ -8205,7 +8205,7 @@
       "Photograph the register and record any manufacturer or model information that is visible without disassembly."
     ],
     "professional_help": "Arrange an HVAC evaluation when several outlets are weak, one room remains uncomfortable after obvious room-side obstructions are cleared, airflow changed suddenly, the system is noisy or icing, a return problem is plausible, or the outlet and branch need to be measured. A qualified technician can compare delivered airflow, room pressure, duct condition, filter and coil pressure effects, blower performance, and terminal performance before recommending a register, branch, return, balancing, or equipment change.",
-    "related_articles": ["ac-vent-sweating"],
+    "related_articles": ["ac-vent-sweating", "weak-airflow-from-one-vent"],
     "image": {
       "src": "/images/hvac-register-airflow-bottlenecks.webp",
       "width": 1536,
@@ -8336,7 +8336,10 @@
           "Call an HVAC professional when the scope is broader than one visibly obstructed face, the source cannot be isolated, a return opening may be involved, or the replacement would require altering the boot or duct. Bring photographs, the one-versus-many comparison, door-position observations, filter history, and any product information you can read safely.",
           "If the register is wet rather than airflow-limited, that is a different symptom. Use the AC vent sweating guide to distinguish surface condensation from dripping or moisture originating elsewhere."
         ],
-        "link": {"before": "For moisture forming on a room-side supply register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " instead of treating a wet outlet as an airflow-upgrade question."}
+        "links": [
+          {"before": "If one supply outlet is noticeably weaker than comparable outlets, use ", "label": "Why Is Airflow Weak From One Vent?", "href": "/hvac/weak-airflow-from-one-vent/", "after": " before assuming the visible face needs replacement."},
+          {"before": "For moisture forming on a room-side supply register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " instead of treating a wet outlet as an airflow-upgrade question."}
+        ]
       },
       {
         "id": "bottom-line",
@@ -8356,6 +8359,151 @@
       {"title": "Understanding Grille, Register and Diffuser Performance", "publisher": "Greenheck", "url": "https://webcontent.greenheck.com/atg-cms-prod/docs/default-source/pdf-downloads/application-articles/ad-04-23_understandinggrdperformance.pdf?sfvrsn=3ce1cf10_5"},
       {"title": "Air Distribution Engineering Guide", "publisher": "Price Industries", "url": "https://info.priceindustries.com/hubfs/Air%20Distribution%20Engineering%20Guide-1.pdf"},
       {"title": "Grilles, Registers & Diffusers Product Guide", "publisher": "Price Industries", "url": "https://info.priceindustries.com/grd-product-guide-1"}
+    ]
+  },
+  {
+    "title": "Why Is Airflow Weak From One Vent?", "slug": "weak-airflow-from-one-vent", "description": "Only one HVAC vent has weak airflow? Compare the outlet, dampers, and branch duct with nearby vents before assuming the whole system has a problem.",
+    "primary_category": "hvac", "secondary_categories": [], "symptoms": ["airflow"], "room_or_location": ["whole-house", "living-area", "bedroom"], "system": "hvac", "content_type": "diagnostic-guide",
+    "published_date": "2026-09-29", "updated_date": "2026-09-29", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "search_keywords": ["why is airflow weak from one vent", "weak airflow from one vent", "one vent has weak airflow", "one vent barely blowing", "one air vent barely blowing", "one vent not blowing much air", "low airflow one vent", "one ac vent weak", "one hvac vent weak", "one register has less airflow", "why is one vent weaker than the others", "air barely coming out of one vent", "one supply vent weak"],
+    "target_search_intent": "Diagnose why one HVAC supply outlet has substantially weaker airflow than other supply outlets by separating visible register restrictions and controls from branch balancing, duct restriction, leakage, disconnection, and broader multi-vent airflow problems.",
+    "direct_answer": "When one supply vent has weak airflow but comparable vents are blowing normally, a condition local to that outlet or the branch feeding it becomes more relevant than a restriction affecting the whole HVAC system. The visible register may be closed, obstructed, damaged, or restrictive; an upstream balancing damper may limit the branch; or the branch duct may have excess resistance, damage, leakage, or a disconnected joint. Start by confirming that only one supply outlet is weak, then ask whether it was always weak or recently changed. Those clues narrow the scope, but they do not identify the exact cause.",
+    "likely_causes": ["A closed, obstructed, damaged, or restrictive supply register", "A partly closed register damper or branch balancing damper", "A compressed, kinked, damaged, or otherwise restricted branch duct", "A leaking or disconnected branch connection", "Higher resistance from branch length, fittings, routing, or sizing", "A broader system airflow condition when several outlets are also weak"],
+    "safe_checks": ["Confirm the opening is a supply outlet that blows air into the room, not a return grille.", "Compare the outlet with similar nearby supply outlets during the same heating or cooling cycle.", "Determine whether only one outlet is weak, every outlet in the room is weak, or several rooms are affected.", "Note whether the outlet was always weak or changed recently.", "Open the normal room-side register control and move furniture, rugs, curtains, or stored items away from the face.", "Inspect the accessible register face for damage or obvious blockage without removing it or reaching into the duct.", "Note whistles, hisses, recent renovations, flooring work, register replacement, HVAC service, or duct work that coincided with the change."],
+    "professional_help": "Arrange qualified HVAC evaluation when one outlet remains substantially weaker after its visible control is open and room-side obstructions are removed, airflow changed suddenly, several related outlets are weak, the branch may be damaged or disconnected, balancing needs evaluation, ductwork is inaccessible, or actual airflow and system pressure need measurement. A technician can compare outlet flow, branch and damper condition, duct leakage, system static pressure, and equipment airflow without guessing from hand feel.",
+    "related_articles": ["can-replacing-registers-improve-airflow"],
+    "image": {"src": "/images/weak-airflow-one-vent-source-clues.webp", "width": 1536, "height": 1024, "alt": "Conceptual four-panel comparison of one obstructed supply register, a restricted branch duct, a leaking branch connection, and several weak supply outlets.", "caption": "Conceptual illustration: one weak supply outlet makes its visible register and branch worth checking first; several weak outlets broaden the investigation. The image shows possible categories, not a diagnosis or a universal duct layout.", "kind": "conceptual", "after_section": "one-or-many"},
+    "body_sections": [
+      {
+        "id": "one-or-many", "heading": "First: is it really just one vent?",
+        "paragraphs": [
+          "Compare the suspect outlet with similar supply outlets while the system is in the same operating cycle. If one outlet is substantially weaker and the others are normal, the visible register, its control, its balancing setting, and the branch feeding it deserve attention first. A loaded filter or blower problem can affect airflow, but a purely system-wide restriction is less consistent with one isolated weak outlet.",
+          "If several or most outlets are weak, the diagnostic scope changes. Filter condition, return capacity, blower performance, coils, zoning, and broader duct restrictions become more relevant. That is a separate whole-system airflow intent; one weak vent does not prove that the equipment is healthy, but it should not send you straight to equipment adjustments either."
+        ],
+        "table": {"headers": ["Pattern", "What it makes more relevant"], "rows": [
+          ["One outlet weak; comparable outlets normal", "The register, local control, balancing, boot, or individual branch"],
+          ["One of several outlets in the same room is weak", "That outlet or its branch, if the outlets are independently fed"],
+          ["Every outlet in one room is weak", "A shared distribution relationship or room-level return/load issue, depending on the actual layout"],
+          ["Several outlets throughout the home are weak", "A filter, return, blower, coil, zone, trunk, or broader distribution condition"]
+        ]}
+      },
+      {
+        "id": "changed-or-always", "heading": "Was this vent always weak, or did the airflow change?",
+        "paragraphs": [
+          "A long-standing pattern makes design, routing, sizing, and balancing differences more relevant. Branches do not all have identical resistance: length, diameter, fittings, transitions, flex-duct installation, and outlet selection can affect how air is divided. That does not mean the farthest outlet must be the weakest; the complete path and available pressure matter.",
+          "A noticeable recent change makes a changed condition more worth investigating. A room-side control may have moved, furniture or flooring may block the face, a balancing setting may have changed, or a branch may be restricted, damaged, leaking, or disconnected. Timing is evidence, not proof. Record renovations, furniture moves, flooring work, register replacement, duct work, or HVAC service that occurred near the change."
+        ]
+      },
+      {
+        "id": "supply-or-return", "heading": "Make sure it is a supply outlet",
+        "paragraphs": [
+          "Homeowners often call both supply and return openings vents. A supply register or supply grille delivers conditioned air into the room, so outward airflow is expected while the blower runs. A return grille provides a path back toward the equipment and should not be judged by how much air it blows outward.",
+          "This guide applies to one weak supply outlet. Do not cover, replace, or remove a return grille using supply-register advice. Weak return airflow, closed-door room pressure, and return-path design are different questions that can affect comfort beyond a single outlet."
+        ]
+      },
+      {
+        "id": "visible-register", "heading": "Check the register before blaming the HVAC system",
+        "paragraphs": [
+          "Keep the first check at the room surface. Verify that the normal register lever or adjustable louvers are open. Move furniture, rugs, curtains, and stored items away. Look for a bent face, a stuck control, heavy paint, or debris visibly covering the opening. Surface dust by itself rarely explains a severe loss, so do not treat a dusty face as a complete diagnosis.",
+          "Hand feel is useful only for a rough side-by-side comparison. A narrow jet can feel stronger because its velocity is higher even when total air volume is not. Tissue, paper, and phone apps do not turn that impression into a reliable airflow measurement. Compare patterns, but leave actual flow measurement to appropriate instruments."
+        ]
+      },
+      {
+        "id": "register-restriction", "heading": "Could the register itself be restricting airflow?",
+        "paragraphs": [
+          "Supply outlets add pressure loss as air passes through their necks, blades, face patterns, and integral dampers. A partly closed, damaged, or unusually restrictive register can reduce or redirect outlet airflow. Whistling or hissing can support an outlet or velocity question, but sound alone does not prove that the face is undersized.",
+          "Register design also changes throw, spread, noise, and draft sensation. A larger or more open-looking face does not automatically deliver more air when the boot or branch remains the bottleneck. If the visible outlet seems central to the problem, the register-replacement guide explains when a new face can help and when it cannot."
+        ],
+        "link": {"before": "Evaluate the outlet-versus-upstream question with ", "label": "Can Replacing HVAC Registers Improve Airflow?", "href": "/hvac/can-replacing-registers-improve-airflow/", "after": "."}
+      },
+      {
+        "id": "dampers", "heading": "Register damper versus balancing damper",
+        "paragraphs": [
+          "Some registers include an integral room-side damper. Opening that normal control is a reasonable observation, but it does not tell you whether a separate balancing damper exists upstream. Some systems use manual balancing dampers near branch or trunk takeoffs; others use different arrangements, and locations vary.",
+          "A partly closed branch damper can limit one outlet or group of outlets, but weak airflow does not prove a damper is present or misadjusted. Do not enter an unsafe attic or crawlspace to find one, and do not change hidden balancing settings blindly. Balancing is meant to distribute design airflow while preserving required total system airflow."
+        ]
+      },
+      {
+        "id": "branch-restriction", "heading": "Could the branch duct feeding that vent be restricted?",
+        "paragraphs": [
+          "The branch between the supply trunk and the outlet can add more resistance than intended. DOE and ACCA guidance identify excess flexible-duct length, sharp bends, sag, compression, and pinching as conditions that can reduce airflow. Rigid ducts can also have restrictive fittings, damage, or other localized obstructions. None of these conditions can be diagnosed from the register face.",
+          "Flex duct is not inherently the problem. Properly selected, routed, pulled, and supported flex duct can serve a branch; installation condition matters. Do not cut, drill, push objects into, or attempt to straighten concealed ductwork from the room opening. Inaccessible branch inspection belongs with a qualified HVAC professional."
+        ]
+      },
+      {
+        "id": "leak-disconnection", "heading": "What if the branch is leaking or disconnected?",
+        "paragraphs": [
+          "A significant supply-duct leak or disconnected joint can let conditioned air escape before it reaches the intended outlet. That is technically plausible when one outlet becomes weak, especially after nearby work or a sudden change, but the symptom does not prove where or whether the branch leaks.",
+          "Professional duct testing and inspection can distinguish delivery loss from resistance. Depending on access and the question, a technician may inspect connections, measure outlet airflow, evaluate duct leakage, or use pressure-based diagnostics. Avoid unsafe attic or crawlspace entry and do not attempt a blind tape repair through the register opening."
+        ]
+      },
+      {
+        "id": "layout", "heading": "How duct length, fittings, and layout affect distribution",
+        "paragraphs": [
+          "Air does not divide evenly merely because branches share one system. Each path has resistance created by duct size, length, material, fittings, transitions, outlet geometry, and installation. ACCA Manual D treats these pressure losses and the blower–duct operating relationship as design inputs, which is why balancing can be necessary after the paths are built.",
+          "Room location cannot reveal the concealed layout. The outlet farthest from the equipment may not have the longest effective path, and two nearby vents may be fed by different branches. Use the one-versus-many and changed-versus-always clues to choose what to measure—not to sketch an imaginary duct map."
+        ]
+      },
+      {
+        "id": "one-room", "heading": "One weak vent is not the same as one uncomfortable room",
+        "paragraphs": [
+          "This page owns the outlet symptom: one supply register has less airflow than comparable outlets. A room that stays hot or cold is broader. Windows, solar exposure, insulation, air leakage, room load, mixing, return path, equipment design, and all supply outlets serving the room can affect comfort.",
+          "If a room has several outlets and only one is weak, an individual outlet or branch becomes more relevant. If every outlet in the room measures low, a shared branch or distribution relationship may matter—but actual topology must be verified. If supply flow is normal and the room is still uncomfortable, the answer may lie outside this article's intent."
+        ]
+      },
+      {
+        "id": "system-level", "heading": "What if several vents are weak?",
+        "paragraphs": [
+          "Once the same problem appears at multiple unrelated outlets, move beyond the one-branch framework. A restrictive filter, inadequate return path, blower or control condition, dirty coil, zoning issue, or broader duct restriction may reduce system airflow. Those possibilities are less explanatory when only one outlet is weak, but one comparison cannot rule them out.",
+          "Use the filter only as its manufacturer intends. Do not run the system without it, substitute an unsupported filter, open equipment cabinets, change blower taps or electronic motor settings, or defeat safety switches. Equipment-level airflow diagnosis requires operating data and manufacturer information."
+        ]
+      },
+      {
+        "id": "safe-checks", "heading": "What you can safely check yourself",
+        "bullets": [
+          "Confirm that the opening is a supply outlet and compare it only with supply outlets during the same operating cycle.",
+          "Decide whether one outlet, all outlets in one room, or several rooms are affected.",
+          "Record whether the weak pattern was always present or changed recently.",
+          "Open the normal room-side register control and clear furniture, rugs, curtains, and stored items from the face.",
+          "Inspect the accessible face for a stuck control, bent blades, thick paint, or obvious blockage without removing it.",
+          "Listen for a whistle, hiss, rattle, or unusual rushing sound and note whether it began with the airflow change.",
+          "Note recent flooring, renovation, furniture, register, HVAC, balancing, or duct changes.",
+          "Photograph the outlet and write down which system mode and fan stage were operating during comparisons."
+        ],
+        "callout": {"title": "Keep the investigation non-invasive", "text": "Do not remove the register as a casual airflow test, reach into the duct, cut or drill ductwork, enter an unsafe attic or crawlspace, block a return, close other vents to force air toward this one, bypass the filter, open equipment cabinets, or change blower or hidden balancing settings."}
+      },
+      {
+        "id": "measurement", "heading": "How an HVAC professional can narrow the bottleneck",
+        "paragraphs": [
+          "A qualified technician can measure delivered airflow at the outlet with an appropriate flow hood or other accepted method and compare it with design or balancing information when available. System static-pressure measurements, blower data, filter and coil pressure effects, and inspection of accessible branch and damper conditions can show whether the complaint is local or broader.",
+          "No single measurement identifies every cause. Outlet airflow needs context from the operating mode, system stage, instrument method, branch design, and equipment data. Ask what was measured and how the recommended correction addresses the demonstrated bottleneck rather than merely changing the visible register."
+        ]
+      },
+      {
+        "id": "when-to-call", "heading": "When to call an HVAC professional",
+        "paragraphs": [
+          "Arrange evaluation when the outlet remains substantially weaker after its visible control is open and room-side obstructions are cleared; the change was sudden; several related outlets are weak; a branch restriction, damage, leak, disconnection, or balancing issue is plausible; ductwork is inaccessible; or the system has new noise, icing, overheating, repeated shutdowns, or broader performance problems.",
+          "Describe whether one or many outlets are affected, whether the condition changed, what visible checks you completed, and what work preceded it. That evidence helps a technician decide whether to measure the terminal, trace the branch, inspect balancing, test ducts, or evaluate system pressure and equipment airflow."
+        ]
+      },
+      {
+        "id": "bottom-line", "heading": "Bottom line",
+        "paragraphs": [
+          "When one HVAC supply vent is substantially weaker than the others, start with the outlet and the branch serving it. Confirm that it is a supply outlet, compare one vent with the room and the house, note whether the condition changed, open the normal register control, and clear visible obstructions.",
+          "Those checks narrow the scope without diagnosing the cause. The bottleneck may be the register, a balancing setting, branch resistance, duct damage, leakage, disconnection, or something broader if more outlets are involved. Do not force air by closing other vents or modify equipment and ducts blindly; measure the path that the evidence points to."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Manual T: Air Distribution Basics", "publisher": "Air Conditioning Contractors of America", "url": "https://www.acca.org/standards/technical-manuals/manual-t"},
+      {"title": "Manual D: Residential Duct Design", "publisher": "Air Conditioning Contractors of America", "url": "https://www.acca.org/standards/technical-manuals/manual-d"},
+      {"title": "Pressure Balancing Supply and Return Ducts in Existing Homes", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/information/pressure-balancing-supply-and-return-ducts-existing-homes"},
+      {"title": "Air Seal and Repair Ducts", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/diy-guides/air-seal-and-repair-ducts"},
+      {"title": "Support at Intervals for Flex Ducts", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/support-intervals-flex-ducts"},
+      {"title": "Quantity and Location of Supply and Return Duct Terminals Match Contractor Balancing Report", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/quantity-and-location-supply-and-return-duct-terminals-match-contractor-balancing"},
+      {"title": "Heat Pump Quality Installation and Commissioning", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/heat-pump-quality-installation-and-commissioning"},
+      {"title": "HVAC Duct Terminal Sizing", "publisher": "U.S. Department of Energy Building Science Education", "url": "https://bsesc.energy.gov/energy-basics/hvac-duct-terminal-sizing"},
+      {"title": "Duct Sealing", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/duct-sealing"}
     ]
   }
 ]

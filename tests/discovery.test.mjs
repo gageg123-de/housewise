@@ -606,3 +606,31 @@ test("register replacement search intent stays separate from weak-airflow sympto
   for (const query of ["weak airflow from vents", "one room not getting enough air", "hvac register sizing", "should i close vents in unused rooms", "filter restriction", "duct restriction", "duct leakage", "hvac balancing", "return air problems"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "can-replacing-registers-improve-airflow", query);
   for (const { value: location } of finderLocations) for (const symptom of getFinderSymptomOptions(location)) assert.ok(!rankFinderArticles(registry, location, symptom.value).some(({ article }) => article.slug === "can-replacing-registers-improve-airflow"), `${location}/${symptom.value}`);
 });
+
+test("one-vent weak-airflow Finder and search stay distinct from broader airflow intents", () => {
+  const positives = [
+    "weak airflow from one vent",
+    "one vent has weak airflow",
+    "one vent barely blowing",
+    "one air vent barely blowing",
+    "one vent not blowing much air",
+    "low airflow one vent",
+    "one ac vent weak",
+    "one hvac vent weak",
+    "one register has less airflow",
+    "why is one vent weaker than the others",
+    "air barely coming out of one vent",
+    "one supply vent weak",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "weak-airflow-from-one-vent", query);
+  for (const query of ["weak airflow from all vents", "house has weak airflow", "one room not getting enough air", "room stays hot", "replace hvac registers", "register size airflow", "close unused vents", "return vent airflow", "duct leakage", "dirty filter"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "weak-airflow-from-one-vent", query);
+  }
+  for (const location of ["bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "one-vent-weak-airflow"), location);
+    assert.equal(rankFinderArticles(registry, location, "one-vent-weak-airflow")[0]?.article.slug, "weak-airflow-from-one-vent", location);
+  }
+  for (const location of ["yard", "garage", "attic", "bathroom", "kitchen", "laundry", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-vent-weak-airflow"), location);
+  }
+});
