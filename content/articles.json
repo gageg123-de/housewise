@@ -1927,13 +1927,13 @@
   {
     "title": "Why Is My Outlet Warm?", "slug": "outlet-warm", "description": "A warm outlet can result from a heavy load or a loose electrical connection. Learn when to stop using it and request an electrician.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["heat", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
-    "published_date": "2026-08-24", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": true,
+    "published_date": "2026-08-24", "updated_date": "2026-09-30", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": true,
     "search_keywords": ["warm electrical outlet", "outlet feels hot", "hot plug socket", "warm wall plate", "outlet hot with burning smell"], "target_search_intent": "Help a homeowner distinguish heat associated with a plugged-in device from abnormal receptacle or wiring heat, recognize urgent warning signs, stop using the outlet safely, and choose qualified electrical help without opening the box.",
     "direct_answer": "A wall receptacle or faceplate should not become noticeably hot. Heat can come from a heavily loaded plug or device, but it can also signal poor plug contact, a worn receptacle, a loose or deteriorated connection, an overloaded circuit, or damaged wiring. Stop using the outlet and arrange a qualified electrician when the wall plate is clearly warm or hot, especially if the heat persists after the device is unplugged. Burning or rubbery odor, discoloration, melting, buzzing, crackling, sparking, smoke, tingling, or intermittent power makes the situation more urgent.",
     "likely_causes": ["Heat transferring from a high-load device or plug", "Loose fit between plug blades and receptacle contacts", "Worn or damaged receptacle", "Loose or deteriorated wiring connection", "Overloaded circuit or inappropriate power-strip/extension use", "Damaged appliance plug or cord"],
     "safe_checks": ["Stop using the outlet and unplug the device only if the plug and surrounding area are not hot, sparking, smoking, or damaged.", "From a safe distance, note odor, discoloration, melting, buzzing, crackling, flickering, or intermittent power.", "Compare whether heat is concentrated at the device/plug or the wall plate without repeatedly touching a hot surface.", "Check the appliance cord and plug visually for cuts, looseness, darkening, or deformation.", "Do not remove the faceplate, probe the slots, or inspect energized wiring."],
     "professional_help": "Have a licensed electrician evaluate any receptacle or faceplate that becomes unusually warm, stays warm after the load is removed, holds plugs loosely, or shows noise, odor, discoloration, intermittent power, or repeated breaker trips. For smoke, flame, active arcing, or fire, move away and call emergency services; do not touch the outlet or use water.",
-    "related_articles": ["lights-flicker-when-appliance-turns-on", "outlet-buzzing", "ceiling-fan-wobbles"],
+    "related_articles": ["lights-flicker-when-appliance-turns-on", "outlet-buzzing", "circuit-breaker-keeps-tripping"],
     "body_sections": [
       {
         "id": "warm-or-hot",
@@ -2008,13 +2008,13 @@
   {
     "title": "Why Do My Lights Flicker When an Appliance Turns On?", "slug": "lights-flicker-when-appliance-turns-on", "description": "A brief light dip can follow appliance startup, but severe or repeated flickering may signal a circuit, connection, neutral, service, or utility problem.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["electrical-behavior"], "room_or_location": ["whole-house", "kitchen"], "system": "electrical", "content_type": "diagnostic-guide",
-    "published_date": "2026-09-02", "updated_date": "2026-09-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-09-02", "updated_date": "2026-09-30", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["lights flicker when appliance turns on", "lights dim when ac turns on", "lights flicker when refrigerator starts", "lights dim when microwave runs", "lights flicker when washer starts", "lights flicker when dryer runs", "lights blink when compressor starts", "lights dim when heater turns on", "lights flicker when motor starts"], "target_search_intent": "Help a homeowner distinguish a slight momentary light dip when an appliance or motor starts from repeated, severe, widespread, or brightness-changing flicker that may involve the appliance, branch circuit, a loose connection, neutral, service equipment, or utility supply.",
     "direct_answer": "A slight, very brief dimming can occur when some motor-driven appliances start because their startup current is temporarily higher than their normal running current. It is not a blanket explanation for every flicker. Repeated, severe, prolonged, worsening, room-wide, or house-wide fluctuations deserve electrical evaluation—especially when lights also brighten or the symptom comes with buzzing, burning odor, hot outlets or switches, breaker trips, sparking, discoloration, or partial power loss.",
     "likely_causes": ["Brief startup current from a motor or compressor", "Lighting and appliance sharing a branch circuit", "Heavily loaded branch circuit", "Loose or deteriorated electrical connection", "Neutral connection problem", "Appliance motor, compressor, cord, or internal fault", "Service, feeder, or panel problem", "Utility-side voltage disturbance"],
     "safe_checks": ["Note which appliance triggers the change and whether it happens only at startup or continues while the appliance runs.", "Record whether one lamp, one room, several rooms, or the whole house is affected.", "Notice whether lights only dim or also become unusually bright.", "Listen from a safe distance for buzzing or crackling and note breaker trips, burning odor, discoloration, melting, sparking, or partial power loss.", "Inspect accessible appliance cords and plugs externally without opening equipment or touching damaged parts.", "Do not remove panel covers, open electrical boxes, test live conductors, tighten connections, change breaker sizes, or touch service or meter equipment."],
     "professional_help": "Arrange a licensed electrician for severe, repeated, prolonged, worsening, multi-room, or whole-house flicker; simultaneous brightening and dimming; hot or noisy devices; burning odor; damage; recurring breaker trips; or partial power loss. An appliance or HVAC technician may also be appropriate when one machine struggles, sounds abnormal, or has changed performance. Contact the utility when an electrician or the pattern indicates an upstream supply problem. For active arcing, smoke, fire, or obvious energized-equipment damage, move away and use emergency services rather than continuing to test the load.",
-    "related_articles": ["outlet-warm", "lights-flicker-randomly"],
+    "related_articles": ["outlet-warm", "lights-flicker-randomly", "circuit-breaker-keeps-tripping"],
     "image": {
       "src": "/images/lights-flicker-appliance-startup-load.webp",
       "width": 1536,
@@ -2162,14 +2162,14 @@
   {
     "title": "Why Does My Outlet Buzz?", "slug": "outlet-buzzing", "description": "A buzz near an outlet may come from a plug-in device or the receptacle itself. Learn how to separate the source and when to stop using the outlet.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["noise", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
-    "published_date": "2026-09-04", "updated_date": "2026-09-04", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-09-04", "updated_date": "2026-09-30", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["why does my outlet buzz", "outlet buzzing", "electrical outlet buzzing", "outlet making buzzing noise", "wall outlet buzzing", "receptacle buzzing", "outlet humming", "buzzing sound from outlet", "outlet buzzes when something plugged in"],
     "target_search_intent": "Help a homeowner determine whether buzzing, humming, sizzling, or vibration near a receptacle comes from a plugged-in device or the outlet area, recognize poor-contact, wear, arcing, heat, and load warning patterns, and choose safe electrical or device support without opening the box.",
     "direct_answer": "A sound near an outlet does not always come from the receptacle. A plug-in power adapter, transformer, smart plug, surge protector, appliance, dimmer, or nearby device can produce or transmit a faint hum. But buzzing, sizzling, or crackling that appears to originate at the receptacle itself should not be ignored. Stop using it and arrange licensed-electrical evaluation, especially if the sound comes with warmth, burning odor, discoloration, a loose plug, intermittent power, sparks, or breaker trips. For active arcing, smoke, fire, or severe overheating, move away and use emergency help rather than touching or testing the outlet.",
     "likely_causes": ["Noise from a plug-in adapter or electronic device", "Loose receptacle wiring connection", "Worn or damaged receptacle contacts", "Electrical arcing at a poor or damaged connection", "Heavy load exposing an existing connection problem", "Loose plug or poor plug-to-receptacle fit", "Nearby dimmer switch transformer or electronic control", "GFCI AFCI USB or smart-receptacle electronics requiring model-specific evaluation"],
     "safe_checks": ["From a safe distance identify whether the sound is centered on the receptacle face the plug a power adapter or a nearby device.", "If there is no heat odor damage sparking or other warning sign turn the connected device off and unplug it by the plug to see whether the sound stops.", "Inspect the accessible plug cord and adapter externally for cracking darkening melting looseness or damage.", "Note whether the plug fits loosely or power cuts in and out without moving or wiggling it.", "Listen for a faint steady hum versus sharper buzzing crackling or sizzling without placing an ear against the outlet.", "Note whether the sound occurs only under load continues with nothing plugged in or appears with breaker trips flicker heat or odor.", "Leave the outlet unused and call an electrician when the receptacle appears to be the source.", "Do not remove the faceplate probe the slots pull the receptacle from the box or test live wiring."],
     "professional_help": "Use a licensed electrician for confirmed or suspected receptacle-origin buzzing, loose plug fit, worn or damaged receptacles, intermittent power, suspected arcing, heat, discoloration, repeated trips, or noise with nothing plugged in. Use the device manufacturer's support or an appropriate appliance/electronics technician when the sound clearly follows one undamaged adapter or device and the receptacle shows no warning signs. For active arcing, smoke, flame, severe overheating, or fire, keep away and call emergency services.",
-    "related_articles": ["outlet-warm", "lights-flicker-when-appliance-turns-on"],
+    "related_articles": ["outlet-warm", "lights-flicker-when-appliance-turns-on", "circuit-breaker-keeps-tripping"],
     "image": {
       "src": "/images/outlet-buzzing-source-check.webp",
       "width": 1536,
@@ -8504,6 +8504,253 @@
       {"title": "Heat Pump Quality Installation and Commissioning", "publisher": "Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/heat-pump-quality-installation-and-commissioning"},
       {"title": "HVAC Duct Terminal Sizing", "publisher": "U.S. Department of Energy Building Science Education", "url": "https://bsesc.energy.gov/energy-basics/hvac-duct-terminal-sizing"},
       {"title": "Duct Sealing", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/duct-sealing"}
+    ]
+  },
+  {
+    "title": "Why Does My Circuit Breaker Keep Tripping?",
+    "slug": "circuit-breaker-keeps-tripping",
+    "description": "Does your circuit breaker keep tripping? Use the timing, connected loads, appliance pattern, and breaker type to narrow the problem and know when to call an electrician.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": ["electrical-behavior"],
+    "room_or_location": ["whole-house"],
+    "system": "electrical",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-09-30",
+    "updated_date": "2026-09-30",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "circuit breaker keeps tripping",
+      "breaker keeps tripping",
+      "breaker keeps flipping",
+      "breaker trips repeatedly",
+      "breaker trips immediately",
+      "breaker trips after a few minutes",
+      "breaker randomly trips",
+      "breaker trips when appliance turns on",
+      "breaker trips when several things run",
+      "breaker won't stay on",
+      "GFCI breaker keeps tripping",
+      "AFCI breaker keeps tripping"
+    ],
+    "target_search_intent": "Help a homeowner classify a repeatedly or intermittently tripping circuit breaker by trip timing, connected loads, repeatable triggers, protection type, and warning signs without diagnosing the exact fault, repeatedly resetting protection, opening the panel, or upsizing the breaker.",
+    "direct_answer": "A circuit breaker that keeps tripping is responding to a condition that requires investigation, or there may be a problem involving the circuit, connected equipment, protective device, or installation. Several loads operating together makes overload more plausible; one repeatable appliance trigger focuses attention on that appliance-and-circuit relationship; and an immediate retrip calls for stopping rather than resetting again. GFCI and AFCI breakers can also respond to ground-fault or arc-fault conditions, not just excessive load. The pattern narrows the possibilities, but it does not identify the exact fault.",
+    "likely_causes": [
+      "Combined load exceeding what the branch circuit protection allows",
+      "A fault or abnormal condition in one connected appliance or device",
+      "Short circuit or other wiring fault",
+      "Ground-fault condition detected by GFCI protection",
+      "Arc-fault condition detected by AFCI protection",
+      "Circuit, installation, or protective-device problem requiring diagnosis"
+    ],
+    "safe_checks": [
+      "Note which accessible breaker handle moved and which lights, outlets, or devices lost power.",
+      "Read visible labels and markings without removing the panel cover or touching anything except the normal breaker handle.",
+      "Record what was operating and whether one device or several loads consistently precede the trip.",
+      "Note whether the trip is immediate, delayed, or apparently random without deliberately reproducing it.",
+      "Look and listen from a safe distance for heat, burning odor, buzzing, crackling, sparking, smoke, discoloration, or water.",
+      "Leave a suspect portable appliance unplugged and unused when that can be done without touching hot, wet, damaged, smoking, or sparking equipment."
+    ],
+    "professional_help": "Arrange a qualified electrician when a breaker trips repeatedly, immediately retrips, will not remain on, repeatedly trips with one appliance, or has no obvious safely correctable load pattern. Stop ordinary troubleshooting for abnormal heat, burning odor, buzzing or crackling, sparking, smoke, melting, water exposure, or panel damage. For active fire, smoke, or arcing, move away and call emergency services; do not use water or approach wet energized equipment.",
+    "related_articles": [
+      "lights-flicker-when-appliance-turns-on",
+      "outlet-warm",
+      "outlet-buzzing"
+    ],
+    "image": {
+      "src": "/images/circuit-breaker-tripping-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing breaker trips with several loads, one appliance, an immediate retrip, and electrical warning signs.",
+      "caption": "Conceptual illustration: Trip timing and connected loads help classify the pattern, but they do not identify the exact electrical fault. Keep the panel closed except for normal access to breaker handles.",
+      "kind": "conceptual",
+      "after_section": "trip-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "trip-pattern",
+        "heading": "First: when does the breaker trip?",
+        "paragraphs": [
+          "Begin with timing, not a guess about the hidden fault. A standard circuit breaker protects branch-circuit wiring from overcurrent caused by overload or short-circuit conditions. Breakers that also provide ground-fault or arc-fault protection can open for additional reasons. That is why the same visible result—a handle in the tripped position—can follow different physical conditions.",
+          "Identify the affected breaker only from its accessible face. Note which rooms and devices lose power, what was operating, and whether the trip is immediate or delayed. Do not remove the panel cover, inspect internal components, or deliberately repeat a trip to collect more evidence."
+        ],
+        "table": {
+          "headers": ["Trip pattern", "What it makes more relevant"],
+          "rows": [
+            ["Several loads run together before the trip", "Combined circuit load becomes more plausible"],
+            ["One appliance repeatedly precedes the trip", "The appliance, receptacle, and circuit relationship needs evaluation"],
+            ["Breaker trips immediately after one reset", "An active fault or serious circuit/device problem may remain; stop resetting"],
+            ["Breaker trips after minutes or hours", "Operating load, heat, intermittent equipment behavior, and protection type need context"],
+            ["Trip appears random", "A written log may reveal a hidden load, moisture, or recurring condition"],
+            ["Heat, odor, buzzing, sparking, smoke, or water accompanies it", "Stop troubleshooting and escalate according to the hazard"]
+          ]
+        }
+      },
+      {
+        "id": "protection-type",
+        "heading": "What kind of breaker is tripping?",
+        "paragraphs": [
+          "A plain thermal-magnetic breaker provides overcurrent protection. An AFCI breaker also looks for hazardous arcing patterns, a GFCI breaker also detects certain current imbalance associated with a ground fault, and a dual-function breaker combines AFCI and GFCI protection. Those functions matter because a trip may occur even when the connected load does not look unusually large.",
+          "Visible words such as AFCI, arc fault, GFCI, ground fault, or dual function—and an accessible TEST button—may help identify the device. Button colors, indicator lights, and trip codes vary by manufacturer and model, so use the label and the manufacturer's instructions rather than a universal color rule. A GFCI receptacle on a wall is a different device from a GFCI breaker in the panel."
+        ]
+      },
+      {
+        "id": "several-loads",
+        "heading": "If the breaker trips when several things are running",
+        "paragraphs": [
+          "When each device runs alone but the breaker trips after several loads operate together, an overloaded branch circuit becomes more plausible. Portable heaters, hair dryers, cooking appliances, irons, and other high-demand equipment can be significant contributors, but the appliances you can see may not be the only loads on that circuit.",
+          "Reducing the immediate load may stop the trip, but it does not prove the circuit is adequate or resolve recurring capacity problems. Do not use extension cords or daisy-chained power strips as a permanent workaround, and do not move a high-demand appliance randomly between outlets; nearby outlets may share the same circuit. An electrician can identify the circuit, evaluate demand, and determine whether the installation needs correction or additional capacity."
+        ]
+      },
+      {
+        "id": "one-appliance",
+        "heading": "If one appliance keeps tripping the breaker",
+        "paragraphs": [
+          "A repeatable appliance trigger is important, but it does not prove the appliance is defective. The trip could involve the appliance, its cord or plug, the receptacle, the branch circuit, startup current, moisture, or the specific AFCI/GFCI response. Leave a suspect portable appliance unplugged and unused when you can do so safely; do not open or repair it from this symptom alone.",
+          "If lights also dip or flicker when the appliance starts, that is a related but separate observation. Use the appliance-start flicker guide to classify the lighting response, while treating the breaker trip as the stronger stop-and-investigate signal.",
+          "Do not keep moving the same appliance among outlets to find one that does not trip. Outlets in different rooms can share a circuit, and a device with an internal fault remains unsafe simply because another protective device has not opened yet. For a portable device, leaving it unplugged is an observation boundary—not a diagnosis or repair. Hardwired equipment should be left off and evaluated by the appropriate qualified technician and electrician."
+        ],
+        "link": {
+          "before": "For that companion symptom, see ",
+          "label": "Why Do My Lights Flicker When an Appliance Turns On?",
+          "href": "/electrical/lights-flicker-when-appliance-turns-on/",
+          "after": "."
+        }
+      },
+      {
+        "id": "immediate-retrip",
+        "heading": "If the breaker trips immediately after you reset it",
+        "paragraphs": [
+          "An immediate or nearly immediate retrip deserves a conservative response. A fault or abnormal circuit/device condition may still be present. Do not keep cycling the handle, hold it on, tape it in position, or try to defeat the mechanism. Leave the circuit off and arrange qualified electrical evaluation.",
+          "This article does not provide a reset loop. A single normal reset after an understood temporary overload has been removed is different from repeatedly energizing a circuit that will not stay on. If the breaker trips again or the cause is unclear, stop there."
+        ],
+        "callout": {
+          "title": "Do not force a faulted circuit back into service",
+          "text": "CPSC advises investigating why a breaker tripped rather than simply resetting it. An immediate retrip, warning sign, wet condition, or unexplained recurring trip calls for an electrician—not another attempt."
+        }
+      },
+      {
+        "id": "delayed-random",
+        "heading": "What delayed or seemingly random trips can tell you",
+        "paragraphs": [
+          "A breaker that stays on for minutes or hours before tripping may be responding after load accumulates or equipment enters a later operating stage. Delayed timing does not automatically prove an overload; intermittent appliance behavior, wiring faults, ground-fault leakage, arc-fault detection, heat, and moisture can also be relevant depending on the circuit and protection.",
+          "Write down the breaker label, affected area, time, operating devices, weather or moisture context, and any sound, odor, or heat. Look for a naturally occurring pattern rather than repeatedly turning loads on to force a trip. A log gives an electrician better evidence without exposing you to live parts."
+        ]
+      },
+      {
+        "id": "overload-or-fault",
+        "heading": "Overload, short circuit, ground fault, and arc fault are not interchangeable",
+        "subsections": [
+          {
+            "heading": "Overload",
+            "paragraphs": ["Combined demand exceeds what the protected circuit is intended to carry. Several loads together are a useful clue, but one trip does not prove this diagnosis."]
+          },
+          {
+            "heading": "Short circuit or wiring fault",
+            "paragraphs": ["An unintended low-resistance connection or another wiring fault can create high current and operate overcurrent protection. Locating it requires de-energized professional testing, not opening receptacles, switches, junction boxes, or the panel."]
+          },
+          {
+            "heading": "Ground fault",
+            "paragraphs": ["Current takes an unintended path. GFCI protection monitors for a small imbalance and interrupts power to reduce shock risk. Moisture or damaged equipment may be relevant, but the trip does not reveal the location by itself."]
+          },
+          {
+            "heading": "Arc fault",
+            "paragraphs": ["AFCI protection is designed to recognize hazardous arcing patterns that an ordinary overload-only explanation may miss. Do not dismiss an AFCI trip as a nuisance or replace the device with ordinary protection merely to keep power on."]
+          }
+        ],
+        "paragraphs": [
+          "A dual-function breaker combines AFCI and GFCI functions along with applicable overcurrent protection. On some products, visible indicators or a manufacturer-defined reset sequence can help a qualified person distinguish the recorded trip category. That information is model-specific: a button color, flash pattern, or handle position should not be generalized across brands. Record the visible label and model information only when safely readable; do not remove the dead front to find it."
+        ]
+      },
+      {
+        "id": "bad-breaker",
+        "heading": "Could the breaker itself be bad?",
+        "paragraphs": [
+          "A protective device can fail or be incompatible with the panel or circuit, but a bad breaker is not the default explanation for repeated trips. Replacement requires the correct type, rating, listing, and compatibility, plus an investigation of why the original device operated.",
+          "Do not swap breakers, remove the panel dead front, touch terminals or bus bars, or use a meter inside the panel. Manufacturer-specific indicator lights or diagnostic sequences can help a qualified electrician, but their meanings are not universal."
+        ]
+      },
+      {
+        "id": "never-upsize",
+        "heading": "Why a larger breaker is not a generic fix",
+        "paragraphs": [
+          "A breaker must be appropriate for the conductors, equipment, and circuit it protects. Installing a higher-amperage breaker merely because the existing one trips can allow wiring to carry more current than intended and defeat the protection against overheating.",
+          "There is no safe one-size-fits-all breaker-sizing chart for this symptom. Circuit conductor size, termination ratings, equipment instructions, code requirements, and installation conditions must be verified. Leave sizing and replacement to a qualified electrician."
+        ],
+        "callout": {
+          "title": "Never defeat the protection",
+          "text": "Do not install a larger breaker, bypass it, replace AFCI or GFCI protection with an ordinary breaker, hold the handle on, or tape it in place. A repeatedly tripping breaker is a symptom to investigate, not an inconvenience to overpower."
+        }
+      },
+      {
+        "id": "reset-boundary",
+        "heading": "Should you keep resetting a breaker that trips?",
+        "paragraphs": [
+          "No. CPSC advises finding the cause rather than simply resetting a tripped breaker. After an understood temporary overload has been removed and there are no heat, odor, noise, damage, moisture, or fire indicators, one normal reset using only the accessible handle may restore the circuit. The handle on many breakers must first move fully to OFF before returning to ON, but the product instructions govern.",
+          "That limited action is not permission to retry an unexplained problem. If the breaker opens again, trips immediately, feels abnormal, will not latch normally, or you cannot identify a harmless temporary condition, leave it off and call an electrician. Do not stand in water, use wet hands, touch a wet panel, or approach equipment with smoke, sparking, severe heat, or visible damage. A breaker that will not reset at all is a narrower future intent; here, the safety boundary is the same—do not force it."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Identify the tripped handle and read only visible labels or TEST-button markings.",
+          "List the rooms, lights, outlets, and devices that lost power.",
+          "Record whether several loads together or one device consistently precedes the trip.",
+          "Distinguish an immediate retrip from a trip after minutes or hours.",
+          "Note whether the device is a standard, AFCI, GFCI, or dual-function breaker when the accessible label makes that clear.",
+          "Visually inspect accessible appliance cords and plugs for damage without handling hot, wet, melted, sparking, or smoking equipment.",
+          "Leave a suspect portable appliance unplugged and unused until it is evaluated.",
+          "Document heat, odor, buzzing, crackling, sparking, smoke, discoloration, water, or panel damage from a safe distance."
+        ],
+        "callout": {
+          "title": "Keep the investigation outside energized equipment",
+          "text": "Do not remove the panel cover or dead front, touch internal components, probe with a multimeter, open receptacles or switches, trace live wiring, change breaker sizes, perform conductor repairs, or deliberately reproduce trips. Do not touch a breaker or panel with wet hands, while standing on a wet surface, or when the equipment is wet."
+        }
+      },
+      {
+        "id": "warning-signs",
+        "heading": "Warning signs that mean stop troubleshooting",
+        "paragraphs": [
+          "Stop using the affected circuit and obtain prompt qualified help if trips accompany abnormal heat, a burning or melting odor, buzzing or crackling, discoloration, damaged insulation, visible sparking, moisture, or repeated loss of power. A warm receptacle or noise at an outlet is its own observable symptom and should remain unused rather than being tested again.",
+          "For smoke, flame, active arcing, rapidly melting material, or signs of an electrical fire, move away and call emergency services. Do not use water. Shut power off only if a normal disconnect can be reached without entering the hazard area; never approach a wet, smoking, sparking, or damaged panel."
+        ],
+        "links": [
+          {"before": "If heat is the primary companion symptom, use ", "label": "Why Is My Outlet Warm?", "href": "/electrical/outlet-warm/", "after": " for its stop-use boundary."},
+          {"before": "If sound appears to come from a receptacle, use ", "label": "Why Does My Outlet Buzz?", "href": "/electrical/outlet-buzzing/", "after": " without opening the electrical box."}
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": [
+          "Arrange a qualified electrician for repeated trips, an immediate retrip, a breaker that will not remain on, a recurring one-appliance trigger, an AFCI or GFCI breaker that repeatedly opens without an obvious safely removable load, suspected wiring trouble, recurring overload, water exposure, or abnormal panel behavior. Reducing load may restore power temporarily, but it does not prove that recurring trips need no evaluation.",
+          "Give the electrician your trip log, the accessible breaker label and type, the affected rooms, and the device or load sequence. They can evaluate the circuit load, connected equipment, receptacles and wiring, breaker compatibility and condition, and manufacturer-specific trip information using de-energized and energized procedures appropriate to the work."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A circuit breaker that keeps tripping is doing something that requires investigation. Several simultaneous loads make overload more plausible; one repeatable device narrows the appliance-and-circuit relationship; an immediate retrip means stop resetting; and AFCI or GFCI protection can respond to conditions beyond ordinary overload.",
+          "Those patterns guide the next step but do not diagnose the exact electrical fault. Keep the panel closed, never upsize or bypass protection, avoid deliberate retripping, and escalate promptly when heat, odor, buzzing, sparking, smoke, water, damage, or repeated unexplained trips are present."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Commission Closes Investigation of FPE Circuit Breakers and Provides Safety Information for Consumers", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers"},
+      {"title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf"},
+      {"title": "Understanding Your Home Electrical System", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/understanding-your-home-electrical-system"},
+      {"title": "Fuse and Breaker Breakdown", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/fuse-and-breaker-breakdown/"},
+      {"title": "Appliance Safety Tips", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/appliance-safety-tips/"},
+      {"title": "How to Use GFCIs", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/how-to-use-gfcis/"},
+      {"title": "Arc Faults and Electrical Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/wp-content/uploads/2021/06/Arc-Faults-and-Electrical-Safety-394D.pdf"},
+      {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
+      {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"},
+      {"title": "QO Circuit Breaker Protection FAQs", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FAQ000282565/"}
     ]
   }
 ]

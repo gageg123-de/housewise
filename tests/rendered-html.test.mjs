@@ -821,3 +821,29 @@ test("one-vent weak-airflow guide renders localized diagnosis, safety, reciproca
   const reciprocal = await render("/hvac/can-replacing-registers-improve-airflow");
   assert.match(await reciprocal.text(), /href="\/hvac\/weak-airflow-from-one-vent\/"/);
 });
+
+test("breaker-tripping guide renders load patterns, protection distinctions, safety, schema, and visual", async () => {
+  const response = await render("/electrical/circuit-breaker-keeps-tripping");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Circuit Breaker Keep Tripping\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/circuit-breaker-keeps-tripping\//);
+  assert.match(html, /First: when does the breaker trip\?/);
+  assert.match(html, /What kind of breaker is tripping\?/);
+  assert.match(html, /Why a larger breaker is not a generic fix/);
+  assert.match(html, /Keep the investigation outside energized equipment/);
+  assert.match(html, /href="\/electrical\/lights-flicker-when-appliance-turns-on\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /src="\/images\/circuit-breaker-tripping-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/circuit-breaker-tripping-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  for (const path of ["/electrical/outlet-warm", "/electrical/outlet-buzzing", "/electrical/lights-flicker-when-appliance-turns-on"]) {
+    const reciprocal = await render(path);
+    assert.match(await reciprocal.text(), /href="\/electrical\/circuit-breaker-keeps-tripping\/"/, path);
+  }
+});

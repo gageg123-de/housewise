@@ -634,3 +634,29 @@ test("one-vent weak-airflow Finder and search stay distinct from broader airflow
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-vent-weak-airflow"), location);
   }
 });
+
+test("breaker-tripping Finder and search preserve neighboring electrical intents", () => {
+  const positives = [
+    "circuit breaker keeps tripping",
+    "breaker keeps tripping",
+    "breaker trips repeatedly",
+    "breaker keeps flipping",
+    "breaker trips immediately",
+    "breaker trips after a few minutes",
+    "breaker randomly trips",
+    "breaker trips when appliance turns on",
+    "breaker trips when several things run",
+    "breaker won't stay on",
+    "GFCI breaker keeps tripping",
+    "AFCI breaker keeps tripping",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "circuit-breaker-keeps-tripping", query);
+  for (const query of ["lights flicker when appliance turns on", "lights flicker randomly", "outlet warm", "outlet buzzing", "GFCI outlet keeps tripping", "breaker will not reset", "power keeps going out", "one outlet has no power"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "circuit-breaker-keeps-tripping", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "breaker-tripping"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "breaker-tripping")[0]?.article.slug, "circuit-breaker-keeps-tripping");
+  for (const location of ["yard", "garage", "attic", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "breaker-tripping"), location);
+  }
+});

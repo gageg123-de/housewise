@@ -540,7 +540,7 @@ test("warm-outlet guide preserves conservative stop-use boundaries without invas
   const breakerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
   assert.ok(outlet);
   assert.equal(outlet.published_date, "2026-08-24");
-  assert.equal(outlet.updated_date, "2026-09-02");
+  assert.equal(outlet.updated_date, "2026-09-30");
   assert.ok(breakerTopic?.includes(",planned,"));
   assert.ok(outlet.body_sections.some((section) => section.id === "warm-or-hot" && section.table?.rows.length === 6));
   assert.ok(outlet.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 6));
@@ -562,7 +562,7 @@ test("appliance-triggered light-flicker guide preserves startup nuance and elect
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Lights flicker when appliance turns on,"));
   assert.ok(article && outlet);
   assert.equal(article.published_date, "2026-09-02");
-  assert.equal(article.updated_date, "2026-09-08");
+  assert.equal(article.updated_date, "2026-09-30");
   assert.ok(topic?.includes(",published,"));
   assert.ok(topic?.includes("/electrical/lights-flicker-when-appliance-turns-on/"));
   assert.doesNotMatch(topics, /^Lights dim when AC starts,.*?,planned,/m);
@@ -577,7 +577,7 @@ test("appliance-triggered light-flicker guide preserves startup nuance and elect
   assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 3));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/outlet-warm/"));
   assert.ok(outlet.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
-  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-randomly"]);
+  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-randomly", "circuit-breaker-keeps-tripping"]);
   const body = JSON.stringify(article.body_sections);
   assert.match(body, /startup current/i);
   assert.match(body, /do not remove a panel cover/i);
@@ -602,7 +602,7 @@ test("outlet-buzzing guide distinguishes device noise from receptacle-origin ele
   const breakerTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
   assert.ok(article && warmOutlet && flicker);
   assert.equal(article.published_date, "2026-09-04");
-  assert.equal(article.updated_date, "2026-09-04");
+  assert.equal(article.updated_date, "2026-09-30");
   assert.equal(article.reviewed_date, null);
   assert.ok(topic?.includes(",published,"));
   assert.ok(topic?.includes("/electrical/outlet-buzzing/"));
@@ -620,7 +620,7 @@ test("outlet-buzzing guide distinguishes device noise from receptacle-origin ele
   assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/lights-flicker-when-appliance-turns-on/"));
   assert.ok(warmOutlet.related_articles.includes("outlet-buzzing"));
   assert.ok(warmOutlet.body_sections.some((section) => section.link?.href === "/electrical/outlet-buzzing/"));
-  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-when-appliance-turns-on"]);
+  assert.deepEqual(article.related_articles, ["outlet-warm", "lights-flicker-when-appliance-turns-on", "circuit-breaker-keeps-tripping"]);
   assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
   assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
   assert.ok(article.sources.some((source) => source.publisher === "UL Solutions"));
@@ -1289,4 +1289,42 @@ test("one-vent weak-airflow guide owns the localized outlet symptom without diag
   assert.match(body, /Do not remove the register as a casual airflow test/i);
   assert.match(body, /close other vents to force air/i);
   assert.doesNotMatch(body, /\b\d+\s*cfm\b/i);
+});
+
+test("breaker-tripping guide classifies trip patterns without defeating electrical protection", () => {
+  const article = registry.find((item) => item.slug === "circuit-breaker-keeps-tripping");
+  const warm = registry.find((item) => item.slug === "outlet-warm");
+  const buzz = registry.find((item) => item.slug === "outlet-buzzing");
+  const flicker = registry.find((item) => item.slug === "lights-flicker-when-appliance-turns-on");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Circuit breaker keeps tripping,"));
+  const noLoadTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Breaker keeps tripping with nothing plugged in,"));
+  assert.ok(article && warm && buzz && flicker);
+  assert.equal(article.published_date, "2026-09-30");
+  assert.equal(article.updated_date, "2026-09-30");
+  assert.equal(article.reviewed_date, null);
+  assert.equal(article.primary_category, "electrical");
+  assert.equal(article.content_type, "diagnostic-guide");
+  assert.ok(topic?.includes(",published,") && topic.includes("/electrical/circuit-breaker-keeps-tripping/"));
+  assert.ok(noLoadTopic?.includes(",planned,"));
+  assert.ok(article.body_sections.some((section) => section.id === "trip-pattern" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "protection-type"));
+  assert.ok(article.body_sections.some((section) => section.id === "overload-or-fault" && section.subsections?.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "immediate-retrip" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "never-upsize" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.equal(article.image.src, "/images/circuit-breaker-tripping-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
+  assert.ok(warm.related_articles.includes(article.slug));
+  assert.ok(buzz.related_articles.includes(article.slug));
+  assert.ok(flicker.related_articles.includes(article.slug));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /Do not keep cycling the handle/i);
+  assert.match(body, /Never defeat the protection/i);
+  assert.match(body, /Do not remove the panel cover or dead front/i);
+  assert.match(body, /Do not touch a breaker or panel with wet hands/i);
+  assert.doesNotMatch(body, /replace (?:it|the breaker) with a larger breaker|hold the breaker on|remove the panel cover to inspect/i);
 });
