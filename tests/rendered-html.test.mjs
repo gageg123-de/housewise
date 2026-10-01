@@ -847,3 +847,28 @@ test("breaker-tripping guide renders load patterns, protection distinctions, saf
     assert.match(await reciprocal.text(), /href="\/electrical\/circuit-breaker-keeps-tripping\/"/, path);
   }
 });
+
+test("breaker-reset guide renders reset patterns, electrical safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/circuit-breaker-wont-reset");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Won’t My Circuit Breaker Reset\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/circuit-breaker-wont-reset\//);
+  assert.match(html, /First: does the breaker need to be moved fully to OFF\?/);
+  assert.match(html, /If the breaker will not stay in the ON position/);
+  assert.match(html, /One immediate retrip is enough evidence to stop/);
+  assert.match(html, /Why you should not keep resetting—or install a larger breaker/);
+  assert.match(html, /Keep the panel closed/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /src="\/images\/circuit-breaker-wont-reset-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/circuit-breaker-wont-reset-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/circuit-breaker-keeps-tripping");
+  assert.match(await reciprocal.text(), /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+});

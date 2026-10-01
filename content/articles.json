@@ -8517,7 +8517,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-30",
-    "updated_date": "2026-09-30",
+    "updated_date": "2026-10-01",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -8532,7 +8532,6 @@
       "breaker randomly trips",
       "breaker trips when appliance turns on",
       "breaker trips when several things run",
-      "breaker won't stay on",
       "GFCI breaker keeps tripping",
       "AFCI breaker keeps tripping"
     ],
@@ -8558,7 +8557,8 @@
     "related_articles": [
       "lights-flicker-when-appliance-turns-on",
       "outlet-warm",
-      "outlet-buzzing"
+      "outlet-buzzing",
+      "circuit-breaker-wont-reset"
     ],
     "image": {
       "src": "/images/circuit-breaker-tripping-patterns.webp",
@@ -8630,6 +8630,12 @@
         "callout": {
           "title": "Do not force a faulted circuit back into service",
           "text": "CPSC advises investigating why a breaker tripped rather than simply resetting it. An immediate retrip, warning sign, wet condition, or unexplained recurring trip calls for an electrician—not another attempt."
+        },
+        "link": {
+          "before": "If the handle will not latch or the breaker immediately opens again, use ",
+          "label": "Why Won’t My Circuit Breaker Reset?",
+          "href": "/electrical/circuit-breaker-wont-reset/",
+          "after": " for the reset-failure safety boundary."
         }
       },
       {
@@ -8690,7 +8696,7 @@
         "heading": "Should you keep resetting a breaker that trips?",
         "paragraphs": [
           "No. CPSC advises finding the cause rather than simply resetting a tripped breaker. After an understood temporary overload has been removed and there are no heat, odor, noise, damage, moisture, or fire indicators, one normal reset using only the accessible handle may restore the circuit. The handle on many breakers must first move fully to OFF before returning to ON, but the product instructions govern.",
-          "That limited action is not permission to retry an unexplained problem. If the breaker opens again, trips immediately, feels abnormal, will not latch normally, or you cannot identify a harmless temporary condition, leave it off and call an electrician. Do not stand in water, use wet hands, touch a wet panel, or approach equipment with smoke, sparking, severe heat, or visible damage. A breaker that will not reset at all is a narrower future intent; here, the safety boundary is the same—do not force it."
+          "That limited action is not permission to retry an unexplained problem. If the breaker opens again, trips immediately, feels abnormal, will not latch normally, or you cannot identify a harmless temporary condition, leave it off and call an electrician. Do not stand in water, use wet hands, touch a wet panel, or approach equipment with smoke, sparking, severe heat, or visible damage. The dedicated breaker-reset guide owns the next step when the handle cannot be returned to and kept in the normal ON position."
         ]
       },
       {
@@ -8751,6 +8757,315 @@
       {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
       {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"},
       {"title": "QO Circuit Breaker Protection FAQs", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FAQ000282565/"}
+    ]
+  },
+  {
+    "title": "Why Won’t My Circuit Breaker Reset?",
+    "slug": "circuit-breaker-wont-reset",
+    "description": "Breaker won’t reset or stay on? Learn what the reset pattern can reveal, why repeated resets are unsafe, and when to call an electrician.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": [
+      "electrical-behavior"
+    ],
+    "room_or_location": [
+      "whole-house"
+    ],
+    "system": "electrical",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-01",
+    "updated_date": "2026-10-01",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "circuit breaker won't reset",
+      "breaker won't reset",
+      "breaker will not reset",
+      "breaker won't stay on",
+      "breaker keeps flipping off",
+      "breaker trips immediately when reset",
+      "breaker won't turn back on",
+      "breaker won't stay reset",
+      "GFCI breaker won't reset",
+      "AFCI breaker won't reset",
+      "breaker handle won't stay in on position",
+      "breaker stuck in tripped position"
+    ],
+    "target_search_intent": "Help a homeowner distinguish a breaker that was not moved fully through its normal reset position from one that will not latch or immediately trips again, using load correlation, protection type, and warning signs without forcing the handle, repeatedly resetting, opening the panel, bypassing protection, or upsizing the breaker.",
+    "direct_answer": "A circuit breaker may seem not to reset because many designs must first be moved fully to OFF before they can return to ON. If one normal reset using only the accessible handle does not work—or the breaker immediately trips again—stop. A persistent load, short circuit, ground fault, arc-fault condition, wiring problem, connected device, or protective-device problem may still be present. The reset pattern narrows the possibilities, but it does not identify the exact fault, and the breaker should not be forced back into service.",
+    "likely_causes": [
+      "Breaker handle not moved fully to OFF before a normal reset",
+      "Persistent overload or connected-load condition",
+      "Short circuit or other wiring fault",
+      "Ground-fault condition detected by GFCI protection",
+      "Arc-fault condition detected by AFCI protection",
+      "Fault or abnormal condition in a connected appliance or device",
+      "Breaker or protective-device problem requiring qualified evaluation"
+    ],
+    "safe_checks": [
+      "Look only at the accessible breaker face and note whether the handle is centered, fully OFF, or appears to move to ON and then trip.",
+      "Read visible circuit labels and AFCI, GFCI, dual-function, or TEST-button markings without removing the panel cover.",
+      "Note which rooms, lights, outlets, and devices lost power and what was operating before the trip.",
+      "Record whether one portable appliance naturally correlates with the trip without repeatedly reproducing the fault.",
+      "Leave a suspect portable device unplugged and unused when that can be done without touching hot, wet, damaged, smoking, or sparking equipment.",
+      "Observe heat, burning odor, buzzing, crackling, sparking, smoke, discoloration, damage, or moisture from a safe distance."
+    ],
+    "professional_help": "Arrange a qualified electrician when the breaker will not reset after the normal accessible full-OFF-to-ON motion, will not latch, immediately trips again, repeatedly refuses to remain on, or correlates with an unclear appliance or circuit condition. Stop ordinary troubleshooting for abnormal heat, burning odor, buzzing or crackling, sparking, smoke, melting, visible damage, or water exposure. For active fire, smoke, or arcing, move away and call emergency services; do not use water or approach wet energized equipment.",
+    "related_articles": [
+      "circuit-breaker-keeps-tripping",
+      "outlet-warm",
+      "outlet-buzzing"
+    ],
+    "image": {
+      "src": "/images/circuit-breaker-wont-reset-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing a breaker in the tripped position, an immediate retrip, a load-related trip, and electrical warning signs.",
+      "caption": "Conceptual illustration: Whether a breaker needs the normal full-OFF reset motion, immediately trips again, or trips with a load helps classify the pattern but does not identify the exact electrical fault. Keep the panel closed except for normal access to breaker handles.",
+      "kind": "conceptual",
+      "after_section": "normal-reset"
+    },
+    "body_sections": [
+      {
+        "id": "normal-reset",
+        "heading": "First: does the breaker need to be moved fully to OFF?",
+        "paragraphs": [
+          "A tripped breaker handle may sit between ON and OFF rather than looking completely off. ESFI and manufacturer instructions for common residential breakers describe the normal reset motion as moving the handle fully to OFF before moving it back to ON. Simply pushing a centered handle toward ON may not reset the internal mechanism.",
+          "That observation supports one careful distinction, not an invitation to keep trying. If there is no heat, burning odor, buzzing, sparking, smoke, visible damage, or moisture—and the product instructions do not say otherwise—one normal attempt using only the accessible handle may be reasonable after turning off or unplugging portable loads on the affected circuit. Move the handle fully to OFF, then to ON. Do not remove the panel cover, use a tool, apply unusual force, or touch anything except the handle.",
+          "If the handle will not move normally, will not latch, returns to the tripped position, or the original trip remains unexplained, stop. Product designs and handle forces vary; a stuck or abnormal-feeling handle is not a homeowner repair."
+        ],
+        "table": {
+          "headers": [
+            "What the handle does",
+            "How to treat the pattern"
+          ],
+          "rows": [
+            [
+              "Sits between ON and OFF",
+              "It may be in the normal tripped position; many breakers require full OFF before ON"
+            ],
+            [
+              "Moves normally to ON and remains there",
+              "Observe whether the circuit stays stable; a later trip belongs to the recurring-trip pattern"
+            ],
+            [
+              "Will not latch in ON",
+              "Do not force it; a protective, circuit, load, or device condition needs evaluation"
+            ],
+            [
+              "Moves to ON and immediately trips",
+              "Leave it off and stop resetting; an active condition may remain"
+            ],
+            [
+              "Feels stuck, damaged, unusually hot, or abnormal",
+              "Do not manipulate it further; arrange qualified electrical help"
+            ],
+            [
+              "Panel or nearby equipment is wet, smoking, sparking, or arcing",
+              "Keep away and use emergency or qualified help appropriate to the hazard"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "wont-latch",
+        "heading": "If the breaker will not stay in the ON position",
+        "paragraphs": [
+          "A breaker that cannot be returned to and kept in its normal ON position should not be forced. The circuit may still have an overload, short circuit, ground fault, arc-fault condition, damaged connected equipment, or another wiring problem. The protective device itself can also require evaluation. Handle behavior alone cannot separate those causes.",
+          "Do not hold, tape, wedge, or repeatedly push the handle. Listed breakers are designed to trip independently of attempts to restrain the handle, and defeating or fighting that action does not correct the condition. Leave the circuit off and give an electrician the visible label, affected rooms, operating loads, and exact reset behavior."
+        ]
+      },
+      {
+        "id": "immediate-retrip",
+        "heading": "If it trips immediately after you reset it",
+        "paragraphs": [
+          "An immediate or nearly immediate retrip means the breaker did mechanically reset but did not remain closed. A short circuit, ground fault, arc-fault condition, appliance fault, or another circuit problem may still be present. Immediate timing makes an active condition more concerning, but it does not prove which fault exists.",
+          "Do not cycle the handle again or turn equipment on and off to reproduce the event. Re-energizing an unexplained fault provides little safe diagnostic value for a homeowner. Leave the breaker off and arrange qualified evaluation. If the panel, wiring area, appliance, outlet, or switch is hot, wet, damaged, buzzing, sparking, smoking, or giving off a burning odor, keep away and use the faster escalation guidance below."
+        ],
+        "callout": {
+          "title": "One immediate retrip is enough evidence to stop",
+          "text": "CPSC advises investigating why a breaker tripped rather than simply resetting it. An immediate retrip is not a prompt for another attempt, a stronger push, or a larger breaker."
+        }
+      },
+      {
+        "id": "one-appliance",
+        "heading": "If it resets until one appliance turns on",
+        "paragraphs": [
+          "If the breaker remains on until one portable appliance starts, the relationship among that appliance, its cord and plug, the receptacle, the circuit load, and the breaker’s protection functions becomes useful evidence. The pattern may involve excessive demand, startup current, equipment damage, a ground-fault condition, an arc-fault condition, or a circuit problem. It does not prove the appliance is defective.",
+          "Leave a suspect portable appliance unplugged and unused when doing so is safe. Do not open it, move it repeatedly among outlets, or keep starting it to force another trip. Nearby outlets may share a circuit. Hardwired equipment should remain off for qualified evaluation."
+        ],
+        "link": {
+          "before": "If the breaker can be reset and later trips under repeatable load conditions, use ",
+          "label": "Why Does My Circuit Breaker Keep Tripping?",
+          "href": "/electrical/circuit-breaker-keeps-tripping/",
+          "after": " to classify recurring trips by timing and connected loads."
+        }
+      },
+      {
+        "id": "overload-or-fault",
+        "heading": "Could the circuit be overloaded—or could there be an active fault?",
+        "subsections": [
+          {
+            "heading": "Overload",
+            "paragraphs": [
+              "Combined current demand exceeds what the protected circuit is intended to carry. Several high-demand loads together can make overload more plausible, but visible appliances may not be the only loads on the circuit. Reducing load may explain a pattern without proving the circuit is adequate."
+            ]
+          },
+          {
+            "heading": "Short circuit or other wiring fault",
+            "paragraphs": [
+              "An unintended low-resistance path or damaged wiring can produce high current and operate the breaker. Locating it requires qualified testing—not opening receptacles, switches, junction boxes, or the panel."
+            ]
+          },
+          {
+            "heading": "Ground fault",
+            "paragraphs": [
+              "Current takes an unintended path. GFCI protection monitors for a small imbalance and interrupts power to reduce shock risk. Wet or damaged equipment may be relevant, but the reset failure does not reveal where the problem is."
+            ]
+          },
+          {
+            "heading": "Arc-fault condition",
+            "paragraphs": [
+              "AFCI protection is designed to detect hazardous arcing patterns. Do not dismiss a breaker that will not remain reset as a nuisance trip or replace AFCI protection with an ordinary breaker to restore power."
+            ]
+          }
+        ],
+        "paragraphs": [
+          "Timing is a clue, not a fault code. An overload can sometimes trip after loads accumulate, while a severe fault can trip quickly, but those are not universal rules. Thermal behavior, connected equipment, circuit design, and AFCI or GFCI functions can change the pattern."
+        ]
+      },
+      {
+        "id": "protection-type",
+        "heading": "What if it is a GFCI, AFCI, or dual-function breaker?",
+        "paragraphs": [
+          "A standard residential breaker primarily provides overcurrent protection. A GFCI breaker adds protection that detects certain current imbalance associated with a ground fault; an AFCI breaker adds protection intended to recognize hazardous arcing; and a dual-function breaker combines AFCI and GFCI functions with applicable overcurrent protection. A TEST button and visible label may help identify the device without opening the panel.",
+          "A GFCI or AFCI breaker may refuse to stay reset while the detected condition persists. Do not replace it with ordinary protection, bypass it, or assume the device is defective. Indicators vary by model, and “combination” on an AFCI does not necessarily mean AFCI plus GFCI. Record visible markings for the electrician. A wall GFCI receptacle is a different device and a separate troubleshooting intent."
+        ]
+      },
+      {
+        "id": "bad-breaker",
+        "heading": "Could the breaker itself be bad?",
+        "paragraphs": [
+          "A breaker can malfunction, wear, or be incompatible with the panel or application. But the first question remains: why did the circuit open, and is a fault or load condition still present? “Bad breaker” is not the default diagnosis.",
+          "Breaker replacement is panel work. It requires the correct type, rating, listing, panel compatibility, and installation, plus an assessment of the circuit and connected equipment. Do not remove the dead front, touch terminals or bus bars, swap breakers, or use a multimeter inside the panel."
+        ]
+      },
+      {
+        "id": "reset-and-sizing",
+        "heading": "Why you should not keep resetting—or install a larger breaker",
+        "paragraphs": [
+          "CPSC advises determining why a breaker tripped instead of simply resetting it. One normal attempt after an understood temporary condition is different from repeatedly energizing a circuit that will not remain on. If the breaker refuses to latch or immediately opens again, the useful homeowner observation is complete.",
+          "A higher-amperage breaker is not a reset fix. The protective device must be appropriate for the conductors, connected equipment, and application. Upsizing without verifying the circuit can allow wiring to carry more current than intended and defeat protection against overheating. There is no safe generic breaker-sizing chart for this symptom."
+        ],
+        "callout": {
+          "title": "Never defeat the protection",
+          "text": "Do not hold, tape, or wedge the handle; bypass the breaker; install a larger breaker; replace AFCI or GFCI protection with ordinary protection; or keep resetting until it stays on."
+        }
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Note whether the accessible handle is centered, fully OFF, or appears to move to ON before tripping.",
+          "Read only visible circuit labels, TEST-button markings, and AFCI, GFCI, or dual-function wording.",
+          "List the rooms, lights, outlets, and devices that lost power.",
+          "Record what was operating before the trip and whether the trip was immediate or delayed.",
+          "Note a naturally occurring association with one portable appliance without deliberately reproducing it.",
+          "Leave a suspect portable device unplugged and unused when it can be handled safely.",
+          "Observe heat, odor, buzzing, crackling, sparking, smoke, discoloration, damage, or moisture from a safe distance."
+        ],
+        "callout": {
+          "title": "Keep the panel closed",
+          "text": "Do not remove the cover or dead front, touch internal parts, probe with a meter, open energized outlets or switches, test exposed conductors, repair wiring, or manipulate a wet panel. Do not use wet hands or stand on a wet surface while touching electrical equipment."
+        }
+      },
+      {
+        "id": "warning-signs",
+        "heading": "Warning signs that mean stop troubleshooting",
+        "paragraphs": [
+          "Abnormal heat, a burning or melting odor, buzzing or crackling, discoloration, melted material, visible sparking, smoke, panel damage, or water exposure changes the response. Do not attempt a reset, unplug damaged hot equipment, or approach the panel for a closer look. Keep people away and arrange prompt qualified help.",
+          "For active flame, smoke, arcing, rapidly increasing heat, or signs of an electrical fire, move away and call emergency services. Do not use water. Shut power off only if a normal disconnect can be reached without entering the hazard area; never approach wet, smoking, sparking, or damaged electrical equipment. Water-damaged breakers and other devices require qualified evaluation before re-energizing, even if they appear dry later."
+        ],
+        "links": [
+          {
+            "before": "If unusual heat is centered at a receptacle, use ",
+            "label": "Why Is My Outlet Warm?",
+            "href": "/electrical/outlet-warm/",
+            "after": " for its stop-use boundary."
+          },
+          {
+            "before": "If the companion symptom is sound at a receptacle, use ",
+            "label": "Why Does My Outlet Buzz?",
+            "href": "/electrical/outlet-buzzing/",
+            "after": " without opening the box."
+          }
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": [
+          "Arrange a qualified electrician when the breaker will not reset after the normal accessible full-OFF motion, will not latch, immediately trips again, repeatedly refuses to remain on, or has an unclear one-appliance trigger. AFCI or GFCI reset failure, suspected wiring trouble, recurring overload, uncertain breaker condition, abnormal panel behavior, water exposure, heat, odor, buzzing, or discoloration also belongs with qualified evaluation.",
+          "Tell the electrician which handle moved, what the visible label says, which areas lost power, what was operating, whether it failed to latch or immediately retripped, and which warning signs appeared. They can evaluate the load, equipment, wiring, and protective device using procedures appropriate to the hazard."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "First distinguish a handle that was not moved fully to OFF from a breaker that truly will not latch or stay on. If one normal accessible reset does not work or the breaker immediately trips again, stop. Load correlation and the standard, GFCI, AFCI, or dual-function label can narrow the investigation, but they do not identify the exact electrical fault.",
+          "Leave the panel closed, do not keep resetting, never hold or tape the handle, never bypass or upsize the breaker, and do not re-energize wet equipment. Use a qualified electrician for reset failure, and move to emergency response when smoke, flame, active arcing, or another immediate fire hazard is present."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Commission Closes Investigation of FPE Circuit Breakers and Provides Safety Information for Consumers",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers"
+      },
+      {
+        "title": "Understanding Your Home Electrical System",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/understanding-your-home-electrical-system"
+      },
+      {
+        "title": "Fuse and Breaker Breakdown",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/fuse-and-breaker-breakdown/"
+      },
+      {
+        "title": "How to Use GFCIs",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/how-to-use-gfcis/"
+      },
+      {
+        "title": "Arc Faults and Electrical Safety",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/wp-content/uploads/2021/06/Arc-Faults-and-Electrical-Safety-394D.pdf"
+      },
+      {
+        "title": "Water-Damaged Electrical Equipment",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/water-damaged-electrical-equipment/"
+      },
+      {
+        "title": "What is the Handle Position of a QO Branch Breaker When ON, OFF and Tripped?",
+        "publisher": "Schneider Electric",
+        "url": "https://www.se.com/ca/en/faqs/FA353467/"
+      },
+      {
+        "title": "Will a Circuit Breaker Still Trip if It Is Locked Into the ON Position?",
+        "publisher": "Schneider Electric",
+        "url": "https://www.se.com/us/en/faqs/FA115241/"
+      },
+      {
+        "title": "Appliance and Electrical Fire Safety",
+        "publisher": "U.S. Fire Administration",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
+      }
     ]
   }
 ]
