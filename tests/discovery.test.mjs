@@ -683,3 +683,27 @@ test("breaker-reset Finder and search preserve recurring-trip and neighboring el
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "breaker-wont-reset"), location);
   }
 });
+
+test("one-room power-loss Finder and search preserve narrower and broader outage intents", () => {
+  const positives = [
+    "why is there no power in one room",
+    "no power in one room",
+    "one room has no power",
+    "power out in one room",
+    "one room lost power",
+    "no electricity in one room",
+    "bedroom has no power",
+    "lights and outlets not working in one room",
+    "some outlets and lights not working in one room",
+    "one room has no power but breaker is not tripped",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "no-power-in-one-room", query);
+  for (const query of ["one outlet has no power", "GFCI outlet won't reset", "half the house has no power", "whole house has no power", "breaker keeps tripping", "breaker won't reset", "lights flicker randomly", "outlet warm", "outlet buzzing", "electrical panel buzzing"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "no-power-in-one-room", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "one-room-no-power"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "one-room-no-power")[0]?.article.slug, "no-power-in-one-room");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-room-no-power"), location);
+  }
+});

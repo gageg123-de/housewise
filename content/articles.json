@@ -8517,7 +8517,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-30",
-    "updated_date": "2026-10-01",
+    "updated_date": "2026-10-02",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -8558,7 +8558,8 @@
       "lights-flicker-when-appliance-turns-on",
       "outlet-warm",
       "outlet-buzzing",
-      "circuit-breaker-wont-reset"
+      "circuit-breaker-wont-reset",
+      "no-power-in-one-room"
     ],
     "image": {
       "src": "/images/circuit-breaker-tripping-patterns.webp",
@@ -8735,7 +8736,13 @@
         "paragraphs": [
           "Arrange a qualified electrician for repeated trips, an immediate retrip, a breaker that will not remain on, a recurring one-appliance trigger, an AFCI or GFCI breaker that repeatedly opens without an obvious safely removable load, suspected wiring trouble, recurring overload, water exposure, or abnormal panel behavior. Reducing load may restore power temporarily, but it does not prove that recurring trips need no evaluation.",
           "Give the electrician your trip log, the accessible breaker label and type, the affected rooms, and the device or load sequence. They can evaluate the circuit load, connected equipment, receptacles and wiring, breaker compatibility and condition, and manufacturer-specific trip information using de-energized and energized procedures appropriate to the work."
-        ]
+        ],
+        "link": {
+          "before": "If the presenting symptom is that several loads in one room or area have lost power and the breaker state is not yet clear, start with ",
+          "label": "Why Is There No Power in One Room?",
+          "href": "/electrical/no-power-in-one-room/",
+          "after": " to map the outage before assigning a cause."
+        }
       },
       {
         "id": "bottom-line",
@@ -8774,7 +8781,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-10-01",
-    "updated_date": "2026-10-01",
+    "updated_date": "2026-10-02",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -8816,7 +8823,8 @@
     "related_articles": [
       "circuit-breaker-keeps-tripping",
       "outlet-warm",
-      "outlet-buzzing"
+      "outlet-buzzing",
+      "no-power-in-one-room"
     ],
     "image": {
       "src": "/images/circuit-breaker-wont-reset-patterns.webp",
@@ -9009,7 +9017,13 @@
         "paragraphs": [
           "Arrange a qualified electrician when the breaker will not reset after the normal accessible full-OFF motion, will not latch, immediately trips again, repeatedly refuses to remain on, or has an unclear one-appliance trigger. AFCI or GFCI reset failure, suspected wiring trouble, recurring overload, uncertain breaker condition, abnormal panel behavior, water exposure, heat, odor, buzzing, or discoloration also belongs with qualified evaluation.",
           "Tell the electrician which handle moved, what the visible label says, which areas lost power, what was operating, whether it failed to latch or immediately retripped, and which warning signs appeared. They can evaluate the load, equipment, wiring, and protective device using procedures appropriate to the hazard."
-        ]
+        ],
+        "link": {
+          "before": "If several lights or receptacles in one room are out but you have not confirmed a reset failure, use ",
+          "label": "Why Is There No Power in One Room?",
+          "href": "/electrical/no-power-in-one-room/",
+          "after": " to map the affected loads and check accessible protection first."
+        }
       },
       {
         "id": "bottom-line",
@@ -9060,6 +9074,315 @@
         "title": "Will a Circuit Breaker Still Trip if It Is Locked Into the ON Position?",
         "publisher": "Schneider Electric",
         "url": "https://www.se.com/us/en/faqs/FA115241/"
+      },
+      {
+        "title": "Appliance and Electrical Fire Safety",
+        "publisher": "U.S. Fire Administration",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
+      }
+    ]
+  },
+  {
+    "title": "Why Is There No Power in One Room?",
+    "slug": "no-power-in-one-room",
+    "description": "One room has no power but the rest of the house does? Map what stopped working, check the breaker and accessible GFCIs, and know when to call an electrician.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": [
+      "electrical-behavior"
+    ],
+    "room_or_location": [
+      "whole-house"
+    ],
+    "system": "electrical",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-02",
+    "updated_date": "2026-10-02",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why is there no power in one room",
+      "no power in one room",
+      "one room has no power",
+      "power out in one room",
+      "one room lost power",
+      "no electricity in one room",
+      "bedroom has no power",
+      "lights and outlets not working in one room",
+      "some outlets and lights not working",
+      "one room has no power but breaker is not tripped",
+      "room has no power after breaker tripped"
+    ],
+    "target_search_intent": "Help a homeowner map localized power loss affecting multiple loads in one perceived room or area, distinguish whole-room from partial-room loss, and safely check the accessible breaker face and GFCI devices without assuming room boundaries equal circuit boundaries or opening electrical equipment.",
+    "direct_answer": "If one room appears to have no power while the rest of the home still does, first map exactly which lights, receptacles, and built-in loads stopped working. A tripped breaker or GFCI may have interrupted the branch circuit, but a room can be served by more than one circuit and one circuit can serve outlets in more than one room. If only part of the room is out, a switched receptacle, downstream GFCI protection, or a circuit or connection problem may be involved. Check only accessible controls and labels; stop for heat, burning odor, buzzing, sparking, smoke, water, or a breaker that trips again.",
+    "likely_causes": [
+      "A tripped circuit breaker serving the affected loads",
+      "A tripped GFCI receptacle or GFCI breaker protecting downstream outlets",
+      "A wall switch controlling a receptacle or other load",
+      "Multiple branch circuits serving different loads in the same room",
+      "An open connection or other branch-circuit fault requiring diagnosis",
+      "A breaker, protective device, or installation problem requiring evaluation"
+    ],
+    "safe_checks": [
+      "List every light, receptacle, and built-in load that works or does not work without opening any device.",
+      "Check nearby halls or adjacent rooms to learn whether the outage follows a room boundary.",
+      "Read the accessible breaker labels and look for a handle in OFF or an intermediate tripped position.",
+      "Check accessible GFCI receptacles in likely protected areas and follow the device manufacturer's normal reset instructions only when no warning sign is present.",
+      "Try ordinary wall switches that may control receptacles or lighting.",
+      "Record what happened immediately before the outage and whether recent work preceded it.",
+      "Observe from a safe distance for heat, burning odor, buzzing, crackling, sparking, smoke, discoloration, or moisture."
+    ],
+    "professional_help": "Call a qualified electrician when no accessible breaker or GFCI explains the outage, the breaker or GFCI will not reset, power returns and fails again, the outage followed electrical work or damage, or a hidden connection or circuit fault is possible. Stop ordinary checking for abnormal heat, burning odor, buzzing, crackling, sparking, smoke, melting, water exposure, or panel damage. For active fire, smoke, or arcing, move away and call emergency services; do not use water or approach wet energized equipment.",
+    "related_articles": [
+      "circuit-breaker-keeps-tripping",
+      "circuit-breaker-wont-reset",
+      "outlet-warm",
+      "outlet-buzzing"
+    ],
+    "image": {
+      "src": "/images/no-power-one-room-diagnostic-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing localized power loss, a tripped breaker face, an accessible GFCI, and partial power within one room.",
+      "caption": "Conceptual illustration: Map every affected load before assuming one room equals one circuit. An accessible breaker or GFCI may explain the outage, but the pattern alone does not identify a hidden electrical fault.",
+      "kind": "conceptual",
+      "after_section": "map-the-outage"
+    },
+    "body_sections": [
+      {
+        "id": "map-the-outage",
+        "heading": "First: what exactly lost power?",
+        "paragraphs": [
+          "Start by making a simple map. Check which ceiling lights, lamps, receptacles, hardwired fans, and built-in equipment have stopped working, and which still operate. Include the hallway or adjacent room. The useful unit is the set of affected electrical loads—not the name of the room.",
+          "A branch circuit is the protected wiring between the final overcurrent device and the outlets it serves. General-purpose circuits can supply multiple lighting or receptacle outlets, so wall boundaries do not reliably show circuit boundaries. One room may use two or more circuits, while one circuit may continue into another room."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What it makes worth checking"
+          ],
+          "rows": [
+            [
+              "Every light and receptacle in the room is out",
+              "A breaker, GFCI, or shared circuit interruption becomes more relevant"
+            ],
+            [
+              "Lights work but receptacles do not",
+              "Separate circuits, a switched receptacle, or downstream protection may explain the split"
+            ],
+            [
+              "Some receptacles work and others do not",
+              "Map the exact group; do not assume the whole room is on one circuit"
+            ],
+            [
+              "The hall or another room also lost selected loads",
+              "The affected circuit may cross room boundaries"
+            ],
+            [
+              "Only one receptacle is dead",
+              "That is a narrower one-outlet symptom, not necessarily a room outage"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "warning-first",
+        "heading": "Stop before checking if there are electrical warning signs",
+        "paragraphs": [
+          "Do not touch the panel, receptacles, switches, plugs, or appliances if you see smoke or sparking, smell burning or melting material, hear crackling or abnormal buzzing, notice unusual heat or discoloration, or find water on or near electrical equipment. Move away from active fire, smoke, or arcing and call emergency services. Never use water on an electrical fire.",
+          "If electrical equipment is wet, or you would have to stand in water to reach a breaker or GFCI, do not approach it. Have the hazard made safe by the appropriate emergency responder, utility, or qualified electrician."
+        ],
+        "callout": {
+          "title": "Keep every check outside electrical boxes",
+          "text": "This guide does not require removing a panel cover, outlet plate, switch plate, light fixture, or junction-box cover. Do not probe wiring, use a meter on energized parts, or handle wet or damaged equipment."
+        }
+      },
+      {
+        "id": "whole-or-part",
+        "heading": "Is the whole room out—or only part of it?",
+        "paragraphs": [
+          "If the ceiling light works but several receptacles do not, or one wall of receptacles is out while another still works, the room is not experiencing one uniform outage. That pattern may simply reflect more than one branch circuit, a switched load, GFCI feed-through protection, or a fault affecting only one portion of a circuit.",
+          "Do not use a working receptacle as proof that the room's wiring is healthy. It may be on a different circuit. Likewise, a dead receptacle beside a working one does not reveal where the interruption is. Record the pattern for an electrician instead of opening devices to trace it."
+        ]
+      },
+      {
+        "id": "localized-or-broader",
+        "heading": "Confirm that the outage is actually limited to one area",
+        "paragraphs": [
+          "Check a few known loads elsewhere in the home before treating this as a room-level problem. If an entire home is dark, the service, utility supply, main disconnect, or another broad condition belongs to a different diagnostic path. If roughly half the home, major 240-volt equipment, or seemingly unrelated groups of circuits are affected, do not force that pattern into a one-room explanation; contact the utility or an electrician according to local guidance and the observed hazard.",
+          "A true localized pattern usually leaves most of the home operating while a specific group of lights, receptacles, or built-in loads is out. Even then, compare adjacent spaces. A hallway light, closet receptacle, or bathroom outlet may share the affected branch circuit, while a ceiling light inside the dark room may remain on because it is supplied separately.",
+          "In a multifamily building, also distinguish a problem inside the unit from a building outage. Check only normal indicators available to you and contact building management when appropriate. Do not enter electrical rooms, utility spaces, meter enclosures, or panels you are not authorized to access."
+        ]
+      },
+      {
+        "id": "why-groups-fail",
+        "heading": "Why several loads can go dead together",
+        "paragraphs": [
+          "Receptacles and lights are connected as parts of branch circuits, not as independent utility feeds. When a breaker or protective device opens, every load supplied through that protected path can lose power together. A GFCI receptacle wired for feed-through protection can similarly interrupt its face and downstream receptacles, which is why the reset device may be outside the room that looks dead.",
+          "A connection or device problem can also interrupt power beyond that point in a circuit. This is sometimes described as an open circuit, but the outage map cannot reveal whether the interruption is at a receptacle, switch, splice, fixture, conductor, breaker, or another component. Which loads remain energized depends on the actual wiring layout, not their physical distance from the panel or doorway.",
+          "That is why claims such as ‘the first dead outlet is the bad one’ or ‘the closest outlet to the panel must be upstream’ are not reliable homeowner rules. Locating an open connection requires the circuit to be made safe and tested by a qualified person. Do not open boxes in search of a loose wire."
+        ]
+      },
+      {
+        "id": "breaker-face",
+        "heading": "Check the accessible breaker face",
+        "paragraphs": [
+          "From the normal accessible front of the panel, read the directory and look for a branch-breaker handle that is in OFF or between ON and OFF. A tripped breaker may not look fully off. Panel labels can be incomplete or inaccurate, so compare the affected loads rather than trusting a room name alone.",
+          "If there are no warning signs, the panel is dry and undamaged, and the manufacturer permits normal homeowner operation, a tripped breaker generally must be moved fully to OFF before it can return to ON. Use only the handle. Do not remove the dead front, touch internal components, or stand on a wet surface."
+        ],
+        "callout": {
+          "title": "One normal reset is a boundary, not a loop",
+          "text": "If the breaker trips again, immediately opens, will not latch normally, or the cause is unclear, leave it off. Do not keep resetting, hold it on, tape the handle, bypass protection, or install a larger breaker."
+        },
+        "links": [
+          {
+            "before": "If the breaker repeatedly trips after power is restored, use ",
+            "label": "Why Does My Circuit Breaker Keep Tripping?",
+            "href": "/electrical/circuit-breaker-keeps-tripping/",
+            "after": " to classify the trigger."
+          },
+          {
+            "before": "If the handle will not return to and stay in the normal ON position, use ",
+            "label": "Why Won’t My Circuit Breaker Reset?",
+            "href": "/electrical/circuit-breaker-wont-reset/",
+            "after": " and stop rather than forcing it."
+          }
+        ]
+      },
+      {
+        "id": "gfci",
+        "heading": "Could a GFCI elsewhere have shut off the room?",
+        "paragraphs": [
+          "Yes, depending on how the circuit was wired. A GFCI receptacle can protect its own face and receptacles connected downstream on its load side. Manufacturer instructions explicitly note that those protected receptacles can be in different rooms. A GFCI breaker can protect the entire branch circuit.",
+          "Look only at accessible GFCI devices in bathrooms, kitchens, garages, basements, laundry areas, outdoors, or other locations where protection may be installed. The relevant device may not be in the dark room. Follow the marked or manufacturer-provided normal reset instructions only when the device is dry, intact, cool, and free of odor, noise, discoloration, or damage.",
+          "If a GFCI will not reset, trips again, has no power, or shows an unfamiliar status indication, leave it alone. Its behavior varies by model, and a downstream outage does not prove the GFCI itself is defective. Do not remove the receptacle, swap line and load conductors, or bypass the protection."
+        ]
+      },
+      {
+        "id": "switches",
+        "heading": "Could a wall switch control the apparently dead outlet?",
+        "paragraphs": [
+          "Some homes use wall switches to control a receptacle or one half of a duplex receptacle, often for a lamp. If one outlet or one half appears dead while the rest of the room works, try the room's ordinary wall switches with a known-working lamp only when the outlet and plug show no warning signs.",
+          "This is a simple configuration check, not electrical diagnosis. Do not remove the switch or receptacle cover. If multiple loads have unexpectedly lost power, continue mapping the affected group rather than assuming a switch explains the whole outage."
+        ]
+      },
+      {
+        "id": "recent-events",
+        "heading": "What happened just before the power went out?",
+        "paragraphs": [
+          "Timing can narrow the categories. Note whether the outage followed use of a portable heater, vacuum, hair dryer, window air conditioner, or several loads together; a storm or water leak; moving furniture; renovation; a fastener driven into a wall; receptacle or lighting work; or electrical service. These clues do not identify the fault, but they help a qualified electrician decide where to start.",
+          "If one appliance was running when power was lost, leave that portable appliance unplugged and unused when you can do so without touching anything hot, wet, damaged, smoking, or sparking. Do not repeatedly reconnect it to different outlets to reproduce the outage."
+        ]
+      },
+      {
+        "id": "breaker-looks-on",
+        "heading": "What if every breaker appears to be on?",
+        "paragraphs": [
+          "First, remember that a tripped handle can rest near the middle and that panel directories may be wrong. Then check accessible GFCIs and the whole-versus-part pattern. If those observations do not explain the outage, an open connection, damaged device, branch-circuit problem, protective-device problem, or another installation condition may require professional diagnosis.",
+          "A connection can interrupt power to more than one downstream load, but the visible outage cannot identify which connection or conductor is involved. Do not search for it by opening receptacles, switches, fixtures, junction boxes, or the panel. A breaker itself can malfunction, but it is not the default explanation and replacement is panel work for a qualified electrician."
+        ]
+      },
+      {
+        "id": "one-outlet",
+        "heading": "What if only one outlet has no power?",
+        "paragraphs": [
+          "A single dead receptacle is narrower than the symptom this page owns. First confirm that lights and other receptacles in the room work, check whether a wall switch controls it, and note whether an accessible GFCI has tripped. Do not insert tools, remove the cover plate, or open the box.",
+          "If just one receptacle remains dead, is loose, warm, discolored, damaged, or makes noise, leave it unused and have it evaluated. A future one-outlet guide can own that narrower search intent; this page remains focused on multiple loads in one perceived room or area."
+        ]
+      },
+      {
+        "id": "extension-cords",
+        "heading": "Do not power the room with extension cords",
+        "paragraphs": [
+          "Running extension cords from another room does not repair or diagnose the outage. It can create trip hazards, overload a different circuit, place cords where they can be pinched or covered, and encourage continued use before the electrical problem is understood. Extension cords are temporary products, not substitutes for permanent household wiring.",
+          "Do not backfeed the room through receptacles, use male-to-male cords, daisy-chain power strips, or connect major appliances through ordinary extension cords. Preserve essential needs through a safe alternative plan while a qualified person evaluates the circuit."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Map every working and nonworking light, receptacle, and built-in load in the room.",
+          "Check whether selected loads in the hall or adjacent room are also out.",
+          "Read visible panel labels and observe accessible breaker handles without removing the dead front.",
+          "Check accessible, dry, intact GFCI receptacles and follow only their normal manufacturer reset instructions.",
+          "Try ordinary wall switches that may control a receptacle or light.",
+          "Note what equipment was running and whether recent work, a storm, moisture, or physical damage preceded the outage.",
+          "Document heat, burning odor, buzzing, crackling, sparking, smoke, discoloration, melting, or water from a safe distance."
+        ],
+        "callout": {
+          "title": "What not to do",
+          "text": "Do not remove panel or device covers, touch internal parts, probe with a meter, reset repeatedly, upsize or replace a breaker, bypass GFCI/AFCI protection, open fixtures, trace energized wiring, use extension cords as permanent wiring, or deliberately recreate the outage."
+        }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": [
+          "Arrange qualified electrical evaluation when no accessible breaker, GFCI, or switch explains the outage; a breaker or GFCI will not reset; power returns and fails again; several loads remain dead while other loads in the room work; recent electrical work or physical damage preceded the loss; or the affected circuit map is unclear. An electrician can de-energize and test the circuit, verify protective devices, and locate an open or damaged connection without guessing from room boundaries.",
+          "Seek prompt help and leave the affected circuit off for abnormal heat, burning odor, buzzing or crackling, discoloration, melted material, water exposure, or panel damage. For active smoke, flame, or arcing, move away and call emergency services. Shut off power only if a normal disconnect can be reached without entering the hazard area."
+        ],
+        "links": [
+          {
+            "before": "If heat is centered at a receptacle, follow the stop-use guidance in ",
+            "label": "Why Is My Outlet Warm?",
+            "href": "/electrical/outlet-warm/",
+            "after": "."
+          },
+          {
+            "before": "If a receptacle buzzes, hums, sizzles, or crackles, use ",
+            "label": "Why Does My Outlet Buzz?",
+            "href": "/electrical/outlet-buzzing/",
+            "after": " without opening the box."
+          }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "When one room appears to have no power, map the affected loads before assigning a cause. Whole-room versus partial-room loss, the breaker position, accessible GFCI status, switch-controlled loads, and recent events can narrow the problem, but they do not identify a hidden fault.",
+          "Room boundaries are not circuit boundaries. If normal accessible checks do not restore power once, if protection will not reset or opens again, or if any heat, odor, noise, sparking, smoke, damage, or moisture is present, stop and call a qualified electrician."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CPSC Guide to Home Wiring Hazards",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/s3fs-public/518.pdf"
+      },
+      {
+        "title": "Commission Closes Investigation of FPE Circuit Breakers and Provides Safety Information for Consumers",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers"
+      },
+      {
+        "title": "Understanding Your Home Electrical System",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/understanding-your-home-electrical-system"
+      },
+      {
+        "title": "Fuse and Breaker Breakdown",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/fuse-and-breaker-breakdown/"
+      },
+      {
+        "title": "How to Use GFCIs",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/how-to-use-gfcis/"
+      },
+      {
+        "title": "Branch Circuit Definition",
+        "publisher": "National Fire Protection Association",
+        "url": "https://docinfofiles.nfpa.org/files/AboutTheCodes/70/70_A2025_NEC_P07_FD_PIResponses.pdf"
+      },
+      {
+        "title": "GFCI Line/Load Reversal",
+        "publisher": "Leviton",
+        "url": "https://leviton.com/support/resources/product-support/decora-smart-support/smart-gfci/gfci-line-load-reversal"
       },
       {
         "title": "Appliance and Electrical Fire Safety",

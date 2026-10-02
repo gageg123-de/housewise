@@ -872,3 +872,29 @@ test("breaker-reset guide renders reset patterns, electrical safety, schema, vis
   const reciprocal = await render("/electrical/circuit-breaker-keeps-tripping");
   assert.match(await reciprocal.text(), /href="\/electrical\/circuit-breaker-wont-reset\/"/);
 });
+
+test("one-room power-loss guide renders scope mapping, safety, schema, visual, and reciprocal links", async () => {
+  const response = await render("/electrical/no-power-in-one-room");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There No Power in One Room\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/no-power-in-one-room\//);
+  assert.match(html, /First: what exactly lost power\?/);
+  assert.match(html, /Is the whole room out—or only part of it\?/);
+  assert.match(html, /Could a GFCI elsewhere have shut off the room\?/);
+  assert.match(html, /Do not power the room with extension cords/);
+  assert.match(html, /Keep every check outside electrical boxes/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /src="\/images\/no-power-one-room-diagnostic-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/no-power-one-room-diagnostic-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  for (const path of ["/electrical/circuit-breaker-keeps-tripping", "/electrical/circuit-breaker-wont-reset"]) {
+    const reciprocal = await render(path);
+    assert.match(await reciprocal.text(), /href="\/electrical\/no-power-in-one-room\/"/, path);
+  }
+});
