@@ -9097,7 +9097,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-10-02",
-    "updated_date": "2026-10-02",
+    "updated_date": "2026-10-03",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -9139,7 +9139,8 @@
       "circuit-breaker-keeps-tripping",
       "circuit-breaker-wont-reset",
       "outlet-warm",
-      "outlet-buzzing"
+      "outlet-buzzing",
+      "one-outlet-has-no-power"
     ],
     "image": {
       "src": "/images/no-power-one-room-diagnostic-patterns.webp",
@@ -9289,8 +9290,14 @@
         "heading": "What if only one outlet has no power?",
         "paragraphs": [
           "A single dead receptacle is narrower than the symptom this page owns. First confirm that lights and other receptacles in the room work, check whether a wall switch controls it, and note whether an accessible GFCI has tripped. Do not insert tools, remove the cover plate, or open the box.",
-          "If just one receptacle remains dead, is loose, warm, discolored, damaged, or makes noise, leave it unused and have it evaluated. A future one-outlet guide can own that narrower search intent; this page remains focused on multiple loads in one perceived room or area."
-        ]
+          "If just one receptacle remains dead, is loose, warm, discolored, damaged, or makes noise, leave it unused and have it evaluated. This page remains focused on multiple loads in one perceived room or area."
+        ],
+        "link": {
+          "before": "When nearby lights and outlets still work, use ",
+          "label": "Why Does One Outlet Have No Power?",
+          "href": "/electrical/one-outlet-has-no-power/",
+          "after": " to check the device, both halves of the receptacle, wall-switch state, accessible GFCIs, and breaker state without opening the box."
+        }
       },
       {
         "id": "extension-cords",
@@ -9388,6 +9395,300 @@
         "title": "Appliance and Electrical Fire Safety",
         "publisher": "U.S. Fire Administration",
         "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
+      }
+    ]
+  },
+  {
+    "title": "Why Does One Outlet Have No Power?",
+    "slug": "one-outlet-has-no-power",
+    "description": "One outlet has no power while the rest of the room works? Check the device, both receptacle halves, wall switches, GFCIs, and breaker state safely.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": [
+      "electrical-behavior"
+    ],
+    "room_or_location": [
+      "whole-house"
+    ],
+    "system": "electrical",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-03",
+    "updated_date": "2026-10-03",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 10,
+    "featured_status": true,
+    "search_keywords": [
+      "why does one outlet have no power",
+      "one outlet has no power",
+      "one outlet not working",
+      "one electrical outlet not working",
+      "dead outlet",
+      "one receptacle not working",
+      "outlet stopped working",
+      "outlet dead but breaker not tripped",
+      "one outlet dead rest work",
+      "half outlet not working",
+      "top outlet works bottom doesn't",
+      "bottom outlet works top doesn't",
+      "outlet controlled by switch",
+      "outlet no power GFCI"
+    ],
+    "target_search_intent": "Help a homeowner safely narrow why one receptacle appears dead while nearby loads still work by checking the plugged-in device, both halves of the duplex receptacle, ordinary wall-switch state, accessible upstream GFCI protection, breaker state, outage scope, and visible warning signs without opening electrical equipment.",
+    "direct_answer": "If one outlet has no power while nearby lights and receptacles still work, first confirm the plugged-in device works elsewhere and check whether both plug-in positions are dead. One half may be wall-switch controlled, an accessible GFCI elsewhere may protect the outlet, or a breaker or circuit condition may be involved. A failed receptacle or open connection is also possible, but the dead outlet does not identify the fault location. Keep every check to normal user controls and visible conditions; stop for heat, burning odor, buzzing, sparking, smoke, discoloration, damage, or moisture.",
+    "likely_causes": [
+      "A failed lamp, appliance, charger, or other plugged-in device",
+      "A wall switch controlling the receptacle or one half of it",
+      "An upstream GFCI receptacle or GFCI breaker that opened",
+      "A tripped breaker or another branch-circuit protection condition",
+      "A damaged or failed receptacle",
+      "An open or loose circuit connection requiring electrical diagnosis"
+    ],
+    "safe_checks": [
+      "Confirm the plugged-in device works at a known-working outlet only when the device and cord are cool, dry, intact, and free of warning signs.",
+      "Determine whether both plug-in positions are dead or only the top or bottom position.",
+      "Operate normal room wall switches and observe whether the receptacle changes state.",
+      "Check which nearby lights and receptacles still work to define whether the symptom is truly limited to one outlet.",
+      "Inspect accessible GFCI receptacles and use only normal TEST or RESET controls according to their instructions when everything is dry and undamaged.",
+      "Observe normal breaker handles and visible labels without removing the panel cover.",
+      "Look and listen from a safe distance for heat, odor, buzzing, crackling, sparking, smoke, discoloration, damage, or moisture."
+    ],
+    "professional_help": "Call a qualified electrician when one outlet remains dead after safe non-invasive checks, only one half is unexpectedly dead, power comes and goes, an accessible GFCI or breaker will not reset normally, other loads begin failing, or a receptacle or circuit connection may be damaged. Stop ordinary checking for heat, burning odor, buzzing, crackling, sparking, smoke, melting, discoloration, physical damage, or moisture. For active fire, smoke, or arcing, move away and call emergency services; never use water on energized electrical equipment.",
+    "related_articles": [
+      "no-power-in-one-room",
+      "circuit-breaker-keeps-tripping",
+      "circuit-breaker-wont-reset",
+      "outlet-warm",
+      "outlet-buzzing"
+    ],
+    "image": {
+      "src": "/images/one-dead-outlet-diagnostic-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing one dead receptacle, a half-switched duplex outlet, an upstream GFCI possibility, and electrical warning signs.",
+      "caption": "Conceptual illustration: A single dead outlet can reflect a device, switch, protective device, receptacle, or circuit condition. The panels show diagnostic patterns, not a wiring diagram or a proven hidden fault.",
+      "kind": "conceptual",
+      "after_section": "whole-or-half"
+    },
+    "body_sections": [
+      {
+        "id": "device-or-outlet",
+        "heading": "First: make sure the outlet is actually the problem",
+        "paragraphs": [
+          "A lamp, charger, power strip, or appliance can fail while the receptacle remains energized. Before treating the wiring as the cause, try a simple known-working device in the suspect outlet, or try the original device at a known-working outlet. Do this only when the device, cord, plug, and receptacle are cool, dry, intact, and free of odor, noise, discoloration, or damage.",
+          "This is a device-versus-outlet check, not an invitation to reproduce a fault. Do not move a hot, sparking, smoking, wet, damaged, or suspicious appliance. Do not repeatedly plug and unplug equipment from a receptacle that appears loose or damaged."
+        ],
+        "callout": {
+          "title": "Stop before checking if warning signs are present",
+          "text": "Do not touch or operate a receptacle, switch, GFCI, plug, or panel that is hot, wet, discolored, melted, buzzing, crackling, sparking, smoking, or giving off a burning odor. Move away from active fire, smoke, or arcing and call emergency services. Never use water on an electrical fire."
+        }
+      },
+      {
+        "id": "whole-or-half",
+        "heading": "Is the whole receptacle dead—or only one half?",
+        "paragraphs": [
+          "A typical duplex receptacle has two plug-in positions. Check the top and bottom separately with the same known-working low-demand device. If both are dead, a switch, GFCI, breaker, receptacle, or circuit interruption could be involved. If only one half is dead, an intentional split or switched configuration becomes possible—but so do a damaged receptacle or connection problem.",
+          "Manufacturers make duplex receptacles that can be configured as a common feed or a split feed. In some homes, a wall switch controls only one half for a lamp while the other half remains continuously energized. The face of the receptacle does not reveal how it was wired, so do not remove the cover or inspect the break-off tab."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What it makes worth checking"
+          ],
+          "rows": [
+            [
+              "The device fails here but works elsewhere",
+              "The outlet or its circuit path becomes more relevant"
+            ],
+            [
+              "Both halves are dead",
+              "Switch, upstream GFCI, breaker, receptacle, or circuit interruption"
+            ],
+            [
+              "Only one half is dead",
+              "Possible switched or split configuration, device damage, or connection problem"
+            ],
+            [
+              "A wall switch changes the dead half",
+              "An intentional switched receptacle is more likely"
+            ],
+            [
+              "Other nearby lights or outlets are also dead",
+              "The symptom is broader than one receptacle"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "wall-switch",
+        "heading": "Could a wall switch control the outlet?",
+        "paragraphs": [
+          "Operate the room's ordinary wall switches and observe the receptacle with a known-working lamp. A switch may control the entire receptacle or only one half. This arrangement is common enough to check, but not universal; an unexplained wall switch is not proof that it controls the outlet.",
+          "Stop if the switch or receptacle is warm, noisy, loose, damaged, wet, or discolored. Do not remove a wall plate, pull the receptacle from the box, inspect terminal tabs, or alter wiring to test the theory."
+        ]
+      },
+      {
+        "id": "upstream-gfci",
+        "heading": "Could a GFCI somewhere else have tripped?",
+        "paragraphs": [
+          "Yes. CPSC guidance explains that a receptacle-type ground-fault circuit interrupter can protect its own face or a series of receptacles on the same branch circuit. That means an ordinary-looking dead outlet can be downstream from a GFCI located elsewhere, including another room. A GFCI breaker can protect the branch circuit from the panel.",
+          "Look only at accessible GFCI receptacles in bathrooms, kitchens, garages, basements, laundry or utility areas, outdoors, and other places where protection may be installed. Location requirements and layouts vary by home and installation age; there is no reliable rule that the controlling GFCI must be the nearest one.",
+          "Use only normal accessible TEST and RESET controls according to the device instructions, and only when the device and surrounding area are dry, cool, intact, and free of electrical warning signs. If the GFCI will not reset, trips again, lacks power, or shows an unfamiliar status light, leave it alone. That is the separate GFCI-reset intent and may require an electrician."
+        ],
+        "callout": {
+          "title": "Do not bypass protection",
+          "text": "A GFCI may have opened because of a fault or moisture condition. Do not replace it with an ordinary receptacle, defeat the TEST/RESET mechanism, swap line and load wiring, or move equipment to an unprotected outlet simply to restore power."
+        }
+      },
+      {
+        "id": "breaker",
+        "heading": "Could a circuit breaker be involved?",
+        "paragraphs": [
+          "Nearby receptacles can be on different branch circuits, so one working outlet does not rule out a tripped breaker serving the dead one. From the normal accessible panel face, read visible labels and look for a handle in OFF or between ON and OFF. A tripped handle may not look fully off, and a room label may not accurately describe every outlet it serves.",
+          "If there is no heat, odor, noise, damage, or moisture and the manufacturer permits normal homeowner operation, a common breaker reset requires moving the handle fully to OFF before returning it to ON. Touch only the normal handle. Never remove the dead front or panel cover, and do not stand on a wet surface or use wet hands."
+        ],
+        "links": [
+          {
+            "before": "If the breaker opens again or keeps tripping, use ",
+            "label": "Why Does My Circuit Breaker Keep Tripping?",
+            "href": "/electrical/circuit-breaker-keeps-tripping/",
+            "after": " and stop cycling the handle."
+          },
+          {
+            "before": "If the breaker will not return to and stay in the normal ON position, use ",
+            "label": "Why Won’t My Circuit Breaker Reset?",
+            "href": "/electrical/circuit-breaker-wont-reset/",
+            "after": " rather than forcing it."
+          }
+        ]
+      },
+      {
+        "id": "breaker-looks-normal",
+        "heading": "What if the breaker looks normal?",
+        "paragraphs": [
+          "A normal-looking breaker does not prove the receptacle itself failed. After checking the device, both halves, ordinary wall switches, accessible GFCIs, and the outage scope, the remaining possibilities can include receptacle damage, an open or loose connection, an upstream interruption, or another circuit or protective-device condition.",
+          "The visible dead outlet may be where the loss becomes noticeable rather than where the circuit opened. Physical distance is not a dependable map of electrical order, and the first dead outlet you find is not automatically the bad connection. Locating an open circuit requires controlled de-energization, testing, and access that belong with a qualified electrician."
+        ]
+      },
+      {
+        "id": "receptacle-or-connection",
+        "heading": "Could the outlet itself—or a connection—have failed?",
+        "paragraphs": [
+          "Receptacles can wear, crack, overheat, or fail, and an electrical connection can loosen or deteriorate. Either category can interrupt power. Visible cracking, a receptacle that moves in the wall, a plug that no longer fits snugly, darkening, melting, or intermittent power makes device damage more concerning, but appearance cannot identify the internal fault.",
+          "A loose or open connection at another device or splice can also interrupt power to a downstream receptacle. Do not search for it by pulling devices from boxes, inspecting push-in or terminal connections, tightening screws, opening junction boxes, tracing conductors, or probing slots with a meter. A licensed electrician can make the circuit safe and test the actual path."
+        ]
+      },
+      {
+        "id": "broader-outage",
+        "heading": "What if other outlets or lights are dead too?",
+        "paragraphs": [
+          "Expand the map beyond the receptacle. If several outlets, ceiling lights, or built-in loads are out, the problem no longer fits a one-outlet symptom. Check the adjacent room or hallway as well: branch circuits can cross room boundaries, and one room can use more than one circuit.",
+          "Do not run permanent loads through extension cords from a working room. Extension cords are temporary products, not replacement wiring, and they can shift demand onto another circuit without correcting the outage."
+        ],
+        "link": {
+          "before": "When multiple loads in one perceived room or area have lost power, use ",
+          "label": "Why Is There No Power in One Room?",
+          "href": "/electrical/no-power-in-one-room/",
+          "after": " to map the wider outage safely."
+        }
+      },
+      {
+        "id": "warning-signs",
+        "heading": "What if the dead outlet is warm, buzzing, or damaged?",
+        "paragraphs": [
+          "Abnormal warmth or heat, burning or melting odor, buzzing, humming, sizzling, crackling, discoloration, loose plug fit, visible sparking, smoke, or melted material means ordinary checking stops. Do not plug in a tester, reproduce the noise, remove the plate, or touch a hot or damaged device. Leave the outlet unused and arrange prompt electrical evaluation.",
+          "If water or moisture has reached the receptacle or surrounding wall, do not touch it, plug anything in, reset protection, or try to dry it with a hair dryer. Do not approach a panel or device while standing in water. Water-damaged electrical equipment requires qualified evaluation before reuse, even after the surface appears dry."
+        ],
+        "links": [
+          {
+            "before": "For abnormal receptacle heat, follow the stop-use guidance in ",
+            "label": "Why Is My Outlet Warm?",
+            "href": "/electrical/outlet-warm/",
+            "after": "."
+          },
+          {
+            "before": "For buzzing, crackling, or sizzling at the device, use ",
+            "label": "Why Does My Outlet Buzz?",
+            "href": "/electrical/outlet-buzzing/",
+            "after": " without opening the box."
+          }
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Verify a cool, dry, undamaged plugged-in device works at a known-working receptacle.",
+          "Check the top and bottom plug-in positions with one known-working low-demand device.",
+          "Operate normal room wall switches and observe whether the outlet changes state.",
+          "Map which nearby lights and receptacles still work, including adjacent spaces.",
+          "Inspect accessible GFCI faces and use only normal controls according to the device instructions.",
+          "Observe accessible breaker handles and labels without removing the panel cover.",
+          "Record what happened before power was lost and whether the outage is intermittent.",
+          "Observe heat, odor, noise, sparking, smoke, discoloration, physical damage, or moisture from a safe distance."
+        ],
+        "callout": {
+          "title": "Keep every check outside electrical boxes",
+          "text": "Do not remove the receptacle or faceplate, open the box, touch conductors, tighten terminals, inspect push-in connections, open junction boxes, trace energized wiring, probe with a meter, replace the receptacle as an experiment, remove the panel cover, replace or upsize a breaker, bypass AFCI/GFCI protection, or repeatedly recreate the failure."
+        }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": [
+          "Arrange a qualified electrician when the outlet remains dead after the safe checks above; only one half is unexpectedly dead; power repeatedly disappears and returns; no accessible switch, GFCI, or breaker explains the condition; another load begins failing; a breaker or GFCI will not reset normally; or receptacle, wiring, or connection damage is possible. The electrician can de-energize, identify the circuit, test the receptacle and protective devices, and locate an open connection without guessing from the room layout.",
+          "Use faster escalation for heat, burning odor, buzzing, crackling, discoloration, melting, visible sparking, smoke, physical damage, or moisture exposure. For active flame, smoke, arcing, or a fire in the wall, move away and call emergency services. Shut power off only if a normal disconnect can be reached without entering the hazard area, and never use water on energized equipment."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "One dead outlet does not prove the receptacle itself failed. First separate a failed device from a dead receptacle, check both halves, try normal wall-switch positions, inspect accessible GFCIs and breaker handles, and map whether any other loads are out. Those observations narrow the problem but do not reveal a hidden connection or wiring fault.",
+          "Keep the receptacle and panel closed. If normal accessible checks do not explain the loss, if protection will not reset or opens again, or if there is heat, odor, noise, damage, sparking, smoke, or moisture, stop and use a qualified electrician."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CPSC Guide to Home Wiring Hazards",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/s3fs-public/518.pdf"
+      },
+      {
+        "title": "GFCI Fact Sheet",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/safety-education/safety-guides/electronics-and-electrical-home/gfci-fact-sheet"
+      },
+      {
+        "title": "Understanding Your Home Electrical System",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/understanding-your-home-electrical-system"
+      },
+      {
+        "title": "How to Use GFCIs",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/how-to-use-gfcis/"
+      },
+      {
+        "title": "Water-Damaged Electrical Equipment",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/water-damaged-electrical-equipment/"
+      },
+      {
+        "title": "Duplex Receptacle Common-Feed and Split-Feed Instructions",
+        "publisher": "Leviton",
+        "url": "https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/instruction_sheet/LC_DOC_INST_DUPLEX%20RECEPTACLE.pdf"
+      },
+      {
+        "title": "Appliance and Electrical Fire Safety",
+        "publisher": "U.S. Fire Administration",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
+      },
+      {
+        "title": "8 Signs You May Have a Problem with Your Electrical Wiring",
+        "publisher": "UL Solutions",
+        "url": "https://www.ul.com/insights/8-signs-you-may-have-problem-your-electrical-wiring"
       }
     ]
   }

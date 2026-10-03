@@ -898,3 +898,30 @@ test("one-room power-loss guide renders scope mapping, safety, schema, visual, a
     assert.match(await reciprocal.text(), /href="\/electrical\/no-power-in-one-room\/"/, path);
   }
 });
+
+test("one-outlet power-loss guide renders switch, GFCI, breaker, safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/one-outlet-has-no-power");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does One Outlet Have No Power\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/one-outlet-has-no-power\//);
+  assert.match(html, /First: make sure the outlet is actually the problem/);
+  assert.match(html, /Is the whole receptacle dead—or only one half\?/);
+  assert.match(html, /Could a GFCI somewhere else have tripped\?/);
+  assert.match(html, /What if the breaker looks normal\?/);
+  assert.match(html, /Keep every check outside electrical boxes/);
+  assert.match(html, /href="\/electrical\/no-power-in-one-room\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /src="\/images\/one-dead-outlet-diagnostic-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/one-dead-outlet-diagnostic-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/no-power-in-one-room");
+  assert.match(await reciprocal.text(), /href="\/electrical\/one-outlet-has-no-power\/"/);
+});

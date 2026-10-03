@@ -707,3 +707,29 @@ test("one-room power-loss Finder and search preserve narrower and broader outage
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-room-no-power"), location);
   }
 });
+
+test("one-outlet power-loss Finder and search preserve broader outage and neighboring electrical intents", () => {
+  const positives = [
+    "why does one outlet have no power",
+    "one outlet has no power",
+    "one outlet not working",
+    "one electrical outlet not working",
+    "dead outlet",
+    "one receptacle not working",
+    "outlet stopped working",
+    "outlet dead but breaker not tripped",
+    "one outlet dead rest work",
+    "half outlet not working",
+    "top outlet works bottom doesn't",
+    "outlet controlled by switch",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "one-outlet-has-no-power", query);
+  for (const query of ["no power in one room", "breaker keeps tripping", "breaker won't reset", "GFCI outlet won't reset", "outlet warm", "outlet buzzing", "half the house has no power", "whole house has no power"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "one-outlet-has-no-power", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "one-outlet-no-power"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "one-outlet-no-power")[0]?.article.slug, "one-outlet-has-no-power");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-outlet-no-power"), location);
+  }
+});
