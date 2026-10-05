@@ -733,3 +733,28 @@ test("one-outlet power-loss Finder and search preserve broader outage and neighb
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "one-outlet-no-power"), location);
   }
 });
+
+test("GFCI reset Finder and search preserve breaker, outage, warning, and later-trip intents", () => {
+  const positives = [
+    "why won't my GFCI outlet reset",
+    "GFCI outlet won't reset",
+    "GFCI will not reset",
+    "GFCI won't stay reset",
+    "GFCI reset button won't stay in",
+    "GFCI immediately trips after reset",
+    "GFCI outlet has no power and won't reset",
+    "bathroom GFCI won't reset",
+    "kitchen GFCI won't reset",
+    "garage GFCI won't reset",
+    "GFCI reset button won't latch",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "gfci-outlet-wont-reset", query);
+  for (const query of ["GFCI outlet keeps tripping later", "GFCI breaker won't reset", "one outlet has no power", "no power in one room", "breaker won't reset", "breaker keeps tripping", "outlet warm", "outlet buzzing"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "gfci-outlet-wont-reset", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "gfci-wont-reset"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "gfci-wont-reset")[0]?.article.slug, "gfci-outlet-wont-reset");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "gfci-wont-reset"), location);
+  }
+});

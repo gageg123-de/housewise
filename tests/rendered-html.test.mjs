@@ -925,3 +925,29 @@ test("one-outlet power-loss guide renders switch, GFCI, breaker, safety, schema,
   const reciprocal = await render("/electrical/no-power-in-one-room");
   assert.match(await reciprocal.text(), /href="\/electrical\/one-outlet-has-no-power\/"/);
 });
+
+test("GFCI reset guide renders reset patterns, product caveats, electrical safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/gfci-outlet-wont-reset");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Won’t My GFCI Outlet Reset\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/gfci-outlet-wont-reset\//);
+  assert.match(html, /What exactly happens when you press RESET\?/);
+  assert.match(html, /Could the GFCI have no incoming power\?/);
+  assert.match(html, /TEST and RESET answer different questions/);
+  assert.match(html, /What do status lights and self-test features mean\?/);
+  assert.match(html, /Do not turn reset failure into live electrical work/);
+  assert.match(html, /href="\/electrical\/one-outlet-has-no-power\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /src="\/images\/gfci-wont-reset-diagnostic-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/gfci-wont-reset-diagnostic-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/one-outlet-has-no-power");
+  assert.match(await reciprocal.text(), /href="\/electrical\/gfci-outlet-wont-reset\/"/);
+});

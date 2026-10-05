@@ -9413,7 +9413,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-10-03",
-    "updated_date": "2026-10-03",
+    "updated_date": "2026-10-04",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -9456,6 +9456,7 @@
     "professional_help": "Call a qualified electrician when one outlet remains dead after safe non-invasive checks, only one half is unexpectedly dead, power comes and goes, an accessible GFCI or breaker will not reset normally, other loads begin failing, or a receptacle or circuit connection may be damaged. Stop ordinary checking for heat, burning odor, buzzing, crackling, sparking, smoke, melting, discoloration, physical damage, or moisture. For active fire, smoke, or arcing, move away and call emergency services; never use water on energized electrical equipment.",
     "related_articles": [
       "no-power-in-one-room",
+      "gfci-outlet-wont-reset",
       "circuit-breaker-keeps-tripping",
       "circuit-breaker-wont-reset",
       "outlet-warm",
@@ -9533,8 +9534,14 @@
         "paragraphs": [
           "Yes. CPSC guidance explains that a receptacle-type ground-fault circuit interrupter can protect its own face or a series of receptacles on the same branch circuit. That means an ordinary-looking dead outlet can be downstream from a GFCI located elsewhere, including another room. A GFCI breaker can protect the branch circuit from the panel.",
           "Look only at accessible GFCI receptacles in bathrooms, kitchens, garages, basements, laundry or utility areas, outdoors, and other places where protection may be installed. Location requirements and layouts vary by home and installation age; there is no reliable rule that the controlling GFCI must be the nearest one.",
-          "Use only normal accessible TEST and RESET controls according to the device instructions, and only when the device and surrounding area are dry, cool, intact, and free of electrical warning signs. If the GFCI will not reset, trips again, lacks power, or shows an unfamiliar status light, leave it alone. That is the separate GFCI-reset intent and may require an electrician."
+        "Use only normal accessible TEST and RESET controls according to the device instructions, and only when the device and surrounding area are dry, cool, intact, and free of electrical warning signs. If the GFCI will not reset, trips again, lacks power, or shows an unfamiliar status light, leave it alone. That reset behavior may reflect missing incoming power, a continuing protected-circuit condition, moisture, or a device-specific lockout—not necessarily a failed receptacle."
         ],
+      "link": {
+        "before": "If the receptacle-type GFCI will not latch or immediately releases again, use ",
+        "label": "Why Won’t My GFCI Outlet Reset?",
+        "href": "/electrical/gfci-outlet-wont-reset/",
+        "after": " for the safe reset-pattern checks."
+      },
         "callout": {
           "title": "Do not bypass protection",
           "text": "A GFCI may have opened because of a fault or moisture condition. Do not replace it with an ordinary receptacle, defeat the TEST/RESET mechanism, swap line and load wiring, or move equipment to an unprotected outlet simply to restore power."
@@ -9689,6 +9696,336 @@
         "title": "8 Signs You May Have a Problem with Your Electrical Wiring",
         "publisher": "UL Solutions",
         "url": "https://www.ul.com/insights/8-signs-you-may-have-problem-your-electrical-wiring"
+      }
+    ]
+  },
+  {
+    "title": "Why Won’t My GFCI Outlet Reset?",
+    "slug": "gfci-outlet-wont-reset",
+    "description": "GFCI outlet won’t reset? Learn how incoming power, immediate retripping, connected loads, moisture, and device status can narrow the problem safely.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": [
+      "electrical-behavior"
+    ],
+    "room_or_location": [
+      "whole-house"
+    ],
+    "system": "electrical",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-04",
+    "updated_date": "2026-10-04",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why won't my GFCI outlet reset",
+      "GFCI outlet won't reset",
+      "GFCI will not reset",
+      "GFCI won't stay reset",
+      "GFCI reset button won't stay in",
+      "GFCI immediately trips after reset",
+      "GFCI outlet has no power and won't reset",
+      "bathroom GFCI won't reset",
+      "kitchen GFCI won't reset",
+      "garage GFCI won't reset",
+      "GFCI reset button does nothing",
+      "GFCI outlet won't latch"
+    ],
+    "target_search_intent": "Help a homeowner safely narrow why a receptacle-type GFCI will not engage, latch, stay reset, or immediately releases during a reset attempt by checking incoming power, accessible breaker state, connected loads, downstream scope, moisture, device-specific status, and warning signs without opening electrical equipment.",
+    "direct_answer": "A GFCI outlet may refuse to reset because it has no incoming power, a ground-fault or other protected-circuit condition is still present, connected or downstream equipment is involved, moisture has affected the circuit, or the device has reached a condition in which its design prevents reset. The reset pattern narrows the possibilities, but it does not identify the exact fault. Use only the normal TEST and RESET buttons on a dry, intact device. If it immediately releases again, stays dead after accessible breaker checks, or shows heat, odor, buzzing, sparking, smoke, damage, or moisture, stop and call a qualified electrician.",
+    "likely_causes": [
+      "Missing incoming power because a breaker or upstream protective device is open",
+      "A continuing ground-fault or other protected-circuit condition",
+      "A fault or leakage condition involving connected or downstream equipment",
+      "Moisture affecting the receptacle, equipment, or protected circuit",
+      "Device-specific self-test, end-of-life, or reset-lockout behavior",
+      "A damaged or failed GFCI receptacle or another circuit problem requiring diagnosis"
+    ],
+    "safe_checks": [
+      "Confirm the device is a receptacle-type GFCI rather than a GFCI breaker in the panel.",
+      "Read visible face markings and the manufacturer instructions without removing the faceplate or device.",
+      "Observe whether the RESET button will not engage, engages and immediately releases, or stays reset only until a load operates.",
+      "Unplug ordinary portable loads from the GFCI and clearly associated downstream receptacles only when everything is cool, dry, intact, and free of warning signs.",
+      "Observe normal accessible breaker handles without removing the panel cover.",
+      "Map which receptacles or loads lost power without opening boxes or tracing energized wiring.",
+      "Stop for heat, burning odor, buzzing, crackling, sparking, smoke, discoloration, damage, or moisture."
+    ],
+    "professional_help": "Call a qualified electrician when the GFCI will not reset after safe non-invasive checks, immediately releases again, has no incoming power that can be explained by a normal accessible breaker state, repeatedly loses power, shows an unfamiliar persistent status indication, or may involve a downstream fault, wiring problem, moisture, or device failure. Stop ordinary checking immediately for heat, burning odor, buzzing, crackling, sparking, smoke, melting, discoloration, physical damage, or water exposure. For active fire, smoke, or arcing, move away and call emergency services; never use water on energized electrical equipment.",
+    "related_articles": [
+      "one-outlet-has-no-power",
+      "no-power-in-one-room",
+      "circuit-breaker-wont-reset",
+      "circuit-breaker-keeps-tripping",
+      "outlet-warm",
+      "outlet-buzzing"
+    ],
+    "image": {
+      "src": "/images/gfci-wont-reset-diagnostic-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing an intact GFCI receptacle, missing incoming power, immediate reset release with connected loads, and moisture or heat warning signs.",
+      "caption": "Conceptual illustration: A GFCI that will not reset can reflect missing power, a continuing protected-circuit condition, a connected load, moisture, or device behavior. The panels do not show wiring or prove a hidden fault.",
+      "kind": "conceptual",
+      "after_section": "reset-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "warning-first",
+        "heading": "First: check for warning signs before touching RESET",
+        "paragraphs": [
+          "Do not operate a GFCI receptacle that is hot, wet, cracked, discolored, melted, buzzing, crackling, sparking, smoking, or giving off a burning odor. Do not touch a device while standing in water or with wet hands. Those conditions move the problem out of ordinary button-level troubleshooting and into qualified electrical evaluation.",
+          "For active smoke, flame, or arcing, move away and call emergency services. Never use water on energized electrical equipment. If water has reached a receptacle or electrical system, the fact that the surface later looks dry does not establish that the equipment is safe to reenergize."
+        ],
+        "callout": {
+          "title": "Keep the device and panel closed",
+          "text": "Every homeowner check in this guide uses normal accessible buttons, plugs, and breaker handles only. Do not remove the faceplate, pull the GFCI from its box, inspect LINE or LOAD terminals, touch wiring, probe energized slots, remove the panel cover, or replace the device as a diagnostic experiment."
+        }
+      },
+      {
+        "id": "reset-pattern",
+        "heading": "What exactly happens when you press RESET?",
+        "paragraphs": [
+          "The phrase “won’t reset” can describe several different patterns. Observe the normal button once, according to the device instructions, only if the receptacle is dry, intact, cool, and free of warning signs. Do not keep pressing harder or cycling the buttons to force a result.",
+          "A GFCI is a protective device, not just an outlet with a stubborn button. It compares current leaving and returning through the protected conductors and opens the circuit when it detects the type of imbalance it is designed to address. Modern products may also monitor their ability to provide protection. The visible reset behavior is a clue to the state of that protection, not a diagnosis of the hidden cause."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What becomes worth checking"
+          ],
+          "rows": [
+            [
+              "RESET will not engage or latch",
+              "Incoming power, device-specific lockout, or device/circuit condition"
+            ],
+            [
+              "RESET engages and immediately releases",
+              "A continuing protected-circuit condition, connected load, moisture, or device issue"
+            ],
+            [
+              "RESET stays in until one load is used",
+              "That load and its relationship to the protected circuit"
+            ],
+            [
+              "RESET stays in, then trips later",
+              "A separate recurring-trip pattern rather than a reset failure"
+            ],
+            [
+              "TEST or status light behaves unexpectedly",
+              "The exact model instructions and professional evaluation"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "incoming-power",
+        "heading": "Could the GFCI have no incoming power?",
+        "paragraphs": [
+          "Yes. Many modern receptacle-type GFCIs are designed so they will not reset when they are not receiving line power, and some use reset-lockout behavior when they cannot provide protection. That is useful safety behavior, but it is product-specific: older devices and different manufacturers do not all respond or indicate status in the same way.",
+          "Missing power can result from a tripped breaker, an upstream GFCI or other protective device, a switched or interrupted circuit, or a wiring problem. A dead face does not prove the GFCI itself failed. Conversely, a button that will not latch does not prove there is no incoming power. The device design and circuit state both matter."
+        ],
+        "callout": {
+          "title": "No click is not a universal diagnosis",
+          "text": "Do not use button feel, a dark indicator light, or the absence of a click as proof of a specific fault. Status lights, audible clicks, and reset behavior vary by product and generation."
+        }
+      },
+      {
+        "id": "breaker-state",
+        "heading": "Check the normal breaker face—not the inside of the panel",
+        "paragraphs": [
+          "From the closed panel face, read visible labels and look for a breaker handle that is OFF or between ON and OFF. A receptacle-type GFCI needs incoming power to operate as designed, and nearby working outlets do not prove it shares their circuit. Physical room boundaries are not electrical circuit maps.",
+          "If there is no heat, odor, noise, damage, or moisture and the manufacturer permits normal operation, a common breaker reset requires moving the handle fully to OFF before returning it to ON. Touch only the normal accessible handle. If the breaker will not stay on, immediately retrips, or repeatedly trips later, stop cycling it and follow the breaker-specific guidance instead."
+        ],
+        "links": [
+          {
+            "before": "If the panel breaker will not return to and remain in its normal ON position, use ",
+            "label": "Why Won’t My Circuit Breaker Reset?",
+            "href": "/electrical/circuit-breaker-wont-reset/",
+            "after": "."
+          },
+          {
+            "before": "If it resets successfully but trips again later, use ",
+            "label": "Why Does My Circuit Breaker Keep Tripping?",
+            "href": "/electrical/circuit-breaker-keeps-tripping/",
+            "after": " and do not keep restoring power."
+          }
+        ]
+      },
+      {
+        "id": "test-versus-reset",
+        "heading": "TEST and RESET answer different questions",
+        "paragraphs": [
+          "The TEST button is intended to verify the GFCI’s protective function according to the product instructions; RESET returns the device to its normal energized state when the device and circuit permit it. They are not interchangeable general-purpose power buttons. A successful reset does not prove every downstream device or wiring connection is healthy, and a failed test does not tell a homeowner which hidden part is at fault.",
+          "On many designs, the built-in test function depends on incoming power. Some current self-testing products also monitor themselves automatically and use a light, sound, denied power, or reset lockout to signal a problem. Exact behavior varies, so use the instructions for the specific device rather than a generic sequence found online.",
+          "Do not repeatedly alternate TEST and RESET, press the buttons with a tool, or assume a stuck-looking button should be forced. If normal finger pressure on a dry, intact device does not produce the behavior described by its manufacturer, leave it out of service and arrange evaluation."
+        ]
+      },
+      {
+        "id": "immediate-retrip",
+        "heading": "What if RESET immediately releases again?",
+        "paragraphs": [
+          "An immediate release or retrip means the device did not remain in its normal reset state. A continuing ground-fault condition, connected equipment, a downstream circuit condition, moisture, the GFCI device itself, or another installation problem may be involved. The pattern is more important than guessing which category applies.",
+          "One immediate retrip is enough evidence to stop pressing RESET. Do not hold the button in, tape it, bypass the device, replace it with an ordinary receptacle, or transfer a suspect load to an unprotected location merely to keep it running. A GFCI can open for a reason that has nothing to do with circuit overload."
+        ],
+        "callout": {
+          "title": "Do not force a protective device to stay on",
+          "text": "A GFCI that immediately releases again is not an inconvenience to defeat. Leave the circuit or receptacle out of service until the cause can be evaluated safely."
+        }
+      },
+      {
+        "id": "connected-loads",
+        "heading": "Could a plugged-in device be involved?",
+        "paragraphs": [
+          "If the GFCI and surrounding area are dry, cool, intact, and free of warning signs, unplug ordinary portable loads from the GFCI face and from receptacles you already know are protected by it. Do not move or handle equipment that is wet, damaged, unusually hot, sparking, smoking, or giving off an odor. Do not dismantle a hardwired appliance.",
+          "If RESET then engages and remains set, one of the disconnected loads or its use conditions becomes relevant—but that does not prove the appliance alone is defective. The load may expose a circuit, moisture, or equipment problem. Leave the suspect item unplugged and have it and the circuit evaluated as appropriate rather than repeatedly reproducing the trip."
+        ]
+      },
+      {
+        "id": "downstream-protection",
+        "heading": "Could another outlet or load be downstream?",
+        "paragraphs": [
+          "A receptacle-type GFCI can protect additional receptacles connected downstream on the same branch circuit. A fault or moisture condition at one of those loads can therefore affect the GFCI you are trying to reset. The protected receptacle may be in another room, outdoors, or simply not the physically nearest device.",
+          "Map what lost power and what was operating, but do not remove outlets, open boxes, inspect LINE and LOAD terminals, or hunt for the first device by dismantling the circuit. The labels “upstream” and “downstream” describe electrical order, not distance across the floor plan."
+        ],
+        "link": {
+          "before": "If the main symptom is one ordinary receptacle with no power while the GFCI reset behavior is only a clue, use ",
+          "label": "Why Does One Outlet Have No Power?",
+          "href": "/electrical/one-outlet-has-no-power/",
+          "after": "."
+        }
+      },
+      {
+        "id": "moisture",
+        "heading": "What if moisture or outdoor weather is involved?",
+        "paragraphs": [
+          "GFCI protection is often used where electricity and moisture can meet, so water exposure deserves special weight. Rain, a plumbing leak, condensation, flooding, a wet appliance, or moisture inside outdoor equipment can create an unsafe condition even when the receptacle face looks normal. Do not assume that drying the visible surface removed the electrical risk.",
+          "Do not touch, reset, unplug, or dry wet electrical equipment with a towel, fan, or hair dryer. Do not approach the panel while standing in water. Water-damaged GFCIs, receptacles, and connected equipment require qualified evaluation before reuse."
+        ],
+        "callout": {
+          "title": "Water changes the troubleshooting boundary",
+          "text": "When moisture may have reached the device, box, wiring, or connected equipment, skip the reset attempt and call a qualified electrician. If flooding or active water makes the panel or disconnect unsafe to reach, stay away."
+        }
+      },
+      {
+        "id": "status-and-self-test",
+        "heading": "What do status lights and self-test features mean?",
+        "paragraphs": [
+          "Many current GFCIs perform an automatic self-test, and some deny power or prevent reset when they determine that protection is unavailable. Those features support safety, but the details are model-specific. One brand may use green for normal operation and red for a fault; another product may flash, remain dark, sound an alarm, or use a different sequence.",
+          "Read the exact manufacturer name, model markings, and instructions visible without removing the device. Do not apply an online LED chart from a different product. An unfamiliar persistent indication, failed TEST function, or instruction to replace the device is a reason for qualified service—not a reason to bypass protection."
+        ]
+      },
+      {
+        "id": "device-failure",
+        "heading": "Could the GFCI outlet itself be bad?",
+        "paragraphs": [
+          "Yes, a GFCI can be damaged, wear out, or reach an end-of-life or lockout condition. But “bad GFCI” should not be the automatic conclusion. No incoming power, a continuing protected-circuit condition, moisture, connected equipment, or a wiring problem can create similar reset behavior.",
+          "Replacing the receptacle is not a neutral diagnostic experiment. Correct device type, rating, listing, location requirements, circuit protection, terminal identification, and installation all matter. This guide does not provide GFCI replacement or LINE/LOAD wiring instructions; use a qualified electrician to distinguish device failure from a circuit problem."
+        ]
+      },
+      {
+        "id": "later-trip-boundary",
+        "heading": "What if it resets now but trips again later?",
+        "paragraphs": [
+          "A GFCI that successfully resets and stays on for a while presents a different pattern from one that will not engage or immediately releases. Note what load, weather, water use, or operating condition preceded the later trip, then leave suspect equipment unused rather than deliberately repeating the event.",
+          "This article owns reset failure. A future dedicated guide may cover a GFCI receptacle that keeps tripping after normal operation. Until then, recurring trips still warrant investigation and should not be dismissed as “nuisance tripping.”"
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Confirm that the device is a receptacle-type GFCI with accessible TEST and RESET buttons, not a GFCI breaker in the panel.",
+          "Read visible manufacturer and model markings and follow that device’s instructions.",
+          "Observe whether RESET never engages, immediately releases, or stays set until a load operates.",
+          "Check normal accessible breaker handles from the closed panel face.",
+          "Unplug ordinary portable loads only when the equipment and area are dry, cool, intact, and free of warning signs.",
+          "Map which known downstream receptacles or loads lost power without opening boxes.",
+          "Note whether rain, plumbing use, outdoor exposure, or another moisture event preceded the problem.",
+          "Stop for heat, odor, buzzing, crackling, sparking, smoke, discoloration, damage, or moisture."
+        ],
+        "callout": {
+          "title": "Do not turn reset failure into live electrical work",
+          "text": "Do not remove the faceplate or receptacle, open the box, inspect or swap LINE and LOAD conductors, tighten terminals, probe slots, use improvised testers, remove the panel cover, replace protection with an ordinary receptacle, or repeatedly reproduce the trip."
+        }
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": [
+          "Arrange qualified electrical evaluation when the GFCI will not reset after safe accessible checks; RESET immediately releases; the device has no apparent incoming power; the breaker or an upstream protective device will not remain on; connected or downstream equipment may be involved; status indications are unclear; moisture exposure occurred; or device, wiring, or installation failure is possible.",
+          "Use faster escalation for abnormal heat, burning odor, buzzing, crackling, discoloration, melting, visible sparking, smoke, physical damage, or water exposure. For active fire, smoke, or arcing, move away and call emergency services. Shut power off only if a normal disconnect can be reached without entering the hazard area."
+        ],
+        "links": [
+          {
+            "before": "If the receptacle is abnormally warm, follow ",
+            "label": "Why Is My Outlet Warm?",
+            "href": "/electrical/outlet-warm/",
+            "after": "."
+          },
+          {
+            "before": "If it buzzes, hums, sizzles, or crackles, use ",
+            "label": "Why Does My Outlet Buzz?",
+            "href": "/electrical/outlet-buzzing/",
+            "after": " without opening the box."
+          }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A GFCI outlet that will not reset may lack incoming power, may be responding to a continuing protected-circuit condition, may be affected by a connected or downstream load or moisture, or may have entered a device-specific lockout or failure state. The button pattern narrows the problem; it does not identify the exact fault.",
+          "Use only normal controls on a dry, intact device. Check the accessible breaker face, disconnect only safe ordinary portable loads, map what else lost power, and consult the exact product instructions. If RESET immediately releases, the device stays dead, moisture or warning signs are present, or the cause remains unclear, keep protection in place and call a qualified electrician."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "How to Use GFCIs",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/how-to-use-gfcis/"
+      },
+      {
+        "title": "Ground Fault Circuit Interrupters",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/program/ground-fault-circuit-interrupters/"
+      },
+      {
+        "title": "Water-Damaged Electrical Equipment",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/water-damaged-electrical-equipment/"
+      },
+      {
+        "title": "CPSC Guide to Home Wiring Hazards",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "url": "https://www.cpsc.gov/s3fs-public/518.pdf"
+      },
+      {
+        "title": "GFCI Personal Protection Devices Testing and Certification",
+        "publisher": "UL Solutions",
+        "url": "https://www.ul.com/services/gfci-personal-protection-devices-testing-and-certification"
+      },
+      {
+        "title": "What Is Reset/Lockout?",
+        "publisher": "Leviton",
+        "url": "https://leviton.com/support/resources/product-support/protection-devices-and-receptacles/gfci/what-is-reset-lockout"
+      },
+      {
+        "title": "What Does Auto-Monitoring or Self-Test Mean?",
+        "publisher": "Leviton",
+        "url": "https://leviton.com/support/resources/product-support/protection-devices-and-receptacles/gfci/what-does-auto-monitoring-or-self-test-mean"
+      },
+      {
+        "title": "Self-Test GFCI Receptacle Installing and Testing Instructions",
+        "publisher": "Eaton",
+        "url": "https://www.eaton.com/content/dam/eaton/products/wiring-devices-and-connectivity/wiring-devices/slim-gfci-receptacles/slim-gfci-installing-and-testing.pdf"
+      },
+      {
+        "title": "Appliance and Electrical Fire Safety",
+        "publisher": "U.S. Fire Administration",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
       }
     ]
   }

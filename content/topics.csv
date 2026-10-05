@@ -47,7 +47,8 @@ Whole house has no power,why does my whole house have no power,electrical,electr
 Breaker keeps tripping with nothing plugged in,breaker trips with nothing plugged in,electrical,electrical-behavior,whole-house,safety,planned,high,,No panel DIY
 Light switch feels loose,loose light switch,electrical,electrical-behavior,whole-house,safety,planned,medium,,Mechanical versus wiring concerns
 Ceiling light flickers,flickering ceiling light,electrical,electrical-behavior,living-area,diagnostic,planned,high,,Bulb/fixture/circuit differentiation
-GFCI will not reset,gfci outlet will not reset,electrical,electrical-behavior,bathroom,safety,planned,high,,Wet-location precautions
+GFCI will not reset,gfci outlet will not reset,electrical,electrical-behavior,whole-house,safety,published,high,/electrical/gfci-outlet-wont-reset/,Receptacle-type GFCI reset failure; distinguishes no incoming power immediate release connected or downstream loads moisture and product-specific lockout while preserving later recurring-trip intent
+GFCI outlet keeps tripping after reset,why does my gfci outlet keep tripping,electrical,electrical-behavior,whole-house,safety,planned,high,,Future recurring-trip intent for a receptacle GFCI that successfully resets and opens again later; distinct from failure to engage or immediate release during reset
 Doorbell transformer hums,doorbell transformer humming,electrical,noise,whole-house,diagnostic,planned,low,,Transformer normal versus fault
 Dishwasher smells bad,dishwasher smells bad,appliances,smell,kitchen,maintenance,planned,high,,Filter/drain cluster
 Dishwasher does not dry dishes,why is my dishwasher not drying dishes,appliances,appliance-behavior,kitchen,diagnostic,published,high,/appliances/dishwasher-not-drying-dishes/,Post-cycle drying performance; preserves cleaning draining leaking odor residue filling and noise intents
