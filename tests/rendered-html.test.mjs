@@ -938,6 +938,7 @@ test("GFCI reset guide renders reset patterns, product caveats, electrical safet
   assert.match(html, /What do status lights and self-test features mean\?/);
   assert.match(html, /Do not turn reset failure into live electrical work/);
   assert.match(html, /href="\/electrical\/one-outlet-has-no-power\/"/);
+  assert.match(html, /href="\/electrical\/gfci-outlet-keeps-tripping\/"/);
   assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
   assert.match(html, /href="\/electrical\/outlet-warm\/"/);
   assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
@@ -950,4 +951,30 @@ test("GFCI reset guide renders reset patterns, product caveats, electrical safet
 
   const reciprocal = await render("/electrical/one-outlet-has-no-power");
   assert.match(await reciprocal.text(), /href="\/electrical\/gfci-outlet-wont-reset\/"/);
+});
+
+test("recurring GFCI trip guide renders timing patterns, electrical safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/gfci-outlet-keeps-tripping");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My GFCI Outlet Keep Tripping\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/gfci-outlet-keeps-tripping\//);
+  assert.match(html, /When does the GFCI trip\?/);
+  assert.match(html, /Does it reset normally before it trips again\?/);
+  assert.match(html, /Why can it trip with nothing plugged into the GFCI\?/);
+  assert.match(html, /Keep every check non-invasive/);
+  assert.match(html, /href="\/electrical\/gfci-outlet-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/outlet-warm\/"/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /src="\/images\/gfci-keeps-tripping-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/gfci-keeps-tripping-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/gfci-outlet-wont-reset");
+  assert.match(await reciprocal.text(), /href="\/electrical\/gfci-outlet-keeps-tripping\/"/);
 });

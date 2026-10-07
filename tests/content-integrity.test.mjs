@@ -1460,7 +1460,7 @@ test("GFCI reset guide separates reset failure from later recurring trips withou
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("GFCI will not reset,"));
   assert.ok(article && oneOutlet);
   assert.equal(article.published_date, "2026-10-04");
-  assert.equal(article.updated_date, "2026-10-04");
+  assert.equal(article.updated_date, "2026-10-06");
   assert.equal(article.reviewed_date, null);
   assert.equal(article.primary_category, "electrical");
   assert.equal(article.content_type, "diagnostic-guide");
@@ -1480,6 +1480,8 @@ test("GFCI reset guide separates reset failure from later recurring trips withou
   assert.ok(article.sources.some((source) => source.publisher === "Leviton"));
   assert.ok(article.sources.some((source) => source.publisher === "Eaton"));
   assert.ok(oneOutlet.related_articles.includes(article.slug));
+  assert.ok(article.related_articles.includes("gfci-outlet-keeps-tripping"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/gfci-outlet-keeps-tripping/"));
   assert.ok(oneOutlet.body_sections.some((section) => section.link?.href === "/electrical/gfci-outlet-wont-reset/"));
   const body = JSON.stringify(article.body_sections);
   assert.match(body, /Many modern receptacle-type GFCIs/i);
@@ -1489,4 +1491,40 @@ test("GFCI reset guide separates reset failure from later recurring trips withou
   assert.match(body, /Do not remove the faceplate/i);
   assert.match(body, /Do not hold the button in, tape it, bypass the device/i);
   assert.doesNotMatch(body, /remove the (?:faceplate|receptacle) to (?:inspect|test)|replace the GFCI yourself|probe energized wiring to diagnose/i);
+});
+
+test("recurring GFCI trip guide uses timing, loads, downstream scope, and moisture without opening equipment", () => {
+  const article = registry.find((item) => item.slug === "gfci-outlet-keeps-tripping");
+  const reset = registry.find((item) => item.slug === "gfci-outlet-wont-reset");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("GFCI outlet keeps tripping,"));
+  assert.ok(article && reset);
+  assert.equal(article.published_date, "2026-10-06");
+  assert.equal(article.updated_date, "2026-10-06");
+  assert.equal(article.reviewed_date, null);
+  assert.equal(article.primary_category, "electrical");
+  assert.equal(article.content_type, "diagnostic-guide");
+  assert.ok(topic?.includes(",published,") && topic.includes("/electrical/gfci-outlet-keeps-tripping/"));
+  assert.ok(article.body_sections.some((section) => section.id === "trip-pattern" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "moisture-weather" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-observations" && section.callout));
+  assert.equal(article.image.src, "/images/gfci-keeps-tripping-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "Electrical Safety Foundation International"));
+  assert.ok(article.sources.some((source) => source.publisher === "UL Solutions"));
+  assert.ok(article.sources.some((source) => source.publisher === "Leviton"));
+  assert.ok(article.sources.some((source) => source.publisher === "Eaton"));
+  assert.ok(reset.related_articles.includes(article.slug));
+  assert.ok(reset.body_sections.some((section) => section.link?.href === "/electrical/gfci-outlet-keeps-tripping/"));
+  assert.ok(article.related_articles.includes(reset.slug));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/electrical/gfci-outlet-wont-reset/"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /does not automatically mean the receptacle GFCI tripped because the circuit drew too many amperes/i);
+  assert.match(body, /Nothing plugged into the visible face does not mean there is no load/i);
+  assert.match(body, /Downstream describes electrical order, not physical distance/i);
+  assert.match(body, /Do not keep resetting a GFCI that repeatedly trips/i);
+  assert.match(body, /Keep every check non-invasive/i);
+  assert.doesNotMatch(body, /remove the (?:faceplate|receptacle) to (?:inspect|test|trace)|replace the GFCI yourself|probe energized wiring to diagnose/i);
 });

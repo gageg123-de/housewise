@@ -758,3 +758,26 @@ test("GFCI reset Finder and search preserve breaker, outage, warning, and later-
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "gfci-wont-reset"), location);
   }
 });
+
+test("recurring GFCI trip Finder and search preserve reset-failure, breaker, outage, and warning intents", () => {
+  const positives = [
+    "why does my GFCI outlet keep tripping",
+    "GFCI outlet keeps tripping",
+    "GFCI keeps popping",
+    "GFCI trips after a while",
+    "GFCI trips randomly",
+    "GFCI trips when an appliance is plugged in",
+    "outdoor GFCI keeps tripping",
+    "GFCI keeps tripping when it rains",
+    "GFCI keeps tripping with nothing plugged in",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "gfci-outlet-keeps-tripping", query);
+  for (const query of ["GFCI outlet won't reset", "GFCI immediately trips after reset", "GFCI breaker keeps tripping", "one outlet has no power", "no power in one room", "breaker keeps tripping", "breaker won't reset", "outlet warm", "outlet buzzing"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "gfci-outlet-keeps-tripping", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "gfci-keeps-tripping"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "gfci-keeps-tripping")[0]?.article.slug, "gfci-outlet-keeps-tripping");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "gfci-keeps-tripping"), location);
+  }
+});
