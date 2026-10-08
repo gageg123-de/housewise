@@ -978,3 +978,32 @@ test("recurring GFCI trip guide renders timing patterns, electrical safety, sche
   const reciprocal = await render("/electrical/gfci-outlet-wont-reset");
   assert.match(await reciprocal.text(), /href="\/electrical\/gfci-outlet-keeps-tripping\/"/);
 });
+
+test("electrical-panel-buzzing guide renders claim audit, warning-first safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/electrical-panel-buzzing");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Electrical Panel Buzzing\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/electrical-panel-buzzing\//);
+  assert.match(html, /First: check for warning signs/);
+  assert.match(html, /Is a humming or buzzing electrical panel normal\?/);
+  assert.match(html, /Does the panel buzz when an appliance starts\?/);
+  assert.match(html, /What if the panel is crackling, sizzling, or popping\?/);
+  assert.match(html, /Keep the panel closed/);
+  assert.match(html, /href="\/electrical\/outlet-buzzing\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-randomly\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-when-appliance-turns-on\/"/);
+  assert.match(html, /href="\/electrical\/no-power-in-one-room\/"/);
+  assert.match(html, /href="\/electrical\/one-outlet-has-no-power\/"/);
+  assert.match(html, /src="\/images\/electrical-panel-buzzing-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/electrical-panel-buzzing-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/outlet-buzzing");
+  assert.match(await reciprocal.text(), /href="\/electrical\/electrical-panel-buzzing\/"/);
+});

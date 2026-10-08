@@ -2162,14 +2162,14 @@
   {
     "title": "Why Does My Outlet Buzz?", "slug": "outlet-buzzing", "description": "A buzz near an outlet may come from a plug-in device or the receptacle itself. Learn how to separate the source and when to stop using the outlet.",
     "primary_category": "electrical", "secondary_categories": [], "symptoms": ["noise", "electrical-behavior"], "room_or_location": ["whole-house"], "system": "electrical", "content_type": "safety-reference",
-    "published_date": "2026-09-04", "updated_date": "2026-09-30", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-09-04", "updated_date": "2026-10-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["why does my outlet buzz", "outlet buzzing", "electrical outlet buzzing", "outlet making buzzing noise", "wall outlet buzzing", "receptacle buzzing", "outlet humming", "buzzing sound from outlet", "outlet buzzes when something plugged in"],
     "target_search_intent": "Help a homeowner determine whether buzzing, humming, sizzling, or vibration near a receptacle comes from a plugged-in device or the outlet area, recognize poor-contact, wear, arcing, heat, and load warning patterns, and choose safe electrical or device support without opening the box.",
     "direct_answer": "A sound near an outlet does not always come from the receptacle. A plug-in power adapter, transformer, smart plug, surge protector, appliance, dimmer, or nearby device can produce or transmit a faint hum. But buzzing, sizzling, or crackling that appears to originate at the receptacle itself should not be ignored. Stop using it and arrange licensed-electrical evaluation, especially if the sound comes with warmth, burning odor, discoloration, a loose plug, intermittent power, sparks, or breaker trips. For active arcing, smoke, fire, or severe overheating, move away and use emergency help rather than touching or testing the outlet.",
     "likely_causes": ["Noise from a plug-in adapter or electronic device", "Loose receptacle wiring connection", "Worn or damaged receptacle contacts", "Electrical arcing at a poor or damaged connection", "Heavy load exposing an existing connection problem", "Loose plug or poor plug-to-receptacle fit", "Nearby dimmer switch transformer or electronic control", "GFCI AFCI USB or smart-receptacle electronics requiring model-specific evaluation"],
     "safe_checks": ["From a safe distance identify whether the sound is centered on the receptacle face the plug a power adapter or a nearby device.", "If there is no heat odor damage sparking or other warning sign turn the connected device off and unplug it by the plug to see whether the sound stops.", "Inspect the accessible plug cord and adapter externally for cracking darkening melting looseness or damage.", "Note whether the plug fits loosely or power cuts in and out without moving or wiggling it.", "Listen for a faint steady hum versus sharper buzzing crackling or sizzling without placing an ear against the outlet.", "Note whether the sound occurs only under load continues with nothing plugged in or appears with breaker trips flicker heat or odor.", "Leave the outlet unused and call an electrician when the receptacle appears to be the source.", "Do not remove the faceplate probe the slots pull the receptacle from the box or test live wiring."],
     "professional_help": "Use a licensed electrician for confirmed or suspected receptacle-origin buzzing, loose plug fit, worn or damaged receptacles, intermittent power, suspected arcing, heat, discoloration, repeated trips, or noise with nothing plugged in. Use the device manufacturer's support or an appropriate appliance/electronics technician when the sound clearly follows one undamaged adapter or device and the receptacle shows no warning signs. For active arcing, smoke, flame, severe overheating, or fire, keep away and call emergency services.",
-    "related_articles": ["outlet-warm", "lights-flicker-when-appliance-turns-on", "circuit-breaker-keeps-tripping"],
+    "related_articles": ["outlet-warm", "lights-flicker-when-appliance-turns-on", "circuit-breaker-keeps-tripping", "electrical-panel-buzzing"],
     "image": {
       "src": "/images/outlet-buzzing-source-check.webp",
       "width": 1536,
@@ -2286,7 +2286,10 @@
           { "heading": "Device manufacturer or appliance/electronics support", "paragraphs": ["Use model-specific support when the sound clearly follows one adapter, smart plug, surge protector, charger, or appliance and the outlet itself remains cool, intact, and quiet without it. Stop using the device rather than assuming the noise is harmless when it is new, loud, hot, damaged, or burned-smelling."] },
           { "heading": "Emergency services", "paragraphs": ["Use emergency help for active fire, smoke, visible sustained arcing, or severe overheating. Do not keep testing the outlet while deciding which component failed."] }
         ],
-        "link": { "before": "If the larger symptom is lights dimming or flickering when an appliance starts, compare that load pattern in ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": "." }
+        "links": [
+          { "before": "If the larger symptom is lights dimming or flickering when an appliance starts, compare that load pattern in ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": "." },
+          { "before": "If the sound is centered at the breaker box rather than a receptacle, use ", "label": "Why Is My Electrical Panel Buzzing?", "href": "/electrical/electrical-panel-buzzing/", "after": " and keep every observation outside the closed panel." }
+        ]
       }
     ],
     "sources": [
@@ -10384,6 +10387,138 @@
         "publisher": "U.S. Fire Administration",
         "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"
       }
+    ]
+  },
+  {
+    "title": "Why Is My Electrical Panel Buzzing?",
+    "slug": "electrical-panel-buzzing",
+    "description": "Electrical panel buzzing or humming? Use timing, load changes, breaker behavior, flickering, and warning signs to characterize the pattern safely.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": ["noise", "electrical-behavior"],
+    "room_or_location": ["whole-house"],
+    "system": "electrical",
+    "content_type": "safety-reference",
+    "published_date": "2026-10-08",
+    "updated_date": "2026-10-08",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": ["why is my electrical panel buzzing", "electrical panel buzzing", "breaker box buzzing", "breaker panel buzzing", "electrical panel humming", "breaker box humming", "breaker buzzing", "electrical panel making noise", "buzzing from electrical panel", "buzzing from breaker box", "electrical panel crackling", "electrical panel sizzling", "electrical panel popping", "panel buzzes when AC turns on", "panel buzzing intermittently"],
+    "target_search_intent": "Help a homeowner characterize an unfamiliar buzz, hum, vibration, crackle, sizzle, or pop at an electrical panel by timing, load correlation, breaker behavior, flicker, power loss, heat, odor, moisture, and other warning signs—without opening the panel or treating the sound as a fault diagnosis.",
+    "direct_answer": "An unfamiliar sound at an electrical panel is an observation, not a diagnosis. Do not decide that it is harmless because it seems quiet, or that it proves a loose connection or overload because it seems loud. Note whether the sound is new, continuous or intermittent, tied to a normal appliance cycle, accompanied by breaker trips, flickering, or power loss, and whether heat, burning odor, crackling, sizzling, popping, sparking, smoke, damage, or water is present. Keep the panel closed. New or persistent unexplained panel noise deserves a licensed electrician; smoke, active arcing, fire, or rapidly worsening heat calls for distance and emergency help.",
+    "likely_causes": ["Operational vibration or hum in certain specific electrical equipment", "A breaker or protective device requiring model-specific evaluation", "A load-related condition that changes when equipment starts or stops", "A compromised electrical connection or arcing condition", "Overcurrent or another condition associated with breaker operation", "Sound transmitted from nearby equipment rather than originating inside the panel", "Water damage or moisture affecting electrical equipment"],
+    "safe_checks": ["Stay outside the closed panel and note whether the sound is new, continuous, intermittent, or changing.", "Record what was operating during the sound without deliberately cycling equipment to reproduce it.", "Observe normal accessible breaker handles only when there is no smoke, sparking, heat, odor, water, or other reason to avoid the panel.", "Note breaker trips, light flicker, dimming or brightening, and outlets or rooms losing power.", "From a safe position, observe visible external damage, smoke, moisture, or discoloration and note any burning odor.", "Move away from active arcing, smoke, fire, or a rapidly worsening electrical condition and call emergency services.", "Arrange licensed-electrical evaluation for new, persistent, recurring, load-correlated, or otherwise unexplained panel noise.", "Do not remove the cover, touch internal parts, test energized equipment, or intentionally increase load."],
+    "professional_help": "Use a licensed electrician for new, persistent, recurring, changing, load-correlated, or breaker-specific panel noise; breaker trips; flickering; intermittent power; suspected heat; water exposure; or any uncertain panel condition. For burning odor, crackling, sizzling, popping, visible arcing, melting, significant heat, or rapid power instability, stop ordinary troubleshooting and seek prompt help without opening the panel. For active fire, smoke, or arcing, move away and call emergency services. Contact the electric utility as directed by the electrician or utility when the evidence points to service-side equipment or a broader supply problem.",
+    "related_articles": ["outlet-buzzing", "circuit-breaker-keeps-tripping", "circuit-breaker-wont-reset", "lights-flicker-randomly", "lights-flicker-when-appliance-turns-on", "no-power-in-one-room", "one-outlet-has-no-power", "outlet-warm"],
+    "image": {
+      "src": "/images/electrical-panel-buzzing-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing a closed electrical panel with a new sound, load timing, other electrical symptoms, and heat, odor, crackle, water, and smoke warning signs.",
+      "caption": "Conceptual guide: Panel noise is a clue, not a diagnosis. Timing and accompanying symptoms change the response; they do not identify the hidden fault, and the panel should remain closed.",
+      "kind": "conceptual",
+      "after_section": "sound-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "warning-signs",
+        "heading": "First: check for warning signs",
+        "paragraphs": ["Before trying to describe the sound, look and smell from a safe position. Smoke, visible sparking or arcing, a burning or hot-plastic odor, melting, scorching, severe discoloration, obvious abnormal heat, active water intrusion, or rapidly changing power are not ordinary sound-troubleshooting clues. Do not approach closely, touch the enclosure, or operate breakers in the hazard area.", "For active fire, smoke, or visible arcing, move people away and call emergency services. For crackling, sizzling, popping, burning odor, suspected significant heat, or water exposure without active fire, stop ordinary troubleshooting and arrange prompt qualified help. Shut power off only when an ordinary disconnect can be reached without entering the hazard area; never treat that as permission to open the panel."],
+        "callout": {"title": "Keep the panel closed", "text": "CPSC guidance specifically warns homeowners not to remove the service-panel cover. Parts on the supply side can remain energized even when branch breakers are off. Internal inspection, testing, and repair belong to qualified electrical workers."}
+      },
+      {
+        "id": "sound-pattern",
+        "heading": "What kind of sound is the panel making?",
+        "paragraphs": ["Homeowners use hum, buzz, vibration, crackle, sizzle, and pop differently. Those words can help document the event, but they are not a reliable fault dictionary. A sound may also travel through a wall or enclosure and seem to come from the panel when nearby equipment is the source.", "Describe the closest match, then pair it with timing and companion symptoms. Do not place your ear against the panel or move closer to confirm a sharper electrical sound."],
+        "table": {"headers": ["Observed pattern", "Safe interpretation"], "rows": [["Steady hum or vibration", "Some specific equipment can make operational noise, but a new or unexplained panel-area sound still needs model-aware evaluation"], ["Buzz begins or changes with one load", "The timing is useful to an electrician; it does not prove overload, a bad breaker, or a bad appliance"], ["Intermittent sound with no clear trigger", "Record when it occurs and what else changes; do not deliberately reproduce it"], ["Crackling, sizzling, or popping", "Treat the description conservatively, especially with odor, heat, flicker, power loss, smoke, or arcing"], ["Sound plus a breaker trip", "Breaker behavior becomes a separate protection symptom that should not be defeated by repeated resets"], ["Sound plus water, smoke, or visible damage", "Move away from the equipment and escalate rather than continuing observation"]]}
+      },
+      {
+        "id": "normal-hum",
+        "heading": "Is a humming or buzzing electrical panel normal?",
+        "paragraphs": ["There is no dependable homeowner rule that says a faint hum is safe or a loud buzz identifies danger. Schneider Electric documents that certain electrical-distribution equipment and certain electronic breakers can produce operational hum, sometimes affected by connected equipment. That is product-specific information, not proof that every panel normally hums.", "Loudness is subjective, rooms amplify sound differently, and the same word can describe mechanical vibration or an electrical warning. A new, changing, persistent, or unexplained sound should be evaluated instead of cleared by volume alone. Likewise, buzzing by itself does not prove a loose connection, arcing, overload, or a defective breaker."]
+      },
+      {
+        "id": "new-or-changing",
+        "heading": "Is the sound new, continuous, or intermittent?",
+        "paragraphs": ["A change from the home's normal baseline is useful evidence. Note when the sound first appeared, whether it is present continuously, how long an episode lasts, and whether it is becoming more frequent or changing character. A longstanding sound is not automatically safe, but a recent change gives an electrician a clearer timeline.", "Intermittent noise can be harder to locate. Write down normal events that happened at the same time—an air conditioner starting, an electric water heater cycling, cooking equipment operating, or a dryer running—without switching them repeatedly for a test. A photograph of the closed panel label and a written log can be more useful than a risky attempt to force the sound to return."]
+      },
+      {
+        "id": "load-correlation",
+        "heading": "Does the panel buzz when an appliance starts?",
+        "paragraphs": ["If the sound consistently begins or changes when an air conditioner, heat pump, electric water heater, dryer, range, microwave, space heater, or another substantial load operates, report that correlation. Electrical load can change equipment behavior and may expose a condition that is not apparent at other times.", "That relationship still does not tell you whether the load, its branch circuit, a breaker, a connection, or another part of the distribution system is responsible. It also does not establish overload. Do not keep starting the appliance to reproduce the noise. Leave a suspect load off when that can be done with its normal user control and arrange evaluation."],
+        "link": {"before": "If the same startup also changes the lights, use ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": " to document the lighting pattern without assigning a cause."}
+      },
+      {
+        "id": "breaker-behavior",
+        "heading": "Is a circuit breaker tripping too?",
+        "paragraphs": ["A breaker trip adds important evidence because circuit breakers provide overcurrent protection, while AFCI, GFCI, and dual-function devices may also respond to other protected conditions. The sound still does not explain why the device operated.", "Do not repeatedly reset a breaker that keeps tripping, and never hold it on, bypass protection, or replace it with a larger breaker as a generic fix. If a breaker will not stay on or immediately trips again, stop trying to restore it. Indicator lights and trip codes vary by product, so follow the exact manufacturer's instructions rather than a generic interpretation."],
+        "links": [{"before": "For recurring trips, follow ", "label": "Why Does My Circuit Breaker Keep Tripping?", "href": "/electrical/circuit-breaker-keeps-tripping/", "after": "."}, {"before": "If the handle will not return to and remain in its normal ON position, use ", "label": "Why Won't My Circuit Breaker Reset?", "href": "/electrical/circuit-breaker-wont-reset/", "after": "."}]
+      },
+      {
+        "id": "flicker-and-power",
+        "heading": "Are lights flickering or circuits losing power?",
+        "paragraphs": ["Flickering, dimming, brightening, intermittent power, or multiple affected circuits makes the pattern more informative than sound alone. It also broadens the possible scope beyond one noisy component. Do not diagnose a loose neutral, service fault, bad breaker, or utility problem from that combination; these conditions require measurements and inspection by qualified people.", "Map the visible scope without opening equipment. Note whether one light, several lights, one outlet, one room, or large unrelated areas are affected. Large portions of the home losing power or unrelated circuits brightening and dimming means this is no longer only a panel-noise question and deserves prompt professional or utility-directed evaluation."],
+        "links": [{"before": "For flicker without a repeatable load trigger, use ", "label": "Why Do My Lights Flicker Randomly?", "href": "/electrical/lights-flicker-randomly/", "after": "."}, {"before": "If several loads in one room are dead, use ", "label": "Why Is There No Power in One Room?", "href": "/electrical/no-power-in-one-room/", "after": "."}, {"before": "If only one receptacle is affected, use ", "label": "Why Does One Outlet Have No Power?", "href": "/electrical/one-outlet-has-no-power/", "after": "."}]
+      },
+      {
+        "id": "breaker-source",
+        "heading": "Could a breaker be making the sound?",
+        "paragraphs": ["Manufacturers document product-specific operating sounds and diagnostic behavior for some breakers, including certain electronic AFCI products. A sound that seems centered on one breaker from normal standing distance is useful information to give an electrician, but it is not a homeowner localization test.", "Do not press, wiggle, reseat, remove, or replace a breaker; do not cycle breakers experimentally; and do not remove the dead front to listen more closely. Correct breaker type, rating, listing, installation, and the reason for any abnormal behavior all require evaluation together."]
+      },
+      {
+        "id": "fault-language",
+        "heading": "Could a loose connection or arcing be involved?",
+        "paragraphs": ["Compromised connections, damaged wiring, and arcing are recognized electrical hazards and can produce unusual sound, heat, odor, flicker, or intermittent power. But buzzing alone cannot establish that any one of them is occurring inside your panel.", "Determining the condition requires a qualified electrician to follow safe work practices and evaluate the equipment. Do not tighten terminals, lugs, neutral or ground connections, or breaker screws. Do not use a multimeter, clamp meter, or non-contact tester inside the panel. A tester cannot make exposed panel work safe."]
+      },
+      {
+        "id": "sharp-sounds",
+        "heading": "What if the panel is crackling, sizzling, or popping?",
+        "paragraphs": ["Treat these descriptions more conservatively than an unspecified hum, even though the words remain subjective. ESFI and CPSC include unusual electrical sounds, arcing, overheating, odors, sparks, and flicker among warning signs that call for electrical attention.", "Do not move closer to verify a crackle or pop. If it occurs with burning odor, heat, flicker, power loss, visible sparks, smoke, or worsening instability, move away and escalate. Active smoke, fire, or arcing is an emergency—not a reason to operate the panel."]
+      },
+      {
+        "id": "heat-and-odor",
+        "heading": "What if you smell burning or suspect heat?",
+        "paragraphs": ["A burning, hot-plastic, or unusual electrical odor near the panel materially raises concern even when no smoke is visible. Do not open the enclosure to find the source. Similarly, visible heat damage, melting, or a panel exterior that is obviously abnormally hot calls for prompt qualified response.", "Do not repeatedly touch the enclosure to compare temperature, and do not rely on a made-up homeowner temperature threshold. Keep people away from a rapidly worsening condition. If smoke or fire appears, leave the area and call emergency services."],
+        "link": {"before": "If the sound is actually centered at a receptacle, follow ", "label": "Why Does My Outlet Buzz?", "href": "/electrical/outlet-buzzing/", "after": " instead of treating it as a panel symptom."}
+      },
+      {
+        "id": "water",
+        "heading": "What if the panel is wet or exposed to water?",
+        "paragraphs": ["Water-damaged electrical equipment can remain hazardous even when the visible surface dries. Do not touch a wet panel, operate breakers with wet hands, approach while standing in water, wipe internal parts, spray anything into the enclosure, or try to dry it with heat.", "Keep away from active water and electrical equipment and call qualified electrical help. Flooded or water-damaged breakers and panelboards may require replacement after evaluation; casual re-energizing is not a safe drying test."]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely observe yourself",
+        "bullets": ["Stay outside the closed panel and write down whether the sound is new, continuous, intermittent, or changing.", "Note what was operating during a naturally occurring episode without cycling equipment to reproduce it.", "Record whether the sound seems general or centered near one breaker from normal standing distance; do not move closer or touch the equipment.", "Note any normal breaker handle that visibly moved only when there are no heat, odor, smoke, sparking, water, or damage signs.", "Map flickering, dimming, brightening, or power loss by room and device.", "Observe visible external discoloration, damage, smoke, or moisture from a safe position.", "Record burning odor, crackling, sizzling, popping, or increasing frequency and stop observation when warning signs appear.", "Give the timeline, loads, affected areas, breaker behavior, and warning signs to the electrician."]
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": ["Do not remove the panel cover or dead front, even if a branch breaker is off.", "Do not touch service conductors, bus bars, lugs, terminals, neutral or ground bars, internal wiring, or breakers behind the cover.", "Do not tighten, press, wiggle, reseat, move, remove, or replace a breaker as a diagnostic step.", "Do not probe voltage, measure current inside the panel, or use a non-contact tester as proof that internal work is safe.", "Do not place your ear against the panel or approach crackling, sizzling, smoke, sparks, heat, or water.", "Do not deliberately increase load, repeatedly start large appliances, or cycle breakers to reproduce the sound.", "Do not repeatedly reset a tripping breaker, bypass AFCI or GFCI protection, or install a larger breaker to stop trips.", "Do not spray cleaners or lubricants into the panel, dry a wet panel with heat, or open utility or service equipment."]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an electrician",
+        "paragraphs": ["Arrange licensed-electrical evaluation when unexplained panel buzzing or humming is new, persistent, recurring, changing, load-correlated, or apparently centered near one breaker; when breakers trip; when lights flicker, dim, or brighten; when circuits intermittently lose power; when external damage is visible; when heat is suspected; or when water exposure occurred. The electrician can evaluate the panel, protection, connections, branch circuits, loads, and service boundary without guessing from sound alone.", "Seek faster help for burning odor, crackling, sizzling, popping, visible sparking, melting, significant heat, active water intrusion, or rapid power instability. For active fire, smoke, or arcing, move away and call emergency services. Utility involvement may also be appropriate when qualified evaluation or the utility's own guidance points to supply-side equipment."]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": ["Panel noise is a symptom, not a fault diagnosis. Describe the sound, when it began, whether it is continuous or intermittent, what loads were operating, and whether breaker trips, flicker, power loss, heat, odor, sharp electrical sounds, smoke, damage, or moisture occurred with it.", "Keep the panel closed and do not deliberately reproduce the symptom. A new or persistent unexplained sound deserves a licensed electrician, while burning odor, crackling, sizzling, sparking, smoke, rapid heat, or water exposure calls for a faster and more conservative response."]
+      }
+    ],
+    "sources": [
+      {"title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf"},
+      {"title": "Home Wiring Safety Tips", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-wiring-safety-tips/"},
+      {"title": "Fuse and Breaker Breakdown", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/fuse-and-breaker-breakdown/"},
+      {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
+      {"title": "8 Signs You May Have a Problem with Your Electrical Wiring", "publisher": "UL Solutions", "url": "https://www.ul.com/insights/8-signs-you-may-have-problem-your-electrical-wiring"},
+      {"title": "Operational Noise in Electrical Distribution Equipment", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FA306006/"},
+      {"title": "Do Homeline and QO AFCI Circuit Breakers Make a Humming Sound?", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FA106843/"},
+      {"title": "Electrical Safety-Related Work Practices: Exposed Energized Parts", "publisher": "Occupational Safety and Health Administration", "url": "https://www.osha.gov/laws-regs/standardinterpretations/2006-07-28"},
+      {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
     ]
   }
 ]

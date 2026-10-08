@@ -781,3 +781,31 @@ test("recurring GFCI trip Finder and search preserve reset-failure, breaker, out
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "gfci-keeps-tripping"), location);
   }
 });
+
+test("electrical-panel-noise Finder and search preserve outlet, breaker, flicker, and outage intents", () => {
+  const positives = [
+    "why is my electrical panel buzzing",
+    "electrical panel buzzing",
+    "breaker box buzzing",
+    "breaker panel buzzing",
+    "electrical panel humming",
+    "breaker box humming",
+    "breaker buzzing",
+    "electrical panel making noise",
+    "buzzing from electrical panel",
+    "electrical panel crackling",
+    "electrical panel sizzling",
+    "electrical panel popping",
+    "panel buzzes when AC turns on",
+    "panel buzzing intermittently",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "electrical-panel-buzzing", query);
+  for (const query of ["outlet buzzing", "circuit breaker keeps tripping", "circuit breaker won't reset", "lights flicker randomly", "lights flicker when appliance turns on", "one room has no power", "one outlet has no power", "GFCI outlet won't reset", "GFCI outlet keeps tripping", "half house no power"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "electrical-panel-buzzing", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "panel-buzzing"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "panel-buzzing")[0]?.article.slug, "electrical-panel-buzzing");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "panel-buzzing"), location);
+  }
+});
