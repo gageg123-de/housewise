@@ -9100,7 +9100,7 @@
     "system": "electrical",
     "content_type": "diagnostic-guide",
     "published_date": "2026-10-02",
-    "updated_date": "2026-10-03",
+    "updated_date": "2026-10-10",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 11,
@@ -9143,7 +9143,8 @@
       "circuit-breaker-wont-reset",
       "outlet-warm",
       "outlet-buzzing",
-      "one-outlet-has-no-power"
+      "one-outlet-has-no-power",
+      "half-house-has-no-power"
     ],
     "image": {
       "src": "/images/no-power-one-room-diagnostic-patterns.webp",
@@ -9218,7 +9219,13 @@
           "Check a few known loads elsewhere in the home before treating this as a room-level problem. If an entire home is dark, the service, utility supply, main disconnect, or another broad condition belongs to a different diagnostic path. If roughly half the home, major 240-volt equipment, or seemingly unrelated groups of circuits are affected, do not force that pattern into a one-room explanation; contact the utility or an electrician according to local guidance and the observed hazard.",
           "A true localized pattern usually leaves most of the home operating while a specific group of lights, receptacles, or built-in loads is out. Even then, compare adjacent spaces. A hallway light, closet receptacle, or bathroom outlet may share the affected branch circuit, while a ceiling light inside the dark room may remain on because it is supplied separately.",
           "In a multifamily building, also distinguish a problem inside the unit from a building outage. Check only normal indicators available to you and contact building management when appropriate. Do not enter electrical rooms, utility spaces, meter enclosures, or panels you are not authorized to access."
-        ]
+        ],
+        "link": {
+          "before": "If separated areas or several apparently unrelated circuits are out while other parts of the home still work, use ",
+          "label": "Why Does Half My House Have No Power?",
+          "href": "/electrical/half-house-has-no-power/",
+          "after": " to map the broader partial-outage pattern."
+        }
       },
       {
         "id": "why-groups-fail",
@@ -10518,6 +10525,144 @@
       {"title": "Operational Noise in Electrical Distribution Equipment", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FA306006/"},
       {"title": "Do Homeline and QO AFCI Circuit Breakers Make a Humming Sound?", "publisher": "Schneider Electric", "url": "https://www.se.com/us/en/faqs/FA106843/"},
       {"title": "Electrical Safety-Related Work Practices: Exposed Energized Parts", "publisher": "Occupational Safety and Health Administration", "url": "https://www.osha.gov/laws-regs/standardinterpretations/2006-07-28"},
+      {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
+    ]
+  },
+  {
+    "title": "Why Does Half My House Have No Power?",
+    "slug": "half-house-has-no-power",
+    "description": "Half the house has no power while other areas still work? Map the outage, note 120/240-volt clues and warning signs, and learn whether to call the utility or an electrician.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": ["electrical-behavior"],
+    "room_or_location": ["whole-house"],
+    "system": "electrical",
+    "content_type": "safety-reference",
+    "published_date": "2026-10-10",
+    "updated_date": "2026-10-10",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": ["why does half my house have no power", "half house no power", "half the house has no power", "partial power outage house", "some rooms have power and others do not", "power out in half the house", "one side of house has no power", "some outlets work and others do not", "lost power to multiple rooms", "partial electricity in house", "only part of my house has power", "240 volt appliances stopped working", "dryer and stove stopped working", "lost one leg of power", "half the breakers have no power"],
+    "target_search_intent": "Help a homeowner distinguish a broad partial-house outage affecting multiple apparently separate circuits from a one-room outage, safely document what still works, recognize 120/240-volt and dim/bright clues without diagnosing a service leg or neutral fault, and choose utility, electrician, or emergency escalation without opening electrical equipment.",
+    "direct_answer": "If roughly half the house has no power while other areas still work, first map the affected rooms, lights, receptacles, and major appliances. Several unrelated groups of dead 120-volt loads—especially with 240-volt equipment also not operating—can be consistent with a problem affecting one energized path of a typical 120/240-volt service, but the pattern does not prove where the interruption is. A branch-circuit, feeder, panel, service, or utility-side problem can overlap. Check only normal accessible breaker handles and outage information when it is safe; do not open the panel, meter, or service equipment. Call the utility to report partial power and arrange a qualified electrician if the utility does not find a supply-side problem or warning signs point to the home's equipment.",
+    "likely_causes": ["One or more branch breakers or circuits affecting the areas that appear dark", "A feeder, panel, or service condition affecting multiple branch circuits", "An interruption or impairment of one energized path in a typical 120/240-volt residential supply", "A utility-side service or distribution problem", "An abnormal neutral or other connection condition requiring qualified diagnosis", "Storm, tree, vehicle, animal, or construction damage affecting electrical supply equipment"],
+    "safe_checks": ["Map which rooms, lights, receptacles, and fixed appliances work and which do not.", "Note whether separated areas are affected rather than only one room or one contiguous branch-circuit group.", "Observe whether normally used 240-volt equipment is also unavailable without deliberately cycling it for a test.", "From outside a closed, dry, undamaged panel, note normal accessible breaker-handle positions only when there are no warning signs.", "Check the utility outage map or report a partial-power or voltage problem using the utility's normal channel.", "Ask whether nearby homes or shared building areas are affected without treating their power as proof about your service.", "Record dimming, unusual brightening, flicker, buzzing, odor, heat, smoke, sparking, water, storm damage, and whether power returns intermittently."],
+    "professional_help": "Report broad partial power to the electric utility because it may involve utility-owned supply equipment. Arrange a licensed electrician when the utility finds no supply-side issue, when the pattern is limited to customer-owned equipment, or when breakers, panel behavior, wiring, or connections require evaluation. Stop ordinary troubleshooting for abnormal brightening and dimming, burning odor, heat, buzzing or crackling, sparking, smoke, melting, water exposure, damaged service equipment, or rapidly changing power. For active fire, smoke, visible arcing, or downed lines, move away and call emergency services and the utility as locally directed.",
+    "related_articles": ["no-power-in-one-room", "one-outlet-has-no-power", "circuit-breaker-keeps-tripping", "circuit-breaker-wont-reset", "electrical-panel-buzzing", "lights-flicker-randomly", "lights-flicker-when-appliance-turns-on"],
+    "image": {
+      "src": "/images/half-house-power-outage-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing one-area power loss, a broader partial outage, two 120-volt service paths that combine for 240 volts, and appliance and lighting clues.",
+      "caption": "Conceptual illustration: A broad partial outage can point beyond one breaker. The pattern of working and nonworking loads narrows the scope, but it does not identify whether the interruption is in a branch circuit, the home's service equipment, or utility equipment.",
+      "kind": "conceptual",
+      "after_section": "map-scope"
+    },
+    "body_sections": [
+      {
+        "id": "map-scope",
+        "heading": "First: is this really a half-house outage?",
+        "paragraphs": ["“Half the house” rarely means a neat physical half. Start with a written map of every affected and working load: ceiling lights, receptacles, built-in equipment, heating or cooling equipment, water heating, cooking equipment, laundry equipment, garage equipment, and exterior loads. The important question is whether several apparently separate circuit groups are affected while others remain energized.", "Room boundaries do not equal circuit boundaries. One branch circuit may cross rooms, and one room may be served by several circuits. A dark bedroom and hallway could still be one branch-circuit problem; a kitchen receptacle, upstairs light, garage door opener, and several other separated loads going dead together is a broader pattern."],
+        "table": {"headers": ["What you observe", "What it suggests about scope"], "rows": [["One outlet is dead", "Use the single-receptacle path; the visible outlet may not be the interruption"], ["Several loads in one room or adjacent area are dead", "A localized branch circuit or protective device remains plausible"], ["Separated rooms or unrelated-looking groups are dead", "A multi-circuit, feeder, service, or supply problem becomes more relevant"], ["Most 120-volt loads work, but a particular 240-volt appliance does not", "The appliance or its circuit may be the narrower issue"], ["Several 120-volt groups are dead and multiple 240-volt loads are unavailable", "A broader 120/240-volt supply or service pattern deserves utility or electrical evaluation"], ["The entire home is dark", "That is a whole-home outage, not this partial-power intent"]]},
+        "links": [{"before": "If the outage is limited to one area, start with ", "label": "Why Is There No Power in One Room?", "href": "/electrical/no-power-in-one-room/", "after": "."}, {"before": "If just one receptacle is affected, use ", "label": "Why Does One Outlet Have No Power?", "href": "/electrical/one-outlet-has-no-power/", "after": "."}]
+      },
+      {
+        "id": "warning-signs",
+        "heading": "Screen for warning signs before checking anything else",
+        "paragraphs": ["Keep away from the panel, meter, service equipment, receptacles, and appliances if there is smoke, visible arcing, active sparking, burning odor, melting, severe discoloration, crackling, obvious abnormal heat, water intrusion, or damaged overhead or underground service equipment. Do not approach a downed line or anything it touches; follow local emergency and utility instructions.", "Unusual brightening and dimming across different circuits, rapidly changing power, or equipment behaving abnormally can also indicate an unstable electrical condition. Turn off or unplug sensitive and heat-producing loads only when that can be done with their normal user controls and without entering the hazard area. Do not walk toward unsafe equipment to do it."],
+        "callout": {"title": "Keep the panel, meter, and service equipment closed", "text": "Do not remove the dead front, meter cover, service cover, or any electrical box cover. Do not touch service conductors, bus bars, breakers behind the cover, terminals, or utility equipment. Some service components can remain energized even when a main disconnect is off."}
+      },
+      {
+        "id": "one-circuit-or-many",
+        "heading": "Does the outage follow one circuit—or many?",
+        "paragraphs": ["A single tripped branch breaker can shut off several loads, sometimes in more than one room. That can look like a large outage without involving the service. Compare the dead loads with the panel directory, while remembering that directories may be incomplete or inaccurate.", "A broader condition becomes more plausible when separated load groups that would not ordinarily share one branch breaker fail together. Do not decide this from room names alone, and do not remove the panel cover to trace which breaker positions appear energized. The outside pattern is useful; internal circuit mapping requires qualified testing."],
+        "link": {"before": "If a breaker repeatedly operates during the event, use ", "label": "Why Does My Circuit Breaker Keep Tripping?", "href": "/electrical/circuit-breaker-keeps-tripping/", "after": " instead of repeatedly resetting it."}
+      },
+      {
+        "id": "what-still-works",
+        "heading": "What still works is as useful as what stopped",
+        "paragraphs": ["Record working loads as carefully as dead ones. Note whether lighting, receptacles, HVAC equipment, water heating, cooking equipment, laundry equipment, well or sump equipment, and garage loads are operating normally. This gives the utility or electrician a much better scope map than “the left side of the house is out.”", "Do not repeatedly start large appliances to see what happens. A display or light coming on does not prove an appliance has full, normal power, and a nonworking appliance does not prove the home's service is defective. Report what occurred during normal use and leave suspect equipment off."],
+        "bullets": ["Which separated rooms or floors have working lights?", "Which receptacle groups still power an ordinary known-good lamp?", "Did more than one normally used 240-volt load become unavailable?", "Did the outage begin during a storm, utility event, construction, or equipment startup?", "Does power return and fail again without a breaker being intentionally reset?"]
+      },
+      {
+        "id": "split-phase",
+        "heading": "How a typical 120/240-volt home service changes the pattern",
+        "paragraphs": ["Many U.S. homes receive single-phase, three-wire 120/240-volt service. Two energized conductors each provide about 120 volts to neutral for ordinary branch circuits; using both energized conductors provides about 240 volts for certain larger loads. This is commonly called split-phase service—not two-phase power.", "Because branch circuits are distributed across the two energized paths, an interruption affecting one path can leave some 120-volt circuits working and others dead. Loads that need both energized paths may also fail to operate normally. That is why multiple separated outages plus several affected 240-volt loads is meaningful information."],
+        "callout": {"title": "Do not map service paths by panel side", "text": "Breaker positions do not provide a safe left-side/right-side homeowner test for the two energized service paths. Panel bus arrangements vary, and identifying an energized-path problem requires measurements by the utility or a qualified electrician."}
+      },
+      {
+        "id": "lost-leg",
+        "heading": "Does this mean you lost one leg of power?",
+        "paragraphs": ["“Lost leg” is common shorthand for one energized service path being absent or seriously impaired. A broad partial outage and multiple unavailable 240-volt loads can be consistent with that pattern, but the symptom does not prove it. The interruption could be in utility equipment, a service connection, customer-owned service conductors, a disconnect, panel equipment, a feeder, or another point that cannot be identified from room behavior.", "Do not report a guess as a confirmed fault. Tell the utility or electrician that you have partial power, list the dead and working loads, identify affected 240-volt equipment, and describe any flicker or voltage-like changes. They can determine the ownership boundary and test the supply safely."]
+      },
+      {
+        "id": "utility-side",
+        "heading": "Could the problem be on the utility side?",
+        "paragraphs": ["Yes. Utilities recognize partial power and flickering as voltage-service complaints. A utility-side connection, service drop, transformer connection, storm damage, or distribution problem can affect one customer or a small group rather than an entire neighborhood.", "Check the utility's outage map or reporting channel and report “partial power” rather than only checking whether a large outage is posted. Neighbors having normal power does not rule out a problem specific to your service. Likewise, an empty outage map does not prove the condition is inside your home."],
+        "callout": {"title": "Never inspect utility equipment yourself", "text": "Do not open or touch the meter enclosure, utility seals, service drop, transformer, pedestal, or underground service equipment. Stay away from damaged or downed conductors and contact emergency services and the utility as locally directed."}
+      },
+      {
+        "id": "house-side",
+        "heading": "Could the problem be inside the home's electrical system?",
+        "paragraphs": ["Yes. Customer-owned service equipment, a main or feeder connection, panel components, multiple branch conditions, or another wiring problem can create a partial-outage pattern. A single breaker may also serve more area than expected. Visual room mapping cannot distinguish these possibilities.", "If the utility checks its supply and finds it normal, arrange a licensed electrician. The electrician can evaluate service voltage at the proper points, the main equipment, feeders, branch breakers, connections, and affected loads using appropriate safety procedures. Do not treat a utility “all clear” as permission to open the panel."],
+        "link": {"before": "If the relevant breaker handle will not return to and remain in its normal ON position, use ", "label": "Why Won’t My Circuit Breaker Reset?", "href": "/electrical/circuit-breaker-wont-reset/", "after": " and stop trying to force it."}
+      },
+      {
+        "id": "dim-bright",
+        "heading": "What if some lights are dim while others get brighter?",
+        "paragraphs": ["Different circuits becoming unusually dim or bright, especially when ordinary loads switch on or off, is not a normal balancing method or a reliable DIY diagnostic test. It can reflect an abnormal voltage condition and deserves prompt utility or electrician attention.", "Do not declare an “open neutral” from brightness changes alone. Neutral and service problems are among the categories qualified people may evaluate, but lamp behavior cannot locate the fault or establish ownership. Protect sensitive equipment by using normal controls when safe, avoid deliberately changing loads, and report exactly which lights changed and when."],
+        "links": [{"before": "For unexplained flicker without a repeatable load trigger, use ", "label": "Why Do My Lights Flicker Randomly?", "href": "/electrical/lights-flicker-randomly/", "after": "."}, {"before": "If the change consistently occurs when one appliance starts, use ", "label": "Why Do My Lights Flicker When an Appliance Turns On?", "href": "/electrical/lights-flicker-when-appliance-turns-on/", "after": "."}]
+      },
+      {
+        "id": "gfci-scope",
+        "heading": "Could a GFCI explain half-house power loss?",
+        "paragraphs": ["A GFCI device can protect downstream receptacles, so one tripped GFCI may make several outlets appear dead—even across an unexpected room boundary. That is important for a localized group of receptacles.", "A GFCI is less consistent with separated lighting, receptacle, and 240-volt load groups across broad parts of the home. Do not search indefinitely for a hidden reset device when the observed scope is much broader. Check only accessible GFCI controls in normal locations when there are no hazard signs; never open devices or electrical boxes."]
+      },
+      {
+        "id": "storm-context",
+        "heading": "Did the partial outage start during a storm or local outage?",
+        "paragraphs": ["Storm timing increases the relevance of utility supply damage, fallen branches, vehicle impacts, water exposure, and damaged service equipment, but it still does not locate the interruption. Report the outage and any visible damage from a safe distance.", "Do not approach a downed line, climb to inspect a service attachment, open outdoor equipment, clear branches near conductors, or enter a flooded electrical area. A line on the ground—or a fence, tree, vehicle, or standing water touching it—may be energized even when nearby homes look dark."]
+      },
+      {
+        "id": "intermittent",
+        "heading": "What if the power comes back and fails again?",
+        "paragraphs": ["Intermittent restoration does not prove the problem is resolved. A changing connection, utility condition, protective device, or load-dependent issue may temporarily restore some circuits. Note the time, weather, loads already operating, and whether the same groups return together.", "Do not wiggle breakers, meter equipment, service cables, plugs, or panel covers to reproduce the outage. Do not repeatedly start major appliances. If partial power, flicker, or dim/bright behavior is recurring, report the ongoing condition and arrange qualified evaluation."],
+        "link": {"before": "If the panel also makes an unfamiliar sound, follow ", "label": "Why Is My Electrical Panel Buzzing?", "href": "/electrical/electrical-panel-buzzing/", "after": " from outside the closed panel."}
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely observe yourself",
+        "bullets": ["Make a room-by-room list of dead and working lights, receptacles, and fixed equipment.", "Mark whether affected areas are adjacent or separated and whether more than one floor is involved.", "Note normal operation or loss of normally used 240-volt equipment without deliberately cycling it.", "Check only normal accessible breaker handles from outside a closed, dry, undamaged panel when no warning sign is present.", "Check the utility outage map, report partial power, and ask whether the utility wants specific load information.", "Note storm timing, nearby utility work, tree damage, vehicle impact, or construction without approaching electrical infrastructure.", "Record unusual dimming, brightening, flicker, buzzing, odor, heat, sparking, smoke, moisture, and intermittent restoration.", "Photograph visible external conditions only from a safe position; do not move closer to service equipment or downed lines."],
+        "callout": {"title": "Observation is enough", "text": "You do not need voltage readings to make a useful report. The affected-load map, 240-volt equipment status, timing, breaker-handle observations, utility context, and warning signs give the utility or electrician a safer starting point."}
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": ["Do not remove the panel cover or dead front, even if some circuits appear off.", "Do not open the meter enclosure, service disconnect, pedestal, transformer, or utility equipment.", "Do not touch conductors, bus bars, terminals, lugs, neutral or ground bars, or internal breakers.", "Do not probe receptacles or panels with a multimeter, clamp meter, non-contact tester, or improvised device.", "Do not map service paths by left and right breaker columns or move breakers to different positions.", "Do not repeatedly reset breakers, hold a handle on, bypass protection, or install a larger breaker.", "Do not start large appliances repeatedly or create artificial loads to see which circuits respond.", "Do not run major appliances or large areas of the home from extension cords or portable generators connected to house wiring.", "Do not approach downed lines, storm-damaged service equipment, wet panels, burning odor, smoke, sparks, or arcing." ]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Should you call the utility or an electrician?",
+        "paragraphs": ["Call the electric utility when broad partial power affects multiple apparently separate circuits, when several 240-volt loads are also unavailable, when lights across circuits change brightness, when a storm or outside service damage is involved, or when the utility instructs customers to report voltage problems. Give them the outage map you made. Utilities can check their supply and equipment and tell you whether customer-owned equipment needs an electrician.", "Call a licensed electrician when the utility reports normal supply, when the affected pattern points to the home's panel, feeder, breakers, or wiring, when a breaker will not reset or repeatedly trips, or when the source remains unclear. Prompt electrical help is warranted for recurrence, abnormal panel behavior, or suspected heat, damage, or compromised connections."],
+        "callout": {"title": "Emergency conditions come first", "text": "For active fire, smoke, visible arcing, or a downed power line, move people away and call emergency services and the utility as locally directed. Do not approach equipment to switch power off when doing so would enter the hazard area."}
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": ["Half-house power loss is a scope pattern, not a diagnosis. Map the dead and working loads, determine whether separated circuit groups and normally used 240-volt equipment are affected, record dimming or brightening, and check utility context without opening electrical equipment.", "One impaired energized path is one plausible explanation in a typical 120/240-volt service, but the interruption may be utility-side or in customer-owned service, panel, feeder, or branch equipment. Report broad partial power to the utility and use a licensed electrician when the supply checks normal or house-side equipment needs evaluation. Escalate immediately for fire, smoke, arcing, downed lines, burning odor, severe heat, or water exposure."]
+      }
+    ],
+    "sources": [
+      {"title": "Understanding Your Home Electrical System", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/understanding-your-home-electrical-system"},
+      {"title": "United States Electricity Industry Primer", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/sites/prod/files/2015/12/f28/united-states-electricity-industry-primer.pdf"},
+      {"title": "Report a Voltage Problem", "publisher": "Pacific Gas and Electric Company", "url": "https://www.pge.com/en/contact-us/report-an-issue/report-voltage-problem.html"},
+      {"title": "Electric Safety", "publisher": "Pacific Gas and Electric Company", "url": "https://pgealerts.alerts.pge.com/safety/electricity/"},
+      {"title": "Storm Safety", "publisher": "Pacific Gas and Electric Company", "url": "https://pgealerts.alerts.pge.com/safety/storm/"},
+      {"title": "Home Wiring Safety Tips", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-wiring-safety-tips/"},
+      {"title": "Switch to Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/switch-to-safety/"},
+      {"title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf"},
       {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
     ]
   }

@@ -809,3 +809,32 @@ test("electrical-panel-noise Finder and search preserve outlet, breaker, flicker
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "panel-buzzing"), location);
   }
 });
+
+test("half-house partial-power Finder and search preserve localized and whole-home outage intents", () => {
+  const positives = [
+    "why does half my house have no power",
+    "half house no power",
+    "half the house has no power",
+    "partial power outage house",
+    "some rooms have power and others do not",
+    "power out in half the house",
+    "one side of house has no power",
+    "some outlets work and others do not",
+    "lost power to multiple rooms",
+    "partial electricity in house",
+    "only part of my house has power",
+    "240 volt appliances stopped working",
+    "dryer and stove stopped working",
+    "lost one leg of power",
+    "half the breakers have no power",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "half-house-has-no-power", query);
+  for (const query of ["one room has no power", "one outlet has no power", "whole house has no power", "circuit breaker keeps tripping", "breaker won't reset", "GFCI outlet won't reset", "electrical panel buzzing", "lights flicker randomly"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "half-house-has-no-power", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "half-house-no-power"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "half-house-no-power")[0]?.article.slug, "half-house-has-no-power");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "half-house-no-power"), location);
+  }
+});

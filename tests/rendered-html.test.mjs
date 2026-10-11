@@ -1007,3 +1007,30 @@ test("electrical-panel-buzzing guide renders claim audit, warning-first safety, 
   const reciprocal = await render("/electrical/outlet-buzzing");
   assert.match(await reciprocal.text(), /href="\/electrical\/electrical-panel-buzzing\/"/);
 });
+
+test("half-house partial-power guide renders scope mapping, service uncertainty, safety, schema, visual, and reciprocal link", async () => {
+  const response = await render("/electrical/half-house-has-no-power");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does Half My House Have No Power\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/half-house-has-no-power\//);
+  assert.match(html, /First: is this really a half-house outage\?/);
+  assert.match(html, /How a typical 120\/240-volt home service changes the pattern/);
+  assert.match(html, /Does this mean you lost one leg of power\?/);
+  assert.match(html, /What if some lights are dim while others get brighter\?/);
+  assert.match(html, /Keep the panel, meter, and service equipment closed/);
+  assert.match(html, /href="\/electrical\/no-power-in-one-room\/"/);
+  assert.match(html, /href="\/electrical\/one-outlet-has-no-power\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/electrical-panel-buzzing\/"/);
+  assert.match(html, /src="\/images\/half-house-power-outage-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/half-house-power-outage-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/no-power-in-one-room");
+  assert.match(await reciprocal.text(), /href="\/electrical\/half-house-has-no-power\/"/);
+});
