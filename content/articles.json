@@ -4655,7 +4655,7 @@
     "system": "plumbing",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-11",
-    "updated_date": "2026-09-11",
+    "updated_date": "2026-10-16",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -4692,9 +4692,10 @@
       "Photograph recurring particles for a utility or service professional."
     ],
     "professional_help": "Contact the water utility for a sudden multi-fixture municipal-water change, a qualified well professional or health authority for a persistent private-well change, and a plumber or water-heater professional for recurring fixture-local or hot-water-only debris. Follow official advisories and stop ordinary troubleshooting when particles accompany fuel, chemical, or sewage odor, major pressure loss, equipment leakage, or another contamination warning.",
-    "related_articles": [
-      "water-under-water-heater"
-    ],
+  "related_articles": [
+    "sediment-in-water",
+    "water-under-water-heater"
+  ],
     "image": {
       "src": "/images/bath-water-sediment-diagnostic-guide.webp",
       "width": 1536,
@@ -4813,6 +4814,12 @@
         "paragraphs": [
           "Repeat the clean-container test at one or two other fixtures. Compare cold with cold and hot with hot so the result is meaningful. Remove the question of tub residue by catching the water before it contacts the basin."
         ],
+      "link": {
+        "before": "If particles are appearing at multiple fixtures rather than mainly in the tub, start with the broader guide ",
+        "label": "Why Is There Sediment in My Water?",
+        "href": "/plumbing/sediment-in-water/",
+        "after": "."
+      },
         "subsections": [
           {
             "heading": "Only the bathtub is affected",
@@ -10664,6 +10671,135 @@
       {"title": "Switch to Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/switch-to-safety/"},
       {"title": "Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf"},
       {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
+    ]
+  },
+  {
+    "title": "Why Is There Sediment in My Water?",
+    "slug": "sediment-in-water",
+    "description": "Sediment in your water? Use fixture location, hot-versus-cold water, utility work, water heaters, and wells to narrow the source safely.",
+    "primary_category": "plumbing",
+    "secondary_categories": [],
+    "symptoms": ["discoloration", "plumbing-behavior"],
+    "room_or_location": ["whole-house", "bathroom", "kitchen"],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-16",
+    "updated_date": "2026-10-16",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": ["why is there sediment in my water", "sediment in water", "sediment in tap water", "sediment coming from faucet", "particles in water", "particles in tap water", "debris in water", "dirt in water", "grit in water", "flakes in water", "particles in household water", "sediment in hot water", "sediment in cold water", "is sediment in water harmful"],
+    "target_search_intent": "Help a homeowner use fixture scope, hot-versus-cold behavior, timing, public-supply or private-well context, and water-quality warning signs to narrow the source of visible particles without identifying the material or declaring the water safe from appearance.",
+    "direct_answer": "Visible particles can come from a fixture, the hot-water system, household plumbing, a public water-supply disturbance, or a private well. Start by checking whether the material appears at one fixture or several, then compare cold and hot water separately. One-fixture debris makes a local outlet or branch more relevant; hot-only particles at several fixtures shift attention toward the hot-water system; particles at several cold and hot fixtures point farther upstream. Appearance is only a clue—it cannot identify the material or prove whether the water is safe to drink.",
+    "likely_causes": ["Debris or deterioration at one faucet, aerator, connector, or local branch", "Scale, sediment, corrosion products, or component material in the hot-water system", "Material disturbed in household piping after a shutoff, repair, or pressure change", "Sediment mobilized by public water-main work, hydrant use, a main break, or another distribution event", "Sand or sediment entering a private-well system", "A water-quality change that requires utility, health-authority, laboratory, or professional evaluation"],
+    "safe_checks": ["Compare the affected fixture with other fixtures in the home.", "Collect separate cold- and hot-water samples in clean light-colored containers without tasting them.", "Note when the change began and whether utility work, a shutoff, plumbing work, flooding, or well work occurred.", "Describe approximate color, texture, settling, cloudiness, and odor without naming the material.", "Check official water-supplier notices and identify whether the home uses public water or a private well.", "Photograph recurring particles and collect a sample only when the utility, laboratory, or professional provides instructions.", "Follow any boil-water, do-not-drink, or do-not-use advisory exactly."],
+    "professional_help": "Contact the water supplier for a sudden or persistent multi-fixture public-water change, especially after system work or with discoloration. Use a plumber for a recurring fixture-local, hot-water-only, or house-plumbing pattern. Use a qualified well professional and certified drinking-water laboratory for persistent sand or sediment, a changed well condition, flooding, repairs, or suspected contamination. Follow health-authority or utility instructions when safety is uncertain; appearance alone cannot establish potability.",
+    "related_articles": ["sediment-in-bath-water", "water-under-water-heater"],
+    "image": {
+      "src": "/images/sediment-in-water-source-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing particles at one faucet, particles at several fixtures, hot-only versus hot-and-cold water, and public-supply, private-well, and home-plumbing source categories.",
+      "caption": "Conceptual guide: Start with where the particles appear and whether they are in hot or cold water. Those patterns narrow the source category; they do not identify the material or prove whether the water is safe.",
+      "kind": "conceptual",
+      "after_section": "fixture-scope"
+    },
+    "body_sections": [
+      {
+        "id": "fixture-scope",
+        "heading": "First: is the sediment coming from one fixture or several?",
+        "paragraphs": ["Check the scope before guessing what the particles are. Collect fresh water before it touches a dirty basin, soap residue, or an old container. Then compare the same temperature at another fixture. A particle caught at one outlet tells a different story from material appearing throughout the house.", "Do not assume nearby fixtures share every pipe or source component. The comparison is a way to sort the problem into a local, hot-water, household-plumbing, or incoming-supply category—not a map of hidden piping."],
+        "table": {"headers": ["Where particles appear", "What becomes more relevant"], "rows": [["One faucet only", "Aerator or outlet debris, a fixture component, connector, or nearby branch"], ["One bathtub only", "Tub residue, the tub outlet or valve path, or a local branch; use the bath-specific guide"], ["Several hot fixtures, cold samples clear", "Shared hot-water equipment or hot-water distribution"], ["Several cold fixtures", "Incoming supply, cold-side distribution, or a recent disturbance"], ["Several hot and cold fixtures", "Incoming public supply, private well, treatment equipment, or broader household piping"]]},
+        "callout": {"title": "Sediment is an observation", "text": "The same-looking grit or flake can have different sources. Scope and temperature narrow the investigation, but laboratory or professional evaluation—not color alone—identifies a material or answers a safety question."}
+      },
+      {
+        "id": "temperature",
+        "heading": "Is it in the hot water, cold water, or both?",
+        "paragraphs": ["Use separate clean containers for cold and hot samples when there is no advisory telling you not to use the water. Avoid scalding temperatures and do not taste the samples. Compare cold with cold and hot with hot at more than one fixture.", "Hot-only particles at several fixtures make storage water-heater sediment, mineral scale, corrosion products, hot-side piping, or a hot-water component more relevant. They do not prove the heater is failing. If comparable particles appear in both hot and cold water at several fixtures, a heater-only explanation fits less well and the incoming supply, private well, treatment equipment, or shared household piping deserves attention. Cold-only particles still require scope and timing; that pattern does not identify a single cause."],
+        "callout": {"title": "Do not flush equipment just to diagnose it", "text": "Water-heater designs, energy sources, valves, maintenance histories, and manufacturer procedures vary. Do not drain a tank, operate a relief valve, open pressurized connections, or access gas or electrical compartments merely to look for sediment."}
+      },
+      {
+        "id": "appearance",
+        "heading": "What do the particles look like?",
+        "paragraphs": ["Record whether the material is fine grit, sand-like grains, hard flakes, soft fragments, or suspended specks; whether it settles; and whether the water itself is discolored or cloudy. A photograph against a light background can help a utility, plumber, laboratory, or well professional.", "Treat color as descriptive evidence only. White flakes are not automatically calcium, brown particles are not automatically rust, and black specks are not automatically rubber, filter media, manganese, or biological growth. Similar-looking material can come from different components, and some important drinking-water contaminants have no visible color, taste, or odor."],
+        "bullets": ["Fine grit or sand-like material: document whether it is local or widespread and whether a private well is involved.", "White or scale-like flakes: compare hot and cold water; do not identify the mineral from appearance.", "Brown, orange, or reddish material: note whether the water itself is discolored and whether public-system work occurred.", "Black, translucent, or soft fragments: note texture and fixture scope without naming a gasket, filter, pipe, or contaminant."]
+      },
+      {
+        "id": "one-faucet",
+        "heading": "What if sediment comes from only one faucet?",
+        "paragraphs": ["When every comparable fixture runs clear, the outlet, aerator or screen, fixture cartridge, flexible connector, shutoff area, or nearby branch becomes more relevant. A screen can trap material that arrived from upstream, so finding particles there still does not prove the faucet created them.", "You can compare another fixture and observe the accessible outlet. If the aerator is a normal removable user-service part and its manufacturer instructions are available, inspection may be reasonable with the faucet off. Do not force a seized part, dismantle a valve, open pressurized piping, or turn the article into a fixture-repair experiment. Persistent debris, damaged parts, or an uncertain source belongs with a plumber." ]
+      },
+      {
+        "id": "bath-specific",
+        "heading": "What if you see sediment only in the bathtub?",
+        "paragraphs": ["A bathtub can make particles especially visible because it holds a large volume of water, but tub residue and drain debris can also be mistaken for material delivered by the supply. Catch fresh water in a clean container before it reaches the tub surface, then compare the tub with another fixture.", "If the particles are primarily delivered while filling one tub, the local fixture and bath-specific pattern deserve their own investigation rather than a whole-house conclusion."],
+        "link": {"before": "Use ", "label": "Why Is There Sediment in My Bath Water?", "href": "/plumbing/sediment-in-bath-water/", "after": " for the tub-only hot/cold and fixture comparison."}
+      },
+      {
+        "id": "water-heater",
+        "heading": "Could the water heater be causing the sediment?",
+        "paragraphs": ["Storage water heaters can act as settling vessels, and manufacturer guidance documents that minerals and waterborne particles can accumulate as sediment or scale. This is a credible category when particles occur in hot water at several fixtures while cold samples remain clear.", "It is not a universal explanation. Tankless equipment, storage tanks, piping materials, dip tubes, anodes, and local water chemistry vary. Material in hot water can also come from hot-side piping or another component. Use the exact equipment manual or qualified service rather than a generic flushing procedure. If water is also collecting around the heater, investigate the leak as a separate safety issue."],
+        "link": {"before": "For water on the floor or at the heater itself, use ", "label": "Why Is There Water Under My Water Heater?", "href": "/plumbing/water-under-water-heater/", "after": "."}
+      },
+      {
+        "id": "municipal-supply",
+        "heading": "Can water-main work put sediment in tap water?",
+        "paragraphs": ["Yes. Public utilities document that main breaks, hydrant flushing, firefighting, construction, pressure changes, and other high-flow events can stir settled material and change water appearance. A sudden change at several cold and hot fixtures, especially when neighbors notice it too, makes the public distribution system more relevant.", "Check the supplier's current notices and report the timing, streets or addresses affected, color, particles, and whether cold water is involved. Follow that supplier's flushing or use instructions exactly; utilities prescribe different procedures for different events. Do not substitute a universal run-the-tap duration. If a boil-water, do-not-drink, or do-not-use advisory is active, the advisory controls."],
+        "callout": {"title": "Official instructions outrank generic advice", "text": "A distribution disturbance may be temporary, but recent main work does not automatically explain every particle. Contact the supplier when a widespread change persists, the timing matches system work, or the water also changes color, odor, or clarity."}
+      },
+      {
+        "id": "private-well",
+        "heading": "What if you have a private well?",
+        "paragraphs": ["A private well creates a different branch because the owner is responsible for routine testing and maintenance. EPA recommends testing after a significant change in water quality, flooding or land disturbance, well repair, or another condition that could affect the well. Use the local health department and a state-certified drinking-water laboratory to select tests that match the situation.", "Minnesota Department of Health guidance notes that a properly constructed and developed well should not normally produce sand and advises contacting a well contractor when sand appears. Persistent or suddenly increased grit can involve the well screen, construction, pump setting, groundwater conditions, or treatment equipment, but particle appearance cannot identify which. Do not pull a pump or attempt a well repair from a visual guess."],
+        "callout": {"title": "Flooding changes the safety response", "text": "If floodwater may have reached a private well, follow state or local health guidance and CDC/EPA well-emergency instructions. Do not use appearance, smell, or a countertop strip as proof that the water is safe."}
+      },
+      {
+        "id": "recent-work",
+        "heading": "What if it started after plumbing work or a water shutoff?",
+        "paragraphs": ["Pipe repair, valve replacement, water-heater work, repiping, a fixture change, or restoring water after a shutoff can disturb material inside plumbing. That timing is valuable, especially if the particles first appear at the worked-on branch or spread after service returns.", "Timing still does not identify composition. Ask the contractor or utility what work occurred and whether they have situation-specific flushing or sampling instructions. Recurring one-fixture material belongs with a plumber; a widespread public-water change belongs with the supplier; persistent well sediment belongs with a well professional." ]
+      },
+      {
+        "id": "water-safety",
+        "heading": "Is sediment in water harmful?",
+        "paragraphs": ["You cannot answer that from appearance alone. EPA distinguishes physical changes such as sediment from chemical, biological, and radiological contaminants, and notes that the presence of a contaminant does not automatically mean a health risk. The reverse is also true: water can contain important contaminants without visible particles.", "Do not drink questionable water merely because the particles look mineral-like, and do not declare the supply contaminated solely because particles are visible. Use another source for drinking and cooking when the supplier or health authority directs it, when a do-not-drink or do-not-use advisory applies, or while officials evaluate a significant unexplained change. Seek official guidance for unusual chemical, fuel, or sewage odor; flooding; suspected contamination; or illness concerns."],
+        "callout": {"title": "Boiling is not a universal fix", "text": "A boil-water advisory is aimed at germs. CDC warns that boiling water containing harmful chemicals or toxins does not make it safe. Follow the exact boil-water, do-not-drink, or do-not-use advisory rather than inventing a treatment."}
+      },
+      {
+        "id": "testing",
+        "heading": "Should you have the water tested?",
+        "paragraphs": ["Testing becomes more relevant for private wells, persistent unexplained changes, flooding, suspected contamination, recurring whole-house particles, or when a utility, health department, plumber, or well professional recommends it. There is no single generic water test that finds every possible material.", "Contact the water supplier first for a public-system event; its monitoring and investigation may determine the next step. For independent or private-well testing, use a state-certified drinking-water laboratory. Ask which analytes fit the history and obtain the laboratory's container, preservation, and sampling instructions before collecting anything. A consumer strip can be a screening tool for a narrow parameter, but it is not proof that unknown water is completely safe." ]
+      },
+      {
+        "id": "filters",
+        "heading": "Will a water filter fix sediment?",
+        "paragraphs": ["A filter may capture some particles, but capture is not the same as correcting the source. It will not repair a deteriorating fixture, damaged household plumbing, a water-heater problem, a well producing sand, or a public-main disturbance. A clogged or failing treatment device can also become part of the investigation when one is installed.", "Identify the pattern first, then select treatment only for a verified need and according to water-test results or professional guidance. Do not buy a filter based only on particle color, and do not rely on a filter as permission to ignore an active advisory." ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": ["Compare at least one other fixture and keep bath-only observations separate from broad household water.", "Collect separate cold and hot samples in clean light-colored containers when official guidance permits water use.", "Note when the particles began and whether water-main, hydrant, plumbing, heater, well, or shutoff work occurred.", "Record approximate appearance, settling, cloudiness, discoloration, pressure change, and odor without identifying the material.", "Confirm public-water or private-well service and check the supplier's current notices and advisories.", "Ask whether neighbors on the same public system noticed a similar change, when that information is readily available.", "Photograph the pattern for the utility or professional; collect a formal sample only under laboratory or official instructions.", "Stop ordinary checks when an advisory, suspected contamination, chemical/fuel/sewage odor, flooding, equipment leak near electricity, or another safety warning is present." ]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "When to contact the utility, a plumber, or a well professional",
+        "paragraphs": ["Contact the public water supplier when particles appear at multiple hot and cold fixtures, the change is sudden, the timing matches main work or an outage, neighbors report the same condition, water is discolored, or the problem persists beyond the supplier's instructions. The supplier can confirm system events and tell you whether to flush, wait, avoid use, or take another step.", "Call a plumber when the problem stays at one fixture, persists only on the hot-water side, began after household plumbing work, recurs despite normal incoming water, or points to household piping or a component. Call a qualified well contractor for persistent or increasing sand or sediment, changed pump or pressure behavior, suspected well construction problems, or post-flood concerns. Use a health department or certified laboratory when safety or contaminant identity requires testing." ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": ["Start with fixture scope, then compare cold and hot water. One outlet points toward a local component or branch; hot-only particles at several fixtures make the hot-water system more relevant; particles throughout hot and cold water shift attention toward household plumbing, the public supply, treatment equipment, or a private well.", "Sediment is an observation, not an identification. Describe the particles, timing, source, and companion changes without declaring the material safe or hazardous. Follow official advisories, avoid invasive equipment work and universal flushing or filter fixes, and use the utility, plumber, well professional, health department, or certified laboratory that matches the pattern." ]
+      }
+    ],
+    "sources": [
+      {"title": "Types of Drinking Water Contaminants", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/ccl/types-drinking-water-contaminants"},
+      {"title": "Protect Your Home's Water", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/privatewells/protect-your-homes-water"},
+      {"title": "Contact Information for Certification Programs and Certified Laboratories for Drinking Water", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/dwlabcert/contact-information-certification-programs-and-certified-laboratories-drinking-water"},
+      {"title": "Drinking Water Advisories: An Overview", "publisher": "Centers for Disease Control and Prevention", "url": "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"},
+      {"title": "What to do during a discolored water event", "publisher": "Portland Water Bureau", "url": "https://www.portland.gov/water/drinking-water-quality/troubleshooting-drinking-water-quality-home/discolored-water-event"},
+      {"title": "Dirty or Discolored Water", "publisher": "San Francisco Public Utilities Commission", "url": "https://www.sfpuc.gov/accounts-services/water-quality/dirty-or-discolored-water"},
+      {"title": "Well Owner's Handbook", "publisher": "Minnesota Department of Health", "url": "https://www.health.state.mn.us/communities/environment/water/docs/wells/construction/handbook.pdf"},
+      {"title": "Electric Water Heater Use and Care Guide", "publisher": "A. O. Smith", "url": "https://assets.hotwater.com/damroot/Original/10009/100375354.pdf"}
     ]
   }
 ]

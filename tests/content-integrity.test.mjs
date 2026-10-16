@@ -892,13 +892,14 @@ test("bath-water sediment guide uses appearance, temperature, and fixture scope 
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Sediment in bath water,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-11");
-  assert.equal(article.updated_date, "2026-09-11");
+  assert.equal(article.updated_date, "2026-10-16");
   assert.equal(article.primary_category, "plumbing");
   assert.deepEqual(article.room_or_location, ["bathroom"]);
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/sediment-in-bath-water/"));
   assert.ok(article.body_sections.some((section) => section.id === "three-clues" && section.table?.rows.length === 3));
   assert.ok(article.body_sections.some((section) => section.id === "temperature" && section.table?.rows.length === 3));
   assert.ok(article.body_sections.some((section) => section.id === "fixture-scope"));
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/plumbing/sediment-in-water/"));
   assert.ok(article.body_sections.some((section) => section.id === "water-heater"));
   assert.ok(article.body_sections.some((section) => section.id === "supply-water"));
   assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.callout));
@@ -911,6 +912,35 @@ test("bath-water sediment guide uses appearance, temperature, and fixture scope 
   assert.match(body, /color alone/i);
   assert.match(body, /Do not decide water safety by appearance/i);
   assert.match(body, /Do not reflexively flush the heater/i);
+});
+
+test("broad sediment-in-water guide owns household scope without replacing the bath-specific intent", () => {
+  const article = registry.find((item) => item.slug === "sediment-in-water");
+  const bath = registry.find((item) => item.slug === "sediment-in-bath-water");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Sediment in water,"));
+  assert.ok(article && bath);
+  assert.equal(article.published_date, "2026-10-16");
+  assert.equal(article.updated_date, "2026-10-16");
+  assert.equal(article.primary_category, "plumbing");
+  assert.deepEqual(article.room_or_location, ["whole-house", "bathroom", "kitchen"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/sediment-in-water/"));
+  assert.ok(article.body_sections.some((section) => section.id === "fixture-scope" && section.table?.rows.length === 5));
+  for (const id of ["temperature", "appearance", "one-faucet", "bath-specific", "water-heater", "municipal-supply", "private-well", "recent-work", "water-safety", "testing", "filters", "safe-observations", "who-to-call"]) {
+    assert.ok(article.body_sections.some((section) => section.id === id), id);
+  }
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/plumbing/sediment-in-bath-water/"));
+  assert.ok(bath.related_articles.includes(article.slug));
+  assert.equal(article.image.src, "/images/sediment-in-water-source-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  for (const publisher of ["U.S. Environmental Protection Agency", "Centers for Disease Control and Prevention", "Portland Water Bureau", "San Francisco Public Utilities Commission", "Minnesota Department of Health", "A. O. Smith"]) {
+    assert.ok(article.sources.some((source) => source.publisher === publisher), publisher);
+  }
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /Sediment is an observation/i);
+  assert.match(body, /White flakes are not automatically calcium/i);
+  assert.match(body, /boiling water containing harmful chemicals or toxins does not make it safe/i);
+  assert.match(body, /Do not buy a filter based only on particle color/i);
 });
 
 

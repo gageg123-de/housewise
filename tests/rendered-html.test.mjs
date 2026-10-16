@@ -312,6 +312,25 @@ test("musty-garage guide renders moisture distinctions without claiming odor pro
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("broad sediment-in-water guide renders scope, safety uncertainty, schema, and reciprocal routing", async () => {
+  const response = await render("/plumbing/sediment-in-water");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is There Sediment in My Water\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /First: is the sediment coming from one fixture or several\?/);
+  assert.match(html, /Is it in the hot water, cold water, or both\?/);
+  assert.match(html, /Sediment is an observation/);
+  assert.match(html, /Boiling is not a universal fix/);
+  assert.match(html, /href="\/plumbing\/sediment-in-bath-water\/"/);
+  assert.match(html, /src="\/images\/sediment-in-water-source-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/sediment-in-water\//);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/sediment-in-water-source-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
 test("toilet-whistle guide renders refill timing, conservative shutoff safety, and drainage distinction", async () => {
   const response = await render("/plumbing/toilet-whistles-after-flushing"); const html = await response.text();
   assert.equal(response.status, 200);
@@ -594,6 +613,7 @@ test("bath-water sediment guide renders the three-clue framework, safety, schema
   assert.match(html, /Is the sediment only in the bathtub\?/);
   assert.match(html, /Do not decide water safety by appearance/);
   assert.match(html, /href="\/plumbing\/water-under-water-heater\/"/);
+  assert.match(html, /href="\/plumbing\/sediment-in-water\/"/);
   assert.match(html, /src="\/images\/bath-water-sediment-diagnostic-guide\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /"@type":"Article"/);
