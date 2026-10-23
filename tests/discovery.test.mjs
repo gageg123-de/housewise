@@ -41,6 +41,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
 
   const kitchen = getFinderSymptomOptions("kitchen");
   assert.ok(kitchen.some((item) => item.value === "appliance-light-flicker"));
+  assert.ok(kitchen.some((item) => item.value === "dishwasher-draining"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-drying"));
   assert.ok(kitchen.some((item) => item.value === "dishwasher-cleaning"));
   assert.ok(kitchen.some((item) => item.value === "sink-drain-leak"));
@@ -52,6 +53,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "random-light-flicker"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-drying"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-cleaning"));
+  assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "dishwasher-draining"));
   assert.ok(!getFinderSymptomOptions("yard").some((item) => item.value === "window-condensation"));
 
   const laundry = getFinderSymptomOptions("laundry");
@@ -85,6 +87,7 @@ test("Problem Finder ranks exact location and symptom matches without unrelated 
   assert.equal(rankFinderArticles(registry, "whole-house", "window-condensation")[0].article.slug, "condensation-inside-windows");
   assert.equal(rankFinderArticles(registry, "whole-house", "window-mold")[0].article.slug, "mold-growing-around-windows");
   assert.equal(rankFinderArticles(registry, "kitchen", "appliance-light-flicker")[0].article.slug, "lights-flicker-when-appliance-turns-on");
+  assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-draining")[0].article.slug, "dishwasher-not-draining");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-drying")[0].article.slug, "dishwasher-not-drying-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "dishwasher-cleaning")[0].article.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(rankFinderArticles(registry, "kitchen", "sink-drain-leak")[0].article.slug, "sink-leaking-from-drain");
@@ -135,6 +138,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["whole-house", "random-light-flicker"],
     ["whole-house", "outlet-buzzing"],
     ["kitchen", "appliance-light-flicker"],
+    ["kitchen", "dishwasher-draining"],
     ["kitchen", "dishwasher-drying"],
     ["kitchen", "dishwasher-cleaning"],
     ["kitchen", "water-sediment"],
@@ -413,6 +417,18 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["dishwasher leaves dishes greasy", "dishwasher-not-cleaning-dishes"],
     ["dishwasher top rack not cleaning", "dishwasher-not-cleaning-dishes"],
     ["dishwasher bottom rack not cleaning", "dishwasher-not-cleaning-dishes"],
+    ["dishwasher not draining", "dishwasher-not-draining"],
+    ["dishwasher won’t drain", "dishwasher-not-draining"],
+    ["dishwasher won't drain", "dishwasher-not-draining"],
+    ["dishwasher has standing water", "dishwasher-not-draining"],
+    ["water in bottom of dishwasher", "dishwasher-not-draining"],
+    ["dishwasher full of water", "dishwasher-not-draining"],
+    ["dishwasher water not draining", "dishwasher-not-draining"],
+    ["dishwasher drain problem", "dishwasher-not-draining"],
+    ["dishwasher not draining after cycle", "dishwasher-not-draining"],
+    ["dishwasher not draining into disposal", "dishwasher-not-draining"],
+    ["dishwasher stopped draining after new disposal", "dishwasher-not-draining"],
+    ["dishwasher backs up with water", "dishwasher-not-draining"],
     ["sediment in bath water", "sediment-in-bath-water"],
     ["particles in bath water", "sediment-in-bath-water"],
     ["grit in bathtub water", "sediment-in-bath-water"],
@@ -453,11 +469,13 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   assert.deepEqual(searchArticles(registry, "yard standing water"), []);
   assert.equal(searchArticles(registry, "lights flicker randomly")[0]?.slug, "lights-flicker-randomly");
   assert.equal(searchArticles(registry, "dishwasher not cleaning dishes")[0]?.slug, "dishwasher-not-cleaning-dishes");
-  assert.notEqual(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-drying-dishes");
-  assert.notEqual(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-cleaning-dishes");
+  assert.equal(searchArticles(registry, "dishwasher not draining")[0]?.slug, "dishwasher-not-draining");
   assert.notEqual(searchArticles(registry, "dishwasher leaking")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.notEqual(searchArticles(registry, "dishwasher smells bad")[0]?.slug, "dishwasher-not-cleaning-dishes");
   assert.equal(searchArticles(registry, "dishwasher not drying dishes")[0]?.slug, "dishwasher-not-drying-dishes");
+  for (const query of ["dishwasher not cleaning", "dishwasher not drying", "dishwasher leaking", "dishwasher smells bad", "sink not draining", "multiple drains backing up", "sink gurgles when toilet flushes"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "dishwasher-not-draining", query);
+  }
   for (const query of ["condensation between window panes", "window leaking when it rains", "mold around windows"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-inside-windows", query);
   for (const query of ["condensation inside windows", "condensation on inside of windows", "windows wet inside", "mold around windows", "wet window sill", "window leaking when it rains", "water around window frame", "house humid with ac running"]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "condensation-between-window-panes", query);
   assert.equal(searchArticles(registry, "house humid with ac running")[0]?.slug, "house-humid-with-ac-running");
@@ -886,5 +904,31 @@ test("whole-house outage Finder and search preserve partial and localized power-
   assert.equal(rankFinderArticles(registry, "whole-house", "whole-house-no-power")[0]?.article.slug, "whole-house-without-power");
   for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "whole-house-no-power"), location);
+  }
+});
+
+test("dishwasher drainage Finder and search preserve cleaning, drying, leaking, and plumbing intents", () => {
+  const positives = [
+    "dishwasher not draining",
+    "dishwasher won't drain",
+    "dishwasher has standing water",
+    "water in bottom of dishwasher",
+    "dishwasher full of water",
+    "dishwasher water not draining",
+    "dishwasher drain problem",
+    "dishwasher not draining after cycle",
+    "dishwasher not draining into disposal",
+    "dishwasher stopped draining after new disposal",
+    "dishwasher backs up with water",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "dishwasher-not-draining", query);
+  for (const query of ["dishwasher not cleaning dishes", "dishwasher not drying dishes", "dishwasher leaking", "dishwasher smells bad", "sink not draining", "multiple drains backing up", "sink gurgles when toilet flushes"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "dishwasher-not-draining", query);
+  }
+  assert.ok(getFinderSymptomOptions("kitchen").some((item) => item.value === "dishwasher-draining"));
+  const finderResults = rankFinderArticles(registry, "kitchen", "dishwasher-draining");
+  assert.deepEqual(finderResults.map((item) => item.article.slug), ["dishwasher-not-draining"]);
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "dishwasher-draining"), location);
   }
 });

@@ -1565,14 +1565,14 @@
   {
     "title": "Why Is My Dishwasher Not Drying Dishes?", "slug": "dishwasher-not-drying-dishes", "description": "Wet plastics can be normal, but a whole load left wet may point to rinse aid, cycle, loading, water-temperature, heating, or venting conditions.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
-    "published_date": "2026-09-03", "updated_date": "2026-09-03", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-09-03", "updated_date": "2026-10-23", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["dishwasher not drying dishes", "why is my dishwasher not drying dishes", "dishwasher leaves dishes wet", "dishes wet after dishwasher", "dishwasher not drying plastic", "dishwasher dishes still wet", "dishwasher not drying after cycle", "dishwasher not drying properly", "dishwasher not heat drying", "water on dishes after dishwasher"],
     "target_search_intent": "Help a homeowner understand why dishes remain wet after an otherwise completed dishwasher cycle, distinguish normal wet plastics or pooled water from settings, rinse-aid, loading, water-temperature, heating, or model-dependent venting problems, and know when appliance service is appropriate.",
     "direct_answer": "Dishwashers do not all dry the same way. Drying depends on the machine's design, the chosen cycle and options, rinse aid, loading, incoming water conditions, ventilation, and the materials in the load. Plastic commonly stays wetter than glass, ceramic, or metal because it gives up heat quickly. If a dishwasher that used to dry well suddenly leaves the entire load wet, check the selected drying option and rinse-aid supply first; a water-temperature, heating, sensor, control, vent, or fan problem may also be involved depending on the model.",
     "likely_causes": ["Normal differences among dishwasher drying systems", "Empty or disabled rinse-aid dispenser", "Cycle or drying option selection", "Plastic items cooling faster than glass ceramic or metal", "Loading that traps or pools water", "Incoming water conditions outside model requirements", "Heating component problem on models that use one", "Temperature sensor thermostat or control issue", "Vent fan or automatic-door feature issue where equipped", "Interrupted or incomplete cycle"],
     "safe_checks": ["Confirm the selected cycle and drying option in the model's manual.", "Check the rinse-aid indicator or reservoir and use only the product and setting the manufacturer recommends.", "Compare plastic items with glass ceramic and metal items rather than judging the whole load from plastics alone.", "Angle cups bowls lids and recessed bases so clean rinse water can drain instead of pooling.", "Note whether performance changed suddenly or only on quick eco or no-heat cycles.", "Confirm household hot water is behaving normally without raising the water-heater setting solely for the dishwasher.", "Note error codes unusual noises or an incomplete cycle.", "Look for smoke burning odor breaker trips unusual heat or water reaching electrical areas and stop use if any are present."],
     "professional_help": "Arrange appliance service when the dishwasher previously dried well and suddenly stopped, the entire load stays unusually wet despite correct settings and rinse aid, the heated-dry option no longer changes results, an error code appears, or a model-dependent heater, sensor, control, vent, fan, or automatic-door feature is suspected. Stop using the dishwasher and seek appropriate appliance or electrical help for smoke, sparking, burning electrical odor, breaker trips, unusual overheating, melted parts, or water reaching electrical components.",
-    "related_articles": ["dishwasher-not-cleaning-dishes", "dryer-taking-two-cycles", "dryer-smells-like-burning"],
+    "related_articles": ["dishwasher-not-cleaning-dishes", "dishwasher-not-draining", "dryer-taking-two-cycles", "dryer-smells-like-burning"],
     "image": {
       "src": "/images/dishwasher-drying-performance-factors.webp",
       "width": 1536,
@@ -1687,7 +1687,10 @@
           { "heading": "Stop use for electrical or overheating signs", "paragraphs": ["Leave the dishwasher off for smoke, sparking, a burning-electrical smell, melted parts, repeated breaker trips, unusual overheating, or water reaching electrical components. Do not repeat a cycle to reproduce those symptoms; use qualified appliance or electrical help as appropriate."] },
           { "heading": "Keep other dishwasher symptoms separate", "paragraphs": ["An active leak, standing water that does not drain, bad odor, residue, filling trouble, or grinding noise needs its own diagnosis. Those symptoms can coexist with wet dishes, but they are not explained by drying performance alone."] }
         ],
-        "link": { "before": "If food, grease, or soil remains after a completed wash cycle, use ", "label": "Why Is My Dishwasher Not Cleaning Dishes?", "href": "/appliances/dishwasher-not-cleaning-dishes/", "after": " for the separate wash-performance problem." }
+        "link": { "before": "If food, grease, or soil remains after a completed wash cycle, use ", "label": "Why Is My Dishwasher Not Cleaning Dishes?", "href": "/appliances/dishwasher-not-cleaning-dishes/", "after": " for the separate wash-performance problem." },
+        "links": [
+          { "before": "If water remains across the dishwasher tub instead of only on the dishes, use ", "label": "Why Is My Dishwasher Not Draining?", "href": "/appliances/dishwasher-not-draining/", "after": " for the separate drainage pattern." }
+        ]
       }
     ],
     "sources": [
@@ -1702,14 +1705,14 @@
   {
     "title": "Why Is My Dishwasher Not Cleaning Dishes?", "slug": "dishwasher-not-cleaning-dishes", "description": "Food or grease left after a completed cycle can come from loading, blocked spray paths, filter or spray-arm buildup, detergent, cycle selection, water conditions, or a wash-system problem.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
-    "published_date": "2026-09-05", "updated_date": "2026-09-05", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
+    "published_date": "2026-09-05", "updated_date": "2026-10-23", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
     "search_keywords": ["dishwasher not cleaning dishes", "why is my dishwasher not cleaning dishes", "dishwasher leaves food on dishes", "dishes still dirty after dishwasher", "dishwasher not washing properly", "dishwasher leaves dishes greasy", "dishwasher top rack not cleaning", "dishwasher bottom rack not cleaning", "food left on dishes after dishwasher", "dishwasher cleaning poorly"],
     "target_search_intent": "Help a homeowner determine why food, grease, or soil remains on dishes after a completed dishwasher cycle, safely check loading, spray paths, user-serviceable filters, detergent, cycles, and water conditions, and recognize when a fill, circulation, heating, or rack-delivery problem needs appliance service.",
     "direct_answer": "When a dishwasher finishes but leaves food, grease, or soil behind, start with the pattern. Crowded loading, a blocked spray arm, clogged spray-arm holes, a dirty user-serviceable filter, unsuitable detergent, or a cycle that is too light can all weaken cleaning. If nearly everything suddenly comes out dirty despite correct loading and routine maintenance, low water fill, weak circulation, inadequate wash temperature, or another component problem becomes more plausible. One dirty rack, greasy dishes, and debris redeposited across the load are different clues—not proof of one failed part.",
     "likely_causes": ["Crowded or incorrectly positioned dishes blocking spray and detergent", "Spray arm obstructed or spray openings clogged", "User-serviceable filter loaded with debris", "Detergent amount type storage or dispenser problem", "Cycle too light for the soil level", "Water conditions outside the model's requirements", "Low water fill or inlet-system problem", "Weak circulation from a pump or related wash-system fault", "Rack-specific water-delivery problem", "Hard-water mineral buildup or excessive soil redeposition"],
     "safe_checks": ["Identify whether the whole load or only one rack or area stays dirty.", "Reload dishes so spray arms can rotate and water paths are not blocked.", "Inspect and clean only the filter and spray arms the manufacturer identifies as user-serviceable, with the dishwasher off.", "Confirm detergent is fresh suitable for the machine and placed in an unobstructed dispenser.", "Match the cycle to the load and follow the manual's scraping or pre-rinsing guidance.", "Note whether household hot water or water pressure has changed without adjusting the water heater to an unsafe setting.", "Record error codes unusual pump sounds weak spray or a cycle that does not complete.", "Stop use for smoke sparking burning odor breaker trips unusual overheating or water reaching electrical parts."],
     "professional_help": "Arrange appliance service when correct loading, the intended cycle, fresh detergent, and model-approved filter or spray-arm care do not restore cleaning; when one rack repeatedly receives little wash action; when the machine fills abnormally, sounds as though circulation is weak, shows an error, or no longer heats or completes cycles as designed. Stop using it and seek appropriate appliance or electrical help for smoke, sparking, a burning-electrical smell, breaker trips, unusual overheating, or water reaching electrical components.",
-    "related_articles": ["dishwasher-not-drying-dishes"],
+    "related_articles": ["dishwasher-not-drying-dishes", "dishwasher-not-draining"],
     "image": {
       "src": "/images/dishwasher-cleaning-performance-factors.webp",
       "width": 1536,
@@ -1811,7 +1814,10 @@
           { "heading": "Stop use for electrical or overheating signs", "paragraphs": ["Leave the dishwasher off for smoke, sparking, a burning-electrical smell, melted parts, repeated breaker trips, unusual overheating, or water reaching electrical components. Do not run another diagnostic cycle under those conditions; seek qualified appliance or electrical help as appropriate."] },
           { "heading": "Keep drying and other symptoms separate", "paragraphs": ["Food and grease left after washing define a cleaning problem. Clear water left on otherwise clean items is a drying issue. Standing water, an active leak, odor, white residue, fill failure, or grinding noise may coexist but should not be folded into this diagnosis."] }
         ],
-        "link": { "before": "If the load is clean but remains wet after the cycle, use ", "label": "Why Is My Dishwasher Not Drying Dishes?", "href": "/appliances/dishwasher-not-drying-dishes/", "after": " for material, rinse-aid, cycle, loading, and drying-system clues." }
+        "link": { "before": "If the load is clean but remains wet after the cycle, use ", "label": "Why Is My Dishwasher Not Drying Dishes?", "href": "/appliances/dishwasher-not-drying-dishes/", "after": " for material, rinse-aid, cycle, loading, and drying-system clues." },
+        "links": [
+          { "before": "If abnormal water remains across the tub floor after the cycle, use ", "label": "Why Is My Dishwasher Not Draining?", "href": "/appliances/dishwasher-not-draining/", "after": " to separate filter, sink, disposal, hose, installation, and internal drainage clues." }
+        ]
       }
     ],
     "sources": [
@@ -1823,6 +1829,174 @@
       { "title": "Why Your LG Dishwasher Isn't Cleaning Dishes Well and How to Fix It", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/why-your-lg-dishwasher-isnt-cleaning-dishes-well-and-how-to-fix-it--20155370301554" },
       { "title": "Dishwasher Spray Arm Maintenance", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/lg-dishwasher-spray-arm-maintenance--1366644956160" },
       { "title": "Dishwasher Water Too Hot or Too Cold", "publisher": "LG Support", "url": "https://www.lg.com/us/support/help-library/dishwasher-water-too-hot-or-too-cold-CT10000009-20150995684577" }
+    ]
+  },
+  {
+    "title": "Why Is My Dishwasher Not Draining?", "slug": "dishwasher-not-draining", "description": "Dishwasher not draining? Learn how standing water, the filter, sink, disposal, drain hose, and pump clues can narrow the problem safely.",
+    "primary_category": "appliances", "secondary_categories": ["plumbing"], "symptoms": ["appliance-behavior", "drainage"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
+    "published_date": "2026-10-23", "updated_date": "2026-10-23", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
+    "search_keywords": ["dishwasher not draining", "why is my dishwasher not draining", "dishwasher won't drain", "dishwasher won’t drain", "dishwasher has standing water", "water in bottom of dishwasher", "dishwasher full of water", "dishwasher water not draining", "dishwasher drain problem", "dishwasher not draining after cycle", "dishwasher not draining into disposal", "dishwasher stopped draining after new disposal", "dishwasher backs up with water"],
+    "target_search_intent": "Help a homeowner determine whether water left after a dishwasher cycle is abnormal, distinguish an incomplete cycle or accessible filter issue from sink, disposal, drain-hose, air-gap, backflow, or internal appliance problems, and choose appliance service or a plumber without assuming the drain pump failed.",
+    "direct_answer": "Standing water does not automatically mean the dishwasher's drain pump failed. First determine whether the water is only a small model-dependent amount in or below the recessed filter area, or whether it visibly covers the tub floor after a completed cycle. Then check whether the cycle finished, clean only the filter or drain area the manual identifies as user-serviceable, and compare the kitchen sink and disposal. A newly installed disposal with its dishwasher-inlet plug still in place, a kinked visible drain hose, an obstructed air gap where one is installed, or downstream sink drainage can all imitate an appliance failure. If those checks are clear and the dishwasher still cannot drain, appliance service becomes more appropriate.",
+    "likely_causes": ["Small model-dependent residual water in the filter or sump area", "Interrupted or incomplete cycle", "Food debris in a homeowner-serviceable filter or accessible drain area", "Slow or blocked sink or garbage-disposal drainage", "Dishwasher inlet plug left in a newly installed disposal", "Kinked crushed obstructed or incorrectly routed drain hose", "Obstructed air gap where one is installed", "Sink water flowing back through the dishwasher drain connection", "Drain-pump obstruction or internal pump component problem", "Model-specific sensor control or electrical fault"],
+    "safe_checks": ["Compare water localized below the filter with water visibly covering the tub floor.", "Confirm the cycle completed and record any error code or interruption.", "Use only the model's documented Cancel or Drain control when appropriate.", "Turn off the dishwasher as the manufacturer directs before cleaning a user-serviceable filter.", "Inspect and clean only accessible filter or drain parts described in the owner's manual.", "Check whether the kitchen sink and garbage disposal drain normally.", "Note whether a disposal was installed or replaced immediately before the symptom began.", "Inspect only the visible under-sink drain hose for an obvious kink or crush.", "Identify an installed countertop air gap without assuming every installation has one.", "Stop use for leakage near electricity smoke sparking burning odor unusual heat or repeated breaker trips."],
+    "professional_help": "Call an appliance technician when the sink and disposal drain normally, the model-approved filter area is clear, the visible hose is not kinked, and the dishwasher still cannot evacuate water or reports a recurring drainage fault. Call a plumber when the sink or disposal is slow or backed up, sink use sends water into the dishwasher, an air-gap or drain connection is obstructed, or recent disposal or plumbing work matches the change. An installer may be the best first call when drainage failed immediately after dishwasher or disposal installation.",
+    "related_articles": ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time"],
+    "image": {
+      "src": "/images/dishwasher-not-draining-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel dishwasher drainage guide comparing water near the filter, filter debris, the drain path to a sink or disposal, and installation or appliance service clues.",
+      "caption": "Conceptual illustration: first locate the remaining water, then compare the accessible filter and the sink-side drain path. Dishwasher and plumbing layouts vary, and none of these patterns proves a failed pump.",
+      "kind": "conceptual",
+      "after_section": "is-water-abnormal"
+    },
+    "body_sections": [
+      {
+        "id": "is-water-abnormal",
+        "heading": "First: Is the water in the dishwasher actually abnormal?",
+        "paragraphs": [
+          "Location matters more than a universal depth. Manufacturer guidance for some models says a small amount of water in or below the recessed filter or sump area can remain by design. That water may help keep seals from drying and can be exchanged during the next cycle. Other designs differ, so the owner's manual is the authority for the specific machine.",
+          "Water visibly spreading across the flat tub floor after a completed cycle is a different pattern. A tub holding enough water to cover the filter area, reach toward the door, or contain a substantial load of wash water deserves drainage troubleshooting. Do not label every glint below a removed filter as a failure, and do not dismiss broad standing water as normal residue."
+        ],
+        "table": {
+          "headers": ["Where the water remains", "How to treat the observation"],
+          "rows": [
+            ["Only in or below a recessed filter/sump area", "May be normal for some models; compare with the model manual"],
+            ["A shallow layer visibly covers the tub floor", "Drainage may be incomplete; continue with cycle, filter, and sink-side checks"],
+            ["The tub is substantially full", "Stop repeated cycles, protect the floor, and investigate promptly"],
+            ["Water appears later while the dishwasher is off", "Backflow from the sink-side connection becomes more relevant"],
+            ["Water is leaking outside the appliance", "Treat leakage as a separate stop-use concern, especially near electricity"]
+          ]
+        }
+      },
+      {
+        "id": "cycle-finished",
+        "heading": "Did the dishwasher finish the cycle?",
+        "paragraphs": [
+          "A door opening, power interruption, canceled program, fault, or control problem can stop the sequence before the intended drain phase. Check whether the completion indicator appeared, whether the door was opened, and whether a breaker trip or household outage occurred. Record an error instead of clearing it before you know what it means.",
+          "Many models provide a Cancel, Reset, or Drain function, but the button sequence and behavior are not universal. Use the owner’s manual for the exact controls. One manufacturer-supported drain command can show whether the machine attempts to move water; repeatedly restarting a full tub is not a useful or safe diagnostic strategy."
+        ]
+      },
+      {
+        "id": "attempts-to-drain",
+        "heading": "Does the dishwasher try to drain?",
+        "paragraphs": [
+          "Listen from a normal standing position while using the documented drain function. A drain sound with little water movement can fit a restricted filter, hose, sink connection, air gap, or pump path. No apparent drain activity can involve the cycle state, door or control logic, power to the pump, or the pump itself. Water moving into the sink or disposal helps confirm that at least part of the discharge path is open.",
+          "Sound cannot name the failed part. A hum does not prove a bad motor; a pump may be obstructed, loaded against a blocked discharge path, or operating differently by design. Stop rather than repeat the test if you hear grinding, smell something electrical, see leakage, notice unusual heat, or the breaker trips."
+        ]
+      },
+      {
+        "id": "filter-and-drain-area",
+        "heading": "Check the dishwasher filter—if the manual says it is user-serviceable",
+        "paragraphs": [
+          "Food scraps, labels, seeds, and other debris can load a removable filter or accessible screen and interfere with drainage. Some dishwashers have filters that lift or twist out for routine cleaning; others use a different design. Turn the appliance off as the manufacturer directs, remove the lower rack, and follow the model manual rather than forcing a generic filter procedure.",
+          "Rinse and reinstall only parts identified for owner maintenance. Correct seating matters because a loose or incorrectly installed filter or cover can affect performance. Use gloves if the manual recommends them and keep fingers out of concealed openings—broken glass, bones, and sharp fragments can hide in wet debris. Pump covers, guards, and impellers should be touched only when the exact model documentation explicitly treats them as homeowner-serviceable."
+        ],
+        "callout": { "title": "Power off before owner-approved cleaning", "text": "A dishwasher combines water, electricity, heaters, pumps, and moving parts. Follow the manufacturer’s shutdown instructions before filter care. Do not remove service panels, open a junction box, bypass the door switch, or reach into a hidden pump cavity." }
+      },
+      {
+        "id": "sink-and-disposal",
+        "heading": "Does the kitchen sink or garbage disposal drain normally?",
+        "paragraphs": [
+          "A dishwasher commonly discharges through plumbing beneath the kitchen sink, sometimes into a garbage disposal and sometimes into a drain connection. If the sink is slow, holds water, backs up, or gurgles unusually, the dishwasher may be trying to discharge into a restricted downstream path. A disposal that is full of waste or not draining normally can create a similar clue.",
+          "The reverse distinction also matters: a sink that appears normal does not prove every part of the dishwasher branch is clear. A narrow dishwasher inlet, air-gap hose, or section of drain hose can be restricted while ordinary sink flow still passes. Use sink behavior to decide whether plumbing deserves attention, not to rule it out absolutely."
+        ],
+        "link": { "before": "If several household fixtures are slow, gurgling, rising, or backing up—not just the dishwasher—use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader shared-drain pattern." }
+      },
+      {
+        "id": "new-disposal",
+        "heading": "Was a garbage disposal recently installed?",
+        "paragraphs": [
+          "A dishwasher that stopped draining immediately after a disposal was installed or replaced has a high-value installation clue. Disposal installation manuals document a sealed dishwasher inlet plug that is removed only when the disposer will receive dishwasher discharge. If that factory plug remains, the hose can be connected yet the discharge path is still blocked.",
+          "This does not apply to every home because not every dishwasher drains through a disposal. Confirm the installation history and connection rather than assuming. Removing a disposal plug requires working under the sink around plumbing and an electrical appliance; use the disposal's instructions and an installer or plumber when the configuration or safe power isolation is uncertain."
+        ]
+      },
+      {
+        "id": "hose-air-gap",
+        "heading": "Could the drain hose or air gap be involved?",
+        "subsections": [
+          { "heading": "Visible drain hose", "paragraphs": ["If the under-sink portion is visible without moving the dishwasher or disconnecting plumbing, look for an obvious kink, crush, sharp bend, or recent disturbance. Do not prescribe a universal hose height or reshape the installation from a photo: permitted length, routing, connection height, and support depend on the dishwasher instructions and local requirements."] },
+          { "heading": "Air gap", "paragraphs": ["Some installations use a small air-gap fitting at the sink or countertop. It is part of the plumbing path, not the dishwasher itself. Where installed, debris in the air gap or the hose leading from it can interfere with discharge or make water spill at the fitting. Not every jurisdiction or installation uses an air gap."] },
+          { "heading": "High loop", "paragraphs": ["Some manufacturer-approved installations route the drain hose high beneath the countertop when an air gap is not used. That routing helps manage the connection and reduce backflow for those designs. A missing or incorrect loop does not automatically explain every no-drain symptom, and the required configuration must come from the model instructions and local rules."] }
+        ]
+      },
+      {
+        "id": "water-returns",
+        "heading": "What if water backs into the dishwasher later?",
+        "paragraphs": [
+          "A dishwasher that is nearly empty when the cycle ends but contains dirty water after the sink or disposal is used presents a backflow pattern, not simply failure to pump out during the cycle. Slow sink drainage, an obstructed disposal or air-gap path, hose routing, the drain connection, or a model-specific check valve may deserve evaluation.",
+          "Note when the water returns and whether it contains sink debris. Do not deliberately fill the sink to reproduce a backup. When sink use reliably pushes water toward the dishwasher, a plumber or installer is often a better first call than a technician who would begin inside the appliance."
+        ]
+      },
+      {
+        "id": "pump-and-error-codes",
+        "heading": "Could the drain pump or another internal part be the problem?",
+        "paragraphs": [
+          "An internal problem becomes more plausible after the cycle state is understood, the model-approved filter area is clear, the sink and disposal drain normally, and no visible hose or installation issue explains the symptom. Depending on the model, possibilities include debris at a pump path, a damaged impeller, a pump motor fault, a sensor or control issue, or a check-valve problem.",
+          "Those categories cannot be separated by standing water or humming alone. Do not remove the pump, measure resistance, apply live voltage, or bypass an interlock. If a code appears, record the exact characters and consult the official manual for the model; drain codes and indicator patterns are not standardized across brands."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Compare water confined to the recessed filter area with water covering the tub floor.",
+          "Confirm whether the cycle completed and record any code, power interruption, or door opening.",
+          "Use only the documented Cancel or Drain control for the specific model.",
+          "Turn the appliance off as instructed before cleaning a removable owner-serviceable filter.",
+          "Remove visible debris only from areas the manual identifies as accessible; watch for sharp fragments.",
+          "Check whether the kitchen sink and disposal drain normally without deliberately creating a backup.",
+          "Note whether disposal, dishwasher, or under-sink work immediately preceded the symptom.",
+          "Look at the visible under-sink hose for an obvious kink or crush without disconnecting it.",
+          "Identify an installed air gap and follow its manufacturer or plumbing guidance for accessible maintenance.",
+          "Photograph the water level and installation context for the technician, plumber, or installer."
+        ]
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "paragraphs": [
+          "Do not pour chemical drain cleaner into the dishwasher or its sump. Appliance manufacturers specifically warn against it, and the chemical may damage parts or create an exposure hazard for whoever later opens the drain path. Do not force wire, tools, or compressed air through a hose as an improvised clearing method.",
+          "Do not reach blindly into pump openings, dismantle the pump or motor, remove electrical panels, open wiring junctions, test energized circuits, defeat the door interlock, or repeatedly run a machine full of water. Do not modify an air gap or hose route from generic advice; verify the model and local installation requirements first."
+        ]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "When to call an appliance technician—or a plumber",
+        "subsections": [
+          { "heading": "Call an appliance technician", "paragraphs": ["Use appliance service when the sink and disposal are normal, accessible filters are clean and correctly installed, the visible hose is not kinked, and the machine still cannot drain. Repeated drain codes, no apparent pump activity, abnormal internal noise, electrical symptoms, or a suspected pump, sensor, control, or check-valve problem also belong here."] },
+          { "heading": "Call a plumber", "paragraphs": ["Start with a plumber when the sink or disposal is slow or backed up, the air-gap or sink-side drain path appears obstructed, sink use sends water into the dishwasher, or disposal and plumbing work immediately preceded the symptom. Broader household drainage symptoms strengthen the plumbing route."] },
+          { "heading": "Call the installer", "paragraphs": ["The original installer may be the most efficient first contact when a new dishwasher or disposal has never drained correctly, or when the symptom began immediately after drain-hose or under-sink work. Installation timing is evidence, not proof of which connection is wrong."] }
+        ],
+        "callout": { "title": "Stop using the dishwasher for electrical or leak hazards", "text": "Leave it off for smoke, sparking, a burning-electrical odor, melted parts, repeated breaker trips, unusual heat, active leakage, or water reaching wiring or electrical connections. Keep away from wet electrical areas and arrange qualified help." }
+      },
+      {
+        "id": "separate-neighboring-symptoms",
+        "heading": "Keep cleaning and drying problems separate",
+        "paragraphs": ["Abnormal standing water defines this drainage guide. Food or grease left on dishes after a completed, normally drained cycle is a cleaning problem. Clean dishes that retain droplets—especially plastics—belong to drying performance. The symptoms can overlap, but identifying the primary failure keeps the diagnosis from turning into a generic dishwasher parts list."],
+        "links": [
+          { "before": "For food or soil left after washing, use ", "label": "Why Is My Dishwasher Not Cleaning Dishes?", "href": "/appliances/dishwasher-not-cleaning-dishes/", "after": "." },
+          { "before": "For clean dishes that remain wet after normal drainage, use ", "label": "Why Is My Dishwasher Not Drying Dishes?", "href": "/appliances/dishwasher-not-drying-dishes/", "after": "." }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Start with where and how much water remains. Confirm the cycle finished, then move outward through the model-approved filter, the kitchen sink or disposal, recent installation history, and the visible drain-hose or air-gap configuration before treating the pump as the answer.",
+          "A dishwasher that cannot drain despite a clear accessible path needs appliance service. A slow sink, disposal problem, backflow after sink use, or sink-side connection issue points more strongly toward a plumber or installer. The pattern selects the next professional; it does not identify the hidden failed part by itself."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Not Draining—Water Remains at End of Cycle", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Dishwashers/Dishwasher/Operation/Not_Draining%2F%2FWater_Remains/Not_Draining_-_Water_Remain_at_End_of_Cycle_-_Dishwasher" },
+      { "title": "Dishwasher Not Draining", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=16240" },
+      { "title": "Dishwasher—Cleaning the Air Gap", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=17895" },
+      { "title": "Samsung Dishwasher Is Not Draining", "publisher": "Samsung Support", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10004498/" },
+      { "title": "What Can I Do If My Dishwasher Is Not Draining?", "publisher": "Frigidaire", "url": "https://owner.frigidaire.com/support-articles/article/1852990-what-can-i-do-if-my-dishwasher-is-not-draining-" },
+      { "title": "Dishwasher Is Not Draining", "publisher": "Bosch Home Appliances", "url": "https://www.bosch-home.com/us/owner-support/get-support/support-selfhelp-dishwasher-not-drain" },
+      { "title": "Garbage Disposal Installation Instructions INS10477C", "publisher": "Moen", "url": "https://assets.moen.com/shared/docs/instruction-sheets/ins10477c.pdf" }
     ]
   },
   {

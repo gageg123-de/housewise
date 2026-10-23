@@ -430,6 +430,7 @@ test("dishwasher drying guide renders material distinctions, safe checks, schema
   assert.match(html, /Dishwashers do not all use the same drying system/);
   assert.match(html, /Why are my plastic dishes still wet\?/);
   assert.match(html, /Keep troubleshooting outside electrical and heated parts/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-draining\/"/);
   assert.match(html, /src="\/images\/dishwasher-drying-performance-factors\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /Conceptual illustration:/);
@@ -449,12 +450,35 @@ test("dishwasher cleaning guide renders symptom patterns, safe checks, reciproca
   assert.match(html, /What top-rack and bottom-rack patterns can tell you/);
   assert.match(html, /Keep hands out of the powered wash system/);
   assert.match(html, /href="\/appliances\/dishwasher-not-drying-dishes\/"/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-draining\/"/);
   assert.match(html, /src="\/images\/dishwasher-cleaning-performance-factors\.webp"/);
   assert.match(html, /width="1536" height="1024"/);
   assert.match(html, /Conceptual illustration:/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dishwasher-cleaning-performance-factors\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
+});
+
+test("dishwasher drainage guide renders diagnostic branches, safety boundaries, schema, and visual", async () => {
+  const response = await render("/appliances/dishwasher-not-draining"); const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Dishwasher Not Draining\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/dishwasher-not-draining\//);
+  assert.match(html, /Is the water in the dishwasher actually abnormal\?/);
+  assert.match(html, /Standing water does not automatically mean the dishwasher&#x27;s drain pump failed/);
+  assert.match(html, /Was a garbage disposal recently installed\?/);
+  assert.match(html, /When to call an appliance technician—or a plumber/);
+  assert.match(html, /Do not pour chemical drain cleaner into the dishwasher or its sump/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-cleaning-dishes\/"/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-drying-dishes\/"/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
+  assert.match(html, /src="\/images\/dishwasher-not-draining-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /Conceptual illustration:/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/dishwasher-not-draining-patterns\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site|og\.png/);
 });
 

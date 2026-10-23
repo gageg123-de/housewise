@@ -432,7 +432,7 @@ test("dishwasher drying guide separates normal wet plastics from whole-load dryi
   const dryingTopic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher does not dry dishes,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-03");
-  assert.equal(article.updated_date, "2026-09-03");
+  assert.equal(article.updated_date, "2026-10-23");
   assert.equal(article.reviewed_date, null);
   assert.ok(dryingTopic?.includes(",published,"));
   assert.ok(dryingTopic?.includes("/appliances/dishwasher-not-drying-dishes/"));
@@ -455,12 +455,13 @@ test("dishwasher drying guide separates normal wet plastics from whole-load dryi
   assert.equal(article.image.kind, "conceptual");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
-  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dryer-taking-two-cycles", "dryer-smells-like-burning"]);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dishwasher-not-draining", "dryer-taking-two-cycles", "dryer-smells-like-burning"]);
   const body = JSON.stringify(article.body_sections);
   assert.match(body, /plastic is the classic exception|plastic items cool too quickly/i);
   assert.match(body, /rinse aid lowers water's surface tension/i);
   assert.match(body, /do not raise the water-heater temperature solely as an experiment/i);
   assert.match(body, /do not remove access panels, test live voltage/i);
+  assert.match(body, /If water remains across the dishwasher tub/i);
   assert.doesNotMatch(body, /remove the heating element|bypass the door switch|set the water heater to \d+/i);
 });
 
@@ -470,7 +471,7 @@ test("dishwasher cleaning guide passes the reality gate and preserves neighborin
   const drying = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-05");
-  assert.equal(article.updated_date, "2026-09-05");
+  assert.equal(article.updated_date, "2026-10-23");
   assert.equal(article.reviewed_date, null);
   assert.ok(cleaningTopic?.includes(",published,"));
   assert.ok(cleaningTopic?.includes("/appliances/dishwasher-not-cleaning-dishes/"));
@@ -489,7 +490,7 @@ test("dishwasher cleaning guide passes the reality gate and preserves neighborin
   assert.equal(article.image.kind, "conceptual");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
-  assert.deepEqual(article.related_articles, ["dishwasher-not-drying-dishes"]);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-drying-dishes", "dishwasher-not-draining"]);
   assert.ok(drying.related_articles.includes(article.slug));
   const body = JSON.stringify(article.body_sections);
   const dryingBody = JSON.stringify(drying.body_sections);
@@ -498,8 +499,55 @@ test("dishwasher cleaning guide passes the reality gate and preserves neighborin
   assert.match(body, /do not raise the water-heater setting|without increasing temperature/i);
   assert.match(body, /do not remove service panels, bypass the door switch or float, test live voltage/i);
   assert.match(body, /If the load is clean but remains wet after the cycle/i);
+  assert.match(body, /If abnormal water remains across the tub floor/i);
   assert.match(dryingBody, /If food, grease, or soil remains after a completed wash cycle/i);
   assert.doesNotMatch(body, /remove the circulation pump|bypass the float|set the water heater to \d+/i);
+});
+
+test("dishwasher drainage guide separates residual water, plumbing paths, and internal appliance faults", () => {
+  const article = registry.find((item) => item.slug === "dishwasher-not-draining");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Dishwasher does not drain,"));
+  const cleaning = registry.find((item) => item.slug === "dishwasher-not-cleaning-dishes");
+  const drying = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
+  assert.ok(article);
+  assert.equal(article.published_date, "2026-10-23");
+  assert.equal(article.updated_date, "2026-10-23");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic?.includes(",published,"));
+  assert.ok(topic?.includes("/appliances/dishwasher-not-draining/"));
+  assert.match(article.target_search_intent, /whether water left after a dishwasher cycle is abnormal/i);
+  assert.match(article.direct_answer, /does not automatically mean.*drain pump failed/i);
+  assert.ok(article.body_sections.some((section) => section.id === "is-water-abnormal" && section.table?.rows.length === 5));
+  assert.ok(article.body_sections.some((section) => section.id === "filter-and-drain-area" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "sink-and-disposal" && section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(article.body_sections.some((section) => section.id === "new-disposal"));
+  assert.ok(article.body_sections.some((section) => section.id === "hose-air-gap" && section.subsections?.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "water-returns"));
+  assert.ok(article.body_sections.some((section) => section.id === "pump-and-error-codes"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.bullets?.length === 10));
+  assert.ok(article.body_sections.some((section) => section.id === "who-to-call" && section.subsections?.length === 3 && section.callout));
+  assert.ok(article.sources.some((source) => source.publisher === "Whirlpool Product Help"));
+  assert.ok(article.sources.some((source) => source.publisher === "GE Appliances"));
+  assert.ok(article.sources.some((source) => source.publisher === "Samsung Support"));
+  assert.ok(article.sources.some((source) => source.publisher === "Bosch Home Appliances"));
+  assert.ok(article.sources.some((source) => source.publisher === "Moen"));
+  assert.ok(article.sources.every((source) => source.url.startsWith("https://")));
+  assert.equal(article.image.src, "/images/dishwasher-not-draining-patterns.webp");
+  assert.equal(article.image.kind, "conceptual");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time"]);
+  assert.ok(cleaning.related_articles.includes(article.slug));
+  assert.ok(drying.related_articles.includes(article.slug));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /small amount of water in or below the recessed filter or sump area/i);
+  assert.match(body, /factory plug remains.*discharge path is still blocked/i);
+  assert.match(body, /Not every jurisdiction or installation uses an air gap/i);
+  assert.match(body, /Do not prescribe a universal hose height/i);
+  assert.match(body, /A hum does not prove a bad motor/i);
+  assert.match(body, /Do not pour chemical drain cleaner into the dishwasher/i);
+  assert.match(body, /Do not remove service panels, open a junction box, bypass the door switch/i);
+  assert.doesNotMatch(body, /standing water means.*pump (?:is|has) failed|every dishwasher (?:needs|requires) an air gap|every dishwasher (?:needs|requires) a high loop|pour drain cleaner/i);
 });
 
 test("musty-garage guide preserves garage odor intent and avoids treating smell as a mold diagnosis", () => {
