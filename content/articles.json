@@ -10546,7 +10546,7 @@
     "system": "electrical",
     "content_type": "safety-reference",
     "published_date": "2026-10-10",
-    "updated_date": "2026-10-10",
+    "updated_date": "2026-10-22",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -10557,7 +10557,7 @@
     "likely_causes": ["One or more branch breakers or circuits affecting the areas that appear dark", "A feeder, panel, or service condition affecting multiple branch circuits", "An interruption or impairment of one energized path in a typical 120/240-volt residential supply", "A utility-side service or distribution problem", "An abnormal neutral or other connection condition requiring qualified diagnosis", "Storm, tree, vehicle, animal, or construction damage affecting electrical supply equipment"],
     "safe_checks": ["Map which rooms, lights, receptacles, and fixed appliances work and which do not.", "Note whether separated areas are affected rather than only one room or one contiguous branch-circuit group.", "Observe whether normally used 240-volt equipment is also unavailable without deliberately cycling it for a test.", "From outside a closed, dry, undamaged panel, note normal accessible breaker-handle positions only when there are no warning signs.", "Check the utility outage map or report a partial-power or voltage problem using the utility's normal channel.", "Ask whether nearby homes or shared building areas are affected without treating their power as proof about your service.", "Record dimming, unusual brightening, flicker, buzzing, odor, heat, smoke, sparking, water, storm damage, and whether power returns intermittently."],
     "professional_help": "Report broad partial power to the electric utility because it may involve utility-owned supply equipment. Arrange a licensed electrician when the utility finds no supply-side issue, when the pattern is limited to customer-owned equipment, or when breakers, panel behavior, wiring, or connections require evaluation. Stop ordinary troubleshooting for abnormal brightening and dimming, burning odor, heat, buzzing or crackling, sparking, smoke, melting, water exposure, damaged service equipment, or rapidly changing power. For active fire, smoke, visible arcing, or downed lines, move away and call emergency services and the utility as locally directed.",
-    "related_articles": ["no-power-in-one-room", "one-outlet-has-no-power", "circuit-breaker-keeps-tripping", "circuit-breaker-wont-reset", "electrical-panel-buzzing", "lights-flicker-randomly", "lights-flicker-when-appliance-turns-on"],
+    "related_articles": ["whole-house-without-power", "no-power-in-one-room", "one-outlet-has-no-power", "circuit-breaker-keeps-tripping", "circuit-breaker-wont-reset", "electrical-panel-buzzing", "lights-flicker-randomly", "lights-flicker-when-appliance-turns-on"],
     "image": {
       "src": "/images/half-house-power-outage-patterns.webp",
       "width": 1536,
@@ -10573,7 +10573,7 @@
         "heading": "First: is this really a half-house outage?",
         "paragraphs": ["“Half the house” rarely means a neat physical half. Start with a written map of every affected and working load: ceiling lights, receptacles, built-in equipment, heating or cooling equipment, water heating, cooking equipment, laundry equipment, garage equipment, and exterior loads. The important question is whether several apparently separate circuit groups are affected while others remain energized.", "Room boundaries do not equal circuit boundaries. One branch circuit may cross rooms, and one room may be served by several circuits. A dark bedroom and hallway could still be one branch-circuit problem; a kitchen receptacle, upstairs light, garage door opener, and several other separated loads going dead together is a broader pattern."],
         "table": {"headers": ["What you observe", "What it suggests about scope"], "rows": [["One outlet is dead", "Use the single-receptacle path; the visible outlet may not be the interruption"], ["Several loads in one room or adjacent area are dead", "A localized branch circuit or protective device remains plausible"], ["Separated rooms or unrelated-looking groups are dead", "A multi-circuit, feeder, service, or supply problem becomes more relevant"], ["Most 120-volt loads work, but a particular 240-volt appliance does not", "The appliance or its circuit may be the narrower issue"], ["Several 120-volt groups are dead and multiple 240-volt loads are unavailable", "A broader 120/240-volt supply or service pattern deserves utility or electrical evaluation"], ["The entire home is dark", "That is a whole-home outage, not this partial-power intent"]]},
-        "links": [{"before": "If the outage is limited to one area, start with ", "label": "Why Is There No Power in One Room?", "href": "/electrical/no-power-in-one-room/", "after": "."}, {"before": "If just one receptacle is affected, use ", "label": "Why Does One Outlet Have No Power?", "href": "/electrical/one-outlet-has-no-power/", "after": "."}]
+        "links": [{"before": "If no normal household loads appear powered anywhere, use ", "label": "Why Is My Whole House Without Power?", "href": "/electrical/whole-house-without-power/", "after": " for the utility-outage and service-safety path."}, {"before": "If the outage is limited to one area, start with ", "label": "Why Is There No Power in One Room?", "href": "/electrical/no-power-in-one-room/", "after": "."}, {"before": "If just one receptacle is affected, use ", "label": "Why Does One Outlet Have No Power?", "href": "/electrical/one-outlet-has-no-power/", "after": "."}]
       },
       {
         "id": "warning-signs",
@@ -10800,6 +10800,145 @@
       {"title": "Dirty or Discolored Water", "publisher": "San Francisco Public Utilities Commission", "url": "https://www.sfpuc.gov/accounts-services/water-quality/dirty-or-discolored-water"},
       {"title": "Well Owner's Handbook", "publisher": "Minnesota Department of Health", "url": "https://www.health.state.mn.us/communities/environment/water/docs/wells/construction/handbook.pdf"},
       {"title": "Electric Water Heater Use and Care Guide", "publisher": "A. O. Smith", "url": "https://assets.hotwater.com/damroot/Original/10009/100375354.pdf"}
+    ]
+  },
+  {
+    "title": "Why Is My Whole House Without Power?",
+    "slug": "whole-house-without-power",
+    "description": "Whole house has no power? Distinguish a utility outage, partial outage, service problem, and electrical warning signs safely.",
+    "primary_category": "electrical",
+    "secondary_categories": [],
+    "symptoms": ["electrical-behavior"],
+    "room_or_location": ["whole-house"],
+    "system": "electrical",
+    "content_type": "safety-reference",
+    "published_date": "2026-10-22",
+    "updated_date": "2026-10-22",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": ["why is my whole house without power", "whole house has no power", "whole house without power", "entire house no power", "house lost power", "no electricity in house", "power out in whole house", "nothing in house has power", "house has no electricity", "no power but neighbors have power", "neighbors have power but my house doesn't", "main breaker not tripped but no power", "whole house power outage"],
+    "target_search_intent": "Help a homeowner confirm whether no normal household loads appear powered, distinguish a neighborhood outage from a customer-specific utility or service problem and from a partial-house outage, recognize electrical warning signs, and choose utility, electrician, or emergency escalation without opening electrical equipment.",
+    "direct_answer": "If the whole house appears to have no power, first confirm that no normal loads work in several different areas, then check the electric utility's official outage information and report the address if needed. Neighbors being out supports a broader utility outage, but it does not prove the property's equipment is undamaged. Neighbors having power makes a neighborhood-wide outage less likely, but a customer-specific utility or service problem can still affect only one property. Observe only normal accessible breaker handles from outside a closed, dry, undamaged panel when it is safe. Do not open the panel, meter, or service equipment, and keep away from smoke, arcing, downed conductors, water, heat, or visible damage.",
+    "likely_causes": ["A neighborhood or wider utility outage", "A customer-specific utility distribution, transformer, service-line, or meter-related problem", "A tripped or abnormal main service disconnect or main breaker", "A problem in customer-owned service equipment, panel equipment, or another part of the home's electrical system", "Storm, tree, vehicle, construction, or water damage affecting electrical supply or equipment", "A partial-house outage that initially appears to be a complete outage"],
+    "safe_checks": ["Confirm the scope using several normally powered lights, receptacles, and displays in separated areas.", "Check the electric utility's official outage map, alerts, or reporting channel.", "Observe neighbors or streetlights only from a safe location; do not approach electrical infrastructure.", "Note storm timing, restoration timing, recurrence, and any visible exterior damage from a distance.", "Observe only normal accessible main-disconnect or breaker handles from outside closed, dry, undamaged equipment when no warning sign makes approach unsafe.", "Record smoke, burning odor, unusual heat, buzzing, crackling, arcing, water, or damaged conductors without moving closer.", "Treat any remaining normal power, dimming, brightening, or flicker as a partial or unstable-power pattern rather than a total outage."],
+    "professional_help": "Report an apparent whole-house outage to the electric utility, including when neighbors have power, because a customer-specific supply or service problem may still exist. Use a licensed electrician when the utility confirms normal supply, directs you to one, or customer-owned service or panel equipment may be involved. For active fire, smoke, visible arcing, sparking service equipment, or an immediately dangerous downed conductor, move away and call emergency services and the utility as locally directed.",
+    "related_articles": ["half-house-has-no-power", "no-power-in-one-room", "one-outlet-has-no-power", "circuit-breaker-keeps-tripping", "circuit-breaker-wont-reset", "electrical-panel-buzzing", "lights-flicker-randomly"],
+    "image": {
+      "src": "/images/whole-house-power-outage-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing a broader neighborhood outage, one dark house among powered neighbors, a partial-house outage, and closed electrical equipment with storm, smoke, water, and arcing warning symbols.",
+      "caption": "Conceptual guide: Confirm whether the outage is truly whole-house, then check utility context and warning signs. Powered neighbors do not rule out a customer-specific utility or service problem, and the illustration does not locate the failure.",
+      "kind": "conceptual",
+      "after_section": "confirm-scope"
+    },
+    "body_sections": [
+      {
+        "id": "confirm-scope",
+        "heading": "First: is the entire house really without power?",
+        "paragraphs": ["Do not infer a total outage from one dark room or from the lights alone. Check a few normal, low-risk indicators in separated areas: ordinary lighting, a known receptacle with a known-good lamp, a thermostat display that is normally powered, or appliance clocks that are normally on. You are mapping the scope, not testing the wiring.", "If any normal household loads still work, the symptom is not a straightforward whole-house outage. A branch circuit, feeder, partial-service condition, or another localized interruption may be involved. Do not deliberately start air conditioners, ranges, dryers, pumps, or other large loads to test what remains."],
+        "table": {"headers": ["What you find", "Use this diagnostic path"], "rows": [["One receptacle is dead; nearby loads work", "One-outlet power loss"], ["Several loads in one perceived room or area are dead", "One-room power loss"], ["Some separated rooms or circuits work and others do not", "Partial or half-house power loss"], ["No normal loads appear powered anywhere", "Apparent whole-house outage"], ["Some lights work but dim, brighten, or fluctuate", "Unstable or partial power—not a simple total outage"]]},
+        "links": [{"before": "If some power remains across separated areas, use ", "label": "Why Does Half My House Have No Power?", "href": "/electrical/half-house-has-no-power/", "after": " to map the working and dead loads."}, {"before": "For a localized area, use ", "label": "Why Is There No Power in One Room?", "href": "/electrical/no-power-in-one-room/", "after": "."}, {"before": "If only one receptacle is affected, use ", "label": "Why Does One Outlet Have No Power?", "href": "/electrical/one-outlet-has-no-power/", "after": "."}]
+      },
+      {
+        "id": "warning-signs",
+        "heading": "Check for electrical warning signs before doing anything else",
+        "paragraphs": ["A power outage can coincide with damaged equipment. Before approaching a panel or service disconnect, screen from a safe position for smoke, visible arcing, sparks, burning odor, crackling, sizzling, abnormal heat, melting, scorch marks, water, or storm damage. Do not move closer merely to confirm a sound or smell.", "For active fire, smoke, or visible arcing, move people away and call emergency services. Do not approach a conductor, a tree or fence touching it, a wet enclosure, or standing water near electrical equipment."],
+        "callout": {"title": "Warning signs change the response", "text": "Do not operate breakers or attempt to shut off power when reaching the equipment would enter a smoke, fire, arcing, water, or damaged-conductor hazard area. Distance and emergency reporting come first."}
+      },
+      {
+        "id": "utility-outage",
+        "heading": "Is there a utility outage?",
+        "paragraphs": ["Check the utility's official outage map, app, alerts, or website and report the address through an official channel. An outage may take time to appear online, so an empty map is not proof that utility supply is normal.", "Dark streetlights or neighboring homes make a broader outage more plausible, but they do not prove your own equipment is undamaged. Never approach poles, transformers, pedestals, meter enclosures, or conductors to investigate."],
+        "callout": {"title": "Do not use the meter display as a verdict", "text": "Meter designs and displays vary. A blank display does not universally prove that utility power is absent, and an active display does not prove that the supply to the home is normal. Use the utility's outage and service checks instead."}
+      },
+      {
+        "id": "neighbors-have-power",
+        "heading": "What if your neighbors still have power?",
+        "paragraphs": ["Powered neighbors make a large neighborhood outage less likely, but they do not move every possibility inside your panel. Utilities explain that adjacent customers may be served by different lines, transformers, or restoration paths. An individual service line, meter-related condition, or another customer-specific utility problem can leave one property dark.", "Report the outage even when the map shows the area as powered. Tell the utility that the entire property appears out while nearby homes have power. The utility can evaluate whether normal supply reaches the property and can direct you to an electrician if the condition is in customer-owned equipment. Ownership boundaries vary by utility and jurisdiction, so do not try to identify the boundary by touching or opening equipment."]
+      },
+      {
+        "id": "main-disconnect",
+        "heading": "Check the main breaker from the outside only",
+        "paragraphs": ["If the main breaker or service disconnect is normally accessible without removing a cover, and the enclosure is closed, dry, undamaged, cool, and free of odor or abnormal sound, you may visually observe the normal handle position. Some tripped breakers rest between ON and OFF, but handle designs vary.", "A visible trip is evidence that a protective device operated; it is not an explanation of why. CPSC guidance says a breaker should be reset only after the problem has been eliminated. Do not make repeated reset attempts, hold the handle on, or assume that one reset is a universal outage fix. Follow the equipment instructions and use a qualified electrician when the condition is unexplained."],
+        "links": [{"before": "If a breaker resets and later opens again, use ", "label": "Why Does My Circuit Breaker Keep Tripping?", "href": "/electrical/circuit-breaker-keeps-tripping/", "after": "."}, {"before": "If the handle will not return to and remain in its normal ON position, use ", "label": "Why Won’t My Circuit Breaker Reset?", "href": "/electrical/circuit-breaker-wont-reset/", "after": " instead of forcing it."}]
+      },
+      {
+        "id": "main-looks-normal",
+        "heading": "What if the main breaker does not look tripped?",
+        "paragraphs": ["If no normal load appears powered, the main handle looks normal, and there is no posted outage, stop at the exterior observations. Possible categories still include a customer-specific utility problem, a service connection, a disconnect or main-device condition, or another problem in customer-owned equipment. The visible handle cannot distinguish them.", "Do not remove the dead front, test incoming voltage, inspect main lugs or service conductors, pull the meter, or reseat the main breaker. Report the outage to the utility. If the utility confirms normal supply or directs you onward, arrange a licensed electrician for customer-owned service and distribution equipment."]
+      },
+      {
+        "id": "utility-versus-electrician",
+        "heading": "Could the problem be with the electrical service?",
+        "paragraphs": ["The electrical path crosses utility distribution equipment, the individual service connection, metering and service equipment, the main disconnect, and the home's distribution equipment. Different failures can produce the same outside symptom: no apparent household power.", "Report the outage and describe the scope, neighbor status, weather, and visible damage. The utility can check its supply; a licensed electrician can evaluate customer-owned service and distribution equipment. Ownership boundaries vary by utility and jurisdiction."]
+      },
+      {
+        "id": "storm-context",
+        "heading": "What if the outage started during a storm?",
+        "paragraphs": ["Thunderstorms, wind, lightning, ice, falling trees, vehicle impacts, and restoration work make utility outages and exterior service damage more relevant. Check official notices and observe only from a safe location. A dark neighborhood does not make damaged equipment on your property safe to approach.", "Do not touch the weatherhead, service mast, service drop, meter enclosure, pedestal, or any object contacting a conductor. Do not climb, trim branches, or move debris near electrical infrastructure. Report visible damage and let the utility and qualified electrical professionals determine what equipment is involved."]
+      },
+      {
+        "id": "downed-conductors",
+        "heading": "What if you see a damaged or downed service line?",
+        "paragraphs": ["Treat every downed, sagging, detached, arcing, or storm-damaged conductor as energized. You cannot safely identify power, communications, neutral, or service conductors by appearance. Electricity can also energize nearby fences, trees, vehicles, and wet ground.", "Stay well away, keep others back, and call 911 and the electric utility as locally directed. Do not touch the line or anything contacting it, and do not approach to take a closer photo. ESFI advises at least 35 feet—about three car lengths—and farther in wet conditions."]
+      },
+      {
+        "id": "water-damage",
+        "heading": "What if water or flooding is involved?",
+        "paragraphs": ["Do not enter a flooded area or touch a wet panel, meter, disconnect, appliance, or other electrical equipment. Do not operate a breaker while standing on a wet surface or when reaching it requires contact with wet equipment. The utility may need to confirm power is off before anyone enters an affected area.", "Electrical equipment can remain unsafe after it dries. ESFI warns that re-energizing water-damaged equipment without proper evaluation can cause shock, electrocution, fire, or further damage. Follow the utility's instructions and use qualified electrical evaluation before returning exposed equipment to service."]
+      },
+      {
+        "id": "partial-power",
+        "heading": "What if some lights or appliances are still working?",
+        "paragraphs": ["Any remaining normal power changes the diagnosis. If some rooms, receptacles, or fixed equipment still work, classify the symptom as a partial outage and map what is dead and what remains powered. A tripped branch breaker, feeder condition, impaired service path, utility voltage problem, or another fault may overlap, but the pattern does not identify the point of failure.", "Unusual dimming, brightening, or fluctuation is also not a total outage. Do not diagnose an open neutral or other service fault from light behavior alone, and do not create loads to reproduce it. Report the voltage-like symptom promptly to the utility or an electrician."],
+        "links": [{"before": "Use ", "label": "Why Does Half My House Have No Power?", "href": "/electrical/half-house-has-no-power/", "after": " when broad areas work and others do not."}, {"before": "For flicker without a clear trigger, use ", "label": "Why Do My Lights Flicker Randomly?", "href": "/electrical/lights-flicker-randomly/", "after": "."}]
+      },
+      {
+        "id": "power-returns",
+        "heading": "What if the power comes back by itself?",
+        "paragraphs": ["Restoration does not prove every intermittent condition is resolved. Record when power failed and returned, utility status, weather, neighbor status, and any flicker, noise, odor, or unusual behavior.", "If power fails again, returns as partial or unstable power, breakers trip, or equipment behaves abnormally, report the recurrence. Do not manipulate the main handle, meter, service cables, or panel cover to reproduce it."],
+        "link": {"before": "If the closed panel also makes an unfamiliar sound, use ", "label": "Why Is My Electrical Panel Buzzing?", "href": "/electrical/electrical-panel-buzzing/", "after": " from a safe distance."}
+      },
+      {
+        "id": "generator-safety",
+        "heading": "Use a generator only with proper outage safeguards",
+        "paragraphs": ["A portable generator adds carbon-monoxide, shock, and fire hazards. CPSC says to operate it outdoors only, at least 20 feet from the home, with exhaust pointed away from buildings, doors, windows, and vents. Follow the manufacturer and current local guidance for wet-weather protection without moving the generator indoors or into a garage, porch, shed, or other enclosed or partly enclosed space.", "Never plug a generator into a household wall outlet. That backfeeds house wiring, can energize utility lines, endangers workers and neighbors, and bypasses protections. Household-wiring connection requires approved transfer equipment installed for the system by a qualified electrician. This article is not a generator-connection guide."],
+        "callout": {"title": "No improvised backfeed connection", "text": "Never use a male-to-male cord or any outlet-to-outlet method to energize house wiring. Use battery-powered lighting during the outage and follow CPSC, utility, and manufacturer instructions."}
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What you can safely check yourself",
+        "bullets": ["Confirm the scope across several separated areas using normal low-risk indicators.", "Check and report through the utility's official outage channel.", "Note whether nearby homes or streetlights appear powered without leaving a safe position.", "Record the start time, restoration time, recurrence, weather, and utility notices.", "Observe exterior service damage only from a distance; do not approach conductors or equipment.", "Observe normal accessible breaker or disconnect handles only outside closed, dry, undamaged equipment when there are no warning signs.", "Note smoke, odor, heat, buzzing, crackling, arcing, water, or visible damage without moving closer.", "Treat any remaining power or brightness instability as a partial or abnormal-voltage symptom."],
+        "callout": {"title": "Observation is enough", "text": "A useful report needs scope, timing, neighbor and utility context, accessible handle observations, and warning signs—not voltage readings or internal inspection."}
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do during a whole-house outage",
+        "bullets": ["Do not remove a panel cover or dead front, open a meter enclosure, or open utility equipment.", "Do not touch service conductors, terminals, lugs, bus bars, neutral bars, breakers, or damaged exterior equipment.", "Do not use a multimeter, clamp meter, non-contact tester, or improvised device inside service or panel equipment.", "Do not pull the meter, reseat or replace the main breaker, or tighten a service connection.", "Do not repeatedly reset the main or any breaker that trips again.", "Do not approach downed conductors or objects, vehicles, fences, trees, or water touching them.", "Do not touch or re-energize wet electrical equipment.", "Do not assume powered neighbors make utility reporting unnecessary.", "Do not connect a portable generator to house wiring through a receptacle or other improvised backfeed method."]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "When should you call the utility, an electrician, or emergency services?",
+        "subsections": [{"heading": "Electric utility", "paragraphs": ["Report an apparent whole-house outage, a storm-related loss, customer-specific loss while neighbors remain powered, damaged utility or service conductors, abnormal restoration, or utility equipment damage seen from a safe distance. The utility can check its system and direct the next step."]}, {"heading": "Licensed electrician", "paragraphs": ["Call when the utility confirms normal supply, directs you to an electrician, the main or customer-owned service equipment appears abnormal, a breaker will not remain reset, the outage recurs, or storm or water damage may have affected customer-owned equipment."]}, {"heading": "Emergency services", "paragraphs": ["For active electrical fire, smoke, visible arcing, sparking service equipment, or a downed conductor creating an immediate danger, move away and call emergency services and the utility as locally directed. Do not approach equipment to operate a disconnect inside the hazard area."]}]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": ["A whole-house outage is a scope pattern, not proof that the main breaker failed. Confirm that no normal loads appear powered, screen for warning signs, check the utility's official status, and report the address even when neighbors have power. A utility outage, customer-specific service issue, main or service-equipment problem, or another house-side condition can look the same from outside.", "Keep the panel, meter, and service equipment closed. Do not diagnose from meter displays, repeatedly reset the main, approach damaged conductors, touch wet equipment, or backfeed house wiring from a generator. Use the utility to check supply, a licensed electrician for customer-owned equipment, and emergency services for active fire, smoke, arcing, or an immediate line hazard."]
+      }
+    ],
+    "sources": [
+      {"title": "Power Restoration Process", "publisher": "Duke Energy", "url": "https://www.duke-energy.com/outages/restoring%20your%20power"},
+      {"title": "Outage FAQs", "publisher": "National Grid", "url": "https://www.nationalgridus.com/Upstate-NY-Business/Outage-Central/Outage-FAQs"},
+      {"title": "Electric Safety", "publisher": "Pacific Gas and Electric Company", "url": "https://pgealerts.alerts.pge.com/safety/electricity/"},
+      {"title": "CPSC Guide to Home Wiring Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/518.pdf"},
+      {"title": "Portable Generator Hazards", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/s3fs-public/5123_SafetyAlert_PortableGenerators_102021.pdf"},
+      {"title": "Home Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-safety/"},
+      {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
+      {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
     ]
   }
 ]

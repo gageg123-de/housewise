@@ -862,3 +862,29 @@ test("half-house partial-power Finder and search preserve localized and whole-ho
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "half-house-no-power"), location);
   }
 });
+
+test("whole-house outage Finder and search preserve partial and localized power-loss intents", () => {
+  const positives = [
+    "whole house has no power",
+    "whole house without power",
+    "entire house no power",
+    "house lost power",
+    "no electricity in house",
+    "power out in whole house",
+    "nothing in house has power",
+    "house has no electricity",
+    "no power but neighbors have power",
+    "neighbors have power but my house doesn't",
+    "main breaker not tripped but no power",
+    "whole house power outage",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "whole-house-without-power", query);
+  for (const query of ["half house has no power", "partial power in house", "one room no power", "one outlet no power", "breaker keeps tripping", "breaker won't reset", "electrical panel buzzing", "lights flickering", "lights dimming and brightening", "GFCI won't reset"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "whole-house-without-power", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "whole-house-no-power"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "whole-house-no-power")[0]?.article.slug, "whole-house-without-power");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "whole-house-no-power"), location);
+  }
+});

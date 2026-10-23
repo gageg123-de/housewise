@@ -1054,3 +1054,33 @@ test("half-house partial-power guide renders scope mapping, service uncertainty,
   const reciprocal = await render("/electrical/no-power-in-one-room");
   assert.match(await reciprocal.text(), /href="\/electrical\/half-house-has-no-power\/"/);
 });
+
+test("whole-house outage guide renders utility, service, partial-power, safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/electrical/whole-house-without-power");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Whole House Without Power\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/whole-house-without-power\//);
+  assert.match(html, /First: is the entire house really without power\?/);
+  assert.match(html, /What if your neighbors still have power\?/);
+  assert.match(html, /Check the main breaker from the outside only/);
+  assert.match(html, /What if the main breaker does not look tripped\?/);
+  assert.match(html, /What if you see a damaged or downed service line\?/);
+  assert.match(html, /No improvised backfeed connection/);
+  assert.match(html, /href="\/electrical\/half-house-has-no-power\/"/);
+  assert.match(html, /href="\/electrical\/no-power-in-one-room\/"/);
+  assert.match(html, /href="\/electrical\/one-outlet-has-no-power\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-wont-reset\/"/);
+  assert.match(html, /href="\/electrical\/electrical-panel-buzzing\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-randomly\/"/);
+  assert.match(html, /src="\/images\/whole-house-power-outage-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/whole-house-power-outage-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/electrical/half-house-has-no-power");
+  assert.match(await reciprocal.text(), /href="\/electrical\/whole-house-without-power\/"/);
+});
