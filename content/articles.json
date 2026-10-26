@@ -1001,13 +1001,13 @@
   {
     "title": "Why Does My Shower Drain Gurgle When the Toilet Flushes?", "slug": "shower-drain-gurgles-when-toilet-flushes", "description": "A shower drain that gurgles when the toilet flushes may be reacting to a shared drain restriction, pressure change, venting issue, or developing sewer problem.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "drainage", "clogging"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-30", "updated_date": "2026-09-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-08-30", "updated_date": "2026-10-25", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["shower drain gurgles when toilet flushes", "shower gurgles when toilet flushes", "tub drain gurgles when toilet flushes", "shower drain bubbles when toilet flushes", "toilet flush makes shower drain gurgle", "bath drain gurgles when toilet flushes"], "target_search_intent": "Explain why a toilet flush can make a shower or tub drain gurgle, distinguish pressure noise from visible wastewater backup, and help homeowners identify when a shared drain, venting, sewer, or septic condition needs professional evaluation.",
     "direct_answer": "A toilet and nearby shower often connect to shared drainage and venting paths somewhere downstream. When the toilet sends a concentrated flow through that system, a partial restriction or abnormal pressure change can move air through the shower's water-filled trap and create a gurgle, bubble, or glug. Ineffective venting can contribute, but the sound alone does not prove a vent blockage or identify the affected pipe. If water rises in the shower, dirty water appears, several fixtures slow down, or the pattern is worsening, minimize plumbing use and arrange prompt evaluation because a backup may be developing.",
     "likely_causes": ["A partial restriction in a shared bathroom branch", "A restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized bathroom branch condition", "A broader building-drain or main-line problem", "A septic-system drainage problem", "A municipal sewer condition"],
     "safe_checks": ["Identify which toilet triggers the sound and which shower or tub reacts.", "Note whether the drain only gurgles or whether water visibly bubbles, rises, or becomes dirty.", "Check whether the shower and nearby sinks drain slowly without deliberately adding a large test volume.", "Compare fixtures on other floors and note whether another toilet or low drain reacts.", "Record whether the symptom happens after every flush, after several flushes, or during other household water use.", "Minimize plumbing use if wastewater rises or several fixtures become slow."],
     "professional_help": "Arrange a plumber when the toilet-to-shower interaction repeats, the shower drains slowly, water visibly moves upward, several fixtures react, or symptoms worsen. Stop unnecessary wastewater use and call promptly if dirty water or sewage enters the shower, multiple drains back up, or a lower fixture begins taking wastewater. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
-    "related_articles": ["sink-gurgles-when-toilet-flushes", "multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
+    "related_articles": ["shower-water-pulsing", "sink-gurgles-when-toilet-flushes", "multiple-drains-back-up-at-same-time", "toilet-water-rises-when-another-toilet-flushes", "toilet-gurgles-randomly", "toilet-bubbles-when-washer-drains"],
     "image": {
       "src": "/images/toilet-shower-shared-drain-gurgling.webp", "width": 1536, "height": 1024,
       "alt": "Conceptual bathroom cutaway showing a toilet discharging into a shared drain while pressure movement disturbs water in a connected shower trap.",
@@ -1069,7 +1069,8 @@
           { "before": "If the reacting fixture is a sink rather than a shower or tub, use ", "label": "Why Does My Sink Gurgle When the Toilet Flushes?", "href": "/plumbing/sink-gurgles-when-toilet-flushes/", "after": " to compare sink drainage speed, visible water movement, and other affected fixtures." },
           { "before": "If another toilet's bowl rises or bubbles when a toilet flushes, use ", "label": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "href": "/plumbing/toilet-water-rises-when-another-toilet-flushes/", "after": " for the toilet-to-toilet pattern." },
           { "before": "If a toilet gurgles and no repeatable trigger is apparent, use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": " to track hidden discharges." },
-          { "before": "If washing-machine discharge makes a toilet bubble, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that high-flow laundry interaction." }
+          { "before": "If washing-machine discharge makes a toilet bubble, use ", "label": "Why Does My Toilet Bubble When the Washer Drains?", "href": "/plumbing/toilet-bubbles-when-washer-drains/", "after": " for that high-flow laundry interaction." },
+          { "before": "If the drain stays quiet but the spray repeatedly gets stronger and weaker, use ", "label": "Why Does My Shower Water Pulse?", "href": "/plumbing/shower-water-pulsing/", "after": " for the clean-water pressure and flow pattern." }
         ]
       },
       {
@@ -11113,6 +11114,269 @@
       {"title": "Home Safety", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-safety/"},
       {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
       {"title": "Appliance and Electrical Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/"}
+    ]
+  },
+  {
+    "title": "Why Does My Shower Water Pulse?",
+    "slug": "shower-water-pulsing",
+    "description": "Shower pressure keeps pulsing or changing? Compare one shower with other fixtures, hot and cold flow, water demand, and municipal or well-system clues.",
+    "primary_category": "plumbing",
+    "secondary_categories": ["bathroom"],
+    "symptoms": ["water-pressure", "plumbing-behavior"],
+    "room_or_location": ["bathroom"],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-25",
+    "updated_date": "2026-10-25",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "shower water pulsing",
+      "shower pressure pulsing",
+      "shower pressure goes up and down",
+      "shower water surging",
+      "shower pressure fluctuating",
+      "shower flow fluctuates",
+      "water pressure changes in shower",
+      "shower gets stronger and weaker",
+      "shower pressure keeps changing",
+      "pulsing water pressure in shower",
+      "shower water flickers"
+    ],
+    "target_search_intent": "Help a homeowner characterize repeating stronger-and-weaker shower flow, separate it from temperature change, sputtering, low pressure, drain noise, and water hammer, and use fixture scope, hot-versus-cold behavior, simultaneous demand, and municipal-versus-well context to choose the right professional without diagnosing a hidden component.",
+    "direct_answer": "If shower water repeatedly gets stronger and weaker, first confirm that the spray force or flow is actually changing—not just the temperature or spray pattern. Then compare another faucet. Pulsing at one shower makes the showerhead, valve, cartridge, or local supply more relevant. Similar changes at several fixtures point more toward household pressure regulation, simultaneous demand, municipal supply, or a private-well pump and pressure system. A rhythmic pattern can be useful, especially if it follows rapid well-pump cycling, but pulsing alone does not prove that a cartridge, pressure regulator, pump, pressure tank, or water heater has failed.",
+    "likely_causes": [
+      "A restricted or irregular showerhead spray pattern",
+      "A shower valve, balancing mechanism, cartridge, or local supply restriction",
+      "A repeatable pressure drop when another fixture or appliance draws water",
+      "A broader household flow or pressure condition",
+      "Pressure-regulating equipment that needs evaluation",
+      "Normal or abnormal private-well pump and pressure-tank cycling",
+      "A municipal supply change or utility event",
+      "A hot-water-side condition when only mixed or hot flow is affected"
+    ],
+    "safe_checks": [
+      "Confirm whether the spray force or volume changes, rather than only the temperature.",
+      "Compare the affected shower with another shower, bathroom sink, kitchen sink, or other accessible fixture.",
+      "Compare cold-only, hot-only, and normal mixed-shower behavior without using scalding water.",
+      "Note whether a toilet flush, appliance fill, irrigation cycle, or another shower reliably triggers the change during ordinary use.",
+      "Inspect visible showerhead nozzles and follow the exact manufacturer's cleaning instructions when available.",
+      "Identify municipal water or a private well and record whether several fixtures share the pattern.",
+      "For a well, note only safely observable rapid pump cycling, alarms, leaks, or pressure changes; do not open or adjust controls.",
+      "Keep concealed valves, pressure regulators, pressure tanks, pump controls, and walls closed."
+    ],
+    "professional_help": "Call a plumber when the symptom stays at one shower after manufacturer-supported showerhead care, when the shower valve or local supply may be involved, or when several fixtures fluctuate on municipal water. Contact a qualified well professional when a private-well home has house-wide swings, rapid pump cycling, leaks, alarms, or changed pump behavior. Contact the water utility for a sudden multi-fixture municipal-supply change, especially during utility work or when nearby customers report it. Seek prompt help for uncontrolled leaks, no water, contaminated-looking water after a supply event, scalding temperature changes, or electrical hazards around well equipment.",
+    "related_articles": ["shower-drain-gurgles-when-toilet-flushes"],
+    "image": {
+      "src": "/images/shower-water-pulsing-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide comparing pulsing at one shower, similar changes at multiple fixtures, a shower change triggered by another fixture, and municipal versus private-well water supply.",
+      "caption": "Conceptual guide: Where the flow changes—and whether another water use triggers it—is more useful than guessing which part failed. Actual plumbing, valve, municipal, and well-system layouts vary.",
+      "kind": "conceptual",
+      "after_section": "scope"
+    },
+    "body_sections": [
+      {
+        "id": "define-symptom",
+        "heading": "First: is the flow changing, or is the temperature changing?",
+        "paragraphs": [
+          "Homeowners use pressure, flow, surge, pulse, and flicker for different shower experiences. If the stream repeatedly becomes visibly stronger and weaker, this guide fits. Flow rate is the amount delivered over time; pressure is the force moving it. They are related, but a restricted outlet can reduce flow even when household pressure is normal.",
+          "A hot-to-cold change with roughly steady spray belongs to the shower-temperature path. Spitting, coughing, cloudy bursts, or momentary gaps suggest air or interrupted supply. A few uneven nozzles with otherwise steady output point toward a spray-pattern problem. Do not label any of those as a pressure pulse until the physical flow is actually changing."
+        ],
+        "table": {
+          "headers": ["What you notice", "Which symptom it fits"],
+          "rows": [
+            ["The whole spray repeatedly strengthens and weakens", "Pulsing or fluctuating flow—the intent of this guide"],
+            ["Spray stays similar but water becomes hotter or colder", "Temperature fluctuation, a separate intent"],
+            ["Water spits, coughs, releases air, or briefly stops", "Sputtering or interrupted supply, a separate pattern"],
+            ["Only some nozzles spray unevenly", "Showerhead spray-pattern or buildup issue"],
+            ["Flow is always weak rather than cycling", "Consistently low shower pressure, a separate intent"]
+          ]
+        },
+        "callout": {
+          "title": "Pulsing is a pattern, not a failed part",
+          "text": "A changing spray does not identify a bad cartridge, pressure regulator, pump, pressure tank, water heater, or showerhead. Fixture scope and timing decide which category deserves attention."
+        }
+      },
+      {
+        "id": "scope",
+        "heading": "Does the water pulse at only one shower?",
+        "paragraphs": [
+          "Compare the affected shower with another shower if available, then with an easy-to-observe faucet. Use normal household operation; do not create a prolonged high-demand test. A second fixture helps separate an outlet symptom from a change affecting several outlets.",
+          "If only one shower pulses while nearby faucets remain steady, the showerhead, shower valve, cartridge, local stop or supply path becomes more relevant. That does not prove the cartridge is bad. If several fixtures become stronger and weaker together, the showerhead cannot explain the shared pattern; household pressure regulation, a public supply change, or private-well equipment moves higher on the list."
+        ],
+        "subsections": [
+          {
+            "heading": "One shower only",
+            "paragraphs": ["Start at the visible outlet and preserve uncertainty about the concealed valve and local piping. A local restriction can change performance without changing pressure everywhere else."]
+          },
+          {
+            "heading": "Several fixtures",
+            "paragraphs": ["Record which fixtures move together, on which temperatures, and at what rhythm. A broad pattern needs a whole-house or supply-side evaluation, not repeated shower-part replacement."]
+          }
+        ]
+      },
+      {
+        "id": "showerhead",
+        "heading": "Check the showerhead before blaming the valve",
+        "paragraphs": [
+          "EPA WaterSense treats flow rate, spray force, coverage, and pressure compensation as separate characteristics, so perceived shower “pressure” is not a direct measurement of house pressure. Mineral buildup or debris can distort streams or reduce flow.",
+          "Inspect visible nozzles and follow the manufacturer's care instructions. If the manual treats removal as ordinary maintenance and you are comfortable doing it with the water off, comparing outlet flow can be useful; it is optional, not proof of the hidden cause. A restricted showerhead more readily explains weak or uneven local flow than a clock-like whole-house pulse."
+        ],
+        "callout": {
+          "title": "Do not remove flow-control parts",
+          "text": "Do not drill, cut, or discard a flow regulator or pressure-compensating part. Clean and reassemble only as the manufacturer directs, and stop if the fitting is seized, leaking, or unfamiliar."
+        }
+      },
+      {
+        "id": "hot-cold",
+        "heading": "Does it happen with hot water, cold water, or both?",
+        "paragraphs": [
+          "Compare cold-only and comfortably warm mixed flow at the shower if the control permits it, then compare hot and cold at a sink without using scalding water. If similar fluctuations appear in cold and hot water at several fixtures, a water-heater-only explanation fits poorly because cold water does not pass through the heater.",
+          "If the shower changes only at mixed or hotter settings while cold flow remains steady, the mixing valve, balancing mechanism, cartridge, hot-water supply, or water-heating system becomes more relevant. This still does not prove which component is responsible. If the spray stays steady and only temperature changes, preserve that as the separate shower-temperature intent rather than calling it pulsing pressure."
+        ]
+      },
+      {
+        "id": "other-demand",
+        "heading": "Does it happen when a toilet flushes or another fixture runs?",
+        "paragraphs": [
+          "A toilet filling, washing machine or dishwasher filling, irrigation zone opening, sink running, or second shower starting adds water demand. Delta and Moen describe pressure-balancing shower valves responding when one inlet pressure changes during events such as a toilet flush. Depending on the supply and piping, the shower's available flow may temporarily fall while the valve also adjusts the hot/cold balance.",
+          "A repeatable change only while another fixture draws water is different from autonomous rhythmic pulsing. Record the trigger and duration during normal use. Do not repeatedly start appliances or flush toilets to force the symptom, and do not conclude that the pipes are undersized from one observation. A plumber can compare available flow, piping, valves, and demand."
+        ]
+      },
+      {
+        "id": "shower-valve",
+        "heading": "Could the shower valve or cartridge cause it?",
+        "paragraphs": [
+          "Pressure-balancing shower valves react to hot/cold inlet differences to reduce sudden temperature changes; thermostatic valves instead sense and adjust outlet temperature. Product-specific troubleshooting also identifies restricted filters, balancing elements, cartridges, or supply conditions as possible contributors to reduced or fluctuating flow.",
+        "That evidence makes the valve a reasonable category when one shower is affected, especially after the showerhead has been ruled down. A bad cartridge cannot be inferred from pulsing alone. Valve type, internal condition, inlet pressure, and local piping must be evaluated together. Do not remove trim, pull a cartridge, operate integral stops, or open a concealed valve as a diagnostic experiment."
+        ]
+      },
+      {
+        "id": "private-well",
+        "heading": "What if your home uses a private well?",
+        "paragraphs": [
+          "Conventional private-well systems often operate across a pressure range. Water leaves the pressure tank as fixtures run; at the pressure switch's cut-in point the pump starts, and it stops at cut-out. A moderate change across that normal cycle is not automatically a fault. Pressure-tank size, pump capacity, well yield, demand, controls, and any treatment equipment all affect what reaches the fixtures.",
+          "The pattern deserves evaluation when several fixtures noticeably pulse, the pump starts and stops unusually quickly, the swing has become larger, pressure fails to recover, the pump runs continuously, water sputters, an alarm appears, or equipment leaks. Amtrol identifies rapid pump cycling and low pressure as possible tank-problem symptoms, but its own diagnostic material lists several possible causes—including precharge, sizing, settings, demand, and tank condition. None can be selected from shower flow alone."
+        ],
+        "callout": {
+          "title": "Keep well controls closed",
+          "text": "Do not open a pressure-switch cover, touch electrical contacts, change cut-in or cut-out settings, bypass controls, add air to a tank, or work on energized pump equipment from this article. Pressure vessels and pump controls require model-specific procedures and safe isolation."
+        }
+      },
+      {
+        "id": "municipal-water",
+        "heading": "What if you have municipal water?",
+        "paragraphs": [
+          "Public-system pressure varies with elevation, operation, and community demand. Portland Water Bureau recommends comparing fixtures and hot versus cold when flow changes. One shower still points toward local components; a sudden multi-fixture change makes the service, house plumbing, pressure regulation, or utility supply more relevant.",
+          "Check the utility's current notices and contact it when the change is sudden and broad, began with main work or an outage, or nearby customers report the same pattern. Similar neighbor reports make a supply-side event more plausible, but they do not prove responsibility. Conversely, neighbors with steady water do not diagnose the home's regulator."
+        ]
+      },
+      {
+        "id": "pressure-regulator",
+        "heading": "Could the water pressure regulator be involved?",
+        "paragraphs": [
+          "Some homes use a pressure-reducing valve, or PRV, to reduce higher incoming pressure. Its job is to control downstream pressure as inlet conditions and demand change. A house-wide fluctuation makes an installed PRV one reasonable part of the evaluation.",
+          "Shower pulsing alone is not a PRV test. A plumber may need to compare static and flowing conditions, confirm whether a regulator is installed, identify its model and condition, and separate utility supply from house-side restriction. Do not randomly turn the adjustment screw or apply a universal pressure setting; an adjustment can mask a supply or equipment problem and may create unsafe pressure."
+        ]
+      },
+      {
+        "id": "water-heater",
+        "heading": "Could the water heater cause the problem?",
+        "paragraphs": [
+          "Only bring the water heater into the diagnosis when the pattern follows the hot-water path. If cold and hot fixtures across the house pulse together, the heater cannot explain the cold-side change. If cold water stays steady but mixed shower flow changes, the heater, hot-side piping, shower valve, or another hot-water component may deserve attention.",
+          "Tankless and other water heaters have model-specific flow and control behavior. Use the installed model's official manual; do not assign a generic tankless explanation or replace a heater because one shower pulses. Gas, electricity, combustion, hot water, and pressurized connections remain professional-service boundaries."
+        ]
+      },
+      {
+        "id": "different-patterns",
+        "heading": "What if the shower sputters—or the pipes bang?",
+        "paragraphs": [
+          "Sputtering is irregular, air-like delivery: the water spits, coughs, turns cloudy with tiny bubbles, or briefly stops. Utilities document temporary air after service interruption or water-main work, and private-well supply trouble can also involve air or interruption. Record recent work, whether other cold fixtures sputter, and whether service notices exist. Do not treat that as the same thing as a smooth strong-weak pulse.",
+          "Water hammer is also different. Manufacturers define it as a pressure shock produced when moving water is stopped suddenly by a quick-closing valve, commonly heard as a bang or thump. A closing-valve knock does not explain continuously changing shower spray. If the drain—not the spray—gurgles when a toilet flushes, that is a wastewater drainage interaction rather than a clean-water pressure symptom."
+        ],
+        "link": {
+          "before": "Use ",
+          "label": "Why Does My Shower Drain Gurgle When the Toilet Flushes?",
+          "href": "/plumbing/shower-drain-gurgles-when-toilet-flushes/",
+          "after": " when the sound comes from the drain or trap instead of the shower spray."
+        }
+      },
+      {
+        "id": "safe-sequence",
+        "heading": "What you can safely check yourself",
+        "bullets": [
+          "Confirm that the entire spray becomes stronger and weaker rather than only changing temperature.",
+          "Compare one other shower or faucet and note whether the symptom is local or shared.",
+          "Compare cold-only, hot-only, and comfortable mixed-water behavior without exposing anyone to scalding water.",
+          "Note whether another fixture, appliance fill, irrigation cycle, or ordinary household event triggers the change.",
+          "Inspect visible showerhead nozzles and use only manufacturer-supported cleaning or removal steps.",
+          "Identify municipal water or a private well; check utility notices for a broad public-water change.",
+          "For a well, record safely observable pump sounds, cycling frequency, alarms, leaks, and whether several fixtures pulse; do not open equipment.",
+          "Photograph visible equipment labels or record model numbers without removing covers so the correct professional can consult the right instructions."
+        ],
+        "callout": {
+          "title": "Stop at accessible observations",
+          "text": "Do not open walls, concealed valves, pressure-switch covers, pump controls, pressure tanks, water-heater compartments, or pressure regulators. A useful service report needs scope, temperature side, trigger, rhythm, water source, and warning signs—not an unverified part diagnosis."
+        }
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not replace a shower cartridge before separating outlet, local-valve, and broad supply patterns.",
+          "Do not adjust a pressure-reducing valve at random or use a universal target setting.",
+          "Do not open a well pressure switch, touch contacts, change settings, or bypass pump controls.",
+          "Do not add air to or strike a pressure tank, or replace the tank or pump from shower pulsing alone.",
+          "Do not remove flow-control parts from a showerhead or use aggressive chemicals contrary to its manual.",
+          "Do not open a concealed shower valve, remove walls, or dismantle pressurized piping to diagnose the pattern.",
+          "Do not replace or service a water heater merely because mixed shower flow changes.",
+          "Do not repeatedly create high demand to reproduce the symptom or ignore leaks, scalding changes, alarms, or electrical hazards."
+        ]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "When to call a plumber, well professional, or water utility",
+        "subsections": [
+          {
+            "heading": "Plumber",
+            "paragraphs": ["Call when one shower still pulses after appropriate showerhead care, a local valve or supply is implicated, several municipal-water fixtures fluctuate, a PRV or house restriction may be involved, or the pattern is worsening. A plumber can measure conditions without guessing from spray alone."]
+          },
+          {
+            "heading": "Qualified well professional",
+            "paragraphs": ["Call when a private-well home has noticeable multi-fixture swings, unusually rapid pump cycling, changed pump run behavior, poor recovery, alarms, leaks, sputtering, or suspected tank and control problems. The professional should evaluate the system as a whole before replacing a pump or tank."]
+          },
+          {
+            "heading": "Water utility",
+            "paragraphs": ["Contact the supplier for a sudden multi-fixture municipal-water change, a problem that began with utility work or service restoration, similar reports nearby, or a supply-side concern the plumber cannot resolve. Follow the utility's current instructions rather than generic flushing advice."]
+          }
+        ],
+        "paragraphs": ["Seek prompt help for no water, an uncontrolled leak, contaminated-looking or discolored water after a supply event, severe hot/cold swings that create a scald risk, or water around electrical well or heater equipment. Keep people away from wet electrical equipment and use emergency help when an immediate electrical or flooding hazard exists."]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Pulsing shower flow is a symptom pattern, not a diagnosis. First separate changing flow from changing temperature, sputtering, uneven nozzles, constant low pressure, and drain noise. Then compare one shower with other fixtures, hot with cold, and untriggered pulsing with a change that follows another water demand.",
+          "One-shower behavior makes the outlet, valve, cartridge, and local supply more relevant. Multi-fixture behavior shifts attention to household pressure regulation, public supply, or a private-well pump and pressure system. Keep checks non-invasive and use the plumber, well professional, or utility that matches the pattern instead of replacing parts from the word “pulsing.”"
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Troubleshooting Water Pressure and Flow", "publisher": "Portland Water Bureau", "url": "https://www.portland.gov/water/drinking-water-quality/troubleshooting-drinking-water-quality-home/water-pressure-and-flow"},
+      {"title": "Showerheads", "publisher": "U.S. Environmental Protection Agency WaterSense", "url": "https://www.epa.gov/watersense/showerheads"},
+      {"title": "Large Hot and Cold Pressure Differences and Monitor Valve Operation", "publisher": "Delta Faucet", "url": "https://www.deltafaucet.com/node/968"},
+      {"title": "Moen Product Help and FAQs", "publisher": "Moen", "url": "https://www.moen.com/pages/faqs"},
+      {"title": "Thermostatic Shower Valve Troubleshooting Guide", "publisher": "Kohler", "url": "https://techcomm.kohler.com/techcomm/pdf/1041158-9.pdf"},
+      {"title": "Water Pressure Reducing Valves Frequently Asked Questions", "publisher": "Watts", "url": "https://www.watts.com/resources/references-tools/waterpressurereducingvalvesfaq"},
+      {"title": "FAQs and Support: Pressure Reducing Valves", "publisher": "Zurn", "url": "https://www.zurn.com/us/en/support.html"},
+      {"title": "Well Systems FAQs", "publisher": "Amtrol", "url": "https://www.amtrol.com/faqs/"},
+      {"title": "Using Low-Yielding Wells", "publisher": "Penn State Extension", "url": "https://extension.psu.edu/using-low-yielding-wells"},
+      {"title": "Water Infrastructure Emergencies", "publisher": "Philadelphia Water Department", "url": "https://water.phila.gov/drops/water-infrastructure-emergencies/"},
+      {"title": "Water Hammer Frequently Asked Questions", "publisher": "Sioux Chief", "url": "https://www.siouxchief.com/docs/default-source/technical-documents/other/supply/water-hammer-arrester---minirester-hydrarester-and-megarester---faq"}
     ]
   }
 ]

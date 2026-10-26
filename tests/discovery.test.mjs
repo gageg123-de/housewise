@@ -15,6 +15,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "toilet-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
+  assert.ok(bathroom.some((item) => item.value === "shower-pressure-pulsing"));
   assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
   assert.ok(bathroom.some((item) => item.value === "bath-water-sediment"));
   assert.ok(bathroom.some((item) => item.value === "water-sediment"));
@@ -930,5 +931,31 @@ test("dishwasher drainage Finder and search preserve cleaning, drying, leaking, 
   assert.deepEqual(finderResults.map((item) => item.article.slug), ["dishwasher-not-draining"]);
   for (const location of ["yard", "garage", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "dishwasher-draining"), location);
+  }
+});
+
+test("shower pulsing Finder and search preserve low-pressure, temperature, sputtering, hammer, and drain intents", () => {
+  const positives = [
+    "shower water pulsing",
+    "shower pressure pulsing",
+    "shower pressure goes up and down",
+    "shower water surging",
+    "shower pressure fluctuating",
+    "shower flow fluctuates",
+    "water pressure changes in shower",
+    "shower gets stronger and weaker",
+    "shower pressure keeps changing",
+    "pulsing water pressure in shower",
+    "shower water flickers",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "shower-water-pulsing", query);
+  for (const query of ["low shower pressure", "shower temperature changes", "shower goes hot and cold", "shower sputtering", "air in water lines", "water hammer", "pipes bang when washer stops", "shower drain gurgles when toilet flushes", "whole house water pressure fluctuates"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "shower-water-pulsing", query);
+  }
+  assert.ok(getFinderSymptomOptions("bathroom").some((item) => item.value === "shower-pressure-pulsing"));
+  const finderResults = rankFinderArticles(registry, "bathroom", "shower-pressure-pulsing");
+  assert.deepEqual(finderResults.map((item) => item.article.slug), ["shower-water-pulsing"]);
+  for (const location of ["yard", "garage", "attic", "basement", "kitchen", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "shower-pressure-pulsing"), location);
   }
 });

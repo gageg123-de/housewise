@@ -1108,3 +1108,27 @@ test("whole-house outage guide renders utility, service, partial-power, safety, 
   const reciprocal = await render("/electrical/half-house-has-no-power");
   assert.match(await reciprocal.text(), /href="\/electrical\/whole-house-without-power\/"/);
 });
+
+test("shower pulsing guide renders fixture-scope diagnosis, well and utility branches, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/plumbing/shower-water-pulsing");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Shower Water Pulse\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/shower-water-pulsing\//);
+  assert.match(html, /First: is the flow changing, or is the temperature changing\?/);
+  assert.match(html, /Does the water pulse at only one shower\?/);
+  assert.match(html, /What if your home uses a private well\?/);
+  assert.match(html, /Could the water pressure regulator be involved\?/);
+  assert.match(html, /Pulsing is a pattern, not a failed part/);
+  assert.match(html, /Keep well controls closed/);
+  assert.match(html, /href="\/plumbing\/shower-drain-gurgles-when-toilet-flushes\/"/);
+  assert.match(html, /src="\/images\/shower-water-pulsing-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/shower-water-pulsing-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/plumbing/shower-drain-gurgles-when-toilet-flushes");
+  assert.match(await reciprocal.text(), /href="\/plumbing\/shower-water-pulsing\/"/);
+});

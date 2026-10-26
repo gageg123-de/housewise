@@ -106,3 +106,4 @@ Closing vents in unused rooms,should i close vents in unused rooms,hvac,airflow,
 HVAC register size and airflow,does hvac register size affect airflow,hvac,airflow,whole-house,comparison,planned,medium,,Preserve detailed sizing and selection intent
 Return vent loud,why is my return vent so loud,hvac,noise,whole-house,diagnostic,planned,medium,,Return-side noise and restriction intent
 One vent louder than the others,why is one vent louder than the others,hvac,noise,living-area,diagnostic,planned,medium,,Outlet-specific sound intent distinct from airflow volume
+Shower water pulses,why does my shower water pulse,plumbing,water-pressure,bathroom,diagnostic,published,high,/plumbing/shower-water-pulsing/,Repeating stronger-and-weaker shower flow; distinct from constant low pressure temperature fluctuation sputtering whole-house pressure change water hammer and shower-drain gurgling
