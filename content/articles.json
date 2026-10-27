@@ -230,7 +230,7 @@
     "likely_causes": ["Short cooling cycles", "Oversized cooling equipment", "Continuous thermostat fan operation", "Humid outdoor air entering the home", "Duct leakage", "Restricted airflow", "Indoor moisture sources", "HVAC performance or maintenance issues"],
     "safe_checks": ["Confirm the thermostat fan is set to AUTO rather than continuous ON unless the equipment instructions specify otherwise.", "Check the visible HVAC filter and unobstructed supply and return grilles.", "Measure relative humidity with a basic hygrometer and note the weather and time.", "Record how long cooling cycles last and whether some rooms feel worse than others.", "Look for obvious moisture sources and safely visible water near the indoor unit without removing panels."],
     "professional_help": "Arrange HVAC evaluation when humidity stays elevated, cycles are repeatedly very short, airflow is weak or uneven, condensate drainage looks abnormal, water is present near the indoor unit, or the system cools but comfort does not improve. A building-performance or moisture professional may help when infiltration, a damp crawlspace or basement, or enclosure leakage appears important.",
-    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit", "ac-filter-wet", "condensation-inside-windows"],
+    "related_articles": ["ac-vent-sweating", "water-dripping-from-ac-vent", "ac-ductwork-sweating-in-attic", "water-around-indoor-ac-unit", "ac-filter-wet", "condensation-inside-windows", "ac-keeps-turning-on-and-off"],
     "image": {
       "src": "/images/how-ac-removes-indoor-humidity.webp",
       "width": 1536,
@@ -302,6 +302,7 @@
         "heading": "How high humidity relates to wet AC vents",
         "paragraphs": ["Elevated room humidity gives water vapor more opportunity to condense when it contacts a cold register or duct boot. That connection can explain why several vents become damp on humid days, but a wet vent can also involve local insulation, air leakage, drainage, roof, or plumbing conditions."],
         "links": [
+          { "before": "If repeated starts and stops are the main symptom rather than humidity itself, use ", "label": "Why Does My AC Keep Turning On and Off?", "href": "/hvac/ac-keeps-turning-on-and-off/", "after": " to separate normal thermostat cycling from premature shutdowns, airflow clues, and equipment behavior." },
           { "before": "If moisture is mainly beading on the metal register, use ", "label": "Why Is My AC Vent Sweating?", "href": "/hvac/ac-vent-sweating/", "after": " to focus on surface condensation, the boot, insulation, and nearby air leakage." },
           { "before": "If water is forming drops or falling into the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare HVAC condensation with condensate, roofing, and plumbing sources." },
           { "before": "If moisture is collecting on the outside of duct runs in an attic, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " to examine the attic dew-point, insulation, jacket, and air-leakage pattern." },
@@ -11377,6 +11378,330 @@
       {"title": "Using Low-Yielding Wells", "publisher": "Penn State Extension", "url": "https://extension.psu.edu/using-low-yielding-wells"},
       {"title": "Water Infrastructure Emergencies", "publisher": "Philadelphia Water Department", "url": "https://water.phila.gov/drops/water-infrastructure-emergencies/"},
       {"title": "Water Hammer Frequently Asked Questions", "publisher": "Sioux Chief", "url": "https://www.siouxchief.com/docs/default-source/technical-documents/other/supply/water-hammer-arrester---minirester-hydrarester-and-megarester---faq"}
+    ]
+  },
+  {
+    "title": "Why Does My AC Keep Turning On and Off?",
+    "slug": "ac-keeps-turning-on-and-off",
+    "description": "AC keeps turning on and off? Learn how normal cycling differs from short cycling, what patterns to check safely, and when to call an HVAC technician.",
+    "primary_category": "hvac",
+    "secondary_categories": [],
+    "symptoms": [
+      "appliance-behavior",
+      "heat",
+      "airflow"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "living-area",
+      "bedroom"
+    ],
+    "system": "hvac",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-27",
+    "updated_date": "2026-10-27",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why does my ac keep turning on and off",
+      "air conditioner short cycling",
+      "ac short cycling",
+      "ac turns on and off repeatedly",
+      "ac runs for a few minutes then shuts off",
+      "ac keeps restarting",
+      "air conditioner stops before reaching temperature",
+      "outside ac unit keeps turning on and off",
+      "ac compressor starts and stops",
+      "ac shuts off too soon",
+      "air conditioner cycles too frequently"
+    ],
+    "target_search_intent": "Help a homeowner distinguish normal thermostat-controlled cooling cycles from repeated premature AC shutdowns by comparing comfort, setpoint, indoor and outdoor equipment behavior, airflow, ice, water, and repetition without diagnosing a hidden electrical, refrigerant, control, or sizing fault.",
+    "direct_answer": "An air conditioner is supposed to turn on and off as the thermostat calls for cooling and then reaches its setting. The pattern becomes more concerning when the system repeatedly stops before the house cools, restarts soon afterward, cannot maintain the setting, or shows weak airflow, ice, abnormal water, electrical warnings, or breaker trips. Do not use one universal runtime to decide whether it is broken: weather, cooling load, equipment type, staging, and thermostat control all affect operation. First identify whether the indoor blower, the outdoor unit, or both are stopping, and whether the thermostat still appears to be calling for cooling.",
+    "likely_causes": [
+      "Normal thermostat-controlled cycling under the current cooling load",
+      "Restricted airflow from a dirty filter or obstructed return or supply path",
+      "A frozen evaporator coil or another system-performance problem",
+      "A condensate overflow switch interrupting part or all of the cooling call",
+      "Thermostat sensing, location, setup, wiring, or control trouble",
+      "An electrical, motor, compressor, or protective-control fault",
+      "A refrigerant-system problem requiring qualified diagnosis",
+      "Oversized equipment or an installation and sizing mismatch"
+    ],
+    "safe_checks": [
+      "Observe several natural cycles without forcing the system to restart and record whether the house reaches the thermostat setting.",
+      "Identify whether airflow from the vents, the indoor blower, the outdoor fan, or all cooling operation stops.",
+      "Confirm the thermostat is in cooling mode, the setpoint is below room temperature, and the display still indicates a cooling call when the equipment stops.",
+      "Inspect the normal homeowner-accessible filter and replace it according to the equipment instructions if it is dirty or overdue.",
+      "Confirm accessible return grilles and supply registers are not covered by furniture, rugs, curtains, or stored items.",
+      "From outside closed equipment, note visible ice, unusual water, fault messages, burning odor, electrical buzzing, or breaker trips."
+    ],
+    "professional_help": "Arrange HVAC service when repeated short cycles continue after basic external checks, the house does not reach or maintain the set temperature, the outdoor unit stops while the thermostat still calls for cooling, airflow remains weak, ice or abnormal condensate appears, or a control, electrical, refrigerant, or sizing problem is possible. Stop operation and get prompt qualified help for smoke, sparking, burning odor, unusual electrical buzzing, damaged wiring, water near electrical parts, or a breaker that trips again after a normal single reset.",
+    "related_articles": [
+      "house-humid-with-ac-running",
+      "ac-filter-wet",
+      "water-around-indoor-ac-unit",
+      "weak-airflow-from-one-vent",
+      "lights-flicker-when-appliance-turns-on"
+    ],
+    "image": {
+      "src": "/images/ac-short-cycling-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Four-panel conceptual guide comparing a normal AC cooling cycle, repeated premature starts and stops, separate indoor and outdoor equipment, and safe observation categories.",
+      "caption": "Conceptual illustration: Compare the cooling result, repeated start-stop pattern, indoor versus outdoor equipment, and external clues such as airflow, thermostat state, visible ice or water, and service needs. The pattern does not identify a failed part.",
+      "kind": "conceptual",
+      "after_section": "what-is-short-cycling"
+    },
+    "body_sections": [
+      {
+        "id": "normal-cycling",
+        "heading": "Is it normal for an AC to turn on and off?",
+        "paragraphs": [
+          "Yes. A thermostat normally starts cooling when the indoor temperature rises above its control point and stops the cooling call when the setting is satisfied. A single start and stop is not evidence of a fault.",
+          "Runtime is not universal. It changes with weather, home heat gain, thermostat settings, system capacity, duct performance, and whether equipment is single-stage, staged, or variable-capacity. Trane notes that normal operation may be brief in mild conditions or long on a very hot day, so “every AC must run 15 to 20 minutes” is not a reliable diagnostic rule."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "How to interpret the pattern"
+          ],
+          "rows": [
+            [
+              "The system stops after the thermostat setting is reached and comfort remains steady",
+              "Normal thermostat-controlled cycling is more plausible"
+            ],
+            [
+              "The system repeatedly stops while the room is still warmer than the setting",
+              "Premature shutdown or a split between controls and equipment deserves investigation"
+            ],
+            [
+              "Only the indoor fan keeps running",
+              "Fan mode, blower delay, ventilation, or separate indoor control may explain what you hear"
+            ],
+            [
+              "The outdoor unit repeatedly stops and restarts while cooling is still needed",
+              "An outdoor-equipment, control, protection, or system-performance problem becomes more relevant"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "what-is-short-cycling",
+        "heading": "What is AC short cycling?",
+        "paragraphs": [
+          "Short cycling describes repeated cooling operation that ends prematurely and starts again before the home is adequately cooled. The useful evidence is the combination of repetition, limited cooling progress, rapid restarts, comfort changes, and what the indoor and outdoor equipment do—not a single stopwatch number.",
+          "One brief cycle after a thermostat adjustment, power restoration, mild-weather cooling call, or control delay does not establish a problem. A repeatable pattern that cannot satisfy the thermostat can reduce comfort and humidity control and increase starting wear. Even then, it does not prove a bad capacitor, low refrigerant, or another failed part."
+        ]
+      },
+      {
+        "id": "indoor-or-outdoor",
+        "heading": "Is the indoor fan turning off or the outdoor AC unit?",
+        "paragraphs": [
+          "A typical split system has separate indoor and outdoor equipment. The indoor blower moves air through the ducts and across the evaporator coil. The outdoor unit contains the compressor, condenser coil, and outdoor fan. Seeing or hearing the indoor blower does not prove that the compressor is running, and a thermostat fan setting of ON may keep indoor airflow going after active cooling stops.",
+          "From a safe distance, note whether supply airflow, the outdoor fan, or both stop and what the thermostat shows. Do not remove panels, touch the fan guard, or lean into equipment to listen. Packaged and ductless systems arrange components differently, so use the model manual when equipment is unfamiliar."
+        ]
+      },
+      {
+        "id": "setpoint",
+        "heading": "Does the AC shut off before the house gets cool?",
+        "paragraphs": [
+          "The thermostat result is one of the strongest clues. If the displayed temperature reaches the selected setting and the home stays comfortable, ordinary cycling becomes more plausible. If the equipment stops while the display still shows a cooling call, the room remains above the setting, and the pattern repeats, a safety control, equipment fault, thermostat/control problem, or performance issue may be interrupting the cycle.",
+          "Do not keep lowering the setpoint to force longer operation. Record the temperature, setpoint, cooling-call indicator, cycle timing, and room-to-room differences. A thermostat senses its own location, so direct sun, a nearby register, drafts, or a heat-producing device may be relevant without proving it is defective."
+        ]
+      },
+      {
+        "id": "filter-airflow",
+        "heading": "Could a dirty air filter cause the AC to shut off?",
+        "paragraphs": [
+          "A clogged filter can reduce airflow. Blocked returns, covered supply registers, dirty coils, duct restrictions, blower trouble, and some overly restrictive filter choices can also affect airflow. Low airflow can reduce cooling performance, contribute to coil icing, or lead equipment protections to interrupt operation in some systems.",
+          "A dirty filter is therefore a sensible first check, not a complete diagnosis. Use only the normal homeowner-access point and the exact size and type the equipment instructions call for. Confirm that return grilles and supply outlets are not covered. Do not close other vents to “push” more air, install a less suitable filter as a workaround, open the air-handler cabinet, or attempt to clean an internal coil."
+        ],
+        "links": [
+          {
+            "before": "If the main symptom is a single weak supply outlet while the others are normal, use ",
+            "label": "Why Is Airflow Weak From One Vent?",
+            "href": "/hvac/weak-airflow-from-one-vent/",
+            "after": " to keep that localized branch problem separate from a whole-system cycling pattern."
+          },
+          {
+            "before": "If the filter media itself is damp, stained, or saturated, start with ",
+            "label": "Why Is My AC Filter Wet?",
+            "href": "/hvac/ac-filter-wet/",
+            "after": " because filter location and the water path change the diagnosis."
+          }
+        ]
+      },
+      {
+        "id": "frozen-coil",
+        "heading": "Could a frozen AC coil be involved?",
+        "paragraphs": [
+          "Visible frost on an accessible refrigerant line or closed indoor cabinet, weak or warming supply air, and water appearing as ice thaws can point toward a frozen evaporator condition. Restricted airflow can contribute, but refrigerant-system, blower, coil, thermostat, and other performance problems can also be involved. Ice does not prove that refrigerant is low.",
+          "If ice is visible, turn cooling off at the thermostat and arrange HVAC service. Do not chip or melt the ice with tools or heat, open the coil compartment, or keep restarting cooling. Note where the ice is safely visible and whether airflow weakened before shutdown."
+        ],
+        "link": {
+          "before": "If thawing water or overflow is collecting around the indoor equipment, use ",
+          "label": "Why Is There Water Around My Indoor AC Unit?",
+          "href": "/hvac/water-around-indoor-ac-unit/",
+          "after": " to separate condensate drainage, a thawing coil, and unrelated nearby leaks."
+        }
+      },
+      {
+        "id": "condensate-switch",
+        "heading": "Could a clogged condensate drain shut off cooling?",
+        "paragraphs": [
+          "Some systems use a float or electronic condensate overflow switch. When the water level rises, the switch can open a control circuit to limit water damage. A blocked drain, failed pump, full auxiliary pan, or another drainage problem may therefore appear as an AC shutdown.",
+          "The exact result depends on where the switch is installed and how the control circuit is wired. One setup may interrupt the outdoor cooling call while another stops more of the system, so “a clogged drain always shuts off the whole AC” is not a safe general rule. Look only for accessible standing water, an obviously full external pan, or a normal thermostat fault message. Never bypass, hold down, rewire, or remove a safety switch."
+        ]
+      },
+      {
+        "id": "thermostat-controls",
+        "heading": "Could the thermostat be causing the problem?",
+        "paragraphs": [
+          "The thermostat and its control relationship remain possible even when visible settings look reasonable. Sensor error, location, applicable batteries, equipment setup, control wiring, communication faults, or control boards can affect cooling calls. Correct settings do not eliminate those possibilities.",
+          "Confirm COOL mode, a setpoint below the displayed temperature, and AUTO fan unless the equipment instructions call for something else. Replace user-serviceable batteries if the manual directs it and record displayed messages or codes. Do not remove the thermostat base to probe wires, change installer configuration at random, jumper terminals, or bypass a delay or protection feature."
+        ]
+      },
+      {
+        "id": "outdoor-unit",
+        "heading": "What if the outdoor unit keeps starting and stopping?",
+        "paragraphs": [
+          "When the outdoor condenser stops but the indoor blower continues and the thermostat still calls for cooling, the observation is more specific than “the AC turned off.” Controls, electrical components, motors, compressor protection, pressure or temperature safeties, refrigerant-system conditions, or communication between components may be involved. Sound alone cannot select among them.",
+          "A five-minute shutdown does not diagnose a capacitor, and a humming or clicking sound does not make component replacement a homeowner task. Do not open the disconnect, cabinet, or control compartment; touch capacitors or contactors; push the outdoor fan; measure voltage; or repeatedly cycle power. Give a technician the stop/restart pattern and which equipment kept operating."
+        ]
+      },
+      {
+        "id": "electrical-refrigerant",
+        "heading": "Could an electrical or refrigerant problem cause repeated shutdowns?",
+        "paragraphs": [
+          "Electrical faults and refrigerant-system problems can cause abnormal operation, but neither can be diagnosed from cycling alone. A technician may need to test controls, contactors, capacitors, motors, compressor operation, temperatures, pressures, airflow, and refrigerant charge as a connected system. The correct finding could be a control issue, protection response, airflow problem, refrigerant leak or charge problem, or something else.",
+          "Refrigerant gauges, charging, leak repair, capacitor testing, and energized electrical measurements are not homeowner checks. EPA requires Section 608 certification for work that can open a stationary air-conditioning refrigerant circuit. If a breaker trips, do not keep resetting it; a repeated trip belongs with qualified HVAC or electrical evaluation."
+        ],
+        "callout": {
+          "title": "Stop for electrical warning signs",
+          "text": "Stop the system from the thermostat if it is safe to do so and keep away from the equipment when there is smoke, sparking, arcing, a burning or hot-insulation odor, unusual electrical buzzing, visible wiring damage, water near electrical parts, or a breaker that trips again. Use emergency help for active fire or smoke."
+        }
+      },
+      {
+        "id": "sizing-and-variable-capacity",
+        "heading": "Could the AC be too large for the house?",
+        "paragraphs": [
+          "Oversized conventional equipment can satisfy the thermostat area quickly, cycle more often, create temperature swings, and provide poorer humidity control. That makes sizing relevant when short operation has existed since installation, the thermostat reaches its setting quickly, other rooms remain uneven, and the house feels cool but clammy. Cycling alone does not prove oversizing, and it is not automatically the most likely cause.",
+          "Sizing requires a recognized load calculation using the actual home, equipment, ducts, and airflow—not square footage alone. Two-stage, variable-capacity, and inverter systems may run longer at reduced output, change speed without stopping, or cycle at minimum capacity under very low demand. Compare behavior with the model instructions instead of applying a single-stage expectation to every system."
+        ],
+        "link": {
+          "before": "If cooling reaches the thermostat setting but the house remains clammy, use ",
+          "label": "Why Is My House Humid With the AC Running?",
+          "href": "/hvac/house-humid-with-ac-running/",
+          "after": " for the separate humidity and moisture-load investigation."
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What can you safely check yourself?",
+        "paragraphs": [
+          "Keep the investigation external and record natural operation instead of repeatedly forcing a restart. A short timeline is more useful to a technician than an unverified part diagnosis."
+        ],
+        "bullets": [
+          "Watch several ordinary cycles and note start time, stop time, restart time, outdoor conditions, and whether the pattern repeats.",
+          "Record thermostat room temperature, setpoint, mode, fan setting, cooling-call indicator, and any exact message or code.",
+          "Check whether the house reaches and maintains the setting or remains warm, uneven, or humid.",
+          "Identify whether supply airflow, the indoor blower, the outdoor fan, or both indoor and outdoor operation stop.",
+          "Inspect the normal accessible filter and replace it only according to the equipment instructions if dirty or overdue.",
+          "Move furniture, rugs, curtains, and stored items away from accessible return grilles and supply registers.",
+          "From outside closed equipment, note weak airflow, safely visible frost, unusual water, odor, noise, or damage.",
+          "Stop testing and call for service when the shutdown repeats, cooling cannot satisfy the thermostat, or a warning sign appears."
+        ],
+        "callout": {
+          "title": "Observe; do not defeat the shutdown",
+          "text": "Do not bypass condensate, pressure, temperature, door, or other safety controls; repeatedly lower the thermostat; repeatedly reset a breaker; or rapidly switch power off and on. A protective shutdown is information for diagnosis, not an obstacle to override."
+        }
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not assume a brief cycle proves a bad capacitor, low refrigerant, a failed compressor, or an oversized system.",
+          "Do not open indoor or outdoor electrical compartments, remove access panels, or touch capacitors, contactors, wiring, motors, or control boards.",
+          "Do not attach refrigerant gauges, add refrigerant, vent refrigerant, or attempt leak repair.",
+          "Do not bypass a condensate float switch, pressure switch, thermal protection, compressor delay, door switch, or thermostat control.",
+          "Do not keep operating with visible ice, chip ice from tubing or coils, or use heat to accelerate thawing.",
+          "Do not repeatedly reset a tripping breaker or replace it with a larger breaker.",
+          "Do not close other vents as a cycling fix or enter an unsafe attic or crawlspace to inspect equipment.",
+          "Do not intentionally create repeated starts by moving the thermostat up and down."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When should you call an HVAC technician?",
+        "paragraphs": [
+          "Arrange service when the AC repeatedly stops before reaching the set temperature, restarts over and over, cannot hold comfort, or behaves differently from its established pattern. Service is also appropriate when airflow stays weak after a proper filter check, the outdoor unit stops while the thermostat still calls for cooling, ice or abnormal water is visible, a condensate safety shutdown is possible, or the thermostat reports a persistent fault.",
+          "A technician can compare the thermostat call, indoor blower, outdoor unit, airflow, coil condition, condensate controls, electrical components, protective controls, refrigerant-system performance, and equipment sizing. That complete sequence matters because the same start-stop observation can result from very different conditions.",
+          "Get prompt help for a repeatedly tripping breaker, burning odor, unusual electrical buzzing, water near electrical components, or damaged equipment. Keep away and use emergency services for active smoke, fire, or arcing. Ordinary thermostat cycling without warning signs is not an emergency."
+        ],
+        "link": {
+          "before": "If the main accompanying symptom is house lights flickering when the compressor or another large load starts, use ",
+          "label": "Why Do My Lights Flicker When an Appliance Turns On?",
+          "href": "/electrical/lights-flicker-when-appliance-turns-on/",
+          "after": " to keep the electrical lighting response separate from the AC cycling diagnosis."
+        }
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Frequent AC cycling is an observable symptom, not a confirmed diagnosis. Start with the result: does the home reach the thermostat setting, and does it stay comfortable? Then identify which equipment stops, whether the thermostat still calls for cooling, whether airflow is restricted, and whether ice, water, electrical warnings, or repeated breaker trips accompany the pattern.",
+          "Normal runtime changes with load and equipment design, so avoid universal minute rules. A clean filter and unobstructed grilles are reasonable checks; safety switches, electrical parts, refrigerant circuits, and sizing require qualified evaluation. If the system repeatedly stops before doing its job, document the pattern and call an HVAC technician instead of forcing it to keep running."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "AC Short Cycling",
+        "publisher": "Trane",
+        "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/ac-short-cycling/"
+      },
+      {
+        "title": "Why Is My Air Handler Not Turning On?",
+        "publisher": "Carrier",
+        "url": "https://www.carrier.com/us/en/residential/hvac-resources/air-handlers/troubleshooting/"
+      },
+      {
+        "title": "What To Do If the AC Evaporator Coil Is Frozen",
+        "publisher": "Trane",
+        "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/evaporator-coil-is-frozen/"
+      },
+      {
+        "title": "Maintenance Checklist",
+        "publisher": "ENERGY STAR",
+        "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist"
+      },
+      {
+        "title": "HVAC Proper Sizing of HVAC Systems",
+        "publisher": "U.S. Department of Energy Building Science Education",
+        "url": "https://bsesc.energy.gov/energy-basics/hvac-proper-sizing-hvac-systems"
+      },
+      {
+        "title": "How Hard Is My System Working? What Is Demand?",
+        "publisher": "Lennox",
+        "url": "https://www.lennox.com/residential/support/faqs/how-hard-is-my-system-working-what-is-demand"
+      },
+      {
+        "title": "Safe-T-Switch Legacy Condensate Overflow Switches",
+        "publisher": "RectorSeal",
+        "url": "https://rectorseal.com/hvac/safe-t-switch-legacy-group/"
+      },
+      {
+        "title": "Homeowners and Consumers: Frequently Asked Questions",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/ods-phaseout/homeowners-and-consumers-frequently-asked-questions"
+      },
+      {
+        "title": "Home Wiring Safety Tips",
+        "publisher": "Electrical Safety Foundation International",
+        "url": "https://www.esfi.org/home-wiring-safety-tips-2/"
+      }
     ]
   }
 ]

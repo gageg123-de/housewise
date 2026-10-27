@@ -1132,3 +1132,31 @@ test("shower pulsing guide renders fixture-scope diagnosis, well and utility bra
   const reciprocal = await render("/plumbing/shower-drain-gurgles-when-toilet-flushes");
   assert.match(await reciprocal.text(), /href="\/plumbing\/shower-water-pulsing\/"/);
 });
+
+test("AC cycling guide renders normal-versus-short-cycle distinctions, safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/hvac/ac-keeps-turning-on-and-off");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My AC Keep Turning On and Off\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/ac-keeps-turning-on-and-off\//);
+  assert.match(html, /Is it normal for an AC to turn on and off\?/);
+  assert.match(html, /What is AC short cycling\?/);
+  assert.match(html, /Is the indoor fan turning off or the outdoor AC unit\?/);
+  assert.match(html, /Could a clogged condensate drain shut off cooling\?/);
+  assert.match(html, /Could the AC be too large for the house\?/);
+  assert.match(html, /Observe; do not defeat the shutdown/);
+  assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
+  assert.match(html, /href="\/hvac\/ac-filter-wet\/"/);
+  assert.match(html, /href="\/hvac\/water-around-indoor-ac-unit\/"/);
+  assert.match(html, /href="\/hvac\/weak-airflow-from-one-vent\/"/);
+  assert.match(html, /href="\/electrical\/lights-flicker-when-appliance-turns-on\/"/);
+  assert.match(html, /src="\/images\/ac-short-cycling-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ac-short-cycling-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/hvac/house-humid-with-ac-running");
+  assert.match(await reciprocal.text(), /href="\/hvac\/ac-keeps-turning-on-and-off\/"/);
+});

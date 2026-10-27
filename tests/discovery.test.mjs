@@ -959,3 +959,28 @@ test("shower pulsing Finder and search preserve low-pressure, temperature, sputt
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "shower-pressure-pulsing"), location);
   }
 });
+
+test("AC cycling Finder and search preserve neighboring cooling, moisture, and electrical intents", () => {
+  const positives = [
+    "ac keeps turning on and off",
+    "air conditioner short cycling",
+    "ac short cycling",
+    "ac turns on and off repeatedly",
+    "ac runs for a few minutes then shuts off",
+    "ac keeps restarting",
+    "air conditioner stops before reaching temperature",
+    "outside ac unit keeps turning on and off",
+    "ac compressor starts and stops",
+    "ac shuts off too soon",
+    "air conditioner cycles too frequently",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "ac-keeps-turning-on-and-off", query);
+  for (const query of ["ac running but not cooling", "ac leaking water", "air conditioner not turning on", "ac fan runs constantly", "lights flicker when ac starts", "house humid with ac running", "ac filter wet"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "ac-keeps-turning-on-and-off", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "ac-cycling"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "ac-cycling")[0]?.article.slug, "ac-keeps-turning-on-and-off");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ac-cycling"), location);
+  }
+});
