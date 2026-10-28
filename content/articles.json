@@ -11440,6 +11440,7 @@
     "professional_help": "Arrange HVAC service when repeated short cycles continue after basic external checks, the house does not reach or maintain the set temperature, the outdoor unit stops while the thermostat still calls for cooling, airflow remains weak, ice or abnormal condensate appears, or a control, electrical, refrigerant, or sizing problem is possible. Stop operation and get prompt qualified help for smoke, sparking, burning odor, unusual electrical buzzing, damaged wiring, water near electrical parts, or a breaker that trips again after a normal single reset.",
     "related_articles": [
       "house-humid-with-ac-running",
+      "ac-running-but-not-cooling",
       "ac-filter-wet",
       "water-around-indoor-ac-unit",
       "weak-airflow-from-one-vent",
@@ -11501,7 +11502,13 @@
         "paragraphs": [
           "A typical split system has separate indoor and outdoor equipment. The indoor blower moves air through the ducts and across the evaporator coil. The outdoor unit contains the compressor, condenser coil, and outdoor fan. Seeing or hearing the indoor blower does not prove that the compressor is running, and a thermostat fan setting of ON may keep indoor airflow going after active cooling stops.",
           "From a safe distance, note whether supply airflow, the outdoor fan, or both stop and what the thermostat shows. Do not remove panels, touch the fan guard, or lean into equipment to listen. Packaged and ductless systems arrange components differently, so use the model manual when equipment is unfamiliar."
-        ]
+        ],
+        "link": {
+          "before": "If the blower keeps moving air but the house is not getting cooler, use ",
+          "label": "Why Is My AC Running but Not Cooling the House?",
+          "href": "/hvac/ac-running-but-not-cooling/",
+          "after": " for the broader thermostat, airflow, outdoor-equipment, and cooling-load pattern."
+        }
       },
       {
         "id": "setpoint",
@@ -11702,6 +11709,235 @@
         "publisher": "Electrical Safety Foundation International",
         "url": "https://www.esfi.org/home-wiring-safety-tips-2/"
       }
+    ]
+  },
+  {
+    "title": "Why Is My AC Running but Not Cooling the House?",
+    "slug": "ac-running-but-not-cooling",
+    "description": "AC running but not cooling? Check thermostat settings, airflow, the outdoor unit, ice, water, and cooling load before calling an HVAC technician.",
+    "primary_category": "hvac",
+    "secondary_categories": [],
+    "symptoms": ["heat", "airflow", "appliance-behavior"],
+    "room_or_location": ["whole-house", "living-area", "bedroom"],
+    "system": "hvac",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-10-28",
+    "updated_date": "2026-10-28",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my ac running but not cooling the house",
+      "ac running but not cooling",
+      "air conditioner not cooling",
+      "ac not cooling house",
+      "ac runs but house stays hot",
+      "ac blowing but not cold",
+      "central air running but not cooling",
+      "air conditioner runs but temperature doesn't drop",
+      "ac fan running but no cold air",
+      "ac not keeping house cool",
+      "ac running all day not cooling",
+      "ac blowing warm air"
+    ],
+    "target_search_intent": "Help a homeowner distinguish an indoor fan that is merely moving air from active cooling, then use thermostat state, airflow, outdoor-equipment operation, visible ice or water, cooling progress, weather, and duct clues to decide what can be checked safely and when qualified HVAC diagnosis is needed.",
+    "direct_answer": "An AC can appear to be running because the indoor blower is moving air even when active cooling is not happening. First confirm that the thermostat is calling for cooling, then compare airflow strength, whether the vent air feels meaningfully cooler than the room, whether the outdoor equipment is operating, and whether the indoor temperature is actually falling. Incorrect settings, restricted airflow, ice, a condensate safety shutdown, an outdoor-unit or control problem, a refrigerant-system fault, duct losses, or unusually high cooling demand can produce different versions of this symptom. Those clues narrow the branch; they do not prove that the system needs refrigerant, a compressor, a capacitor, or a different equipment size.",
+    "likely_causes": [
+      "The thermostat is in fan-only operation, the fan is set to continuous ON, or the cooling setpoint is not calling for cooling",
+      "Restricted airflow from a dirty filter, covered return, blocked supply opening, coil condition, blower issue, or duct restriction",
+      "The indoor blower is operating while the outdoor cooling equipment is delayed, off, protected, or malfunctioning",
+      "A frozen evaporator condition caused by an airflow, refrigerant-system, control, or other equipment problem",
+      "A condensate overflow switch interrupting part or all of the cooling call in a system that uses one",
+      "A refrigerant, compressor, electrical, control, coil, or other cooling-system fault requiring qualified diagnosis",
+      "Large heat gain from weather, sun, air leakage, insulation shortcomings, open doors or windows, or unusual indoor loads",
+      "Major supply-duct leakage, disconnection, restriction, or distribution loss"
+    ],
+    "safe_checks": [
+      "Confirm COOL mode, a setpoint below the displayed indoor temperature, and the intended fan AUTO or ON setting.",
+      "Observe whether air is coming from several supply vents and whether airflow is weak throughout the house or mainly at one outlet.",
+      "From normal standing distance, note whether the vent air feels cooler than the room without relying on a universal temperature threshold.",
+      "Observe the outdoor unit from outside closed equipment and record whether it appears to operate while the thermostat calls for cooling.",
+      "Inspect the normal homeowner-accessible filter and replace it according to the equipment instructions if it is dirty or overdue.",
+      "Confirm accessible return grilles and supply registers are not covered by furniture, rugs, curtains, or stored items.",
+      "From outside closed equipment, look for safely visible ice, unusual water, fault messages, smoke, odor, sparking, or damage.",
+      "Record whether the house cools slowly, does not cool at all, runs continuously, or repeatedly shuts down."
+    ],
+    "professional_help": "Arrange HVAC service when correct external settings do not restore cooling, the thermostat calls for cooling but the outdoor equipment does not operate, airflow stays weak after an appropriate filter check, ice or abnormal condensate appears, the house makes little or no cooling progress, or electrical, control, compressor, refrigerant, coil, sizing, or duct diagnosis is needed. Stop operation and seek prompt help for smoke, sparking, burning odor, unusual electrical buzzing, damaged wiring, water near electrical parts, or a breaker that trips again. Use emergency help for active fire or smoke.",
+    "related_articles": ["ac-keeps-turning-on-and-off", "house-humid-with-ac-running", "ac-filter-wet", "water-around-indoor-ac-unit", "weak-airflow-from-one-vent"],
+    "image": {
+      "src": "/images/ac-running-but-not-cooling-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Four-panel conceptual guide showing thermostat fan versus cooling operation, weak versus normal vent airflow, closed indoor and outdoor AC equipment, and visible filter, ice, and water clues.",
+      "caption": "Conceptual illustration: An AC can move air without providing effective cooling. Compare the thermostat call, airflow, indoor and outdoor equipment, cooling progress, and visible warning signs without treating any one clue as a failed-part diagnosis.",
+      "kind": "conceptual",
+      "after_section": "fan-or-cooling"
+    },
+    "body_sections": [
+      {
+        "id": "fan-or-cooling",
+        "heading": "First: is your AC actually cooling or just running the fan?",
+        "paragraphs": [
+          "The sound of a blower and air moving from the vents do not prove that the refrigeration system is removing heat. On a typical split system, the indoor blower moves house air across the indoor coil while separate outdoor equipment circulates refrigerant and releases heat outside. A thermostat fan setting of ON can keep the blower running between cooling calls, so room-temperature air may continue moving even when the compressor is off.",
+          "Start with the result rather than the sound. Is the thermostat calling for cooling? Is air moving? Does that air feel noticeably cooler than the room? Does the outdoor unit appear to operate? Is the indoor temperature moving toward the setpoint? These observations separate fan-only operation, weak airflow, absent outdoor operation, and inadequate cooling performance without naming a failed component. Packaged, ductless, variable-capacity, and other systems arrange and operate components differently, so compare unfamiliar equipment with its official manual."
+        ],
+        "table": {
+          "headers": ["What you observe", "What it makes more relevant"],
+          "rows": [
+            ["Air moves, but the thermostat is not calling for cooling", "Fan ON, ventilation, a blower delay, schedule, or another control mode"],
+            ["Airflow is weak at most vents", "Filter, return, blower, coil, zoning, or broader duct airflow conditions"],
+            ["Airflow seems normal but is not cool and the outdoor unit is not operating", "A delay, control, power, protection, or outdoor-equipment problem"],
+            ["Both indoor and outdoor equipment operate but the house makes little cooling progress", "System performance, heat load, refrigerant-side, coil, compressor, or duct-delivery evaluation"]
+          ]
+        }
+      },
+      {
+        "id": "thermostat-settings",
+        "heading": "Check the thermostat settings",
+        "paragraphs": [
+          "Confirm that the thermostat is in COOL mode and the selected temperature is below the displayed indoor temperature. Check the schedule or hold state if a programmed setting may have changed. If the display uses a cooling-call indicator, note whether it remains on while the house stays warm. A correct display does not prove that every control or equipment component responded, but an incorrect mode or setpoint can explain the symptom without equipment repair.",
+          "Check FAN separately. AUTO normally runs the blower with a heating or cooling call, although some systems use post-run delays or ventilation features. ON requests continuous blower operation and can make the AC sound active between cooling calls. Do not rapidly lower the setpoint, bypass a compressor-protection delay, jumper thermostat terminals, or change installer settings at random. After a setting or power change, use the model instructions and allow any normal protective delay to finish."
+        ]
+      },
+      {
+        "id": "vent-air",
+        "heading": "Is cool air coming from the vents?",
+        "paragraphs": [
+          "Compare several supply vents during a natural cooling call. Weak airflow throughout the house points toward a different branch than air that moves normally but is near room temperature. One weak outlet while others are normal is more consistent with that outlet or branch than a whole-system filter restriction. Air that starts cool and later warms, or airflow that fades as ice develops, is also useful timing information.",
+          "Avoid using your hand, an infrared thermometer, or one spot reading as proof that the system is healthy. A return-to-supply air temperature difference is a technician measurement that depends on airflow, humidity, equipment state, probe placement, and manufacturer data. It is not the same as the difference between indoor and outdoor temperature, and a generic 15–20°F reading cannot rule out duct losses, refrigerant problems, capacity issues, or poor room delivery."
+        ],
+        "links": [
+          {"before": "If one supply outlet is much weaker than comparable outlets, use ", "label": "Why Is Airflow Weak From One Vent?", "href": "/hvac/weak-airflow-from-one-vent/", "after": " for the localized outlet-versus-branch pattern."},
+          {"before": "If actual water is emerging from a vent rather than the air simply feeling warm, start with ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " instead of continuing a cooling-performance test."}
+        ]
+      },
+      {
+        "id": "outdoor-unit",
+        "heading": "Is the outdoor AC unit running?",
+        "paragraphs": [
+          "In a conventional split system, indoor and outdoor equipment must work together to cool the house. From a safe standing position, note whether the outdoor unit appears to operate while the thermostat calls for cooling. Do not lean over the fan guard, put a hand into the cabinet, open a disconnect or service panel, or move close to diagnose a hum or click. Some units are quiet, use variable speeds, or delay operation, so fan motion and sound alone do not prove whether the compressor is working.",
+          "If the indoor blower runs but the outdoor equipment remains off after any normal model-specific delay, a power, control, protection, electrical, or equipment problem may be involved. If the outdoor fan runs but the house does not cool, that still does not prove that the compressor is running correctly. Capacitors, contactors, motors, compressor terminals, control boards, and high-voltage wiring require qualified testing; none should be opened or replaced from this observation alone."
+        ]
+      },
+      {
+        "id": "filter-airflow",
+        "heading": "Could a dirty air filter be restricting cooling?",
+        "paragraphs": [
+          "A loaded filter can restrict airflow and reduce cooling performance. Covered return grilles, obstructed supply registers, dirty coils, blower conditions, zoning problems, and duct restrictions can create similar airflow symptoms. A dirty filter is therefore a sensible first check, not a complete explanation for every warm-air complaint.",
+          "Use only the normal homeowner-accessible filter location. Replace or clean the filter with the exact size and type the equipment instructions call for, and reinstall it in the correct direction. Do not run the system without a filter, substitute an unsupported low-resistance filter, open the air-handler cabinet, or attempt to clean an internal coil. Clear furniture, rugs, curtains, and stored items from accessible returns and supplies; do not close other vents to force air elsewhere."
+        ],
+        "link": {"before": "If the filter media is wet, stained, or saturated, use ", "label": "Why Is My AC Filter Wet?", "href": "/hvac/ac-filter-wet/", "after": " because the water path must be investigated before ordinary filter replacement is treated as the answer."}
+      },
+      {
+        "id": "frozen-coil",
+        "heading": "Could the evaporator coil be frozen?",
+        "paragraphs": [
+          "Visible frost on an accessible refrigerant line or closed indoor cabinet, weak or warming supply air, and water that appears after shutdown can fit a frozen evaporator condition. Restricted airflow can contribute, but refrigerant-system, blower, coil, control, and other performance problems can also be involved. Ice is a symptom; it does not prove low refrigerant.",
+          "If ice is safely visible, turn cooling off at the thermostat and arrange HVAC service. Do not keep operating the system, chip the ice, apply heat, open the coil compartment, or add refrigerant. Thawing may release more water than the normal drain can manage, so keep clear of wet electrical equipment and protect finishes only when that can be done without approaching wiring."
+        ],
+        "link": {"before": "If water is collecting around the indoor cabinet, drain, pan, or pump, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to separate drainage, thawing ice, and nearby non-HVAC sources."}
+      },
+      {
+        "id": "condensate-shutdown",
+        "heading": "Could a condensate drain problem stop cooling?",
+        "paragraphs": [
+          "Some systems use a float or electronic overflow switch that opens a control circuit when condensate rises, helping limit water damage. A blocked drain, failed condensate pump, full auxiliary pan, or another drainage problem can therefore interrupt cooling while some indoor fan behavior continues.",
+          "The response is installation-specific. One switch may interrupt the outdoor cooling call, while another wiring arrangement may stop more of the system; some systems do not use the same controls at all. A clogged drain does not always stop the whole AC. Observe only accessible water, an external pan, pump indication, or thermostat message. Never hold down, bypass, remove, or rewire a safety switch, and do not pour unapproved chemicals into the drain."
+        ]
+      },
+      {
+        "id": "refrigerant-compressor",
+        "heading": "Could a refrigerant or compressor problem be involved?",
+        "paragraphs": [
+          "Yes, refrigerant charge or leakage, compressor operation, electrical controls, coils, metering components, and other internal conditions can reduce or stop cooling. But warm vent air, long runtime, outdoor-fan motion, or visible ice cannot select one of those causes. Low refrigerant is not a maintenance fluid to add whenever cooling is weak, and a running outdoor fan does not prove that the compressor is operating correctly.",
+          "A technician may need to evaluate airflow first, then temperatures, electrical operation, manufacturer fault information, refrigerant pressures and temperatures, charge method, and evidence of leakage as one connected system. EPA requires Section 608 certification for work that could open a stationary AC refrigerant circuit. Do not attach gauges, add refrigerant, use leak-sealing products, test capacitors, measure live voltage, force a fan or compressor, or replace an internal component as a diagnostic experiment."
+        ],
+        "callout": {"title": "Stop for electrical warning signs", "text": "Stop the system from the thermostat if it is safe to do so and keep away from the equipment when there is smoke, sparking, arcing, a burning or hot-insulation odor, unusual electrical buzzing, visible wiring damage, water near electrical parts, or a breaker that trips again. Use emergency help for active fire or smoke."}
+      },
+      {
+        "id": "running-all-day",
+        "heading": "What if the AC runs all day but the house stays warm?",
+        "paragraphs": [
+          "Longer operation can be normal when outdoor conditions and the home's heat gain are high, especially near the conditions used to size the equipment. Direct sun, open doors or windows, many occupants, cooking, air leakage, insufficient insulation, and other heat sources can increase demand. That means an AC that loses a little ground during unusual heat is not automatically broken—but little or no cooling progress, a worsening pattern, or failure during ordinary conditions still deserves evaluation.",
+          "There is no universal rule that every AC must hold the house exactly 20°F below outdoor temperature. The often-repeated 20-degree idea is commonly confused with a return-to-supply air measurement, which is itself context-dependent. Cooling capacity and home load vary with outdoor temperature, humidity, airflow, equipment, ducts, envelope, sun, and occupancy. Do not diagnose undersizing or oversizing from indoor temperature alone; proper sizing uses the actual home and a recognized load calculation.",
+          "Record outdoor conditions, thermostat temperature and setpoint, when the temperature begins to drift, whether every room is affected, and whether the system performs normally in milder weather. If the house reaches temperature but remains clammy, that is a different moisture-control question rather than proof that the AC lacks cooling capacity."
+        ],
+        "links": [
+          {"before": "If the house reaches the cooling setpoint but still feels damp, use ", "label": "Why Is My House Humid With the AC Running?", "href": "/hvac/house-humid-with-ac-running/", "after": " for the separate humidity pattern."},
+          {"before": "If cooling repeatedly starts and stops before the setpoint is reached, use ", "label": "Why Does My AC Keep Turning On and Off?", "href": "/hvac/ac-keeps-turning-on-and-off/", "after": " for the short-cycling pattern."}
+        ]
+      },
+      {
+        "id": "ductwork",
+        "heading": "Could leaky ductwork be the problem?",
+        "paragraphs": [
+          "A major supply-duct leak or disconnected section can lose conditioned air before it reaches the rooms. A leaky return in an attic, crawlspace, garage, or other unconditioned area can draw hot or humid air toward the system. Restrictions, crushed flexible duct, poor distribution, and inadequate return paths can also reduce comfort. One warm room, several weak outlets, and whole-house failure are different scopes, so room-to-room patterns matter.",
+          "Do not enter a dangerously hot, cramped, unfinished, or inaccessible attic or crawlspace to trace ducts. Do not cut, disconnect, or tape over a suspected path blindly. A qualified HVAC or home-performance professional can inspect accessible duct connections and measure airflow, pressure, leakage, and delivered performance."
+        ],
+        "link": {"before": "If moisture is forming on the outside of attic ducts, use ", "label": "Why Is My AC Ductwork Sweating in the Attic?", "href": "/hvac/ac-ductwork-sweating-in-attic/", "after": " for that separate condensation and insulation pattern."}
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What you can safely check yourself",
+        "paragraphs": ["Keep the sequence external and record natural operation. These checks are meant to classify the pattern for the right next step, not certify equipment condition."],
+        "bullets": [
+          "Confirm COOL mode and a selected temperature below the current indoor temperature.",
+          "Check whether FAN is set to AUTO or continuous ON and note any normal model-specific delay.",
+          "Observe airflow from several supply vents and classify it as broadly weak, normal, or weak at only one outlet.",
+          "Note whether the vent air feels cooler than the room without relying on a universal temperature number.",
+          "Observe the outdoor unit from outside closed equipment while the thermostat calls for cooling.",
+          "Inspect or replace the normal accessible filter according to the equipment instructions.",
+          "Move ordinary obstructions away from accessible return grilles and supply registers.",
+          "Look from outside closed equipment for safely visible ice, unusual water, damage, smoke, odor, sparking, or fault messages.",
+          "Record whether cooling is slow, absent, continuous, uneven, or interrupted, along with weather and thermostat details."
+        ],
+        "callout": {"title": "Do not force the diagnosis", "text": "Do not repeatedly lower the thermostat, rapidly cycle power, reset a breaker that trips again, or keep operating through ice, overheating, abnormal water, smoke, sparking, or burning odor. Protective delays and shutdowns are evidence to report, not controls to defeat."}
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not assume warm air means low refrigerant, a failed compressor, or a bad capacitor.",
+          "Do not open energized indoor or outdoor electrical compartments or touch capacitors, contactors, terminals, wiring, controls, or fan blades.",
+          "Do not measure live voltage, test compressor terminals, or bypass a door, float, pressure, temperature, or other safety switch.",
+          "Do not attach refrigerant gauges, add refrigerant, vent refrigerant, use leak-sealing products, or open the refrigerant circuit.",
+          "Do not keep operating with visible ice, chip ice from tubing or coils, or apply heat to speed thawing.",
+          "Do not repeatedly reset a tripping breaker or force compressor restarts by cycling power.",
+          "Do not dismantle the blower, coil, drain, or duct system or enter an unsafe attic or crawlspace.",
+          "Do not diagnose equipment size from indoor temperature, runtime, or square footage alone."
+        ]
+      },
+      {
+        "id": "when-to-call",
+        "heading": "When to call an HVAC technician",
+        "paragraphs": [
+          "Call when correct thermostat settings and an appropriate accessible-filter check do not restore cooling; the thermostat calls for cooling but the outdoor equipment remains off; airflow stays weak at many vents; the system runs without meaningful temperature progress; ice or abnormal condensate appears; cooling repeatedly shuts down; or duct, airflow, electrical, control, compressor, coil, refrigerant, or sizing diagnosis is needed.",
+          "Tell the technician whether the blower and outdoor unit operated, whether vent airflow was weak or normal, whether the air felt cooler than the room, how indoor temperature changed, what the weather was, and whether you saw ice, water, a code, or a warning sign. That pattern is more useful than requesting a refrigerant recharge or a specific part.",
+          "Stop using the system and seek prompt qualified help for burning odor, smoke, sparking, abnormal electrical buzzing, visible wiring damage, water near electrical parts, severe overheating, or repeated breaker trips. Keep away from the equipment and use emergency services for active fire or smoke."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "An AC that runs without cooling is a symptom, not a diagnosis. First separate an indoor blower that is merely moving air from an active cooling call. Then compare airflow strength, vent-air behavior, outdoor-equipment operation, temperature progress, visible ice or water, and the current cooling load.",
+          "Settings and an accessible filter are reasonable homeowner checks. Internal electrical work, refrigerant diagnosis, compressor testing, safety-switch bypasses, and inaccessible duct investigation are not. When the external pattern does not explain the missing cooling—or a warning sign appears—give those observations to a qualified HVAC technician instead of guessing at a failed part."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Maintenance Checklist", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist"},
+      {"title": "HVAC Quality Installation", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/hvac-quality-installation"},
+      {"title": "Energy Saver 101: Home Cooling", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/downloads/energy-saver-101-home-cooling-infographic"},
+      {"title": "Troubleshoot an Air Conditioner", "publisher": "Carrier", "url": "https://www.carrier.com/us/en/residential/hvac-resources/air-conditioners/troubleshoot-an-ac-not-working/"},
+      {"title": "Help! My AC Evaporator Coil Is Frozen", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/air-conditioners/evaporator-coil-is-frozen/"},
+      {"title": "The Problem Solver – Air Handlers", "publisher": "Trane", "url": "https://www.trane.com/content/dam/Trane/residential/downloads/manuals/32-5064-WEB01_Indoor_Units.pdf"},
+      {"title": "Homeowners and Consumers: Frequently Asked Questions", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/ods-phaseout/homeowners-and-consumers-frequently-asked-questions"},
+      {"title": "Safe-T-Switch SS3 Condensate Overflow Switch", "publisher": "RectorSeal", "url": "https://rectorseal.com/safe-t-switch-ss3-new/"},
+      {"title": "What Is the 20-Degree Rule for Air Conditioning?", "publisher": "Carrier", "url": "https://www.carrier.com/us/en/history/frequently-asked-questions/"},
+      {"title": "Duct Sealing", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/duct-sealing"},
+      {"title": "Home Wiring Safety Tips", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-wiring-safety-tips-2/"}
     ]
   }
 ]

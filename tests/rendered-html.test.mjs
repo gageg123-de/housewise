@@ -1160,3 +1160,31 @@ test("AC cycling guide renders normal-versus-short-cycle distinctions, safety, s
   const reciprocal = await render("/hvac/house-humid-with-ac-running");
   assert.match(await reciprocal.text(), /href="\/hvac\/ac-keeps-turning-on-and-off\/"/);
 });
+
+test("AC not-cooling guide renders fan-versus-cooling diagnosis, safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/hvac/ac-running-but-not-cooling");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My AC Running but Not Cooling the House\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/ac-running-but-not-cooling\//);
+  assert.match(html, /First: is your AC actually cooling or just running the fan\?/);
+  assert.match(html, /Is cool air coming from the vents\?/);
+  assert.match(html, /Is the outdoor AC unit running\?/);
+  assert.match(html, /Could a condensate drain problem stop cooling\?/);
+  assert.match(html, /What if the AC runs all day but the house stays warm\?/);
+  assert.match(html, /Do not force the diagnosis/);
+  assert.match(html, /href="\/hvac\/ac-keeps-turning-on-and-off\/"/);
+  assert.match(html, /href="\/hvac\/house-humid-with-ac-running\/"/);
+  assert.match(html, /href="\/hvac\/ac-filter-wet\/"/);
+  assert.match(html, /href="\/hvac\/water-around-indoor-ac-unit\/"/);
+  assert.match(html, /href="\/hvac\/weak-airflow-from-one-vent\/"/);
+  assert.match(html, /src="\/images\/ac-running-but-not-cooling-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/ac-running-but-not-cooling-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/hvac/ac-keeps-turning-on-and-off");
+  assert.match(await reciprocal.text(), /href="\/hvac\/ac-running-but-not-cooling\/"/);
+});

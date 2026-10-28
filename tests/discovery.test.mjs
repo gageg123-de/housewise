@@ -984,3 +984,27 @@ test("AC cycling Finder and search preserve neighboring cooling, moisture, and e
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ac-cycling"), location);
   }
 });
+
+test("AC not-cooling Finder and search preserve cycling, runtime, moisture, water, and component-specific intents", () => {
+  const positives = [
+    "ac running but not cooling",
+    "air conditioner not cooling",
+    "ac not cooling house",
+    "ac runs but house stays hot",
+    "ac blowing but not cold",
+    "central air running but not cooling",
+    "air conditioner runs but temperature doesn't drop",
+    "ac fan running but no cold air",
+    "ac not keeping house cool",
+    "ac running all day not cooling",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "ac-running-but-not-cooling", query);
+  for (const query of ["ac keeps turning on and off", "ac short cycling", "ac running constantly", "house humid with ac running", "ac filter wet", "water dripping from ac vent", "ac ductwork sweating", "ac vent sweating", "ac leaking water", "outside ac unit not turning on", "ac frozen up"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "ac-running-but-not-cooling", query);
+  }
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "ac-not-cooling"));
+  assert.equal(rankFinderArticles(registry, "whole-house", "ac-not-cooling")[0]?.article.slug, "ac-running-but-not-cooling");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ac-not-cooling"), location);
+  }
+});
