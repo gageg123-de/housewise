@@ -1188,3 +1188,27 @@ test("AC not-cooling guide renders fan-versus-cooling diagnosis, safety, schema,
   const reciprocal = await render("/hvac/ac-keeps-turning-on-and-off");
   assert.match(await reciprocal.text(), /href="\/hvac\/ac-running-but-not-cooling\/"/);
 });
+
+test("front-door rain-leak guide renders entry-path uncertainty, drainage safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/moisture-and-mold/front-door-leaking-when-it-rains");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Water Leaking Around My Front Door When It Rains\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/front-door-leaking-when-it-rains\//);
+  assert.match(html, /First: where does the water appear\?/);
+  assert.match(html, /Could water be entering above the door\?/);
+  assert.match(html, /What is door sill flashing, and why does it matter\?/);
+  assert.match(html, /Water and electricity require distance/);
+  assert.match(html, /Do not caulk every exterior joint/);
+  assert.match(html, /href="\/moisture-and-mold\/wall-wet-after-rain\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/wet-spot-on-wall\/"/);
+  assert.match(html, /src="\/images\/front-door-rain-leak-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/front-door-rain-leak-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/moisture-and-mold/wall-wet-after-rain");
+  assert.match(await reciprocal.text(), /href="\/moisture-and-mold\/front-door-leaking-when-it-rains\/"/);
+});

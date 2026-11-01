@@ -72,7 +72,7 @@ Attic nails are rusty,rusty nails in attic,attic-and-insulation,moisture,attic,d
 Attic smells musty,musty smell in attic,attic-and-insulation,smell,attic,diagnostic,planned,high,,Moisture source cluster
 Window condensation between panes,why is there condensation between my window panes,moisture-and-mold,moisture,living-area,diagnostic,published,high,/moisture-and-mold/condensation-between-window-panes/,Sealed-cavity fog or haze intent; distinct from room-side condensation exterior dew window mold wet sills rain intrusion and whole-home humidity
 Door sticks in summer,door sticks when humid,windows-and-doors,moisture,living-area,explanation,planned,medium,,Humidity versus movement
-Water comes under exterior door,water leaking under exterior door,windows-and-doors,leaking,exterior,diagnostic,planned,medium,,Threshold/grading/weatherstrip
+Front door leaking when it rains,why is water leaking around my front door when it rains,moisture-and-mold,leaking,exterior,diagnostic,published,high,/moisture-and-mold/front-door-leaking-when-it-rains/,Broad rain-entry canonical covering door seals threshold frame flashing exterior drainage and concealed water paths; preserves sliding patio garage-door and rot-specific intents
 Floor squeaks in winter,floor squeaks more in winter,flooring,noise,living-area,explanation,planned,low,,Seasonal movement
 Laminate floor feels spongy,spongy laminate floor,flooring,moisture,kitchen,diagnostic,planned,medium,,Subfloor/moisture/installation
 Tile grout keeps cracking,grout keeps cracking,flooring,crack,bathroom,diagnostic,planned,high,,Movement versus installation

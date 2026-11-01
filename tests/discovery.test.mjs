@@ -1008,3 +1008,31 @@ test("AC not-cooling Finder and search preserve cycling, runtime, moisture, wate
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "ac-not-cooling"), location);
   }
 });
+
+test("front-door rain-leak Finder and search preserve window, wall, ceiling, condensation, and other-door intents", () => {
+  const positives = [
+    "front door leaking when it rains",
+    "water coming under front door",
+    "rain coming through front door",
+    "water leaking around door frame",
+    "front door threshold leaking",
+    "water under front door when raining",
+    "door leaking during heavy rain",
+    "door leaking during wind driven rain",
+    "water pooling inside front door",
+    "water coming through exterior door",
+    "wet floor by front door after rain",
+    "water leaking above front door",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "front-door-leaking-when-it-rains", query);
+  for (const query of ["window leaking when it rains", "wall wet after rain", "ceiling wet after rain", "condensation on inside of windows", "water stain on ceiling", "walls sweating", "sliding glass door leaking", "patio door leaking", "garage door leaking"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "front-door-leaking-when-it-rains", query);
+  }
+  for (const location of ["living-area", "exterior"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "front-door-rain"), location);
+    assert.equal(rankFinderArticles(registry, location, "front-door-rain")[0]?.article.slug, "front-door-leaking-when-it-rains", location);
+  }
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "whole-house"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "front-door-rain"), location);
+  }
+});

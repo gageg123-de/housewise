@@ -1169,7 +1169,7 @@ test("rain-related wall guide uses storm pattern and exterior context without cl
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Wall wet after rain,"));
   assert.ok(article && parent);
   assert.equal(article.published_date, "2026-09-23");
-  assert.equal(article.updated_date, "2026-09-25");
+  assert.equal(article.updated_date, "2026-11-01");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.deepEqual(article.secondary_categories, []);
   assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/wall-wet-after-rain/"));
@@ -1269,6 +1269,40 @@ test("window rain-leak guide owns opening-specific rain intrusion without diagno
   assert.match(body, /Do not drill new holes/i);
   assert.match(body, /Do not seal every opening/i);
   assert.match(body, /uncontrolled hose testing/i);
+});
+
+test("front-door rain-leak guide separates visible water from the hidden entry path", () => {
+  const article = registry.find((item) => item.slug === "front-door-leaking-when-it-rains");
+  const wallRain = registry.find((item) => item.slug === "wall-wet-after-rain");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Front door leaking when it rains,"));
+  assert.ok(article && wallRain);
+  assert.equal(article.published_date, "2026-11-01");
+  assert.equal(article.updated_date, "2026-11-01");
+  assert.equal(article.primary_category, "moisture-and-mold");
+  assert.deepEqual(article.secondary_categories, ["windows-and-doors"]);
+  assert.ok(topic?.includes(",published,") && topic.includes("/moisture-and-mold/front-door-leaking-when-it-rains/"));
+  assert.match(article.direct_answer, /puddle at the threshold does not prove/i);
+  assert.ok(article.body_sections.some((section) => section.id === "first-wet-location" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "sweep-threshold" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "from-above" && section.link?.href === "/moisture-and-mold/wall-wet-after-rain/"));
+  assert.ok(article.body_sections.some((section) => section.id === "sill-flashing"));
+  assert.ok(article.body_sections.some((section) => section.id === "active-leak" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "what-not-to-do"));
+  assert.ok(wallRain.related_articles.includes(article.slug));
+  assert.ok(wallRain.body_sections.some((section) => section.links?.some((link) => link.href === "/moisture-and-mold/front-door-leaking-when-it-rains/")));
+  assert.equal(article.image.src, "/images/front-door-rain-leak-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Department of Energy Building America Solution Center"));
+  assert.ok(article.sources.some((source) => source.publisher === "Federal Emergency Management Agency"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Environmental Protection Agency"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /visible water location does not necessarily identify/i);
+  assert.match(body, /Do not caulk every exterior joint/i);
+  assert.match(body, /Sealing an intended outlet can trap water/i);
+  assert.match(body, /Do not pressure-test the opening/i);
+  assert.match(body, /Do not climb a ladder/i);
 });
 
 test("toilet-triggered sink gurgling guide owns the sink response without diagnosing a vent or clog", () => {

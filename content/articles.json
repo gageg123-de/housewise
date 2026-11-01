@@ -7525,7 +7525,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-23",
-    "updated_date": "2026-09-25",
+    "updated_date": "2026-11-01",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -7571,6 +7571,7 @@
     "related_articles": [
       "wet-spot-on-wall",
       "window-leaking-when-it-rains",
+      "front-door-leaking-when-it-rains",
       "walls-sweating",
       "ceiling-wet-after-rain",
       "water-around-indoor-ac-unit"
@@ -7682,7 +7683,7 @@
         "heading": "Could the water be coming from a window or door?",
         "paragraphs": [
           "Windows and doors interrupt a wall's water-control layers. DOE building-science guidance explains that their flashing should be integrated with the wall's drainage plane so incidental water is directed outward. Rain-related dampness near an opening can therefore justify professional examination of the unit, flashing, trim, and adjacent wall as one system.",
-          "Do not confuse this with room-side glass condensation or fog between sealed panes. Between-pane fog does not explain rainwater soaking the surrounding drywall. Also do not remove trim, glazing, or the window itself. When water entry is clearly centered at the opening, use the narrower window-rain guide."
+          "Do not confuse this with room-side glass condensation or fog between sealed panes. Between-pane fog does not explain rainwater soaking the surrounding drywall. Also do not remove trim, glazing, a door frame, or the opening itself. When water entry is clearly centered at a window or exterior front door, use the matching opening-specific guide."
         ],
         "links": [
           {
@@ -7690,6 +7691,12 @@
             "label": "Why Is My Window Leaking When It Rains?",
             "href": "/moisture-and-mold/window-leaking-when-it-rains/",
             "after": "."
+          },
+          {
+            "before": "If rainwater appears under, beside, or above the exterior front door, use ",
+            "label": "Why Is Water Leaking Around My Front Door When It Rains?",
+            "href": "/moisture-and-mold/front-door-leaking-when-it-rains/",
+            "after": " for the door-seal, threshold, flashing, and exterior-drainage pattern."
           },
           {
             "before": "If moisture is on the accessible room-side glass rather than the wall, use ",
@@ -11938,6 +11945,248 @@
       {"title": "What Is the 20-Degree Rule for Air Conditioning?", "publisher": "Carrier", "url": "https://www.carrier.com/us/en/history/frequently-asked-questions/"},
       {"title": "Duct Sealing", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/saveathome/heating-cooling/duct-sealing"},
       {"title": "Home Wiring Safety Tips", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/home-wiring-safety-tips-2/"}
+    ]
+  },
+  {
+    "title": "Why Is Water Leaking Around My Front Door When It Rains?",
+    "slug": "front-door-leaking-when-it-rains",
+    "description": "Water leaking around your front door when it rains? Use the first wet location, storm pattern, door seals, flashing, and drainage to narrow the source.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": ["windows-and-doors"],
+    "symptoms": ["leaking", "moisture", "discoloration"],
+    "room_or_location": ["living-area", "exterior"],
+    "system": "building-envelope",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-01",
+    "updated_date": "2026-11-01",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is water leaking around my front door when it rains",
+      "front door leaking when it rains",
+      "water coming under front door",
+      "rain coming through front door",
+      "water leaking around door frame",
+      "front door threshold leaking",
+      "water under front door when raining",
+      "door leaking during heavy rain",
+      "door leaking during wind driven rain",
+      "water pooling inside front door",
+      "water coming through exterior door",
+      "wet floor by front door after rain",
+      "water leaking above front door",
+      "water coming through door jamb"
+    ],
+    "target_search_intent": "Help a homeowner use storm timing, the first visible wet location, door-seal condition, frame interfaces, exterior drainage, and signs of concealed damage to distinguish a door-specific seal or alignment problem from a flashing or surrounding-wall water-management problem without assuming that the visible puddle identifies the entry point.",
+    "direct_answer": "Water that appears under or beside a front door during rain can pass through the door-to-frame seal, collect at the threshold, enter behind exterior trim, or travel from flashing or wall details above the opening. The first useful clues are where water appears first, whether it happens only with wind from one direction, whether water pools outside, and whether the closed door has damaged or uneven seals. A worn sweep or weatherstrip may be repairable, but a puddle at the threshold does not prove that the sweep failed. Recurrent water beside the frame, above the door, or in flooring can point to a concealed flashing, drainage-plane, sill, or surrounding-wall issue that needs qualified evaluation.",
+    "likely_causes": [
+      "A worn, torn, missing, or poorly contacting door-bottom seal or sweep",
+      "Uneven threshold contact or door alignment that prevents the perimeter weatherstripping from sealing consistently",
+      "Wind-driven rain passing through a door-to-frame gap or frame joint",
+      "Water accumulating on a porch, landing, or exterior surface near the threshold",
+      "Roof runoff, gutter overflow, downspout discharge, or splashback increasing water exposure at the opening",
+      "Water entering behind exterior trim or through a head, jamb, or cladding interface",
+      "Missing, damaged, or poorly integrated sill-pan or opening flashing that does not direct incidental water outward",
+      "Water traveling within the surrounding wall or floor assembly before becoming visible indoors"
+    ],
+    "safe_checks": [
+      "Note whether the leak occurs only during rain and record rainfall intensity, duration, and wind direction.",
+      "Photograph the first visible wet location before wiping it up, then document how the wet area changes.",
+      "Inspect accessible sweeps, weatherstripping, frame seals, and threshold surfaces for gaps, tears, missing sections, or uneven contact.",
+      "Check whether the door closes and latches normally without forcing it, and look for visible daylight without treating daylight as proof of the water path.",
+      "From a safe position, observe whether water pools at the landing, roof runoff reaches the entry, or a gutter or downspout discharges toward the door.",
+      "Inspect nearby flooring, baseboards, trim, and wall finishes for swelling, softness, peeling, staining, or musty odor.",
+      "Keep people and electrical equipment away from wet flooring, collect visible water, and arrange repair if leakage recurs or the entry path remains unclear."
+    ],
+    "professional_help": "Use a door installer or door-repair professional when damaged weatherstripping, a worn sweep, threshold contact, latching, or visible door alignment is the leading pattern. Use an exterior contractor or building-envelope specialist when water appears above or behind trim, the surrounding wall or cladding is involved, drainage or flashing is suspect, or correct door seals do not stop the leak. Obtain qualified moisture or restoration evaluation when flooring, subfloor, wall materials, or framing may remain wet or show deterioration. Keep away from water near electrical equipment and use emergency help for active electrical arcing, smoke, or another immediate hazard.",
+    "related_articles": ["wall-wet-after-rain", "window-leaking-when-it-rains", "wet-spot-on-wall", "ceiling-wet-after-rain"],
+    "image": {
+      "src": "/images/front-door-rain-leak-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Four-panel conceptual guide showing rainwater beneath a closed front door, beside the jamb, above the frame, and following a possible concealed path toward interior flooring.",
+      "caption": "Conceptual illustration: Water may appear under, beside, or above a door—or emerge near the floor after traveling within the opening. These paths are possibilities, not a universal door detail or a confirmed failed component.",
+      "kind": "conceptual",
+      "after_section": "first-wet-location"
+    },
+    "body_sections": [
+      {
+        "id": "first-wet-location",
+        "heading": "First: where does the water appear?",
+        "paragraphs": [
+          "Mark or photograph the first visible moisture before the puddle spreads. Water directly beneath the closed door makes bottom-seal contact and exterior pooling relevant. A wet trail down one jamb makes side weatherstripping, alignment, frame joints, and water behind trim more relevant. Moisture at the head or an upper corner shifts attention above the door. Flooring that becomes wet beside or behind the threshold can indicate water moving through a sill or wall-to-floor interface.",
+          "This is a routing clue, not proof of the entry point. Water follows gravity, capillary spaces, sloped surfaces, fasteners, and material joints. It may enter above or beside the opening, travel behind trim or within the wall, and emerge at the lowest accessible joint. That is why replacing the nearest seal before tracing the pattern can leave the real path untouched."
+        ],
+        "table": {
+          "headers": ["First visible water", "What becomes more relevant"],
+          "rows": [
+            ["Directly beneath the door", "Sweep or bottom seal, threshold contact, door alignment, outside pooling, and sill water management"],
+            ["Down one side of the frame", "Side weatherstrip, uneven contact, frame joints, exterior trim, and water behind the jamb"],
+            ["At the top or an upper corner", "Head flashing, trim and siding interfaces, roof runoff, and a path from higher on the wall"],
+            ["In flooring beside or behind the sill", "Concealed sill, flashing, wall-to-floor, subfloor, or delayed water-travel paths"]
+          ]
+        }
+      },
+      {
+        "id": "under-door",
+        "heading": "Why is water coming under my front door?",
+        "paragraphs": [
+          "A bottom seal helps limit water and air at the moving joint between the door and sill. If it is torn, missing, compressed unevenly, or no longer contacts the threshold, wind-driven water can cross that joint. A door that sags, rubs, or does not latch fully can also leave uneven contact around the perimeter.",
+          "But the same indoor puddle can form when water collects outside faster than the opening manages it, or when water reaches the sill from behind the frame. Look at the outside exposure as well as the sweep. Do not assume that water at the bottom automatically means the bottom seal is the only problem."
+        ]
+      },
+      {
+        "id": "sweep-threshold",
+        "heading": "Could the door sweep or threshold be the problem?",
+        "paragraphs": [
+          "With the door closed, inspect the accessible bottom seal and perimeter weatherstripping for tears, missing pieces, hardened sections, or obvious gaps. Confirm that the door closes and latches normally. Daylight at a joint supports a gap investigation, but it does not prove that rain follows that exact path. Water load and wind direction still matter.",
+          "Some door systems have adjustable threshold components; others do not, and the correct contact depends on the product. Use the door manufacturer's instructions instead of turning visible screws at random. Too much adjustment can make the door bind or damage the seal. A visibly damaged sweep or product-specific threshold issue is appropriate for a door installer, but replacing it is not a test for concealed flashing failure."
+        ],
+        "callout": {
+          "title": "Weatherstripping is not the whole water-control system",
+          "text": "Weatherstripping addresses the moving door-to-frame joint. It does not replace head, jamb, or sill flashing, the wall drainage plane, exterior drainage, or correct frame installation. A good-looking seal cannot rule out water entering behind the frame."
+        }
+      },
+      {
+        "id": "around-frame",
+        "heading": "Why is water leaking around the door frame?",
+        "paragraphs": [
+          "Water beside a jamb can pass through uneven door-to-weatherstrip contact, but it can also enter at a frame joint or behind exterior casing. Note whether the wet side faces the wind, whether the door sits evenly in the frame, and whether the water begins on the door side of the seal or appears from the wall side of the trim.",
+          "Do not pry off trim or remove the frame to find out. Those parts may cover flashing and drainage relationships that are easy to damage or reseal incorrectly. If water emerges from behind trim, recurs after a door-seal repair, or affects the adjacent wall, treat it as a possible opening-and-wall problem rather than only a weatherstrip problem."
+        ]
+      },
+      {
+        "id": "from-above",
+        "heading": "Could water be entering above the door?",
+        "paragraphs": [
+          "Exterior doors interrupt the wall's water-control layers. Building America and EPA guidance describe head, side, and sill flashing as parts of a system that should direct incidental water outward and integrate with the wall's drainage plane. If rain reaches a cladding or trim joint above the opening, water can travel downward before it becomes visible at the head, jamb, or floor.",
+          "An upper-corner drip, staining above the frame, a leak that grows with roof runoff, or moisture that appears from behind the head trim makes this branch more relevant. The cause might involve head flashing, siding, trim, roof-to-wall runoff, or another higher interface; none can be confirmed from the interior stain alone. Concealed flashing evaluation belongs to a qualified exterior or building-envelope professional."
+        ],
+        "link": {
+          "before": "If the rain-correlated moisture is primarily on the surrounding wall rather than at the door opening, use ",
+          "label": "Why Is My Wall Wet After It Rains?",
+          "href": "/moisture-and-mold/wall-wet-after-rain/",
+          "after": " for the broader wall-path investigation."
+        }
+      },
+      {
+        "id": "wind-driven-rain",
+        "heading": "Why does the door leak only during heavy or wind-driven rain?",
+        "paragraphs": [
+          "Wind changes the direction and pressure of rain. FEMA documents wind-driven water entering through and around doors and windows, including interfaces that stay dry in calm vertical rain. A leak that occurs only when wind hits one side of the house helps identify the exposure, while a longer storm may simply deliver enough water for a slow concealed path to become visible.",
+          "That pattern does not make the installation acceptable or prove which part failed. Record the wind direction, intensity, duration, and first wet location during naturally occurring weather. Do not spray the opening with a pressure washer or aggressive hose stream to reproduce the leak; artificial pressure can create a path that ordinary rain does not use and can push more water into concealed materials."
+        ]
+      },
+      {
+        "id": "exterior-drainage",
+        "heading": "Could water be pooling outside the door?",
+        "paragraphs": [
+          "Standing water at a porch, landing, or walkway increases exposure at the threshold. Building America guidance notes that poor site drainage can allow water to pool around a home and contribute to entry, mold, and rot. Roof runoff, gutter overflow, a downspout aimed toward the entry, splashback, and an exterior surface that holds water against the sill can all add to the load.",
+          "From a safe position during or after rain, observe where roof and surface water go. Do not prescribe a universal landing slope or threshold height from this article: the correct correction depends on the existing building, drainage route, climate, and applicable requirements. Recurring pooling may need a drainage, concrete, landscape, or exterior contractor rather than a door part."
+        ]
+      },
+      {
+        "id": "sill-flashing",
+        "heading": "What is door sill flashing, and why does it matter?",
+        "paragraphs": [
+          "A door opening needs a way to manage water that reaches its lower edge. Depending on the door and wall system, sill or pan flashing may form a sloped or end-dammed path that connects with the surrounding water-resistive layer and directs water outward. Manufacturer instructions and the wall assembly determine the actual detail; there is no single universal pan shape.",
+          "If that path is missing, damaged, flat, or poorly integrated, water may reach subfloor or framing instead of draining outside. A leak at the floor makes sill management relevant, but it does not prove a failed pan. Do not remove the threshold, drill exploratory holes, or seal the exterior sill indiscriminately. Sealing an intended outlet can trap water inside the assembly."
+        ]
+      },
+      {
+        "id": "concealed-paths",
+        "heading": "Can water travel behind the door frame before appearing inside?",
+        "paragraphs": [
+          "Yes. Cladding is not the only water-control layer. Water that gets behind siding or trim should meet flashing and a drainage plane that send it down and outward. If those layers are interrupted at the door, water can follow sheathing, framing, fasteners, or the sill and emerge somewhere easier to see.",
+          "This is also why caulking every visible exterior joint is not a reliable diagnosis. Sealant may be appropriate at specific manufacturer-identified joints, but it cannot repair a missing drainage connection and may block an outlet or redirect water farther into the wall. Identify the path and the assembly before choosing a repair."
+        ]
+      },
+      {
+        "id": "floor-damage",
+        "heading": "How can you tell whether the floor has water damage?",
+        "paragraphs": [
+          "Look for recurring darkening, swollen flooring edges, lifted finishes, soft spots, loose trim, peeling paint, persistent musty odor, or a threshold that feels unstable. These signs justify closer evaluation, but staining alone does not prove rot or structural failure. Avoid pushing sharp tools into the floor or opening the wall as a homeowner test.",
+          "Drying the visible puddle does not show that padding, subfloor, framing, or the wall cavity is dry. EPA advises drying wet materials promptly—ideally within 24 to 48 hours—and paying attention to hidden areas. Recurrent leakage, absorbent materials that stay wet, softness, or odor is a reason for qualified moisture assessment and repair of the source."
+        ],
+        "link": {
+          "before": "If a localized damp patch remains on the wall even when the door opening is not clearly the source, compare it with ",
+          "label": "Why Is There a Wet Spot on My Wall?",
+          "href": "/moisture-and-mold/wet-spot-on-wall/",
+          "after": "."
+        }
+      },
+      {
+        "id": "active-leak",
+        "heading": "What should you do while the door is leaking?",
+        "bullets": [
+          "Keep people away from slippery flooring and move rugs, furniture, packages, and other belongings out of the wet area.",
+          "Collect visible water with towels or suitable wet-cleanup equipment without placing cords or electrical equipment in the wet area.",
+          "Photograph the first wet location, the spread pattern, the closed door, and safely visible exterior pooling.",
+          "Note storm intensity, wind direction, duration, roof runoff, and whether the leak stops when the rain changes.",
+          "Dry accessible wet finishes promptly and arrange evaluation when materials may be wet underneath or the leak recurs.",
+          "Stay indoors during lightning, high wind, or dangerous weather; do not use a ladder or inspect the roof during a storm."
+        ],
+        "callout": {
+          "title": "Water and electricity require distance",
+          "text": "Keep extension cords, lamps, receptacles, and powered equipment away from the wet area. Do not touch wet electrical equipment or operate a switch or breaker while standing in water. If water reaches electrical equipment, keep away and obtain qualified electrical help; use emergency services for active arcing, smoke, or fire."
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What can you safely check yourself?",
+        "paragraphs": ["Keep the inspection visual and accessible. The goal is to classify the pattern for repair, not dismantle the opening or prove the hidden failure."],
+        "bullets": [
+          "Confirm that the symptom is tied to rain rather than plumbing use, cleaning, or indoor condensation.",
+          "Record the first wet location, rain intensity, duration, and wind direction.",
+          "Inspect accessible door-bottom and perimeter seals for visible damage, gaps, and uneven contact.",
+          "Check whether the door closes and latches normally without forcing or adjusting hardware at random.",
+          "Look from ground level for visible gaps, damaged trim, obvious runoff, gutter overflow, downspout discharge, splashback, or pooling near the sill.",
+          "Inspect accessible flooring, baseboards, and wall finishes for swelling, softness, peeling, odor, or recurring stains.",
+          "Photograph the pattern and stop if the entry path is unclear, materials remain wet, or concealed flashing or wall work is implicated."
+        ]
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not caulk every exterior joint, block weeps or drainage openings, or seal over an active wet assembly.",
+          "Do not use interior caulk as the primary repair for exterior rainwater entry.",
+          "Do not assume a new sweep, replacement weatherstrip, storm door, or complete replacement door will correct hidden flashing or drainage failures.",
+          "Do not remove siding, exterior trim, the threshold, or the door frame as a first diagnostic step.",
+          "Do not drill into the sill, probe framing, or open walls to search for water without the knowledge to restore the water-control layers.",
+          "Do not pressure-test the opening with aggressive hose spray or a pressure washer.",
+          "Do not climb a ladder, walk on a roof, or inspect gutters during a storm.",
+          "Do not ignore recurrent subfloor or wall moisture because the visible surface later feels dry."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call a door installer or exterior contractor?",
+        "paragraphs": [
+          "A door installer or door-repair professional is a reasonable first call when the evidence stays at the moving door assembly: damaged weatherstripping, a worn bottom seal, incorrect threshold contact, sagging, rubbing, poor latching, or visible product-specific hardware trouble. Bring the make and model when known, plus photos from the rain event.",
+          "Use an exterior contractor or building-envelope specialist when water comes from behind trim, appears above the frame, affects adjacent wall materials, follows roof or cladding runoff, persists after correct door-seal work, or suggests a head, jamb, sill-pan, siding, or drainage-plane problem. A drainage or concrete professional may be needed when the dominant clue is water collecting at the landing.",
+          "Add a qualified restoration or building professional when flooring, subfloor, wall materials, or framing remain wet, feel soft, smell musty, or show recurring deterioration. The trades can overlap; the important distinction is whether the evidence points to the door's serviceable seals and alignment or to the surrounding building envelope and concealed materials."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Visible water location does not necessarily identify the water-entry point. Start with where moisture first appears, then add storm intensity, wind direction, door-seal contact, exterior pooling and runoff, and signs of water above, behind, or beneath the frame. A worn sweep may explain an under-door path, but it cannot explain every puddle at a threshold.",
+          "Keep homeowner checks visual and accessible. Do not dismantle the opening, caulk every gap, block drainage, or replace the entire door as a diagnostic experiment. Door-specific seal and alignment patterns suit a door professional; water behind trim, above the frame, in the sill, or in surrounding materials calls for building-envelope and moisture evaluation."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Windows and Doors Are Fully Flashed", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/windows-and-doors-are-fully-flashed"},
+      {"title": "Moisture Control Guidance for Building Design, Construction and Maintenance", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0"},
+      {"title": "Reducing Water Intrusion Through Windows and Doors", "publisher": "Federal Emergency Management Agency", "url": "https://www.fema.gov/sites/default/files/documents/fema_mat-hurricane-ian-recovery-advisory-3.pdf"},
+      {"title": "Site Drainage Practices to Minimize Localized Flooding", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/information/site-drainage-practices-minimize-localized-flooding"},
+      {"title": "Troubleshooting Guide", "publisher": "Therma-Tru", "url": "https://www.thermatru.com/project-center/troubleshooting-guide/"},
+      {"title": "Window Installation and Water-Resistive Barriers", "publisher": "Andersen Windows & Doors", "url": "https://www.andersenwindows.com/for-professionals/pro-views/window-installation-and-water-resistive-barriers"},
+      {"title": "Biological Contaminants and Indoor Air Quality", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality"}
     ]
   }
 ]
