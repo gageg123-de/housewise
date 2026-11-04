@@ -259,7 +259,7 @@ test("toilet-to-toilet flush interaction guide owns the known-trigger water-leve
   const protectedTopics = topics.split(/\r?\n/).filter((row) => /^(Sink gurgles when washer drains|Tub backs up when toilet flushes),/.test(row));
   assert.ok(article && random);
   assert.equal(article.published_date, "2026-08-28");
-  assert.equal(article.updated_date, "2026-08-28");
+  assert.equal(article.updated_date, "2026-11-03");
   assert.ok(topic?.includes(",published,") && topic.includes("/plumbing/toilet-water-rises-when-another-toilet-flushes/"));
   assert.ok(protectedTopics.length >= 2);
   assert.ok(protectedTopics.every((row) => row.includes(",planned,")));
@@ -1342,7 +1342,7 @@ test("HVAC register airflow guide evaluates the outlet without promising a syste
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Replacing HVAC registers for airflow,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-09-28");
-  assert.equal(article.updated_date, "2026-09-28");
+  assert.equal(article.updated_date, "2026-11-03");
   assert.equal(article.primary_category, "hvac");
   assert.equal(article.content_type, "comparison-explanation-guide");
   assert.ok(topic?.includes(",published,") && topic.includes("/hvac/can-replacing-registers-improve-airflow/"));

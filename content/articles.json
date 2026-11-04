@@ -858,11 +858,11 @@
     ]
   },
   {
-    "title": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "slug": "toilet-water-rises-when-another-toilet-flushes", "description": "If one toilet's water rises when another toilet flushes, a shared drain restriction, pressure change, venting issue, or broader sewer problem may be involved.",
+    "title": "Why Does My Toilet Water Rise When Another Toilet Flushes?", "slug": "toilet-water-rises-when-another-toilet-flushes", "description": "One toilet's water rises when another flushes? Learn how shared drain restrictions, venting, and backup warning signs help narrow the cause.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["drainage", "clogging", "noise"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-28", "updated_date": "2026-08-28", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
+    "published_date": "2026-08-28", "updated_date": "2026-11-03", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 9, "featured_status": true,
     "search_keywords": ["toilet water rises when another toilet flushes", "one toilet affects another toilet", "toilet bubbles when other toilet flushes", "toilet water moves when another toilet flushes", "second toilet rises when first toilet flushes", "toilet water level rises when upstairs toilet flushes"], "target_search_intent": "Explain why flushing one toilet can make another toilet's bowl water rise, bubble, or move, distinguish modest pressure movement from backup warning signs, and help homeowners decide when shared drainage needs professional evaluation.",
-    "direct_answer": "Toilets in the same home ultimately connect to shared drainage and venting paths. When one toilet flushes, its wastewater displaces air and adds a short, concentrated flow to those pipes. If a shared branch or farther-downstream drain is partly restricted—or if the system is not managing air pressure normally—the second toilet's trap water may ripple, bubble, rise, or surge. A slight movement does not locate a fault, but a pronounced rise, repeated reactions, several slow drains, or water entering a tub, shower, or floor drain can signal a developing backup and deserves prompt plumbing evaluation.",
+    "direct_answer": "If one toilet's bowl water rises when another toilet flushes, the reacting toilet can be responding to a shared drainage or air-pressure problem—not necessarily a fault in that toilet. A partial restriction in a shared branch or farther-downstream drain is an important possibility, and ineffective venting can also contribute. A slight ripple does not locate the fault, but a pronounced rise, repeated reactions, several slow drains, or water entering a tub, shower, or floor drain can signal a developing backup and deserves prompt plumbing evaluation.",
     "likely_causes": ["Partial restriction in a shared toilet branch", "Restriction farther downstream in the building drain or private sewer", "Drainage-system pressure changes involving venting", "A localized toilet or nearby branch condition", "Septic-system drainage trouble", "A municipal sewer condition"],
     "safe_checks": ["Identify which toilet flush triggers the reaction and which toilet responds.", "Note whether the second bowl only ripples, bubbles, rises slightly, or approaches the rim.", "Check nearby tubs, showers, sinks, floor drains, and other toilets for slow drainage or movement.", "Compare same-floor and different-floor fixtures.", "Record whether several flushes or heavy household use make the reaction worse.", "Minimize wastewater use if any fixture begins backing up."],
     "professional_help": "Arrange a plumber when toilet-to-toilet interaction repeats, the responding bowl rises noticeably, several fixtures are slow or noisy, or the symptoms worsen. Stop unnecessary wastewater use and call promptly if a bowl approaches the rim, a tub or shower takes wastewater, sewage appears, or multiple drains back up. A septic provider or sewer utility may be appropriate after the private drainage path is assessed.",
@@ -8363,7 +8363,7 @@
   {
     "title": "Can Replacing HVAC Registers Improve Airflow?",
     "slug": "can-replacing-registers-improve-airflow",
-    "description": "New HVAC registers can improve airflow only when the outlet is a meaningful restriction. Learn how to separate a register problem from duct, return, filter, or blower limits.",
+    "description": "Replacing HVAC registers can improve airflow only when the outlet is the restriction. Learn when ducts, returns, filters, or the blower are the real limit.",
     "primary_category": "hvac",
     "secondary_categories": [],
     "symptoms": ["airflow"],
@@ -8371,7 +8371,7 @@
     "system": "hvac",
     "content_type": "comparison-explanation-guide",
     "published_date": "2026-09-28",
-    "updated_date": "2026-09-28",
+    "updated_date": "2026-11-03",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
