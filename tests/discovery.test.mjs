@@ -524,6 +524,10 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
   }
 });
 
+test("every exact published article title resolves to its own canonical guide first", () => {
+  for (const article of registry) assert.equal(searchArticles(registry, article.title)[0]?.slug, article.slug, article.title);
+});
+
 test("between-pane window Finder paths stay separate from exposed-surface condensation", () => {
   for (const location of ["bathroom", "kitchen", "bedroom", "living-area", "whole-house"]) {
     assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "window-between-panes"), location);

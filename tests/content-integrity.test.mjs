@@ -511,7 +511,7 @@ test("dishwasher drainage guide separates residual water, plumbing paths, and in
   const drying = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
   assert.ok(article);
   assert.equal(article.published_date, "2026-10-23");
-  assert.equal(article.updated_date, "2026-10-23");
+  assert.equal(article.updated_date, "2026-11-03");
   assert.equal(article.reviewed_date, null);
   assert.ok(topic?.includes(",published,"));
   assert.ok(topic?.includes("/appliances/dishwasher-not-draining/"));
@@ -519,7 +519,7 @@ test("dishwasher drainage guide separates residual water, plumbing paths, and in
   assert.match(article.direct_answer, /does not automatically mean.*drain pump failed/i);
   assert.ok(article.body_sections.some((section) => section.id === "is-water-abnormal" && section.table?.rows.length === 5));
   assert.ok(article.body_sections.some((section) => section.id === "filter-and-drain-area" && section.callout));
-  assert.ok(article.body_sections.some((section) => section.id === "sink-and-disposal" && section.link?.href === "/plumbing/multiple-drains-back-up-at-same-time/"));
+  assert.ok(article.body_sections.some((section) => section.id === "sink-and-disposal" && section.links?.some((link) => link.href === "/plumbing/sink-leaking-from-drain/") && section.links?.some((link) => link.href === "/plumbing/multiple-drains-back-up-at-same-time/")));
   assert.ok(article.body_sections.some((section) => section.id === "new-disposal"));
   assert.ok(article.body_sections.some((section) => section.id === "hose-air-gap" && section.subsections?.length === 3));
   assert.ok(article.body_sections.some((section) => section.id === "water-returns"));
@@ -864,13 +864,14 @@ test("window mold guide keeps moisture-source diagnosis and mold guardrails dist
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Mold growing around windows,"));
   assert.ok(article && condensation);
   assert.equal(article.published_date, "2026-09-09");
-  assert.equal(article.updated_date, "2026-09-18");
+  assert.equal(article.updated_date, "2026-11-03");
   assert.equal(article.primary_category, "moisture-and-mold");
   assert.ok(topic?.includes(",published,"));
   assert.ok(article.body_sections.some((section) => section.id === "moisture-source" && section.table?.rows.length === 6));
   assert.ok(article.body_sections.some((section) => section.id === "condensation-vs-leak"));
   assert.ok(article.body_sections.some((section) => section.id === "cleanup"));
   assert.ok(article.body_sections.some((section) => section.id === "testing"));
+  assert.ok(article.body_sections.some((section) => section.id === "professional-help" && section.link?.href === "/moisture-and-mold/bedroom-smells-musty/"));
   assert.ok(article.body_sections.some((section) => section.link?.href === "/moisture-and-mold/condensation-inside-windows/"));
   assert.ok(article.body_sections.some((section) => section.id === "between-panes" && section.link?.href === "/moisture-and-mold/condensation-between-window-panes/"));
   assert.ok(article.related_articles.includes("condensation-between-window-panes"));

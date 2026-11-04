@@ -1836,7 +1836,7 @@
   {
     "title": "Why Is My Dishwasher Not Draining?", "slug": "dishwasher-not-draining", "description": "Dishwasher not draining? Learn how standing water, the filter, sink, disposal, drain hose, and pump clues can narrow the problem safely.",
     "primary_category": "appliances", "secondary_categories": ["plumbing"], "symptoms": ["appliance-behavior", "drainage"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
-    "published_date": "2026-10-23", "updated_date": "2026-10-23", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
+    "published_date": "2026-10-23", "updated_date": "2026-11-03", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
     "search_keywords": ["dishwasher not draining", "why is my dishwasher not draining", "dishwasher won't drain", "dishwasher won’t drain", "dishwasher has standing water", "water in bottom of dishwasher", "dishwasher full of water", "dishwasher water not draining", "dishwasher drain problem", "dishwasher not draining after cycle", "dishwasher not draining into disposal", "dishwasher stopped draining after new disposal", "dishwasher backs up with water"],
     "target_search_intent": "Help a homeowner determine whether water left after a dishwasher cycle is abnormal, distinguish an incomplete cycle or accessible filter issue from sink, disposal, drain-hose, air-gap, backflow, or internal appliance problems, and choose appliance service or a plumber without assuming the drain pump failed.",
     "direct_answer": "Standing water does not automatically mean the dishwasher's drain pump failed. First determine whether the water is only a small model-dependent amount in or below the recessed filter area, or whether it visibly covers the tub floor after a completed cycle. Then check whether the cycle finished, clean only the filter or drain area the manual identifies as user-serviceable, and compare the kitchen sink and disposal. A newly installed disposal with its dishwasher-inlet plug still in place, a kinked visible drain hose, an obstructed air gap where one is installed, or downstream sink drainage can all imitate an appliance failure. If those checks are clear and the dishwasher still cannot drain, appliance service becomes more appropriate.",
@@ -1904,7 +1904,10 @@
           "A dishwasher commonly discharges through plumbing beneath the kitchen sink, sometimes into a garbage disposal and sometimes into a drain connection. If the sink is slow, holds water, backs up, or gurgles unusually, the dishwasher may be trying to discharge into a restricted downstream path. A disposal that is full of waste or not draining normally can create a similar clue.",
           "The reverse distinction also matters: a sink that appears normal does not prove every part of the dishwasher branch is clear. A narrow dishwasher inlet, air-gap hose, or section of drain hose can be restricted while ordinary sink flow still passes. Use sink behavior to decide whether plumbing deserves attention, not to rule it out absolutely."
         ],
-        "link": { "before": "If several household fixtures are slow, gurgling, rising, or backing up—not just the dishwasher—use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader shared-drain pattern." }
+        "links": [
+          { "before": "If water is escaping from the sink drain assembly rather than draining slowly, use ", "label": "Why Is My Sink Leaking From the Drain?", "href": "/plumbing/sink-leaking-from-drain/", "after": " to trace the highest wet point without confusing a leak with a restriction." },
+          { "before": "If several household fixtures are slow, gurgling, rising, or backing up—not just the dishwasher—use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader shared-drain pattern." }
+        ]
       },
       {
         "id": "new-disposal",
@@ -4195,7 +4198,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-09",
-    "updated_date": "2026-09-18",
+    "updated_date": "2026-11-03",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 10,
@@ -4475,7 +4478,13 @@
         "paragraphs": [
           "Seek experienced mold/moisture help when growth is extensive, recurring, hidden, or involves significantly damaged porous materials; when contaminated water or HVAC equipment may be involved; or when occupants cannot safely perform cleanup. Use a window or building-envelope professional for rain-timed wetness, damaged assemblies, or uncertain exterior water paths.",
           "An HVAC or building-performance professional may help when multiple rooms and windows indicate a broader humidity or ventilation problem. A qualified contractor or inspector may be appropriate for soft framing, damaged drywall, or suspected concealed moisture. Individual health concerns belong with a healthcare professional, not a visual diagnosis from the window."
-        ]
+        ],
+        "link": {
+          "before": "If the main symptom is a musty bedroom odor and visible window growth has not been established, use ",
+          "label": "Why Does My Bedroom Smell Musty?",
+          "href": "/moisture-and-mold/bedroom-smells-musty/",
+          "after": " to compare window, flooring, closet, wall, HVAC, and rain-timing clues."
+        }
       },
       {
         "id": "bottom-line",
