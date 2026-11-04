@@ -297,7 +297,7 @@ const findings = {
   missing_sitemap: inventory.filter((item) => !item.sitemap.included).map((item) => item.slug),
   canonical_mismatch: inventory.filter((item) => !item.local_export.canonical_matches).map((item) => item.slug),
   crawl_depth_over_four: inventory.filter((item) => item.internal_links.crawl_depth_from_home > 4 || item.internal_links.crawl_depth_from_home === null).map((item) => item.slug),
-  production_failures: checkProduction ? inventory.filter((item) => item.production.http_status !== 200 || !item.production.canonical_matches || !item.production.sitemap_included || !item.production.primary_hub_includes_article).map((item) => item.slug) : [],
+  production_failures: checkProduction ? inventory.filter((item) => item.production.http_status !== 200 || !item.production.canonical_matches || !item.production.sitemap_included || item.production.sitemap_lastmod !== item.updated_date || !item.production.primary_hub_includes_article || !item.production.article_schema || !item.production.breadcrumb_schema).map((item) => item.slug) : [],
 };
 
 const report = {
