@@ -10,7 +10,19 @@ async function render(path = "/") {
 
 test("homepage renders product content and metadata", async () => {
   const response = await render(); const html = await response.text();
-  assert.equal(response.status, 200); assert.match(html, /Figure out what’s happening in your home/); assert.match(html, /Home Problem Finder/); assert.match(html, /My House Is Doing What\?/); assert.match(html, /Answers for the weird things your home does/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\//); assert.match(html, /"@type":"WebSite"/); assert.match(html, /"@type":"Organization"/); assert.doesNotMatch(html, /SearchAction|Freshly reviewed|Housewise|github\.io|chatgpt\.site|codex-preview|react-loading-skeleton/);
+  assert.equal(response.status, 200);
+  if (process.env.NEXT_PUBLIC_HOME_VARIANT === "explorer") {
+    assert.match(html, /Your House Is Doing <em>WHAT\?<\/em>/);
+    assert.match(html, /Explore Your House/);
+    assert.match(html, /Isometric cutaway home explorer/);
+    assert.match(html, /Why Is There Mold in My Attic\?/);
+    assert.doesNotMatch(html, /Figure out what’s happening in your home/);
+  } else {
+    assert.match(html, /Figure out what’s happening in your home/);
+    assert.match(html, /Home Problem Finder/);
+    assert.doesNotMatch(html, /Explore Your House/);
+  }
+  assert.match(html, /My House Is Doing What\?/); assert.match(html, /Answers for the weird things your home does/); assert.match(html, /https:\/\/myhouseisdoingwhat\.com\//); assert.match(html, /"@type":"WebSite"/); assert.match(html, /"@type":"Organization"/); assert.doesNotMatch(html, /SearchAction|Freshly reviewed|Housewise|github\.io|chatgpt\.site|codex-preview|react-loading-skeleton/);
 });
 
 test("representative article renders its own metadata and answer", async () => {

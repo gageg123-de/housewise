@@ -5,11 +5,29 @@ import { readFile } from "node:fs/promises";
 const registry = JSON.parse(await readFile(new URL("../content/articles.json", import.meta.url), "utf8"));
 const taxonomy = JSON.parse(await readFile(new URL("../content/taxonomy.json", import.meta.url), "utf8"));
 const topics = await readFile(new URL("../content/topics.csv", import.meta.url), "utf8");
+const houseExplorer = JSON.parse(await readFile(new URL("../content/house-explorer.json", import.meta.url), "utf8"));
 
 test("article registry has unique titles, slugs, and canonical paths", () => {
   assert.equal(new Set(registry.map((item) => item.title.toLowerCase())).size, registry.length);
   assert.equal(new Set(registry.map((item) => item.slug)).size, registry.length);
   assert.equal(new Set(registry.map((item) => `${item.primary_category}/${item.slug}`)).size, registry.length);
+});
+
+test("house explorer hotspots use unique identifiers and published destinations", () => {
+  const articleSlugs = new Set(registry.map((item) => item.slug));
+  const categorySlugs = new Set(taxonomy.categories.map((item) => item.slug));
+  assert.equal(houseExplorer.length, 9);
+  assert.equal(new Set(houseExplorer.map((item) => item.id)).size, houseExplorer.length);
+  for (const hotspot of houseExplorer) {
+    assert.match(hotspot.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    assert.ok(hotspot.label && hotspot.prompt && hotspot.categoryLabel);
+    assert.ok(hotspot.x >= 0 && hotspot.x <= 100 && hotspot.y >= 0 && hotspot.y <= 100);
+    const categoryMatch = hotspot.categoryHref.match(/^\/([a-z0-9-]+)\/$/);
+    assert.ok(categoryMatch && categorySlugs.has(categoryMatch[1]), `${hotspot.id}: invalid category destination`);
+    assert.ok(hotspot.articleSlugs.length > 0 && hotspot.articleSlugs.length <= 4);
+    assert.equal(new Set(hotspot.articleSlugs).size, hotspot.articleSlugs.length);
+    for (const slug of hotspot.articleSlugs) assert.ok(articleSlugs.has(slug), `${hotspot.id}: unpublished destination ${slug}`);
+  }
 });
 
 test("article taxonomy uses canonical configured values", () => {

@@ -175,3 +175,123 @@ table { display: block; max-width: 100%; overflow-x: auto; }
 @media (max-width: 1000px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 800px) { .site-header nav a:not(:first-child) { display: none; } .guide-grid { grid-template-columns: 1fr; } .finder-cta { margin-inline: 18px; padding: 35px; align-items: flex-start; flex-direction: column; } .updated { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .problem-grid { grid-template-columns: 1fr; } .finder-step { grid-template-columns: 1fr; gap: 10px; } .finder-panel { padding: 20px; } .footer-grid { grid-template-columns: 1fr; } .article-layout { padding-inline: 18px; } .direct-answer { padding: 23px; } .page-hero { padding-inline: 18px; } .not-found > div { align-items: flex-start; flex-direction: column; } }
+
+/* Interactive house homepage. All selectors are variant-scoped so classic mode stays unchanged. */
+.explorer-hero { max-width: var(--max); margin: auto; padding: 72px 24px 58px; text-align: center; }
+.explorer-hero-copy { max-width: 850px; margin: auto; }
+.explorer-hero h1 { max-width: none; font-size: clamp(52px, 7.4vw, 92px); }
+.explorer-hero h1 em { color: var(--green); font-style: normal; }
+.explorer-hero-copy > p:not(.eyebrow) { max-width: 720px; margin: 22px auto 30px; color: var(--muted); font-size: 20px; }
+.explorer-search { max-width: 760px; margin: auto; text-align: left; }
+.explorer-hero .finder-link { margin-top: 18px; }
+.explorer-section { padding: 64px max(24px, calc((100% - var(--max)) / 2 + 24px)) 84px; background: #edf1e9; border-block: 1px solid #d4ddd4; }
+.explorer-intro { display: grid; grid-template-columns: 1fr minmax(280px, 480px); align-items: end; gap: 50px; margin-bottom: 32px; }
+.explorer-intro > p { margin: 0; color: var(--muted); font-size: 17px; }
+.house-explorer { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(300px, .72fr); align-items: stretch; gap: 22px; }
+.house-stage { min-width: 0; min-height: 610px; position: relative; overflow: hidden; background: #f9f7f0; border: 1px solid #cbd6cc; border-radius: 28px; box-shadow: 0 20px 45px rgb(25 50 40 / 11%); }
+.house-art { width: 100%; height: 100%; min-height: 610px; display: block; }
+.house-ground { fill: #d8ded5; }
+.house-foundation-side { fill: #8e8576; }
+.house-floor { fill: #d9c7aa; stroke: #695f51; stroke-width: 3; }
+.house-zone { transition: filter .18s ease, opacity .18s ease; }
+.zone-surface { transition: fill .18s ease, stroke .18s ease; }
+.living-floor { fill: #d8bfa2; stroke: #776650; stroke-width: 2; }
+.bathroom-floor { fill: #b8d8d3; stroke: #58736d; stroke-width: 2; }
+.kitchen-floor { fill: #d7c8a7; stroke: #76684c; stroke-width: 2; }
+.laundry-floor { fill: #c7d8cc; stroke: #617269; stroke-width: 2; }
+.garage-floor { fill: #bfc4bc; stroke: #62675f; stroke-width: 2; }
+.room-wall { fill: #e7dbc8; stroke: #776b5a; stroke-width: 2; }
+.room-wall-light { fill: #f0e6d5; stroke: #776b5a; stroke-width: 2; }
+.front-wall { fill: #ded0bb; stroke: #756957; stroke-width: 2; }
+.garage-wall { fill: #c7c9c2; stroke: #62675f; stroke-width: 2; }
+.garage-door { fill: #9ba49f; stroke: #4c5b55; stroke-width: 2; }
+.garage-lines { fill: none; stroke: #68736e; stroke-width: 2; }
+.sofa { fill: #75988b; stroke: #345e51; stroke-width: 3; stroke-linejoin: round; }
+.coffee-table, .shelf { fill: #a97855; stroke: #694b36; stroke-width: 3; stroke-linejoin: round; }
+.lamp-shade { fill: #e8b85b; stroke: #876a2e; stroke-width: 2; }
+.fixture { fill: #f8faf7; stroke: #55706a; stroke-width: 2; stroke-linejoin: round; }
+.fixture-light { fill: #f8faf7; stroke: #55706a; stroke-width: 2; }
+.cabinet { fill: #b57b53; stroke: #6d4831; stroke-width: 2; stroke-linejoin: round; }
+.appliance { fill: #d6ddd9; stroke: #53635d; stroke-width: 2; stroke-linejoin: round; }
+.appliance-window { fill: #6f8c8e; stroke: #314d4f; stroke-width: 2; }
+.appliance-line, .counter-line, .detail-line { fill: none; stroke: #52655e; stroke-width: 3; stroke-linecap: round; }
+.front-door { fill: #1d6755; stroke: #0f4236; stroke-width: 3; }
+.door-knob { fill: #e2a33b; }
+.door-step { fill: #a79a88; stroke: #685f53; stroke-width: 2; }
+.window-frame { fill: #f4f0e5; stroke: #3b6459; stroke-width: 4; }
+.window-glass { fill: #8fc5ce; stroke: #37646c; stroke-width: 2; }
+.window-line { fill: none; stroke: #e7f4f4; stroke-width: 2; }
+.attic-wall { fill: #ddc9a7; stroke: #6b5d4d; stroke-width: 3; }
+.roof-left { fill: #6e6c65; stroke: #3f413e; stroke-width: 3; }
+.roof-right { fill: #565b58; stroke: #373b39; stroke-width: 3; }
+.rafter { fill: none; stroke: #936d4e; stroke-width: 7; stroke-linejoin: round; }
+.duct { fill: none; stroke: #aabcb8; stroke-width: 18; stroke-linecap: round; }
+.duct-joint { fill: none; stroke: #667d78; stroke-width: 2; }
+.attic-box { fill: #758a83; stroke: #40534e; stroke-width: 2; }
+.hvac-pad { fill: #b7b4a9; stroke: #69685f; stroke-width: 2; }
+.hvac-unit { fill: #81908b; stroke: #3e4f49; stroke-width: 3; stroke-linejoin: round; }
+.hvac-fan { fill: #53645e; stroke: #d4ddd9; stroke-width: 2; }
+.hvac-fan-line, .service-line { fill: none; stroke: #d4ddd9; stroke-width: 2; }
+.house-outline { fill: none; stroke: #34483f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.house-zone.is-hovered, .house-zone.is-selected { filter: drop-shadow(0 0 10px rgb(226 163 59 / 65%)); }
+.house-zone.is-hovered .zone-surface, .house-zone.is-selected .zone-surface { stroke: #d98c18; stroke-width: 7; }
+.house-hotspot-list { position: absolute; inset: 0; pointer-events: none; }
+.house-hotspot { --hotspot-x: 50%; --hotspot-y: 50%; min-height: 44px; position: absolute; left: var(--hotspot-x); top: var(--hotspot-y); z-index: 2; display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px 8px 8px; transform: translate(-50%, -50%); border: 1px solid rgb(255 255 255 / 70%); border-radius: 999px; background: rgb(23 38 33 / 88%); color: white; box-shadow: 0 7px 16px rgb(23 38 33 / 22%); font: 700 12px/1.1 Arial, sans-serif; cursor: pointer; pointer-events: auto; white-space: nowrap; transition: transform .16s ease, background .16s ease; }
+.house-hotspot > span { width: 13px; height: 13px; flex: none; border: 3px solid #f6cf80; border-radius: 50%; background: var(--amber); }
+.house-hotspot:hover, .house-hotspot.is-selected { transform: translate(-50%, -50%) scale(1.06); background: var(--green); }
+.house-recommendations { min-width: 0; padding: 30px; background: var(--white); border: 1px solid #cbd6cc; border-radius: 28px; box-shadow: var(--shadow); }
+.house-panel-heading { display: flex; align-items: start; justify-content: space-between; gap: 18px; }
+.house-recommendations h3 { margin: 0; font: 500 35px/1.06 Georgia, serif; letter-spacing: -.03em; }
+.house-recommendations > p:not(.eyebrow, .sr-only), .house-empty p { color: var(--muted); }
+.house-clear { min-height: 44px; padding: 7px 0 7px 12px; border: 0; background: transparent; color: var(--green-dark); font: 800 12px Arial, sans-serif; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.house-recommendations ul { display: grid; gap: 10px; margin: 25px 0 22px; padding: 0; list-style: none; }
+.house-recommendations li a { min-height: 44px; position: relative; display: grid; gap: 5px; padding: 16px 38px 16px 16px; background: #f5f4ee; border: 1px solid var(--line); border-radius: 13px; text-decoration: none; }
+.house-recommendations li a:hover { border-color: var(--green); background: var(--sage); }
+.house-recommendations li strong { font: 700 17px/1.24 Georgia, serif; }
+.house-recommendations li span { color: var(--muted); font-size: 12px; line-height: 1.45; }
+.house-recommendations li i { position: absolute; top: 50%; right: 16px; transform: translateY(-50%); color: var(--green); font-style: normal; font-weight: 900; }
+.house-category-link { color: var(--green-dark); font-size: 14px; font-weight: 800; text-underline-offset: 4px; }
+.house-empty { padding-top: 15px; }
+.explorer-categories { padding: 76px max(24px, calc((100% - var(--max)) / 2 + 24px)); display: grid; grid-template-columns: minmax(270px, .75fr) 1.25fr; gap: 76px; background: var(--green-dark); color: white; }
+.explorer-categories .eyebrow { color: #a9d7c7; }
+.explorer-categories > div:first-child > p:not(.eyebrow) { color: #d5e4df; }
+.explorer-categories .button { margin-top: 10px; background: #f4c66d; color: var(--ink); }
+.explorer-category-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; }
+.explorer-category-links a { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid rgb(255 255 255 / 22%); text-decoration: none; font-weight: 800; }
+.explorer-category-links a:hover { color: #c7e7dc; }
+.explorer-category-links i { font-style: normal; }
+.explorer-starting-points { border-top: 0; }
+
+@media (max-width: 1050px) {
+  .house-explorer { grid-template-columns: 1fr; }
+  .house-stage { min-height: 580px; }
+  .house-art { min-height: 580px; }
+  .house-recommendations { min-height: 360px; }
+}
+
+@media (max-width: 800px) {
+  .explorer-hero { padding-top: 48px; }
+  .explorer-intro, .explorer-categories { grid-template-columns: 1fr; gap: 28px; }
+  .explorer-intro { align-items: start; }
+  .explorer-section { padding-inline: 18px; }
+  .explorer-categories { padding-inline: 24px; }
+}
+
+@media (max-width: 700px) {
+  .explorer-hero { padding: 38px 18px 48px; }
+  .explorer-hero h1 { font-size: clamp(46px, 15vw, 68px); }
+  .explorer-hero-copy > p:not(.eyebrow) { font-size: 17px; }
+  .house-stage { min-height: 0; padding: 8px 8px 18px; overflow: visible; }
+  .house-art { height: auto; min-height: 0; aspect-ratio: 960 / 660; }
+  .house-hotspot-list { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 4px 4px 0; }
+  .house-hotspot { min-width: 0; width: 100%; position: static; transform: none; justify-content: flex-start; white-space: normal; }
+  .house-hotspot:hover, .house-hotspot.is-selected { transform: none; }
+  .house-recommendations { padding: 24px 20px; border-radius: 22px; }
+  .house-recommendations h3 { font-size: 31px; }
+  .house-recommendations li span { display: none; }
+  .explorer-category-links { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 380px) {
+  .house-hotspot { padding-inline: 12px; }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "roof-attic",
+    "label": "Roof / Attic",
+    "prompt": "What are you noticing above the living space?",
+    "categoryHref": "/attic-and-insulation/",
+    "categoryLabel": "View attic and insulation guides",
+    "x": 50,
+    "y": 13,
+    "articleSlugs": ["mold-in-attic", "ceiling-wet-after-rain", "ac-ductwork-sweating-in-attic"]
+  },
+  {
+    "id": "hvac",
+    "label": "HVAC",
+    "prompt": "What is the heating or cooling system doing?",
+    "categoryHref": "/hvac/",
+    "categoryLabel": "View all HVAC guides",
+    "x": 87,
+    "y": 45,
+    "articleSlugs": ["ac-running-but-not-cooling", "water-around-indoor-ac-unit", "can-replacing-registers-improve-airflow"]
+  },
+  {
+    "id": "bathroom",
+    "label": "Bathroom",
+    "prompt": "What is happening in the bathroom?",
+    "categoryHref": "/bathroom/",
+    "categoryLabel": "View bathroom guides",
+    "x": 24,
+    "y": 39,
+    "articleSlugs": ["toilet-gurgles-randomly", "toilet-water-rises-when-another-toilet-flushes", "shower-drain-gurgles-when-toilet-flushes"]
+  },
+  {
+    "id": "kitchen",
+    "label": "Kitchen",
+    "prompt": "What is happening in the kitchen?",
+    "categoryHref": "/appliances/",
+    "categoryLabel": "View appliance guides",
+    "x": 65,
+    "y": 38,
+    "articleSlugs": ["dishwasher-not-draining", "dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes"]
+  },
+  {
+    "id": "laundry",
+    "label": "Laundry",
+    "prompt": "What is the laundry equipment doing?",
+    "categoryHref": "/appliances/",
+    "categoryLabel": "View appliance guides",
+    "x": 66,
+    "y": 62,
+    "articleSlugs": ["dryer-taking-two-cycles", "dryer-keeps-shutting-off", "dryer-smells-like-burning", "toilet-bubbles-when-washer-drains"]
+  },
+  {
+    "id": "living-room",
+    "label": "Living Room",
+    "prompt": "What electrical symptom are you noticing?",
+    "categoryHref": "/electrical/",
+    "categoryLabel": "View electrical guides",
+    "x": 30,
+    "y": 62,
+    "articleSlugs": ["lights-flicker-randomly", "one-outlet-has-no-power", "outlet-buzzing"]
+  },
+  {
+    "id": "windows",
+    "label": "Windows",
+    "prompt": "What is showing up at the window?",
+    "categoryHref": "/windows-and-doors/",
+    "categoryLabel": "View windows and doors guides",
+    "x": 15,
+    "y": 52,
+    "articleSlugs": ["condensation-inside-windows", "window-leaking-when-it-rains", "mold-growing-around-windows"]
+  },
+  {
+    "id": "front-door",
+    "label": "Front Door",
+    "prompt": "Is rainwater appearing at or around the entry?",
+    "categoryHref": "/windows-and-doors/",
+    "categoryLabel": "View windows and doors guides",
+    "x": 42,
+    "y": 79,
+    "articleSlugs": ["front-door-leaking-when-it-rains"]
+  },
+  {
+    "id": "garage",
+    "label": "Garage",
+    "prompt": "What are you noticing in the garage?",
+    "categoryHref": "/garage/",
+    "categoryLabel": "View garage guides",
+    "x": 81,
+    "y": 76,
+    "articleSlugs": ["garage-smells-musty"]
+  }
+]

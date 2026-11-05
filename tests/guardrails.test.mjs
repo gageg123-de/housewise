@@ -23,19 +23,43 @@ test("mobile containment, table containment, and article rail breakpoint remain 
 });
 
 test("analytics-ready event names remain stable without installing a vendor", async () => {
-  const [finder, search, guideCard, home, agents] = await Promise.all([
+  const [finder, search, guideCard, home, explorerHome, houseExplorer, agents] = await Promise.all([
     readProjectFile("components/ProblemFinder.tsx"),
     readProjectFile("components/SiteSearch.tsx"),
     readProjectFile("components/GuideCard.tsx"),
     readProjectFile("app/page.tsx"),
+    readProjectFile("components/ExplorerHomePage.tsx"),
+    readProjectFile("components/HouseExplorer.tsx"),
     readProjectFile("AGENTS.md"),
   ]);
-  const implemented = `${finder}\n${search}\n${guideCard}\n${home}`;
+  const implemented = `${finder}\n${search}\n${guideCard}\n${home}\n${explorerHome}\n${houseExplorer}`;
   for (const event of ["problem_finder_started", "problem_finder_step", "problem_finder_completed", "problem_finder_result_click", "site_search", "search_result_click", "related_article_click", "category_click"]) {
     assert.ok(implemented.includes(event), `${event}: missing implementation hook contract`);
   }
+  for (const event of ["house_explorer_view", "house_hotspot_select", "house_problem_select", "house_category_click"]) assert.ok(implemented.includes(event), `${event}: missing explorer hook contract`);
   for (const event of ["article_depth_50", "article_depth_90"]) assert.match(agents, new RegExp(`\`${event}\``), `${event}: missing reserved contract`);
   assert.doesNotMatch(implemented, /google-analytics|googletagmanager|segment\.com|plausible\.io|posthog/i);
+});
+
+test("house explorer retains keyboard controls, selected state, and live announcements", async () => {
+  const houseExplorer = await readProjectFile("components/HouseExplorer.tsx");
+  assert.match(houseExplorer, /<button[\s\S]*aria-pressed=/);
+  assert.match(houseExplorer, /aria-controls="house-recommendation-panel"/);
+  assert.match(houseExplorer, /aria-live="polite"/);
+  assert.match(houseExplorer, /Choose an area of the house/);
+  assert.match(houseExplorer, /type="button"/);
+});
+
+test("homepage variant defaults safely to classic", async () => {
+  const [variant, page, classic] = await Promise.all([
+    readProjectFile("lib/home-variant.ts"),
+    readProjectFile("app/page.tsx"),
+    readProjectFile("components/ClassicHomePage.tsx"),
+  ]);
+  assert.match(variant, /value === "explorer" \? "explorer" : "classic"/);
+  assert.match(page, /NEXT_PUBLIC_HOME_VARIANT/);
+  assert.match(classic, /Figure out what’s happening in your home/);
+  assert.match(classic, /Recently updated guides/);
 });
 
 test("Problem Finder and search retain accessible labels, live results, and recovery actions", async () => {

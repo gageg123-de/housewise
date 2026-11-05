@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_HOME_VARIANT: explorer
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -38,6 +40,11 @@ jobs:
 
       - name: Test
         run: npm test
+
+      - name: Verify classic homepage fallback
+        env:
+          NEXT_PUBLIC_HOME_VARIANT: classic
+        run: npm run build && npm run verify:export
 
       - name: Build static Pages export
         run: npm run build:pages
