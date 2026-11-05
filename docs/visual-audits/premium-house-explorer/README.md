@@ -17,6 +17,14 @@ This folder records the rendered-page comparison for the architectural House Exp
 
 The screenshots use 1440 x 1000, 768 x 1000, and 390 x 900 browser viewports. Each image is a screenshot of the actual statically exported homepage in a trusted rendered browser, not an isolated asset mockup.
 
+## Restoration modes
+
+- Explorer V1: build with `NEXT_PUBLIC_HOME_VARIANT=explorer` and `NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL=v1`.
+- Classic homepage: build with `NEXT_PUBLIC_HOME_VARIANT=classic`; the house visual setting is ignored.
+- Detailed Explorer: build with `NEXT_PUBLIC_HOME_VARIANT=explorer` and `NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL=detailed`.
+
+The annotated tag above preserves the exact pre-upgrade source. Prefer the environment switches for a release rollback; use an ordinary revert of the detailed-explorer commit if the implementation itself must be removed. Do not rewrite shared history.
+
 ## Review notes
 
 - The detailed variant keeps the existing nine-zone selection model, recommendation panel, keyboard behavior, live announcements, article links, and classic-homepage fallback.
