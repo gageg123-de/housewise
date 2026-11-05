@@ -6,6 +6,7 @@ Dryer takes two cycles,dryer taking two cycles,appliances,heat,laundry,diagnosti
 Garage smells musty,musty smell in garage,moisture-and-mold,smell,garage,diagnostic,published,high,/moisture-and-mold/garage-smells-musty/,Canonical published topic
 Warm outlet,why is my outlet warm,electrical,heat,whole-house,safety,published,high,/electrical/outlet-warm/,Canonical published topic
 Toilet whistles,toilet whistles after flushing,plumbing,noise,bathroom,diagnostic,published,medium,/plumbing/toilet-whistles-after-flushing/,Canonical published topic
+Toilet keeps running after flushing,toilet keeps running after flushing,plumbing,plumbing-behavior,bathroom,diagnostic,published,high,/plumbing/toilet-keeps-running-after-flushing/,Continuous running or intermittent tank refill intent; distinct from refill noise and drainage gurgling
 Water under water heater,water under water heater,plumbing,leaking,garage,safety,published,high,/plumbing/water-under-water-heater/,Canonical published topic
 Ceiling fan wobbles,why does my ceiling fan wobble,electrical,vibration,living-area,diagnostic,published,medium,/electrical/ceiling-fan-wobbles/,Canonical published topic
 AC makes bubbling sound,ac makes bubbling noise,hvac,noise,whole-house,diagnostic,planned,medium,,Distinguish condensate from refrigerant sounds

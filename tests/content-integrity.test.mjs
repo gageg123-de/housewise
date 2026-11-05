@@ -600,14 +600,47 @@ test("toilet-whistle guide stays on refill supply noise and separates drainage g
   const randomGurgle = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet gurgles randomly,"));
   assert.ok(whistle);
   assert.equal(whistle.published_date, "2026-08-24");
-  assert.equal(whistle.updated_date, "2026-08-27");
+  assert.equal(whistle.updated_date, "2026-11-05");
   assert.ok(randomGurgle?.includes(",published,"));
   assert.ok(whistle.body_sections.some((section) => section.id === "when-it-whistles" && section.table?.rows.length === 7));
   assert.ok(whistle.body_sections.some((section) => section.id === "common-causes" && section.causes?.length === 5));
   assert.ok(whistle.body_sections.some((section) => section.id === "safe-checks" && section.callout));
   assert.ok(whistle.body_sections.some((section) => section.id === "not-a-drain-gurgle" && section.links?.some((link) => link.href === "/plumbing/toilet-bubbles-when-washer-drains/")));
+  assert.ok(whistle.related_articles.includes("toilet-keeps-running-after-flushing"));
+  assert.ok(whistle.body_sections.some((section) => section.link?.href === "/plumbing/toilet-keeps-running-after-flushing/"));
   assert.ok(whistle.sources.every((source) => source.url.startsWith("https://")));
   assert.equal(whistle.image, undefined);
+});
+
+test("running-toilet guide separates overflow, tank-loss, and model-specific patterns before part replacement", () => {
+  const running = registry.find((item) => item.slug === "toilet-keeps-running-after-flushing");
+  const whistle = registry.find((item) => item.slug === "toilet-whistles-after-flushing");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Toilet keeps running after flushing,"));
+  assert.ok(running);
+  assert.equal(running.published_date, "2026-11-05");
+  assert.equal(running.updated_date, "2026-11-05");
+  assert.equal(running.reviewed_date, null);
+  assert.ok(topic?.includes(",published,high,/plumbing/toilet-keeps-running-after-flushing/"));
+  assert.match(running.direct_answer, /None of these patterns proves a specific part has failed/);
+  assert.equal(running.likely_causes.length, 6);
+  assert.ok(running.body_sections.some((section) => section.id === "running-pattern" && section.table?.rows.length === 6));
+  assert.ok(running.body_sections.some((section) => section.id === "overflow-tube" && section.callout?.title === "Use the model's waterline"));
+  assert.ok(running.body_sections.some((section) => section.id === "dye-test" && section.paragraphs?.join(" ").includes("5 to 10 minutes")));
+  assert.ok(running.body_sections.some((section) => section.id === "nonstandard" && section.paragraphs?.join(" ").includes("pressure-assisted")));
+  assert.ok(running.body_sections.some((section) => section.id === "safe-sequence" && section.callout?.title === "Stop if water reaches the floor"));
+  assert.ok(running.body_sections.some((section) => section.id === "what-not-to-do" && section.bullets?.length === 8));
+  assert.ok(running.body_sections.some((section) => section.link?.href === "/plumbing/toilet-whistles-after-flushing/"));
+  assert.ok(running.related_articles.includes("toilet-whistles-after-flushing"));
+  assert.ok(whistle.related_articles.includes("toilet-keeps-running-after-flushing"));
+  assert.deepEqual(new Set(running.sources.map((source) => source.publisher)), new Set(["U.S. Environmental Protection Agency WaterSense", "Kohler", "Fluidmaster", "Sloan"]));
+  assert.equal(running.image.src, "/images/toilet-running-after-flushing-patterns.webp");
+  assert.equal(running.image.width, 1536);
+  assert.equal(running.image.height, 1024);
+  assert.equal(running.image.kind, "conceptual");
+  const body = JSON.stringify(running.body_sections);
+  assert.match(body, /not proof|does not prove|not a part diagnosis/i);
+  assert.match(body, /Do not force a seized shutoff valve/);
+  assert.doesNotMatch(body, /all toilets use|every toilet uses|always needs a new flapper|universal gallons per day/i);
 });
 
 test("warm-outlet guide preserves conservative stop-use boundaries without invasive electrical steps", () => {

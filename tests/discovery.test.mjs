@@ -14,6 +14,7 @@ test("Problem Finder choices are contextual to the selected location", () => {
   assert.ok(bathroom.some((item) => item.value === "drainage"));
   assert.ok(bathroom.some((item) => item.value === "toilet-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "toilet-water-level"));
+  assert.ok(bathroom.some((item) => item.value === "toilet-running"));
   assert.ok(bathroom.some((item) => item.value === "shower-gurgling"));
   assert.ok(bathroom.some((item) => item.value === "shower-pressure-pulsing"));
   assert.ok(bathroom.some((item) => item.value === "sink-drain-leak"));
@@ -237,6 +238,19 @@ test("site search ranks realistic homeowner queries and rejects weak partial mat
     ["toilet and shower backing up", "multiple-drains-back-up-at-same-time"],
     ["several drains gurgling", "multiple-drains-back-up-at-same-time"],
     ["toilet high pitched refill", "toilet-whistles-after-flushing"],
+    ["toilet keeps running after flushing", "toilet-keeps-running-after-flushing"],
+    ["toilet won't stop running", "toilet-keeps-running-after-flushing"],
+    ["toilet constantly running", "toilet-keeps-running-after-flushing"],
+    ["toilet running continuously", "toilet-keeps-running-after-flushing"],
+    ["toilet keeps filling", "toilet-keeps-running-after-flushing"],
+    ["toilet fill valve won't shut off", "toilet-keeps-running-after-flushing"],
+    ["toilet flapper leaking", "toilet-keeps-running-after-flushing"],
+    ["toilet runs every few minutes", "toilet-keeps-running-after-flushing"],
+    ["toilet randomly refills", "toilet-keeps-running-after-flushing"],
+    ["toilet phantom flushing", "toilet-keeps-running-after-flushing"],
+    ["toilet water running into overflow tube", "toilet-keeps-running-after-flushing"],
+    ["toilet tank losing water", "toilet-keeps-running-after-flushing"],
+    ["water keeps running in toilet", "toilet-keeps-running-after-flushing"],
     ["toilet rises washer drains", "toilet-bubbles-when-washer-drains"],
     ["ac dripping", "water-dripping-from-ac-vent"],
     ["one ac vent condensation", "ac-vent-sweating"],
@@ -644,6 +658,33 @@ test("toilet-triggered sink gurgling Finder and search stay distinct from neighb
   }
   for (const location of ["yard", "garage", "attic", "laundry", "bedroom", "living-area", "exterior", "whole-house"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "sink-toilet-gurgling"), location);
+  }
+});
+
+test("running-toilet Finder and search preserve refill-noise and drainage intents", () => {
+  const positives = [
+    "toilet keeps running after flushing",
+    "toilet won't stop running",
+    "toilet constantly running",
+    "toilet running continuously",
+    "toilet keeps filling",
+    "toilet fill valve won't shut off",
+    "toilet flapper leaking",
+    "toilet runs every few minutes",
+    "toilet randomly refills",
+    "toilet phantom flushing",
+    "toilet water running into overflow tube",
+    "toilet tank losing water",
+    "water keeps running in toilet",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "toilet-keeps-running-after-flushing", query);
+  for (const query of ["toilet whistles after flushing", "toilet gurgles randomly", "toilet bubbles when washer drains", "toilet water rises when another toilet flushes", "shower drain gurgles when toilet flushes", "sink gurgles when toilet flushes", "toilet clogged", "toilet overflowing", "water leaking from toilet base", "toilet not flushing"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "toilet-keeps-running-after-flushing", query);
+  }
+  assert.ok(getFinderSymptomOptions("bathroom").some((item) => item.value === "toilet-running"));
+  assert.equal(rankFinderArticles(registry, "bathroom", "toilet-running")[0]?.article.slug, "toilet-keeps-running-after-flushing");
+  for (const location of ["yard", "garage", "attic", "kitchen", "laundry", "bedroom", "living-area", "exterior", "whole-house"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "toilet-running"), location);
   }
 });
 

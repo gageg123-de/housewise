@@ -2484,13 +2484,13 @@
   {
     "title": "Why Does My Toilet Whistle After Flushing?", "slug": "toilet-whistles-after-flushing", "description": "A toilet that whistles while refilling usually has a restricted or aging fill valve. Learn what the timing of the sound can reveal.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["noise", "plumbing-behavior"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "symptom-guide",
-    "published_date": "2026-08-24", "updated_date": "2026-08-27", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": false,
+    "published_date": "2026-08-24", "updated_date": "2026-11-05", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 7, "featured_status": false,
     "search_keywords": ["toilet whistles after flushing", "toilet refill squeal", "fill valve noise", "toilet makes high pitched noise while filling", "toilet whistles after tank fills"], "target_search_intent": "Help a homeowner use the timing, refill speed, shutoff behavior, and other-fixture clues to distinguish fill-valve noise from a local supply restriction or broader pressure problem.",
     "direct_answer": "A whistle that starts after the flush and lasts while the tank refills usually comes from water moving through the toilet's fill valve or supply path. A worn or restricted fill valve is common; a partly open or failing shutoff valve, restricted supply connector, or debris can produce a similar high-pitched sound. If the noise continues after the tank reaches its normal water level, the fill valve may not be shutting off cleanly. Whistling at several fixtures points away from this toilet alone and can justify a broader pressure or supply evaluation.",
     "likely_causes": ["Worn or restricted fill valve", "Partly open, deteriorated, or restricted toilet shutoff valve", "Kinked or restricted supply connector", "Debris or scale in the toilet supply path", "Broader water-pressure or piping noise"],
     "safe_checks": ["Confirm whether the whistle occurs only during tank refill and stops at the normal water level.", "Time the refill and compare it with the toilet's usual behavior.", "Look for leaks at the visible shutoff valve, supply connector, and tank connection without tightening anything.", "Observe whether the flexible connector is sharply kinked or crushed.", "Note whether faucets or other toilets whistle too."],
     "professional_help": "A plumber can replace or service a model-appropriate fill valve, address a seized/leaking shutoff or damaged connector, and evaluate building pressure when multiple fixtures are noisy. Get prompt help if the toilet will not stop filling, the shutoff leaks or cannot control water, the connector bulges, or water is reaching the floor.",
-    "related_articles": ["toilet-bubbles-when-washer-drains"],
+    "related_articles": ["toilet-bubbles-when-washer-drains", "toilet-keeps-running-after-flushing"],
     "body_sections": [
       {
         "id": "when-it-whistles",
@@ -2526,7 +2526,8 @@
         "paragraphs": [
           "Watch from a normal standing position and listen for whether water continues to run. A fill valve that does not close cleanly may keep sending water into the tank or overflow tube. That wastes water and can make a hiss or whistle sound continuous rather than limited to refill.",
           "The tank water level should follow the toilet manufacturer's mark or instructions. Do not bend, clamp, or defeat the float to silence the noise. Persistent filling calls for a fill-valve and water-level check with the correct parts for that toilet."
-        ]
+        ],
+        "link": { "before": "If water continues rather than only making noise during a normal refill, use ", "label": "Why Does My Toilet Keep Running After Flushing?", "href": "/plumbing/toilet-keeps-running-after-flushing/", "after": " to compare overflow, flush-seal, chain, and intermittent-refill patterns." }
       },
       {
         "id": "safe-checks",
@@ -12196,6 +12197,187 @@
       {"title": "Troubleshooting Guide", "publisher": "Therma-Tru", "url": "https://www.thermatru.com/project-center/troubleshooting-guide/"},
       {"title": "Window Installation and Water-Resistive Barriers", "publisher": "Andersen Windows & Doors", "url": "https://www.andersenwindows.com/for-professionals/pro-views/window-installation-and-water-resistive-barriers"},
       {"title": "Biological Contaminants and Indoor Air Quality", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality"}
+    ]
+  },
+  {
+    "title": "Why Does My Toilet Keep Running After Flushing?", "slug": "toilet-keeps-running-after-flushing", "description": "Toilet keeps running after flushing? Use overflow, tank-water, fill-valve, flush-seal, and chain clues to narrow the cause before replacing parts.",
+    "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["plumbing-behavior", "leaking"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-11-05", "updated_date": "2026-11-05", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": false,
+    "search_keywords": ["toilet keeps running after flushing", "toilet won't stop running", "toilet constantly running", "toilet running continuously", "toilet keeps filling", "toilet won't stop filling", "toilet fill valve won't shut off", "toilet flapper leaking", "toilet runs every few minutes", "toilet randomly refills", "toilet phantom flushing", "toilet water running into overflow tube", "toilet tank losing water", "water keeps running in toilet"],
+    "target_search_intent": "Help a homeowner distinguish normal tank refill from continuous running or intermittent refilling, then use overflow-tube flow, tank water level, flush-seal closure, fill-valve shutoff, and chain behavior to narrow the cause without assuming one failed part.",
+    "direct_answer": "After a flush, a conventional gravity-fed toilet should refill its tank and then stop at the model's intended water level. If it keeps running, first watch where the water goes. Water flowing into the overflow tube makes the fill valve, float movement, or water-level setting more relevant. A tank that quietly loses water and then refills every few minutes points instead toward tank-to-bowl leakage through a flapper, canister seal, flush-valve seat, or another seal path. A tight, tangled, or caught chain can also keep the flush seal from closing. None of these patterns proves a specific part has failed, and pressure-assisted or unfamiliar systems need their own manufacturer instructions.",
+    "likely_causes": ["Tank water level set too high or a float that cannot move normally", "Fill valve that is contaminated, worn, or failing to shut off", "Worn, dirty, damaged, or misaligned flapper or canister-style flush seal", "Chain, handle, or trip lever preventing the flush seal from closing", "Refill tube positioned incorrectly and allowing siphoning on applicable designs", "Model-specific fault in a dual-flush, pressure-assisted, or other nonstandard system"],
+    "safe_checks": ["Let the toilet complete one normal flush and decide whether the sound is continuous or returns after a quiet interval.", "Lift the tank lid only if it is removable without disconnecting anything, then place the porcelain lid on a stable protected surface.", "Observe the water level, the top of the overflow tube, the flush seal, chain, handle, and float without forcing or disassembling parts.", "Use the toilet's waterline mark and manufacturer instructions rather than a universal adjustment measurement.", "For a conventional gravity tank, consider the EPA dye-test procedure to confirm tank-to-bowl leakage without treating the result as proof of one failed component.", "Record the toilet model before buying a flapper, seal, fill valve, or other part."],
+    "professional_help": "Call a plumber when water will not stop, the supply shutoff is seized or leaking, water reaches the floor, the tank or bowl is cracked, an unfamiliar or pressure-assisted mechanism is involved, the correct model-specific part is uncertain, or running continues after accessible checks. If an ordinary supply valve operates smoothly and does not leak, shutting it can stop ongoing water use while service is arranged; never force a corroded valve.",
+    "related_articles": ["toilet-whistles-after-flushing"],
+    "image": {
+      "src": "/images/toilet-running-after-flushing-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel view of a conventional toilet tank showing normal refill, water entering the overflow tube, a leaking flush seal, and a chain holding a flapper open.",
+      "caption": "Conceptual illustration: Watch where the water goes before replacing parts. The panels show common gravity-tank patterns, not confirmed failures or every toilet design.",
+      "kind": "conceptual",
+      "after_section": "running-pattern"
+    },
+    "body_sections": [
+      {
+        "id": "normal-refill",
+        "heading": "Is it normal for a toilet to run after flushing?",
+        "paragraphs": [
+          "A conventional gravity-fed toilet normally makes refill noise after a flush. The flush seal opens so stored tank water can enter the bowl, then closes. As the tank water level falls, the fill valve opens; as the float rises to the model's intended level, the fill valve closes. That refill period is ordinary operation, not a leak by itself.",
+          "There is no useful universal refill time. Tank size, valve design, supply pressure, and flow restrictions differ. Compare the toilet with its own normal pattern. Investigate when water runs without stopping, continues into the overflow tube, can still be heard entering the bowl after refill should have ended, or starts refilling again when nobody flushed."
+        ],
+        "callout": {
+          "title": "A running toilet is a pattern, not a part diagnosis",
+          "text": "A flapper is common in many gravity toilets, but overflow, fill-valve, chain, canister-seal, refill-tube, and model-specific problems can sound similar. Observe the tank before buying a replacement part."
+        }
+      },
+      {
+        "id": "running-pattern",
+        "heading": "First: is the toilet running constantly or refilling occasionally?",
+        "paragraphs": ["Listen through one ordinary flush and refill, then leave the toilet alone. The timing separates two useful patterns even though either pattern can have more than one cause."],
+        "table": {
+          "headers": ["What you observe", "What becomes more relevant"],
+          "rows": [
+            ["Water runs continuously and enters the overflow tube", "Fill-valve shutoff, float movement, or tank water-level setting"],
+            ["Water runs continuously and the flush seal stays visibly open", "Chain, handle, trip lever, flapper, or canister closure"],
+            ["Tank becomes quiet, then the fill valve starts again later", "Tank water is being lost between flushes; a flush-seal or other leak path is more relevant"],
+            ["Water can be seen moving into the bowl long after the flush", "Tank-to-bowl leakage, not necessarily a floor leak"],
+            ["Only a whistle or squeal occurs while the tank refills and then stops", "Refill-side noise; preserve the separate toilet-whistling intent"],
+            ["Water appears outside the tank, at the supply, or on the floor", "An external leak that needs prompt source control rather than an internal dye test"]
+          ]
+        }
+      },
+      {
+        "id": "overflow-tube",
+        "heading": "Is water flowing into the overflow tube?",
+        "paragraphs": [
+          "The overflow tube is the open vertical tube inside a conventional gravity tank. It provides a path to the bowl if the tank water rises too high, helping keep water from spilling over the tank rim. Water continuously crossing its top is strong evidence that the fill side is not stopping at the intended level.",
+          "Compare the water with the tank's molded or printed waterline and the toilet manual. A water level set too high, a float that rubs or cannot rise freely, debris or wear inside the fill valve, or a valve that does not shut off can all produce overflow flow. The observation does not prove the fill valve must be replaced; adjustment and service methods are model-specific.",
+          "Water entering the overflow tube is not evidence that the flapper is leaking. A flapper or canister-seal leak sends tank water through the flush-valve opening below. These two paths can coexist, but they are diagnosed differently."
+        ],
+        "callout": {
+          "title": "Use the model's waterline",
+          "text": "Do not bend float arms, clamp floats, or apply a universal water-level measurement unless the manufacturer specifies that adjustment for the installed valve. Stop if the float or valve is unfamiliar or damaged."
+        }
+      },
+      {
+        "id": "flush-seal",
+        "heading": "Could the flapper or flush-valve seal be leaking?",
+        "paragraphs": [
+          "A flapper covers the flush-valve opening in many gravity toilets. Pressing the handle lifts it, the tank discharges, and the flapper should settle back onto its seat. Mineral deposits, debris, warping, deterioration, misalignment, or an incompatible replacement can keep that seal from holding tank water.",
+          "Other toilets use a vertical canister or tower with a replaceable seal instead of a hinged flapper. Dual-flush mechanisms may use still another arrangement. The diagnostic principle is the same: if tank water crosses the closed flush-valve seal into the bowl, the tank level drops until the fill valve turns on again. The correct seal and service steps depend on the exact toilet model.",
+          "Look for an obviously lifted, folded, displaced, dirty, or damaged accessible seal without reaching into hidden openings. Do not assume that a seal that looks normal is watertight, and do not buy a part on appearance alone. Flush-valve opening size, attachment, material, and model compatibility vary."
+        ]
+      },
+      {
+        "id": "fill-valve",
+        "heading": "Could the fill valve be failing to shut off?",
+        "paragraphs": [
+          "The fill valve admits clean supply water after a flush. Its float or other level-sensing mechanism should make it close at the intended tank level. If water continues to enter while the tank is already at its mark—or rises into the overflow—the float, adjustment, valve seat, internal seal, debris, or valve wear may be involved.",
+          "Observe whether the float rises freely and whether it rubs the tank wall, chain, refill tube, or another component. Do not hold, bend, or dismantle the valve while the water is on as an improvised test. Manufacturer cleaning procedures exist for some valves, but cap removal and flushing are not universal homeowner steps.",
+          "The small refill tube also matters on applicable designs. It should be installed exactly as the toilet or fill-valve manufacturer directs. Fluidmaster warns that inserting a refill tube down into an overflow pipe can create siphoning and repeated valve operation. That is an installation clue, not permission to rearrange an unfamiliar assembly by guesswork."
+        ],
+        "link": {
+          "before": "If the primary symptom is a high-pitched sound that occurs only during refill and stops when the tank reaches its level, use ",
+          "label": "Why Does My Toilet Whistle After Flushing?",
+          "href": "/plumbing/toilet-whistles-after-flushing/",
+          "after": " for the distinct noise and supply-flow pattern."
+        }
+      },
+      {
+        "id": "chain-handle",
+        "heading": "Is the flush chain or handle keeping the seal open?",
+        "paragraphs": [
+          "The handle moves a lever, and the lever lifts the flapper or canister through a chain or model-specific linkage. The chain needs enough movement to open the valve during a flush and enough freedom for the seal to close afterward. Too much tension can hold a flapper slightly open; extra chain can tangle, catch under a flapper, or snag another part.",
+          "A sticky handle or binding trip lever can create the same result. With the tank at rest, check whether the handle returns normally and whether the chain is visibly taut, tangled, caught, or disconnected. Do not use one universal slack measurement: Kohler and Fluidmaster instructions differ by mechanism, and dual-flush rods or canister linkages are adjusted differently.",
+          "Freeing an obvious loose-chain snag may explain the symptom, but a recurring snag, cracked lever, corroded hardware, or unfamiliar linkage calls for a correct model-specific repair. A sticking handle does not by itself require replacing the complete flush valve."
+        ]
+      },
+      {
+        "id": "intermittent-refill",
+        "heading": "Why does my toilet randomly refill without being flushed?",
+        "paragraphs": [
+          "An intermittent refill is sometimes called a phantom flush, but the toilet usually has not performed a real flush. The tank has lost enough water that the fill valve responds to the lower level and restores it. Kohler identifies a worn flapper or canister seal, excessive water level, and binding trip-lever parts among the possible categories.",
+          "A leaking fill valve is not the only explanation—and often is not the first one when the tank becomes quiet between events. A flush seal can leak silently into the bowl, a refill tube can siphon on some installations, or another tank seal path can lower the water. Mark when the tank becomes quiet, how long until refill returns, and whether bowl water ripples. Those clues help a plumber or manufacturer support separate the leak path from the part that merely refills the lost water."
+        ]
+      },
+      {
+        "id": "dye-test",
+        "heading": "How can you check for a silent tank-to-bowl leak?",
+        "paragraphs": [
+          "EPA WaterSense supports a simple dye test for a conventional tank-type toilet. Let the tank finish filling. Add a dye tablet or a few drops of food coloring to the tank, do not flush, and check the bowl after 5 to 10 minutes. Flush immediately after the observation so the color does not stain the tank or bowl.",
+          "Color appearing in the bowl shows that tank water crossed into the bowl without a flush. It supports a leak through the flapper, canister seal, flush-valve seal, or related tank-to-bowl path. It does not prove which part is defective, find an external supply leak, evaluate continuous overflow, or diagnose a pressure-assisted vessel.",
+          "Do not put bleach tablets, harsh cleaners, drain chemicals, or an improvised dye mixture into the tank. In-tank chemicals can damage seals and other components, and the correct test uses only a small amount of suitable coloring for a short observation."
+        ]
+      },
+      {
+        "id": "nonstandard",
+        "heading": "What if the toilet does not have a traditional flapper?",
+        "paragraphs": [
+          "A canister-style gravity toilet lifts a cylinder or tower and seals with a ring or gasket rather than a conventional hinged flapper. A dual-flush toilet may use buttons, rods, cables, or a proprietary tower. Identify the model before adjusting a chain, buying a seal, or interpreting how the refill tube should be placed.",
+          "A pressure-assisted toilet contains a sealed pressure vessel inside the porcelain tank. Sloan's troubleshooting guidance uses different components, including a cartridge, actuator, inlet screen, and vessel. Do not apply open gravity-tank flapper instructions to that system, open or modify the vessel, or treat a dye test as a complete diagnosis. Use the manufacturer manual or a plumber familiar with the mechanism.",
+          "Wall-hung, concealed-tank, smart, and other specialized toilets also have limited homeowner access. If the lid does not lift normally or the mechanism is enclosed, stop at identifying the model and recording the timing of the sound."
+        ]
+      },
+      {
+        "id": "safe-sequence",
+        "heading": "What can you safely check before replacing parts?",
+        "bullets": [
+          "Let one flush finish and decide whether water runs continuously or the tank becomes quiet and refills later.",
+          "Remove the tank lid only when it lifts normally; use both hands and place the breakable porcelain on a stable protected surface.",
+          "Confirm that the mechanism is an accessible gravity-tank design rather than a pressure vessel or concealed system.",
+          "Compare the tank water with its marked waterline and watch whether water crosses the top of the overflow tube.",
+          "Observe whether the flapper, canister, or other flush seal closes fully after the flush.",
+          "Look for a taut, tangled, caught, or disconnected chain and a handle that fails to return normally.",
+          "Watch whether the float rises freely without touching or forcing it, and whether the fill valve stops at the intended level.",
+          "Use the EPA dye test only to check tank-to-bowl leakage in a suitable gravity tank; interpret color in the bowl as a leak path, not an automatic part diagnosis.",
+          "Photograph the tank layout and record the toilet model and part markings before buying anything.",
+          "If water will not stop, close the toilet's supply valve only if it turns normally and remains dry; do not force a seized or corroded valve."
+        ],
+        "callout": {
+          "title": "Stop if water reaches the floor",
+          "text": "An external leak, cracked porcelain, overflowing bowl, leaking supply connection, or shutoff that begins leaking is no longer an ordinary internal running-toilet check. Stop using the fixture, control water only through a known safe valve, keep the area dry, and call a plumber."
+        }
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not replace a flapper, fill valve, or complete toilet before identifying the water path and model.",
+          "Do not force a seized shutoff valve or disconnect a supply line while it is pressurized.",
+          "Do not bend float arms, clamp floats, shorten chains, or adjust dual-flush rods without model-specific instructions.",
+          "Do not reach blindly into a flush-valve opening or disassemble an unfamiliar sealed or pressure-assisted system.",
+          "Do not use an incompatible 'universal' flapper or seal merely because it physically attaches.",
+          "Do not overtighten plastic fittings, tank bolts, or porcelain-mounted hardware; porcelain can crack and seals can distort.",
+          "Do not add bleach tablets, drain cleaner, harsh chemicals, or leak-sealing products to the tank.",
+          "Do not keep flushing an overflowing, externally leaking, or cracked toilet while trying to reproduce the symptom."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call a plumber?",
+        "paragraphs": [
+          "Call when the fill valve will not stop, the running returns after manufacturer-supported adjustments, the correct seal or valve cannot be identified, the flush-valve seat or tank hardware may be damaged, the mechanism is pressure-assisted or concealed, or you are not comfortable working around a pressurized supply connection. A plumber can confirm the leak path and install compatible parts without turning a symptom into a full toilet rebuild.",
+          "Arrange prompt service for water on the floor, a leaking or seized shutoff, a damaged supply connector, cracked porcelain, a bowl that is overflowing or not draining, or a tank that cannot be isolated safely. A continuously running toilet can waste substantial water, but the rate depends on the opening and flow; no single gallons-per-day estimate applies to every fault."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A toilet that keeps running after flushing is a symptom, not proof that the flapper or fill valve failed. Continuous water into the overflow tube makes the fill side and water-level control more relevant. A quiet tank that later refills points toward tank water escaping through a flush seal, siphon path, or another leak. A visible chain or handle problem can prevent either a flapper or canister from closing.",
+          "Start with continuous versus intermittent behavior, then watch the overflow, waterline, flush seal, chain, float, and fill-valve shutoff. Use a short EPA dye test only for a suitable gravity tank, identify the model before buying parts, and leave pressure-assisted, concealed, leaking, or unclear systems to a plumber."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Technical Reference Manual for WaterSense Labeled Homes", "publisher": "U.S. Environmental Protection Agency WaterSense", "url": "https://www.epa.gov/system/files/documents/2023-08/ws-homes-TechnicalReferenceManual.pdf"},
+      {"title": "Toilet Constantly Leaking or Running", "publisher": "Kohler", "url": "https://assist.kohler.com/en/toilets-and-seats/Toilet-Constantly-Leaking-or-Running"},
+      {"title": "Toilet Occasionally Leaking or Running", "publisher": "Kohler", "url": "https://assist.kohler.com/en/toilets-and-seats/Toilet-Occasionally-Leaking-or-Running"},
+      {"title": "Fill Valve and Flapper Installation Instructions", "publisher": "Fluidmaster", "url": "https://www.fluidmaster.com/wp-content/uploads/2017/02/400C_Instr_ENGLISH-1.pdf"},
+      {"title": "Flush Valve Installation Instructions", "publisher": "Fluidmaster", "url": "https://www.fluidmaster.com/wp-content/uploads/2016/12/507a_installation_instrutions_english_1.pdf"},
+      {"title": "Pressure Assist Toilet Installation Instructions", "publisher": "Sloan", "url": "https://www.sloan.com/sites/default/files/2024-07/Pressure-assisted%20Toilet%20Installation%20Instructions.pdf"}
     ]
   }
 ]

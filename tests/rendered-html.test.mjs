@@ -362,9 +362,35 @@ test("toilet-whistle guide renders refill timing, conservative shutoff safety, a
   assert.match(html, /Do not force an old shutoff valve/);
   assert.match(html, /A refill whistle is different from a drain gurgle/);
   assert.match(html, /href="\/plumbing\/toilet-bubbles-when-washer-drains\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-keeps-running-after-flushing\/"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
+
+test("running-toilet guide renders flow-path diagnosis, safe checks, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/plumbing/toilet-keeps-running-after-flushing");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Toilet Keep Running After Flushing\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/toilet-keeps-running-after-flushing\//);
+  assert.match(html, /Is it normal for a toilet to run after flushing\?/);
+  assert.match(html, /First: is the toilet running constantly or refilling occasionally\?/);
+  assert.match(html, /Is water flowing into the overflow tube\?/);
+  assert.match(html, /How can you check for a silent tank-to-bowl leak\?/);
+  assert.match(html, /What if the toilet does not have a traditional flapper\?/);
+  assert.match(html, /A running toilet is a pattern, not a part diagnosis/);
+  assert.match(html, /Stop if water reaches the floor/);
+  assert.match(html, /href="\/plumbing\/toilet-whistles-after-flushing\/"/);
+  assert.match(html, /src="\/images\/toilet-running-after-flushing-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/toilet-running-after-flushing-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/plumbing/toilet-whistles-after-flushing");
+  assert.match(await reciprocal.text(), /href="\/plumbing\/toilet-keeps-running-after-flushing\/"/);
 });
 
 test("ceiling-fan guide renders blade-versus-mount distinction, safety boundary, and visual", async () => {
