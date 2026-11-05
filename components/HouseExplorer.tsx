@@ -3,8 +3,10 @@
 import { useState, type CSSProperties } from "react";
 import { SiteLink as Link } from "@/components/SiteLink";
 import type { HouseHotspot } from "@/lib/house-explorer";
+import type { HouseVisualVariant } from "@/lib/house-visual-variant";
+import { routePath } from "@/lib/site-config";
 
-function HouseIllustration({ selected, hovered }: { selected: string | null; hovered: string | null }) {
+function HouseIllustrationV1({ selected, hovered }: { selected: string | null; hovered: string | null }) {
   const zoneClass = (id: string) => `house-zone${selected === id ? " is-selected" : ""}${hovered === id ? " is-hovered" : ""}`;
   return <svg className="house-art" viewBox="0 0 960 660" role="img" aria-labelledby="house-art-title house-art-description">
     <title id="house-art-title">Isometric cutaway home explorer</title>
@@ -91,19 +93,55 @@ function HouseIllustration({ selected, hovered }: { selected: string | null; hov
   </svg>;
 }
 
-export function HouseExplorer({ hotspots }: { hotspots: HouseHotspot[] }) {
+function DetailedHouseIllustration({ hotspots, selected, hovered }: { hotspots: HouseHotspot[]; selected: string | null; hovered: string | null }) {
+  return <>
+    {/* A pre-compressed, fixed-dimension project asset avoids shipping the architectural artwork in client JavaScript. */}
+    {/* eslint-disable-next-line @next/next/no-img-element */}
+    <img
+      className="house-art-detailed"
+      src={routePath("/images/house-explorer-detailed.webp")}
+      width="1536"
+      height="1024"
+      loading="lazy"
+      decoding="async"
+      alt="Detailed conceptual cutaway of a furnished home showing the attic, bathroom, kitchen, living room, laundry, garage, front entry, windows, and outdoor HVAC equipment."
+    />
+    <div className="house-zone-highlights" aria-hidden="true">
+      {hotspots.map((hotspot) => <span
+        key={hotspot.id}
+        className={`house-zone-highlight${selected === hotspot.id ? " is-selected" : ""}${hovered === hotspot.id ? " is-hovered" : ""}`}
+        style={{
+          left: `${hotspot.highlight.x}%`,
+          top: `${hotspot.highlight.y}%`,
+          width: `${hotspot.highlight.width}%`,
+          height: `${hotspot.highlight.height}%`,
+          clipPath: hotspot.highlight.clipPath,
+        }}
+      />)}
+    </div>
+  </>;
+}
+
+export function HouseExplorer({ hotspots, visualVariant }: { hotspots: HouseHotspot[]; visualVariant: HouseVisualVariant }) {
   const [selectedId, setSelectedId] = useState<string | null>(hotspots[0]?.id ?? null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const selected = hotspots.find((hotspot) => hotspot.id === selectedId) ?? null;
-  return <div className="house-explorer" data-analytics-event="house_explorer_view">
-    <div className="house-stage">
-      <HouseIllustration selected={selectedId} hovered={hoveredId}/>
-      <div className="house-hotspot-list" aria-label="Choose an area of the house">
+  const detailed = visualVariant === "detailed";
+  return <div className={`house-explorer${detailed ? " has-detailed-art" : ""}`} data-analytics-event="house_explorer_view" data-house-visual={visualVariant}>
+    <div className={`house-stage${detailed ? " is-detailed" : " is-v1"}`}>
+      <div className="house-art-layer">
+        {detailed
+          ? <DetailedHouseIllustration hotspots={hotspots} selected={selectedId} hovered={hoveredId}/>
+          : <HouseIllustrationV1 selected={selectedId} hovered={hoveredId}/>}
+        <div className="house-hotspot-list" aria-label="Choose an area of the house">
         {hotspots.map((hotspot) => <button
           key={hotspot.id}
           type="button"
           className={`house-hotspot${selectedId === hotspot.id ? " is-selected" : ""}`}
-          style={{ "--hotspot-x": `${hotspot.x}%`, "--hotspot-y": `${hotspot.y}%` } as CSSProperties}
+          style={{
+            "--hotspot-x": `${detailed ? hotspot.detailedX : hotspot.x}%`,
+            "--hotspot-y": `${detailed ? hotspot.detailedY : hotspot.y}%`,
+          } as CSSProperties}
           aria-pressed={selectedId === hotspot.id}
           aria-controls="house-recommendation-panel"
           data-analytics-event="house_hotspot_select"
@@ -114,6 +152,7 @@ export function HouseExplorer({ hotspots }: { hotspots: HouseHotspot[] }) {
           onBlur={() => setHoveredId(null)}
           onClick={() => setSelectedId(hotspot.id)}
         ><span aria-hidden="true"/><b>{hotspot.label}</b></button>)}
+        </div>
       </div>
     </div>
     <aside className="house-recommendations" id="house-recommendation-panel" aria-labelledby="house-panel-title">

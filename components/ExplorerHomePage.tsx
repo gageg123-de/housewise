@@ -3,11 +3,13 @@ import { HouseExplorer } from "@/components/HouseExplorer";
 import { SiteLink as Link } from "@/components/SiteLink";
 import { SiteShell } from "@/components/SiteShell";
 import { resolveHouseHotspots } from "@/lib/house-explorer";
+import { normalizeHouseVisualVariant } from "@/lib/house-visual-variant";
 import { articles, publishedCategories } from "@/lib/site-data";
 import { routePath, tagline } from "@/lib/site-config";
 
 export function ExplorerHomePage({ schemaMarkup }: { schemaMarkup: string }) {
   const hotspots = resolveHouseHotspots();
+  const houseVisual = normalizeHouseVisualVariant(process.env.NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL);
   const featured = articles.filter((article) => article.featured_status).slice(0, 3);
   return <SiteShell>
     <section className="explorer-hero">
@@ -17,7 +19,7 @@ export function ExplorerHomePage({ schemaMarkup }: { schemaMarkup: string }) {
     </section>
     <section className="explorer-section" aria-labelledby="explore-house-title">
       <div className="explorer-intro"><div><p className="eyebrow">Interactive home guide</p><h2 id="explore-house-title">Explore Your House</h2></div><p>Tap a room or part of the house to find common problems. The house helps you choose a reading path—it does not diagnose the cause.</p></div>
-      <HouseExplorer hotspots={hotspots}/>
+      <HouseExplorer hotspots={hotspots} visualVariant={houseVisual}/>
     </section>
     <section className="explorer-categories" aria-labelledby="explorer-categories-title">
       <div><p className="eyebrow">Prefer the traditional route?</p><h2 id="explorer-categories-title">Browse every home system</h2><p>Go straight to a category, or let the Problem Finder narrow the library by location and symptom.</p><Link className="button" href="/find-a-problem/">Open the Problem Finder</Link></div>

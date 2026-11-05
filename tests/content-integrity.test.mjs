@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 
 const registry = JSON.parse(await readFile(new URL("../content/articles.json", import.meta.url), "utf8"));
 const taxonomy = JSON.parse(await readFile(new URL("../content/taxonomy.json", import.meta.url), "utf8"));
@@ -22,12 +22,21 @@ test("house explorer hotspots use unique identifiers and published destinations"
     assert.match(hotspot.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(hotspot.label && hotspot.prompt && hotspot.categoryLabel);
     assert.ok(hotspot.x >= 0 && hotspot.x <= 100 && hotspot.y >= 0 && hotspot.y <= 100);
+    assert.ok(hotspot.detailedX >= 0 && hotspot.detailedX <= 100 && hotspot.detailedY >= 0 && hotspot.detailedY <= 100);
+    for (const field of ["x", "y", "width", "height"]) assert.ok(hotspot.highlight[field] >= 0 && hotspot.highlight[field] <= 100, `${hotspot.id}: invalid highlight ${field}`);
+    assert.ok(hotspot.highlight.width > 0 && hotspot.highlight.height > 0 && hotspot.highlight.clipPath.startsWith("polygon("));
     const categoryMatch = hotspot.categoryHref.match(/^\/([a-z0-9-]+)\/$/);
     assert.ok(categoryMatch && categorySlugs.has(categoryMatch[1]), `${hotspot.id}: invalid category destination`);
     assert.ok(hotspot.articleSlugs.length > 0 && hotspot.articleSlugs.length <= 4);
     assert.equal(new Set(hotspot.articleSlugs).size, hotspot.articleSlugs.length);
     for (const slug of hotspot.articleSlugs) assert.ok(articleSlugs.has(slug), `${hotspot.id}: unpublished destination ${slug}`);
   }
+});
+
+test("detailed house artwork is a responsive, budgeted project asset", async () => {
+  const image = await stat(new URL("../public/images/house-explorer-detailed.webp", import.meta.url));
+  assert.ok(image.size > 100_000, "detailed house artwork is unexpectedly small");
+  assert.ok(image.size <= 200_000, `detailed house artwork exceeds the 200 KB visual budget: ${image.size}`);
 });
 
 test("article taxonomy uses canonical configured values", () => {

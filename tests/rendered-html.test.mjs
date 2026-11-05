@@ -14,7 +14,16 @@ test("homepage renders product content and metadata", async () => {
   if (process.env.NEXT_PUBLIC_HOME_VARIANT === "explorer") {
     assert.match(html, /Your House Is Doing <em>WHAT\?<\/em>/);
     assert.match(html, /Explore Your House/);
-    assert.match(html, /Isometric cutaway home explorer/);
+    if (process.env.NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL === "detailed") {
+      assert.match(html, /data-house-visual="detailed"/);
+      assert.match(html, /src="\/images\/house-explorer-detailed\.webp"/);
+      assert.match(html, /width="1536" height="1024"/);
+      assert.doesNotMatch(html, /Isometric cutaway home explorer/);
+    } else {
+      assert.match(html, /data-house-visual="v1"/);
+      assert.match(html, /Isometric cutaway home explorer/);
+      assert.doesNotMatch(html, /house-explorer-detailed\.webp/);
+    }
     assert.match(html, /Why Is There Mold in My Attic\?/);
     assert.doesNotMatch(html, /Figure out what’s happening in your home/);
   } else {

@@ -16,6 +16,15 @@ export type HouseHotspot = {
   categoryLabel: string;
   x: number;
   y: number;
+  detailedX: number;
+  detailedY: number;
+  highlight: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    clipPath: string;
+  };
   articles: HouseExplorerArticle[];
 };
 

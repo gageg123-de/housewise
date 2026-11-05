@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_HOME_VARIANT: explorer
+      NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL: detailed
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -40,6 +41,11 @@ jobs:
 
       - name: Test
         run: npm test
+
+      - name: Verify Explorer V1 restoration mode
+        env:
+          NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL: v1
+        run: npm run build && npm run verify:export
 
       - name: Verify classic homepage fallback
         env:

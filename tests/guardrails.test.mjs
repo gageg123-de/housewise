@@ -62,6 +62,22 @@ test("homepage variant defaults safely to classic", async () => {
   assert.match(classic, /Recently updated guides/);
 });
 
+test("house visual variant preserves V1 as the safe fallback", async () => {
+  const [variant, explorerHome, houseExplorer, workflow] = await Promise.all([
+    readProjectFile("lib/house-visual-variant.ts"),
+    readProjectFile("components/ExplorerHomePage.tsx"),
+    readProjectFile("components/HouseExplorer.tsx"),
+    readProjectFile(".github/workflows/deploy-pages.yml"),
+  ]);
+  assert.match(variant, /value === "detailed" \? "detailed" : "v1"/);
+  assert.match(explorerHome, /NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL/);
+  assert.match(houseExplorer, /data-house-visual=\{visualVariant\}/);
+  assert.match(houseExplorer, /house-explorer-detailed\.webp/);
+  assert.match(houseExplorer, /HouseIllustrationV1/);
+  assert.match(workflow, /NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL: detailed/);
+  assert.match(workflow, /Verify Explorer V1 restoration mode/);
+});
+
 test("Problem Finder and search retain accessible labels, live results, and recovery actions", async () => {
   const [finder, search] = await Promise.all([
     readProjectFile("components/ProblemFinder.tsx"),
