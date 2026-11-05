@@ -193,6 +193,9 @@ table { display: block; max-width: 100%; overflow-x: auto; }
 .house-art-layer { width: 100%; height: 100%; position: relative; }
 .house-art { width: 100%; height: 100%; min-height: 610px; display: block; }
 .house-stage.is-detailed { min-height: 0; aspect-ratio: 3 / 2; background: #f8f4ec; }
+.house-stage.is-detailed.is-motion-ready .house-art-layer { opacity: .96; transform: scale(.975); transform-origin: 50% 50%; }
+.house-stage.is-detailed.is-motion-ready.is-motion-visible .house-art-layer { opacity: 1; transform: scale(var(--house-scroll-scale, 1)); transition: transform 1050ms cubic-bezier(.16, 1, .3, 1), opacity 900ms ease-out; will-change: transform, opacity; }
+.house-stage.is-detailed.is-motion-ready.is-motion-visible.is-motion-settled .house-art-layer { transition: none; will-change: transform; }
 .house-art-detailed { width: 100%; height: 100%; display: block; object-fit: cover; }
 .house-zone-highlights { width: 100%; position: absolute; inset: 0 auto auto 0; aspect-ratio: 3 / 2; pointer-events: none; }
 .house-zone-highlight { position: absolute; opacity: 0; background: rgb(226 163 59 / 16%); mix-blend-mode: multiply; transition: opacity .18s ease, background .18s ease; }
@@ -293,6 +296,8 @@ table { display: block; max-width: 100%; overflow-x: auto; }
   .explorer-hero-copy > p:not(.eyebrow) { font-size: 17px; }
   .house-stage { min-height: 0; padding: 8px 8px 18px; overflow: visible; }
   .house-stage.is-detailed { aspect-ratio: auto; }
+  .house-stage.is-detailed.is-motion-ready .house-art-layer { transform: scale(.985); }
+  .house-stage.is-detailed.is-motion-ready.is-motion-visible .house-art-layer { transform: scale(var(--house-scroll-scale, 1)); }
   .house-art-layer { height: auto; }
   .house-art { height: auto; min-height: 0; aspect-ratio: 960 / 660; }
   .house-art-detailed { height: auto; aspect-ratio: 3 / 2; border-radius: 16px; }
@@ -303,6 +308,10 @@ table { display: block; max-width: 100%; overflow-x: auto; }
   .house-recommendations h3 { font-size: 31px; }
   .house-recommendations li span { display: none; }
   .explorer-category-links { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .house-stage.is-detailed .house-art-layer { opacity: 1 !important; transform: none !important; transition: none !important; will-change: auto !important; }
 }
 
 @media (max-width: 380px) {

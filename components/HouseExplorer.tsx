@@ -1,10 +1,101 @@
 "use client";
 
-import { useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { SiteLink as Link } from "@/components/SiteLink";
 import type { HouseHotspot } from "@/lib/house-explorer";
 import type { HouseVisualVariant } from "@/lib/house-visual-variant";
 import { routePath } from "@/lib/site-config";
+
+const HOUSE_ENTRANCE_DURATION_MS = 1050;
+const HOUSE_SCROLL_ZOOM_MAX = 1.025;
+const HOUSE_TABLET_SCROLL_ZOOM_MAX = 1.018;
+const HOUSE_MOBILE_BREAKPOINT = 700;
+
+function useDetailedHouseMotion(enabled: boolean) {
+  const stageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const stage = stageRef.current;
+    const layer = stage?.querySelector<HTMLElement>(".house-art-layer");
+    if (!enabled || !stage || !layer) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let observer: IntersectionObserver | null = null;
+    let animationFrame = 0;
+    let entranceTimer = 0;
+
+    const updateScrollZoom = () => {
+      animationFrame = 0;
+      if (reducedMotion.matches) return;
+
+      const viewportHeight = window.innerHeight;
+      const rect = stage.getBoundingClientRect();
+      const mobile = window.innerWidth <= HOUSE_MOBILE_BREAKPOINT;
+      const maximum = mobile ? 1 : window.innerWidth <= 900 ? HOUSE_TABLET_SCROLL_ZOOM_MAX : HOUSE_SCROLL_ZOOM_MAX;
+      const start = viewportHeight * 0.82;
+      const distance = viewportHeight + rect.height * 0.7;
+      const progress = Math.min(1, Math.max(0, (start - rect.top) / distance));
+      const scale = 1 + (maximum - 1) * progress;
+      layer.style.setProperty("--house-scroll-scale", scale.toFixed(4));
+    };
+
+    const scheduleScrollZoom = () => {
+      if (!animationFrame) animationFrame = window.requestAnimationFrame(updateScrollZoom);
+    };
+
+    const stopRuntimeMotion = () => {
+      observer?.disconnect();
+      observer = null;
+      window.removeEventListener("scroll", scheduleScrollZoom);
+      window.removeEventListener("resize", scheduleScrollZoom);
+      if (animationFrame) window.cancelAnimationFrame(animationFrame);
+      if (entranceTimer) window.clearTimeout(entranceTimer);
+      animationFrame = 0;
+      entranceTimer = 0;
+    };
+
+    const configureMotion = () => {
+      stopRuntimeMotion();
+      stage.classList.remove("is-motion-ready", "is-motion-visible", "is-motion-settled");
+      layer.style.removeProperty("--house-scroll-scale");
+
+      if (reducedMotion.matches) {
+        stage.dataset.motionState = "reduced";
+        return;
+      }
+
+      stage.dataset.motionState = "ready";
+      stage.classList.add("is-motion-ready");
+      updateScrollZoom();
+      observer = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer?.disconnect();
+        observer = null;
+        stage.dataset.motionState = "entered";
+        stage.classList.add("is-motion-visible");
+        entranceTimer = window.setTimeout(() => {
+          stage.classList.add("is-motion-settled");
+          entranceTimer = 0;
+        }, HOUSE_ENTRANCE_DURATION_MS + 80);
+      }, { threshold: 0.12 });
+      observer.observe(stage);
+      window.addEventListener("scroll", scheduleScrollZoom, { passive: true });
+      window.addEventListener("resize", scheduleScrollZoom);
+    };
+
+    configureMotion();
+    reducedMotion.addEventListener("change", configureMotion);
+    return () => {
+      reducedMotion.removeEventListener("change", configureMotion);
+      stopRuntimeMotion();
+      delete stage.dataset.motionState;
+      stage.classList.remove("is-motion-ready", "is-motion-visible", "is-motion-settled");
+      layer.style.removeProperty("--house-scroll-scale");
+    };
+  }, [enabled]);
+
+  return stageRef;
+}
 
 function HouseIllustrationV1({ selected, hovered }: { selected: string | null; hovered: string | null }) {
   const zoneClass = (id: string) => `house-zone${selected === id ? " is-selected" : ""}${hovered === id ? " is-hovered" : ""}`;
@@ -127,8 +218,9 @@ export function HouseExplorer({ hotspots, visualVariant }: { hotspots: HouseHots
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const selected = hotspots.find((hotspot) => hotspot.id === selectedId) ?? null;
   const detailed = visualVariant === "detailed";
+  const stageRef = useDetailedHouseMotion(detailed);
   return <div className={`house-explorer${detailed ? " has-detailed-art" : ""}`} data-analytics-event="house_explorer_view" data-house-visual={visualVariant}>
-    <div className={`house-stage${detailed ? " is-detailed" : " is-v1"}`}>
+    <div ref={stageRef} className={`house-stage${detailed ? " is-detailed" : " is-v1"}`} data-house-motion={detailed ? "subtle-zoom" : "none"}>
       <div className="house-art-layer">
         {detailed
           ? <DetailedHouseIllustration hotspots={hotspots} selected={selectedId} hovered={hoveredId}/>

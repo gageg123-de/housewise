@@ -78,6 +78,27 @@ test("house visual variant preserves V1 as the safe fallback", async () => {
   assert.match(workflow, /Verify Explorer V1 restoration mode/);
 });
 
+test("detailed house motion stays subtle, event-driven, and reduced-motion safe", async () => {
+  const [houseExplorer, css, packageFile] = await Promise.all([
+    readProjectFile("components/HouseExplorer.tsx"),
+    readProjectFile("app/globals.css"),
+    readProjectFile("package.json"),
+  ]);
+  assert.match(houseExplorer, /HOUSE_ENTRANCE_DURATION_MS = 1050/);
+  assert.match(houseExplorer, /HOUSE_SCROLL_ZOOM_MAX = 1\.025/);
+  assert.match(houseExplorer, /HOUSE_MOBILE_BREAKPOINT = 700/);
+  assert.match(houseExplorer, /IntersectionObserver/);
+  assert.match(houseExplorer, /requestAnimationFrame/);
+  assert.match(houseExplorer, /addEventListener\("scroll", scheduleScrollZoom, \{ passive: true \}\)/);
+  assert.match(houseExplorer, /matchMedia\("\(prefers-reduced-motion: reduce\)"\)/);
+  assert.match(houseExplorer, /data-house-motion=\{detailed \? "subtle-zoom" : "none"\}/);
+  assert.match(css, /scale\(\.975\)/);
+  assert.match(css, /scale\(\.985\)/);
+  assert.match(css, /transform 1050ms cubic-bezier\(\.16, 1, \.3, 1\)/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.house-stage\.is-detailed \.house-art-layer[\s\S]*transform: none !important/);
+  assert.doesNotMatch(packageFile, /framer-motion|gsap|three|animejs/);
+});
+
 test("Problem Finder and search retain accessible labels, live results, and recovery actions", async () => {
   const [finder, search] = await Promise.all([
     readProjectFile("components/ProblemFinder.tsx"),
