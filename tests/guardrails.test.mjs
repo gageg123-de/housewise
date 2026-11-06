@@ -64,7 +64,7 @@ test("mobile House Explorer uses direct hotspots, a compact synchronized rail, a
   assert.match(houseExplorer, /rail\.scrollTo/);
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*\.house-stage\.is-detailed\s*\{[^}]*aspect-ratio:\s*4 \/ 3/s);
   assert.match(css, /\.house-stage\.is-detailed \.house-art-layer\s*\{[^}]*width:\s*112%[^}]*left:\s*-6%/s);
-  assert.match(css, /\.house-stage\.is-detailed \.house-hotspot\s*\{[^}]*width:\s*45px[^}]*height:\s*45px[^}]*position:\s*absolute/s);
+  assert.match(css, /\.house-stage\.is-detailed \.house-hotspot\s*\{[^}]*width:\s*45px[^}]*height:\s*45px[^}]*position:\s*absolute[^}]*transform:\s*translate\(-50%, -50%\)/s);
   assert.match(css, /\.house-room-rail\s*\{[^}]*display:\s*flex[^}]*overflow-x:\s*auto/s);
   assert.match(css, /\.house-recommendations\s*\{[^}]*min-height:\s*0/s);
   assert.match(css, /\.house-hotspot-list\s*\{[^}]*position:\s*static[^}]*grid-template-columns:\s*1fr 1fr/s);

@@ -10,7 +10,7 @@
     "detailedX": 50,
     "detailedY": 10,
     "mobileDetailedX": 50,
-    "mobileDetailedY": 10,
+    "mobileDetailedY": 12,
     "highlight": { "x": 18, "y": 1, "width": 69, "height": 35, "clipPath": "polygon(0 55%, 50% 0, 100% 55%, 94% 100%, 8% 100%)" },
     "articleSlugs": ["mold-in-attic", "ceiling-wet-after-rain", "ac-ductwork-sweating-in-attic"]
   },
@@ -24,8 +24,8 @@
     "y": 45,
     "detailedX": 91,
     "detailedY": 79,
-    "mobileDetailedX": 80,
-    "mobileDetailedY": 79,
+    "mobileDetailedX": 86,
+    "mobileDetailedY": 84,
     "highlight": { "x": 86, "y": 68, "width": 13, "height": 20, "clipPath": "polygon(10% 20%, 55% 0, 100% 25%, 92% 100%, 15% 92%)" },
     "articleSlugs": ["ac-running-but-not-cooling", "water-around-indoor-ac-unit", "can-replacing-registers-improve-airflow"]
   },
@@ -99,7 +99,7 @@
     "y": 52,
     "detailedX": 10,
     "detailedY": 54,
-    "mobileDetailedX": 12,
+    "mobileDetailedX": 15,
     "mobileDetailedY": 54,
     "highlight": { "x": 3, "y": 29, "width": 17, "height": 48, "clipPath": "polygon(13% 0, 100% 5%, 89% 100%, 0 91%)" },
     "articleSlugs": ["condensation-inside-windows", "window-leaking-when-it-rains", "mold-growing-around-windows"]

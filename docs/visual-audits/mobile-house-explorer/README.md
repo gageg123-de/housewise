@@ -50,4 +50,4 @@ The `baseline/` directory contains production screenshots from the starting comm
 
 Interactive browser checks covered every hotspot, the horizontal rail, keyboard activation, recommendation links, one-time entrance motion, reduced motion, and the required responsive widths. Real iOS rubber-band behavior was not available in this environment and remains a device-only limitation.
 
-The mandatory refinement pass moved the edge-adjacent HVAC and Front Door targets inward and added a Detailed-only absolute-positioning override. The final 320, 375, 390, and 430px rendered checks confirm every full 45px target remains inside the clipped visual stage after selection.
+The mandatory refinement pass moved the edge-adjacent HVAC, Windows, Roof / Attic, and Front Door targets inward, separated the HVAC and Garage target centers, and gave every Detailed marker the same centered absolute positioning before and after selection. The final 320, 375, 390, and 430px rendered checks confirm every full 45px target remains inside the clipped visual stage in both states.

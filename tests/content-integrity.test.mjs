@@ -46,9 +46,27 @@ test("mobile detailed-house coordinates keep all nine touch markers inside the f
     assert.ok(hotspot.mobileDetailedX >= 10 && hotspot.mobileDetailedX <= 90, `${hotspot.id}: mobile x is too close to the clipped edge`);
     assert.ok(hotspot.mobileDetailedY >= 9 && hotspot.mobileDetailedY <= 85, `${hotspot.id}: mobile y is too close to the clipped edge`);
   }
-  assert.equal(houseExplorer.find((item) => item.id === "windows")?.mobileDetailedX, 12);
-  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedX, 80);
+  assert.equal(houseExplorer.find((item) => item.id === "windows")?.mobileDetailedX, 15);
+  assert.equal(houseExplorer.find((item) => item.id === "roof-attic")?.mobileDetailedY, 12);
+  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedX, 86);
+  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedY, 84);
   assert.equal(houseExplorer.find((item) => item.id === "front-door")?.mobileDetailedY, 78);
+
+  const narrowArtWidth = 310;
+  const narrowArtHeight = 207;
+  const targetRadius = 22.5;
+  for (let leftIndex = 0; leftIndex < houseExplorer.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < houseExplorer.length; rightIndex += 1) {
+      const left = houseExplorer[leftIndex];
+      const right = houseExplorer[rightIndex];
+      const horizontalSeparation = Math.abs(left.mobileDetailedX - right.mobileDetailedX) / 100 * narrowArtWidth;
+      const verticalSeparation = Math.abs(left.mobileDetailedY - right.mobileDetailedY) / 100 * narrowArtHeight;
+      assert.ok(
+        horizontalSeparation > targetRadius || verticalSeparation > targetRadius,
+        `${left.id} and ${right.id}: one mobile target center is covered by the other target`,
+      );
+    }
+  }
 });
 
 test("article taxonomy uses canonical configured values", () => {
