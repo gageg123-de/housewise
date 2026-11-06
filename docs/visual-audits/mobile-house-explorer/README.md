@@ -33,7 +33,7 @@ The old stage height included a large two-column selector below a comparatively 
 The `baseline/` directory contains production screenshots from the starting commit. The `after/` directory contains the local exported build at all required breakpoints:
 
 - 320, 375, 390, 430, 600, 700, 768, 1024, and 1440px initial states
-- 390px Kitchen-selected state
+- Kitchen-selected states at 375, 390, 430, and 1440px
 - 390px Classic and Explorer V1 restoration-mode checks
 - full-page and explorer-section views
 
@@ -49,3 +49,5 @@ The `baseline/` directory contains production screenshots from the starting comm
 - The 768px, 1024px, and 1440px screenshots confirm the existing non-mobile composition is unchanged.
 
 Interactive browser checks covered every hotspot, the horizontal rail, keyboard activation, recommendation links, one-time entrance motion, reduced motion, and the required responsive widths. Real iOS rubber-band behavior was not available in this environment and remains a device-only limitation.
+
+The mandatory refinement pass moved the edge-adjacent HVAC and Front Door targets inward and added a Detailed-only absolute-positioning override. The final 320, 375, 390, and 430px rendered checks confirm every full 45px target remains inside the clipped visual stage after selection.

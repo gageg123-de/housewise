@@ -24,7 +24,7 @@
     "y": 45,
     "detailedX": 91,
     "detailedY": 79,
-    "mobileDetailedX": 89,
+    "mobileDetailedX": 80,
     "mobileDetailedY": 79,
     "highlight": { "x": 86, "y": 68, "width": 13, "height": 20, "clipPath": "polygon(10% 20%, 55% 0, 100% 25%, 92% 100%, 15% 92%)" },
     "articleSlugs": ["ac-running-but-not-cooling", "water-around-indoor-ac-unit", "can-replacing-registers-improve-airflow"]
@@ -115,7 +115,7 @@
     "detailedX": 49,
     "detailedY": 84,
     "mobileDetailedX": 49,
-    "mobileDetailedY": 84,
+    "mobileDetailedY": 78,
     "highlight": { "x": 42, "y": 60, "width": 15, "height": 32, "clipPath": "polygon(15% 0, 87% 0, 100% 100%, 0 100%)" },
     "articleSlugs": ["front-door-leaking-when-it-rains"]
   },

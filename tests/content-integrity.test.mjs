@@ -47,7 +47,8 @@ test("mobile detailed-house coordinates keep all nine touch markers inside the f
     assert.ok(hotspot.mobileDetailedY >= 9 && hotspot.mobileDetailedY <= 85, `${hotspot.id}: mobile y is too close to the clipped edge`);
   }
   assert.equal(houseExplorer.find((item) => item.id === "windows")?.mobileDetailedX, 12);
-  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedX, 89);
+  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedX, 80);
+  assert.equal(houseExplorer.find((item) => item.id === "front-door")?.mobileDetailedY, 78);
 });
 
 test("article taxonomy uses canonical configured values", () => {
