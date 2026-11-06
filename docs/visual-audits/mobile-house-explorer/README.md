@@ -1,7 +1,7 @@
 # Mobile House Explorer visual audit
 
-Date: 2026-11-05  
-Starting commit: `2f945160ffde928102e07389e21dfe027ca8c4d4`  
+Date: 2026-11-05
+Starting commit: `2f945160ffde928102e07389e21dfe027ca8c4d4`
 Rollback tag: `house-explorer-before-mobile-redesign-2026-11-05`
 
 ## Approach
