@@ -19,6 +19,9 @@ test("homepage renders product content and metadata", async () => {
       assert.match(html, /data-house-motion="subtle-zoom"/);
       assert.match(html, /src="\/images\/house-explorer-detailed\.webp"/);
       assert.match(html, /width="1536" height="1024"/);
+      assert.match(html, /Tap an area of the house to explore common problems\./);
+      assert.equal((html.match(/data-room-id=/g) || []).length, 9);
+      assert.equal((html.match(/--hotspot-mobile-x:/g) || []).length, 9);
       assert.doesNotMatch(html, /Isometric cutaway home explorer/);
     } else {
       assert.match(html, /data-house-visual="v1"/);

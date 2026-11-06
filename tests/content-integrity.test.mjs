@@ -23,6 +23,7 @@ test("house explorer hotspots use unique identifiers and published destinations"
     assert.ok(hotspot.label && hotspot.prompt && hotspot.categoryLabel);
     assert.ok(hotspot.x >= 0 && hotspot.x <= 100 && hotspot.y >= 0 && hotspot.y <= 100);
     assert.ok(hotspot.detailedX >= 0 && hotspot.detailedX <= 100 && hotspot.detailedY >= 0 && hotspot.detailedY <= 100);
+    assert.ok(hotspot.mobileDetailedX >= 0 && hotspot.mobileDetailedX <= 100 && hotspot.mobileDetailedY >= 0 && hotspot.mobileDetailedY <= 100);
     for (const field of ["x", "y", "width", "height"]) assert.ok(hotspot.highlight[field] >= 0 && hotspot.highlight[field] <= 100, `${hotspot.id}: invalid highlight ${field}`);
     assert.ok(hotspot.highlight.width > 0 && hotspot.highlight.height > 0 && hotspot.highlight.clipPath.startsWith("polygon("));
     const categoryMatch = hotspot.categoryHref.match(/^\/([a-z0-9-]+)\/$/);
@@ -37,6 +38,16 @@ test("detailed house artwork is a responsive, budgeted project asset", async () 
   const image = await stat(new URL("../public/images/house-explorer-detailed.webp", import.meta.url));
   assert.ok(image.size > 100_000, "detailed house artwork is unexpectedly small");
   assert.ok(image.size <= 200_000, `detailed house artwork exceeds the 200 KB visual budget: ${image.size}`);
+});
+
+test("mobile detailed-house coordinates keep all nine touch markers inside the focused artwork", () => {
+  assert.equal(houseExplorer.length, 9);
+  for (const hotspot of houseExplorer) {
+    assert.ok(hotspot.mobileDetailedX >= 10 && hotspot.mobileDetailedX <= 90, `${hotspot.id}: mobile x is too close to the clipped edge`);
+    assert.ok(hotspot.mobileDetailedY >= 9 && hotspot.mobileDetailedY <= 85, `${hotspot.id}: mobile y is too close to the clipped edge`);
+  }
+  assert.equal(houseExplorer.find((item) => item.id === "windows")?.mobileDetailedX, 12);
+  assert.equal(houseExplorer.find((item) => item.id === "hvac")?.mobileDetailedX, 89);
 });
 
 test("article taxonomy uses canonical configured values", () => {

@@ -18,6 +18,8 @@ export type HouseHotspot = {
   y: number;
   detailedX: number;
   detailedY: number;
+  mobileDetailedX: number;
+  mobileDetailedY: number;
   highlight: {
     x: number;
     y: number;

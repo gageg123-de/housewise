@@ -216,10 +216,34 @@ function DetailedHouseIllustration({ hotspots, selected, hovered }: { hotspots: 
 export function HouseExplorer({ hotspots, visualVariant }: { hotspots: HouseHotspot[]; visualVariant: HouseVisualVariant }) {
   const [selectedId, setSelectedId] = useState<string | null>(hotspots[0]?.id ?? null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [mobileViewportReady, setMobileViewportReady] = useState(false);
+  const roomRailRef = useRef<HTMLDivElement>(null);
   const selected = hotspots.find((hotspot) => hotspot.id === selectedId) ?? null;
   const detailed = visualVariant === "detailed";
   const stageRef = useDetailedHouseMotion(detailed);
-  return <div className={`house-explorer${detailed ? " has-detailed-art" : ""}`} data-analytics-event="house_explorer_view" data-house-visual={visualVariant}>
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia(`(max-width: ${HOUSE_MOBILE_BREAKPOINT}px)`);
+    const frame = window.requestAnimationFrame(() => {
+      if (detailed && mobileQuery.matches) setSelectedId(null);
+      setMobileViewportReady(true);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [detailed]);
+
+  useEffect(() => {
+    if (!selectedId || !mobileViewportReady || window.innerWidth > HOUSE_MOBILE_BREAKPOINT) return;
+    const rail = roomRailRef.current;
+    const active = rail?.querySelector<HTMLElement>(`[data-room-id="${selectedId}"]`);
+    if (!rail || !active) return;
+    const targetLeft = active.offsetLeft - (rail.clientWidth - active.offsetWidth) / 2;
+    rail.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+    });
+  }, [mobileViewportReady, selectedId]);
+
+  return <div className={`house-explorer${detailed ? " has-detailed-art" : ""}${mobileViewportReady ? " is-mobile-ready" : ""}`} data-analytics-event="house_explorer_view" data-house-visual={visualVariant}>
     <div ref={stageRef} className={`house-stage${detailed ? " is-detailed" : " is-v1"}`} data-house-motion={detailed ? "subtle-zoom" : "none"}>
       <div className="house-art-layer">
         {detailed
@@ -233,6 +257,8 @@ export function HouseExplorer({ hotspots, visualVariant }: { hotspots: HouseHots
           style={{
             "--hotspot-x": `${detailed ? hotspot.detailedX : hotspot.x}%`,
             "--hotspot-y": `${detailed ? hotspot.detailedY : hotspot.y}%`,
+            "--hotspot-mobile-x": `${detailed ? hotspot.mobileDetailedX : hotspot.x}%`,
+            "--hotspot-mobile-y": `${detailed ? hotspot.mobileDetailedY : hotspot.y}%`,
           } as CSSProperties}
           aria-pressed={selectedId === hotspot.id}
           aria-controls="house-recommendation-panel"
@@ -247,14 +273,33 @@ export function HouseExplorer({ hotspots, visualVariant }: { hotspots: HouseHots
         </div>
       </div>
     </div>
+    {detailed ? <nav className="house-room-nav" aria-label="Choose an area another way">
+      <p><span>All 9 areas</span><span aria-hidden="true">Swipe to browse →</span></p>
+      <div className="house-room-rail" ref={roomRailRef}>
+        {hotspots.map((hotspot) => <button
+          key={hotspot.id}
+          type="button"
+          aria-pressed={selectedId === hotspot.id}
+          aria-controls="house-recommendation-panel"
+          className={selectedId === hotspot.id ? "is-selected" : ""}
+          data-analytics-event="house_hotspot_select"
+          data-hotspot={hotspot.id}
+          data-room-id={hotspot.id}
+          onClick={() => setSelectedId(hotspot.id)}
+        >{hotspot.label}</button>)}
+      </div>
+    </nav> : null}
     <aside className="house-recommendations" id="house-recommendation-panel" aria-labelledby="house-panel-title">
-      <p className="eyebrow">Selected area</p>
+      {detailed ? <div className="house-mobile-prerender-prompt" aria-hidden="true"><p className="eyebrow">Start here</p><h3>Explore the house</h3><p>Tap an area of the house to explore common problems.</p></div> : null}
       {selected ? <>
+        <p className="eyebrow">Selected area</p>
         <div className="house-panel-heading"><h3 id="house-panel-title">{selected.label}</h3><button type="button" className="house-clear" onClick={() => setSelectedId(null)}>Clear</button></div>
         <p>{selected.prompt}</p>
         <ul>{selected.articles.map((article) => <li key={article.slug}><Link href={article.href} data-analytics-event="house_problem_select" data-hotspot={selected.id} data-result-slug={article.slug}><strong>{article.title}</strong><span>{article.description}</span><i aria-hidden="true">→</i></Link></li>)}</ul>
         <Link className="house-category-link" href={selected.categoryHref} data-analytics-event="house_category_click" data-hotspot={selected.id}>{selected.categoryLabel} →</Link>
-      </> : <div className="house-empty"><h3 id="house-panel-title">Choose a room or system</h3><p>Select a labeled area on the house to see a short list of real troubleshooting guides.</p></div>}
+      </> : detailed
+        ? <div className="house-empty"><p className="eyebrow">Start here</p><h3 id="house-panel-title">Explore the house</h3><p>Tap an area of the house to explore common problems.</p></div>
+        : <div className="house-empty"><h3 id="house-panel-title">Choose a room or system</h3><p>Select a labeled area on the house to see a short list of real troubleshooting guides.</p></div>}
       <p className="sr-only" aria-live="polite">{selected ? `${selected.label} selected. ${selected.articles.length} ${selected.articles.length === 1 ? "guide" : "guides"} shown.` : "House selection cleared."}</p>
     </aside>
   </div>;

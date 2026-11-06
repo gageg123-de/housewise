@@ -50,6 +50,26 @@ test("house explorer retains keyboard controls, selected state, and live announc
   assert.match(houseExplorer, /type="button"/);
 });
 
+test("mobile House Explorer uses direct hotspots, a compact synchronized rail, and an unselected ready state", async () => {
+  const [houseExplorer, css] = await Promise.all([
+    readProjectFile("components/HouseExplorer.tsx"),
+    readProjectFile("app/globals.css"),
+  ]);
+  assert.match(houseExplorer, /detailed && mobileQuery\.matches\) setSelectedId\(null\)/);
+  assert.match(houseExplorer, /Tap an area of the house to explore common problems\./);
+  assert.match(houseExplorer, /className="house-room-rail"/);
+  assert.match(houseExplorer, /data-room-id=\{hotspot\.id\}/);
+  assert.match(houseExplorer, /aria-pressed=\{selectedId === hotspot\.id\}/);
+  assert.match(houseExplorer, /--hotspot-mobile-x/);
+  assert.match(houseExplorer, /rail\.scrollTo/);
+  assert.match(css, /@media \(max-width: 700px\)[\s\S]*\.house-stage\.is-detailed\s*\{[^}]*aspect-ratio:\s*4 \/ 3/s);
+  assert.match(css, /\.house-stage\.is-detailed \.house-art-layer\s*\{[^}]*width:\s*112%[^}]*left:\s*-6%/s);
+  assert.match(css, /\.house-stage\.is-detailed \.house-hotspot\s*\{[^}]*width:\s*45px[^}]*height:\s*45px/s);
+  assert.match(css, /\.house-room-rail\s*\{[^}]*display:\s*flex[^}]*overflow-x:\s*auto/s);
+  assert.match(css, /\.house-recommendations\s*\{[^}]*min-height:\s*0/s);
+  assert.match(css, /\.house-hotspot-list\s*\{[^}]*position:\s*static[^}]*grid-template-columns:\s*1fr 1fr/s);
+});
+
 test("homepage variant defaults safely to classic", async () => {
   const [variant, page, classic] = await Promise.all([
     readProjectFile("lib/home-variant.ts"),
@@ -96,6 +116,7 @@ test("detailed house motion stays subtle, event-driven, and reduced-motion safe"
   assert.match(css, /scale\(\.985\)/);
   assert.match(css, /transform 1050ms cubic-bezier\(\.16, 1, \.3, 1\)/);
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.house-stage\.is-detailed \.house-art-layer[\s\S]*transform: none !important/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.house-room-rail button[\s\S]*transition: none !important/);
   assert.doesNotMatch(packageFile, /framer-motion|gsap|three|animejs/);
 });
 

@@ -12,12 +12,12 @@ export function ExplorerHomePage({ schemaMarkup }: { schemaMarkup: string }) {
   const houseVisual = normalizeHouseVisualVariant(process.env.NEXT_PUBLIC_HOUSE_EXPLORER_VISUAL);
   const featured = articles.filter((article) => article.featured_status).slice(0, 3);
   return <SiteShell>
-    <section className="explorer-hero">
+    <section className={`explorer-hero${houseVisual === "detailed" ? " is-detailed-explorer" : ""}`}>
       <div className="explorer-hero-copy"><p className="eyebrow">{tagline}</p><h1>Your House Is Doing <em>WHAT?</em></h1><p>Something weird happening at home? Explore your house or describe the problem to find out what might be going on.</p></div>
       <form className="search-box explorer-search" action={routePath("/search/")} data-analytics-event="site_search"><label className="sr-only" htmlFor="explorer-site-search">Search home problems</label><input id="explorer-site-search" name="q" type="search" placeholder="What’s happening in your house?"/><button type="submit">Search guides</button></form>
       <Link className="finder-link" href="/find-a-problem/">Not sure where to start? Use the Problem Finder →</Link>
     </section>
-    <section className="explorer-section" aria-labelledby="explore-house-title">
+    <section className={`explorer-section${houseVisual === "detailed" ? " is-detailed-explorer" : ""}`} aria-labelledby="explore-house-title">
       <div className="explorer-intro"><div><p className="eyebrow">Interactive home guide</p><h2 id="explore-house-title">Explore Your House</h2></div><p>Tap a room or part of the house to find common problems. The house helps you choose a reading path—it does not diagnose the cause.</p></div>
       <HouseExplorer hotspots={hotspots} visualVariant={houseVisual}/>
     </section>

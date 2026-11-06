@@ -9,6 +9,8 @@
     "y": 13,
     "detailedX": 50,
     "detailedY": 10,
+    "mobileDetailedX": 50,
+    "mobileDetailedY": 10,
     "highlight": { "x": 18, "y": 1, "width": 69, "height": 35, "clipPath": "polygon(0 55%, 50% 0, 100% 55%, 94% 100%, 8% 100%)" },
     "articleSlugs": ["mold-in-attic", "ceiling-wet-after-rain", "ac-ductwork-sweating-in-attic"]
   },
@@ -22,6 +24,8 @@
     "y": 45,
     "detailedX": 91,
     "detailedY": 79,
+    "mobileDetailedX": 89,
+    "mobileDetailedY": 79,
     "highlight": { "x": 86, "y": 68, "width": 13, "height": 20, "clipPath": "polygon(10% 20%, 55% 0, 100% 25%, 92% 100%, 15% 92%)" },
     "articleSlugs": ["ac-running-but-not-cooling", "water-around-indoor-ac-unit", "can-replacing-registers-improve-airflow"]
   },
@@ -35,6 +39,8 @@
     "y": 39,
     "detailedX": 23,
     "detailedY": 37,
+    "mobileDetailedX": 23,
+    "mobileDetailedY": 37,
     "highlight": { "x": 9, "y": 29, "width": 34, "height": 28, "clipPath": "polygon(4% 8%, 100% 8%, 96% 94%, 0 100%)" },
     "articleSlugs": ["toilet-gurgles-randomly", "toilet-water-rises-when-another-toilet-flushes", "shower-drain-gurgles-when-toilet-flushes"]
   },
@@ -48,6 +54,8 @@
     "y": 38,
     "detailedX": 65,
     "detailedY": 35,
+    "mobileDetailedX": 65,
+    "mobileDetailedY": 35,
     "highlight": { "x": 46, "y": 28, "width": 40, "height": 29, "clipPath": "polygon(0 5%, 100% 0, 95% 100%, 5% 96%)" },
     "articleSlugs": ["dishwasher-not-draining", "dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes"]
   },
@@ -61,6 +69,8 @@
     "y": 62,
     "detailedX": 61,
     "detailedY": 72,
+    "mobileDetailedX": 61,
+    "mobileDetailedY": 72,
     "highlight": { "x": 49, "y": 57, "width": 21, "height": 28, "clipPath": "polygon(0 4%, 100% 0, 96% 100%, 3% 95%)" },
     "articleSlugs": ["dryer-taking-two-cycles", "dryer-keeps-shutting-off", "dryer-smells-like-burning", "toilet-bubbles-when-washer-drains"]
   },
@@ -74,6 +84,8 @@
     "y": 62,
     "detailedX": 25,
     "detailedY": 72,
+    "mobileDetailedX": 25,
+    "mobileDetailedY": 72,
     "highlight": { "x": 8, "y": 55, "width": 39, "height": 35, "clipPath": "polygon(2% 0, 100% 2%, 96% 100%, 0 91%)" },
     "articleSlugs": ["lights-flicker-randomly", "one-outlet-has-no-power", "outlet-buzzing"]
   },
@@ -87,6 +99,8 @@
     "y": 52,
     "detailedX": 10,
     "detailedY": 54,
+    "mobileDetailedX": 12,
+    "mobileDetailedY": 54,
     "highlight": { "x": 3, "y": 29, "width": 17, "height": 48, "clipPath": "polygon(13% 0, 100% 5%, 89% 100%, 0 91%)" },
     "articleSlugs": ["condensation-inside-windows", "window-leaking-when-it-rains", "mold-growing-around-windows"]
   },
@@ -100,6 +114,8 @@
     "y": 79,
     "detailedX": 49,
     "detailedY": 84,
+    "mobileDetailedX": 49,
+    "mobileDetailedY": 84,
     "highlight": { "x": 42, "y": 60, "width": 15, "height": 32, "clipPath": "polygon(15% 0, 87% 0, 100% 100%, 0 100%)" },
     "articleSlugs": ["front-door-leaking-when-it-rains"]
   },
@@ -113,6 +129,8 @@
     "y": 76,
     "detailedX": 78,
     "detailedY": 72,
+    "mobileDetailedX": 78,
+    "mobileDetailedY": 72,
     "highlight": { "x": 67, "y": 54, "width": 25, "height": 33, "clipPath": "polygon(0 0, 100% 5%, 94% 100%, 3% 96%)" },
     "articleSlugs": ["garage-smells-musty"]
   }

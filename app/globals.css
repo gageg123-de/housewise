@@ -265,6 +265,7 @@ table { display: block; max-width: 100%; overflow-x: auto; }
 .house-recommendations li i { position: absolute; top: 50%; right: 16px; transform: translateY(-50%); color: var(--green); font-style: normal; font-weight: 900; }
 .house-category-link { color: var(--green-dark); font-size: 14px; font-weight: 800; text-underline-offset: 4px; }
 .house-empty { padding-top: 15px; }
+.house-room-nav, .house-mobile-prerender-prompt { display: none; }
 .explorer-categories { padding: 76px max(24px, calc((100% - var(--max)) / 2 + 24px)); display: grid; grid-template-columns: minmax(270px, .75fr) 1.25fr; gap: 76px; background: var(--green-dark); color: white; }
 .explorer-categories .eyebrow { color: #a9d7c7; }
 .explorer-categories > div:first-child > p:not(.eyebrow) { color: #d5e4df; }
@@ -294,26 +295,71 @@ table { display: block; max-width: 100%; overflow-x: auto; }
   .explorer-hero { padding: 38px 18px 48px; }
   .explorer-hero h1 { font-size: clamp(46px, 15vw, 68px); }
   .explorer-hero-copy > p:not(.eyebrow) { font-size: 17px; }
+  .explorer-hero.is-detailed-explorer { padding: 28px 16px 34px; }
+  .explorer-hero.is-detailed-explorer h1 { font-size: clamp(42px, 13.5vw, 58px); line-height: .94; }
+  .explorer-hero.is-detailed-explorer .explorer-hero-copy > p:not(.eyebrow) { margin: 16px auto 22px; font-size: 16px; }
+  .explorer-hero.is-detailed-explorer .finder-link { margin-top: 14px; }
+  .explorer-section.is-detailed-explorer { padding: 38px 14px 54px; }
+  .explorer-section.is-detailed-explorer .explorer-intro { gap: 16px; margin-bottom: 20px; }
+  .explorer-section.is-detailed-explorer .explorer-intro > p { font-size: 16px; }
+  .house-explorer.has-detailed-art { gap: 10px; }
   .house-stage { min-height: 0; padding: 8px 8px 18px; overflow: visible; }
-  .house-stage.is-detailed { aspect-ratio: auto; }
+  .house-stage.is-detailed { padding: 0; overflow: hidden; border-radius: 24px; aspect-ratio: 4 / 3; }
   .house-stage.is-detailed.is-motion-ready .house-art-layer { transform: scale(.985); }
   .house-stage.is-detailed.is-motion-ready.is-motion-visible .house-art-layer { transform: scale(var(--house-scroll-scale, 1)); }
   .house-art-layer { height: auto; }
+  .house-stage.is-detailed .house-art-layer { width: 112%; height: auto; aspect-ratio: 3 / 2; left: -6%; }
   .house-art { height: auto; min-height: 0; aspect-ratio: 960 / 660; }
-  .house-art-detailed { height: auto; aspect-ratio: 3 / 2; border-radius: 16px; }
+  .house-art-detailed { height: 100%; aspect-ratio: 3 / 2; }
   .house-hotspot-list { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 4px 4px 0; }
   .house-hotspot { min-width: 0; width: 100%; position: static; transform: none; justify-content: flex-start; white-space: normal; }
   .house-hotspot:hover, .house-hotspot.is-selected { transform: none; }
+  .house-stage.is-detailed .house-hotspot-list { position: absolute; inset: 0; display: block; padding: 0; }
+  .house-stage.is-detailed .house-hotspot {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+    min-height: 45px;
+    left: var(--hotspot-mobile-x);
+    top: var(--hotspot-mobile-y);
+    justify-content: center;
+    padding: 0;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+  .house-stage.is-detailed .house-hotspot,
+  .house-stage.is-detailed .house-hotspot:hover,
+  .house-stage.is-detailed .house-hotspot.is-selected { border-color: transparent; background: transparent; box-shadow: none; backdrop-filter: none; }
+  .house-stage.is-detailed .house-hotspot:hover, .house-stage.is-detailed .house-hotspot.is-selected { transform: translate(-50%, -50%); }
+  .house-stage.is-detailed .house-hotspot > span { width: 18px; height: 18px; border: 3px solid white; box-shadow: 0 2px 8px rgb(16 47 38 / 42%); transition: transform .16s ease, box-shadow .16s ease; }
+  .house-stage.is-detailed .house-hotspot.is-selected > span { transform: scale(1.3); box-shadow: 0 0 0 5px rgb(18 75 61 / 28%), 0 3px 10px rgb(16 47 38 / 45%); }
+  .house-stage.is-detailed .house-hotspot b { width: 1px; height: 1px; position: absolute; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .house-explorer.has-detailed-art .house-room-nav { min-width: 0; display: grid; gap: 7px; padding-top: 2px; }
+  .house-room-nav > p { display: flex; justify-content: space-between; gap: 16px; margin: 0; padding: 0 4px; color: var(--green-dark); font: 800 10px/1.2 Arial, sans-serif; letter-spacing: .09em; text-transform: uppercase; }
+  .house-room-nav > p span:last-child { color: var(--muted); letter-spacing: .03em; }
+  .house-room-rail { min-width: 0; display: flex; gap: 8px; overflow-x: auto; padding: 0 4px 6px; scroll-padding-inline: 4px; scrollbar-width: none; overscroll-behavior-x: contain; touch-action: pan-x; }
+  .house-room-rail::-webkit-scrollbar { display: none; }
+  .house-room-rail button { min-height: 44px; flex: 0 0 auto; padding: 10px 16px; border: 1px solid #c7d4ca; border-radius: 999px; background: rgb(255 255 255 / 82%); color: var(--green-dark); font: 800 13px/1 Arial, sans-serif; cursor: pointer; transition: border-color .16s ease, background .16s ease, color .16s ease; }
+  .house-room-rail button.is-selected { border-color: var(--green); background: var(--green); color: white; }
   .house-recommendations { padding: 24px 20px; border-radius: 22px; }
   .house-recommendations h3 { font-size: 31px; }
+  .house-explorer.has-detailed-art .house-recommendations { min-height: 0; padding: 21px 18px; }
+  .house-explorer.has-detailed-art .house-recommendations h3 { font-size: 30px; }
+  .house-explorer.has-detailed-art .house-recommendations ul { margin: 19px 0 18px; }
+  .house-explorer.has-detailed-art .house-empty { padding-top: 0; }
+  .house-empty > p:last-child, .house-mobile-prerender-prompt > p:last-child { margin-bottom: 0; color: var(--muted); }
+  .house-explorer.has-detailed-art:not(.is-mobile-ready) .house-recommendations > * { display: none; }
+  .house-explorer.has-detailed-art:not(.is-mobile-ready) .house-recommendations > .house-mobile-prerender-prompt { display: block; }
   .house-recommendations li span { display: none; }
   .explorer-category-links { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .house-stage.is-detailed .house-art-layer { opacity: 1 !important; transform: none !important; transition: none !important; will-change: auto !important; }
+  .house-stage.is-detailed .house-hotspot > span, .house-room-rail button { transition: none !important; }
 }
 
 @media (max-width: 380px) {
-  .house-hotspot { padding-inline: 12px; }
+  .house-room-rail button { padding-inline: 14px; }
 }
