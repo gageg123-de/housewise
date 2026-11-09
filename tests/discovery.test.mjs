@@ -144,6 +144,8 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["kitchen", "dishwasher-drying"],
     ["kitchen", "dishwasher-cleaning"],
     ["kitchen", "disposal-humming"],
+    ["kitchen", "refrigerator-running"],
+    ["garage", "refrigerator-running"],
     ["kitchen", "water-sediment"],
     ["kitchen", "window-condensation"],
     ["bedroom", "window-condensation"],
@@ -1105,5 +1107,45 @@ test("garbage-disposal humming Finder and search preserve silent, leaking, sink-
   assert.equal(rankFinderArticles(registry, "kitchen", "disposal-humming")[0]?.article.slug, "garbage-disposal-hums-but-wont-spin");
   for (const location of ["yard", "garage", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "disposal-humming"), location);
+  }
+});
+
+test("refrigerator constant-running Finder and search preserve cooling, noise, frost, leak, door, and cycling intents", () => {
+  const positives = [
+    "why is my refrigerator running constantly",
+    "fridge running all the time",
+    "refrigerator never shuts off",
+    "refrigerator keeps running",
+    "refrigerator runs continuously",
+    "refrigerator compressor running constantly",
+    "fridge never stops humming",
+    "refrigerator rarely cycles off",
+    "refrigerator runs all day",
+    "refrigerator running but still cold",
+    "refrigerator won't stop running",
+    "refrigerator running longer than usual",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "refrigerator-running-constantly", query);
+  for (const query of [
+    "refrigerator not cooling",
+    "freezer cold but refrigerator warm",
+    "refrigerator making buzzing noise",
+    "refrigerator clicking",
+    "refrigerator cycling on and off rapidly",
+    "refrigerator leaking water",
+    "refrigerator icing up",
+    "freezer accumulating frost",
+    "refrigerator door not sealing",
+    "refrigerator compressor not starting",
+    "refrigerator temperature fluctuating",
+  ]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "refrigerator-running-constantly", query);
+  }
+  for (const location of ["kitchen", "garage"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "refrigerator-running"), location);
+    assert.equal(rankFinderArticles(registry, location, "refrigerator-running")[0]?.article.slug, "refrigerator-running-constantly", location);
+  }
+  for (const location of ["yard", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "refrigerator-running"), location);
   }
 });

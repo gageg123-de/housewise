@@ -12561,5 +12561,184 @@
       {"title": "How to Unjam a Garbage Disposal", "publisher": "Moen", "url": "https://solutions.moen.com/Article_Library/How_to_Unjam_a_Garbage_Disposal"},
       {"title": "Garbage Disposal FAQs", "publisher": "Waste King", "url": "https://www.wasteking.com/support/faq"}
     ]
+  },
+  {
+    "title": "Why Is My Refrigerator Running Constantly?", "slug": "refrigerator-running-constantly", "description": "Refrigerator running constantly? Learn when long cycles are normal, what to check for door-seal and airflow problems, and when to call for repair.",
+    "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior", "heat", "noise"], "room_or_location": ["kitchen", "garage"], "system": "appliances", "content_type": "diagnostic-guide",
+    "published_date": "2026-11-09", "updated_date": "2026-11-09", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": false,
+    "search_keywords": ["why is my refrigerator running constantly", "fridge running all the time", "refrigerator never shuts off", "refrigerator keeps running", "refrigerator runs continuously", "refrigerator compressor running constantly", "fridge never stops humming", "refrigerator rarely cycles off", "refrigerator runs all day", "refrigerator running but still cold", "refrigerator won't stop running", "refrigerator running longer than usual"],
+    "target_search_intent": "Help a homeowner whose refrigerator appears to run continuously determine whether it is maintaining safe temperatures, distinguish compressor operation from fan or other appliance sounds, check door closure, settings, airflow, room conditions, and frost safely, and recognize when cooling or mechanical performance needs appliance service.",
+    "direct_answer": "A refrigerator that seems to run constantly is not automatically defective. Variable-speed models may operate for long periods at low output, while hot weather, frequent door openings, new groceries, or temperature recovery can extend operation. First verify the refrigerator is holding 40°F or below with an appliance thermometer; the display may show a target rather than the actual food-compartment temperature. Then check door closure, gaskets, interior vents, model-required clearances, and unusual frost. Frequent operation with stable temperature is a different pattern from continuous operation while warming, overcooling, clicking, tripping power, or frosting heavily.",
+    "likely_causes": ["Normal long-cycle or variable-speed compressor operation", "Temperature recovery after startup, door openings, or a large warm food load", "Door obstruction, damaged gasket, or misalignment allowing warm air inward", "A control setting colder than needed or an inaccurate assumption based on the display", "Blocked interior air vents or overpacked compartments", "Restricted exterior airflow or a model-specific accessible condenser maintenance need", "Room temperature or installation conditions outside the model's intended range", "Heavy frost associated with airflow or automatic-defrost trouble", "Temperature sensor, fan, control, compressor, or sealed-system fault requiring service"],
+    "safe_checks": ["Measure refrigerator and freezer temperatures with an appliance thermometer rather than judging from runtime alone.", "Identify the model and compare its normal compressor and fan behavior with the owner's manual.", "Listen from outside the closed appliance and note whether the sound resembles a fan, compressor, ice maker, or vibration.", "Confirm the controls have not been changed accidentally and allow the model-specified stabilization time after an adjustment.", "Check that food, bins, and shelves do not prevent either door from closing fully.", "Inspect and clean accessible door gaskets according to the manufacturer instructions without bending hinges or door hardware.", "Move food away from visible interior air vents without overpacking the compartments.", "Compare recent door openings, grocery loading, startup, room heat, and garage conditions with the timing of the long operation.", "Verify model-specific exterior clearances and inspect only condenser areas the manual identifies as homeowner-serviceable after disconnecting power.", "Look for heavy or recurring frost without removing internal covers or using sharp tools or uncontrolled heat."],
+    "professional_help": "Arrange appliance service when measured temperatures remain above the safe range, the refrigerator is excessively cold despite normal settings, heavy frost returns, a fan is striking ice, the compressor repeatedly clicks without starting normally, error codes recur, or the appliance continues running with poor cooling after safe checks. Use a qualified technician for internal fan, sensor, control, compressor, inverter-drive, defrost, wiring, or sealed-system diagnosis. Stop using the appliance and disconnect power only if it can be done safely for smoke, sparking, burning odor, damaged wiring, or repeated breaker trips; use emergency services for active fire. Do not open refrigerant tubing or attempt a recharge.",
+    "related_articles": ["dryer-taking-two-cycles"],
+    "image": {
+      "src": "/images/refrigerator-running-constantly-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel refrigerator guide showing temperature measurement, an unsealed door gasket, blocked airflow, and a service indicator for abnormal cooling.",
+      "caption": "Conceptual illustration: Start with measured temperature, then check door closure, airflow, and operating conditions. These observations narrow the pattern but do not identify a failed compressor or other component.",
+      "kind": "conceptual",
+      "after_section": "normal-operation"
+    },
+    "body_sections": [
+      {
+        "id": "normal-operation",
+        "heading": "Is it normal for a refrigerator to run all the time?",
+        "paragraphs": [
+          "It can be normal for a refrigerator to operate much of the day. Whirlpool documents high-efficiency compressors and fans that run longer and at varying speeds, while Samsung documents inverter compressors that change speed with cooling demand. There is no universal rule that a refrigerator must stop every 20 minutes—or after any fixed interval.",
+          "Startup, a large grocery load, repeated door openings, a warm room, or a colder setting can increase runtime. A steady hum may also be a fan, refrigerant-flow sound, or vibration rather than proof of continuous compressor operation.",
+          "Be more concerned when the appliance cannot hold temperature, becomes excessively cold, develops heavy recurring frost, repeatedly fails to start, shows an error, or changes abruptly. Measure temperature and compare the behavior with the model manual."
+        ],
+        "table": {
+          "headers": ["What you observe", "What the pattern suggests—not proves"],
+          "rows": [
+            ["Long, quiet operation with stable temperatures", "Normal efficient or variable-speed operation may fit"],
+            ["Long operation after loading groceries or opening doors often", "The refrigerator may be recovering from added heat"],
+            ["Continuous operation with rising temperature", "Air leakage, airflow trouble, frost, or a cooling fault needs attention"],
+            ["Continuous operation while food freezes unexpectedly", "A setting, sensor, damper, or control problem may be relevant"],
+            ["Humming continues but changes when a door opens", "An interior fan may be part of what you are hearing; this does not identify a fault"]
+          ]
+        }
+      },
+      {
+        "id": "check-temperature",
+        "heading": "First, check whether the refrigerator is actually staying cold",
+        "paragraphs": [
+          "Temperature is more useful than estimated runtime. The U.S. Food and Drug Administration recommends keeping the refrigerator at 40°F or below and the freezer at 0°F. Because many controls show a setpoint or numbered setting rather than the actual cabinet temperature, the FDA recommends an appliance thermometer.",
+          "Place and read the thermometer according to its instructions and the appliance manual. A single brief reading immediately after an open door or a new grocery load does not describe the whole pattern. Record temperatures over time, along with door use and whether the refrigerator is still recovering from startup or loading.",
+          "If the compartment remains at or below 40°F and the model uses a high-efficiency or variable-speed compressor, long operation may be normal. If the temperature stays above 40°F while the appliance appears to run continuously, treat that as a cooling-performance problem rather than merely a noise complaint. If perishable food has been above 40°F for more than two hours—or the duration is uncertain—follow FDA food-safety guidance rather than assuming later cooling made the food safe."
+        ],
+        "callout": {
+          "title": "A display is not always a thermometer",
+          "text": "A control display may show the selected target, not a verified food temperature. Use an appliance thermometer and keep food safety separate from the repair diagnosis."
+        }
+      },
+      {
+        "id": "compressor-or-fan",
+        "heading": "Is the compressor running, or are you hearing a fan?",
+        "paragraphs": [
+          "An evaporator fan may move cold air inside, a condenser fan may move room air, and the compressor circulates refrigerant. Ice makers, water valves, defrosting, refrigerant flow, and shelf vibration add other sounds. A persistent hum therefore does not prove that the compressor never stops.",
+          "Listen from outside without removing a panel. Note whether sound comes from inside, low behind the cabinet, or near an ice maker, and whether it changes when a door opens. Use the observation to describe the pattern—not to identify a failed component.",
+          "A fan that runs does not prove the compressor is working. Repeated clicking, failed starts, new severe vibration, or a fan striking frost should be evaluated with measured temperatures and model-specific service information."
+        ]
+      },
+      {
+        "id": "door-seal",
+        "heading": "Could the refrigerator door be letting warm air in?",
+        "paragraphs": [
+          "Warm room air entering through an incompletely closed door adds heat and moisture. Check for food, a shelf, or a drawer preventing closure. Look for a torn, folded, dirty, loose, or separated gasket and confirm doors and drawers sit evenly.",
+          "Clean only as directed. Do not bend hinges, heat a gasket, loosen hardware, or adjust leveling parts without model instructions. A sheet-of-paper pull test can reveal uneven contact, but it cannot definitively prove the whole gasket and door assembly are good or bad.",
+          "Condensation or frost near one gasket area supports an air-leak concern but does not identify the gasket, alignment, obstruction, hinge, or cabinet fit as the cause."
+        ]
+      },
+      {
+        "id": "temperature-settings",
+        "heading": "Are the temperature settings too low?",
+        "paragraphs": [
+          "A colder-than-needed setting can increase runtime. Confirm the refrigerator and freezer controls against the owner's manual, especially after cleaning, a power interruption, or an accidental button press. Refrigerator and freezer controls may interact differently across models, so avoid a universal dial number.",
+          "Turning a control to its coldest setting does not make the refrigerator remove heat faster. Whirlpool manuals specifically note that the coldest setting does not speed initial cooling. It can instead keep the system operating longer or make food too cold. Make only a documented adjustment, allow the recommended stabilization time, and recheck with a thermometer."
+        ]
+      },
+      {
+        "id": "airflow-and-condenser",
+        "heading": "Could blocked airflow or condenser conditions be responsible?",
+        "paragraphs": [
+          "Cold air must circulate through the compartments. Containers against visible vents can create uneven temperatures and extra cooling demand. Rearrange items and avoid overpacking; do not remove internal ducts or covers.",
+          "The appliance also needs exterior airflow. Follow its manual's clearances rather than another brand's dimensions. Check documented openings, but do not pull or tip a large refrigerator unsafely or strain its water line and cord.",
+          "Dirty condenser coils are not the universal answer. GE documents enclosed NeverClean condensers, while Whirlpool notes that owner cleaning depends on the model. If the manual identifies an accessible area, disconnect power and use the approved method. Do not remove sealed covers, reach near a fan, bend tubing or fins, or run the appliance without a guard."
+        ]
+      },
+      {
+        "id": "ambient-conditions",
+        "heading": "Does a hot kitchen or garage make the refrigerator run longer?",
+        "paragraphs": [
+          "Higher room temperature, direct sun, a nearby oven, or limited ventilation can increase cooling demand. Frequent entertaining or repeated door openings can have a similar effect. Compare the change with weather, room use, recent cooking, and how often the doors have been opened.",
+          "A garage refrigerator is not automatically defective, but neither is every refrigerator designed for every garage. Manufacturer operating ranges vary, and conditions that are too hot or too cold can affect temperatures and controls. Check the model's rated environment and garage suitability. Do not copy a temperature range or clearance from a different refrigerator."
+        ]
+      },
+      {
+        "id": "frost-and-defrost",
+        "heading": "Can frost buildup cause a refrigerator to keep running?",
+        "paragraphs": [
+          "A light coating or brief defrost sound can be normal depending on the design. Heavy or recurring frost, reduced airflow, an interior fan striking ice, or a freezer that stays cold while the fresh-food section warms can make an airflow or automatic-defrost problem more plausible. The visible frost does not identify a failed heater, sensor, thermostat, fan, damper, or control board.",
+          "Do not chip ice with a knife, puncture an interior liner, use an open flame, or apply a heat gun or hair dryer. Some refrigerators use flammable refrigerant, and hidden tubing may be close to interior surfaces. Follow only the model's documented defrost procedure; recurring frost or fan contact needs appliance service."
+        ]
+      },
+      {
+        "id": "mechanical-faults",
+        "heading": "Could the compressor or another component be failing?",
+        "paragraphs": [
+          "Runtime alone cannot choose the component. Sensor or control trouble can call for too much cooling; fan or defrost trouble can restrict airflow; compressor, inverter-drive, or sealed-system faults can leave the appliance running while cooling poorly.",
+          "Poor cooling, recurring errors, repeated clicking or failed starts, severe new vibration, abnormal cabinet heat, and heavy recurring frost are service clues. None proves low refrigerant or compressor failure from outside.",
+          "Do not attach gauges, add refrigerant, use leak sealer, test live compressor terminals, open inverter electronics, bypass controls, or puncture tubing. Some refrigerators use flammable R-600a refrigerant. EPA rules and manufacturer warnings place sealed-system work with qualified technicians."
+        ]
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What can you safely check before calling for service?",
+        "bullets": [
+          "Measure refrigerator and freezer temperatures with an appliance thermometer.",
+          "Record whether temperatures are stable, rising, or excessively cold while the appliance runs.",
+          "Identify the model and review its normal sounds, compressor behavior, alerts, settings, clearances, and maintenance instructions.",
+          "Listen from outside and note whether the persistent sound seems internal, low behind the cabinet, or related to the ice maker.",
+          "Confirm the controls are at the model's recommended starting settings rather than the coldest setting.",
+          "Check that doors and drawers close completely and that food or shelving is not blocking them.",
+          "Inspect accessible gasket surfaces for dirt, folds, tears, loose areas, condensation, or frost.",
+          "Move food away from visible interior vents and avoid overpacking.",
+          "Note recent installation, power loss, grocery loading, frequent openings, hot weather, nearby heat, and garage conditions.",
+          "Verify model-specific exterior clearances and clean only a manufacturer-approved, homeowner-accessible condenser area after disconnecting power.",
+          "Photograph heavy frost, record error codes, and arrange service when temperatures or warning signs remain abnormal."
+        ],
+        "callout": {
+          "title": "Keep electrical and refrigeration systems closed",
+          "text": "Do not operate the refrigerator with guards or service covers removed. Do not reach near fans, probe live wiring, test compressor terminals, open refrigerant tubing, add refrigerant, or use an uncontrolled heat source to remove frost."
+        }
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not judge the appliance from a universal 20-minute cycle rule.",
+          "Do not assume a cold compartment makes continuous operation automatically normal.",
+          "Do not diagnose low refrigerant or compressor failure from runtime or humming alone.",
+          "Do not set the controls colder to make the refrigerator cool faster.",
+          "Do not treat a paper test as definitive proof of gasket condition.",
+          "Do not clean coils or remove a grille unless the model manual identifies that area as owner-serviceable.",
+          "Do not tip or drag a heavy refrigerator, strain its water line, or run it with a cover removed.",
+          "Do not chip frost, apply flame or uncontrolled heat, puncture panels, bypass controls, or attempt a refrigerant recharge.",
+          "Do not calculate a universal energy cost from hours of audible operation; compressor speed and power demand vary."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call an appliance technician?",
+        "paragraphs": [
+          "Arrange service when the refrigerator cannot remain at 40°F or below, the freezer cannot remain near its intended temperature, food freezes unexpectedly despite normal settings, heavy frost returns, a fan strikes ice, error codes recur, or long operation continues with poor cooling after safe checks. Repeated clicking or failed starts, a sudden major noise change, or a persistent unexplained temperature swing also warrants model-specific diagnosis.",
+          "Stop using the appliance for smoke, sparking, electrical burning odor, damaged wiring, or repeated breaker trips. Disconnect power only if the plug or correct breaker can be reached without touching damaged or wet equipment. For an active electrical fire, keep away and call emergency services.",
+          "An appliance technician can evaluate internal airflow, defrost components, sensors, controls, fans, the compressor, inverter electronics, and the sealed system. Runtime and external temperature observations help that diagnosis; they do not replace it."
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A refrigerator running for long periods is not automatically defective. Start with measured temperature, then compare compressor or fan sounds, door closure, settings, airflow, recent use, and room conditions with the model manual.",
+          "A refrigerator that runs frequently while holding safe temperatures may be operating normally. One that runs continuously while warming, overcooling, frosting heavily, clicking, tripping power, or showing errors needs professional evaluation. Do not diagnose or open the sealed refrigeration system yourself."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Motor or Compressor Runs Too Much—Refrigerator", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Bottom_Freezer_Refrigerator/Operation/Other_Concerns/Motor_or_Compressor_Runs_too_Much_-_Refrigerator"},
+      {"title": "Refrigerator or Freezer—Normal Run Time", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=16932"},
+      {"title": "What Is a Digital Inverter Compressor in Samsung Frost Free Refrigerators?", "publisher": "Samsung", "url": "https://www.samsung.com/in/support/home-appliances/what-is-a-digital-inverter-compressor-in-samsung-frost-free-refrigerators/"},
+      {"title": "Understanding the Different Noises Coming From Your Samsung Refrigerator", "publisher": "Samsung", "url": "https://www.samsung.com/us/support/troubleshoot/TSG10007113/"},
+      {"title": "How and When to Safely Clean the Condenser Coils", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Product_Info/Cleaning_and_Care/How_and_When_to_Safely_Clean_the_Condenser_Coils"},
+      {"title": "Refrigerator—NeverClean Condenser", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=16897"},
+      {"title": "Refrigerator Thermometers—Cold Facts About Food Safety", "publisher": "U.S. Food and Drug Administration", "url": "https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety"},
+      {"title": "Refrigerator Owner's Manual", "publisher": "Whirlpool", "url": "https://www.whirlpool.com/content/dam/global/documents/202309/owners-manual-w11449055-revE.pdf"},
+      {"title": "Stationary Refrigeration Service Practice Requirements", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements"}
+    ]
   }
 ]

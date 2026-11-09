@@ -1289,3 +1289,24 @@ test("garbage-disposal humming guide renders model-specific jam, overload, and p
   const reciprocal = await render("/appliances/dishwasher-not-draining");
   assert.match(await reciprocal.text(), /href="\/plumbing\/garbage-disposal-hums-but-wont-spin\/"/);
 });
+
+test("refrigerator constant-running guide renders temperature-first diagnosis, safety, schema, and visual", async () => {
+  const response = await render("/appliances/refrigerator-running-constantly");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Refrigerator Running Constantly\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/refrigerator-running-constantly\//);
+  assert.match(html, /Is it normal for a refrigerator to run all the time\?/);
+  assert.match(html, /First, check whether the refrigerator is actually staying cold/);
+  assert.match(html, /Is the compressor running, or are you hearing a fan\?/);
+  assert.match(html, /Could blocked airflow or condenser conditions be responsible\?/);
+  assert.match(html, /Can frost buildup cause a refrigerator to keep running\?/);
+  assert.match(html, /Keep electrical and refrigeration systems closed/);
+  assert.match(html, /40°F or below/);
+  assert.match(html, /src="\/images\/refrigerator-running-constantly-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/refrigerator-running-constantly-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+});
