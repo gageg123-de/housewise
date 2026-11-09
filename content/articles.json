@@ -1836,14 +1836,14 @@
   {
     "title": "Why Is My Dishwasher Not Draining?", "slug": "dishwasher-not-draining", "description": "Dishwasher not draining? Learn how standing water, the filter, sink, disposal, drain hose, and pump clues can narrow the problem safely.",
     "primary_category": "appliances", "secondary_categories": ["plumbing"], "symptoms": ["appliance-behavior", "drainage"], "room_or_location": ["kitchen"], "system": "appliances", "content_type": "diagnostic-guide",
-    "published_date": "2026-10-23", "updated_date": "2026-11-03", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
+    "published_date": "2026-10-23", "updated_date": "2026-11-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": true,
     "search_keywords": ["dishwasher not draining", "why is my dishwasher not draining", "dishwasher won't drain", "dishwasher won’t drain", "dishwasher has standing water", "water in bottom of dishwasher", "dishwasher full of water", "dishwasher water not draining", "dishwasher drain problem", "dishwasher not draining after cycle", "dishwasher not draining into disposal", "dishwasher stopped draining after new disposal", "dishwasher backs up with water"],
     "target_search_intent": "Help a homeowner determine whether water left after a dishwasher cycle is abnormal, distinguish an incomplete cycle or accessible filter issue from sink, disposal, drain-hose, air-gap, backflow, or internal appliance problems, and choose appliance service or a plumber without assuming the drain pump failed.",
     "direct_answer": "Standing water does not automatically mean the dishwasher's drain pump failed. First determine whether the water is only a small model-dependent amount in or below the recessed filter area, or whether it visibly covers the tub floor after a completed cycle. Then check whether the cycle finished, clean only the filter or drain area the manual identifies as user-serviceable, and compare the kitchen sink and disposal. A newly installed disposal with its dishwasher-inlet plug still in place, a kinked visible drain hose, an obstructed air gap where one is installed, or downstream sink drainage can all imitate an appliance failure. If those checks are clear and the dishwasher still cannot drain, appliance service becomes more appropriate.",
     "likely_causes": ["Small model-dependent residual water in the filter or sump area", "Interrupted or incomplete cycle", "Food debris in a homeowner-serviceable filter or accessible drain area", "Slow or blocked sink or garbage-disposal drainage", "Dishwasher inlet plug left in a newly installed disposal", "Kinked crushed obstructed or incorrectly routed drain hose", "Obstructed air gap where one is installed", "Sink water flowing back through the dishwasher drain connection", "Drain-pump obstruction or internal pump component problem", "Model-specific sensor control or electrical fault"],
     "safe_checks": ["Compare water localized below the filter with water visibly covering the tub floor.", "Confirm the cycle completed and record any error code or interruption.", "Use only the model's documented Cancel or Drain control when appropriate.", "Turn off the dishwasher as the manufacturer directs before cleaning a user-serviceable filter.", "Inspect and clean only accessible filter or drain parts described in the owner's manual.", "Check whether the kitchen sink and garbage disposal drain normally.", "Note whether a disposal was installed or replaced immediately before the symptom began.", "Inspect only the visible under-sink drain hose for an obvious kink or crush.", "Identify an installed countertop air gap without assuming every installation has one.", "Stop use for leakage near electricity smoke sparking burning odor unusual heat or repeated breaker trips."],
     "professional_help": "Call an appliance technician when the sink and disposal drain normally, the model-approved filter area is clear, the visible hose is not kinked, and the dishwasher still cannot evacuate water or reports a recurring drainage fault. Call a plumber when the sink or disposal is slow or backed up, sink use sends water into the dishwasher, an air-gap or drain connection is obstructed, or recent disposal or plumbing work matches the change. An installer may be the best first call when drainage failed immediately after dishwasher or disposal installation.",
-    "related_articles": ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time"],
+    "related_articles": ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time", "garbage-disposal-hums-but-wont-spin"],
     "image": {
       "src": "/images/dishwasher-not-draining-patterns.webp",
       "width": 1536,
@@ -1905,6 +1905,7 @@
           "The reverse distinction also matters: a sink that appears normal does not prove every part of the dishwasher branch is clear. A narrow dishwasher inlet, air-gap hose, or section of drain hose can be restricted while ordinary sink flow still passes. Use sink behavior to decide whether plumbing deserves attention, not to rule it out absolutely."
         ],
         "links": [
+          { "before": "If the disposal itself hums or buzzes but does not grind, use ", "label": "Why Does My Garbage Disposal Hum but Not Spin?", "href": "/plumbing/garbage-disposal-hums-but-wont-spin/", "after": " for the separate stalled-mechanism and overload pattern." },
           { "before": "If water is escaping from the sink drain assembly rather than draining slowly, use ", "label": "Why Is My Sink Leaking From the Drain?", "href": "/plumbing/sink-leaking-from-drain/", "after": " to trace the highest wet point without confusing a leak with a restriction." },
           { "before": "If several household fixtures are slow, gurgling, rising, or backing up—not just the dishwasher—use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": " for the broader shared-drain pattern." }
         ]
@@ -12378,6 +12379,187 @@
       {"title": "Fill Valve and Flapper Installation Instructions", "publisher": "Fluidmaster", "url": "https://www.fluidmaster.com/wp-content/uploads/2017/02/400C_Instr_ENGLISH-1.pdf"},
       {"title": "Flush Valve Installation Instructions", "publisher": "Fluidmaster", "url": "https://www.fluidmaster.com/wp-content/uploads/2016/12/507a_installation_instrutions_english_1.pdf"},
       {"title": "Pressure Assist Toilet Installation Instructions", "publisher": "Sloan", "url": "https://www.sloan.com/sites/default/files/2024-07/Pressure-assisted%20Toilet%20Installation%20Instructions.pdf"}
+    ]
+  },
+  {
+    "title": "Why Does My Garbage Disposal Hum but Not Spin?", "slug": "garbage-disposal-hums-but-wont-spin", "description": "Garbage disposal humming but not spinning? Learn how to separate a jam, overload shutdown, and internal problem using safe, model-specific checks.",
+    "primary_category": "plumbing", "secondary_categories": [], "symptoms": ["noise", "appliance-behavior", "plumbing-behavior"], "room_or_location": ["kitchen"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-11-08", "updated_date": "2026-11-08", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": false,
+    "search_keywords": ["garbage disposal hums but won't spin", "garbage disposal hums but won’t spin", "garbage disposal humming", "garbage disposal buzzing but not working", "garbage disposal motor humming", "garbage disposal stuck", "garbage disposal jammed", "garbage disposal not spinning", "garbage disposal makes noise but won't grind", "disposal hums then shuts off", "garbage disposal humming after turning on", "garbage disposal won't turn"],
+    "target_search_intent": "Help a homeowner whose garbage disposal hums or buzzes without grinding distinguish a possible mechanical jam from overload protection or an internal motor problem, use only model-specific manufacturer procedures after reliable power isolation, and know when to stop and call a professional.",
+    "direct_answer": "A garbage disposal that hums but does not grind may have a stalled mechanism, often because of an obstruction, but the sound does not prove a jam or failed motor. Switch it off immediately. Identify the model, disconnect power by unplugging a dry accessible cord or switching off the correct circuit—not by relying on the wall switch alone—and follow only its manufacturer procedure. Jam access and overload protection vary. Never put hands or fingers in the chamber. If it still hums after one approved check, cannot be freed safely, or has a burning smell, smoke, sparks, leakage, or repeated breaker or GFCI trips, stop and arrange professional service.",
+    "likely_causes": ["A foreign object or food waste restricting the rotating mechanism", "A model-specific overload protector opening after a stall or overheating", "An internal mechanical problem that keeps the turntable from moving", "A motor or starting-component problem that requires service", "An electrical fault that cannot be ruled out merely because the unit makes noise"],
+    "safe_checks": ["Switch the disposal off immediately when it hums without grinding.", "Identify the brand and model before choosing a jam-clearing or reset method.", "Disconnect electrical power by unplugging an accessible cord or switching off the correct circuit before inspecting for an obstruction.", "Use a flashlight to look from above without placing hands or fingers in the chamber.", "Use only the exact jam-clearing tool and access point the manufacturer documents for the model.", "Remove a visible loose object only with manufacturer-approved long-handled tongs or pliers while power is isolated.", "Let the motor cool and use an overload reset only when the model instructions call for it.", "Remove every tool and clear the sink opening before restoring power for one brief test.", "Stop after an unsuccessful approved check rather than repeatedly energizing or resetting the unit."],
+    "professional_help": "Call the manufacturer, a qualified appliance service provider, or a plumber experienced with disposals when power cannot be isolated reliably, the model-specific mechanism will not move, the obstruction is not safely reachable with approved tools, the disposal still hums after one careful procedure, the overload repeatedly opens, or repair-versus-replacement needs evaluation. Use a qualified electrician for a suspected switch, circuit, grounding, GFCI, or hardwired supply fault. Stop using the unit and escalate promptly for burning odor, smoke, sparks, repeated breaker or GFCI trips, severe metallic noise, or water leaking into electrical areas.",
+    "related_articles": ["dishwasher-not-draining"],
+    "image": {
+      "src": "/images/garbage-disposal-humming-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel view of a garbage disposal humming, a foreign object restricting blunt impellers, a model-dependent bottom wrench socket, and a model-dependent overload control.",
+      "caption": "Conceptual illustration: Humming without grinding can fit a stalled mechanism, but jam access and overload controls are model-dependent. The image does not confirm the cause or replace the manufacturer's instructions.",
+      "kind": "conceptual",
+      "after_section": "what-hum-means"
+    },
+    "body_sections": [
+      {
+        "id": "what-hum-means",
+        "heading": "What does it mean when a garbage disposal hums?",
+        "paragraphs": [
+          "Humming means the disposal is making an energized motor sound without producing its normal grinding action. On a typical continuous-feed unit, the motor turns a flat turntable or grinding plate. Blunt swivel impellers move food against a stationary grind ring; the mechanism is not a universal set of sharp spinning blades. If that rotating assembly cannot move, the motor may hum while the disposal does no useful work.",
+          "A lodged object or fibrous material is one plausible reason. Internal mechanical damage or a motor-related fault can sound similar. The sound also does not prove the switch, circuit, grounding, or every internal electrical part is healthy. Treat humming as a reason to stop and characterize the pattern—not to keep trying the switch."
+        ],
+        "table": {
+          "headers": ["What you observe", "What the pattern suggests—not proves"],
+          "rows": [
+            ["Humming with no grinding", "The mechanism is not moving normally; a jam or internal problem becomes relevant"],
+            ["Humming stops, then silence", "Model-specific overload protection may have opened"],
+            ["Completely silent from the first attempt", "Power, switch, protection, or an internal fault belongs to a different branch"],
+            ["Normal grinding but slow sink drainage", "A drain restriction is more relevant than a no-spin symptom"]
+          ]
+        },
+        "callout": {
+          "title": "Do not let a stalled disposal keep humming",
+          "text": "Switch it off immediately. Repeated or prolonged attempts can overheat the motor and operate the unit's overload protection. Do not press reset until the cause of the stall has been addressed according to the model instructions."
+        }
+      },
+      {
+        "id": "mechanical-jam",
+        "heading": "Is the garbage disposal jammed?",
+        "paragraphs": [
+          "A mechanical jam becomes more plausible when the symptom began just after a utensil, bottle cap, hard fragment, or fibrous waste entered the sink. Moen documents objects wedged at the grind ring and material wrapped around a swivel impeller as examples that can keep its turntable from rotating. Waste King likewise treats abnormal noise without normal grinding as one possible jam clue.",
+          "Timing helps, but it is not proof. A hidden internal failure can begin during ordinary use, and an object visible near the sink opening may not be what is stopping the mechanism. Do not run the unit again to reproduce the sound. Identify the model and inspect the manufacturer's instructions before choosing a wrench, tool, reset, or access point."
+        ]
+      },
+      {
+        "id": "power-isolation",
+        "heading": "What should you do before checking for a jam?",
+        "paragraphs": [
+          "First switch the disposal off. Then disconnect its electrical power in the way appropriate for the installation. For a cord-and-plug unit, unplug the cord only if the plug is dry and safely accessible. For a hardwired unit, switch off the correct circuit at the service panel. The wall switch alone is not a reliable isolation method: it can be bumped, mislabeled, wired unexpectedly, or controlled through an air-switch module.",
+          "If you cannot identify the disposal's power source with confidence, stop. Do not open its wiring compartment, disconnect hardwired conductors, probe for voltage, defeat an air switch, or assume silence means the unit is de-energized. A qualified electrician or service technician can establish safe isolation."
+        ],
+        "callout": {
+          "title": "Never put hands or fingers in the chamber",
+          "text": "This rule still applies after power is disconnected. Use a flashlight for observation and only the long-handled tongs, pliers, or jam tool that the manufacturer approves for the exact model. Broken glass and metal edges add a separate cut hazard."
+        }
+      },
+      {
+        "id": "manufacturer-jam-procedure",
+        "heading": "How can you safely check a jammed disposal?",
+        "paragraphs": [
+          "Start with the model label and official manual. InSinkErator documents a self-service wrench or compatible 1/4-inch Allen wrench for the bottom-center hole on many units. Moen's current procedure describes its unjamming wrench from the sink opening on supported models. Waste King documents a wooden spoon or its wrench for particular products. These are model-specific methods, not interchangeable universal instructions.",
+          "With power disconnected, use a flashlight. Remove only a clearly visible object with approved long-handled tongs or pliers; never reach in or feel around. Do not use an improvised bar, broom handle, screwdriver, or generic hex key unless the exact manual specifies it.",
+          "Use an underside socket or above-sink tool only as directed. Stop if the mechanism will not move or access is blocked, damaged, or unfamiliar. Before restoring power, remove every tool, reinstall user-removable parts as directed, and keep everyone away from the opening."
+        ]
+      },
+      {
+        "id": "overload-reset",
+        "heading": "Does your garbage disposal have a reset button?",
+        "paragraphs": [
+          "Many disposals have thermal overload protection that opens when the motor stalls or overheats. On many Moen and Waste King residential models, a manual reset control is located on the disposal body. InSinkErator documents a small red overload protector on many units, while some newer configurations use an automatic overload process and a cooling wait instead. A red button or its location should never be assumed without the model manual.",
+          "A reset reconnects an overload protector; it does not remove an obstruction or repair a damaged motor. Clear the suspected jam first, let the motor cool for the time the manufacturer specifies, and press a reset only if the instructions call for it. If it will not stay set, trips again, or the unit immediately stalls, stop. Repeated resets are not a harmless substitute for finding the cause."
+        ]
+      },
+      {
+        "id": "hums-then-stops",
+        "heading": "Why does the disposal hum and then shut off?",
+        "paragraphs": [
+          "A disposal that hums briefly and then becomes silent may have opened its overload protection as the stalled motor heated. Moen specifically warns that repeated attempts on a jammed unit can trip its internal breaker. That sequence supports an overload event, but it does not tell you whether a foreign object, damaged mechanism, or motor condition caused the stall.",
+          "Leave the switch off. Do not keep cycling it to see whether the sound returns, and do not repeatedly press reset. After reliable power isolation, follow the model's obstruction and cooling procedure once. If the unit stalls again, professional evaluation is the safer next step."
+        ]
+      },
+      {
+        "id": "still-hums",
+        "heading": "What if the disposal still hums after an approved jam check?",
+        "paragraphs": [
+          "If the manufacturer-approved tool moves the mechanism freely, visible loose material is gone, the overload procedure is complete, and the disposal still hums without grinding, the simple accessible checks have reached their limit. A less accessible obstruction, damaged turntable or impeller assembly, bearing problem, motor fault, starting-component fault, or another internal condition may be involved.",
+          "None of those possibilities can be confirmed from the sound alone. Do not open the motor housing, test a capacitor, measure live voltage, bypass overload protection, or dismantle the grinding assembly. Record what happened, including whether the mechanism moved manually and whether protection opened, then contact the manufacturer or a qualified service provider."
+        ]
+      },
+      {
+        "id": "electrical-motor",
+        "heading": "Could it be an electrical or motor problem?",
+        "paragraphs": [
+          "Yes, but humming is not a safe electrical test. It suggests that some energy reaches the motor circuit at that moment, not that voltage is correct, grounding is intact, the switch and connections are sound, or the motor can start. Repeated breaker or GFCI trips, a hot or damaged cord or switch, sparking, smoke, or a burning electrical odor moves the problem outside ordinary jam troubleshooting.",
+          "Stop using the disposal for those warning signs. Keep water away from electrical equipment, do not touch a wet plug, switch, or disposal body, and do not reset a breaker or GFCI repeatedly. Use a qualified electrician for a suspected supply, switch, circuit, grounding, or hardwired-connection problem; use manufacturer-authorized or qualified appliance service for an internal motor problem."
+        ]
+      },
+      {
+        "id": "repair-or-replace",
+        "heading": "Should you repair or replace the disposal?",
+        "paragraphs": [
+          "Humming alone is not a replacement test. A safely cleared foreign object may leave the unit operating normally, while a seized internal mechanism, damaged grind components, recurring overload, or confirmed motor failure may make replacement more sensible. Warranty coverage, model and parts availability, installation condition, leak history, and the cost of professional diagnosis all affect the decision.",
+          "Check the model and serial number before buying parts or a new disposal. A service provider can also determine whether the sink flange, drain connection, dishwasher inlet, switch, power connection, or mounting arrangement adds work beyond swapping the unit. There is no universal age or repair-cost threshold that applies to every installation."
+        ]
+      },
+      {
+        "id": "safe-sequence",
+        "heading": "What can you safely check yourself?",
+        "bullets": [
+          "Switch the disposal off immediately if it hums without grinding; do not keep testing a stalled motor.",
+          "Identify the brand and model and open the official owner or troubleshooting instructions.",
+          "Disconnect electrical power by unplugging a dry, accessible cord or switching off the correct circuit; do not rely on the wall switch alone.",
+          "Use a flashlight to look from above, but never place hands or fingers in the chamber.",
+          "Remove only a clearly visible object with an approved long-handled tool while power is isolated.",
+          "Use only the documented jam wrench, socket, or above-sink procedure for that model.",
+          "Allow the motor to cool and use a manual reset only if the model instructions specify one.",
+          "Remove all tools and clear the opening before restoring power for one brief test.",
+          "If the unit still hums, stalls, overheats, or opens protection, switch it off and arrange service."
+        ],
+        "callout": {
+          "title": "Stop for heat, smoke, sparks, leakage, or repeated trips",
+          "text": "Do not continue jam checks when the disposal or switch smells burned, smokes, sparks, trips a breaker or GFCI again, makes severe metallic noise, or has water leaking into an electrical area. Isolate power only if that can be done without touching wet equipment, then call the appropriate professional."
+        }
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not put hands or fingers inside, even with power disconnected.",
+          "Do not rely only on the wall switch as proof that the unit is de-energized.",
+          "Do not leave it humming or cycle it repeatedly to clear itself.",
+          "Do not press reset repeatedly or use reset before addressing a suspected obstruction.",
+          "Do not universalize a socket, reset, splash guard, or cooling period across models.",
+          "Do not use improvised tools unless the exact manufacturer procedure approves them.",
+          "Do not operate it with any tool in or near the chamber.",
+          "Do not open wiring compartments, test capacitors or motors, measure live voltage, bypass protection, or attempt internal electrical repair."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call a professional?",
+        "paragraphs": [
+          "Call the manufacturer or a qualified appliance or plumbing service when the model cannot be identified, power cannot be isolated reliably, the approved tool will not move the mechanism, an obstruction is not visible and safely reachable, the unit still hums after one careful model-specific procedure, or overload protection opens again. A professional can separate a hidden mechanical restriction from an internal motor fault without guessing from the sound.",
+          "Call a qualified electrician for a repeated circuit or GFCI trip, damaged switch or cord, wet electrical components, grounding concern, or suspected hardwired supply problem. For smoke, active sparking, or fire, keep away, call emergency services, and cut power only from a safe location if official guidance tells you to do so."
+        ]
+      },
+      {
+        "id": "neighboring-intents",
+        "heading": "What if the main symptom is drainage instead of humming?",
+        "paragraphs": [
+          "A disposal that rotates and sounds normal while the sink drains slowly points toward a drain-path problem, not the humming-without-grinding pattern. A disposal that is completely silent from the first attempt also needs a separate power and control diagnosis. Leakage from the housing or plumbing connections is another distinct symptom that should not be treated as a jam."
+        ],
+        "link": {
+          "before": "If the dishwasher retains abnormal water while the disposal itself operates normally, use ",
+          "label": "Why Is My Dishwasher Not Draining?",
+          "href": "/appliances/dishwasher-not-draining/",
+          "after": " to separate the dishwasher filter, drain hose, disposal connection, sink plumbing, and internal-appliance branches."
+        }
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Humming without rotation is a symptom, not proof of a jam or failed motor. Switch it off, identify the model, and isolate power. A recent foreign object and a mechanism that will not turn with the approved method make a jam more plausible; continued humming may indicate a hidden mechanical or motor problem.",
+          "Never put hands or fingers inside. Follow the manufacturer procedure once, remove every tool before testing, and stop for recurring humming, overload, electrical warning signs, leakage, or an unresolved stall."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Fixing a Jammed Garbage Disposal", "publisher": "InSinkErator", "url": "https://www.insinkerator.com/en-us/support/fixing-a-jammed-garbage-disposal"},
+      {"title": "Complete Garbage Disposal Installation, Care and Use Manual", "publisher": "InSinkErator", "url": "https://www.insinkerator.com/documents/complete-garbage-disposal-installation-care-use-manual-es-us-74506.pdf"},
+      {"title": "How to Unjam a Garbage Disposal", "publisher": "Moen", "url": "https://solutions.moen.com/Article_Library/How_to_Unjam_a_Garbage_Disposal"},
+      {"title": "Garbage Disposal FAQs", "publisher": "Waste King", "url": "https://www.wasteking.com/support/faq"}
     ]
   }
 ]

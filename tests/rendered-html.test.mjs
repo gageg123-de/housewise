@@ -1264,3 +1264,28 @@ test("front-door rain-leak guide renders entry-path uncertainty, drainage safety
   const reciprocal = await render("/moisture-and-mold/wall-wet-after-rain");
   assert.match(await reciprocal.text(), /href="\/moisture-and-mold\/front-door-leaking-when-it-rains\/"/);
 });
+
+test("garbage-disposal humming guide renders model-specific jam, overload, and power-isolation guidance", async () => {
+  const response = await render("/plumbing/garbage-disposal-hums-but-wont-spin");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Garbage Disposal Hum but Not Spin\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/garbage-disposal-hums-but-wont-spin\//);
+  assert.match(html, /What does it mean when a garbage disposal hums\?/);
+  assert.match(html, /What should you do before checking for a jam\?/);
+  assert.match(html, /How can you safely check a jammed disposal\?/);
+  assert.match(html, /Does your garbage disposal have a reset button\?/);
+  assert.match(html, /wall switch alone is not a reliable isolation method/);
+  assert.match(html, /Never put hands or fingers in the chamber/);
+  assert.match(html, /model-specific methods, not interchangeable universal instructions/);
+  assert.match(html, /href="\/appliances\/dishwasher-not-draining\/"/);
+  assert.match(html, /src="\/images\/garbage-disposal-humming-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/garbage-disposal-humming-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/appliances/dishwasher-not-draining");
+  assert.match(await reciprocal.text(), /href="\/plumbing\/garbage-disposal-hums-but-wont-spin\/"/);
+});

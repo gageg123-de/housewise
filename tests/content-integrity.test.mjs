@@ -568,7 +568,7 @@ test("dishwasher drainage guide separates residual water, plumbing paths, and in
   const drying = registry.find((item) => item.slug === "dishwasher-not-drying-dishes");
   assert.ok(article);
   assert.equal(article.published_date, "2026-10-23");
-  assert.equal(article.updated_date, "2026-11-03");
+  assert.equal(article.updated_date, "2026-11-08");
   assert.equal(article.reviewed_date, null);
   assert.ok(topic?.includes(",published,"));
   assert.ok(topic?.includes("/appliances/dishwasher-not-draining/"));
@@ -593,7 +593,7 @@ test("dishwasher drainage guide separates residual water, plumbing paths, and in
   assert.equal(article.image.kind, "conceptual");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
-  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time"]);
+  assert.deepEqual(article.related_articles, ["dishwasher-not-cleaning-dishes", "dishwasher-not-drying-dishes", "multiple-drains-back-up-at-same-time", "garbage-disposal-hums-but-wont-spin"]);
   assert.ok(cleaning.related_articles.includes(article.slug));
   assert.ok(drying.related_articles.includes(article.slug));
   const body = JSON.stringify(article.body_sections);
@@ -1969,4 +1969,40 @@ test("AC not-cooling guide separates fan operation, airflow, equipment, and cool
   assert.match(body, /Do not diagnose undersizing or oversizing from indoor temperature alone/i);
   assert.match(body, /Do not attach refrigerant gauges/i);
   assert.doesNotMatch(body, /dirty filter always causes|ice (?:means|proves) low refrigerant|outdoor fan (?:means|proves) (?:the )?compressor/i);
+});
+
+test("garbage-disposal humming guide keeps jam, overload, and motor clues model-specific and safety-bounded", () => {
+  const article = registry.find((item) => item.slug === "garbage-disposal-hums-but-wont-spin");
+  const dishwasher = registry.find((item) => item.slug === "dishwasher-not-draining");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Garbage disposal hums but does not spin,"));
+  assert.ok(article && dishwasher);
+  assert.equal(article.published_date, "2026-11-08");
+  assert.equal(article.updated_date, "2026-11-08");
+  assert.equal(article.reviewed_date, null);
+  assert.equal(article.primary_category, "plumbing");
+  assert.equal(article.content_type, "diagnostic-guide");
+  assert.ok(topic?.includes(",published,high,/plumbing/garbage-disposal-hums-but-wont-spin/"));
+  assert.ok(article.body_sections.some((section) => section.id === "what-hum-means" && section.table?.rows.length === 4));
+  assert.ok(article.body_sections.some((section) => section.id === "power-isolation" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "manufacturer-jam-procedure"));
+  assert.ok(article.body_sections.some((section) => section.id === "overload-reset"));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-sequence" && section.bullets?.length === 9));
+  assert.ok(article.body_sections.some((section) => section.id === "what-not-to-do" && section.bullets?.length === 8));
+  assert.equal(article.image.src, "/images/garbage-disposal-humming-patterns.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  assert.ok(article.sources.some((source) => source.publisher === "InSinkErator"));
+  assert.ok(article.sources.some((source) => source.publisher === "Moen"));
+  assert.ok(article.sources.some((source) => source.publisher === "Waste King"));
+  assert.ok(article.related_articles.includes(dishwasher.slug));
+  assert.ok(dishwasher.related_articles.includes(article.slug));
+  assert.ok(dishwasher.body_sections.some((section) => section.links?.some((link) => link.href === "/plumbing/garbage-disposal-hums-but-wont-spin/")));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /humming is not a safe electrical test/i);
+  assert.match(body, /wall switch alone is not a reliable isolation method/i);
+  assert.match(body, /Never put hands or fingers in the chamber/i);
+  assert.match(body, /model-specific methods, not interchangeable universal instructions/i);
+  assert.match(body, /reset reconnects an overload protector; it does not remove an obstruction/i);
+  assert.doesNotMatch(body, /humming (?:always means|proves) (?:the )?(?:motor|jam)|every disposal has|put (?:your )?hand inside|leave (?:it|the disposal) running/i);
 });

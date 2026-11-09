@@ -143,6 +143,7 @@ test("Problem Finder representative matrix stays contextual and bounded", () => 
     ["kitchen", "dishwasher-draining"],
     ["kitchen", "dishwasher-drying"],
     ["kitchen", "dishwasher-cleaning"],
+    ["kitchen", "disposal-humming"],
     ["kitchen", "water-sediment"],
     ["kitchen", "window-condensation"],
     ["bedroom", "window-condensation"],
@@ -1079,5 +1080,30 @@ test("front-door rain-leak Finder and search preserve window, wall, ceiling, con
   }
   for (const location of ["yard", "garage", "attic", "basement", "bathroom", "kitchen", "laundry", "bedroom", "whole-house"]) {
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "front-door-rain"), location);
+  }
+});
+
+test("garbage-disposal humming Finder and search preserve silent, leaking, sink-drainage, and dishwasher intents", () => {
+  const positives = [
+    "garbage disposal hums but won't spin",
+    "garbage disposal humming",
+    "garbage disposal buzzing but not working",
+    "garbage disposal motor humming",
+    "garbage disposal stuck",
+    "garbage disposal jammed",
+    "garbage disposal not spinning",
+    "garbage disposal makes noise but won't grind",
+    "disposal hums then shuts off",
+    "garbage disposal humming after turning on",
+    "garbage disposal won't turn",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "garbage-disposal-hums-but-wont-spin", query);
+  for (const query of ["garbage disposal not working at all", "garbage disposal completely silent", "garbage disposal leaking", "kitchen sink not draining", "kitchen sink gurgling", "dishwasher not draining"]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "garbage-disposal-hums-but-wont-spin", query);
+  }
+  assert.ok(getFinderSymptomOptions("kitchen").some((item) => item.value === "disposal-humming"));
+  assert.equal(rankFinderArticles(registry, "kitchen", "disposal-humming")[0]?.article.slug, "garbage-disposal-hums-but-wont-spin");
+  for (const location of ["yard", "garage", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "disposal-humming"), location);
   }
 });
