@@ -1149,3 +1149,40 @@ test("refrigerator constant-running Finder and search preserve cooling, noise, f
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "refrigerator-running"), location);
   }
 });
+
+test("bathroom exhaust-fan water Finder and search preserve neighboring water, mold, humidity, and fan intents", () => {
+  const positives = [
+    "water dripping from bathroom exhaust fan",
+    "bathroom fan dripping water",
+    "bathroom exhaust fan leaking",
+    "water coming from bathroom vent",
+    "bathroom ceiling fan dripping",
+    "bathroom fan dripping after shower",
+    "bathroom fan leaking when it rains",
+    "bathroom vent condensation dripping",
+    "bathroom exhaust duct water",
+    "bathroom fan leaking in winter",
+    "water dripping from bath fan grille",
+    "bathroom exhaust fan duct holding water",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "water-dripping-from-bathroom-exhaust-fan", query);
+  for (const query of [
+    "water dripping from ac vent",
+    "ceiling wet after rain",
+    "water stain on ceiling",
+    "bathroom ceiling mold",
+    "house humid with ac running",
+    "bathroom fan not removing moisture",
+    "bathroom fan making noise",
+    "roof leaking during rain",
+    "ac ductwork sweating in attic",
+    "water dripping from light fixture",
+  ]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "water-dripping-from-bathroom-exhaust-fan", query);
+  }
+  assert.ok(getFinderSymptomOptions("bathroom").some((item) => item.value === "bathroom-fan-water"));
+  assert.equal(rankFinderArticles(registry, "bathroom", "bathroom-fan-water")[0]?.article.slug, "water-dripping-from-bathroom-exhaust-fan");
+  for (const location of ["yard", "garage", "attic", "basement", "kitchen", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "bathroom-fan-water"), location);
+  }
+});

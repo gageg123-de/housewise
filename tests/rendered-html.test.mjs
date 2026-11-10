@@ -325,6 +325,35 @@ test("dryer shutdown guide renders pattern distinctions, safety boundaries, sibl
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("bathroom exhaust-fan water guide renders timing diagnosis, electrical safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/moisture-and-mold/water-dripping-from-bathroom-exhaust-fan");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Water Dripping From My Bathroom Exhaust Fan\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/moisture-and-mold\/water-dripping-from-bathroom-exhaust-fan\//);
+  assert.match(html, /Is the water coming from condensation or a leak\?/);
+  assert.match(html, /Why does my bathroom fan drip water after a shower\?/);
+  assert.match(html, /Why does my bathroom exhaust fan leak when it rains\?/);
+  assert.match(html, /Could the exhaust duct be holding water\?/);
+  assert.match(html, /Does the bathroom exhaust duct need insulation\?/);
+  assert.match(html, /Water plus a fan fixture is a stop condition/);
+  assert.match(html, /Do not energize a wet bathroom fan/);
+  assert.match(html, /href="\/moisture-and-mold\/ceiling-wet-after-rain\/"/);
+  assert.match(html, /href="\/hvac\/ac-ductwork-sweating-in-attic\/"/);
+  assert.match(html, /href="\/hvac\/water-dripping-from-ac-vent\/"/);
+  assert.match(html, /src="\/images\/bathroom-exhaust-fan-water-dripping-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/bathroom-exhaust-fan-water-dripping-patterns\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const ceilingReciprocal = await render("/moisture-and-mold/ceiling-wet-after-rain");
+  assert.match(await ceilingReciprocal.text(), /href="\/moisture-and-mold\/water-dripping-from-bathroom-exhaust-fan\/"/);
+  const ductReciprocal = await render("/hvac/ac-ductwork-sweating-in-attic");
+  assert.match(await ductReciprocal.text(), /href="\/moisture-and-mold\/water-dripping-from-bathroom-exhaust-fan\/"/);
+});
+
 test("musty-garage guide renders moisture distinctions without claiming odor proves mold", async () => {
   const response = await render("/moisture-and-mold/garage-smells-musty"); const html = await response.text();
   assert.equal(response.status, 200);

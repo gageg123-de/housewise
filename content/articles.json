@@ -331,7 +331,7 @@
   {
     "title": "Why Is My AC Ductwork Sweating in the Attic?", "slug": "ac-ductwork-sweating-in-attic", "description": "Attic AC ducts sweat when humid air reaches a surface below its dew point. Learn how insulation, duct leakage, and other water sources fit in.",
     "primary_category": "hvac", "secondary_categories": ["moisture-and-mold", "attic-and-insulation"], "symptoms": ["moisture", "leaking", "discoloration"], "room_or_location": ["attic"], "system": "hvac", "content_type": "diagnostic-guide",
-    "published_date": "2026-08-26", "updated_date": "2026-09-02", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
+    "published_date": "2026-08-26", "updated_date": "2026-11-10", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": true,
     "search_keywords": ["why is my ac ductwork sweating in the attic", "attic duct condensation", "sweating ductwork", "condensation on ac ducts", "wet duct insulation", "hvac ducts sweating in attic"],
     "target_search_intent": "Explain why condensation forms on the exterior of HVAC ductwork in an attic, distinguish duct sweating from HVAC drainage, roof, and plumbing leaks, and help a homeowner make safe observations before choosing the right professional.",
     "direct_answer": "AC ductwork in an attic usually sweats because the duct or its outer covering is cold enough to fall below the dew point of the surrounding humid air. Water vapor then condenses on the exterior as liquid droplets. High attic humidity, missing or damaged insulation, a compromised outer jacket, and gaps at duct joints or supports can contribute. That does not automatically mean water is leaking from inside the duct, and water near a duct can also come from an HVAC drain, roof, or plumbing source.",
@@ -390,6 +390,7 @@
         },
         "link": { "before": "If water is appearing at or falling from a ceiling register inside the room, use ", "label": "Why Is Water Dripping From My AC Vent?", "href": "/hvac/water-dripping-from-ac-vent/", "after": " to compare condensation with drain, roof, and plumbing sources at that location." },
         "links": [
+          { "before": "If the wet duct serves a bathroom exhaust fan rather than the air-conditioning system, use ", "label": "Why Is Water Dripping From My Bathroom Exhaust Fan?", "href": "/moisture-and-mold/water-dripping-from-bathroom-exhaust-fan/", "after": " for the separate shower, exhaust-duct, and exterior-termination pattern." },
           { "before": "If water begins around the air handler, coil cabinet, pan, or condensate piping, use ", "label": "Why Is There Water Around My Indoor AC Unit?", "href": "/hvac/water-around-indoor-ac-unit/", "after": " to focus on the equipment drainage path rather than duct-surface condensation." },
           { "before": "If droplets coat the exterior of the air-handler cabinet rather than the duct, use ", "label": "Why Is My Air Handler Sweating?", "href": "/hvac/air-handler-sweating/", "after": " to focus on cabinet temperature, insulation, seams, and surrounding humidity." }
         ]
@@ -6507,7 +6508,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-17",
-    "updated_date": "2026-09-17",
+    "updated_date": "2026-11-10",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -6687,7 +6688,15 @@
           "label": "Why Is There Mold in My Attic?",
           "href": "/moisture-and-mold/mold-in-attic/",
           "after": "."
-        }
+        },
+        "links": [
+          {
+            "before": "If water is emerging specifically from a bathroom exhaust fan or its grille, use ",
+            "label": "Why Is Water Dripping From My Bathroom Exhaust Fan?",
+            "href": "/moisture-and-mold/water-dripping-from-bathroom-exhaust-fan/",
+            "after": " to compare shower, cold-weather, duct, and rainfall timing."
+          }
+        ]
       },
       {
         "id": "rain-vs-indoor-sources",
@@ -12739,6 +12748,301 @@
       {"title": "Refrigerator Thermometers—Cold Facts About Food Safety", "publisher": "U.S. Food and Drug Administration", "url": "https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety"},
       {"title": "Refrigerator Owner's Manual", "publisher": "Whirlpool", "url": "https://www.whirlpool.com/content/dam/global/documents/202309/owners-manual-w11449055-revE.pdf"},
       {"title": "Stationary Refrigeration Service Practice Requirements", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements"}
+    ]
+  },
+  {
+    "title": "Why Is Water Dripping From My Bathroom Exhaust Fan?",
+    "slug": "water-dripping-from-bathroom-exhaust-fan",
+    "description": "Water dripping from your bathroom exhaust fan? Learn how condensation, duct problems, and exterior leaks differ, what to check safely, and when to call a pro.",
+    "primary_category": "moisture-and-mold",
+    "secondary_categories": [],
+    "symptoms": [
+      "leaking",
+      "moisture",
+      "discoloration"
+    ],
+    "room_or_location": [
+      "bathroom"
+    ],
+    "system": "bathroom",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-10",
+    "updated_date": "2026-11-10",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": false,
+    "search_keywords": [
+      "water dripping from bathroom exhaust fan",
+      "bathroom fan dripping water",
+      "bathroom exhaust fan leaking",
+      "water coming from bathroom vent",
+      "bathroom ceiling fan dripping",
+      "bathroom fan dripping after shower",
+      "bathroom fan leaking when it rains",
+      "bathroom vent condensation dripping",
+      "bathroom exhaust duct water",
+      "bathroom fan leaking in winter",
+      "water dripping from bath fan grille",
+      "bathroom exhaust fan duct holding water"
+    ],
+    "target_search_intent": "Help a homeowner with water dripping from or immediately around a bathroom exhaust fan distinguish shower- or cold-weather condensation from water stored in a poorly routed exhaust duct and rain entering at an exterior termination, use safe observations without opening wet electrical equipment or accessing a roof, and choose the appropriate ventilation, roofing, electrical, or water-damage professional.",
+    "direct_answer": "Water at a bathroom exhaust fan can be condensation inside a cold exhaust duct or on the housing, water that collected in a sagging duct, or rain entering near a roof or wall termination. The first useful clue is timing: dripping after showers or in cold weather makes condensation and duct conditions more relevant, while dripping during rain makes exterior water entry more relevant. Neither pattern proves the cause, and both can occur together. If water is entering the fan fixture or electrical parts may be wet, stop using the fan, do not touch its switch or remove the grille, and have the circuit and fan evaluated safely.",
+    "likely_causes": [
+      "Bathroom air condensing inside a cold exhaust duct or on the housing",
+      "Inadequate, discontinuous, or wet duct insulation",
+      "A sagging, crushed, restrictive, or poorly supported duct",
+      "A loose, leaking, or disconnected duct connection",
+      "A blocked or damaged exterior termination or backdraft damper",
+      "Rain entering around flashing, a wall cap, or another exterior defect",
+      "Poor airflow from dust, duct resistance, or an installation mismatch",
+      "Water traveling along the duct, framing, or ceiling before becoming visible"
+    ],
+    "safe_checks": [
+      "Stop operating the fan if water is dripping through the fixture or electrical parts may be wet.",
+      "Record whether the dripping follows showers, cold weather, rainfall, or more than one condition.",
+      "Note whether water begins through the grille, around its perimeter, or in nearby ceiling material.",
+      "Photograph the first drops and staining from a dry, stable floor position without energizing the fan.",
+      "Look for soft, sagging, cracked, or persistently damp ceiling material without pressing it.",
+      "Identify the model from safe documentation and review its maintenance instructions.",
+      "Use records or safe ground-level observation to identify a likely roof or wall termination.",
+      "Avoid roof and unsafe attic access; arrange inspection when the source is uncertain or moisture returns."
+    ],
+    "professional_help": "Use a ventilation contractor for duct routing, insulation, connection, airflow, or fan performance; a roofer or exterior contractor for rain-related termination or flashing concerns; and a qualified electrician whenever water may have reached electrical parts. Do not resume using a wet fixture until it has been evaluated as safe. Extensive wet materials, a sagging ceiling, or suspected hidden contamination may require water-damage help. Smoke, sparking, or active electrical fire requires immediate distance and emergency assistance.",
+    "related_articles": [
+      "ceiling-wet-after-rain",
+      "water-stain-on-ceiling",
+      "mold-growing-on-ceiling",
+      "mold-in-attic",
+      "ac-ductwork-sweating-in-attic",
+      "water-dripping-from-ac-vent"
+    ],
+    "image": {
+      "src": "/images/bathroom-exhaust-fan-water-dripping-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing shower moisture condensing in a bathroom exhaust duct, water collecting at a duct low point, possible rain entry at a roof termination, and a stop-use warning at a wet fan grille.",
+      "caption": "Conceptual illustration: Shower timing, cold weather, duct routing, and rainfall can help separate condensation from exterior water entry. The patterns narrow the investigation but do not prove the source.",
+      "kind": "conceptual",
+      "after_section": "condensation-or-leak"
+    },
+    "body_sections": [
+      {
+        "id": "condensation-or-leak",
+        "heading": "Is the water coming from condensation or a leak?",
+        "paragraphs": [
+          "Start with when the water appears, not with a guess about the roof or fan. Bathroom exhaust carries moist air outdoors. That air can condense on a cold duct or housing, while rain can enter at a damaged roof or wall termination, failed flashing, or another exterior defect.",
+          "The grille is an observation point, not necessarily the entry point. Water can run inside a duct, along the outside of it, across a housing, or along nearby framing and drywall. Drips through the grille may fit water inside the fan or duct; wetness around the perimeter may fit water outside the housing or in the ceiling assembly. Neither location confirms the route.",
+          "Condensation and rainwater can coexist. Use repeated timing, distribution, and weather clues to choose an inspection path rather than naming a failed component from one event."
+        ],
+        "table": {
+          "headers": [
+            "What you observe",
+            "What becomes more relevant—not proven"
+          ],
+          "rows": [
+            [
+              "Drops during or after showers, especially in cold weather",
+              "Condensation, duct insulation, routing, support, or restricted airflow"
+            ],
+            [
+              "Drops during rain even when the shower has not run",
+              "Exterior termination, roof or wall flashing, cap damage, or another rain path"
+            ],
+            [
+              "Water arrives later in a sudden release",
+              "Stored water at a duct low point or delayed travel through another assembly"
+            ],
+            [
+              "Moisture appears around the housing or spreads across the ceiling",
+              "Water outside the duct, ceiling air leakage, or a separate building-envelope source"
+            ],
+            [
+              "The symptom follows both showers and storms",
+              "More than one mechanism may be present; timing alone cannot separate them"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "after-shower",
+        "heading": "Why does my bathroom fan drip water after a shower?",
+        "paragraphs": [
+          "A shower adds water vapor to bathroom air. When the exhaust duct or housing is colder than the air's dew point, vapor can become liquid there. A duct through an unconditioned attic commonly sees that temperature difference, but risk depends on climate, construction, insulation, leakage, and operation.",
+          "Water may form as a film or droplets, run toward a low point, and return toward the housing. A long run, sharp turns, crushed flexible duct, a stuck exterior damper, or debris at a termination can reduce airflow and give moist air more opportunity to cool. A loose connection can also release bathroom air into a cold ceiling or attic area.",
+          "Shower timing is evidence, not proof. A plumbing leak above the bathroom, water already stored in the duct, or rain that happened at the same time can produce a similar sequence. Do not keep running a wet fan to reproduce the symptom."
+        ]
+      },
+      {
+        "id": "rain-related",
+        "heading": "Why does my bathroom exhaust fan leak when it rains?",
+        "paragraphs": [
+          "A repeatable rain relationship shifts attention toward the exterior. Bathroom exhaust may terminate through a roof or wall. Roof penetrations need integrated flashing, while wall caps need weather-resistant installation appropriate to the wall. A damaged cap, failed flashing, wind-driven rain, or another exterior defect can admit water.",
+          "The nearest vent is only a candidate. Water can follow decking, framing, the duct exterior, or ceiling materials before reaching the fan. A bathroom view cannot establish which exterior detail failed.",
+          "Do not climb onto the roof, remove a termination cap, or apply caulk around every visible joint. The correct repair depends on the roof or wall system, and indiscriminate sealant can miss the entry path or interfere with intended drainage."
+        ],
+        "links": [
+          {
+            "before": "If ceiling wetness follows rain but is not centered on the bathroom fan, start with ",
+            "label": "Why Is My Ceiling Wet After It Rains?",
+            "href": "/moisture-and-mold/ceiling-wet-after-rain/",
+            "after": " for the broader roof-and-building-envelope pattern."
+          }
+        ]
+      },
+      {
+        "id": "cold-weather",
+        "heading": "Can cold weather make a bathroom exhaust fan drip?",
+        "paragraphs": [
+          "Yes. Cold conditions can lower the temperature of the housing, duct, and termination until humid shower air condenses. This can happen above freezing, and no universal outdoor temperature diagnoses it.",
+          "Insulation gaps, compressed insulation, leaky connections, and long cold runs increase exposure. Air leaking around the housing can also condense outside the duct.",
+          "Cold-weather timing supports condensation but does not exclude rain or melting exterior moisture. Inspection should distinguish water inside the duct, on its exterior, and traveling from the roof or wall."
+        ]
+      },
+      {
+        "id": "duct-holding-water",
+        "heading": "Could the exhaust duct be holding water?",
+        "paragraphs": [
+          "Flexible duct can sag between supports, and any poorly routed duct can have a low point. Condensate may collect there while the same sag, crush, or tight bend restricts airflow. Stored water can drip gradually or release after a delay.",
+          "A loose joint can let humid exhaust escape or let water reach the fan along the duct exterior. DOE guidance favors direct, supported runs with few bends and manufacturer-specified dimensions, but routing depends on the fan, termination, and structure.",
+          "Do not pull, puncture, or reroute concealed ductwork. A ventilation contractor can inspect support, joints, resistance, and drainage without applying a universal slope rule."
+        ]
+      },
+      {
+        "id": "duct-insulation",
+        "heading": "Does the bathroom exhaust duct need insulation?",
+        "paragraphs": [
+          "Insulation can keep the duct warmer through unconditioned space, reducing condensation risk. Gaps, compressed sections, exposed fittings, and leaky approved joints can remain cold or admit humid air.",
+          "No single insulation value applies to every climate, duct, fan, and jurisdiction. Follow the manufacturer and local requirements; wet or damaged insulation may need replacement rather than another layer.",
+          "Do not wrap over unidentified moisture or cover electrical parts, service access, dampers, or required clearances. First identify whether water is inside the duct, on its exterior, or entering outdoors."
+        ]
+      },
+      {
+        "id": "exterior-termination",
+        "heading": "Could the roof vent or exterior termination be leaking?",
+        "paragraphs": [
+          "A bathroom exhaust should discharge outdoors through an appropriate roof or wall termination—not into an attic, crawlspace, soffit cavity, or another enclosed building space. The termination typically provides weather protection and a damper, while the surrounding roof or wall detail manages rainwater. Designs vary, so not every home has a roof vent and not every cap looks or works the same.",
+          "A blocked or stuck damper can reduce airflow. A damaged hood, loose connection, failed flashing, or wind-driven rain can introduce water. Frost, nests, debris, or deterioration may also interfere, but safe ground-level appearance alone usually cannot confirm internal blockage or flashing performance.",
+          "Do not remove weather protection, prop a damper open, seal intentional openings, or diagnose a roof penetration from below. Use the model and termination instructions plus a qualified exterior inspection."
+        ]
+      },
+      {
+        "id": "ventilation-performance",
+        "heading": "Can poor ventilation make the problem worse?",
+        "paragraphs": [
+          "Low airflow can leave bathroom humidity behind and worsen condensation. Dust, a dirty wheel, crushed or undersized duct, excessive bends, a blocked termination, stuck damper, or loose joint can reduce airflow. Noise does not prove the rated airflow reaches outdoors.",
+          "Follow the fan manual for cleaning and controls. Never remove a wet grille, run the fan with covers off, reach into the housing, or touch wiring. Humidity controls cannot repair a leaking termination or bad duct route.",
+          "A bigger fan is not an automatic fix. The circuit, duct, termination, room needs, and installation limits must work together."
+        ]
+      },
+      {
+        "id": "safe-observations",
+        "heading": "What can I safely check without taking the fan apart?",
+        "bullets": [
+          "Stop using the fan if water may have reached electrical parts; do not switch it on to test the pattern.",
+          "Record whether dripping follows a shower, cold weather, rain, or a delay after any of them.",
+          "From a dry floor, note whether water begins through the grille, around the housing, or in nearby ceiling material.",
+          "Photograph the first drops, staining, paint changes, and the area after it dries.",
+          "Look for a soft, sagging, cracked, or bulging ceiling without pressing or puncturing it.",
+          "Note whether the bathroom remains unusually steamy long after use.",
+          "Identify the model from paperwork or a safely visible label; never remove a wet cover to find it.",
+          "Use plans, records, or safe ground-level observation to identify a likely roof or wall outlet.",
+          "Keep roof and unsafe attic investigation professional, and share the timeline and photos."
+        ]
+      },
+      {
+        "id": "electrical-safety",
+        "heading": "Is it safe to use a bathroom fan that is dripping water?",
+        "paragraphs": [
+          "No—not when water is dripping through the fixture or may have reached its motor, wiring, junction box, switch, or connections. Condensation is still water, and calling it condensation does not make wet electrical equipment safe. Stop operating the fan and keep hands away from the wet grille, switch, and nearby electrical devices.",
+          "If the correct circuit breaker is clearly identified, the panel and your path to it are completely dry, and you can operate it without approaching wet equipment, turn that circuit off. If any part of that is uncertain, keep away and call a qualified electrician. Do not remove the grille or housing, open wiring, bypass controls, or perform live voltage tests.",
+          "The fan should not return to service until the electrical equipment is dry, undamaged, and evaluated as appropriate. Smoke, sparking, an electrical burning odor, repeated breaker trips, or active fire requires immediate distance and emergency assistance."
+        ],
+        "callout": {
+          "title": "Water plus a fan fixture is a stop condition",
+          "text": "Do not energize a wet bathroom fan to see whether it still works. Isolate the circuit only from a known, dry, safe location; otherwise keep away and use qualified electrical help."
+        }
+      },
+      {
+        "id": "ceiling-damage",
+        "heading": "What if the ceiling around the fan is stained or damaged?",
+        "paragraphs": [
+          "Repeated wetting can stain paint, soften drywall, wet insulation, damage finishes, and support microbial growth. A stain does not show whether the source is current, and water does not prove mold is growing. Appearance cannot identify a mold species.",
+          "Keep people away from a sagging, bulging, cracked, or saturated ceiling and arrange prompt evaluation. Do not puncture a bulge or stand beneath weakened material. Move belongings from the area only when you can do so without approaching wet electrical equipment.",
+          "A dry surface does not prove concealed materials are dry. Recurrent staining, dampness, odor, softness, or suspected hidden growth calls for moisture assessment after the source is corrected."
+        ],
+        "links": [
+          {
+            "before": "If the main symptom is an old mark whose trigger is unclear, use ",
+            "label": "Why Is There a Water Stain on My Ceiling?",
+            "href": "/moisture-and-mold/water-stain-on-ceiling/",
+            "after": "."
+          },
+          {
+            "before": "If the main symptom is visible growth on finished ceiling material, use ",
+            "label": "Why Is Mold Growing on My Ceiling?",
+            "href": "/moisture-and-mold/mold-growing-on-ceiling/",
+            "after": " for the separate moisture-source and cleanup boundaries."
+          }
+        ]
+      },
+      {
+        "id": "what-not-to-do",
+        "heading": "What not to do",
+        "bullets": [
+          "Do not assume shower timing proves condensation or rain timing proves a roof leak.",
+          "Do not keep running, switch, or open a fan that may contain water.",
+          "Do not remove the grille, housing, motor, wiring cover, or junction-box cover while energized or wet.",
+          "Do not climb onto a roof or enter an unsafe attic to chase the water path.",
+          "Do not pull on, puncture, or reroute a duct without the model and installation requirements.",
+          "Do not apply caulk indiscriminately or seal a termination's intended drainage or moving damper.",
+          "Do not assume a higher-capacity fan, dehumidifier, or longer run time repairs a duct or flashing defect.",
+          "Do not disturb extensive suspected growth or saturated ceiling material without appropriate evaluation."
+        ]
+      },
+      {
+        "id": "who-to-call",
+        "heading": "Who should I call to fix it?",
+        "paragraphs": [
+          "Match the first call to the strongest repeated clue. A ventilation contractor fits shower- or cold-related dripping, poor airflow, or suspected duct routing, insulation, and connection problems. A roofer or exterior contractor fits dripping that reliably follows rain near a roof or wall termination.",
+          "Use an electrician whenever water may have entered the fixture, wiring, controls, or junction box. Extensive concealed wetness, ceiling damage, or suspected contamination may need a water-damage professional. One trade may document that another is needed; that is more reliable than guessing from the grille.",
+          "Share shower, weather, and cold timing; the first visible drop location; fan operation; and ceiling changes. Those observations help separate the work."
+        ],
+        "links": [
+          {
+            "before": "If the wet duct is part of the air-conditioning supply system rather than the bathroom exhaust, use ",
+            "label": "Why Is My AC Ductwork Sweating in the Attic?",
+            "href": "/hvac/ac-ductwork-sweating-in-attic/",
+            "after": "."
+          },
+          {
+            "before": "If water is emerging from a supply register, use ",
+            "label": "Why Is Water Dripping From My AC Vent?",
+            "href": "/hvac/water-dripping-from-ac-vent/",
+            "after": " instead; bathroom exhaust and AC supply ducts are different systems."
+          }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Water at a bathroom exhaust fan does not establish where it originated. Dripping after showers or in cold weather makes condensation, duct insulation, routing, and airflow more relevant. Dripping during rain makes an exterior cap, flashing, or another roof or wall path more relevant. Water can travel, and the mechanisms can overlap.",
+          "Keep the investigation observational: record timing, first visible location, weather, shower use, and ceiling condition. Stop using a fan that is wet or may have wet electrical parts, avoid roof and unsafe attic access, and choose ventilation, roofing, electrical, or water-damage help based on the repeated pattern."
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Bathroom Exhaust Fans", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/bathroom-exhaust-fans"},
+      {"title": "Air Sealing Bathroom and Kitchen Exhaust Fans", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/air-sealing-bathroom-and-kitchen-exhaust-fans"},
+      {"title": "Look at Exhaust Fans for Venting to Outside", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/diy-guides/look-exhaust-fans-venting-outside"},
+      {"title": "Indoor Air Quality Features", "publisher": "ENERGY STAR", "url": "https://www.energystar.gov/newhomes/features-benefits/indoor-air-quality-features"},
+      {"title": "Bath Exhaust Ventilation Fan FAQs", "publisher": "Broan-NuTone", "url": "https://broan-nutone.com/en-us/home/customer-service/bath-exhaust-ventilation-fan-faqs"},
+      {"title": "How to Prevent Dripping Vent Fans in Cold Weather", "publisher": "Panasonic Indoor Air Quality", "url": "https://iaq.na.panasonic.com/resources/resource-center/how-to-prevent-dripping-vent-fans-in-cold-weather"},
+      {"title": "Flashing of Penetrations in Existing Roofs", "publisher": "U.S. Department of Energy Building America Solution Center", "url": "https://basc.pnnl.gov/resource-guides/flashing-penetrations-existing-roofs"},
+      {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
+      {"title": "CPSC Urges Flood Victims to Prevent Electrocution and Fires", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Urges-Flood-Victims-to-Take-Steps-to-Prevent-CO-Poisoning-Electrocution-Explosion-and-Fires"},
+      {"title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"}
     ]
   }
 ]
