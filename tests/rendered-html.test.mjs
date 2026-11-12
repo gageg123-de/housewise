@@ -1339,3 +1339,29 @@ test("refrigerator constant-running guide renders temperature-first diagnosis, s
   assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/refrigerator-running-constantly-patterns\.webp/);
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
+
+test("house sewer-gas odor guide renders emergency-first diagnosis, visual, schema, and reciprocal routing", async () => {
+  const response = await render("/plumbing/house-smells-like-sewer-gas");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My House Smell Like Sewer Gas\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/house-smells-like-sewer-gas\//);
+  assert.match(html, /First: Could this be a natural gas leak instead\?/);
+  assert.match(html, /Do not diagnose a rotten-egg odor by smell/);
+  assert.match(html, /What pattern does the sewer-like smell follow\?/);
+  assert.match(html, /Could a dry P-trap be letting sewer gas in\?/);
+  assert.match(html, /Can a bad toilet seal cause a sewer smell\?/);
+  assert.match(html, /When is a sewer smell dangerous\?/);
+  assert.match(html, /href="\/plumbing\/multiple-drains-back-up-at-same-time\/"/);
+  assert.match(html, /href="\/plumbing\/toilet-gurgles-randomly\/"/);
+  assert.match(html, /href="\/plumbing\/shower-drain-gurgles-when-toilet-flushes\/"/);
+  assert.match(html, /src="\/images\/house-sewer-gas-odor-sources\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/house-sewer-gas-odor-sources\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/plumbing/multiple-drains-back-up-at-same-time");
+  assert.match(await reciprocal.text(), /href="\/plumbing\/house-smells-like-sewer-gas\/"/);
+});

@@ -1186,3 +1186,48 @@ test("bathroom exhaust-fan water Finder and search preserve neighboring water, m
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "bathroom-fan-water"), location);
   }
 });
+
+test("house sewer-gas odor Finder and search preserve fuel-gas, water, backup, and specific-odor intents", () => {
+  const positives = [
+    "why does my house smell like sewer gas",
+    "house smells like sewage",
+    "sewer gas smell in house",
+    "sewage smell in home",
+    "sewer odor inside house",
+    "whole house smells like sewer",
+    "why does my bathroom smell like sewer",
+    "house smells like rotten eggs",
+    "intermittent sewer smell in house",
+    "sewer smell after rain",
+    "sewer smell with no clog",
+    "sewage smell but drains work",
+    "sewer gas coming from drains",
+    "sewer smell in laundry room",
+    "septic smell inside house",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "house-smells-like-sewer-gas", query);
+  for (const query of [
+    "natural gas leak warning signs",
+    "hot water smells like rotten eggs",
+    "well water smells like sulfur",
+    "toilet gurgling randomly",
+    "shower drain gurgles when toilet flushes",
+    "multiple drains backing up",
+    "sink drain leaking",
+    "garage smells musty",
+    "dryer smells like burning",
+    "water under water heater",
+    "garbage disposal humming",
+    "septic smell outside near drainfield",
+    "sewer smell from one specific drain",
+  ]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "house-smells-like-sewer-gas", query);
+  }
+  for (const location of ["bathroom", "kitchen", "laundry", "basement", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "sewer-odor"), location);
+    assert.equal(rankFinderArticles(registry, location, "sewer-odor")[0]?.article.slug, "house-smells-like-sewer-gas", location);
+  }
+  for (const location of ["yard", "garage", "attic", "bedroom", "living-area", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "sewer-odor"), location);
+  }
+});

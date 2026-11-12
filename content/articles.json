@@ -1181,7 +1181,10 @@
       {
         "id": "safe-observations", "heading": "What you can observe safely",
         "bullets": ["Make a list of every affected toilet, sink, tub, shower, floor drain, appliance drain, and the floor or room where it sits.", "Note which fixture reacts first and whether it is only slow, gurgles, changes level, or receives dirty water.", "Record whether laundry, dishwashing, showers, or repeated flushing makes another fixture react.", "Compare one zone with other rooms without intentionally sending a large test volume into the drains.", "Note sewer odors, recent heavy rain or utility work, and whether nearby properties report similar sewer symptoms.", "For septic homes, note alarms, service history, wet drainfield areas, or odors without opening or entering the tank.", "Photograph visible water from a safe, dry location and record whether the pattern is worsening."],
-        "paragraphs": ["Keep the investigation observational. Do not remove toilets, open a cleanout that may be holding wastewater under pressure, snake the building sewer, climb to roof vents, enter a septic tank, dismantle multiple traps, or use aggressive chemical drain cleaners. A product poured into one fixture may not reach a shared restriction and cannot repair venting, sewer, or septic problems; mixing products creates additional exposure risk."]
+        "paragraphs": ["Keep the investigation observational. Do not remove toilets, open a cleanout that may be holding wastewater under pressure, snake the building sewer, climb to roof vents, enter a septic tank, dismantle multiple traps, or use aggressive chemical drain cleaners. A product poured into one fixture may not reach a shared restriction and cannot repair venting, sewer, or septic problems; mixing products creates additional exposure risk."],
+        "links": [
+          { "before": "If the main symptom is an unexplained sewer-like odor rather than several drains backing up, use ", "label": "Why Does My House Smell Like Sewer Gas?", "href": "/plumbing/house-smells-like-sewer-gas/", "after": " for the safety-first odor pattern." }
+        ]
       },
       {
         "id": "stop-water-use", "heading": "When to stop using water",
@@ -13043,6 +13046,173 @@
       {"title": "Water-Damaged Electrical Equipment", "publisher": "Electrical Safety Foundation International", "url": "https://www.esfi.org/water-damaged-electrical-equipment/"},
       {"title": "CPSC Urges Flood Victims to Prevent Electrocution and Fires", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/2024/CPSC-Urges-Flood-Victims-to-Take-Steps-to-Prevent-CO-Poisoning-Electrocution-Explosion-and-Fires"},
       {"title": "A Brief Guide to Mold, Moisture and Your Home", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"}
+    ]
+  },
+  {
+    "title": "Why Does My House Smell Like Sewer Gas?", "slug": "house-smells-like-sewer-gas", "description": "House smell like sewer gas? First learn when a possible fuel-gas leak means leave and call, then check dry traps, toilet seals, vents, and septic clues.",
+    "primary_category": "plumbing", "secondary_categories": ["sounds-and-smells"], "symptoms": ["smell"], "room_or_location": ["whole-house", "bathroom", "kitchen", "laundry", "basement"], "system": "plumbing", "content_type": "diagnostic-guide",
+    "published_date": "2026-11-11", "updated_date": "2026-11-11", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 12, "featured_status": true,
+    "search_keywords": ["why does my house smell like sewer gas", "house smells like sewage", "sewer gas smell in house", "sewage smell in home", "sewer odor inside house", "whole house smells like sewer", "why does my bathroom smell like sewer", "house smells like rotten eggs", "intermittent sewer smell in house", "sewer smell after rain", "sewer smell with no clog", "sewage smell but drains work", "sewer gas coming from drains", "sewer smell in laundry room", "septic smell inside house"],
+    "target_search_intent": "Help a homeowner investigate an initially unidentified sewer-like odor inside the home, place possible natural-gas or propane danger before routine plumbing checks, and distinguish dry traps, toilet connections, drain or vent defects, drainage pressure, septic conditions, water-related odors, and air-movement patterns without diagnosing by smell alone.",
+    "direct_answer": "A sewer-like smell can enter through a dry drain trap, a compromised toilet connection, damaged drain or vent piping, or a drainage or septic problem. But odorized natural gas and propane are also commonly described as rotten eggs. Smell alone cannot reliably separate them. If a fuel-gas leak is possible, leave immediately without operating switches, plugs, fans, garage-door openers, vehicles, flames, or anything that could spark; call the gas utility or emergency services from a safe location outside. Only after that danger has been addressed should you compare where and when the odor appears, whether a fixture is rarely used, and whether drains gurgle, slow, rise, or back up.",
+    "likely_causes": ["A dry or otherwise lost fixture-trap water seal", "A compromised toilet-to-drain connection", "A cracked, loose, disconnected, or improperly configured drain or vent component", "Pressure changes or a restriction affecting connected drainage", "A private sewer, public sewer, or septic-system condition", "An exterior odor entering through an opening or air intake", "Organic buildup or another local odor mistaken for sewer gas", "Sulfur-like odor associated with the water supply or hot-water system", "An odorized natural-gas or propane leak requiring emergency response"],
+    "safe_checks": ["Treat a possible fuel-gas leak as an emergency before investigating drains.", "After gas danger is ruled out, note where the odor is strongest and whether it follows fixture use, rain, wind, or HVAC operation.", "Check accessible, infrequently used drains for a plausible lost water seal without sniffing into them.", "Observe whether toilets move, drains gurgle, water levels change, or several fixtures drain slowly.", "Distinguish room-air odor from odor noticed mainly while hot or cold water runs.", "For septic homes, note alarms, surfacing wastewater, saturated drainfield areas, and recurring backups from a safe distance.", "Document the timing and associated plumbing behavior for the appropriate professional."],
+    "professional_help": "Call the gas utility or emergency services from outside whenever an odorized fuel-gas leak is possible. Use a licensed plumber for persistent indoor sewer odor, recurring trap-seal loss, a suspected toilet connection, drain or vent defects, or abnormal behavior across fixtures. Use a qualified septic provider for alarms, surfacing wastewater, drainfield concerns, or septic-side findings. Severe breathing difficulty, confusion, fainting, or collapse after a possible gas exposure requires emergency medical assistance.",
+    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-gurgles-randomly", "shower-drain-gurgles-when-toilet-flushes", "sink-gurgles-when-toilet-flushes", "toilet-bubbles-when-washer-drains"],
+    "image": {
+      "src": "/images/house-sewer-gas-odor-sources.webp", "width": 1536, "height": 1024,
+      "alt": "Conceptual four-panel guide showing a dry drain trap, a compromised toilet connection, a cracked drain or vent joint, and a person leaving a house because a fuel-gas leak may be possible.",
+      "caption": "Conceptual illustration: Dry traps, toilet connections, and drain or vent defects can create sewer-odor pathways. A possible fuel-gas leak requires leaving the building rather than investigating the plumbing.",
+      "kind": "conceptual", "after_section": "pattern-table"
+    },
+    "body_sections": [
+      {
+        "id": "fuel-gas-first", "heading": "First: Could this be a natural gas leak instead?",
+        "paragraphs": [
+          "Utility natural gas is commonly odorized so a leak can be noticed, and propane also carries an added warning odor. People often describe those odors and sewer gas with the same words: rotten eggs, sulfur, or sewage. Your nose cannot reliably identify the gas or certify that the building is safe.",
+          "If fuel gas could be involved—or the source is unknown and the odor is strong or concerning—leave promptly. Do not switch lights, unplug devices, start a vehicle, use a garage-door opener, light a flame, smoke, turn on a fan, or investigate an appliance. From outside and away from the suspected leak, call the gas utility or emergency services and follow their instructions before returning.",
+          "Difficulty breathing, confusion, fainting, collapse, smoke, or fire calls for emergency assistance. Routine plumbing checks come only after an appropriate authority addresses the fuel-gas concern."
+        ],
+        "callout": { "title": "Do not diagnose a rotten-egg odor by smell", "text": "A possible natural-gas or propane leak takes priority over drain troubleshooting. Leave without operating anything that could create a spark, then call from a safe location outside." }
+      },
+      {
+        "id": "pattern-table", "heading": "What pattern does the sewer-like smell follow?",
+        "table": { "headers": ["What you notice", "Possible explanation", "Appropriate next step"], "rows": [
+          ["Rotten-egg odor when fuel gas may be present", "An odorized natural-gas or propane leak is possible", "Leave and call the gas utility or emergency services from outside"],
+          ["Odor near a rarely used drain", "A dry trap or another local drain condition may have opened an odor path", "After gas danger is ruled out, check the trap-water possibility safely"],
+          ["Odor concentrated near a toilet base", "The toilet-to-drain connection or another nearby source may be involved", "Avoid moving the toilet; arrange plumbing evaluation if it persists"],
+          ["Odor with gurgling or moving fixture water", "Drainage pressure, a partial restriction, or venting may be affecting trap seals", "Record which fixture triggers the reaction and call a plumber if recurring"],
+          ["Odor with several slow drains or backups", "A shared drain, private sewer, public sewer, or septic condition may be involved", "Stop unnecessary water use if wastewater rises and seek prompt help"],
+          ["Odor that repeatedly follows heavy rain", "Several sewer, septic, vent, wind, or exterior entry conditions are possible", "Document the pattern and seek plumbing or septic assessment"],
+          ["Odor mainly while hot water runs", "The water or hot-water system may be the source, or water may release an odor near a drain", "Compare hot and cold water without treating the result as a gas identification test"],
+          ["Odor noticed throughout the home", "One odor may be redistributed, or more than one pathway may exist", "Do not assume every drain failed; arrange a source-focused investigation"]
+        ] },
+        "paragraphs": ["These patterns narrow possibilities; none proves a cause. Odors can travel through rooms and air pathways, so the strongest-smelling spot is not always the defect."]
+      },
+      {
+        "id": "common-pathways", "heading": "What causes a sewer smell inside a house?",
+        "paragraphs": [
+          "Plumbing traps normally hold water between indoor air and the drainage system. A lost seal can open that path. A toilet connection, pipe joint, drain fitting, vent component, or other concealed defect can also allow odors through without producing an obvious puddle.",
+          "Connected drains can react when wastewater flow changes pressure or meets a restriction. Private sewer, public sewer, and septic conditions may matter when several fixtures misbehave, but an odor by itself cannot locate the problem or assign responsibility.",
+          "Not every foul smell is sewer gas. Drain residue, a dead animal, water chemistry, exterior septic odor, and odorized fuel gas can sound similar. Finding the source matters more than masking the room."
+        ]
+      },
+      {
+        "id": "dry-trap", "heading": "Could a dry P-trap be letting sewer gas in?",
+        "paragraphs": [
+          "A typical trapped fixture keeps a water seal in a curved section of its drain. That water interrupts the open air path to the drainage system. Guest sinks, unused tubs and showers, basement floor drains, laundry drains, and utility-room drains can lose water through evaporation when they sit unused. A leak, improper trap, or pressure disturbance can also reduce the seal.",
+          "After fuel-gas danger and active backup have been ruled out, slowly adding ordinary water to an accessible, infrequently used drain is reasonable. Improvement is consistent with a restored seal; it does not explain why water was lost or exclude another defect. Recurring loss needs plumbing evaluation.",
+          "Do not add bleach, drain cleaner, petroleum, fragrances, or mixed cleaners. Do not add water to a drain that is backing up, contaminated, electrically unsafe, or connected to an unknown process. Trap designs vary, so no universal amount diagnoses every fixture."
+        ]
+      },
+      {
+        "id": "toilet-connection", "heading": "Can a bad toilet seal cause a sewer smell?",
+        "paragraphs": [
+          "The toilet-to-drain connection is intended to make a sanitary, gas-tight and watertight joint. A displaced, damaged, incorrectly installed, or otherwise compromised seal can create an odor path. Clues may include odor strongest near the base, a toilet that moves, moisture or staining, or a problem that began after installation. None is conclusive by itself.",
+          "A failed toilet seal does not always create visible floor water, and odor near a toilet does not prove the wax ring or another particular seal failed. The nearby floor, drain, supply connection, wall cavity, and other fixtures may also matter.",
+          "Do not rock, remove, reset, repeatedly flush, or caulk around the toilet to perform a diagnostic experiment. A plumber can evaluate stability, the connection, flange condition, and surrounding damage without assuming one replacement part will solve every case."
+        ]
+      },
+      {
+        "id": "drain-vent-defects", "heading": "Could a plumbing vent or drain pipe be damaged?",
+        "paragraphs": [
+          "Cracked drain piping, loose joints, damaged fittings, disconnected vent sections, improperly configured traps, and defective air-admittance valves where those devices are used can create odor pathways. A defect above the normal wastewater level may release gas without leaking visible sewage.",
+          "Plumbing vents provide a pressure and air path for the drainage system; they are not simply odor pipes that can be capped. A blockage is one possibility when fixtures gurgle or trap water moves, but gurgling does not locate or prove a vent obstruction. Drain restrictions can cause similar pressure symptoms.",
+          "Do not climb onto a roof, snake a vent, seal a vent terminal, bypass an air-admittance valve, open walls, or conduct an improvised smoke or pressure test. Codes, component listings, and layouts vary. A plumber can inspect accessible piping and choose appropriate professional testing."
+        ]
+      },
+      {
+        "id": "nothing-backed-up", "heading": "Why does my house smell like sewage when nothing is backed up?",
+        "paragraphs": [
+          "A backup is not required for an odor pathway. A dry trap, an above-water pipe or vent defect, a toilet connection, an exterior odor entering the building, or a local source near a drain can be present while fixtures still carry water normally.",
+          "Compare one unused bathroom with several rooms, flushing with rain, and room air with water-flow timing. An unexplained smell needs inspection, not more products added to drains."
+        ]
+      },
+      {
+        "id": "gurgling-pressure", "heading": "What if the odor comes with gurgling or changing water levels?",
+        "paragraphs": [
+          "Wastewater moving through connected piping changes air pressure. A partial restriction or ineffective venting can contribute to gurgling and disturb a fixture's trap water, but the sound alone cannot identify which one. Note which fixture was used, which other fixture reacted, and whether water merely moved, drained slowly, rose, or backed up.",
+          "When several fixtures are slow or wastewater enters another opening, stop unnecessary water use. Repeated flushing, laundry, or sink tests can add to a developing backup."
+        ],
+        "links": [
+          { "before": "For symptoms across rooms or several fixtures, use ", "label": "Why Do Multiple Drains Back Up at the Same Time?", "href": "/plumbing/multiple-drains-back-up-at-same-time/", "after": "." },
+          { "before": "For a toilet that gurgles without an obvious trigger, use ", "label": "Why Does My Toilet Gurgle Randomly?", "href": "/plumbing/toilet-gurgles-randomly/", "after": "." },
+          { "before": "For a repeatable toilet-to-sink reaction, use ", "label": "Why Does My Sink Gurgle When the Toilet Flushes?", "href": "/plumbing/sink-gurgles-when-toilet-flushes/", "after": "." },
+          { "before": "For a toilet-to-shower reaction, use ", "label": "Why Does My Shower Drain Gurgle When the Toilet Flushes?", "href": "/plumbing/shower-drain-gurgles-when-toilet-flushes/", "after": "." }
+        ]
+      },
+      {
+        "id": "rain-septic", "heading": "Why does the smell appear after rain, and could a septic system be involved?",
+        "paragraphs": [
+          "Rain timing is a clue, not a diagnosis. Wet weather can coincide with saturated soil, changing septic or sewer conditions, drainage restrictions, exterior water infiltration, wind around plumbing vents, or an unrelated damp outdoor source. It does not prove a public sewer forced gas into the home.",
+          "On a septic property, slow drains, recurring backups, a system alarm, wastewater surfacing, an unusually wet drainfield area, or odor near system components deserves qualified septic attention. Odor alone does not establish that the tank needs pumping or that the drainfield failed.",
+          "For a municipal connection, a plumber can help locate the concern before responsibility is assigned. Neighbor reports, utility alerts, or professional findings may justify contacting the sewer utility. Never open a cleanout that may hold wastewater, or open or enter a septic tank or wastewater space."
+        ]
+      },
+      {
+        "id": "hvac-air-movement", "heading": "Why does the sewer smell get stronger when the AC or fan runs?",
+        "paragraphs": [
+          "HVAC operation can move an existing odor or change pressure relationships, making it more noticeable in another room. Return-air pathways, air leakage, an outdoor-air intake near an odor source, or a pathway through a wall or floor cavity may influence where it appears.",
+          "The HVAC system does not manufacture sewer gas. Do not jump to duct replacement or indiscriminate air sealing; locate and correct the plumbing, wastewater, exterior, or other source. Never turn on a fan or HVAC equipment to clear a possible fuel-gas leak."
+        ]
+      },
+      {
+        "id": "water-or-drain", "heading": "Is the rotten-egg smell coming from the water or the drain?",
+        "paragraphs": [
+          "Notice whether the odor is already in room air, strongest at a drain opening, or mainly appears as water flows. If it occurs at several faucets with cold water as well as hot, the water source may deserve investigation. If it appears mainly with hot water, water chemistry or the hot-water system may be relevant. Water can also disturb or release odor near a drain, so timing alone does not prove the water is responsible.",
+          "Do not sniff closely into a drain, diagnose bacteria or hydrogen-sulfide concentration by smell, or add disinfectants to the water heater or plumbing without model- and water-system-specific guidance. A plumber, water utility, well professional, or appliance technician may be appropriate after the hot/cold and faucet pattern is documented."
+        ]
+      },
+      {
+        "id": "safe-observations", "heading": "What can I safely check before calling a plumber?",
+        "bullets": [
+          "Address any possible fuel-gas leak first; ordinary plumbing checks do not rule it out.",
+          "After the environment is considered safe, note the room and exact accessible area where the odor is strongest without placing your face near an opening.",
+          "Record whether the odor follows nonuse, flushing, showers, laundry drainage, rain, wind, or HVAC operation.",
+          "List slow, gurgling, rising, leaking, or backing-up fixtures and which one triggers another.",
+          "Check whether a suspect sink, shower, tub, or floor drain has sat unused; restore a plausible dry seal only with ordinary water and only when no backup or hazard is present.",
+          "Observe a toilet from the floor for movement, moisture, staining, or odor concentration without rocking or removing it.",
+          "Compare whether the odor is in room air or associated mainly with hot water, cold water, one faucet, or several faucets.",
+          "For septic homes, note alarms, wet areas, surfacing wastewater, and recent service from a safe distance.",
+          "Share the timeline with the gas utility, plumber, septic provider, water provider, or other appropriate professional."
+        ],
+        "paragraphs": ["Do not use a flame or consumer detector reading to declare the air safe; ordinary carbon-monoxide alarms do not detect every dangerous gas. Do not sniff pipes, open cleanouts, enter crawlspaces or wastewater spaces, climb to roof vents, remove toilets, mix chemicals, or perform a smoke test. Persistent or quickly returning odor deserves source-focused assessment rather than repeated masking."],
+        "callout": { "title": "A disappearing odor does not prove the hazard is gone", "text": "Odors can move, concentrations can change, and the sense of smell can become less reliable. If fuel gas or hazardous exposure remains possible, stay out and rely on emergency responders or the utility—not another sniff test." }
+      },
+      {
+        "id": "when-dangerous", "heading": "When is a sewer smell dangerous?",
+        "paragraphs": [
+          "Sewer gas is a varying mixture, not one chemical. It may include hydrogen sulfide and other gases or vapors. Composition and concentration depend on the source and conditions, so odor strength is not an exposure measurement. Hydrogen sulfide can also fatigue the sense of smell, making odor loss an unsafe reassurance at higher exposures.",
+          "Leave and seek appropriate emergency help for a possible fuel-gas leak, severe breathing difficulty, confusion, fainting, collapse, fire, or other acute danger. Avoid enclosed pits, septic tanks, sewers, and confined wastewater spaces entirely. Do not turn an ordinary residential odor into a toxicity diagnosis, but do not remain in a concerning unknown gas environment to investigate it."
+        ]
+      },
+      {
+        "id": "who-to-call", "heading": "Who should I call about a sewer smell?",
+        "subsections": [
+          { "heading": "Gas utility or emergency services", "paragraphs": ["Call from outside whenever natural gas or propane could be involved or an unknown gas odor is strong or concerning. Do not investigate appliances or return until responders say it is appropriate."] },
+          { "heading": "Licensed plumber", "paragraphs": ["Use a plumber for persistent odor after safe trap observations, repeated trap-seal loss, suspected toilet connections, damaged drain or vent piping, gurgling or moving water, or a source that remains unclear."] },
+          { "heading": "Septic provider or sewer utility", "paragraphs": ["Use a qualified septic provider for alarms, surfacing wastewater, drainfield concerns, or septic-side findings. Contact the public sewer utility when local alerts, similar neighboring problems, public work, or professional findings point beyond the private system."] },
+          { "heading": "Water provider or appropriate appliance professional", "paragraphs": ["When the odor is delivered by water rather than present in room air, the hot/cold and multiple-faucet pattern can guide whether a water utility, well professional, plumber, or water-heater technician is the useful first call."] }
+        ]
+      },
+      {
+        "id": "bottom-line", "heading": "Bottom line",
+        "paragraphs": [
+          "A sewer-like odor is a symptom, not a diagnosis. First protect against an odorized natural-gas or propane leak: leave without operating switches, fans, vehicles, flames, or anything that can spark, then call from outside. Smell alone cannot establish safety.",
+          "After that danger is addressed, use location, timing, trap use, toilet condition, water-versus-air clues, rain, and connected fixture behavior. Dry traps are one possibility; toilet connections, drain or vent defects, shared drainage, septic conditions, exterior entry, and water chemistry remain plausible. Safe observations guide the right professional but do not verify the source."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Pipeline Leak Recognition and What to Do", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do" },
+      { "title": "Recognizing and Responding to Pipeline Emergencies", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://primis.phmsa.dot.gov/stakeholder-comms/emergencyresponse/" },
+      { "title": "Controlling Pollutants and Sources: Indoor Air Quality Design Tools for Schools", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/iaq-schools/controlling-pollutants-and-sources-indoor-air-quality-design-tools-schools" },
+      { "title": "Healthy Indoor Environment Protocols for Home Energy Upgrades", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/sites/default/files/2014-12/documents/epa_retrofit_protocols.pdf" },
+      { "title": "Frequent Questions on Septic Systems", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/septic/frequent-questions-septic-systems" },
+      { "title": "Hydrogen Sulfide: NIOSH Pocket Guide to Chemical Hazards", "publisher": "National Institute for Occupational Safety and Health", "url": "https://www.cdc.gov/niosh/npg/npgd0337.html" },
+      { "title": "Oatey Standard Wax Bowl Rings", "publisher": "Oatey", "url": "https://www.oatey.com/products/p_038753311906/oatey-standard-wax-bowl-rings" },
+      { "title": "Common Drinking Water Quality Concerns", "publisher": "Michigan Department of Environment, Great Lakes, and Energy", "url": "https://www.michigan.gov/egle/public/learn/drinking-water/common-quality-concerns" },
+      { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" }
     ]
   }
 ]
