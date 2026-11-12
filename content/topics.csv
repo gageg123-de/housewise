@@ -37,7 +37,7 @@ Shower pressure low only,low water pressure in shower only,plumbing,low-pressure
 Faucet pulses,faucet water pressure pulses,plumbing,vibration,kitchen,diagnostic,planned,low,,Check supply and pressure causes
 Pipes bang when washer stops,pipes bang when washing machine stops,plumbing,noise,laundry,diagnostic,planned,high,,Water hammer cluster
 Tub backs up when toilet flushes,bathtub backs up when toilet flushes,plumbing,clogging,bathroom,safety,planned,high,,Drain backup stop conditions
-Water heater pops,water heater popping noise,plumbing,noise,garage,diagnostic,planned,high,,Sediment and safety
+Water heater pops,water heater popping noise,plumbing,noise,garage,diagnostic,published,high,/plumbing/water-heater-popping-rumbling-noise/,Storage-heater popping and rumbling intent; distinguishes sediment and scale from expansion water hammer condensation relief discharge and equipment-type-specific sounds
 Water heater relief valve drips,water heater pressure relief valve leaking,plumbing,leaking,garage,safety,planned,high,,Strong do-not-cap language
 Lights flicker when appliance turns on,why do my lights flicker when an appliance turns on,electrical,electrical-behavior,whole-house,diagnostic,published,high,/electrical/lights-flicker-when-appliance-turns-on/,Canonical appliance-triggered load and voltage intent; consolidates the planned AC-start variant while preserving random and whole-house flicker topics
 Outlet buzzes,why does my outlet buzz,electrical,noise,whole-house,safety,published,high,/electrical/outlet-buzzing/,Receptacle-area sound source and electrical stop conditions; preserves crackle spark plug heat switch dimmer and charger intents

@@ -1231,3 +1231,45 @@ test("house sewer-gas odor Finder and search preserve fuel-gas, water, backup, a
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "sewer-odor"), location);
   }
 });
+
+test("water-heater popping Finder and search preserve leak, water-quality, relief, and pipe-noise intents", () => {
+  const positives = [
+    "water heater making popping noises",
+    "why is my water heater popping",
+    "hot water heater popping",
+    "hot water heater rumbling",
+    "hot water heater making noise",
+    "water heater making bubbling noise",
+    "water heater sounds like boiling",
+    "electric water heater popping noise",
+    "gas water heater rumbling noise",
+    "water heater crackling while heating",
+    "hot water heater popping when heating",
+    "sediment noise water heater",
+    "water heater making loud rumbling sound",
+    "popping coming from hot water tank",
+    "water heater popping dangerous",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "water-heater-popping-rumbling-noise", query);
+  for (const query of [
+    "water heater leaking",
+    "no hot water",
+    "hot water smells like sulfur",
+    "pressure relief valve leaking",
+    "pipes knocking",
+    "water hammer",
+    "multiple plumbing drains backing up",
+    "water under water heater",
+    "sediment coming from faucets",
+    "sewer gas smell",
+  ]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "water-heater-popping-rumbling-noise", query);
+  }
+  for (const location of ["garage", "basement", "laundry"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "water-heater-noise"), location);
+    assert.equal(rankFinderArticles(registry, location, "water-heater-noise")[0]?.article.slug, "water-heater-popping-rumbling-noise", location);
+  }
+  for (const location of ["yard", "attic", "bathroom", "kitchen", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "water-heater-noise"), location);
+  }
+});

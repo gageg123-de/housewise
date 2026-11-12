@@ -2580,7 +2580,7 @@
     "likely_causes": ["Cold-water inlet or hot-water outlet connection leak", "Temperature-and-pressure relief valve discharge", "Drain valve seepage", "Condensate from applicable equipment", "Corroded or leaking storage tank", "Nearby plumbing or appliance leak"],
     "safe_checks": ["Keep clear of hot discharge water and wet electrical components.", "From a dry floor, note where the first drop or wet trail appears.", "Look without touching at top connections, the drain valve, tank jacket, and relief-valve discharge pipe.", "Check whether nearby plumbing or equipment is wet above or beside the heater.", "Do not cap, plug, operate, or test a relief valve while investigating an active leak."],
     "professional_help": "Request prompt plumbing service for water from the tank body or base, repeated relief discharge, a pan that keeps filling, active flow, or an uncertain source. Water near electrical parts, a gas odor, a carbon-monoxide alarm, smoke, sparking, or flooding calls for immediate separation from the area and the appropriate emergency, utility, electrical, or qualified combustion help.",
-    "related_articles": ["garage-smells-musty", "water-around-indoor-ac-unit"],
+    "related_articles": ["garage-smells-musty", "water-around-indoor-ac-unit", "water-heater-popping-rumbling-noise"],
     "image": {
       "src": "/images/water-heater-leak-source-guide.webp",
       "width": 1536,
@@ -2674,7 +2674,8 @@
           "Do not approach controls through standing water or touch wet electrical equipment.",
           "Use only manufacturer-specific shutdown instructions when the controls are safely reachable from a dry location and you understand the procedure.",
           "If water is spreading rapidly, protect people first and contact a plumber or emergency water-damage service from a safe place."
-        ]
+        ],
+        "link": { "before": "If the heater is dry and the primary symptom is popping, rumbling, or crackling during heating, use ", "label": "Why Is My Water Heater Making Popping Noises?", "href": "/plumbing/water-heater-popping-rumbling-noise/", "after": " to separate sediment-type sounds from expansion, condensation, pipe movement, and pressure warnings." }
       }
     ],
     "sources": [
@@ -13213,6 +13214,257 @@
       { "title": "Oatey Standard Wax Bowl Rings", "publisher": "Oatey", "url": "https://www.oatey.com/products/p_038753311906/oatey-standard-wax-bowl-rings" },
       { "title": "Common Drinking Water Quality Concerns", "publisher": "Michigan Department of Environment, Great Lakes, and Energy", "url": "https://www.michigan.gov/egle/public/learn/drinking-water/common-quality-concerns" },
       { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" }
+    ]
+  },
+  {
+    "title": "Why Is My Water Heater Making Popping Noises?",
+    "slug": "water-heater-popping-rumbling-noise",
+    "description": "Water heater making popping noises? Learn how sediment, heating cycles, and plumbing issues cause rumbling or crackling, plus when to call a plumber.",
+    "primary_category": "plumbing",
+    "secondary_categories": ["sounds-and-smells"],
+    "symptoms": ["noise", "heat", "appliance-behavior"],
+    "room_or_location": ["garage", "basement", "laundry"],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-12",
+    "updated_date": "2026-11-12",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "water heater making popping noises",
+      "why is my water heater popping",
+      "hot water heater popping",
+      "water heater rumbling",
+      "hot water heater making noise",
+      "water heater popping when heating",
+      "electric water heater popping",
+      "gas water heater rumbling",
+      "water heater making crackling noises",
+      "water heater sounds like boiling",
+      "sediment buildup water heater noise",
+      "water heater popping after using hot water",
+      "water heater making bubbling noise",
+      "water heater making loud rumbling sound",
+      "water heater popping dangerous"
+    ],
+    "target_search_intent": "Help a homeowner whose water heater pops, rumbles, crackles, or sounds as though it is boiling distinguish sediment-related tank noise from normal expansion, gas-heater condensation, electric-element scale, water hammer, and pressure-relief warning signs, then decide whether model-specific maintenance or professional service is appropriate.",
+    "direct_answer": "Popping or rumbling from a storage water heater often involves mineral scale or sediment, especially when the sound follows a heating cycle: water can become trapped around deposits, form vapor bubbles, and release with a pop. But sound alone does not prove sediment or establish that the heater is safe. First identify whether the unit is gas, electric, heat pump, or tankless; note when and where the sound occurs; and look from a safe distance for leakage, relief-valve discharge, gas odor, smoke, sparking, or overheating. Flushing may be appropriate for some storage models, but only under that model's instructions and with the correct shutdown, cooling, drainage, refill, and restart sequence.",
+    "likely_causes": [
+      "Loose sediment or mineral scale in a storage tank",
+      "Scale on an electric immersion heating element",
+      "Normal metal expansion, contraction, or heat-trap movement",
+      "Condensation reaching a hot surface on an applicable gas model",
+      "Water hammer or pipe movement outside the tank",
+      "Relief-system discharge, leakage, overheating, or another condition requiring professional evaluation"
+    ],
+    "safe_checks": [
+      "Notice whether the sound begins during a heating or recovery cycle, after a large hot-water draw, or when a faucet or valve closes.",
+      "Identify the heater type and model from accessible documentation or the exterior label without removing covers.",
+      "From a dry, stable location, look for water, relief-pipe discharge, corrosion, smoke, sparking, or a fuel-gas warning sign.",
+      "Review the exact manufacturer maintenance schedule and any known service history.",
+      "Arrange qualified service when the sound is persistent, worsening, accompanied by poor performance, or cannot be separated safely from a leak, pressure, gas, combustion, or electrical concern."
+    ],
+    "professional_help": "Call a licensed plumber or qualified water-heater technician for persistent or unexplained popping, unknown maintenance history, an old or corroded drain valve, recurring noise after appropriate service, visible leakage, poor recovery, or repair-versus-replacement evaluation. Keep clear of hot discharge and obtain prompt professional help for repeated temperature-and-pressure relief discharge, steam, overheating, or uncontrolled leaking. Leave and use the appropriate utility or emergency procedure for a suspected fuel-gas leak, carbon-monoxide alarm, smoke, sparking, or an electrical burning odor.",
+    "related_articles": ["water-under-water-heater", "sediment-in-water"],
+    "image": {
+      "src": "/images/water-heater-popping-noises-causes.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing sediment at the bottom of a gas storage water heater, vapor bubbles releasing around deposits, scale on an electric heating element, and a separate hot-water relief discharge warning.",
+      "caption": "Conceptual illustration: Mineral deposits can contribute to popping in storage water heaters, while an electric element and a discharging relief system represent different mechanisms. The drawings show possibilities, not a confirmed diagnosis for every heater.",
+      "kind": "conceptual",
+      "after_section": "sound-patterns"
+    },
+    "body_sections": [
+      {
+        "id": "sound-patterns",
+        "heading": "What do popping, rumbling, crackling, hissing, and knocking suggest?",
+        "paragraphs": [
+          "Timing and location matter more than volume alone. A pop while a storage tank reheats fits a different pattern from a bang when a valve closes or a hiss beside visible moisture.",
+          "Use this table to sort clues, not diagnose the heater. Different mechanisms can sound similar through an insulated tank."
+        ],
+        "table": {
+          "headers": ["Sound or pattern", "Possible explanation", "Homeowner response"],
+          "rows": [
+            ["Popping during a storage-tank heating cycle", "Sediment or scale may trap water near a heating surface", "Check the model and service history; the sound does not prove sediment"],
+            ["Low rumbling or bubbling while the tank recovers", "Bottom deposits or heating-related water movement may be involved", "Note any performance change and arrange service if it persists"],
+            ["Light ticking after heat starts or stops", "Metal expansion, pipe movement, or a model-specific heat-trap sound", "Observe the timing; light ticking without other symptoms may be normal"],
+            ["Bang or knock when a faucet or appliance valve closes", "Water hammer or pipe movement outside the heater may transmit sound", "Treat this as a plumbing-pressure clue, not proof of tank sediment"],
+            ["Brief sizzling on an applicable gas model", "Condensation may reach a hot surface during startup or recovery", "Check the manual; persistent moisture, leakage, or venting concerns need service"],
+            ["Hissing or sizzling with visible moisture", "A leak, condensate problem, or another fault may be present", "Keep clear and obtain service rather than assuming normal condensation"],
+            ["Noise with water or steam from the relief discharge", "The relief system may be responding to pressure, thermal expansion, temperature, or a valve problem", "Stay out of the discharge path and obtain prompt plumbing service; never cap the line"],
+            ["Loud noise with gas odor, a CO alarm, smoke, sparking, or an electrical burning smell", "A separate gas, combustion, or electrical hazard may exist", "Stop investigating, leave when appropriate, and call from a safe place"]
+          ]
+        }
+      },
+      {
+        "id": "sediment-mechanism",
+        "heading": "How can sediment make a water heater pop?",
+        "paragraphs": [
+          "In an applicable storage-tank heater, minerals and waterborne material can settle on the tank bottom or form scale on a heating surface. The deposits can interfere with direct heat transfer. Small amounts of water trapped around or beneath the deposits may heat rapidly, form vapor bubbles, and release through the deposit layer. That bubble formation and release can sound like popping, crackling, or low rumbling.",
+          "This does not mean the entire tank is violently boiling or establish the deposit type or amount. A. O. Smith and Bradford White document mineral buildup as a credible mechanism alongside water hammer, heat traps, expansion, condensation, and leaks.",
+          "Age and hard water can make deposits more plausible, but neither proves them. Water quality, use, heater construction, and maintenance history also matter."
+        ]
+      },
+      {
+        "id": "heater-types",
+        "heading": "Gas and electric water heaters do not make every noise for the same reason",
+        "subsections": [
+          {
+            "heading": "Gas storage water heaters",
+            "paragraphs": [
+              "A gas burner transfers heat through the tank bottom and flue surfaces. Bottom deposits can rumble or pop during recovery. Some models also sizzle briefly when combustion moisture condenses on a cooler tank and reaches a hot surface.",
+              "Do not assume all burner-area moisture is harmless condensation. Persistent water, soot, unusual flame or vent behavior, gas odor, a carbon-monoxide alarm, or worsening sound needs qualified gas-appliance or combustion evaluation. Do not open the burner compartment or adjust gas controls."
+            ]
+          },
+          {
+            "heading": "Electric storage water heaters",
+            "paragraphs": [
+              "Electric storage units use one or more immersed elements; not every design has the same number or layout. Scale can form on an element and contribute to sizzling, crackling, or popping, but sound alone cannot identify a failed element.",
+              "Keep access panels closed. Do not remove an element, test live circuits, or restore power to a drained or partly filled tank. Manufacturer instructions warn that energizing an uncovered element can damage it."
+            ]
+          },
+          {
+            "heading": "Heat-pump and tankless models",
+            "paragraphs": [
+              "A heat-pump water heater adds fan, compressor, airflow, and mode-change sounds. Compare them with its manual and error indications rather than assuming sediment.",
+              "Tankless equipment can scale, but it lacks a conventional storage-tank sediment layer. Its descaling and restart procedures are model-specific, so this article's tank-bottom explanation does not transfer unchanged."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "normal-or-concerning",
+        "heading": "Is it normal for a water heater to make popping noises?",
+        "paragraphs": [
+          "Light clicks, ticks, gentle water movement, fan operation on a heat-pump model, or brief model-documented condensation sounds can occur during normal heating. There is no universal sound schedule or volume that defines every healthy water heater.",
+          "Repeated popping or rumbling is a maintenance clue, not ordinary background noise. It deserves attention when new, persistent, worsening, paired with poor recovery, or occurring on equipment with unknown service history.",
+          "Sound severity alone cannot reveal tank pressure, wall thickness, corrosion, or safe remaining service life. No visible puddle also does not prove the tank and connections are sound. Use the companion warning signs rather than an explosion assumption or blanket reassurance."
+        ]
+      },
+      {
+        "id": "sediment-effects",
+        "heading": "Can sediment buildup damage a water heater?",
+        "paragraphs": [
+          "Depending on the heater and severity, deposits can reduce heat transfer, lengthen recovery, coat electric elements, occupy tank volume, and increase maintenance needs. Manufacturer guidance also connects heavy accumulation with performance and service-life concerns.",
+          "Those consequences are not identical in every tank. Popping does not reveal an efficiency percentage, energy-cost increase, deposit depth, or remaining life. A quiet tank can still need maintenance, and a noisy heater may have a different source. Use measured hot-water performance, leakage, corrosion, service history, and a qualified inspection instead of estimating damage from sound."
+        ]
+      },
+      {
+        "id": "danger",
+        "heading": "Is a popping water heater dangerous?",
+        "paragraphs": [
+          "Sediment-related popping is usually a maintenance concern, not proof of imminent tank failure. What matters is whether another warning accompanies it. Do not keep observing through an active gas, combustion, electrical, scalding, or uncontrolled-water hazard.",
+          "A temperature-and-pressure relief valve is a safety device. Noise or discharge at that valve or its pipe is different from a pop inside the tank. Repeated water release can be associated with thermal expansion, excessive pressure, excessive temperature, a valve problem, or another system condition. Hot discharge can cause severe burns. Stay clear, never plug or cap the outlet, never install a shutoff in its path, and do not pull the lever merely to investigate an unrelated noise."
+        ],
+        "bullets": [
+          "Leave and call the gas utility or emergency services from a safe location if natural gas or propane may be leaking; do not operate switches, vehicles, phones, or ignition sources inside.",
+          "Move outside to fresh air and call emergency services if a carbon-monoxide alarm sounds or occupants have possible exposure symptoms.",
+          "Keep away from steam, unusually hot discharge, repeated relief-valve release, active significant leakage, or a visibly overheating unit and obtain prompt professional help.",
+          "Stop using the equipment and seek appropriate electrical help for smoke, sparking, repeated breaker trips, an electrical burning smell, or water contacting electrical parts.",
+          "Do not open burner compartments, electrical panels, or pressurized connections to locate the sound."
+        ],
+        "callout": {
+          "title": "Do not treat the relief system as a noise-control part",
+          "text": "The relief valve and its discharge path protect against excessive temperature and pressure. Never cap, plug, bypass, adjust, or block them to stop sound or water. A plumber should evaluate repeated discharge and the underlying pressure, expansion, temperature, or valve condition."
+        }
+      },
+      {
+        "id": "flushing",
+        "heading": "Should you flush a water heater to stop the noise?",
+        "paragraphs": [
+          "Flushing can remove some loose sediment from many storage heaters and may reduce noise. It neither proves the diagnosis nor removes every hardened deposit. The interval and method come from the exact manufacturer and model—not a universal six-month or annual rule.",
+          "Before maintenance, identify the heater, find its manual, review its history, and consider the drain valve, corrosion, shutoffs, drainage route, and restart requirements. Unknown history, a questionable valve, heavy scale, corrosion, leakage, inaccessible controls, or unfamiliar equipment favor professional evaluation before draining.",
+          "A safe sequence is model-specific because power or fuel must be shut down correctly, hot water must cool or be controlled, drainage must not create a scald or flooding hazard, and the tank must be refilled and purged as directed before restart. On an electric heater, restoring power before the elements are properly submerged can destroy an element. On a gas heater, do not improvise gas-control, pilot, burner, or vent procedures."
+        ],
+        "callout": {
+          "title": "Flushing is maintenance, not a universal first repair",
+          "text": "Do not begin by operating the relief valve, opening a hot pressurized tank, forcing a corroded drain valve, attaching an unsafe hose, or guessing at shutdown and restart steps. If the manual and safe drainage plan are unavailable, use a licensed plumber or qualified water-heater technician."
+        }
+      },
+      {
+        "id": "after-flushing",
+        "heading": "What if flushing does not stop the popping?",
+        "paragraphs": [
+          "The remaining sound may come from hardened scale that ordinary flushing did not remove, deposits on an electric element, normal expansion or contraction, a heat trap, connected piping, water hammer, condensation, or another component. The original source may also have been misidentified.",
+          "Do not jump from an unsuccessful flush to replacement. Record timing, performance changes, leakage or relief discharge, and maintenance performed. A professional can separate tank noise from pipe noise and decide whether cleaning, component service, pressure diagnosis, or replacement is justified."
+        ]
+      },
+      {
+        "id": "five-checks",
+        "heading": "5 things to check when your water heater makes popping noises",
+        "paragraphs": [
+          "Keep these checks observational. A model number, timing note, short recording from a safe distance, and service history are often more useful than opening the heater."
+        ],
+        "bullets": [
+          "Notice whether the sound occurs during heating, after a large hot-water draw, or when a faucet or appliance valve closes.",
+          "Identify whether the equipment is a gas storage, electric storage, heat-pump, or tankless water heater from accessible labeling or documentation.",
+          "From a dry, stable location, check for visible water, relief-pipe discharge, corrosion, smoke, sparking, gas odor, or another stop-use warning.",
+          "Review the exact manufacturer maintenance schedule and any record of prior flushing, descaling, or repair.",
+          "Arrange qualified inspection when the sound persists, worsens, affects performance, or cannot be explained without opening gas, electrical, pressurized, or hot-water components."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call a plumber?",
+        "paragraphs": [
+          "Call a licensed plumber or qualified water-heater technician when the service history is unknown, the drain valve or fittings are corroded, flushing cannot be planned safely, the sound remains after appropriate maintenance, hot-water performance changes, or the source seems to involve the tank, pressure, relief system, connected pipes, or an electric element.",
+          "Use a qualified gas-appliance or combustion professional when a fuel-fired model has venting, burner, soot, persistent condensation, or combustion concerns. Use an electrician for damaged wiring or electrical exposure after the equipment and area have been made safe. Immediate gas-leak, carbon-monoxide, fire, or severe scalding hazards belong with the utility or emergency services rather than a routine appointment."
+        ]
+      },
+      {
+        "id": "repair-or-replace",
+        "heading": "Should you repair or replace a noisy water heater?",
+        "paragraphs": [
+          "Noise alone is not a replacement diagnosis. Consider the confirmed cause, leakage or corrosion, performance, parts and warranty, maintenance history, repair and replacement quotes, and documented age—not a universal lifespan cutoff.",
+          "Maintenance may be reasonable for removable sediment on otherwise sound equipment. Repair may fit a serviceable component or plumbing condition. Replacement becomes more plausible when the tank itself leaks, corrosion is extensive, a qualified diagnosis finds uneconomical damage, reliability has deteriorated, or repair cost and warranty context favor new equipment. Get the diagnosis before using popping as proof that replacement is necessary."
+        ]
+      },
+      {
+        "id": "neighboring-symptoms",
+        "heading": "When the main symptom belongs to another guide",
+        "paragraphs": [
+          "Water on the floor changes the priority to leak safety and source tracing. Faucet particles are a different symptom: hot-only particles make the hot-water system more relevant but do not prove the same material causes tank noise."
+        ],
+        "links": [
+          {
+            "before": "If water is collecting beside or beneath the heater, use ",
+            "label": "Why Is There Water Under My Water Heater?",
+            "href": "/plumbing/water-under-water-heater/",
+            "after": " to identify the first wet point and the appropriate safety response."
+          },
+          {
+            "before": "If the concern is grit, flakes, or particles delivered from faucets, use ",
+            "label": "Why Is There Sediment in My Water?",
+            "href": "/plumbing/sediment-in-water/",
+            "after": " to compare fixture scope and hot-versus-cold water."
+          }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Sediment and mineral scale are established causes of popping and rumbling in storage water heaters, but the sound is a symptom—not proof of the cause, pressure condition, or safety of the tank. Use heating-cycle timing, heater type, other plumbing events, maintenance history, performance, leakage, and relief-system behavior to narrow the pattern.",
+          "Some model-documented expansion or condensation sounds are ordinary. Persistent sediment-type noise may justify manufacturer-directed maintenance. Relief discharge, steam, overheating, gas odor, a carbon-monoxide alarm, smoke, sparking, burning odor, or major leakage requires a more urgent response. If safe flushing cannot be planned from the exact manual, or the sound remains unexplained, call a qualified professional."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "What to Do When Your Hot Water Heater Is Making Noises", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/water-heater-making-a-noise.html" },
+      { "title": "Technical Bulletins: Noisy Water Heaters", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/technical-bulletins.html" },
+      { "title": "Technical Bulletin 13: Mineral Build-Up", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/technical-bulletins/bulletin-13.html" },
+      { "title": "Technical Bulletin 15: Condensation", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/technical-bulletins/bulletin-15.html" },
+      { "title": "Technical Bulletin 52: Leaking Temperature and Pressure Relief Valve", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/technical-bulletins/bulletin-52.html" },
+      { "title": "How to Turn a Water Heater On and Off", "publisher": "A. O. Smith", "url": "https://www.hotwater.com/info-center/how-to-turn-on-and-off-water-heater.html" },
+      { "title": "Internal Noises", "publisher": "Bradford White", "url": "https://forthepro.bradfordwhite.com/internal-noises/" },
+      { "title": "How Hard Water Affects Your Water Heater", "publisher": "Bradford White", "url": "https://www.bradfordwhite.com/blogs/how-hard-water-affects-your-water-heater/" },
+      { "title": "How Often to Flush Your Water Heater and How to Do It", "publisher": "Rheem", "url": "https://www.rheem.com/water-heating/articles/how-often-to-flush-your-water-heater-and-how-to-do-it/" },
+      { "title": "Heat Pump Water Heater Use and Care Manual", "publisher": "Rheem", "url": "https://media.rheem.com/blobazrheem/wp-content/uploads/sites/36/2024/07/AP23657-Rev-01-Manual-HPWH-GEN-V-UNIVERSAL-CONNECT-ENGLISH_HALF-SIZE-3.pdf" },
+      { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" },
+      { "title": "Pipeline Leak Recognition and What to Do", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do" }
     ]
   }
 ]

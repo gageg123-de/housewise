@@ -1365,3 +1365,29 @@ test("house sewer-gas odor guide renders emergency-first diagnosis, visual, sche
   const reciprocal = await render("/plumbing/multiple-drains-back-up-at-same-time");
   assert.match(await reciprocal.text(), /href="\/plumbing\/house-smells-like-sewer-gas\/"/);
 });
+
+test("water-heater popping guide renders sound distinctions, relief safety, schema, visual, and reciprocal routing", async () => {
+  const response = await render("/plumbing/water-heater-popping-rumbling-noise");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Water Heater Making Popping Noises\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/water-heater-popping-rumbling-noise\//);
+  assert.match(html, /What do popping, rumbling, crackling, hissing, and knocking suggest\?/);
+  assert.match(html, /How can sediment make a water heater pop\?/);
+  assert.match(html, /Gas and electric water heaters do not make every noise for the same reason/);
+  assert.match(html, /Is a popping water heater dangerous\?/);
+  assert.match(html, /Do not treat the relief system as a noise-control part/);
+  assert.match(html, /Should you flush a water heater to stop the noise\?/);
+  assert.match(html, /5 things to check when your water heater makes popping noises/);
+  assert.match(html, /href="\/plumbing\/water-under-water-heater\/"/);
+  assert.match(html, /href="\/plumbing\/sediment-in-water\/"/);
+  assert.match(html, /src="\/images\/water-heater-popping-noises-causes\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/water-heater-popping-noises-causes\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const reciprocal = await render("/plumbing/water-under-water-heater");
+  assert.match(await reciprocal.text(), /href="\/plumbing\/water-heater-popping-rumbling-noise\/"/);
+});
