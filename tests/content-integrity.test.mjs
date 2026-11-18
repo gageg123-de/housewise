@@ -2095,7 +2095,7 @@ test("house sewer-gas odor guide puts fuel-gas safety before qualified plumbing 
   const reciprocal = registry.find((item) => item.slug === "multiple-drains-back-up-at-same-time");
   assert.ok(article);
   assert.equal(article.published_date, "2026-11-11");
-  assert.equal(article.updated_date, "2026-11-11");
+  assert.equal(article.updated_date, "2026-11-18");
   assert.equal(article.reviewed_date, null);
   assert.equal(article.primary_category, "plumbing");
   assert.ok(article.secondary_categories.includes("sounds-and-smells"));
@@ -2166,4 +2166,32 @@ test("water-heater popping guide separates sediment noise from pressure, piping,
   assert.match(body, /restoring power before the elements are properly submerged can destroy an element/i);
   assert.match(body, /Noise alone is not a replacement diagnosis/i);
   assert.doesNotMatch(body, /about to explode|every popping water heater has sediment|all water heater popping is harmless|flushing removes all mineral deposits|every water heater should be flushed every six months/i);
+});
+
+test("furnace burning-smell guide separates seasonal dust from electrical, fire, fuel-gas, and CO hazards", async () => {
+  const article = registry.find((item) => item.slug === "furnace-smells-like-burning");
+  const sewerGuide = registry.find((item) => item.slug === "house-smells-like-sewer-gas");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Furnace smells dusty,"));
+  assert.ok(article && sewerGuide && topic);
+  assert.equal(article.primary_category, "hvac");
+  assert.deepEqual(article.secondary_categories, ["sounds-and-smells"]);
+  assert.equal(article.published_date, "2026-11-18");
+  assert.equal(article.updated_date, "2026-11-18");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic.includes(",published,high,/hvac/furnace-smells-like-burning/"));
+  assert.equal(article.image.src, "/images/furnace-burning-smell-patterns.webp");
+  const image = await stat(new URL("../public/images/furnace-burning-smell-patterns.webp", import.meta.url));
+  assert.ok(image.size > 0 && image.size < 200_000);
+  const body = JSON.stringify(article);
+  assert.match(body, /mild dusty odor/i);
+  assert.match(body, /no universal safe waiting time/i);
+  assert.match(body, /burning plastic|plastic or electrical/i);
+  assert.match(body, /carbon monoxide is (?:colorless and )?odorless/i);
+  assert.match(body, /Do not use a phone, switch, plug, flame, vehicle, or garage door/i);
+  assert.match(body, /keep the furnace closed|Keep the cabinet closed/i);
+  assert.doesNotMatch(body, /every burning smell is harmless|burning smell proves carbon monoxide|(?:you should|homeowners? can|go ahead and) open the burner compartment|test a gas leak with a flame/i);
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.sources.some((source) => source.publisher === "Pipeline and Hazardous Materials Safety Administration"));
+  assert.ok(sewerGuide.related_articles.includes(article.slug));
+  assert.ok(sewerGuide.body_sections.some((section) => section.link?.href === "/hvac/furnace-smells-like-burning/"));
 });

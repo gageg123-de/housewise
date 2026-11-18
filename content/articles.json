@@ -13052,14 +13052,14 @@
   {
     "title": "Why Does My House Smell Like Sewer Gas?", "slug": "house-smells-like-sewer-gas", "description": "House smell like sewer gas? First learn when a possible fuel-gas leak means leave and call, then check dry traps, toilet seals, vents, and septic clues.",
     "primary_category": "plumbing", "secondary_categories": ["sounds-and-smells"], "symptoms": ["smell"], "room_or_location": ["whole-house", "bathroom", "kitchen", "laundry", "basement"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-11-11", "updated_date": "2026-11-11", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 12, "featured_status": true,
+    "published_date": "2026-11-11", "updated_date": "2026-11-18", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 12, "featured_status": true,
     "search_keywords": ["why does my house smell like sewer gas", "house smells like sewage", "sewer gas smell in house", "sewage smell in home", "sewer odor inside house", "whole house smells like sewer", "why does my bathroom smell like sewer", "house smells like rotten eggs", "intermittent sewer smell in house", "sewer smell after rain", "sewer smell with no clog", "sewage smell but drains work", "sewer gas coming from drains", "sewer smell in laundry room", "septic smell inside house"],
     "target_search_intent": "Help a homeowner investigate an initially unidentified sewer-like odor inside the home, place possible natural-gas or propane danger before routine plumbing checks, and distinguish dry traps, toilet connections, drain or vent defects, drainage pressure, septic conditions, water-related odors, and air-movement patterns without diagnosing by smell alone.",
     "direct_answer": "A sewer-like smell can enter through a dry drain trap, a compromised toilet connection, damaged drain or vent piping, or a drainage or septic problem. But odorized natural gas and propane are also commonly described as rotten eggs. Smell alone cannot reliably separate them. If a fuel-gas leak is possible, leave immediately without operating switches, plugs, fans, garage-door openers, vehicles, flames, or anything that could spark; call the gas utility or emergency services from a safe location outside. Only after that danger has been addressed should you compare where and when the odor appears, whether a fixture is rarely used, and whether drains gurgle, slow, rise, or back up.",
     "likely_causes": ["A dry or otherwise lost fixture-trap water seal", "A compromised toilet-to-drain connection", "A cracked, loose, disconnected, or improperly configured drain or vent component", "Pressure changes or a restriction affecting connected drainage", "A private sewer, public sewer, or septic-system condition", "An exterior odor entering through an opening or air intake", "Organic buildup or another local odor mistaken for sewer gas", "Sulfur-like odor associated with the water supply or hot-water system", "An odorized natural-gas or propane leak requiring emergency response"],
     "safe_checks": ["Treat a possible fuel-gas leak as an emergency before investigating drains.", "After gas danger is ruled out, note where the odor is strongest and whether it follows fixture use, rain, wind, or HVAC operation.", "Check accessible, infrequently used drains for a plausible lost water seal without sniffing into them.", "Observe whether toilets move, drains gurgle, water levels change, or several fixtures drain slowly.", "Distinguish room-air odor from odor noticed mainly while hot or cold water runs.", "For septic homes, note alarms, surfacing wastewater, saturated drainfield areas, and recurring backups from a safe distance.", "Document the timing and associated plumbing behavior for the appropriate professional."],
     "professional_help": "Call the gas utility or emergency services from outside whenever an odorized fuel-gas leak is possible. Use a licensed plumber for persistent indoor sewer odor, recurring trap-seal loss, a suspected toilet connection, drain or vent defects, or abnormal behavior across fixtures. Use a qualified septic provider for alarms, surfacing wastewater, drainfield concerns, or septic-side findings. Severe breathing difficulty, confusion, fainting, or collapse after a possible gas exposure requires emergency medical assistance.",
-    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-gurgles-randomly", "shower-drain-gurgles-when-toilet-flushes", "sink-gurgles-when-toilet-flushes", "toilet-bubbles-when-washer-drains"],
+    "related_articles": ["multiple-drains-back-up-at-same-time", "toilet-gurgles-randomly", "shower-drain-gurgles-when-toilet-flushes", "sink-gurgles-when-toilet-flushes", "toilet-bubbles-when-washer-drains", "furnace-smells-like-burning"],
     "image": {
       "src": "/images/house-sewer-gas-odor-sources.webp", "width": 1536, "height": 1024,
       "alt": "Conceptual four-panel guide showing a dry drain trap, a compromised toilet connection, a cracked drain or vent joint, and a person leaving a house because a fuel-gas leak may be possible.",
@@ -13155,7 +13155,8 @@
         "paragraphs": [
           "HVAC operation can move an existing odor or change pressure relationships, making it more noticeable in another room. Return-air pathways, air leakage, an outdoor-air intake near an odor source, or a pathway through a wall or floor cavity may influence where it appears.",
           "The HVAC system does not manufacture sewer gas. Do not jump to duct replacement or indiscriminate air sealing; locate and correct the plumbing, wastewater, exterior, or other source. Never turn on a fan or HVAC equipment to clear a possible fuel-gas leak."
-        ]
+        ],
+        "link": { "before": "If the odor is dusty or burnt and appears specifically when the heating system starts, use ", "label": "Why Does My Furnace Smell Like Burning When It Turns On?", "href": "/hvac/furnace-smells-like-burning/", "after": " after any fuel-gas concern has been cleared." }
       },
       {
         "id": "water-or-drain", "heading": "Is the rotten-egg smell coming from the water or the drain?",
@@ -13465,6 +13466,204 @@
       { "title": "Heat Pump Water Heater Use and Care Manual", "publisher": "Rheem", "url": "https://media.rheem.com/blobazrheem/wp-content/uploads/sites/36/2024/07/AP23657-Rev-01-Manual-HPWH-GEN-V-UNIVERSAL-CONNECT-ENGLISH_HALF-SIZE-3.pdf" },
       { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" },
       { "title": "Pipeline Leak Recognition and What to Do", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do" }
+    ]
+  },
+  {
+    "title": "Why Does My Furnace Smell Like Burning When It Turns On?",
+    "slug": "furnace-smells-like-burning",
+    "description": "A furnace burning smell may be seasonal dust or a warning sign. Learn what is normal, what to check safely, and when to shut off the heat.",
+    "primary_category": "hvac",
+    "secondary_categories": ["sounds-and-smells"],
+    "symptoms": ["smell", "heat", "appliance-behavior", "electrical-behavior"],
+    "room_or_location": ["whole-house", "living-area", "basement", "garage", "attic"],
+    "system": "hvac",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-18",
+    "updated_date": "2026-11-18",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 9,
+    "featured_status": true,
+    "search_keywords": [
+      "why does my furnace smell like burning when it turns on",
+      "furnace smells like burning",
+      "burning smell when heat turns on",
+      "furnace smells like burning dust",
+      "heater smells like burning",
+      "heater smells like burning plastic",
+      "burning smell from heating vents",
+      "furnace smells burnt every time it runs",
+      "is a burning smell normal the first time heat comes on",
+      "heat smells like burning",
+      "electric furnace burning smell",
+      "heat pump auxiliary heat burning smell"
+    ],
+    "target_search_intent": "Help a homeowner distinguish a mild, fading dusty odor at seasonal heating startup from persistent burning, plastic or electrical odors, smoke, fuel-gas warnings, and carbon-monoxide alarms; make only safe external observations; and know when to stop the system, leave, or call qualified help.",
+    "direct_answer": "A mild dusty odor during the first heating cycle after a long idle period can come from accumulated dust warming on heating surfaces. It should fade rather than grow stronger, and there is no universal safe waiting time. Burning plastic or electrical odors, smoke, sparks, repeated breaker trips, severe heat, or a smell that persists or returns calls for stopping the system when safe and arranging qualified service. For a rotten-egg or sulfur-like fuel-gas odor, leave without operating switches, phones, appliances, or vehicles in the affected area and call from outside. Carbon monoxide is odorless; a CO alarm or possible poisoning symptoms require fresh air and emergency help.",
+    "likely_causes": [
+      "Dust accumulated during an idle season warming on heating surfaces during the first startup",
+      "A new or recently serviced system producing a model-documented temporary odor from dust, coatings, or manufacturing residue",
+      "A loaded filter, covered return, blocked supply opening, debris, or another airflow condition contributing to overheating or odor",
+      "An overheating motor, wiring connection, control, insulation, or other electrical or mechanical component",
+      "Supplemental electric heat operating after a long idle period in a heat-pump system",
+      "An oil-burner, combustion, venting, or fuel-system condition requiring qualified service",
+      "An odor source outside the furnace that the blower is distributing through the house"
+    ],
+    "safe_checks": [
+      "Note whether this is the first heating use after months of inactivity and whether a mild dusty odor is clearly fading.",
+      "Identify the heating type from the thermostat, accessible equipment label, or owner documentation without opening a cabinet.",
+      "Inspect only the normal homeowner-accessible filter and compare its size, type, condition, and replacement method with the equipment instructions.",
+      "Confirm accessible supply registers and return grilles are not covered by furniture, rugs, curtains, or stored items.",
+      "From a normal standing position, look for smoke, scorching, melting, sparks, unusual heat, fault messages, or a tripped breaker without approaching or opening equipment.",
+      "Record whether the odor occurs once, fades, returns every cycle, grows stronger, or comes with abnormal noise or poor heating.",
+      "Keep combustibles away from the furnace area and maintain smoke and carbon-monoxide alarms according to their instructions."
+    ],
+    "professional_help": "Arrange HVAC service for a persistent or recurring burnt odor, a smell that becomes stronger, abnormal noises, weak airflow with overheating clues, an oil odor, or uncertainty about the equipment. Stop the system from the thermostat only when it is safe to do so for a plastic, electrical, hot-insulation, or overheating odor, and use an HVAC technician or electrician as appropriate. Leave and call emergency services for active fire or smoke. For a suspected natural-gas or propane leak, leave without operating switches, phones, appliances, garage doors, or vehicles in the affected area, then call 911 or the gas utility from outside and away. For a CO alarm or possible CO symptoms, move outside to fresh air and call emergency services; have fuel-burning equipment evaluated before reuse.",
+    "related_articles": ["weak-airflow-from-one-vent", "lights-flicker-when-appliance-turns-on", "house-smells-like-sewer-gas"],
+    "image": {
+      "src": "/images/furnace-burning-smell-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Four-panel conceptual guide showing a mild dusty heating startup, an odor that keeps returning, a closed furnace with an electrical stop warning, and a family outside with separate gas, carbon-monoxide alarm, and smoke symbols.",
+      "caption": "Conceptual illustration: A mild, fading dusty startup odor is different from a smell that persists, a plastic or electrical warning, and gas, carbon-monoxide, or smoke emergencies. These patterns guide the response; they do not identify a failed component by smell alone.",
+      "kind": "conceptual",
+      "after_section": "odor-patterns"
+    },
+    "body_sections": [
+      {
+        "id": "odor-patterns",
+        "heading": "First, match the odor pattern to the safe response",
+        "paragraphs": ["Use timing and companion signs along with the odor. A mild dusty smell at first seasonal startup differs from melting plastic, hot insulation, visible smoke, or an odor that returns every cycle. Smell alone does not identify a failed part. For smoke, fire, sparking, possible fuel gas, or a CO alarm, skip routine checks and move people to safety."],
+        "table": {
+          "headers": ["What you notice", "What it may mean", "Appropriate response"],
+          "rows": [
+            ["Mild dusty odor at the first seasonal startup; it is fading", "Accumulated dust warming on heating surfaces", "Monitor only while operation is otherwise normal and no warning sign appears"],
+            ["Dusty or burnt odor persists, worsens, or returns on later cycles", "Debris, airflow restriction, or another equipment condition", "Stop use if it is worsening or concerning and arrange HVAC inspection"],
+            ["Burning plastic, electrical, rubber, or hot-insulation odor", "Possible overheating wiring, motor, control, or another component", "Stop the system when safe; keep equipment closed and obtain qualified service"],
+            ["Visible smoke, flame, sparks, scorching, or rapidly increasing heat", "Possible active fire or severe overheating", "Leave the danger area, call emergency services, and do not restart the system"],
+            ["Rotten-egg or sulfur-like gas odor", "Possible odorized natural-gas or propane leak", "Leave without operating switches, phones, appliances, garage doors, or vehicles; call from outside"],
+            ["CO alarm, or headache, dizziness, nausea, confusion, or fainting that may involve CO", "Possible carbon-monoxide exposure; CO itself has no smell", "Get outside to fresh air and call emergency services; seek medical help as directed"]
+          ]
+        }
+      },
+      {
+        "id": "dusty-startup",
+        "heading": "When can a burning-dust smell be normal?",
+        "paragraphs": [
+          "Dust can settle on heating and air-distribution surfaces while a system sits idle. Warming it may create a brief dusty or toasted odor that reaches rooms through the supply ducts. Gas furnaces, electric resistance equipment, and heat-pump supplemental heat can all produce a first-use odor, although their components differ.",
+          "The clue is the trend, not a stopwatch. Manufacturers describe temporary odors ranging from minutes to a few hours, but that is not a universal safe waiting period. A mild seasonal odor should steadily fade. A stronger, plastic-like, smoky, noisy, or recurring odor does not fit that narrow pattern. Use installer guidance for a new or recently serviced system."
+        ]
+      },
+      {
+        "id": "heating-types",
+        "heading": "Does the type of heating system change the diagnosis?",
+        "subsections": [
+          {
+            "heading": "Gas furnace",
+            "paragraphs": ["A gas furnace uses a burner and heat exchanger before a blower distributes warm air. Dust may create a fading startup odor, while combustion, venting, electrical, or blower problems need qualified diagnosis. Never open the burner compartment or adjust gas controls; treat a rotten-egg odor as a possible fuel-gas emergency."]
+          },
+          {
+            "heading": "Electric furnace or heat-pump auxiliary heat",
+            "paragraphs": ["Electric elements can warm settled dust after sitting idle. A heat pump may first energize supplemental electric heat during cold weather or defrost. Plastic or wiring odor, sparks, repeated breaker trips, or an odor that does not fade requires HVAC or electrical service."]
+          },
+          {
+            "heading": "Oil furnace",
+            "paragraphs": ["An oil furnace has different burner, fuel, and venting conditions. A persistent oily, smoky, exhaust-like, or burnt odor needs a qualified oil-heating technician; do not adjust burner, fuel, ignition, or draft controls."]
+          }
+        ]
+      },
+      {
+        "id": "keeps-returning",
+        "heading": "Why does the burnt smell keep returning?",
+        "paragraphs": [
+          "An odor on every cycle is less consistent with one-time seasonal dust. Material near a heating surface, an electrical or motor condition, restricted airflow, oil-burner trouble, or an unrelated odor pulled into the return are possibilities—not remote diagnoses.",
+          "A loaded filter can restrict airflow, but replacing it does not clear plastic or electrical odor, smoke, breaker trips, or overheating. An odor noticed at a vent may have traveled from equipment, a return path, ductwork, or another room; the strongest-smelling vent is not necessarily the source."
+        ],
+        "link": {
+          "before": "If one supply outlet also has much weaker airflow than comparable outlets but no urgent odor warning is present, use ",
+          "label": "Why Is Airflow Weak From One Vent?",
+          "href": "/hvac/weak-airflow-from-one-vent/",
+          "after": " for the separate outlet-versus-branch pattern."
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "What can you safely check yourself?",
+        "paragraphs": ["Only make these observations when there is no smoke, fire, suspected fuel-gas leak, CO alarm, severe overheating, or other immediate warning sign."],
+        "bullets": [
+          "Note whether this is the first heating use after a long idle season and whether a mild dusty odor is clearly fading.",
+          "Check the thermostat mode and identify whether the home uses gas, electric resistance, a heat pump, oil, or another system from accessible documentation.",
+          "Inspect only the normal homeowner-accessible filter. Use the exact size, type, orientation, and replacement or cleaning method the equipment manufacturer specifies.",
+          "Confirm accessible supply registers and return grilles are open as intended and not covered by furniture, rugs, curtains, or stored items.",
+          "From outside closed equipment, look for smoke, scorching, melted material, fault messages, or unusual heat. Do not move closer to reproduce a smell.",
+          "Record whether the odor occurs once, returns every cycle, follows supplemental heat, comes with an abnormal sound, or coincides with poor heating or a breaker trip."
+        ],
+        "callout": {
+          "title": "Keep the cabinet closed",
+          "text": "Do not remove furnace panels, enter a burner compartment, touch wiring, test live voltage, reset a breaker that trips again, bypass a safety switch, adjust gas or oil controls, or run the system without its required filter. A filter change does not prove a burning odor is resolved."
+        }
+      },
+      {
+        "id": "shut-off",
+        "heading": "When should you shut the furnace off?",
+        "paragraphs": [
+          "For a strong or increasing burnt odor, melting-plastic or electrical smell, recurring unexplained odor, abnormal mechanical or electrical noise, unusual equipment heat, or a breaker that trips, stop the heating call from the thermostat if the thermostat is safely reachable and there is no suspected gas leak, active fire, or smoke. Keep the equipment off and arrange HVAC or electrical service. Do not repeatedly restart it to see whether the smell clears.",
+          "Active fire, visible smoke, sparking, or rapidly worsening conditions change the priority: leave the danger area and call emergency services. Do not approach a furnace, breaker panel, or disconnect through smoke, heat, water, or damaged wiring. For a suspected fuel-gas leak, do not operate the thermostat, switches, breakers, phones, appliances, garage door, or vehicles in the affected area—leave first."
+        ],
+        "link": {
+          "before": "If the main symptom is lights dimming or flickering when the heating equipment starts, with no burning odor or other stop-use sign, use ",
+          "label": "Why Do My Lights Flicker When an Appliance Turns On?",
+          "href": "/electrical/lights-flicker-when-appliance-turns-on/",
+          "after": " for that separate startup-load pattern."
+        }
+      },
+      {
+        "id": "gas-and-co",
+        "heading": "Fuel-gas odor and carbon monoxide are different hazards",
+        "paragraphs": [
+          "Natural gas and propane normally carry an added warning odor. If fuel gas might be involved, leave everyone and pets promptly. Do not use a phone, switch, plug, flame, vehicle, or garage door in the suspected area. From outside and away, call 911 or the gas utility; do not reenter until responders say it is safe.",
+          "Carbon monoxide is colorless and odorless. A dusty smell cannot prove its presence or absence. For a CO alarm, or headache, dizziness, nausea, confusion, weakness, shortness of breath, or fainting that could involve CO, get outside to fresh air, contact emergency services, and seek medical help as directed. Have fuel-burning equipment inspected before reuse. Maintain smoke and CO alarms where current guidance and their instructions specify."
+        ],
+        "callout": {
+          "title": "Do not use smell as a carbon-monoxide test",
+          "text": "Fuel-gas odor and carbon monoxide are not the same thing. Odorized gas may be noticeable; carbon monoxide cannot be seen or smelled. Respond to a gas odor or CO alarm on its own emergency pathway."
+        },
+        "link": {
+          "before": "If the odor is actually sewage-like and remains after a fuel-gas concern has been cleared, use ",
+          "label": "Why Does My House Smell Like Sewer Gas?",
+          "href": "/plumbing/house-smells-like-sewer-gas/",
+          "after": " for plumbing and drain pathways."
+        }
+      },
+      {
+        "id": "maintenance",
+        "heading": "How can you reduce avoidable furnace odors?",
+        "paragraphs": ["Use the manual rather than a universal filter schedule, keep accessible returns and supplies unobstructed, keep combustibles away from the furnace, and never spray products into equipment to mask odor. Qualified heating maintenance and working smoke and CO alarms reduce avoidable risk but cannot certify a future smell as harmless."]
+      },
+      {
+        "id": "professional-help",
+        "heading": "Who should you call?",
+        "subsections": [
+          { "heading": "HVAC technician", "paragraphs": ["Use a qualified heating technician for persistent or recurring odor, an unfamiliar startup smell, airflow or blower concerns, oil-furnace odor, abnormal noise, poor heating, or model-specific electrical, combustion, venting, and control diagnosis."] },
+          { "heading": "Electrician", "paragraphs": ["Use a licensed electrician when the concern involves house wiring, a panel, disconnect, receptacle, damaged conductors, or repeated breaker trips outside ordinary equipment service. Do not open electrical equipment to decide which trade is needed."] },
+          { "heading": "Gas utility or emergency services", "paragraphs": ["For a suspected fuel-gas leak, leave and call from outside and away. For a CO alarm, possible poisoning, active fire, smoke, or sparking, move to safety and contact emergency services. Routine HVAC scheduling comes after the immediate hazard is addressed."] }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": ["A mild, fading dusty odor at first seasonal startup can be ordinary. Persistent burning, plastic or electrical odor, abnormal heat or noise, smoke, sparking, or a breaker trip requires shutdown when safe and qualified evaluation. Treat fuel-gas odor, a CO alarm, and active smoke or fire as separate emergencies: leave first and call from a safe location. Otherwise, keep the furnace closed, check only accessible maintenance points, and record the timing for a technician."]
+      }
+    ],
+    "sources": [
+      { "title": "Why Does My Furnace Smell Like Burning?", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/gas-furnaces/furnace-smells-like-burning/" },
+      { "title": "Burning Smell in House? Causes and Solutions for Furnace Odors", "publisher": "Carrier", "url": "https://www.carrier.com/us/en/residential/hvac-resources/furnaces/burning-smell-in-house/" },
+      { "title": "HVAC Maintenance Tips and Checklist", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/maintenance-tips/" },
+      { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" },
+      { "title": "Protect Your Family and Yourself from Carbon Monoxide Poisoning", "publisher": "U.S. Environmental Protection Agency", "url": "https://www.epa.gov/indoor-air-quality-iaq/protect-your-family-and-yourself-carbon-monoxide-poisoning" },
+      { "title": "Recognizing and Responding to Pipeline Emergencies", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://primis.phmsa.dot.gov/stakeholder-comms/emergencyresponse/" },
+      { "title": "Heating Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/heating-fire-safety-handout.pdf" },
+      { "title": "Stay Warm Safely: Furnaces and Other Heating Equipment", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters" }
     ]
   }
 ]

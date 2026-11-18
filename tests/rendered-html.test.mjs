@@ -1391,3 +1391,25 @@ test("water-heater popping guide renders sound distinctions, relief safety, sche
   const reciprocal = await render("/plumbing/water-under-water-heater");
   assert.match(await reciprocal.text(), /href="\/plumbing\/water-heater-popping-rumbling-noise\/"/);
 });
+
+test("furnace burning-smell guide renders early safety distinctions, visual, schema, hub, and reciprocal routing", async () => {
+  const response = await render("/hvac/furnace-smells-like-burning");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Furnace Smell Like Burning When It Turns On\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /<h1[^>]*>Why Does My Furnace Smell Like Burning When It Turns On\?<\/h1>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/furnace-smells-like-burning\//);
+  assert.match(html, /Mild dusty odor at the first seasonal startup/);
+  assert.match(html, /Burning plastic, electrical, rubber, or hot-insulation odor/);
+  assert.match(html, /Carbon monoxide is colorless and odorless/);
+  assert.match(html, /src="\/images\/furnace-burning-smell-patterns\.webp"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/furnace-burning-smell-patterns\.webp/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const hub = await render("/hvac");
+  assert.match(await hub.text(), /href="\/hvac\/furnace-smells-like-burning\/"/);
+  const reciprocal = await render("/plumbing/house-smells-like-sewer-gas");
+  assert.match(await reciprocal.text(), /href="\/hvac\/furnace-smells-like-burning\/"/);
+});

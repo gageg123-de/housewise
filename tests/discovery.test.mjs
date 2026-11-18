@@ -1273,3 +1273,33 @@ test("water-heater popping Finder and search preserve leak, water-quality, relie
     assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "water-heater-noise"), location);
   }
 });
+
+test("furnace burning-smell Finder and search preserve appliance, plumbing, and space-heater ownership", () => {
+  for (const location of ["living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "furnace-burning-smell"), location);
+    assert.equal(rankFinderArticles(registry, location, "furnace-burning-smell")[0]?.article.slug, "furnace-smells-like-burning", location);
+  }
+  for (const location of ["yard", "bathroom", "kitchen", "laundry", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "furnace-burning-smell"), location);
+  }
+
+  const positives = [
+    "furnace smells like burning",
+    "burning smell when heat turns on",
+    "furnace smells like burning dust",
+    "heater smells like burning plastic",
+    "burning smell from heating vents",
+    "furnace smells burnt every time it runs",
+    "is a burning smell normal the first time heat comes on",
+    "heat smells like burning",
+    "electric furnace burning smell",
+    "heat pump auxiliary heat burning smell",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "furnace-smells-like-burning", query);
+
+  assert.equal(searchArticles(registry, "dryer smells like burning")[0]?.slug, "dryer-smells-like-burning");
+  assert.equal(searchArticles(registry, "hot water heater popping")[0]?.slug, "water-heater-popping-rumbling-noise");
+  assert.equal(searchArticles(registry, "house smells like sewer gas")[0]?.slug, "house-smells-like-sewer-gas");
+  assert.equal(searchArticles(registry, "outlet warm and smells burned")[0]?.slug, "outlet-warm");
+  assert.notEqual(searchArticles(registry, "space heater smells like burning")[0]?.slug, "furnace-smells-like-burning");
+});

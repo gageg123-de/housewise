@@ -21,7 +21,7 @@ AC filter is wet,why is my ac filter wet,hvac,moisture,whole-house,diagnostic,pu
 Air handler sweating,why is my air handler sweating,hvac,moisture,whole-house,diagnostic,published,high,/hvac/air-handler-sweating/,Exterior cabinet-surface condensation intent; distinct from equipment-area puddles, wet filters, sweating ducts or registers, and whole-house humidity
 One room warmer than others,one room hotter than rest of house,hvac,heat,bedroom,diagnostic,planned,high,,Airflow cluster
 Thermostat clicks but AC does not start,thermostat clicks ac does not turn on,hvac,electrical-behavior,whole-house,diagnostic,planned,medium,,Electrical boundaries
-Furnace smells dusty,furnace smells like burning dust,hvac,smell,whole-house,explanation,planned,medium,,Seasonal first-use distinction
+Furnace smells dusty,why does my furnace smell like burning when it turns on,hvac,smell,whole-house,diagnostic,published,high,/hvac/furnace-smells-like-burning/,"Burning-odor parent intent; distinguishes fading seasonal dust from recurring, electrical, fire, fuel-gas, and carbon-monoxide warning patterns"
 Air return whistles,return air vent whistling,hvac,noise,whole-house,diagnostic,planned,medium,,Airflow restrictions
 Condensate line keeps clogging,ac condensate line keeps clogging,hvac,clogging,attic,maintenance,planned,medium,,May support vent sweating
 Toilet gurgles randomly,why does my toilet gurgle randomly,plumbing,noise,bathroom,diagnostic,published,high,/plumbing/toilet-gurgles-randomly/,Intermittent or hidden-trigger drainage-pressure intent; distinct from washer-specific bubbling and refill whistling
