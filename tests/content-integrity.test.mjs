@@ -2012,7 +2012,7 @@ test("refrigerator constant-running guide leads with measured temperature and pr
   const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Refrigerator runs constantly,"));
   assert.ok(article);
   assert.equal(article.published_date, "2026-11-09");
-  assert.equal(article.updated_date, "2026-11-09");
+  assert.equal(article.updated_date, "2026-11-19");
   assert.equal(article.reviewed_date, null);
   assert.equal(article.primary_category, "appliances");
   assert.equal(article.content_type, "diagnostic-guide");
@@ -2024,7 +2024,8 @@ test("refrigerator constant-running guide leads with measured temperature and pr
   assert.ok(article.body_sections.some((section) => section.id === "frost-and-defrost"));
   assert.ok(article.body_sections.some((section) => section.id === "safe-checks" && section.bullets?.length === 11));
   assert.ok(article.body_sections.some((section) => section.id === "what-not-to-do" && section.bullets?.length === 9));
-  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles"]);
+  assert.deepEqual(article.related_articles, ["dryer-taking-two-cycles", "freezer-frost-buildup"]);
+  assert.ok(article.body_sections.some((section) => section.link?.href === "/appliances/freezer-frost-buildup/"));
   assert.equal(article.image.src, "/images/refrigerator-running-constantly-patterns.webp");
   assert.equal(article.image.width, 1536);
   assert.equal(article.image.height, 1024);
@@ -2044,6 +2045,46 @@ test("refrigerator constant-running guide leads with measured temperature and pr
   assert.match(body, /Some refrigerators use flammable refrigerant/i);
   assert.match(body, /Do not attach gauges, add refrigerant/i);
   assert.doesNotMatch(body, /always has a failing compressor|must be low on refrigerant|all refrigerator condenser coils can be cleaned/i);
+});
+
+test("freezer frost guide separates design, location, temperature, food safety, and service boundaries", async () => {
+  const article = registry.find((item) => item.slug === "freezer-frost-buildup");
+  const refrigerator = registry.find((item) => item.slug === "refrigerator-running-constantly");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Freezer frost buildup,"));
+  assert.ok(article && refrigerator && topic);
+  assert.equal(article.primary_category, "appliances");
+  assert.equal(article.content_type, "diagnostic-guide");
+  assert.equal(article.published_date, "2026-11-19");
+  assert.equal(article.updated_date, "2026-11-19");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic.includes(",published,high,/appliances/freezer-frost-buildup/"));
+  assert.ok(article.body_sections.some((section) => section.id === "identify-freezer-type" && section.table?.rows.length === 3));
+  assert.ok(article.body_sections.some((section) => section.id === "where-frost-forms" && section.table?.rows.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "seven-checks" && section.bullets?.length === 7));
+  assert.ok(article.body_sections.some((section) => section.id === "safe-defrost" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "food-safety"));
+  assert.equal(article.image.src, "/images/freezer-frost-buildup-causes.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  const image = await stat(new URL("../public/images/freezer-frost-buildup-causes.webp", import.meta.url));
+  assert.ok(image.size > 0 && image.size < 200_000);
+  assert.ok(article.sources.some((source) => source.publisher === "Whirlpool Product Help"));
+  assert.ok(article.sources.some((source) => source.publisher === "GE Appliances"));
+  assert.ok(article.sources.some((source) => source.publisher === "FoodSafety.gov"));
+  assert.ok(article.sources.some((source) => source.publisher === "USDA Food Safety and Inspection Service"));
+  assert.ok(article.related_articles.includes(refrigerator.slug));
+  assert.ok(refrigerator.related_articles.includes(article.slug));
+  assert.ok(refrigerator.body_sections.some((section) => section.link?.href === "/appliances/freezer-frost-buildup/"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /manual-defrost freezer allows frost to accumulate/i);
+  assert.match(body, /location and timing narrow the likely path/i);
+  assert.match(body, /paper-slip check.*cannot certify/i);
+  assert.match(body, /0°F \(-18°C\) or below/i);
+  assert.match(body, /still contains ice crystals or is 40°F or below/i);
+  assert.match(body, /Do not chip or pry ice/i);
+  assert.match(body, /Some appliances use flammable refrigerants/i);
+  assert.doesNotMatch(body, /every freezer uses|all freezer frost|always means the gasket|always means a failed defrost|use (?:a )?(?:knife|hair dryer|heat gun) to remove/i);
 });
 
 test("bathroom exhaust-fan water guide separates condensation, duct, rain, and wet-electrical patterns", () => {

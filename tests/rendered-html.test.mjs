@@ -1340,6 +1340,34 @@ test("refrigerator constant-running guide renders temperature-first diagnosis, s
   assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
 });
 
+test("freezer frost guide renders design and location diagnosis, food safety, schema, visual, hub, and reciprocal routing", async () => {
+  const response = await render("/appliances/freezer-frost-buildup");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is Frost Building Up in My Freezer\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/appliances\/freezer-frost-buildup\//);
+  assert.match(html, /First, is the freezer manual-defrost or frost-free\?/);
+  assert.match(html, /Where is the frost building up\?/);
+  assert.match(html, /What does frost on the freezer&#x27;s back wall mean\?|What does frost on the freezer's back wall mean\?/);
+  assert.match(html, /7 things to check when your freezer builds up frost/);
+  assert.match(html, /How can you safely defrost a freezer\?/);
+  assert.match(html, /Is the food still safe when frost builds up\?/);
+  assert.match(html, /Sharp tools and added heat are not shortcuts/);
+  assert.match(html, /0°F \(-18°C\) or below/);
+  assert.match(html, /href="\/appliances\/refrigerator-running-constantly\/"/);
+  assert.match(html, /src="\/images\/freezer-frost-buildup-causes\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/freezer-frost-buildup-causes\.webp/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const hub = await render("/appliances");
+  assert.match(await hub.text(), /href="\/appliances\/freezer-frost-buildup\/"/);
+  const reciprocal = await render("/appliances/refrigerator-running-constantly");
+  assert.match(await reciprocal.text(), /href="\/appliances\/freezer-frost-buildup\/"/);
+});
+
 test("house sewer-gas odor guide renders emergency-first diagnosis, visual, schema, and reciprocal routing", async () => {
   const response = await render("/plumbing/house-smells-like-sewer-gas");
   const html = await response.text();

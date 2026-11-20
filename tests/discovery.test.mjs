@@ -1150,6 +1150,47 @@ test("refrigerator constant-running Finder and search preserve cooling, noise, f
   }
 });
 
+test("freezer frost Finder and search preserve cooling, ice-maker, leak, noise, freezer-burn, and fresh-food intents", () => {
+  const positives = [
+    "why is frost building up in my freezer",
+    "freezer frost buildup",
+    "freezer frosting up",
+    "freezer icing up",
+    "freezer frost on back wall",
+    "frost-free freezer freezing up",
+    "ice on bottom of freezer",
+    "freezer door frost buildup",
+    "freezer frost keeps coming back",
+    "freezer covered in frost",
+    "ice forming on freezer walls",
+    "frost on food in freezer",
+    "freezer ice accumulation",
+    "freezer automatic defrost problem",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "freezer-frost-buildup", query);
+  for (const query of [
+    "refrigerator running constantly",
+    "refrigerator not cooling",
+    "ice maker not working",
+    "refrigerator leaking water",
+    "refrigerator clicking",
+    "refrigerator water dispenser problems",
+    "freezer not freezing",
+    "food freezer burn",
+    "refrigerator freezing fresh food",
+  ]) {
+    assert.notEqual(searchArticles(registry, query)[0]?.slug, "freezer-frost-buildup", query);
+  }
+  assert.equal(searchArticles(registry, "refrigerator running constantly")[0]?.slug, "refrigerator-running-constantly");
+  for (const location of ["kitchen", "garage"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "freezer-frost"), location);
+    assert.equal(rankFinderArticles(registry, location, "freezer-frost")[0]?.article.slug, "freezer-frost-buildup", location);
+  }
+  for (const location of ["yard", "attic", "basement", "bathroom", "laundry", "bedroom", "living-area", "whole-house", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "freezer-frost"), location);
+  }
+});
+
 test("bathroom exhaust-fan water Finder and search preserve neighboring water, mold, humidity, and fan intents", () => {
   const positives = [
     "water dripping from bathroom exhaust fan",

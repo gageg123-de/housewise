@@ -12578,14 +12578,14 @@
   {
     "title": "Why Is My Refrigerator Running Constantly?", "slug": "refrigerator-running-constantly", "description": "Refrigerator running constantly? Learn when long cycles are normal, what to check for door-seal and airflow problems, and when to call for repair.",
     "primary_category": "appliances", "secondary_categories": [], "symptoms": ["appliance-behavior", "heat", "noise"], "room_or_location": ["kitchen", "garage"], "system": "appliances", "content_type": "diagnostic-guide",
-    "published_date": "2026-11-09", "updated_date": "2026-11-09", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": false,
+    "published_date": "2026-11-09", "updated_date": "2026-11-19", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 11, "featured_status": false,
     "search_keywords": ["why is my refrigerator running constantly", "fridge running all the time", "refrigerator never shuts off", "refrigerator keeps running", "refrigerator runs continuously", "refrigerator compressor running constantly", "fridge never stops humming", "refrigerator rarely cycles off", "refrigerator runs all day", "refrigerator running but still cold", "refrigerator won't stop running", "refrigerator running longer than usual"],
     "target_search_intent": "Help a homeowner whose refrigerator appears to run continuously determine whether it is maintaining safe temperatures, distinguish compressor operation from fan or other appliance sounds, check door closure, settings, airflow, room conditions, and frost safely, and recognize when cooling or mechanical performance needs appliance service.",
     "direct_answer": "A refrigerator that seems to run constantly is not automatically defective. Variable-speed models may operate for long periods at low output, while hot weather, frequent door openings, new groceries, or temperature recovery can extend operation. First verify the refrigerator is holding 40°F or below with an appliance thermometer; the display may show a target rather than the actual food-compartment temperature. Then check door closure, gaskets, interior vents, model-required clearances, and unusual frost. Frequent operation with stable temperature is a different pattern from continuous operation while warming, overcooling, clicking, tripping power, or frosting heavily.",
     "likely_causes": ["Normal long-cycle or variable-speed compressor operation", "Temperature recovery after startup, door openings, or a large warm food load", "Door obstruction, damaged gasket, or misalignment allowing warm air inward", "A control setting colder than needed or an inaccurate assumption based on the display", "Blocked interior air vents or overpacked compartments", "Restricted exterior airflow or a model-specific accessible condenser maintenance need", "Room temperature or installation conditions outside the model's intended range", "Heavy frost associated with airflow or automatic-defrost trouble", "Temperature sensor, fan, control, compressor, or sealed-system fault requiring service"],
     "safe_checks": ["Measure refrigerator and freezer temperatures with an appliance thermometer rather than judging from runtime alone.", "Identify the model and compare its normal compressor and fan behavior with the owner's manual.", "Listen from outside the closed appliance and note whether the sound resembles a fan, compressor, ice maker, or vibration.", "Confirm the controls have not been changed accidentally and allow the model-specified stabilization time after an adjustment.", "Check that food, bins, and shelves do not prevent either door from closing fully.", "Inspect and clean accessible door gaskets according to the manufacturer instructions without bending hinges or door hardware.", "Move food away from visible interior air vents without overpacking the compartments.", "Compare recent door openings, grocery loading, startup, room heat, and garage conditions with the timing of the long operation.", "Verify model-specific exterior clearances and inspect only condenser areas the manual identifies as homeowner-serviceable after disconnecting power.", "Look for heavy or recurring frost without removing internal covers or using sharp tools or uncontrolled heat."],
     "professional_help": "Arrange appliance service when measured temperatures remain above the safe range, the refrigerator is excessively cold despite normal settings, heavy frost returns, a fan is striking ice, the compressor repeatedly clicks without starting normally, error codes recur, or the appliance continues running with poor cooling after safe checks. Use a qualified technician for internal fan, sensor, control, compressor, inverter-drive, defrost, wiring, or sealed-system diagnosis. Stop using the appliance and disconnect power only if it can be done safely for smoke, sparking, burning odor, damaged wiring, or repeated breaker trips; use emergency services for active fire. Do not open refrigerant tubing or attempt a recharge.",
-    "related_articles": ["dryer-taking-two-cycles"],
+    "related_articles": ["dryer-taking-two-cycles", "freezer-frost-buildup"],
     "image": {
       "src": "/images/refrigerator-running-constantly-patterns.webp",
       "width": 1536,
@@ -12677,7 +12677,13 @@
         "paragraphs": [
           "A light coating or brief defrost sound can be normal depending on the design. Heavy or recurring frost, reduced airflow, an interior fan striking ice, or a freezer that stays cold while the fresh-food section warms can make an airflow or automatic-defrost problem more plausible. The visible frost does not identify a failed heater, sensor, thermostat, fan, damper, or control board.",
           "Do not chip ice with a knife, puncture an interior liner, use an open flame, or apply a heat gun or hair dryer. Some refrigerators use flammable refrigerant, and hidden tubing may be close to interior surfaces. Follow only the model's documented defrost procedure; recurring frost or fan contact needs appliance service."
-        ]
+        ],
+        "link": {
+          "before": "If recurring frost inside the freezer is the main symptom, use ",
+          "label": "Why Is Frost Building Up in My Freezer?",
+          "href": "/appliances/freezer-frost-buildup/",
+          "after": " to compare door-edge, rear-wall, floor, food-package, and freezer-design patterns."
+        }
       },
       {
         "id": "mechanical-faults",
@@ -13664,6 +13670,256 @@
       { "title": "Recognizing and Responding to Pipeline Emergencies", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://primis.phmsa.dot.gov/stakeholder-comms/emergencyresponse/" },
       { "title": "Heating Fire Safety", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/heating-fire-safety-handout.pdf" },
       { "title": "Stay Warm Safely: Furnaces and Other Heating Equipment", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters" }
+    ]
+  },
+  {
+    "title": "Why Is Frost Building Up in My Freezer?",
+    "slug": "freezer-frost-buildup",
+    "description": "Frost building up in your freezer? Learn how door seals, airflow, temperature, and defrost problems differ, plus safe ways to stop ice returning.",
+    "primary_category": "appliances",
+    "secondary_categories": [],
+    "symptoms": ["appliance-behavior", "moisture"],
+    "room_or_location": ["kitchen", "garage"],
+    "system": "appliances",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-19",
+    "updated_date": "2026-11-19",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why is frost building up in my freezer",
+      "freezer frost buildup",
+      "freezer frosting up",
+      "freezer icing up",
+      "freezer frost on back wall",
+      "frost-free freezer freezing up",
+      "ice on bottom of freezer",
+      "freezer door frost buildup",
+      "freezer frost keeps coming back",
+      "freezer covered in frost",
+      "ice forming on freezer walls",
+      "frost on food in freezer",
+      "freezer ice accumulation",
+      "freezer automatic defrost problem"
+    ],
+    "target_search_intent": "Help a homeowner determine whether frost inside a freezer fits expected manual-defrost accumulation, moisture entering at the door, storage or airflow conditions, a model-dependent drain pattern, or a possible automatic-defrost problem; protect food safely and know when appliance service is appropriate.",
+    "direct_answer": "Freezer frost forms when moisture reaches a surface cold enough to freeze. In a manual-defrost freezer, an even layer that develops gradually may be expected maintenance. In a frost-free freezer, heavy or recurring frost can follow an incompletely closed door, a gasket or alignment problem, frequent openings, warm or uncovered food, blocked airflow, or an automatic-defrost or drain condition. First identify the freezer design, measure its actual temperature with an appliance thermometer, and note where the frost appears. The location is a clue—not proof of a failed gasket, heater, sensor, fan, drain, control, or sealed refrigeration component.",
+    "likely_causes": [
+      "Expected frost accumulation in a manual-defrost freezer",
+      "A door left ajar, obstructed, or opened frequently enough to admit humid room air",
+      "A dirty, folded, torn, loose, or poorly contacting door gasket or a door-alignment condition",
+      "Warm, moist, or uncovered food adding water vapor to the compartment",
+      "Packages blocking interior air vents or preventing full door closure",
+      "Temperature recovery after a large food load, power interruption, or repeated openings",
+      "A model-dependent defrost drain path allowing meltwater to pool and refreeze",
+      "An automatic-defrost, airflow, fan, sensor, control, or other internal condition requiring service"
+    ],
+    "safe_checks": [
+      "Identify from the model manual whether the freezer is manual-defrost, partial automatic-defrost, or frost-free.",
+      "Measure the compartment with a freezer-rated appliance thermometer rather than relying only on the control setting or display.",
+      "Note whether frost is concentrated at the door, rear wall, floor, food packages, air vents, or throughout the compartment.",
+      "Confirm the door closes fully and that food, baskets, shelving, or ice is not interfering.",
+      "Inspect accessible gasket surfaces for dirt, folds, tears, gaps, or condensation without bending hinges or heating the gasket.",
+      "Move packages away from visible vents and let warm food cool as food-safety guidance allows before freezing it.",
+      "Record recent door openings, grocery loading, power interruption, room humidity, and how quickly frost returns after model-directed defrosting."
+    ],
+    "professional_help": "Arrange appliance service when heavy frost returns quickly in a frost-free freezer, a fan strikes ice, the door cannot align or seal, floor ice keeps returning, temperatures rise or fluctuate, food softens, error codes recur, or the safe external checks do not explain the pattern. Keep internal panels, electrical parts, fans, and refrigerant tubing closed. Stop using the appliance and disconnect power only if it is safely accessible for smoke, sparking, electrical burning odor, damaged wiring, repeated breaker trips, or water reaching electrical components; use emergency services for an active fire.",
+    "related_articles": ["refrigerator-running-constantly"],
+    "image": {
+      "src": "/images/freezer-frost-buildup-causes.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel freezer guide showing frost from an open door, heavy frost on a rear wall, model-dependent floor ice and drain path, and a manual-defrost freezer unplugged beside a food cooler.",
+      "caption": "Conceptual patterns: Door moisture, rear-wall frost, floor ice, and expected manual-defrost accumulation point to different checks. Construction and drainage vary by model, and no pattern identifies a failed part by itself.",
+      "kind": "conceptual",
+      "after_section": "where-frost-forms"
+    },
+    "body_sections": [
+      {
+        "id": "identify-freezer-type",
+        "heading": "First, is the freezer manual-defrost or frost-free?",
+        "paragraphs": [
+          "The design changes what frost means. A manual-defrost freezer allows frost to accumulate on cold interior surfaces and depends on periodic owner defrosting. An even layer that forms slowly can therefore be expected, but the manual—not a universal thickness or calendar interval—sets the maintenance method.",
+          "A frost-free freezer still forms frost on hidden cold surfaces during normal cooling, then uses a model-specific automatic cycle to melt it. The name does not mean that visible frost is impossible. A brief light coating after humid air enters can occur, while a heavy rear-wall layer or frost that repeatedly returns deserves investigation.",
+          "Check the model number and owner's manual before diagnosing or defrosting. Freezer types do not share one construction or maintenance procedure."
+        ],
+        "table": {
+          "headers": ["Freezer design", "How to interpret frost"],
+          "rows": [
+            ["Manual-defrost", "Gradual, fairly even accumulation may be expected maintenance; follow the exact manual for timing and procedure"],
+            ["Frost-free or automatic-defrost", "Light incidental frost may follow moisture entry, but heavy or recurring frost can indicate a closure, airflow, drain, or defrost concern"],
+            ["Design unknown", "Use the model label and manual; do not assume the presence or absence of a control proves the defrost type"]
+          ]
+        }
+      },
+      {
+        "id": "where-frost-forms",
+        "heading": "Where is the frost building up?",
+        "paragraphs": [
+          "Location and timing narrow the likely path better than the word frost alone. They still do not diagnose a component. Photograph the pattern before a safe, model-directed defrost so you can compare where and how quickly it returns."
+        ],
+        "table": {
+          "headers": ["Where frost or ice appears", "What the pattern may suggest", "Useful next observation"],
+          "rows": [
+            ["Around the door or one gasket edge", "Humid air entering through an open, obstructed, dirty, damaged, or misaligned closure", "Check full closure, packages, baskets, gasket contact, and condensation"],
+            ["Heavy patch on the rear interior wall", "Recurring moisture, blocked airflow, or a possible frost-free airflow or defrost condition", "Check visible vents and measured temperature; keep the rear panel installed"],
+            ["Sheet of ice on the floor", "A spill, moisture entry, or—in applicable designs—meltwater that did not drain normally", "Review model drain information and whether ice returns after proper defrosting"],
+            ["On food packages", "Moisture from air entry, warm or uncovered food, damaged packaging, or temperature change", "Check packaging, door use, temperature, and whether food is softening"],
+            ["At visible air vents", "Packages may be restricting circulation or moisture may be freezing in that area", "Move items clear without probing the vent"],
+            ["Evenly throughout a manual-defrost freezer", "Expected accumulation may fit the design", "Follow the manufacturer defrost instructions rather than an invented interval"],
+            ["Rapidly throughout a frost-free freezer", "Continued air entry or an internal airflow or automatic-defrost problem becomes more plausible", "Arrange service if safe closure and storage checks do not explain it"]
+          ]
+        }
+      },
+      {
+        "id": "door-frost",
+        "heading": "Why is frost forming around the freezer door?",
+        "paragraphs": [
+          "Warm room air carries water vapor. When that air enters a freezer, the moisture condenses and freezes on cold surfaces, often near the opening. Frequent openings, a door left slightly ajar, a package or basket in the way, and a folded or dirty gasket can all increase the moisture load.",
+          "Inspect the accessible gasket and mating surface. Clean them only as the manual directs, and confirm drawers, shelves, food, and ice are not stopping the door. A paper-slip check can reveal one area with different resistance, but it cannot certify the entire gasket, hinge, alignment, cabinet, and closure as good or bad.",
+          "Do not heat, stretch, glue, or reshape the gasket or adjust hinges without model-specific instructions. Frost at one edge makes an air-leak path more plausible; it does not prove the gasket itself must be replaced."
+        ]
+      },
+      {
+        "id": "back-wall-frost",
+        "heading": "What does frost on the freezer's back wall mean?",
+        "paragraphs": [
+          "In many frost-free designs, cooling and defrost components sit behind an interior panel. A broad or thick frost patch on that visible panel can accompany restricted internal airflow or an automatic-defrost problem. Moisture entering through the door or blocked vents can create a similar visible pattern.",
+          "The pattern cannot identify a heater, sensor, thermostat, timer, control board, fan, or refrigerant fault. Keep the rear panel installed. Removing it can expose sharp edges, moving fans, live wiring, hot defrost parts, and refrigerant tubing. A technician can use the model's service information and measurements to distinguish the possibilities."
+        ]
+      },
+      {
+        "id": "floor-ice",
+        "heading": "Why is there ice on the freezer floor?",
+        "paragraphs": [
+          "Floor ice is not automatically a clogged drain. A spill, a melting ice package, a door left open, or humid air can put water on the floor. In some automatic-defrost designs, meltwater normally follows a concealed drain path; if that path is blocked or frozen, water may collect and refreeze. Drain location and access vary by model.",
+          "Do not push wire, a screwdriver, chemical drain cleaner, or hot water into an unknown opening. Do not remove an interior floor or rear panel. Review the exact manual and arrange service when ice returns, drainage is inaccessible, water reaches electrical areas, or the source is uncertain."
+        ]
+      },
+      {
+        "id": "food-package-frost",
+        "heading": "Why is frost forming on food and packages?",
+        "paragraphs": [
+          "Frost on packaging can come from humid air entering the compartment, moisture released by warm or uncovered food, loose packaging, or partial thawing and refreezing. Keep food in freezer-suitable packaging, close it tightly, and avoid letting packages prevent the door from sealing or block an air path.",
+          "Freezer burn is different from frost coating the appliance. It is a quality change caused by air reaching food and drying its surface; USDA guidance does not classify freezer burn itself as a food-safety hazard. Temperature abuse is a separate question, so use a thermometer and food-safety guidance rather than appearance or odor alone."
+        ]
+      },
+      {
+        "id": "airflow-temperature",
+        "heading": "Can blocked airflow or the temperature setting cause frost?",
+        "paragraphs": [
+          "Packages pressed against visible vents can interfere with air distribution and create uneven cold areas. Overfilling can also hold the door open; an almost empty freezer may behave differently from a normally loaded one. Follow the model's storage and vent-clearance guidance rather than a universal packing rule.",
+          "FoodSafety.gov recommends keeping a freezer at 0°F (-18°C) or below for frozen-food storage. The control number or display may be a target, not a verified compartment temperature, so use a freezer-rated appliance thermometer. Setting the control colder does not make the freezer cool faster and does not repair a door, airflow, drain, or defrost problem.",
+          "Recent loading, power loss, repeated openings, humidity, or a room outside the model's rated conditions can change frost behavior. Do not copy operating ranges or clearances from another appliance."
+        ],
+        "callout": {
+          "title": "Temperature comes before appearance",
+          "text": "A freezer can have frost yet still be too warm, and a freezer can look frost-free while food is warming. Measure temperature and watch whether food remains solid; the visible ice pattern alone does not establish safe storage."
+        }
+      },
+      {
+        "id": "automatic-defrost",
+        "heading": "Could the automatic defrost system be failing?",
+        "paragraphs": [
+          "In a typical frost-free system, moisture freezes on a cold evaporator during cooling. A model-specific control periodically stops ordinary cooling and energizes a defrost process; meltwater then follows the appliance's drainage design. Fans and air passages distribute cold air after the cycle. Exact parts and sequences vary.",
+          "Heavy frost that returns after a complete manufacturer-directed defrost, a fan striking ice, warming despite long operation, or recurring rear-wall frost can make an internal problem more plausible. These clues still do not identify which component failed. Do not test live voltage, bypass controls, force a defrost cycle, power a heater directly, or probe a fan or drain behind a panel."
+        ]
+      },
+      {
+        "id": "seven-checks",
+        "heading": "7 things to check when your freezer builds up frost",
+        "bullets": [
+          "Identify the freezer type and model from accessible documentation: manual-defrost, automatic-defrost, frost-free, upright, chest, or refrigerator-freezer.",
+          "Measure actual temperature with a freezer-rated thermometer and note whether it is stable, rising, or unusually cold.",
+          "Record where frost first appears and whether it follows door openings, loading, a power interruption, humid weather, or a recent defrost.",
+          "Confirm the door closes fully; remove food, baskets, shelves, or ice that interferes without forcing hardware.",
+          "Inspect accessible gasket surfaces for dirt, folds, tears, loose areas, and condensation, then clean only as the manufacturer directs.",
+          "Move packages away from visible vents, keep packaging closed, and avoid overpacking or placing warm, steaming food directly inside.",
+          "Review the manual and arrange service when heavy frost returns, a fan hits ice, floor ice recurs, temperatures are abnormal, or food is softening."
+        ]
+      },
+      {
+        "id": "safe-defrost",
+        "heading": "How can you safely defrost a freezer?",
+        "paragraphs": [
+          "Use the exact manufacturer procedure. For a manual-defrost model, that commonly means planning safe food storage, disconnecting power as instructed, allowing ice to melt, managing water, drying accessible surfaces, and restarting as documented. Do not assume that sequence applies to a frost-free model.",
+          "Do not chip or pry ice with a knife, screwdriver, ice pick, or other sharp tool. Do not use a hair dryer, heat gun, space heater, open flame, boiling water, or an unapproved appliance. Heat and tools can damage the liner, hidden refrigerant tubing, electrical insulation, and plastic, and can create shock, fire, or refrigerant hazards.",
+          "Never operate the freezer with an internal panel removed. If the plug, appliance, floor, or surrounding area is wet or damaged, do not touch it; isolate power only from a safe, dry location and call qualified help."
+        ],
+        "callout": {
+          "title": "Let ice melt by the approved method",
+          "text": "Accuracy outranks speed. The safe defrost method, drain arrangement, restart steps, and food-handling plan depend on the model. Sharp tools and added heat are not shortcuts."
+        }
+      },
+      {
+        "id": "food-safety",
+        "heading": "Is the food still safe when frost builds up?",
+        "paragraphs": [
+          "Frost alone does not determine food safety. Check the measured temperature and whether food stayed frozen. Keep the door closed while you assess the situation. If the freezer cannot hold temperature, move food promptly to another freezer at 0°F or below, or use an insulated cooler and sufficient ice according to current food-safety guidance.",
+          "FoodSafety.gov says food that still contains ice crystals or is 40°F or below may be refrozen or cooked, although quality can decline. Use its emergency chart for the specific food and exposure; do not taste food to decide whether it is safe. Discard food when the time or temperature history makes safety uncertain under that guidance.",
+          "A later return to 0°F does not erase an earlier unsafe warm period. An appliance display also cannot reconstruct the food's temperature history. Separate the appliance diagnosis from the food decision."
+        ]
+      },
+      {
+        "id": "prevent-return",
+        "heading": "How can you keep freezer frost from returning?",
+        "paragraphs": [
+          "Close the door promptly, store packages so they do not obstruct closure or visible vents, use freezer-suitable packaging, clean accessible gasket surfaces as directed, and use the model's recommended control setting and defrost procedure. Let hot, steaming food cool under safe food-handling practices before freezing it.",
+          "These steps reduce avoidable moisture; they do not repair a damaged closure, concealed drain, fan, sensor, control, defrost component, or sealed system. Repeatedly thawing the compartment without finding why a frost-free model ices over treats the result, not necessarily the cause."
+        ]
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call an appliance technician?",
+        "paragraphs": [
+          "Arrange service when heavy frost returns quickly in a frost-free model, measured temperature is rising or unstable, food softens, a fan strikes ice, the door cannot align or seal, floor ice recurs, an error returns, or the safe external checks do not explain the pattern. A technician can evaluate door fit, internal airflow, fans, drainage, defrost controls and heaters, sensors, wiring, and the sealed refrigeration system using model-specific information.",
+          "Stop using the freezer for smoke, sparking, electrical burning odor, damaged wiring, repeated breaker trips, or water contacting electrical parts. Disconnect power only when the plug or correct breaker is safely reachable without crossing water or touching damaged equipment. Use emergency services for an active electrical fire.",
+          "Do not remove panels, test live circuits, replace internal defrost parts, attach refrigerant gauges, add refrigerant, use leak sealer, or puncture tubing. Some appliances use flammable refrigerants, and frost cannot diagnose refrigerant charge."
+        ]
+      },
+      {
+        "id": "repair-or-replace",
+        "heading": "Should you repair or replace a freezer that keeps frosting?",
+        "paragraphs": [
+          "Frost is not a replacement diagnosis. Consider the confirmed cause, temperature performance, door condition, service history, warranty, parts availability, and written estimates.",
+          "Routine manual defrosting may be all a sound manual-defrost freezer needs. A closure or serviceable defrost component may justify repair. Replacement becomes more plausible with major sealed-system or cabinet damage, unsafe electrical damage, unavailable parts, or repair economics and reliability that favor a new appliance. Do not use a universal age cutoff."
+        ]
+      },
+      {
+        "id": "related-symptoms",
+        "heading": "What if the freezer also seems to run constantly?",
+        "paragraphs": [
+          "Heavy frost can restrict airflow and increase cooling demand, but audible operation alone cannot show whether the compressor, a fan, or another component is running. Temperature performance remains the first distinction."
+        ],
+        "link": {
+          "before": "If long or nearly continuous operation is the primary concern, use ",
+          "label": "Why Is My Refrigerator Running Constantly?",
+          "href": "/appliances/refrigerator-running-constantly/",
+          "after": " to separate normal variable-speed behavior from door, airflow, room-condition, and cooling-performance clues."
+        }
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "Freezer frost forms when moisture freezes, but the cause depends on the design, location, timing, closure, storage, airflow, and actual temperature. Gradual, even accumulation may be normal in a manual-defrost model. Heavy or recurring frost in a frost-free freezer makes continued moisture entry or an airflow, drain, or automatic-defrost concern more plausible—not proven.",
+          "Identify the model, measure temperature, inspect accessible closure and storage conditions, and use the documented defrost procedure. Keep sharp tools, added heat, service panels, wiring, fans, and refrigerant tubing out of homeowner troubleshooting. Protect food by measured time and temperature; call a technician when frost returns or performance changes."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Frosting in the Freezer Section - Top Freezer Refrigerator", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Top_Freezer_Refrigerator/Operation/Frosting_or_Condensation/Frosting_in_the_Freezer_Section_-_Top_Freezer_Refrigerator" },
+      { "title": "How to Help Eliminate Condensation and Frost", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Product_Info/Product_Assistance/How_to_Help_Eliminate_Condensation_and_Frost" },
+      { "title": "How to Defrost the Freezer", "publisher": "Whirlpool Product Help", "url": "https://producthelp.whirlpool.com/Refrigeration/Freezers/Product_Info/Product_Assistance/How_to_Defrost_the_Freezer" },
+      { "title": "Refrigerator - Frost or Ice on Freezer Wall", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=16894" },
+      { "title": "Refrigerator - Ice on Freezer Floor", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=17476" },
+      { "title": "Refrigerator - Types of Defrost Systems", "publisher": "GE Appliances", "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=19471" },
+      { "title": "Refrigerators - Freezer Frost Build Up", "publisher": "Frigidaire", "url": "https://owner.frigidaire.com/support-articles/article/1918348-refrigerators-freezer-frost-build-up" },
+      { "title": "Cold Food Storage Charts", "publisher": "FoodSafety.gov", "url": "https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts" },
+      { "title": "Food Safety in a Disaster or Emergency", "publisher": "FoodSafety.gov", "url": "https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency" },
+      { "title": "What Is Freezer Burn?", "publisher": "USDA Food Safety and Inspection Service", "url": "https://ask.fsis.usda.gov/article/What-is-freezer-burn" }
     ]
   }
 ]
