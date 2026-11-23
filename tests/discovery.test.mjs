@@ -1344,3 +1344,42 @@ test("furnace burning-smell Finder and search preserve appliance, plumbing, and 
   assert.equal(searchArticles(registry, "outlet warm and smells burned")[0]?.slug, "outlet-warm");
   assert.notEqual(searchArticles(registry, "space heater smells like burning")[0]?.slug, "furnace-smells-like-burning");
 });
+
+test("smoke-alarm maintenance chirp Finder and search preserve emergency and neighboring electrical ownership", () => {
+  for (const location of ["bedroom", "living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "smoke-alarm-chirping"), location);
+    assert.deepEqual(rankFinderArticles(registry, location, "smoke-alarm-chirping").map((item) => item.article.slug), ["smoke-alarm-chirping-after-battery-change"], location);
+  }
+  for (const location of ["yard", "bathroom", "kitchen", "garage", "laundry", "attic", "basement", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "smoke-alarm-chirping"), location);
+  }
+
+  const positives = [
+    "why does my smoke alarm keep chirping after changing battery",
+    "smoke alarm chirping after battery change",
+    "smoke detector still chirping new battery",
+    "smoke alarm keeps beeping with new battery",
+    "hardwired smoke detector chirping after battery replacement",
+    "smoke alarm chirps every 30 seconds",
+    "smoke detector beeps every minute",
+    "smoke alarm won't stop chirping",
+    "smoke detector low battery warning won't stop",
+    "smoke alarm end of life chirp",
+    "sealed battery smoke alarm chirping",
+    "smoke detector chirps after changing 9v battery",
+    "Kidde smoke alarm chirping after replacing battery",
+    "First Alert smoke alarm chirping after new battery",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "smoke-alarm-chirping-after-battery-change", query);
+
+  for (const query of [
+    "carbon monoxide alarm emergency",
+    "smoke alarm detecting smoke",
+    "fire alarm sounding continuously",
+    "electrical outlet buzzing",
+    "electrical panel buzzing",
+    "circuit breaker tripping",
+    "one room without power",
+    "dishwasher beeping",
+  ]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "smoke-alarm-chirping-after-battery-change", query);
+});

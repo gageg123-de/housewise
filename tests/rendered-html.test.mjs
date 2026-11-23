@@ -1441,3 +1441,31 @@ test("furnace burning-smell guide renders early safety distinctions, visual, sch
   const reciprocal = await render("/plumbing/house-smells-like-sewer-gas");
   assert.match(await reciprocal.text(), /href="\/hvac\/furnace-smells-like-burning\/"/);
 });
+
+test("smoke-alarm chirping guide renders emergency-first diagnosis, model boundaries, visual, schema, hub, and reciprocal routing", async () => {
+  const response = await render("/electrical/smoke-alarm-chirping-after-battery-change");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Does My Smoke Alarm Keep Chirping After Changing the Battery\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /<h1[^>]*>Why Does My Smoke Alarm Keep Chirping After Changing the Battery\?<\/h1>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/electrical\/smoke-alarm-chirping-after-battery-change\//);
+  assert.match(html, /First, is it chirping or sounding a full alarm\?/);
+  assert.match(html, /Why does a smoke alarm still chirp with a new battery\?/);
+  assert.match(html, /Why does my hardwired smoke alarm keep chirping\?/);
+  assert.match(html, /Can a sealed-battery smoke alarm start chirping\?/);
+  assert.match(html, /A full alarm changes the task/);
+  assert.match(html, /7 things to check when a smoke alarm still chirps after a battery change/);
+  assert.match(html, /href="\/electrical\/no-power-in-one-room\/"/);
+  assert.match(html, /href="\/electrical\/circuit-breaker-keeps-tripping\/"/);
+  assert.match(html, /src="\/images\/smoke-alarm-chirping-after-battery-change\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/smoke-alarm-chirping-after-battery-change\.webp/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const hub = await render("/electrical");
+  assert.match(await hub.text(), /href="\/electrical\/smoke-alarm-chirping-after-battery-change\/"/);
+  const reciprocal = await render("/electrical/no-power-in-one-room");
+  assert.match(await reciprocal.text(), /href="\/electrical\/smoke-alarm-chirping-after-battery-change\/"/);
+});

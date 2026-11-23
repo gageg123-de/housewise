@@ -1581,7 +1581,7 @@ test("one-room power-loss guide maps affected loads without treating room bounda
   const gfciReset = topics.split(/\r?\n/).find((row) => row.startsWith("GFCI will not reset,"));
   assert.ok(article && recurring && reset);
   assert.equal(article.published_date, "2026-10-02");
-  assert.equal(article.updated_date, "2026-10-10");
+  assert.equal(article.updated_date, "2026-11-22");
   assert.equal(article.reviewed_date, null);
   assert.equal(article.primary_category, "electrical");
   assert.equal(article.content_type, "diagnostic-guide");
@@ -2085,6 +2085,49 @@ test("freezer frost guide separates design, location, temperature, food safety, 
   assert.match(body, /Do not chip or pry ice/i);
   assert.match(body, /Some appliances use flammable refrigerants/i);
   assert.doesNotMatch(body, /every freezer uses|all freezer frost|always means the gasket|always means a failed defrost|use (?:a )?(?:knife|hair dryer|heat gun) to remove/i);
+});
+
+test("smoke-alarm chirping guide keeps emergency response ahead of model-specific maintenance", async () => {
+  const article = registry.find((item) => item.slug === "smoke-alarm-chirping-after-battery-change");
+  const noPower = registry.find((item) => item.slug === "no-power-in-one-room");
+  const topic = topics.split(/\r?\n/).find((row) => row.startsWith("Smoke alarm chirps after battery change,"));
+  assert.ok(article && noPower && topic);
+  assert.equal(article.primary_category, "electrical");
+  assert.equal(article.content_type, "diagnostic-guide");
+  assert.equal(article.published_date, "2026-11-22");
+  assert.equal(article.updated_date, "2026-11-22");
+  assert.equal(article.reviewed_date, null);
+  assert.ok(topic.includes(",published,high,/electrical/smoke-alarm-chirping-after-battery-change/"));
+  assert.ok(article.body_sections.some((section) => section.id === "emergency-or-chirp" && section.callout));
+  assert.ok(article.body_sections.some((section) => section.id === "warning-patterns" && section.table?.rows.length === 6));
+  assert.ok(article.body_sections.some((section) => section.id === "hardwired"));
+  assert.ok(article.body_sections.some((section) => section.id === "sealed-battery"));
+  assert.ok(article.body_sections.some((section) => section.id === "reset"));
+  assert.ok(article.body_sections.some((section) => section.id === "seven-checks" && section.bullets?.length === 7));
+  assert.equal(article.image.src, "/images/smoke-alarm-chirping-after-battery-change.webp");
+  assert.equal(article.image.width, 1536);
+  assert.equal(article.image.height, 1024);
+  assert.equal(article.image.kind, "conceptual");
+  const image = await stat(new URL("../public/images/smoke-alarm-chirping-after-battery-change.webp", import.meta.url));
+  assert.ok(image.size > 0 && image.size < 200_000);
+  assert.ok(article.sources.some((source) => source.publisher === "Kidde"));
+  assert.ok(article.sources.some((source) => source.publisher === "First Alert"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Fire Administration"));
+  assert.ok(article.sources.some((source) => source.publisher === "National Fire Protection Association"));
+  assert.ok(article.sources.some((source) => source.publisher === "U.S. Consumer Product Safety Commission"));
+  assert.ok(article.related_articles.includes(noPower.slug));
+  assert.ok(noPower.body_sections.some((section) => section.link?.href === "/electrical/smoke-alarm-chirping-after-battery-change/"));
+  const body = JSON.stringify(article.body_sections);
+  assert.match(body, /A full alarm changes the task/i);
+  assert.match(body, /chirp counts.*vary by model/i);
+  assert.match(body, /matching physical size alone does not establish compatible chemistry/i);
+  assert.match(body, /Hardwired does not mean battery-free/i);
+  assert.match(body, /sealed cell is not a homeowner-replaceable battery/i);
+  assert.match(body, /manufacture date.*installation date.*does not reset sensor age/i);
+  assert.match(body, /fixed instruction copied from another/i);
+  assert.match(body, /test button.*does not verify sensor accuracy/i);
+  assert.match(body, /Do not remove a battery, disconnect every alarm/i);
+  assert.doesNotMatch(body, /one chirp every 30 seconds always means|three chirps always mean|four beeps always mean|every smoke detector uses a 9-volt|holding the test button for 20 seconds resets every model|remove the battery (?:to|and) stop/i);
 });
 
 test("bathroom exhaust-fan water guide separates condensation, duct, rain, and wet-electrical patterns", () => {
