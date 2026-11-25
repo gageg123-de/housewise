@@ -1469,3 +1469,35 @@ test("smoke-alarm chirping guide renders emergency-first diagnosis, model bounda
   const reciprocal = await render("/electrical/no-power-in-one-room");
   assert.match(await reciprocal.text(), /href="\/electrical\/smoke-alarm-chirping-after-battery-change\/"/);
 });
+
+test("high-water-bill guide renders consumption-first diagnosis, visual, schema, hub, and reciprocal routing", async () => {
+  const response = await render("/plumbing/water-bill-suddenly-high");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Water Bill Suddenly So High\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /<h1[^>]*>Why Is My Water Bill Suddenly So High\?<\/h1>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/plumbing\/water-bill-suddenly-high\//);
+  assert.match(html, /First, did your water use increase or just the amount charged\?/);
+  assert.match(html, /How can you tell whether the bill is incorrect\?/);
+  assert.match(html, /How do you check a water meter for unexplained use\?/);
+  assert.match(html, /Can a running toilet make your water bill spike\?/);
+  assert.match(html, /Could estimated readings or meter replacement explain the increase\?/);
+  assert.match(html, /The key fork in the diagnosis/);
+  assert.match(html, /Do not use the house shutoff as a universal leak-location test/);
+  assert.match(html, /href="\/plumbing\/toilet-keeps-running-after-flushing\/"/);
+  assert.match(html, /href="\/moisture-and-mold\/wet-spot-on-wall\/"/);
+  assert.match(html, /href="\/plumbing\/water-under-water-heater\/"/);
+  assert.match(html, /src="\/images\/high-water-bill-diagnostic-guide\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/high-water-bill-diagnostic-guide\.webp/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const hub = await render("/plumbing");
+  assert.match(await hub.text(), /href="\/plumbing\/water-bill-suddenly-high\/"/);
+  const toilet = await render("/plumbing/toilet-keeps-running-after-flushing");
+  assert.match(await toilet.text(), /href="\/plumbing\/water-bill-suddenly-high\/"/);
+  const wetWall = await render("/moisture-and-mold/wet-spot-on-wall");
+  assert.match(await wetWall.text(), /href="\/plumbing\/water-bill-suddenly-high\/"/);
+});

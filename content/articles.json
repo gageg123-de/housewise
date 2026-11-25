@@ -7172,7 +7172,7 @@
     "system": "moisture-and-mold",
     "content_type": "diagnostic-guide",
     "published_date": "2026-09-21",
-    "updated_date": "2026-09-23",
+    "updated_date": "2026-11-24",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 12,
@@ -7320,6 +7320,12 @@
         "callout": {
           "title": "Observe ordinary use—do not stress the system",
           "text": "Do not repeatedly fill a tub, run a washer, or flush fixtures to enlarge the patch. Record normal-use timing and let a plumber perform pressure, drain, or fixture testing when the evidence points that way."
+        },
+        "link": {
+          "before": "When a wet spot accompanies an unexplained increase in metered consumption, use ",
+          "label": "Why Is My Water Bill Suddenly So High?",
+          "href": "/plumbing/water-bill-suddenly-high/",
+          "after": " to separate higher water use from billing-only changes and plan the next call."
         }
       },
       {
@@ -12222,7 +12228,7 @@
   {
     "title": "Why Does My Toilet Keep Running After Flushing?", "slug": "toilet-keeps-running-after-flushing", "description": "Toilet keeps running after flushing? Use overflow, tank-water, fill-valve, flush-seal, and chain clues to narrow the cause before replacing parts.",
     "primary_category": "plumbing", "secondary_categories": ["bathroom"], "symptoms": ["plumbing-behavior", "leaking"], "room_or_location": ["bathroom"], "system": "plumbing", "content_type": "diagnostic-guide",
-    "published_date": "2026-11-05", "updated_date": "2026-11-05", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": false,
+    "published_date": "2026-11-05", "updated_date": "2026-11-24", "reviewed_date": null, "author": "My House Is Doing What?", "reading_time": 10, "featured_status": false,
     "search_keywords": ["toilet keeps running after flushing", "toilet won't stop running", "toilet constantly running", "toilet running continuously", "toilet keeps filling", "toilet won't stop filling", "toilet fill valve won't shut off", "toilet flapper leaking", "toilet runs every few minutes", "toilet randomly refills", "toilet phantom flushing", "toilet water running into overflow tube", "toilet tank losing water", "water keeps running in toilet"],
     "target_search_intent": "Help a homeowner distinguish normal tank refill from continuous running or intermittent refilling, then use overflow-tube flow, tank water level, flush-seal closure, fill-valve shutoff, and chain behavior to narrow the cause without assuming one failed part.",
     "direct_answer": "After a flush, a conventional gravity-fed toilet should refill its tank and then stop at the model's intended water level. If it keeps running, first watch where the water goes. Water flowing into the overflow tube makes the fill valve, float movement, or water-level setting more relevant. A tank that quietly loses water and then refills every few minutes points instead toward tank-to-bowl leakage through a flapper, canister seal, flush-valve seat, or another seal path. A tight, tangled, or caught chain can also keep the flush seal from closing. None of these patterns proves a specific part has failed, and pressure-assisted or unfamiliar systems need their own manufacturer instructions.",
@@ -12320,7 +12326,13 @@
         "paragraphs": [
           "An intermittent refill is sometimes called a phantom flush, but the toilet usually has not performed a real flush. The tank has lost enough water that the fill valve responds to the lower level and restores it. Kohler identifies a worn flapper or canister seal, excessive water level, and binding trip-lever parts among the possible categories.",
           "A leaking fill valve is not the only explanation—and often is not the first one when the tank becomes quiet between events. A flush seal can leak silently into the bowl, a refill tube can siphon on some installations, or another tank seal path can lower the water. Mark when the tank becomes quiet, how long until refill returns, and whether bowl water ripples. Those clues help a plumber or manufacturer support separate the leak path from the part that merely refills the lost water."
-        ]
+        ],
+        "link": {
+          "before": "If the first clue was an unexplained utility charge rather than toilet noise, start with ",
+          "label": "Why Is My Water Bill Suddenly So High?",
+          "href": "/plumbing/water-bill-suddenly-high/",
+          "after": " to compare billed consumption, automatic use, and other possible leak sources before blaming this fixture."
+        }
       },
       {
         "id": "dye-test",
@@ -14202,6 +14214,305 @@
       { "title": "Smoke Alarms", "publisher": "U.S. Fire Administration", "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/index.html" },
       { "title": "Learn the Sounds of Fire Safety", "publisher": "National Fire Protection Association", "url": "https://content.nfpa.org/-/media/Project/Storefront/Catalog/Files/Fire-Prevention-Week/2024/FPW24-Learn-the-Sounds.pdf?rev=f6242165a65f4a15bf4cd47aa3f30760" },
       { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" }
+    ]
+  },
+  {
+    "title": "Why Is My Water Bill Suddenly So High?",
+    "slug": "water-bill-suddenly-high",
+    "description": "Water bill suddenly high? Learn how to check for hidden leaks, running toilets, irrigation problems, meter readings, and billing changes.",
+    "primary_category": "plumbing",
+    "secondary_categories": [],
+    "symptoms": [
+      "plumbing-behavior",
+      "leaking"
+    ],
+    "room_or_location": [
+      "whole-house"
+    ],
+    "system": "plumbing",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-24",
+    "updated_date": "2026-11-24",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 12,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my water bill so high",
+      "water bill suddenly high",
+      "why did my water bill double",
+      "water bill higher than usual",
+      "high water bill no visible leak",
+      "high water bill but no leaks",
+      "unexplained water usage",
+      "water usage increased for no reason",
+      "hidden water leak high bill",
+      "water meter moving when water is off",
+      "water bill high after meter replacement",
+      "water bill high after estimated reading",
+      "how to find a leak causing high water bill",
+      "what causes a high water bill",
+      "sudden increase in water bill"
+    ],
+    "target_search_intent": "Help a homeowner with an unexpectedly high water bill first determine whether metered consumption increased or only the amount charged changed, then distinguish increased household use, automatic equipment, fixture or hidden leaks, estimated readings, billing corrections, and utility-account issues without treating a high bill as proof of a plumbing failure.",
+    "direct_answer": "A suddenly higher water bill does not automatically mean your home has a leak. First compare the quantity of water billed—not just the dollars owed—with the prior bill, a similar season, and the number of service days. If consumption is similar, investigate rates, fixed or sewer charges, fees, estimated readings, and account corrections with the utility. If consumption increased, compare household and outdoor use, then observe the water meter during a true no-use period. Unexplained meter activity can justify a leak investigation, but it does not identify the source by itself.",
+    "likely_causes": [
+      "A longer billing period, rate change, fixed charge, sewer charge, fee, or account adjustment",
+      "An estimated reading followed by a catch-up actual reading",
+      "More showers, laundry, guests, outdoor watering, pool filling, or other intentional use",
+      "A silent or intermittent toilet leak",
+      "Irrigation, hose, outdoor faucet, pool auto-fill, water-treatment, or other automatic water use",
+      "A concealed fixture, supply, drain, appliance, water-heater, or buried service-line leak",
+      "A meter-reading, account, or billing-system issue requiring utility review"
+    ],
+    "safe_checks": [
+      "Compare billed consumption, service dates, billing days, units, and actual-versus-estimated read status before comparing dollar totals.",
+      "Normalize unequal billing periods by comparing average billed consumption per day.",
+      "Review recent guests, laundry, showers, irrigation, hose use, pool filling, and automatic equipment schedules.",
+      "Follow the water utility's instructions to observe an safely accessible meter during a period with no intended water use.",
+      "Check conventional tank toilets for silent tank-to-bowl leakage using the manufacturer-compatible EPA dye-test method.",
+      "Look for visible drips, wet cabinets, wall or ceiling changes, water near a heater, unusual yard saturation, and irrigation trouble without opening walls or excavating.",
+      "Ask the utility about rates, estimated readings, corrections, meter history, leak-adjustment rules, deadlines, and payment options."
+    ],
+    "professional_help": "Call a licensed plumber for persistent unexplained meter use, concealed moisture, repeated fixture leakage, or a suspected private buried service-line leak. Contact the water utility for read history, rates, billing-cycle or account questions, meter access or ownership, authorized meter inspection, possible utility-side leaks, and adjustment policies. Rapid flooding, a major supply failure, severe ground movement, suspected contamination, or water near energized equipment requires prompt separation from the hazard and the appropriate emergency, utility, electrical, or plumbing response.",
+    "related_articles": [
+      "toilet-keeps-running-after-flushing",
+      "water-under-water-heater",
+      "wet-spot-on-wall",
+      "water-stain-on-ceiling"
+    ],
+    "image": {
+      "src": "/images/high-water-bill-diagnostic-guide.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Conceptual four-panel guide showing a comparison of water-bill consumption, safe meter observation, a toilet dye check, and a possible outdoor water leak.",
+      "caption": "Conceptual examples: Compare consumption before investigating leaks. Bill formats, meter displays, automatic water users, and utility procedures vary, and no single observation identifies every leak.",
+      "kind": "conceptual",
+      "after_section": "consumption-or-charge"
+    },
+    "body_sections": [
+      {
+        "id": "consumption-or-charge",
+        "heading": "First, did your water use increase or just the amount charged?",
+        "paragraphs": [
+          "Start with the bill's consumption line rather than its total. A higher dollar amount can reflect more water, but it can also reflect a longer service period, a changed rate, fixed or sewer charges, fees, taxes, an account correction, or an estimated reading that was later reconciled. Those are different investigations.",
+          "Compare the current consumption with the previous bill and, if available, the same season last year. Check the service dates and number of billing days. Thirty-two days of use should not be compared as though it were identical to a 27-day period. When the periods differ, divide the billed consumption by the billing days and compare the daily averages.",
+          "If consumption barely changed but the total rose sharply, contact the billing department before replacing plumbing parts. If consumption clearly rose, review intentional and automatic water use before assuming a hidden leak. Only then does a no-use meter observation become a useful next step."
+        ],
+        "table": {
+          "headers": [
+            "What changed",
+            "Possible explanation",
+            "Safe next step"
+          ],
+          "rows": [
+            [
+              "Higher bill, similar consumption",
+              "Rates, fixed or sewer charges, fees, billing days, or adjustments",
+              "Review the bill details and ask the utility to explain the charges"
+            ],
+            [
+              "Higher bill and higher consumption",
+              "More household use, automatic use, or a leak",
+              "Compare recent activity, then check for use during a no-use period"
+            ],
+            [
+              "Meter changes during a verified no-use period",
+              "Unaccounted consumption is being recorded",
+              "Rule out scheduled equipment and investigate leaks; the meter does not identify the source"
+            ],
+            [
+              "A toilet refills without anyone flushing",
+              "Possible tank-to-bowl leakage or another toilet fault",
+              "Use safe observations and a compatible dye test"
+            ],
+            [
+              "Wet yard plus elevated consumption",
+              "Irrigation or a buried private-line problem may be involved",
+              "Avoid digging; use irrigation or plumbing evaluation"
+            ],
+            [
+              "Bill rises after one or more estimated reads",
+              "An actual read may have reconciled earlier estimates",
+              "Request the reading and billing history from the utility"
+            ],
+            [
+              "High bill with no visible water",
+              "Intentional, automatic, intermittent, or concealed use remains possible",
+              "Use billing and meter records to narrow the pattern before opening structures"
+            ]
+          ]
+        },
+        "callout": {
+          "title": "The key fork in the diagnosis",
+          "text": "Higher charge with similar consumption points first to the bill. Higher charge with higher consumption points first to water use. Neither pattern proves a leak or a utility error by itself."
+        }
+      },
+      {
+        "id": "read-the-bill",
+        "heading": "How can you tell whether the bill is incorrect?",
+        "paragraphs": [
+          "Bill formats vary, but look for the service start and end dates, previous and current meter readings, read type, consumption units, water-use charge, sewer charge, fixed service charges, adjustments, taxes, and other fees. An 'estimated' indicator means the utility calculated the bill without an ordinary actual read; it does not automatically mean the estimate is wrong.",
+          "Units also vary. A bill may use gallons, thousands of gallons, cubic feet, hundreds of cubic feet (CCF), or cubic meters. One CCF is approximately 748 U.S. gallons, but a visible meter may not display the same units or multiplier used on the bill. Follow the utility's explanation rather than converting display digits by guesswork.",
+          "For example, imagine a prior bill showing 5,000 gallons and a $65 total, while the current bill shows 5,200 gallons and an $88 total. Those hypothetical figures are not a real tariff. They show why a 4 percent consumption increase does not by itself explain a roughly 35 percent dollar increase. The number of billing days, rates, fixed charges, sewer charges, and adjustments deserve review.",
+          "A daily average can improve the comparison: 5,200 gallons over 32 billing days is about 163 gallons per day. Compare that figure with the home's own earlier periods, not with one universal household benchmark. Occupancy, climate, irrigation, appliances, and habits differ."
+        ],
+        "callout": {
+          "title": "Contact the utility when the numbers do not reconcile",
+          "text": "Ask whether each read was actual or estimated, how the billed units relate to the meter, whether the service period changed, and which rate, sewer, fixed-charge, or account adjustments were applied."
+        }
+      },
+      {
+        "id": "meter-check",
+        "heading": "How do you check a water meter for unexplained use?",
+        "paragraphs": [
+          "A water meter can show whether water is being recorded when no use is expected. EPA WaterSense describes comparing readings before and after a two-hour period when no water is used. Treat that as one established screening method, not a universal duration or proof of the leak location; use the local utility's instructions for its meter.",
+          "First account for every intentional and automatic user: faucets, toilets, showers, washers, dishwashers, ice makers, irrigation, hose timers, pool auto-fill, water softeners, treatment equipment, humidifiers, and applicable appliance cycles. Record the accessible meter reading or approved leak indicator without tampering. After the utility-recommended no-use interval, compare the reading.",
+          "A change means unaccounted consumption occurred during that interval, but it does not prove a broken main line or identify which fixture used water. A stationary reading does not eliminate intermittent toilet leakage, scheduled irrigation, or a leak that was inactive during the test. Digital meters and historical-flow displays also behave differently by system."
+        ],
+        "bullets": [
+          "Use utility documentation to locate and interpret the meter.",
+          "Do not dig up a meter, break a seal, open a secured enclosure, or enter a flooded pit.",
+          "Do not operate a utility-owned shutoff or force an unfamiliar or stuck valve.",
+          "Keep clear of damaged utility equipment, exposed wiring, traffic, insects, animals, and unstable covers.",
+          "If access is restricted or the display is unclear, ask the utility to assist."
+        ]
+      },
+      {
+        "id": "running-toilet",
+        "heading": "Can a running toilet make your water bill spike?",
+        "paragraphs": [
+          "Yes. A conventional tank toilet can leak from the tank to the bowl without leaving a puddle or making continuous noise. A poor flush seal, water entering the overflow tube, a fill-valve problem, or intermittent refilling can all record consumption. Other toilet designs use different components, so a flapper is not a universal diagnosis.",
+          "EPA supports a dye check for many conventional tank toilets. Put a dye tablet or a few drops of food coloring in the tank—not the bowl—without flushing. After the recommended observation period, color appearing in the bowl indicates water crossed from tank to bowl. Flush afterward to reduce staining risk. Follow the toilet manufacturer's instructions, and do not treat a negative test as proof that every intermittent leak is absent.",
+          "The dye result identifies a leak path, not the exact failed part. Use the toilet model when selecting service or parts rather than replacing a valve or seal solely because the bill increased."
+        ],
+        "link": {
+          "before": "If the toilet runs continuously, enters the overflow, or refills by itself, use ",
+          "label": "Why Does My Toilet Keep Running After Flushing?",
+          "href": "/plumbing/toilet-keeps-running-after-flushing/",
+          "after": " for the fixture-specific diagnostic path."
+        }
+      },
+      {
+        "id": "automatic-outdoor-use",
+        "heading": "What other equipment can use water without you noticing?",
+        "paragraphs": [
+          "Outdoor and automatic systems are easy to miss because they can run overnight or while nobody is watching. Review irrigation schedules, broken sprinkler heads, leaking valves, hose timers, outdoor faucets, pool auto-fill, water-softener or treatment regeneration, whole-home humidification, ice makers, and applicable appliance cycles. Not every home has these systems, and an automatic cycle is not automatically a leak.",
+          "Compare the increase with seasonal watering, guests, extra laundry, pool filling, and changed automatic settings. Check accessible controls and look for persistent pooling, eroded soil, damaged sprinkler heads, or zones running outside their schedule without dismantling pressurized equipment. Use an irrigation professional for buried valves or lines rather than excavating around unknown utilities."
+        ]
+      },
+      {
+        "id": "hidden-leak",
+        "heading": "Could a hidden or underground leak cause a high bill with no visible water?",
+        "paragraphs": [
+          "It can, but the absence of a puddle does not establish an underground leak. Water may remain inside a toilet, drain to a concealed space, soak into materials, enter a crawlspace, or escape from irrigation or a buried private supply line. Some leaks are intermittent, and normal water pressure does not rule them out.",
+          "Useful clues include damp flooring or cabinets, a wet wall or ceiling change, moisture near a water heater or appliance connection, unusual running-water sounds, persistently saturated soil, an unexpectedly green patch, pressure changes, or meter activity during a verified no-use period. Each clue has other explanations; even a wet yard can result from drainage, rain, groundwater, or irrigation rather than a failed service pipe.",
+          "Do not cut walls, lift flooring, excavate, or assume meter behavior proves a slab leak. A plumber or leak-location specialist can use the pattern, piping layout, isolation methods, pressure information, and appropriate instruments to narrow concealed or buried loss. Utility and homeowner ownership boundaries differ by jurisdiction, so verify responsibility before authorizing work."
+        ],
+        "links": [
+          {
+            "before": "If moisture is already visible inside a wall, follow ",
+            "label": "Why Is There a Wet Spot on My Wall?",
+            "href": "/moisture-and-mold/wet-spot-on-wall/",
+            "after": " for timing and location clues without opening the wall."
+          },
+          {
+            "before": "If the evidence is a ceiling mark rather than unusual meter use alone, see ",
+            "label": "Why Is There a Water Stain on My Ceiling?",
+            "href": "/moisture-and-mold/water-stain-on-ceiling/",
+            "after": " to separate active moisture from an older stain."
+          },
+          {
+            "before": "For a puddle or first wet point at the water heater, use ",
+            "label": "Why Is There Water Under My Water Heater?",
+            "href": "/plumbing/water-under-water-heater/",
+            "after": " rather than treating the bill as the only symptom."
+          }
+        ]
+      },
+      {
+        "id": "normal-looking-meter",
+        "heading": "Why can the bill be high even if the meter looks normal now?",
+        "paragraphs": [
+          "A meter is a time-specific observation. A toilet may refill only occasionally, an irrigation zone may run on selected days, a softener may regenerate overnight, or a leak may change with pressure or equipment operation. None of those must be active during a brief check.",
+          "Review interval or hourly data if the utility provides it. Recurring spikes can point toward a schedule, while continuous low flow can make a leak or constant automatic use more plausible. Those patterns require confirmation. Meter dials, digital displays, multipliers, and remote systems vary, so one snapshot cannot identify which device created earlier consumption."
+        ]
+      },
+      {
+        "id": "estimated-meter-replacement",
+        "heading": "Could estimated readings or meter replacement explain the increase?",
+        "paragraphs": [
+          "Yes, depending on the billing history. Several estimated bills can understate or overstate actual consumption. When the utility later obtains an actual reading, a catch-up charge or credit may appear. A longer billing period or account correction can create a similar jump. Ask for the sequence of read dates, read types, recorded values, and adjustments.",
+          "A higher bill after meter replacement does not prove the new meter overcounts. It may coincide with an actual read after estimates, a correction, changed use, or a fault. Compare an accessible display only through utility instructions; do not break seals or open secured equipment. If values appear inconsistent, request an authorized reading or meter review."
+        ]
+      },
+      {
+        "id": "before-calling",
+        "heading": "What should you check before calling a plumber?",
+        "bullets": [
+          "Compare the current consumption—not only the amount owed—with prior and same-season bills.",
+          "Check service dates, billing days, units, actual-versus-estimated status, rates, fixed charges, sewer charges, fees, and adjustments.",
+          "Calculate average consumption per billing day when periods differ.",
+          "List recent guests, laundry, showers, outdoor watering, pool filling, cleaning, or other unusual use.",
+          "Review irrigation, hose timers, treatment equipment, auto-fill systems, humidifiers, and other automatic schedules.",
+          "Follow the utility's meter-observation instructions during a true no-use period.",
+          "Check conventional tank toilets for silent leakage and inspect only visible, accessible fixtures and surfaces.",
+          "Document dates, readings, photos, wet areas, repair history, and recurring usage patterns for the utility or plumber."
+        ],
+        "callout": {
+          "title": "Do not use the house shutoff as a universal leak-location test",
+          "text": "Private piping layouts differ, some irrigation or outdoor branches may connect elsewhere, and ownership boundaries vary. Never operate a utility-owned valve or force an unfamiliar shutoff. Ask a plumber or utility when safe isolation is uncertain."
+        }
+      },
+      {
+        "id": "bill-adjustment",
+        "heading": "Can you request an adjustment to a high water bill?",
+        "paragraphs": [
+          "Some utilities offer billing reviews, courtesy adjustments, leak adjustments, sewer-charge adjustments, or payment arrangements. Availability, eligible leak types, documentation, deadlines, frequency limits, and the share adjusted vary. A utility is not universally required to refund water that passed through a customer meter.",
+          "Contact the utility promptly with bills, read history, service dates, permitted meter photos, plumber findings, and repair receipts. Ask about actual versus estimated reads, verification, adjustment eligibility, deadlines, and payment expectations. Do not ignore the bill or assume payment can be withheld; another city's program does not establish your utility's terms."
+        ]
+      },
+      {
+        "id": "plumber-or-utility",
+        "heading": "When should you contact the water utility instead of a plumber?",
+        "subsections": [
+          {
+            "heading": "Call the water utility",
+            "paragraphs": [
+              "Use the utility for billing dates, rates, units, estimated reads, account corrections, meter ownership or access, authorized meter inspections, possible utility-side problems, leak-adjustment rules, and payment options. Ask it to explain its own responsibility boundary rather than assuming all piping beyond the meter belongs to the homeowner."
+            ]
+          },
+          {
+            "heading": "Call a licensed plumber",
+            "paragraphs": [
+              "Use a plumber for persistent unexplained meter use, repeated toilet leakage, wet walls or floors, water-heater or supply-line leakage, suspected private buried piping loss, an unsafe or inaccessible shutoff, or a source that cannot be identified through noninvasive observations."
+            ]
+          },
+          {
+            "heading": "Escalate an active hazard",
+            "paragraphs": [
+              "Rapid flooding, a major supply-line failure, a sinkhole or severe ground movement, suspected contamination after a service or pressure-loss event, and water near energized equipment require a faster response. Stay out of flooded spaces, do not touch wet electrical equipment, keep clear of unstable ground, and contact the appropriate emergency service, utility, electrician, and plumber from a safe location."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A high water bill is a billing symptom before it is a plumbing diagnosis. Compare billed consumption, service days, and actual-versus-estimated reads first. Similar consumption points toward rates or account charges; higher consumption calls for a use-and-leak investigation.",
+          "If use rose, account for people, outdoor watering, and automatic equipment, then follow the utility's meter method. No single bill or meter check identifies the source. Take documented readings to the utility for billing questions and to a plumber for unexplained physical water use."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Fix a Leak Week", "publisher": "U.S. Environmental Protection Agency WaterSense", "url": "https://www.epa.gov/watersense/fix-leak-week" },
+      { "title": "Home Maintenance", "publisher": "U.S. Environmental Protection Agency WaterSense", "url": "https://www.epa.gov/watersense/home-maintenance" },
+      { "title": "Getting Started", "publisher": "U.S. Environmental Protection Agency WaterSense", "url": "https://www.epa.gov/watersense/get-started" },
+      { "title": "High Bill FAQ", "publisher": "Utilities Inc. of Louisiana", "url": "https://www.mywater.us/louisiana/customer-care" },
+      { "title": "Water Leak Information", "publisher": "City of Shreveport Water and Sewerage", "url": "https://www.shreveportlawater.gov/255/Water-Leak-Information" },
+      { "title": "Water and Sewer Bill Frequently Asked Questions", "publisher": "New York City Department of Environmental Protection", "url": "https://www.nyc.gov/site/dep/pay-my-bills/water-sewer-bills-frequently-asked-questions.page" },
+      { "title": "Utility Rates and Charges", "publisher": "City of Portland Water Bureau", "url": "https://www.portland.gov/water/customer-service/pay-your-utility-bill/utility-rates-and-charges" }
     ]
   }
 ]

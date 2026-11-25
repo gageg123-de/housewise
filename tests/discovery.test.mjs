@@ -1383,3 +1383,44 @@ test("smoke-alarm maintenance chirp Finder and search preserve emergency and nei
     "dishwasher beeping",
   ]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "smoke-alarm-chirping-after-battery-change", query);
 });
+
+test("high-water-bill Finder and search preserve fixture, leak-location, drainage, and noise ownership", () => {
+  assert.ok(getFinderSymptomOptions("whole-house").some((item) => item.value === "high-water-bill"));
+  assert.deepEqual(rankFinderArticles(registry, "whole-house", "high-water-bill").map((item) => item.article.slug), ["water-bill-suddenly-high"]);
+  for (const location of ["yard", "bathroom", "kitchen", "bedroom", "living-area", "garage", "laundry", "attic", "basement", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "high-water-bill"), location);
+  }
+
+  const positives = [
+    "why is my water bill so high",
+    "why did my water bill double",
+    "water bill suddenly high",
+    "high water bill no visible leak",
+    "water bill increased for no reason",
+    "water bill high but no leaks",
+    "unusually high water usage",
+    "hidden water leak high water bill",
+    "water meter running with no water on",
+    "high water bill after meter replacement",
+    "high water bill after estimated reading",
+    "why did my water usage spike",
+    "unexplained water consumption",
+    "sudden increase in water bill",
+    "water bill higher than usual",
+    "what causes a high water bill",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "water-bill-suddenly-high", query);
+
+  const neighbors = [
+    ["toilet keeps running after flushing", "toilet-keeps-running-after-flushing"],
+    ["water under water heater", "water-under-water-heater"],
+    ["water stain on ceiling", "water-stain-on-ceiling"],
+    ["wet spot on wall", "wet-spot-on-wall"],
+    ["shower water pulsing", "shower-water-pulsing"],
+    ["multiple drains backing up", "multiple-drains-back-up-at-same-time"],
+    ["water heater popping", "water-heater-popping-rumbling-noise"],
+    ["house smells like sewer gas", "house-smells-like-sewer-gas"],
+    ["sink drain leaking", "sink-leaking-from-drain"],
+  ];
+  for (const [query, slug] of neighbors) assert.equal(searchArticles(registry, query)[0]?.slug, slug, query);
+});
