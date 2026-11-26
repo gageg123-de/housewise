@@ -1501,3 +1501,31 @@ test("high-water-bill guide renders consumption-first diagnosis, visual, schema,
   const wetWall = await render("/moisture-and-mold/wet-spot-on-wall");
   assert.match(await wetWall.text(), /href="\/plumbing\/water-bill-suddenly-high\/"/);
 });
+
+test("furnace cold-air guide renders timing, thermostat, safety-control, heat-pump, schema, hub, and reciprocal routing", async () => {
+  const response = await render("/hvac/furnace-blowing-cold-air");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /<title>Why Is My Furnace Blowing Cold Air\? \| My House Is Doing What\?<\/title>/);
+  assert.match(html, /<h1[^>]*>Why Is My Furnace Blowing Cold Air\?<\/h1>/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/hvac\/furnace-blowing-cold-air\//);
+  assert.match(html, /First, match the cold-air pattern/);
+  assert.match(html, /Can a furnace blow cold air normally at startup or shutdown\?/);
+  assert.match(html, /Could the thermostat fan setting be circulating unheated air\?/);
+  assert.match(html, /Can a dirty filter or blocked airflow make the furnace blow cold air\?/);
+  assert.match(html, /What if the heating system is actually a heat pump\?/);
+  assert.match(html, /7 things to check when the furnace blows cold air/);
+  assert.match(html, /href="\/hvac\/furnace-smells-like-burning\/"/);
+  assert.match(html, /href="\/hvac\/weak-airflow-from-one-vent\/"/);
+  assert.match(html, /src="\/images\/furnace-cold-air-diagnostic-patterns\.webp"/);
+  assert.match(html, /width="1536" height="1024"/);
+  assert.match(html, /https:\/\/myhouseisdoingwhat\.com\/images\/furnace-cold-air-diagnostic-patterns\.webp/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /FAQPage|SearchAction|github\.io|chatgpt\.site/);
+
+  const hub = await render("/hvac");
+  assert.match(await hub.text(), /href="\/hvac\/furnace-blowing-cold-air\/"/);
+  const reciprocal = await render("/hvac/furnace-smells-like-burning");
+  assert.match(await reciprocal.text(), /href="\/hvac\/furnace-blowing-cold-air\/"/);
+});

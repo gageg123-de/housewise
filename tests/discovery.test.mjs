@@ -1424,3 +1424,45 @@ test("high-water-bill Finder and search preserve fixture, leak-location, drainag
   ];
   for (const [query, slug] of neighbors) assert.equal(searchArticles(registry, query)[0]?.slug, slug, query);
 });
+
+test("furnace cold-air Finder and search preserve no-start, short-cycle, odor, airflow, and heat-pump ownership", () => {
+  for (const location of ["living-area", "whole-house"]) {
+    assert.ok(getFinderSymptomOptions(location).some((item) => item.value === "furnace-cold-air"), location);
+    assert.deepEqual(rankFinderArticles(registry, location, "furnace-cold-air").map((item) => item.article.slug), ["furnace-blowing-cold-air"], location);
+  }
+  for (const location of ["yard", "bathroom", "kitchen", "garage", "laundry", "exterior"]) {
+    assert.ok(!getFinderSymptomOptions(location).some((item) => item.value === "furnace-cold-air"), location);
+  }
+
+  const positives = [
+    "why is my furnace blowing cold air",
+    "furnace blowing cold air",
+    "furnace blows cold air when heat is on",
+    "heater blowing cold air",
+    "cold air coming from vents when heat is on",
+    "furnace fan running but no heat",
+    "furnace starts then blows cold air",
+    "furnace blowing room temperature air",
+    "thermostat says heat on but cold air",
+    "furnace blowing cold air after filter change",
+    "gas furnace blowing cold air",
+    "electric furnace blowing cold air",
+    "furnace blows cold air before warm air",
+    "furnace blowing cold air then shuts off",
+    "furnace not heating house",
+  ];
+  for (const query of positives) assert.equal(searchArticles(registry, query)[0]?.slug, "furnace-blowing-cold-air", query);
+
+  assert.equal(searchArticles(registry, "furnace smells like burning")[0]?.slug, "furnace-smells-like-burning");
+  assert.equal(searchArticles(registry, "weak airflow from one vent")[0]?.slug, "weak-airflow-from-one-vent");
+  for (const query of [
+    "furnace won't turn on",
+    "furnace keeps running",
+    "furnace short cycling",
+    "heat pump blowing cold air",
+    "ac blowing warm air",
+    "one vent blowing cold air",
+    "close vents in unused rooms",
+    "furnace burning smell",
+  ]) assert.notEqual(searchArticles(registry, query)[0]?.slug, "furnace-blowing-cold-air", query);
+});

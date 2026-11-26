@@ -13503,7 +13503,7 @@
     "system": "hvac",
     "content_type": "diagnostic-guide",
     "published_date": "2026-11-18",
-    "updated_date": "2026-11-18",
+    "updated_date": "2026-11-26",
     "reviewed_date": null,
     "author": "My House Is Doing What?",
     "reading_time": 9,
@@ -13543,7 +13543,7 @@
       "Keep combustibles away from the furnace area and maintain smoke and carbon-monoxide alarms according to their instructions."
     ],
     "professional_help": "Arrange HVAC service for a persistent or recurring burnt odor, a smell that becomes stronger, abnormal noises, weak airflow with overheating clues, an oil odor, or uncertainty about the equipment. Stop the system from the thermostat only when it is safe to do so for a plastic, electrical, hot-insulation, or overheating odor, and use an HVAC technician or electrician as appropriate. Leave and call emergency services for active fire or smoke. For a suspected natural-gas or propane leak, leave without operating switches, phones, appliances, garage doors, or vehicles in the affected area, then call 911 or the gas utility from outside and away. For a CO alarm or possible CO symptoms, move outside to fresh air and call emergency services; have fuel-burning equipment evaluated before reuse.",
-    "related_articles": ["weak-airflow-from-one-vent", "lights-flicker-when-appliance-turns-on", "house-smells-like-sewer-gas"],
+    "related_articles": ["furnace-blowing-cold-air", "weak-airflow-from-one-vent", "lights-flicker-when-appliance-turns-on", "house-smells-like-sewer-gas"],
     "image": {
       "src": "/images/furnace-burning-smell-patterns.webp",
       "width": 1536,
@@ -13676,7 +13676,13 @@
       {
         "id": "bottom-line",
         "heading": "Bottom line",
-        "paragraphs": ["A mild, fading dusty odor at first seasonal startup can be ordinary. Persistent burning, plastic or electrical odor, abnormal heat or noise, smoke, sparking, or a breaker trip requires shutdown when safe and qualified evaluation. Treat fuel-gas odor, a CO alarm, and active smoke or fire as separate emergencies: leave first and call from a safe location. Otherwise, keep the furnace closed, check only accessible maintenance points, and record the timing for a technician."]
+        "paragraphs": ["A mild, fading dusty odor at first seasonal startup can be ordinary. Persistent burning, plastic or electrical odor, abnormal heat or noise, smoke, sparking, or a breaker trip requires shutdown when safe and qualified evaluation. Treat fuel-gas odor, a CO alarm, and active smoke or fire as separate emergencies: leave first and call from a safe location. Otherwise, keep the furnace closed, check only accessible maintenance points, and record the timing for a technician."],
+        "link": {
+          "before": "If the main symptom is room-temperature air from the vents rather than an odor, use ",
+          "label": "Why Is My Furnace Blowing Cold Air?",
+          "href": "/hvac/furnace-blowing-cold-air/",
+          "after": " for the separate thermostat, airflow, safety-control, and heat-pump diagnostic path."
+        }
       }
     ],
     "sources": [
@@ -14513,6 +14519,272 @@
       { "title": "Water Leak Information", "publisher": "City of Shreveport Water and Sewerage", "url": "https://www.shreveportlawater.gov/255/Water-Leak-Information" },
       { "title": "Water and Sewer Bill Frequently Asked Questions", "publisher": "New York City Department of Environmental Protection", "url": "https://www.nyc.gov/site/dep/pay-my-bills/water-sewer-bills-frequently-asked-questions.page" },
       { "title": "Utility Rates and Charges", "publisher": "City of Portland Water Bureau", "url": "https://www.portland.gov/water/customer-service/pay-your-utility-bill/utility-rates-and-charges" }
+    ]
+  },
+  {
+    "title": "Why Is My Furnace Blowing Cold Air?",
+    "slug": "furnace-blowing-cold-air",
+    "description": "Furnace blowing cold air? Learn how thermostat fan settings, airflow restrictions, safety controls, and heat-pump behavior differ—and when to call.",
+    "primary_category": "hvac",
+    "secondary_categories": [],
+    "symptoms": [
+      "heat",
+      "airflow",
+      "appliance-behavior"
+    ],
+    "room_or_location": [
+      "whole-house",
+      "living-area",
+      "bedroom",
+      "basement",
+      "attic"
+    ],
+    "system": "hvac",
+    "content_type": "diagnostic-guide",
+    "published_date": "2026-11-26",
+    "updated_date": "2026-11-26",
+    "reviewed_date": null,
+    "author": "My House Is Doing What?",
+    "reading_time": 11,
+    "featured_status": true,
+    "search_keywords": [
+      "why is my furnace blowing cold air",
+      "furnace blowing cold air",
+      "furnace blows cold air when heat is on",
+      "heater blowing cold air",
+      "cold air coming from vents when heat is on",
+      "furnace fan running but no heat",
+      "furnace starts then blows cold air",
+      "furnace blowing room temperature air",
+      "thermostat says heat on but cold air",
+      "furnace blowing cold air after filter change",
+      "gas furnace blowing cold air",
+      "electric furnace blowing cold air",
+      "furnace blows cold air before warm air",
+      "heat pump air feels cool",
+      "furnace blowing cold air then shuts off",
+      "furnace not heating house"
+    ],
+    "target_search_intent": "Help a homeowner distinguish normal room-temperature airflow at heating startup or between heat calls from a furnace that is failing to produce or deliver heat, while separating thermostat fan settings, airflow restrictions, safety shutdowns, ignition or condensate faults, heat-pump behavior, and urgent gas or carbon-monoxide hazards.",
+    "direct_answer": "A furnace can briefly move cool or room-temperature air at startup, after the heating stage stops, or whenever the thermostat runs the fan between heat calls. That can be normal. It is not normal for the home to keep getting colder while a sustained call for heat produces no warm air. First confirm the thermostat is in Heat, compare Fan On or Circulate with Fan Auto, and note whether the air becomes warmer during a complete cycle. Check only the normal accessible filter and uncovered supply and return openings. Persistent cold airflow can mean the furnace stopped heating because of an airflow safety limit, ignition or flame-proving problem, a condensate fault on some high-efficiency models, or another control or equipment issue. A heat pump may deliver gentler air that feels cooler than furnace air while still warming the home. Leave immediately for a suspected fuel-gas leak or a carbon-monoxide alarm; otherwise keep the cabinet closed and arrange HVAC service when heat does not recover.",
+    "likely_causes": [
+      "Room-temperature air already in the ducts moving briefly at startup or after a heating cycle",
+      "Thermostat Fan On, Circulate, or a minimum fan-runtime setting moving air between calls for heat",
+      "An incorrect thermostat mode, schedule, setpoint, or equipment configuration",
+      "A loaded filter, blocked return, covered supply opening, or another airflow restriction contributing to overheating and a safety-limit response",
+      "An ignition, flame-proving, fuel, control, or electrical condition that stops heat while the blower can still operate",
+      "A blocked, frozen, disconnected, or otherwise faulted condensate path on an applicable condensing furnace",
+      "Heat-pump supply air that feels less hot than gas-furnace air, including temporary changes during defrost",
+      "A duct, branch, or distribution condition when only one outlet or room is affected"
+    ],
+    "safe_checks": [
+      "Confirm the thermostat system mode is Heat, the setpoint is above the measured room temperature, and no schedule or hold changed the request.",
+      "Check whether the fan is set to On, Auto, Circulate, or a model-specific minimum runtime; use the thermostat manual rather than assuming labels are universal.",
+      "Observe one complete naturally occurring heating call from normal living space and note whether air starts cool, becomes warm, and cools again near shutdown.",
+      "Decide whether most supply outlets are affected or only one outlet or room, without using hand-feel as a precise airflow or temperature measurement.",
+      "Inspect only the normal homeowner-accessible filter and follow the equipment instructions for the correct size, type, orientation, and replacement method.",
+      "Confirm accessible return grilles and supply registers are not covered by rugs, furniture, curtains, boxes, or other objects.",
+      "Read accessible thermostat or equipment messages and record the sequence, outdoor conditions, noises, odors, breaker behavior, and whether the home reaches the setpoint without opening the equipment."
+    ],
+    "professional_help": "Arrange qualified HVAC service when a sustained call for heat never produces warm air, the home keeps losing temperature, the heat starts and repeatedly drops out, the blower continues after failed heating attempts, a fault returns, or safe thermostat, filter, and obstruction checks do not explain the pattern. Do not open burner or electrical compartments, clean flame sensors, adjust gas or oil controls, bypass safety switches, alter blower speed, clear internal condensate components, handle refrigerant, or repeatedly reset a fault. For a rotten-egg or sulfur-like fuel-gas odor, leave without operating switches, phones, thermostats, appliances, garage doors, or vehicles in the affected area and call 911 or the gas utility from outside and away. For a carbon-monoxide alarm or possible CO symptoms, move outside to fresh air, call emergency services, and do not reenter until responders say it is safe.",
+    "related_articles": [
+      "furnace-smells-like-burning",
+      "weak-airflow-from-one-vent",
+      "can-replacing-registers-improve-airflow"
+    ],
+    "image": {
+      "src": "/images/furnace-cold-air-diagnostic-patterns.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Four-panel conceptual guide showing a thermostat fan setting, a loaded furnace filter restricting airflow, a heating safety shutdown with the blower continuing, and a heat pump supplying gentle warm air during cold weather.",
+      "caption": "Conceptual illustration: Cool airflow can come from thermostat fan operation, restricted airflow and a safety response, a heating-stage fault, or normal heat-pump behavior. The pattern narrows the next step; it does not identify a failed component.",
+      "kind": "conceptual",
+      "after_section": "cold-air-patterns"
+    },
+    "body_sections": [
+      {
+        "id": "cold-air-patterns",
+        "heading": "First, match the cold-air pattern",
+        "paragraphs": [
+          "Do not diagnose the furnace from how one gust feels on your hand. Air that is warmer than the room can still feel cool against skin, especially with a heat pump, and a blower can move unheated room air when the heating stage is off. The useful questions are when the air feels cool, whether it later warms, whether the house reaches the setpoint, and whether the pattern affects one outlet or most of them."
+        ],
+        "table": {
+          "headers": [
+            "What you notice",
+            "What it may mean",
+            "Safe next step"
+          ],
+          "rows": [
+            [
+              "A brief cool draft at the start, followed by warm air",
+              "Duct air moving before the heating system reaches normal output",
+              "Observe the complete cycle; use the model manual rather than a universal time limit"
+            ],
+            [
+              "Air turns cooler shortly after the thermostat stops calling for heat",
+              "Normal blower off-delay distributing remaining heat, then room-temperature duct air",
+              "Check whether the blower stops normally and the home remains comfortable"
+            ],
+            [
+              "Room-temperature air moves between heating cycles",
+              "Fan On, Circulate, or a minimum fan-runtime setting",
+              "Review the thermostat fan setting and its exact manual"
+            ],
+            [
+              "Most vents stay cold during a sustained call for heat",
+              "The heating stage may not be starting or may be shutting down",
+              "Keep equipment closed; record the sequence and arrange service if it persists"
+            ],
+            [
+              "Heat starts, then turns cool while the blower keeps running",
+              "A safety control may have stopped heat, possibly after an airflow or combustion-related fault",
+              "Check only the accessible filter and obstructions; do not reset or bypass a safety"
+            ],
+            [
+              "Only one outlet or room feels cold or weak",
+              "A register, branch duct, damper, leakage, or room-distribution issue may be more relevant",
+              "Compare nearby outlets and use the one-vent diagnostic path"
+            ],
+            [
+              "Heat-pump air feels less hot, but the room temperature rises",
+              "Normal lower-temperature heat delivery may feel different from furnace air",
+              "Judge performance by comfort and setpoint progress, not hand-feel alone"
+            ],
+            [
+              "Gas odor, CO alarm, smoke, sparks, or burning odor accompanies the problem",
+              "A separate fuel-gas, carbon-monoxide, fire, or electrical hazard may exist",
+              "Leave or stop use as appropriate; skip routine troubleshooting"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "normal-startup-shutdown",
+        "heading": "Can a furnace blow cold air normally at startup or shutdown?",
+        "paragraphs": [
+          "Yes, briefly. Air sitting in room-side ductwork cools between cycles. Depending on the furnace and controls, the blower may start after the heating source begins, so the first air at a register may be near room temperature before warmer air arrives. At the end of a call, the blower may keep running to distribute remaining heat and protect equipment; the final air may feel cooler as surfaces lose heat.",
+          "There is no universal number of seconds that separates normal from faulty operation. Control sequences vary by model, installation, and operating condition. Focus on the outcome: a normal cycle should make useful progress toward the thermostat setpoint. If most outlets stay cold, the home temperature falls, or the same failed sequence repeats, the observation has moved beyond ordinary startup or shutdown airflow."
+        ],
+        "callout": {
+          "title": "Do not use your hand as a thermometer",
+          "text": "Moving air can feel cool even when it is modestly warmer than the room. A professional can compare supply and return temperatures, system operation, and airflow with appropriate instruments. Do not insert a thermometer or object into equipment or use a single vent temperature as a remote diagnosis."
+        }
+      },
+      {
+        "id": "thermostat-fan",
+        "heading": "Could the thermostat fan setting be circulating unheated air?",
+        "paragraphs": [
+          "Check two separate thermostat controls: the system mode and the fan mode. The system should be in Heat, with a setpoint that actually calls for heating. On many thermostats, Fan On runs the blower continuously, including between heat calls. Fan Auto generally lets the equipment run the blower with heating, while Circulate or minimum-runtime features may run it periodically for air mixing. Those labels and behaviors are not identical on every thermostat.",
+          "A continuous fan can make a correctly operating furnace seem to blow cold air because it keeps moving room-temperature air after the burners or electric heat turn off. Switching an unintended fan hold back to the manufacturer-supported automatic setting can change that sensation. It does not fix a furnace that fails to heat during an actual call. Review schedules, holds, smart-home changes, and thermostat messages without removing the thermostat or touching wiring."
+        ]
+      },
+      {
+        "id": "filter-airflow-limit",
+        "heading": "Can a dirty filter or blocked airflow make the furnace blow cold air?",
+        "paragraphs": [
+          "It can contribute. A heavily loaded filter, blocked return, covered supply opening, dirty internal component, blower problem, or other restriction can reduce airflow through some systems. If a furnace overheats, a high-limit safety may stop the heating source while the blower continues moving air to reduce temperature. At the vents, that can look like warm air that suddenly becomes cool.",
+          "A filter is one accessible clue, not proof of the cause. Use the exact size, type, direction, and maintenance method in the equipment instructions. There is no universal replacement interval or universally appropriate filtration level. Do not run the system without its required filter, close other registers to force air elsewhere, remove panels, alter blower settings, or repeatedly reset a furnace that is protecting itself.",
+          "If only one outlet has weak or cool airflow while nearby outlets are warm, the furnace may be producing heat normally. The register, boot, branch duct, balancing condition, or room distribution becomes more relevant. Use the separate guide to "
+        ],
+        "link": {
+          "before": "compare that localized pattern in ",
+          "label": "Why Is Airflow Weak From One Vent?",
+          "href": "/hvac/weak-airflow-from-one-vent/",
+          "after": "."
+        }
+      },
+      {
+        "id": "heating-stage-faults",
+        "heading": "What if the blower runs but the furnace does not make heat?",
+        "paragraphs": [
+          "The blower and the heating stage are controlled separately enough that one can operate while the other does not. A gas furnace may fail to ignite, may not prove a flame, or may stop the burner after a safety signal. Electric resistance heat may fail to energize even though the air handler runs. Controls, sensors, power supplies, fuel delivery, and internal electrical components are other possible categories. Cold airflow alone cannot identify which one applies.",
+          "A sequence such as start, brief heat, shutdown, cool blower air, and another attempt is useful information for a technician. It does not justify opening the burner compartment, viewing flames through an access opening not intended for homeowners, cleaning a flame sensor, relighting equipment without exact model instructions, adjusting gas or oil controls, testing live voltage, bypassing a door switch, or cycling power repeatedly to defeat a lockout. Safety controls stop heat for a reason even when the blower still works."
+        ]
+      },
+      {
+        "id": "condensate",
+        "heading": "Can a condensate problem stop a high-efficiency furnace from heating?",
+        "paragraphs": [
+          "Some high-efficiency condensing furnaces produce water during normal heating and use drains, traps, pumps, or switches to manage it. A restriction, disconnection, freezing condition, failed pump, or another drainage fault can stop the heating sequence on an applicable model. The blower may still move unheated air, or the thermostat may show a fault.",
+          "Not every furnace condenses or uses the same layout. From outside closed equipment, note visible water, ice, an accessible alarm, or a manufacturer-displayed message. Do not open the cabinet, pour chemicals into a drain, blow into tubing, bypass a float or pressure switch, heat frozen piping with a flame or heat gun, or assume that clearing visible water corrects the cause. Follow the manual and use an HVAC technician for internal or uncertain condensate work."
+        ]
+      },
+      {
+        "id": "heat-pump",
+        "heading": "What if the heating system is actually a heat pump?",
+        "paragraphs": [
+          "A heat pump moves heat rather than producing the hotter supply air many people associate with a gas furnace. It may run longer and deliver a steady, gentler stream that feels cool to skin while still being warmer than the room. Some people call the indoor air handler a furnace even when a heat pump is the main heat source.",
+          "During defrost, an air-source heat pump temporarily changes operation to remove frost from the outdoor coil. Supplemental heat may operate, but behavior varies. A short change in supply-air feel can be normal; thick persistent ice, a falling indoor temperature, repeated fault messages, unusual noise, or failure to reach the setpoint deserves service. Do not chip ice, cover the outdoor unit, alter defrost controls, force emergency heat as a routine fix, or handle refrigerant."
+        ]
+      },
+      {
+        "id": "gas-co-and-burning",
+        "heading": "What warning signs change the response?",
+        "paragraphs": [
+          "Cold air by itself is usually a comfort or equipment-performance symptom, not proof of a gas leak or carbon monoxide. Companion signs matter. For a rotten-egg or sulfur-like odor that may be odorized natural gas or propane, leave people and pets promptly without operating the thermostat, switches, phones, appliances, garage door, or vehicles in the affected area. Call 911 or the gas utility from outside and away, and do not reenter until responders say it is safe.",
+          "Carbon monoxide is colorless and odorless. You cannot rule it out because the air smells normal. If a CO alarm sounds or occupants have possible exposure symptoms such as headache, dizziness, nausea, weakness, confusion, or fainting, move outside to fresh air, call emergency services, and seek medical guidance. Do not investigate the furnace first.",
+          "Smoke, sparks, visible flame outside its intended enclosure, a burning plastic or electrical odor, repeated breaker trips, or unusual equipment heat also changes the priority. Stop use only if the normal control is safely reachable and there is no suspected gas leak or active fire; otherwise leave and call for help. For odor-specific distinctions, see "
+        ],
+        "link": {
+          "before": "the separate guide ",
+          "label": "Why Does My Furnace Smell Like Burning When It Turns On?",
+          "href": "/hvac/furnace-smells-like-burning/",
+          "after": "."
+        }
+      },
+      {
+        "id": "safe-checks",
+        "heading": "7 things to check when the furnace blows cold air",
+        "paragraphs": [
+          "Use this sequence only when there is no fuel-gas odor, CO alarm, smoke, fire, burning odor, wet electrical equipment, or other immediate hazard."
+        ],
+        "bullets": [
+          "Confirm the thermostat is in Heat and the setpoint is above the displayed room temperature; check for a schedule, hold, or mode change.",
+          "Read the fan setting. On, Circulate, or a minimum runtime can move room-temperature air between heating calls; compare the exact thermostat manual.",
+          "Observe a complete natural cycle from normal living space. Note whether air starts cool, becomes warm, cools near shutdown, or never warms at all.",
+          "Compare several supply outlets. Record whether the problem affects one register, one room, one zone, or most of the home.",
+          "Inspect only the normal accessible filter. Use manufacturer instructions for condition, size, type, airflow direction, and replacement or cleaning.",
+          "Uncover accessible supply registers and return grilles. Do not close other vents to force air toward the cold room.",
+          "Record thermostat or equipment messages visible without opening anything, plus outdoor temperature, heat-pump defrost clues, unusual sounds, water, ice, odors, breaker behavior, and whether the room temperature rises."
+        ],
+        "callout": {
+          "title": "Keep the equipment closed",
+          "text": "Do not remove furnace or air-handler panels, reach into equipment, clean ignition or flame-sensing parts, adjust gas or oil controls, bypass a safety, modify wiring, change blower speed, clear internal drains, handle refrigerant, or operate without required filtration. Do not enter an unsafe attic or crawlspace to inspect ducts."
+        }
+      },
+      {
+        "id": "professional-help",
+        "heading": "When should you call an HVAC professional?",
+        "paragraphs": [
+          "Call when a sustained heating request produces no warm air, the house keeps cooling, the system repeatedly starts and drops the heat stage, the blower continues after failed heating attempts, a high-limit or other fault returns, visible water or ice accompanies a condensing-furnace problem, or the basic thermostat, filter, and obstruction checks do not resolve the pattern. One persistently cold outlet may need branch and balancing diagnosis; many cold outlets point more strongly toward equipment or system-level operation.",
+          "A qualified technician can verify the call for heat, heating sequence, temperature rise, airflow, total external static pressure, safety controls, ignition and flame proving, condensate operation, blower and controls, heat-pump defrost, auxiliary heat, ducts, and fault history. Those measurements distinguish the real bottleneck without guessing from a vent or replacing parts on speculation."
+        ],
+        "link": {
+          "before": "If someone suggests replacing the visible outlet as the fix, use ",
+          "label": "Can Replacing HVAC Registers Improve Airflow?",
+          "href": "/hvac/can-replacing-registers-improve-airflow/",
+          "after": " to separate an outlet restriction from an upstream heating or duct problem."
+        }
+      },
+      {
+        "id": "bottom-line",
+        "heading": "Bottom line",
+        "paragraphs": [
+          "A short cool draft at startup, a cooler tail at shutdown, or room-temperature air from a thermostat fan setting can be normal. A heat pump can also feel less hot than a furnace while still warming the room. The deciding evidence is whether a real call for heat produces useful warming and whether the home reaches its setpoint.",
+          "If most vents remain cold and the home temperature falls, check only thermostat settings, the accessible filter, and visible obstructions. Heat that starts and then disappears while the blower continues can indicate a safety response or another heating-stage fault—not permission to bypass a control. Keep the equipment closed, record the sequence, and use qualified HVAC service. Leave immediately for suspected fuel gas or a CO alarm."
+        ]
+      }
+    ],
+    "sources": [
+      { "title": "Why Is My Furnace Blowing Cold Air?", "publisher": "Carrier", "url": "https://www.carrier.com/us/en/residential/hvac-resources/furnaces/furnace-blowing-cold-air/" },
+      { "title": "Furnace Blower Not Working: Causes and Solutions", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/gas-furnaces/furnace-blower-not-working/" },
+      { "title": "Furnace Won't Shut Off: Troubleshooting Tips", "publisher": "Trane", "url": "https://www.trane.com/residential/en/resources/troubleshooting/gas-furnaces/furnace-wont-shut-off/" },
+      { "title": "Is Your Furnace Blowing Cold Air?", "publisher": "Lennox", "url": "https://www.lennox.com/residential/lennox-life/consumer/how-to-fix-furnace-blowing-cold-air" },
+      { "title": "Heat Pump Heat Feel Cool? Find Out Why!", "publisher": "Lennox", "url": "https://www.lennox.com/residential/lennox-life/consumer/heat-pump-blowing-cold-air" },
+      { "title": "You Installed an Air-Source Heat Pump—Now What?", "publisher": "U.S. Department of Energy Building Science Education Solution Center", "url": "https://bsesc.energy.gov/sites/default/files/2024-09/CEE_You_Installed_an_ASHP_Now_What_TRC_01.16.24_1.pdf" },
+      { "title": "Fan Settings on the ecobee Thermostat", "publisher": "ecobee", "url": "https://support.ecobee.com/s/articles/How-to-control-your-HVAC-system-s-fan-with-your-ecobee-thermostat?language=en_US" },
+      { "title": "Carbon Monoxide Fact Sheet", "publisher": "U.S. Consumer Product Safety Commission", "url": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet" },
+      { "title": "Recognizing and Responding to Pipeline Emergencies", "publisher": "Pipeline and Hazardous Materials Safety Administration", "url": "https://primis.phmsa.dot.gov/stakeholder-comms/emergencyresponse/" }
     ]
   }
 ]
